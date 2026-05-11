@@ -16,11 +16,15 @@ export MPLCONFIGDIR="${MPLCONFIGDIR:-${KG_CACHE_ROOT}/matplotlib}"
 mkdir -p "${HF_HOME}" "${TRANSFORMERS_CACHE}" "${HF_DATASETS_CACHE}" "${TMPDIR}" "${MPLCONFIGDIR}" models/adapters
 
 if [[ $# -lt 1 ]]; then
-  echo "Usage: bash scripts/03_train_lora.sh <specific|standard|sft>"
+  echo "Usage: bash scripts/03_train_lora.sh <pro858|specific|standard|sft>"
   exit 1
 fi
 
 case "$1" in
+  pro858)
+    CONFIG="configs/llamafactory/qwen3_8b_lora_cot_pro858.yaml"
+    DATASET_JSON="data/llamafactory/pro_cot_001_858_complete_llamafactory.json"
+    ;;
   specific)
     CONFIG="configs/llamafactory/qwen3_8b_lora_cot_specific.yaml"
     DATASET_JSON="data/llamafactory/kg_cot_specific_614.json"
@@ -35,14 +39,14 @@ case "$1" in
     ;;
   *)
     echo "Unknown training target: $1"
-    echo "Expected one of: specific, standard, sft"
+    echo "Expected one of: pro858, specific, standard, sft"
     exit 1
     ;;
 esac
 
 if [[ ! -f "${DATASET_JSON}" ]]; then
   echo "Missing training dataset: ${DATASET_JSON}" >&2
-  echo "Run scripts/02_convert_to_llamafactory.sh first, or use the committed specific/standard datasets." >&2
+  echo "Run scripts/02_convert_to_llamafactory.sh first, or use a committed LLaMA-Factory dataset." >&2
   exit 1
 fi
 

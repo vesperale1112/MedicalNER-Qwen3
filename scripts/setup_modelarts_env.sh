@@ -63,4 +63,4 @@ echo
 echo "Environment is ready."
 echo "Run training with:"
 echo "  cd ${ROOT_DIR}"
-echo "  PYTHONNOUSERSITE=1 bash scripts/03_train_lora.sh specific"
+echo "  PYTHONNOUSERSITE=1 bash scripts/03_train_lora.sh pro858"
