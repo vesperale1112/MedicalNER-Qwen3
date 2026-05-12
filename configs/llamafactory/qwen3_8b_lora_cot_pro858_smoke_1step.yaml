@@ -1,0 +1,48 @@
+### model
+model_name_or_path: /hpc_stor03/sjtu_home/xiran.wang/models/Qwen3-8B
+trust_remote_code: true
+quantization_bit: 4
+quantization_method: bitsandbytes
+
+### method
+stage: sft
+do_train: true
+finetuning_type: lora
+lora_rank: 8
+lora_target: all
+
+### dataset
+dataset_dir: data/llamafactory
+dataset: pro_cot_001_858_complete_schema0413
+template: qwen3
+cutoff_len: 1024
+max_samples: 8
+overwrite_cache: true
+preprocessing_num_workers: 1
+dataloader_num_workers: 0
+val_size: 0.0
+
+### output
+output_dir: outputs/smoke_qwen3_8b_lora_1step
+logging_steps: 1
+save_strategy: "no"
+plot_loss: false
+overwrite_output_dir: true
+save_only_model: false
+report_to: none
+load_best_model_at_end: false
+
+### train
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 1
+learning_rate: 1.0e-4
+max_steps: 1
+lr_scheduler_type: cosine
+warmup_ratio: 0.0
+bf16: false
+fp16: true
+ddp_timeout: 180000000
+resume_from_checkpoint: null
+
+### eval
+eval_strategy: "no"
