@@ -1,0 +1,38 @@
+### model
+model_name_or_path: /hpc_stor03/sjtu_home/xiran.wang/models/Qwen3-8B
+adapter_name_or_path: /hpc_stor03/sjtu_home/xiran.wang/MedicalNER-Qwen3/models/adapters/qwen3-8b-cot-pro858/checkpoint-280
+trust_remote_code: true
+quantization_bit: 4
+quantization_method: bitsandbytes
+
+### method
+stage: sft
+do_predict: true
+finetuning_type: lora
+
+### dataset
+dataset_dir: data/llamafactory
+eval_dataset: pro_cot_001_858_complete_schema0413
+template: qwen3
+cutoff_len: 2048
+max_samples: 20
+overwrite_cache: true
+preprocessing_num_workers: 8
+
+### output
+output_dir: models/predict/qwen3-8b-cot-pro858-format-check
+overwrite_output_dir: true
+report_to: none
+
+### eval
+per_device_eval_batch_size: 1
+predict_with_generate: true
+ddp_timeout: 180000000
+
+### generation
+max_new_tokens: 1024
+do_sample: false
+
+### hardware
+bf16: true
+flash_attn: fa2

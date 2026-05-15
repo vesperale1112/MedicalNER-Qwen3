@@ -1,5 +1,5 @@
 ### model
-model_name_or_path: Qwen/Qwen3-8B
+model_name_or_path: /hpc_stor03/sjtu_home/xiran.wang/models/Qwen3-8B
 trust_remote_code: true
 quantization_bit: 4
 quantization_method: bitsandbytes
@@ -15,7 +15,7 @@ lora_target: all
 dataset_dir: data/llamafactory
 dataset: pro_cot_001_858_complete_schema0413
 template: qwen3
-cutoff_len: 16384
+cutoff_len: 2048
 max_samples: 100000
 overwrite_cache: true
 preprocessing_num_workers: 8
@@ -46,6 +46,8 @@ warmup_ratio: 0.03
 bf16: true
 ddp_timeout: 180000000
 resume_from_checkpoint: null
+flash_attn: fa2
+gradient_checkpointing: true
 
 ### eval
 per_device_eval_batch_size: 1

@@ -48,4 +48,3 @@ trainer_state.json
 training_args.bin
 training_loss.png
 training_eval_loss.png
-/docs
