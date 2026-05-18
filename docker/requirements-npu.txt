@@ -11,4 +11,7 @@ scipy
 tiktoken
 einops
 protobuf
+# llamafactory 0.9.3 的 trainer_utils.py 硬 import ray.train，老 ray 又依赖
+# pyarrow.PyExtensionType（pyarrow>=16 已删除），所以钉一下 pyarrow
+pyarrow<16
 llamafactory[metrics]==0.9.3

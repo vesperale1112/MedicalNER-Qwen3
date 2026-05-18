@@ -19,10 +19,13 @@ export TRANSFORMERS_CACHE="${TRANSFORMERS_CACHE:-${HF_HOME}/hub}"
 export HF_DATASETS_CACHE="${HF_DATASETS_CACHE:-${HF_HOME}/datasets}"
 export HUGGINGFACE_HUB_CACHE="${HUGGINGFACE_HUB_CACHE:-${HF_HOME}/hub}"
 export XDG_CACHE_HOME="${XDG_CACHE_HOME:-${KG_CACHE_ROOT}}"
-export TMPDIR="${TMPDIR:-${KG_CACHE_ROOT}/tmp}"
+# 不要把 TMPDIR 放共享存储：multiprocessing 清理 pymp-* 时会撞共享 FS 的
+# .__dpc* 影子文件，Device or resource busy / Directory not empty。
+export TMPDIR="${TMPDIR:-/tmp}"
 export MPLCONFIGDIR="${MPLCONFIGDIR:-${KG_CACHE_ROOT}/matplotlib}"
 mkdir -p "${HF_HOME}" "${TRANSFORMERS_CACHE}" "${HF_DATASETS_CACHE}" \
-         "${TMPDIR}" "${MPLCONFIGDIR}" models/adapters
+         "${MPLCONFIGDIR}" models/adapters
+mkdir -p "${TMPDIR}" 2>/dev/null || true
 
 export PYTHONNOUSERSITE=1
 export HF_ENDPOINT="${HF_ENDPOINT:-https://hf-mirror.com}"
