@@ -87,5 +87,14 @@ loader.write_text(src, encoding="utf-8")
 print(f"[apply_npu_fa_patch] patched: {loader}")
 PY
 
-python3 -c "from llamafactory.model.model_utils.npu_flash_attn import patch_npu_flash_attn; print('[apply_npu_fa_patch] import OK:', patch_npu_flash_attn)"
+# 自检：纯静态校验，不能在 build 阶段真正 import llamafactory
+# （那会链式触发 torch → torch_npu C 扩展，build 阶段没有 libascend_hal.so）
+python3 -m py_compile \
+    "${MU_DIR}/npu_flash_attn.py" \
+    "${LOADER_PY}"
+grep -q "patch_npu_flash_attn" "${LOADER_PY}" \
+    || { echo "[apply_npu_fa_patch] ERROR: loader.py 里没有 patch_npu_flash_attn 调用" >&2; exit 4; }
+grep -q "from .model_utils.npu_flash_attn import patch_npu_flash_attn" "${LOADER_PY}" \
+    || { echo "[apply_npu_fa_patch] ERROR: loader.py 里没有 patch 的 import 行" >&2; exit 5; }
+echo "[apply_npu_fa_patch] static check OK."
 echo "[apply_npu_fa_patch] done."
