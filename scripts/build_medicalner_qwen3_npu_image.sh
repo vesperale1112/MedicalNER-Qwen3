@@ -16,7 +16,7 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "${ROOT_DIR}"
 
 TEAM="${TEAM:-wumengyue}"
-IMAGE_NAME="${IMAGE_NAME:-medicalner-qwen3}"
+IMAGE_NAME="${IMAGE_NAME:-xiranwang-medicalner-qwen3}"
 IMAGE_TAG="${IMAGE_TAG:-v1.0}"
 IMAGE_FULL="hub.szaic.com/sjtu/sjtu_${TEAM}-${IMAGE_NAME}:${IMAGE_TAG}"
 
