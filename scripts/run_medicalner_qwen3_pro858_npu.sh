@@ -3,10 +3,7 @@ set -euo pipefail
 
 cd /aistor/sjtu/hpc_stor01/home/wangxiran/projects/MedicalNER-Qwen3
 
-LLAMAFACTORY_HOME=/aistor/sjtu/hpc_stor01/home/wangxiran/LLaMA-Factory
-
 export PYTHONNOUSERSITE=1
-export PYTHONPATH="$LLAMAFACTORY_HOME/src:${PYTHONPATH:-}"
 export HF_ENDPOINT=https://hf-mirror.com
 export HF_HOME=/aistor/sjtu/hpc_stor01/home/wangxiran/.cache/huggingface
 export HUGGINGFACE_HUB_CACHE=$HF_HOME/hub
@@ -34,11 +31,14 @@ PY
 
 npu-smi info || true
 
+# Apply NPU FlashAttention patch at runtime (writes to /opt/LLaMA-Factory, needs chmod a+rw)
+bash /tmp/apply_fa_patch.sh || echo "WARN: FA patch failed, continuing with default SDPA"
+
 echo "===== Training YAML ====="
 sed -n '1,60p' configs/llamafactory/qwen3_8b_lora_cot_pro858_npu.yaml
 
 echo "===== Start training ====="
-python -m llamafactory.cli train configs/llamafactory/qwen3_8b_lora_cot_pro858_npu.yaml
+llamafactory-cli train configs/llamafactory/qwen3_8b_lora_cot_pro858_npu.yaml
 
 echo "===== Training finished ====="
 date

@@ -16,6 +16,11 @@ RUN pip install --no-cache-dir -r /tmp/requirements.txt
 RUN git config --global http.version HTTP/1.1 \
     && git clone --depth 1 --branch v0.9.3 https://github.com/hiyouga/LLaMA-Factory.git /opt/LLaMA-Factory \
     && cd /opt/LLaMA-Factory \
-    && pip install --no-cache-dir --no-deps -e .
+    && pip install --no-cache-dir -e .
+
+COPY apply_fa_patch.sh /tmp/apply_fa_patch.sh
+RUN chmod +x /tmp/apply_fa_patch.sh
+
+RUN chmod -R a+rw /opt/LLaMA-Factory
 
 WORKDIR /workspace
