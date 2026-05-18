@@ -13,7 +13,7 @@ lora_target: all
 dataset_dir: data/llamafactory
 dataset: pro_cot_001_858_complete_schema0413
 template: qwen3
-cutoff_len: 2048
+cutoff_len: 16384
 max_samples: 100000
 overwrite_cache: true
 preprocessing_num_workers: 8
@@ -24,7 +24,7 @@ val_size: 0.10
 output_dir: models/adapters/qwen3-8b-cot-pro858
 logging_steps: 5
 save_strategy: steps
-save_steps: 10
+save_steps: 20
 save_total_limit: 30
 plot_loss: true
 overwrite_output_dir: true
@@ -50,4 +50,4 @@ gradient_checkpointing: true
 ### eval
 per_device_eval_batch_size: 1
 eval_strategy: steps
-eval_steps: 10
+eval_steps: 20
