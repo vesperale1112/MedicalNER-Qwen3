@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-cd /aistor/sjtu/hpc_stor01/home/wangxiran/MedicalNER-Qwen3
+cd /aistor/sjtu/hpc_stor01/home/wangxiran/projects/MedicalNER-Qwen3
 
 LLAMAFACTORY_HOME=/aistor/sjtu/hpc_stor01/home/wangxiran/LLaMA-Factory
 
