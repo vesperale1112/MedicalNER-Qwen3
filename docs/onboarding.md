@@ -370,19 +370,48 @@ bash scripts/run_specific_pipeline.sh data/raw/mental_disorders_20251125_165535.
 
 ---
 
-## 当前状态（2026-05-10）
+## 当前状态（2026-05-18）
 
 **已完成：**
 - v1 数据生成流程（specific 614 / standard 635）已跑通并归档到 `version1/`
 - v1 已做过 5 样本 base vs adapter 评估（`reports/qwen_compare_analysis_report.md`），结论是 LoRA 有效但 think 输出全空
 - v2 数据生成升级到 Gemini Pro，**858 条全量 CoT 已完成**并提交，think/output 比值大幅提升
 - v2 数据已转好 ShareGPT 格式、用 `<think>` 标签、注册进 `dataset_info.json`
-- ModelArts 环境搭建脚本就绪、训练配置基本成熟（4-bit QLoRA / rank 8 / target all / cosine LR / 频繁 eval+checkpoint）
+- ModelArts 环境搭建脚本就绪、训练配置基本成熟（rank 8 / target all / cosine LR / 频繁 eval+checkpoint）
+- **NPU 训练栈就绪**：`configs/llamafactory/qwen3_8b_lora_cot_pro858_npu.yaml`（去 bitsandbytes 改 bf16 LoRA，`flash_attn: auto`），`docker/Dockerfile` + `apply_npu_fa_patch.sh` 基于 SZAIC `cann8.2rc1-torch2.6.0-py3.10` 公共基础镜像，构建时把昇腾 FA patch 注入 pip 装好的 llamafactory；配套 `scripts/build_medicalner_qwen3_npu_image.sh` / `scripts/run_medicalner_qwen3_pro858_npu.sh` / `scripts/submit_medicalner_qwen3_pro858_npu.sh`
 
 **未完成 / 阻塞中：**
 - Gemini Pro structure 抽取还在跑，被每日配额卡在 449/858（不影响 CoT 训练，是另一条数据线）
-- v2 的训练配置和入口脚本还指向 v1 文件名，**直接跑训练会失败**（详见下一节）
-- v2 还没训过，更没评估过
+- CUDA 侧 v2 配置和入口脚本仍指向 v1 文件名，**直接跑 `bash scripts/03_train_lora.sh specific` 会失败**（NPU 侧已绕开，走 `_npu` 专用一套）
+- NPU 镜像还没在 `szaic-hpc-debug-0003` 实际构建/push；v2 还没训过，更没评估过
+
+### NPU 训练入口速查
+
+构建镜像（在 `szaic-hpc-debug-0003`，会自动从 `/aistor/sjtu/hpc_stor01/public/ascend_patch/` 拷 FA patch）：
+
+```bash
+bash scripts/build_medicalner_qwen3_npu_image.sh --push
+# 产物：hub.szaic.com/sjtu/sjtu_wumengyue-medicalner-qwen3:v1.0
+```
+
+提交训练任务（默认 1 NPU / 20 CPU / 120G）：
+
+```bash
+bash scripts/submit_medicalner_qwen3_pro858_npu.sh
+# 想 4 NPU：NPU=4 CPU=80 MEM=480G bash scripts/submit_medicalner_qwen3_pro858_npu.sh
+# NPU>1 时脚本自动把 FORCE_TORCHRUN=1 传进容器，让 LLaMA-Factory 走多卡 torchrun
+```
+
+调试机直接进容器手动跑（不经 vc）：
+
+```bash
+docker run -dit --name medicalner-debug --ipc=host --net=host \
+    -e ASCEND_VISIBLE_DEVICES=0 \
+    hub.szaic.com/sjtu/sjtu_wumengyue-medicalner-qwen3:v1.0 sleep infinity
+docker exec -it ai_wangxiran_medicalner-debug bash
+# 容器内：
+bash /aistor/sjtu/hpc_stor01/home/wangxiran/projects/MedicalNER-Qwen3/scripts/run_medicalner_qwen3_pro858_npu.sh
+```
 
 ---
 

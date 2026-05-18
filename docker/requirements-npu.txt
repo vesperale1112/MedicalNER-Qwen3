@@ -1,0 +1,14 @@
+# NPU 安全的 pip 依赖。
+# - 不要写 torch / torchvision / torch_npu / apex / MindSpeed，基础镜像已经装好且与 CANN 匹配
+# - 不要写 bitsandbytes，CUDA 专用，NPU 上无法工作；训练改走全精度 bf16 LoRA
+# - 不要写 flash-attn / flash_attn，CUDA 专用；NPU 用 apply_npu_fa_patch.sh 钩 SDPA
+python-dotenv
+transformers>=4.52.0,<5.0.0
+datasets>=2.16.0,<4.0.0
+accelerate>=0.26.0,<2.0.0
+peft>=0.7.0,<1.0.0
+scipy
+tiktoken
+einops
+protobuf
+llamafactory[metrics]==0.9.3
