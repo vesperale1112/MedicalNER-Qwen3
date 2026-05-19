@@ -1,0 +1,1376 @@
+{
+  "metadata": {
+    "input": "data/generated/16384cutoff/inputs/over_cutoff_structure_chunks.json",
+    "mode": "structure",
+    "model": "gemini-3.1-pro-preview",
+    "offset": 0,
+    "requested_samples": 6,
+    "max_output_tokens": 65535,
+    "records": 6,
+    "failures": 0,
+    "generation_diagnostics": [
+      {
+        "source_id": "http://id.who.int/icd/release/11/2025-01/mms/1456478153",
+        "code": "6A60",
+        "prompt_chars": 38453,
+        "finish_reason": "STOP",
+        "prompt_token_count": 17317,
+        "candidates_token_count": 3502,
+        "total_token_count": 23491,
+        "thoughts_token_count": 2672
+      },
+      {
+        "source_id": "http://id.who.int/icd/release/11/2025-01/mms/1456478153",
+        "code": "6A60",
+        "prompt_chars": 38416,
+        "finish_reason": "STOP",
+        "prompt_token_count": 17289,
+        "candidates_token_count": 3510,
+        "total_token_count": 23403,
+        "thoughts_token_count": 2604
+      },
+      {
+        "source_id": "http://id.who.int/icd/release/11/2025-01/mms/1456478153",
+        "code": "6A60",
+        "prompt_chars": 38754,
+        "finish_reason": "STOP",
+        "prompt_token_count": 17349,
+        "candidates_token_count": 3509,
+        "total_token_count": 24201,
+        "thoughts_token_count": 3343
+      },
+      {
+        "source_id": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+        "code": "6A61",
+        "prompt_chars": 26709,
+        "finish_reason": "STOP",
+        "prompt_token_count": 11665,
+        "candidates_token_count": 2172,
+        "total_token_count": 16720,
+        "thoughts_token_count": 2883
+      },
+      {
+        "source_id": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+        "code": "6A61",
+        "prompt_chars": 26610,
+        "finish_reason": "STOP",
+        "prompt_token_count": 11605,
+        "candidates_token_count": 3258,
+        "total_token_count": 17046,
+        "thoughts_token_count": 2183
+      },
+      {
+        "source_id": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+        "code": "6A61",
+        "prompt_chars": 26941,
+        "finish_reason": "STOP",
+        "prompt_token_count": 11709,
+        "candidates_token_count": 2178,
+        "total_token_count": 16020,
+        "thoughts_token_count": 2133
+      }
+    ],
+    "bipolar_i_lean_regenerated_from": "pro_structure_bipolar_i_lean_chunks_gemini31pro.json"
+  },
+  "records": [
+    {
+      "source_id": "http://id.who.int/icd/release/11/2025-01/mms/1456478153",
+      "code": "6A60",
+      "title": "Bipolar type I disorder",
+      "entities": [
+        {
+          "id": "D_MAIN",
+          "label": "Disease",
+          "name": "Bipolar type I disorder",
+          "properties": {
+            "DSM-5 Code": "6A60"
+          }
+        },
+        {
+          "id": "D_EX1",
+          "label": "Disease",
+          "name": "Cyclothymia",
+          "properties": {}
+        },
+        {
+          "id": "D_EX2",
+          "label": "Disease",
+          "name": "Bipolar type II disorder",
+          "properties": {}
+        },
+        {
+          "id": "D_C0",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode manic, without psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.0"
+          }
+        },
+        {
+          "id": "D_C1",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode manic, with psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.1"
+          }
+        },
+        {
+          "id": "D_C2",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode hypomanic",
+          "properties": {
+            "DSM-5 Code": "6A60.2"
+          }
+        },
+        {
+          "id": "D_C3",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode depressive, mild",
+          "properties": {
+            "DSM-5 Code": "6A60.3"
+          }
+        },
+        {
+          "id": "D_C4",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.4"
+          }
+        },
+        {
+          "id": "D_C5",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.5"
+          }
+        },
+        {
+          "id": "D_C6",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode depressive, severe without psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.6"
+          }
+        },
+        {
+          "id": "D_C7",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode depressive, severe with psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.7"
+          }
+        },
+        {
+          "id": "D_C8",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode depressive, unspecified severity",
+          "properties": {
+            "DSM-5 Code": "6A60.8"
+          }
+        },
+        {
+          "id": "D_C9",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode mixed, without psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.9"
+          }
+        },
+        {
+          "id": "D_CA",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode mixed, with psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.A"
+          }
+        },
+        {
+          "id": "D_CB",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, currently in partial remission, most recent episode manic or hypomanic",
+          "properties": {
+            "DSM-5 Code": "6A60.B"
+          }
+        },
+        {
+          "id": "D_CC",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, currently in partial remission, most recent episode depressive",
+          "properties": {
+            "DSM-5 Code": "6A60.C"
+          }
+        },
+        {
+          "id": "D_CD",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, currently in partial remission, most recent episode mixed",
+          "properties": {
+            "DSM-5 Code": "6A60.D"
+          }
+        },
+        {
+          "id": "D_CE",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, currently in partial remission, most recent episode unspecified",
+          "properties": {
+            "DSM-5 Code": "6A60.E"
+          }
+        },
+        {
+          "id": "D_CF",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, currently in full remission",
+          "properties": {
+            "DSM-5 Code": "6A60.F"
+          }
+        },
+        {
+          "id": "D_CY",
+          "label": "Disease",
+          "name": "Other specified bipolar type I disorder",
+          "properties": {
+            "DSM-5 Code": "6A60.Y"
+          }
+        },
+        {
+          "id": "D_CZ",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, unspecified",
+          "properties": {
+            "DSM-5 Code": "6A60.Z"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "source": "D_MAIN",
+          "target": "D_EX1",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Differentiates From",
+          "relation": "differentiates_from",
+          "evidence": "exclusions: Cyclothymia"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_EX2",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Differentiates From",
+          "relation": "differentiates_from",
+          "evidence": "exclusions: Bipolar type II disorder"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_C0",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, current episode manic, without psychotic symptoms"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_C1",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, current episode manic, with psychotic symptoms"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_C2",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, current episode hypomanic"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_C3",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, current episode depressive, mild"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_C4",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_C5",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_C6",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, current episode depressive, severe without psychotic symptoms"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_C7",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, current episode depressive, severe with psychotic symptoms"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_C8",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, current episode depressive, unspecified severity"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_C9",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, current episode mixed, without psychotic symptoms"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_CA",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, current episode mixed, with psychotic symptoms"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_CB",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, currently in partial remission, most recent episode manic or hypomanic"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_CC",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, currently in partial remission, most recent episode depressive"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_CD",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, currently in partial remission, most recent episode mixed"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_CE",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, currently in partial remission, most recent episode unspecified"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_CF",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, currently in full remission"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_CY",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Other specified bipolar type I disorder"
+        },
+        {
+          "source": "D_MAIN",
+          "target": "D_CZ",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved: Bipolar type I disorder, unspecified"
+        }
+      ]
+    },
+    {
+      "source_id": "http://id.who.int/icd/release/11/2025-01/mms/1456478153",
+      "code": "6A60",
+      "title": "Bipolar type I disorder",
+      "entities": [
+        {
+          "id": "D1",
+          "label": "Disease",
+          "name": "Bipolar type I disorder",
+          "properties": {
+            "DSM-5 Code": "6A60"
+          }
+        },
+        {
+          "id": "D2",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode manic, without psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.0"
+          }
+        },
+        {
+          "id": "D3",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode manic, with psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.1"
+          }
+        },
+        {
+          "id": "D4",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode hypomanic",
+          "properties": {
+            "DSM-5 Code": "6A60.2"
+          }
+        },
+        {
+          "id": "D5",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode depressive, mild",
+          "properties": {
+            "DSM-5 Code": "6A60.3"
+          }
+        },
+        {
+          "id": "D6",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.4"
+          }
+        },
+        {
+          "id": "D7",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.5"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "source": "D1",
+          "target": "D2",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains 6A60.0 Bipolar type I disorder, current episode manic, without psychotic symptoms"
+        },
+        {
+          "source": "D1",
+          "target": "D3",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains 6A60.1 Bipolar type I disorder, current episode manic, with psychotic symptoms"
+        },
+        {
+          "source": "D1",
+          "target": "D4",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains 6A60.2 Bipolar type I disorder, current episode hypomanic"
+        },
+        {
+          "source": "D1",
+          "target": "D5",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains 6A60.3 Bipolar type I disorder, current episode depressive, mild"
+        },
+        {
+          "source": "D1",
+          "target": "D6",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains 6A60.4 Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms"
+        },
+        {
+          "source": "D1",
+          "target": "D7",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains 6A60.5 Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms"
+        }
+      ]
+    },
+    {
+      "source_id": "http://id.who.int/icd/release/11/2025-01/mms/1456478153",
+      "code": "6A60",
+      "title": "Bipolar type I disorder",
+      "entities": [
+        {
+          "id": "D1",
+          "label": "Disease",
+          "name": "Bipolar type I disorder",
+          "properties": {
+            "DSM-5 Code": "6A60"
+          }
+        },
+        {
+          "id": "D2",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode depressive, severe without psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.6"
+          }
+        },
+        {
+          "id": "D3",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode depressive, severe with psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.7"
+          }
+        },
+        {
+          "id": "D4",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode depressive, unspecified severity",
+          "properties": {
+            "DSM-5 Code": "6A60.8"
+          }
+        },
+        {
+          "id": "D5",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode mixed, without psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.9"
+          }
+        },
+        {
+          "id": "D6",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, current episode mixed, with psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A60.A"
+          }
+        },
+        {
+          "id": "D7",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, currently in partial remission, most recent episode manic or hypomanic",
+          "properties": {
+            "DSM-5 Code": "6A60.B"
+          }
+        },
+        {
+          "id": "D8",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, currently in partial remission, most recent episode depressive",
+          "properties": {
+            "DSM-5 Code": "6A60.C"
+          }
+        },
+        {
+          "id": "D9",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, currently in partial remission, most recent episode mixed",
+          "properties": {
+            "DSM-5 Code": "6A60.D"
+          }
+        },
+        {
+          "id": "D10",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, currently in partial remission, most recent episode unspecified",
+          "properties": {
+            "DSM-5 Code": "6A60.E"
+          }
+        },
+        {
+          "id": "D11",
+          "label": "Disease",
+          "name": "Bipolar type I disorder, currently in full remission",
+          "properties": {
+            "DSM-5 Code": "6A60.F"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "source": "D1",
+          "target": "D2",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains Bipolar type I disorder, current episode depressive, severe without psychotic symptoms"
+        },
+        {
+          "source": "D1",
+          "target": "D3",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains Bipolar type I disorder, current episode depressive, severe with psychotic symptoms"
+        },
+        {
+          "source": "D1",
+          "target": "D4",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains Bipolar type I disorder, current episode depressive, unspecified severity"
+        },
+        {
+          "source": "D1",
+          "target": "D5",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains Bipolar type I disorder, current episode mixed, without psychotic symptoms"
+        },
+        {
+          "source": "D1",
+          "target": "D6",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains Bipolar type I disorder, current episode mixed, with psychotic symptoms"
+        },
+        {
+          "source": "D1",
+          "target": "D7",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains Bipolar type I disorder, currently in partial remission, most recent episode manic or hypomanic"
+        },
+        {
+          "source": "D1",
+          "target": "D8",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains Bipolar type I disorder, currently in partial remission, most recent episode depressive"
+        },
+        {
+          "source": "D1",
+          "target": "D9",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains Bipolar type I disorder, currently in partial remission, most recent episode mixed"
+        },
+        {
+          "source": "D1",
+          "target": "D10",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains Bipolar type I disorder, currently in partial remission, most recent episode unspecified"
+        },
+        {
+          "source": "D1",
+          "target": "D11",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "descendantResolved contains Bipolar type I disorder, currently in full remission"
+        }
+      ]
+    },
+    {
+      "source_id": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+      "code": "6A61",
+      "title": "Bipolar type II disorder",
+      "entities": [
+        {
+          "id": "199053300",
+          "label": "Disease",
+          "name": "Bipolar type II disorder",
+          "properties": {
+            "DSM-5 Code": "6A61"
+          }
+        },
+        {
+          "id": "729639831",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode hypomanic",
+          "properties": {
+            "DSM-5 Code": "6A61.0"
+          }
+        },
+        {
+          "id": "485378793",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, mild",
+          "properties": {
+            "DSM-5 Code": "6A61.1"
+          }
+        },
+        {
+          "id": "590587802",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A61.2"
+          }
+        },
+        {
+          "id": "678752877",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, moderate with psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A61.3"
+          }
+        },
+        {
+          "id": "183967754",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, severe without psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A61.4"
+          }
+        },
+        {
+          "id": "349321697",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A61.5"
+          }
+        },
+        {
+          "id": "51767575",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, unspecified severity",
+          "properties": {
+            "DSM-5 Code": "6A61.6"
+          }
+        },
+        {
+          "id": "520107262",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, currently in partial remission, most recent episode hypomanic",
+          "properties": {
+            "DSM-5 Code": "6A61.7"
+          }
+        },
+        {
+          "id": "2003493658",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, currently in partial remission, most recent episode depressive",
+          "properties": {
+            "DSM-5 Code": "6A61.8"
+          }
+        },
+        {
+          "id": "2021041320",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, currently in partial remission, most recent episode unspecified",
+          "properties": {
+            "DSM-5 Code": "6A61.9"
+          }
+        },
+        {
+          "id": "948425503",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, currently in full remission",
+          "properties": {
+            "DSM-5 Code": "6A61.A"
+          }
+        },
+        {
+          "id": "199053300_other",
+          "label": "Disease",
+          "name": "Other specified bipolar type II disorder",
+          "properties": {
+            "DSM-5 Code": "6A61.Y"
+          }
+        },
+        {
+          "id": "199053300_unspecified",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, unspecified",
+          "properties": {
+            "DSM-5 Code": "6A61.Z"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "source": "199053300",
+          "target": "729639831",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "485378793",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "590587802",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "678752877",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "183967754",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "349321697",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "51767575",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "520107262",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "2003493658",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "2021041320",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "948425503",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "199053300_other",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "199053300_unspecified",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        }
+      ]
+    },
+    {
+      "source_id": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+      "code": "6A61",
+      "title": "Bipolar type II disorder",
+      "entities": [
+        {
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+          "label": "Disease",
+          "name": "Bipolar type II disorder",
+          "properties": {
+            "DSM-5 Code": "6A61"
+          }
+        },
+        {
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/729639831",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode hypomanic",
+          "properties": {
+            "DSM-5 Code": "6A61.0"
+          }
+        },
+        {
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/485378793",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, mild",
+          "properties": {
+            "DSM-5 Code": "6A61.1"
+          }
+        },
+        {
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/590587802",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A61.2"
+          }
+        },
+        {
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/678752877",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, moderate with psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A61.3"
+          }
+        },
+        {
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/183967754",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, severe without psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A61.4"
+          }
+        },
+        {
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/349321697",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A61.5"
+          }
+        },
+        {
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/51767575",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, unspecified severity",
+          "properties": {
+            "DSM-5 Code": "6A61.6"
+          }
+        },
+        {
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/520107262",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, currently in partial remission, most recent episode hypomanic",
+          "properties": {
+            "DSM-5 Code": "6A61.7"
+          }
+        },
+        {
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/2003493658",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, currently in partial remission, most recent episode depressive",
+          "properties": {
+            "DSM-5 Code": "6A61.8"
+          }
+        },
+        {
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/2021041320",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, currently in partial remission, most recent episode unspecified",
+          "properties": {
+            "DSM-5 Code": "6A61.9"
+          }
+        },
+        {
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/948425503",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, currently in full remission",
+          "properties": {
+            "DSM-5 Code": "6A61.A"
+          }
+        },
+        {
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/199053300/other",
+          "label": "Disease",
+          "name": "Other specified bipolar type II disorder",
+          "properties": {
+            "DSM-5 Code": "6A61.Y"
+          }
+        },
+        {
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/199053300/unspecified",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, unspecified",
+          "properties": {
+            "DSM-5 Code": "6A61.Z"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "source": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+          "target": "http://id.who.int/icd/release/11/2025-01/mms/729639831",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+          "target": "http://id.who.int/icd/release/11/2025-01/mms/485378793",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+          "target": "http://id.who.int/icd/release/11/2025-01/mms/590587802",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+          "target": "http://id.who.int/icd/release/11/2025-01/mms/678752877",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+          "target": "http://id.who.int/icd/release/11/2025-01/mms/183967754",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+          "target": "http://id.who.int/icd/release/11/2025-01/mms/349321697",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+          "target": "http://id.who.int/icd/release/11/2025-01/mms/51767575",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+          "target": "http://id.who.int/icd/release/11/2025-01/mms/520107262",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+          "target": "http://id.who.int/icd/release/11/2025-01/mms/2003493658",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+          "target": "http://id.who.int/icd/release/11/2025-01/mms/2021041320",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+          "target": "http://id.who.int/icd/release/11/2025-01/mms/948425503",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+          "target": "http://id.who.int/icd/release/11/2025-01/mms/199053300/other",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+          "target": "http://id.who.int/icd/release/11/2025-01/mms/199053300/unspecified",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        }
+      ]
+    },
+    {
+      "source_id": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+      "code": "6A61",
+      "title": "Bipolar type II disorder",
+      "entities": [
+        {
+          "id": "199053300",
+          "label": "Disease",
+          "name": "Bipolar type II disorder",
+          "properties": {
+            "DSM-5 Code": "6A61"
+          }
+        },
+        {
+          "id": "729639831",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode hypomanic",
+          "properties": {
+            "DSM-5 Code": "6A61.0"
+          }
+        },
+        {
+          "id": "485378793",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, mild",
+          "properties": {
+            "DSM-5 Code": "6A61.1"
+          }
+        },
+        {
+          "id": "590587802",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A61.2"
+          }
+        },
+        {
+          "id": "678752877",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, moderate with psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A61.3"
+          }
+        },
+        {
+          "id": "183967754",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, severe without psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A61.4"
+          }
+        },
+        {
+          "id": "349321697",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms",
+          "properties": {
+            "DSM-5 Code": "6A61.5"
+          }
+        },
+        {
+          "id": "51767575",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, current episode depressive, unspecified severity",
+          "properties": {
+            "DSM-5 Code": "6A61.6"
+          }
+        },
+        {
+          "id": "520107262",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, currently in partial remission, most recent episode hypomanic",
+          "properties": {
+            "DSM-5 Code": "6A61.7"
+          }
+        },
+        {
+          "id": "2003493658",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, currently in partial remission, most recent episode depressive",
+          "properties": {
+            "DSM-5 Code": "6A61.8"
+          }
+        },
+        {
+          "id": "2021041320",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, currently in partial remission, most recent episode unspecified",
+          "properties": {
+            "DSM-5 Code": "6A61.9"
+          }
+        },
+        {
+          "id": "948425503",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, currently in full remission",
+          "properties": {
+            "DSM-5 Code": "6A61.A"
+          }
+        },
+        {
+          "id": "199053300_other",
+          "label": "Disease",
+          "name": "Other specified bipolar type II disorder",
+          "properties": {
+            "DSM-5 Code": "6A61.Y"
+          }
+        },
+        {
+          "id": "199053300_unspecified",
+          "label": "Disease",
+          "name": "Bipolar type II disorder, unspecified",
+          "properties": {
+            "DSM-5 Code": "6A61.Z"
+          }
+        }
+      ],
+      "relations": [
+        {
+          "source": "199053300",
+          "target": "729639831",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "485378793",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "590587802",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "678752877",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "183967754",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "349321697",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "51767575",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "520107262",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "2003493658",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "2021041320",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "948425503",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "199053300_other",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        },
+        {
+          "source": "199053300",
+          "target": "199053300_unspecified",
+          "relation_type": "Disease Hierarchy",
+          "relation_name": "Subsumes",
+          "relation": "subsumes",
+          "evidence": "childResolved"
+        }
+      ]
+    }
+  ],
+  "failures": []
+}

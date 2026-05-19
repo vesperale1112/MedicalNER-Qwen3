@@ -1,0 +1,4441 @@
+{
+  "metadata": {
+    "split_for": "16384cutoff",
+    "model_requested": "gemini-3.1-pro",
+    "model_used": "gemini-3.1-pro-preview",
+    "original_indices": [
+      111,
+      130
+    ],
+    "records": 6,
+    "bipolar_i_lean_resplit": "Removed raw descendant URL list; kept immediate hierarchy in part 1 and resolved descendant subsets in parts 2-3."
+  },
+  "entities": [
+    {
+      "id": "http://id.who.int/icd/release/11/2025-01/mms/1456478153",
+      "code": "6A60",
+      "title": "Bipolar type I disorder (structure chunk 1/3: immediate hierarchy)",
+      "parent": [
+        "http://id.who.int/icd/release/11/2025-01/mms/613065957"
+      ],
+      "child": [
+        "http://id.who.int/icd/release/11/2025-01/mms/374726152",
+        "http://id.who.int/icd/release/11/2025-01/mms/1660456695",
+        "http://id.who.int/icd/release/11/2025-01/mms/1931350942",
+        "http://id.who.int/icd/release/11/2025-01/mms/129188707",
+        "http://id.who.int/icd/release/11/2025-01/mms/306271588",
+        "http://id.who.int/icd/release/11/2025-01/mms/818054919",
+        "http://id.who.int/icd/release/11/2025-01/mms/1952305399",
+        "http://id.who.int/icd/release/11/2025-01/mms/286661987",
+        "http://id.who.int/icd/release/11/2025-01/mms/1061132490",
+        "http://id.who.int/icd/release/11/2025-01/mms/1706773916",
+        "http://id.who.int/icd/release/11/2025-01/mms/167688690",
+        "http://id.who.int/icd/release/11/2025-01/mms/575545179",
+        "http://id.who.int/icd/release/11/2025-01/mms/937141021",
+        "http://id.who.int/icd/release/11/2025-01/mms/139575301",
+        "http://id.who.int/icd/release/11/2025-01/mms/811854024",
+        "http://id.who.int/icd/release/11/2025-01/mms/15761418",
+        "http://id.who.int/icd/release/11/2025-01/mms/1456478153/other",
+        "http://id.who.int/icd/release/11/2025-01/mms/1456478153/unspecified"
+      ],
+      "classKind": "category",
+      "blockId": "",
+      "synonyms": [
+        {
+          "label": "manic depression NOS",
+          "deprecated": false
+        },
+        {
+          "label": "manic-depressive illness",
+          "deprecated": false
+        },
+        {
+          "label": "Bipolar disorder NOS",
+          "deprecated": false
+        }
+      ],
+      "ancestor": [
+        "http://id.who.int/icd/entity/613065957",
+        "http://id.who.int/icd/entity/76398729",
+        "http://id.who.int/icd/entity/334423054",
+        "http://id.who.int/icd/entity/455013390",
+        "http://id.who.int/icd/entity/448895267"
+      ],
+      "inclusions": [],
+      "exclusions": [
+        {
+          "label": "Cyclothymia",
+          "foundationReference": "http://id.who.int/icd/entity/1427638883"
+        },
+        {
+          "label": "Bipolar type II disorder",
+          "foundationReference": "http://id.who.int/icd/entity/199053300"
+        }
+      ],
+      "indexTerms": [],
+      "browserUrl": "https://icd.who.int/browse/2025-01/mms/en#1456478153",
+      "excel_metadata": {
+        "code": "6A60",
+        "title": "- - - Bipolar type I disorder",
+        "foundation_uri": "http://id.who.int/icd/entity/1456478153",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1456478153",
+        "chapter_no": "06",
+        "class_kind": "category",
+        "browser_link": null
+      },
+      "source_id": "http://id.who.int/icd/release/11/2025-01/mms/1456478153",
+      "parentResolved": [
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/613065957",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/613065957",
+          "code": "",
+          "title": ""
+        }
+      ],
+      "childResolved": [
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/374726152",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/374726152",
+          "code": "6A60.0",
+          "title": "Bipolar type I disorder, current episode manic, without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/1660456695",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/1660456695",
+          "code": "6A60.1",
+          "title": "Bipolar type I disorder, current episode manic, with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/1931350942",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/1931350942",
+          "code": "6A60.2",
+          "title": "Bipolar type I disorder, current episode hypomanic",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/129188707",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/129188707",
+          "code": "6A60.3",
+          "title": "Bipolar type I disorder, current episode depressive, mild",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/306271588",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/306271588",
+          "code": "6A60.4",
+          "title": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/818054919",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/818054919",
+          "code": "6A60.5",
+          "title": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/1952305399",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/1952305399",
+          "code": "6A60.6",
+          "title": "Bipolar type I disorder, current episode depressive, severe without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/286661987",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/286661987",
+          "code": "6A60.7",
+          "title": "Bipolar type I disorder, current episode depressive, severe with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/1061132490",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/1061132490",
+          "code": "6A60.8",
+          "title": "Bipolar type I disorder, current episode depressive, unspecified severity",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/1706773916",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/1706773916",
+          "code": "6A60.9",
+          "title": "Bipolar type I disorder, current episode mixed, without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/167688690",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/167688690",
+          "code": "6A60.A",
+          "title": "Bipolar type I disorder, current episode mixed, with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/575545179",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/575545179",
+          "code": "6A60.B",
+          "title": "Bipolar type I disorder, currently in partial remission, most recent episode manic or hypomanic",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/937141021",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/937141021",
+          "code": "6A60.C",
+          "title": "Bipolar type I disorder, currently in partial remission, most recent episode depressive",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/139575301",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/139575301",
+          "code": "6A60.D",
+          "title": "Bipolar type I disorder, currently in partial remission, most recent episode mixed",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/811854024",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/811854024",
+          "code": "6A60.E",
+          "title": "Bipolar type I disorder, currently in partial remission, most recent episode unspecified",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/15761418",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/15761418",
+          "code": "6A60.F",
+          "title": "Bipolar type I disorder, currently in full remission",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/1456478153/other",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/1456478153/other",
+          "code": "6A60.Y",
+          "title": "Other specified bipolar type I disorder",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/1456478153/unspecified",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/1456478153/unspecified",
+          "code": "6A60.Z",
+          "title": "Bipolar type I disorder, unspecified",
+          "classKind": "category"
+        }
+      ],
+      "ancestorResolved": [
+        {
+          "reference": "http://id.who.int/icd/entity/613065957",
+          "id": "http://id.who.int/icd/entity/613065957",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/76398729",
+          "id": "http://id.who.int/icd/entity/76398729",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/334423054",
+          "id": "http://id.who.int/icd/entity/334423054",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/455013390",
+          "id": "http://id.who.int/icd/entity/455013390",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/448895267",
+          "id": "http://id.who.int/icd/entity/448895267",
+          "code": "",
+          "title": ""
+        }
+      ],
+      "descendant": [],
+      "descendantResolved": [],
+      "chunk_part": 1,
+      "chunk_count": 3,
+      "original_index": 111,
+      "split_reason": "Original LLaMA-Factory sample exceeded cutoff_len=16384; immediate hierarchy and descendantResolved fields were split into shorter generation chunks."
+    },
+    {
+      "id": "http://id.who.int/icd/release/11/2025-01/mms/1456478153",
+      "code": "6A60",
+      "title": "Bipolar type I disorder (structure chunk 2/3: descendants)",
+      "parent": [
+        "http://id.who.int/icd/release/11/2025-01/mms/613065957"
+      ],
+      "classKind": "category",
+      "blockId": "",
+      "ancestor": [
+        "http://id.who.int/icd/entity/613065957",
+        "http://id.who.int/icd/entity/76398729",
+        "http://id.who.int/icd/entity/334423054",
+        "http://id.who.int/icd/entity/455013390",
+        "http://id.who.int/icd/entity/448895267"
+      ],
+      "inclusions": [],
+      "indexTerms": [],
+      "browserUrl": "https://icd.who.int/browse/2025-01/mms/en#1456478153",
+      "excel_metadata": {
+        "code": "6A60",
+        "title": "- - - Bipolar type I disorder",
+        "foundation_uri": "http://id.who.int/icd/entity/1456478153",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1456478153",
+        "chapter_no": "06",
+        "class_kind": "category",
+        "browser_link": null
+      },
+      "source_id": "http://id.who.int/icd/release/11/2025-01/mms/1456478153",
+      "parentResolved": [
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/613065957",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/613065957",
+          "code": "",
+          "title": ""
+        }
+      ],
+      "ancestorResolved": [
+        {
+          "reference": "http://id.who.int/icd/entity/613065957",
+          "id": "http://id.who.int/icd/entity/613065957",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/76398729",
+          "id": "http://id.who.int/icd/entity/76398729",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/334423054",
+          "id": "http://id.who.int/icd/entity/334423054",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/455013390",
+          "id": "http://id.who.int/icd/entity/455013390",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/448895267",
+          "id": "http://id.who.int/icd/entity/448895267",
+          "code": "",
+          "title": ""
+        }
+      ],
+      "child": [],
+      "childResolved": [],
+      "descendant": [],
+      "descendantResolved": [
+        {
+          "reference": "http://id.who.int/icd/entity/374726152",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/374726152",
+          "code": "6A60.0",
+          "title": "Bipolar type I disorder, current episode manic, without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/675443184",
+          "id": "http://id.who.int/icd/entity/675443184",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/948496474",
+          "id": "http://id.who.int/icd/entity/948496474",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/415047706",
+          "id": "http://id.who.int/icd/entity/415047706",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1190578425",
+          "id": "http://id.who.int/icd/entity/1190578425",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2014374577",
+          "id": "http://id.who.int/icd/entity/2014374577",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/488065474",
+          "id": "http://id.who.int/icd/entity/488065474",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/232640628",
+          "id": "http://id.who.int/icd/entity/232640628",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1912802299",
+          "id": "http://id.who.int/icd/entity/1912802299",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1126099393",
+          "id": "http://id.who.int/icd/entity/1126099393",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1296421533",
+          "id": "http://id.who.int/icd/entity/1296421533",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/849021204",
+          "id": "http://id.who.int/icd/entity/849021204",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1292343933",
+          "id": "http://id.who.int/icd/entity/1292343933",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/379857444",
+          "id": "http://id.who.int/icd/entity/379857444",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/948474334",
+          "id": "http://id.who.int/icd/entity/948474334",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/425716304",
+          "id": "http://id.who.int/icd/entity/425716304",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1446783179",
+          "id": "http://id.who.int/icd/entity/1446783179",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/915530336",
+          "id": "http://id.who.int/icd/entity/915530336",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1451122731",
+          "id": "http://id.who.int/icd/entity/1451122731",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1361161264",
+          "id": "http://id.who.int/icd/entity/1361161264",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1875349112",
+          "id": "http://id.who.int/icd/entity/1875349112",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/254282803",
+          "id": "http://id.who.int/icd/entity/254282803",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1597562766",
+          "id": "http://id.who.int/icd/entity/1597562766",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/551945219",
+          "id": "http://id.who.int/icd/entity/551945219",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2125327586",
+          "id": "http://id.who.int/icd/entity/2125327586",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/190885793",
+          "id": "http://id.who.int/icd/entity/190885793",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1958638640",
+          "id": "http://id.who.int/icd/entity/1958638640",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1685384602",
+          "id": "http://id.who.int/icd/entity/1685384602",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1145120218",
+          "id": "http://id.who.int/icd/entity/1145120218",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/436915513",
+          "id": "http://id.who.int/icd/entity/436915513",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/619507569",
+          "id": "http://id.who.int/icd/entity/619507569",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/118190504",
+          "id": "http://id.who.int/icd/entity/118190504",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/398583838",
+          "id": "http://id.who.int/icd/entity/398583838",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1660456695",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/1660456695",
+          "code": "6A60.1",
+          "title": "Bipolar type I disorder, current episode manic, with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1746875281",
+          "id": "http://id.who.int/icd/entity/1746875281",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1493356971",
+          "id": "http://id.who.int/icd/entity/1493356971",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1465510647",
+          "id": "http://id.who.int/icd/entity/1465510647",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/679948666",
+          "id": "http://id.who.int/icd/entity/679948666",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1461428759",
+          "id": "http://id.who.int/icd/entity/1461428759",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/36467824",
+          "id": "http://id.who.int/icd/entity/36467824",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/738250638",
+          "id": "http://id.who.int/icd/entity/738250638",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/232240132",
+          "id": "http://id.who.int/icd/entity/232240132",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1119123097",
+          "id": "http://id.who.int/icd/entity/1119123097",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/572111924",
+          "id": "http://id.who.int/icd/entity/572111924",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1123434105",
+          "id": "http://id.who.int/icd/entity/1123434105",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1218965079",
+          "id": "http://id.who.int/icd/entity/1218965079",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1984023583",
+          "id": "http://id.who.int/icd/entity/1984023583",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/380522068",
+          "id": "http://id.who.int/icd/entity/380522068",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1186897387",
+          "id": "http://id.who.int/icd/entity/1186897387",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/962610788",
+          "id": "http://id.who.int/icd/entity/962610788",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1730915975",
+          "id": "http://id.who.int/icd/entity/1730915975",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/535359987",
+          "id": "http://id.who.int/icd/entity/535359987",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1614162556",
+          "id": "http://id.who.int/icd/entity/1614162556",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1895609290",
+          "id": "http://id.who.int/icd/entity/1895609290",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1355381642",
+          "id": "http://id.who.int/icd/entity/1355381642",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/243438443",
+          "id": "http://id.who.int/icd/entity/243438443",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/811905315",
+          "id": "http://id.who.int/icd/entity/811905315",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/76614565",
+          "id": "http://id.who.int/icd/entity/76614565",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/341545491",
+          "id": "http://id.who.int/icd/entity/341545491",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1803897246",
+          "id": "http://id.who.int/icd/entity/1803897246",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1519954854",
+          "id": "http://id.who.int/icd/entity/1519954854",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1422102778",
+          "id": "http://id.who.int/icd/entity/1422102778",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/723340149",
+          "id": "http://id.who.int/icd/entity/723340149",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1417795612",
+          "id": "http://id.who.int/icd/entity/1417795612",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/405818394",
+          "id": "http://id.who.int/icd/entity/405818394",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1931350942",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/1931350942",
+          "code": "6A60.2",
+          "title": "Bipolar type I disorder, current episode hypomanic",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/907868132",
+          "id": "http://id.who.int/icd/entity/907868132",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/399215722",
+          "id": "http://id.who.int/icd/entity/399215722",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1487425267",
+          "id": "http://id.who.int/icd/entity/1487425267",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/939885658",
+          "id": "http://id.who.int/icd/entity/939885658",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1491731987",
+          "id": "http://id.who.int/icd/entity/1491731987",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/359695650",
+          "id": "http://id.who.int/icd/entity/359695650",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/731293546",
+          "id": "http://id.who.int/icd/entity/731293546",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1266230563",
+          "id": "http://id.who.int/icd/entity/1266230563",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/459929244",
+          "id": "http://id.who.int/icd/entity/459929244",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1689726227",
+          "id": "http://id.who.int/icd/entity/1689726227",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/989644272",
+          "id": "http://id.who.int/icd/entity/989644272",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1328645809",
+          "id": "http://id.who.int/icd/entity/1328645809",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/820993342",
+          "id": "http://id.who.int/icd/entity/820993342",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/539346056",
+          "id": "http://id.who.int/icd/entity/539346056",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1051852",
+          "id": "http://id.who.int/icd/entity/1051852",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1583080489",
+          "id": "http://id.who.int/icd/entity/1583080489",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1623049825",
+          "id": "http://id.who.int/icd/entity/1623049825",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1497784532",
+          "id": "http://id.who.int/icd/entity/1497784532",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1233975654",
+          "id": "http://id.who.int/icd/entity/1233975654",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/911352555",
+          "id": "http://id.who.int/icd/entity/911352555",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/122667217",
+          "id": "http://id.who.int/icd/entity/122667217",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/152370061",
+          "id": "http://id.who.int/icd/entity/152370061",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1992957954",
+          "id": "http://id.who.int/icd/entity/1992957954",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/156676973",
+          "id": "http://id.who.int/icd/entity/156676973",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1391788850",
+          "id": "http://id.who.int/icd/entity/1391788850",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2094643404",
+          "id": "http://id.who.int/icd/entity/2094643404",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1561248578",
+          "id": "http://id.who.int/icd/entity/1561248578",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/309133787",
+          "id": "http://id.who.int/icd/entity/309133787",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1925237618",
+          "id": "http://id.who.int/icd/entity/1925237618",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/305088827",
+          "id": "http://id.who.int/icd/entity/305088827",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/258784588",
+          "id": "http://id.who.int/icd/entity/258784588",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/831168260",
+          "id": "http://id.who.int/icd/entity/831168260",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/129188707",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/129188707",
+          "code": "6A60.3",
+          "title": "Bipolar type I disorder, current episode depressive, mild",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1365581129",
+          "id": "http://id.who.int/icd/entity/1365581129",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/24497910",
+          "id": "http://id.who.int/icd/entity/24497910",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2125141369",
+          "id": "http://id.who.int/icd/entity/2125141369",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/551615898",
+          "id": "http://id.who.int/icd/entity/551615898",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/309769450",
+          "id": "http://id.who.int/icd/entity/309769450",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1839755109",
+          "id": "http://id.who.int/icd/entity/1839755109",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2103637715",
+          "id": "http://id.who.int/icd/entity/2103637715",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1565998737",
+          "id": "http://id.who.int/icd/entity/1565998737",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/52221556",
+          "id": "http://id.who.int/icd/entity/52221556",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1039856700",
+          "id": "http://id.who.int/icd/entity/1039856700",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/151998142",
+          "id": "http://id.who.int/icd/entity/151998142",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/432396044",
+          "id": "http://id.who.int/icd/entity/432396044",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1713048709",
+          "id": "http://id.who.int/icd/entity/1713048709",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1460072127",
+          "id": "http://id.who.int/icd/entity/1460072127",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1499321827",
+          "id": "http://id.who.int/icd/entity/1499321827",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/646123116",
+          "id": "http://id.who.int/icd/entity/646123116",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1495244035",
+          "id": "http://id.who.int/icd/entity/1495244035",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/263336297",
+          "id": "http://id.who.int/icd/entity/263336297",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/564038295",
+          "id": "http://id.who.int/icd/entity/564038295",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/4845851",
+          "id": "http://id.who.int/icd/entity/4845851",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1328165762",
+          "id": "http://id.who.int/icd/entity/1328165762",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/797440299",
+          "id": "http://id.who.int/icd/entity/797440299",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1332247392",
+          "id": "http://id.who.int/icd/entity/1332247392",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1161407312",
+          "id": "http://id.who.int/icd/entity/1161407312",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2078247176",
+          "id": "http://id.who.int/icd/entity/2078247176",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/456133453",
+          "id": "http://id.who.int/icd/entity/456133453",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1260443890",
+          "id": "http://id.who.int/icd/entity/1260443890",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/889062269",
+          "id": "http://id.who.int/icd/entity/889062269",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1790307230",
+          "id": "http://id.who.int/icd/entity/1790307230",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/141200512",
+          "id": "http://id.who.int/icd/entity/141200512",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2008307471",
+          "id": "http://id.who.int/icd/entity/2008307471",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/306271588",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/306271588",
+          "code": "6A60.4",
+          "title": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1736363705",
+          "id": "http://id.who.int/icd/entity/1736363705",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1196099323",
+          "id": "http://id.who.int/icd/entity/1196099323",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/419491354",
+          "id": "http://id.who.int/icd/entity/419491354",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/669437010",
+          "id": "http://id.who.int/icd/entity/669437010",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1423451595",
+          "id": "http://id.who.int/icd/entity/1423451595",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1142078589",
+          "id": "http://id.who.int/icd/entity/1142078589",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1003251700",
+          "id": "http://id.who.int/icd/entity/1003251700",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/181503432",
+          "id": "http://id.who.int/icd/entity/181503432",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/76201620",
+          "id": "http://id.who.int/icd/entity/76201620",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2069128475",
+          "id": "http://id.who.int/icd/entity/2069128475",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/80279158",
+          "id": "http://id.who.int/icd/entity/80279158",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1600865835",
+          "id": "http://id.who.int/icd/entity/1600865835",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1900543445",
+          "id": "http://id.who.int/icd/entity/1900543445",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1351648857",
+          "id": "http://id.who.int/icd/entity/1351648857",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/536036548",
+          "id": "http://id.who.int/icd/entity/536036548",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2136903273",
+          "id": "http://id.who.int/icd/entity/2136903273",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/531696674",
+          "id": "http://id.who.int/icd/entity/531696674",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/418299961",
+          "id": "http://id.who.int/icd/entity/418299961",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/638116465",
+          "id": "http://id.who.int/icd/entity/638116465",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1189568570",
+          "id": "http://id.who.int/icd/entity/1189568570",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/385332101",
+          "id": "http://id.who.int/icd/entity/385332101",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1764321290",
+          "id": "http://id.who.int/icd/entity/1764321290",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/929202409",
+          "id": "http://id.who.int/icd/entity/929202409",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1118815144",
+          "id": "http://id.who.int/icd/entity/1118815144",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1030821927",
+          "id": "http://id.who.int/icd/entity/1030821927",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/767263121",
+          "id": "http://id.who.int/icd/entity/767263121",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/227428819",
+          "id": "http://id.who.int/icd/entity/227428819",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1405460786",
+          "id": "http://id.who.int/icd/entity/1405460786",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1831043962",
+          "id": "http://id.who.int/icd/entity/1831043962",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1321475489",
+          "id": "http://id.who.int/icd/entity/1321475489",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1578009623",
+          "id": "http://id.who.int/icd/entity/1578009623",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/567304090",
+          "id": "http://id.who.int/icd/entity/567304090",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/818054919",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/818054919",
+          "code": "6A60.5",
+          "title": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/281918882",
+          "id": "http://id.who.int/icd/entity/281918882",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/513181438",
+          "id": "http://id.who.int/icd/entity/513181438",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1632132465",
+          "id": "http://id.who.int/icd/entity/1632132465",
+          "code": "",
+          "title": ""
+        }
+      ],
+      "synonyms": [],
+      "exclusions": [],
+      "chunk_part": 2,
+      "chunk_count": 3,
+      "original_index": 111,
+      "split_reason": "Original LLaMA-Factory sample exceeded cutoff_len=16384; immediate hierarchy and descendantResolved fields were split into shorter generation chunks."
+    },
+    {
+      "id": "http://id.who.int/icd/release/11/2025-01/mms/1456478153",
+      "code": "6A60",
+      "title": "Bipolar type I disorder (structure chunk 3/3: descendants)",
+      "parent": [
+        "http://id.who.int/icd/release/11/2025-01/mms/613065957"
+      ],
+      "classKind": "category",
+      "blockId": "",
+      "ancestor": [
+        "http://id.who.int/icd/entity/613065957",
+        "http://id.who.int/icd/entity/76398729",
+        "http://id.who.int/icd/entity/334423054",
+        "http://id.who.int/icd/entity/455013390",
+        "http://id.who.int/icd/entity/448895267"
+      ],
+      "inclusions": [],
+      "indexTerms": [],
+      "browserUrl": "https://icd.who.int/browse/2025-01/mms/en#1456478153",
+      "excel_metadata": {
+        "code": "6A60",
+        "title": "- - - Bipolar type I disorder",
+        "foundation_uri": "http://id.who.int/icd/entity/1456478153",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/1456478153",
+        "chapter_no": "06",
+        "class_kind": "category",
+        "browser_link": null
+      },
+      "source_id": "http://id.who.int/icd/release/11/2025-01/mms/1456478153",
+      "parentResolved": [
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/613065957",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/613065957",
+          "code": "",
+          "title": ""
+        }
+      ],
+      "ancestorResolved": [
+        {
+          "reference": "http://id.who.int/icd/entity/613065957",
+          "id": "http://id.who.int/icd/entity/613065957",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/76398729",
+          "id": "http://id.who.int/icd/entity/76398729",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/334423054",
+          "id": "http://id.who.int/icd/entity/334423054",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/455013390",
+          "id": "http://id.who.int/icd/entity/455013390",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/448895267",
+          "id": "http://id.who.int/icd/entity/448895267",
+          "code": "",
+          "title": ""
+        }
+      ],
+      "child": [],
+      "childResolved": [],
+      "descendant": [],
+      "descendantResolved": [
+        {
+          "reference": "http://id.who.int/icd/entity/517262880",
+          "id": "http://id.who.int/icd/entity/517262880",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1273174137",
+          "id": "http://id.who.int/icd/entity/1273174137",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1708106631",
+          "id": "http://id.who.int/icd/entity/1708106631",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1142478859",
+          "id": "http://id.who.int/icd/entity/1142478859",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/192617104",
+          "id": "http://id.who.int/icd/entity/192617104",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1809240123",
+          "id": "http://id.who.int/icd/entity/1809240123",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/188306034",
+          "id": "http://id.who.int/icd/entity/188306034",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/23626334",
+          "id": "http://id.who.int/icd/entity/23626334",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1066311702",
+          "id": "http://id.who.int/icd/entity/1066311702",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1600201309",
+          "id": "http://id.who.int/icd/entity/1600201309",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/259125732",
+          "id": "http://id.who.int/icd/entity/259125732",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1890527853",
+          "id": "http://id.who.int/icd/entity/1890527853",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/786743952",
+          "id": "http://id.who.int/icd/entity/786743952",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1445436924",
+          "id": "http://id.who.int/icd/entity/1445436924",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/704202357",
+          "id": "http://id.who.int/icd/entity/704202357",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/959700931",
+          "id": "http://id.who.int/icd/entity/959700931",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/419829633",
+          "id": "http://id.who.int/icd/entity/419829633",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1196293986",
+          "id": "http://id.who.int/icd/entity/1196293986",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2041306410",
+          "id": "http://id.who.int/icd/entity/2041306410",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1298032556",
+          "id": "http://id.who.int/icd/entity/1298032556",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1570045466",
+          "id": "http://id.who.int/icd/entity/1570045466",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/575284629",
+          "id": "http://id.who.int/icd/entity/575284629",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/324519855",
+          "id": "http://id.who.int/icd/entity/324519855",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/487390451",
+          "id": "http://id.who.int/icd/entity/487390451",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1657939838",
+          "id": "http://id.who.int/icd/entity/1657939838",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/491697171",
+          "id": "http://id.who.int/icd/entity/491697171",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1375674387",
+          "id": "http://id.who.int/icd/entity/1375674387",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2144574445",
+          "id": "http://id.who.int/icd/entity/2144574445",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1577377889",
+          "id": "http://id.who.int/icd/entity/1577377889",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1952305399",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/1952305399",
+          "code": "6A60.6",
+          "title": "Bipolar type I disorder, current episode depressive, severe without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/291971834",
+          "id": "http://id.who.int/icd/entity/291971834",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1909123153",
+          "id": "http://id.who.int/icd/entity/1909123153",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/287664668",
+          "id": "http://id.who.int/icd/entity/287664668",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1556080937",
+          "id": "http://id.who.int/icd/entity/1556080937",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1650051937",
+          "id": "http://id.who.int/icd/entity/1650051937",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/45500716",
+          "id": "http://id.who.int/icd/entity/45500716",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1386650261",
+          "id": "http://id.who.int/icd/entity/1386650261",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/762855708",
+          "id": "http://id.who.int/icd/entity/762855708",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1932765689",
+          "id": "http://id.who.int/icd/entity/1932765689",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/117369530",
+          "id": "http://id.who.int/icd/entity/117369530",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2032152887",
+          "id": "http://id.who.int/icd/entity/2032152887",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1776986241",
+          "id": "http://id.who.int/icd/entity/1776986241",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1239376067",
+          "id": "http://id.who.int/icd/entity/1239376067",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/395610144",
+          "id": "http://id.who.int/icd/entity/395610144",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/695380584",
+          "id": "http://id.who.int/icd/entity/695380584",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/277417179",
+          "id": "http://id.who.int/icd/entity/277417179",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/4429165",
+          "id": "http://id.who.int/icd/entity/4429165",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2141015778",
+          "id": "http://id.who.int/icd/entity/2141015778",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1317055706",
+          "id": "http://id.who.int/icd/entity/1317055706",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1088132998",
+          "id": "http://id.who.int/icd/entity/1088132998",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1057311755",
+          "id": "http://id.who.int/icd/entity/1057311755",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1083826020",
+          "id": "http://id.who.int/icd/entity/1083826020",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/456814395",
+          "id": "http://id.who.int/icd/entity/456814395",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/890688709",
+          "id": "http://id.who.int/icd/entity/890688709",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/348237641",
+          "id": "http://id.who.int/icd/entity/348237641",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1537371602",
+          "id": "http://id.who.int/icd/entity/1537371602",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/990881657",
+          "id": "http://id.who.int/icd/entity/990881657",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1541416244",
+          "id": "http://id.who.int/icd/entity/1541416244",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1185141059",
+          "id": "http://id.who.int/icd/entity/1185141059",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2017850123",
+          "id": "http://id.who.int/icd/entity/2017850123",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/413823298",
+          "id": "http://id.who.int/icd/entity/413823298",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1220190975",
+          "id": "http://id.who.int/icd/entity/1220190975",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/286661987",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/286661987",
+          "code": "6A60.7",
+          "title": "Bipolar type I disorder, current episode depressive, severe with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/929331570",
+          "id": "http://id.who.int/icd/entity/929331570",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1764725139",
+          "id": "http://id.who.int/icd/entity/1764725139",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/324404914",
+          "id": "http://id.who.int/icd/entity/324404914",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1820908861",
+          "id": "http://id.who.int/icd/entity/1820908861",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2084717707",
+          "id": "http://id.who.int/icd/entity/2084717707",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1551338697",
+          "id": "http://id.who.int/icd/entity/1551338697",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/37512236",
+          "id": "http://id.who.int/icd/entity/37512236",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1020937828",
+          "id": "http://id.who.int/icd/entity/1020937828",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/137362662",
+          "id": "http://id.who.int/icd/entity/137362662",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/417686868",
+          "id": "http://id.who.int/icd/entity/417686868",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1731968733",
+          "id": "http://id.who.int/icd/entity/1731968733",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1445354727",
+          "id": "http://id.who.int/icd/entity/1445354727",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1484613563",
+          "id": "http://id.who.int/icd/entity/1484613563",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/665041972",
+          "id": "http://id.who.int/icd/entity/665041972",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1480535899",
+          "id": "http://id.who.int/icd/entity/1480535899",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/244482865",
+          "id": "http://id.who.int/icd/entity/244482865",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/549337295",
+          "id": "http://id.who.int/icd/entity/549337295",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/23675715",
+          "id": "http://id.who.int/icd/entity/23675715",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1309311450",
+          "id": "http://id.who.int/icd/entity/1309311450",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/782715763",
+          "id": "http://id.who.int/icd/entity/782715763",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1313392952",
+          "id": "http://id.who.int/icd/entity/1313392952",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1142495512",
+          "id": "http://id.who.int/icd/entity/1142495512",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2063547232",
+          "id": "http://id.who.int/icd/entity/2063547232",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/437303573",
+          "id": "http://id.who.int/icd/entity/437303573",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1241541290",
+          "id": "http://id.who.int/icd/entity/1241541290",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/903786789",
+          "id": "http://id.who.int/icd/entity/903786789",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1804949958",
+          "id": "http://id.who.int/icd/entity/1804949958",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/155860696",
+          "id": "http://id.who.int/icd/entity/155860696",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1989469527",
+          "id": "http://id.who.int/icd/entity/1989469527",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1717468385",
+          "id": "http://id.who.int/icd/entity/1717468385",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1181463715",
+          "id": "http://id.who.int/icd/entity/1181463715",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/404773954",
+          "id": "http://id.who.int/icd/entity/404773954",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1061132490",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/1061132490",
+          "code": "6A60.8",
+          "title": "Bipolar type I disorder, current episode depressive, unspecified severity",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1706773916",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/1706773916",
+          "code": "6A60.9",
+          "title": "Bipolar type I disorder, current episode mixed, without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/650542602",
+          "id": "http://id.who.int/icd/entity/650542602",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1442355091",
+          "id": "http://id.who.int/icd/entity/1442355091",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1160908325",
+          "id": "http://id.who.int/icd/entity/1160908325",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/988599724",
+          "id": "http://id.who.int/icd/entity/988599724",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/200357776",
+          "id": "http://id.who.int/icd/entity/200357776",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/95030476",
+          "id": "http://id.who.int/icd/entity/95030476",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2054477635",
+          "id": "http://id.who.int/icd/entity/2054477635",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/99107886",
+          "id": "http://id.who.int/icd/entity/99107886",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1582036083",
+          "id": "http://id.who.int/icd/entity/1582036083",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1885818765",
+          "id": "http://id.who.int/icd/entity/1885818765",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1370502145",
+          "id": "http://id.who.int/icd/entity/1370502145",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/517207708",
+          "id": "http://id.who.int/icd/entity/517207708",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2122202161",
+          "id": "http://id.who.int/icd/entity/2122202161",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/512867962",
+          "id": "http://id.who.int/icd/entity/512867962",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/432960097",
+          "id": "http://id.who.int/icd/entity/432960097",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/656953385",
+          "id": "http://id.who.int/icd/entity/656953385",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1204277858",
+          "id": "http://id.who.int/icd/entity/1204277858",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/399966685",
+          "id": "http://id.who.int/icd/entity/399966685",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1745476178",
+          "id": "http://id.who.int/icd/entity/1745476178",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/910308017",
+          "id": "http://id.who.int/icd/entity/910308017",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1133474288",
+          "id": "http://id.who.int/icd/entity/1133474288",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1011985023",
+          "id": "http://id.who.int/icd/entity/1011985023",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/748368841",
+          "id": "http://id.who.int/icd/entity/748368841",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/212794251",
+          "id": "http://id.who.int/icd/entity/212794251",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1390744426",
+          "id": "http://id.who.int/icd/entity/1390744426",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1812148514",
+          "id": "http://id.who.int/icd/entity/1812148514",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1340387321",
+          "id": "http://id.who.int/icd/entity/1340387321",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1596864079",
+          "id": "http://id.who.int/icd/entity/1596864079",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/552660418",
+          "id": "http://id.who.int/icd/entity/552660418",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/300748794",
+          "id": "http://id.who.int/icd/entity/300748794",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/532034726",
+          "id": "http://id.who.int/icd/entity/532034726",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1617489705",
+          "id": "http://id.who.int/icd/entity/1617489705",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/167688690",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/167688690",
+          "code": "6A60.A",
+          "title": "Bipolar type I disorder, current episode mixed, with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/536116296",
+          "id": "http://id.who.int/icd/entity/536116296",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1197688555",
+          "id": "http://id.who.int/icd/entity/1197688555",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1766849813",
+          "id": "http://id.who.int/icd/entity/1766849813",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1217955481",
+          "id": "http://id.who.int/icd/entity/1217955481",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/133907458",
+          "id": "http://id.who.int/icd/entity/133907458",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1733725865",
+          "id": "http://id.who.int/icd/entity/1733725865",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/129567972",
+          "id": "http://id.who.int/icd/entity/129567972",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/233364684",
+          "id": "http://id.who.int/icd/entity/233364684",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/856620676",
+          "id": "http://id.who.int/icd/entity/856620676",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1407286479",
+          "id": "http://id.who.int/icd/entity/1407286479",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/66170738",
+          "id": "http://id.who.int/icd/entity/66170738",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2083484927",
+          "id": "http://id.who.int/icd/entity/2083484927",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/577018910",
+          "id": "http://id.who.int/icd/entity/577018910",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1520943978",
+          "id": "http://id.who.int/icd/entity/1520943978",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/628693223",
+          "id": "http://id.who.int/icd/entity/628693223",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/900956497",
+          "id": "http://id.who.int/icd/entity/900956497",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/361122067",
+          "id": "http://id.who.int/icd/entity/361122067",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1271767536",
+          "id": "http://id.who.int/icd/entity/1271767536",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1965786040",
+          "id": "http://id.who.int/icd/entity/1965786040",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1105082686",
+          "id": "http://id.who.int/icd/entity/1105082686",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1360306312",
+          "id": "http://id.who.int/icd/entity/1360306312",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/785021703",
+          "id": "http://id.who.int/icd/entity/785021703",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/534223165",
+          "id": "http://id.who.int/icd/entity/534223165",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/294429281",
+          "id": "http://id.who.int/icd/entity/294429281",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1850898928",
+          "id": "http://id.who.int/icd/entity/1850898928",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/298773121",
+          "id": "http://id.who.int/icd/entity/298773121",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1568636545",
+          "id": "http://id.who.int/icd/entity/1568636545",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1934869887",
+          "id": "http://id.who.int/icd/entity/1934869887",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1384431347",
+          "id": "http://id.who.int/icd/entity/1384431347",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/501709928",
+          "id": "http://id.who.int/icd/entity/501709928",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2102048451",
+          "id": "http://id.who.int/icd/entity/2102048451",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/497366154",
+          "id": "http://id.who.int/icd/entity/497366154",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/575545179",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/575545179",
+          "code": "6A60.B",
+          "title": "Bipolar type I disorder, currently in partial remission, most recent episode manic or hypomanic",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/937141021",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/937141021",
+          "code": "6A60.C",
+          "title": "Bipolar type I disorder, currently in partial remission, most recent episode depressive",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/139575301",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/139575301",
+          "code": "6A60.D",
+          "title": "Bipolar type I disorder, currently in partial remission, most recent episode mixed",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/811854024",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/811854024",
+          "code": "6A60.E",
+          "title": "Bipolar type I disorder, currently in partial remission, most recent episode unspecified",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/15761418",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/15761418",
+          "code": "6A60.F",
+          "title": "Bipolar type I disorder, currently in full remission",
+          "classKind": "category"
+        }
+      ],
+      "synonyms": [],
+      "exclusions": [],
+      "chunk_part": 3,
+      "chunk_count": 3,
+      "original_index": 111,
+      "split_reason": "Original LLaMA-Factory sample exceeded cutoff_len=16384; immediate hierarchy and descendantResolved fields were split into shorter generation chunks."
+    },
+    {
+      "id": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+      "code": "6A61",
+      "title": "Bipolar type II disorder (structure chunk 1/3)",
+      "parent": [
+        "http://id.who.int/icd/release/11/2025-01/mms/613065957"
+      ],
+      "child": [
+        "http://id.who.int/icd/release/11/2025-01/mms/729639831",
+        "http://id.who.int/icd/release/11/2025-01/mms/485378793",
+        "http://id.who.int/icd/release/11/2025-01/mms/590587802",
+        "http://id.who.int/icd/release/11/2025-01/mms/678752877",
+        "http://id.who.int/icd/release/11/2025-01/mms/183967754",
+        "http://id.who.int/icd/release/11/2025-01/mms/349321697",
+        "http://id.who.int/icd/release/11/2025-01/mms/51767575",
+        "http://id.who.int/icd/release/11/2025-01/mms/520107262",
+        "http://id.who.int/icd/release/11/2025-01/mms/2003493658",
+        "http://id.who.int/icd/release/11/2025-01/mms/2021041320",
+        "http://id.who.int/icd/release/11/2025-01/mms/948425503",
+        "http://id.who.int/icd/release/11/2025-01/mms/199053300/other",
+        "http://id.who.int/icd/release/11/2025-01/mms/199053300/unspecified"
+      ],
+      "classKind": "category",
+      "blockId": "",
+      "synonyms": [],
+      "ancestor": [
+        "http://id.who.int/icd/entity/613065957",
+        "http://id.who.int/icd/entity/76398729",
+        "http://id.who.int/icd/entity/334423054",
+        "http://id.who.int/icd/entity/455013390",
+        "http://id.who.int/icd/entity/448895267"
+      ],
+      "inclusions": [],
+      "exclusions": [],
+      "indexTerms": [],
+      "browserUrl": "https://icd.who.int/browse/2025-01/mms/en#199053300",
+      "excel_metadata": {
+        "code": "6A61",
+        "title": "- - - Bipolar type II disorder",
+        "foundation_uri": "http://id.who.int/icd/entity/199053300",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/199053300",
+        "chapter_no": "06",
+        "class_kind": "category",
+        "browser_link": null
+      },
+      "source_id": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+      "parentResolved": [
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/613065957",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/613065957",
+          "code": "",
+          "title": ""
+        }
+      ],
+      "childResolved": [
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/729639831",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/729639831",
+          "code": "6A61.0",
+          "title": "Bipolar type II disorder, current episode hypomanic",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/485378793",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/485378793",
+          "code": "6A61.1",
+          "title": "Bipolar type II disorder, current episode depressive, mild",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/590587802",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/590587802",
+          "code": "6A61.2",
+          "title": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/678752877",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/678752877",
+          "code": "6A61.3",
+          "title": "Bipolar type II disorder, current episode depressive, moderate with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/183967754",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/183967754",
+          "code": "6A61.4",
+          "title": "Bipolar type II disorder, current episode depressive, severe without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/349321697",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/349321697",
+          "code": "6A61.5",
+          "title": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/51767575",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/51767575",
+          "code": "6A61.6",
+          "title": "Bipolar type II disorder, current episode depressive, unspecified severity",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/520107262",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/520107262",
+          "code": "6A61.7",
+          "title": "Bipolar type II disorder, currently in partial remission, most recent episode hypomanic",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/2003493658",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/2003493658",
+          "code": "6A61.8",
+          "title": "Bipolar type II disorder, currently in partial remission, most recent episode depressive",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/2021041320",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/2021041320",
+          "code": "6A61.9",
+          "title": "Bipolar type II disorder, currently in partial remission, most recent episode unspecified",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/948425503",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/948425503",
+          "code": "6A61.A",
+          "title": "Bipolar type II disorder, currently in full remission",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/199053300/other",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/199053300/other",
+          "code": "6A61.Y",
+          "title": "Other specified bipolar type II disorder",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/199053300/unspecified",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/199053300/unspecified",
+          "code": "6A61.Z",
+          "title": "Bipolar type II disorder, unspecified",
+          "classKind": "category"
+        }
+      ],
+      "ancestorResolved": [
+        {
+          "reference": "http://id.who.int/icd/entity/613065957",
+          "id": "http://id.who.int/icd/entity/613065957",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/76398729",
+          "id": "http://id.who.int/icd/entity/76398729",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/334423054",
+          "id": "http://id.who.int/icd/entity/334423054",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/455013390",
+          "id": "http://id.who.int/icd/entity/455013390",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/448895267",
+          "id": "http://id.who.int/icd/entity/448895267",
+          "code": "",
+          "title": ""
+        }
+      ],
+      "descendant": [
+        "http://id.who.int/icd/entity/729639831",
+        "http://id.who.int/icd/entity/489432052",
+        "http://id.who.int/icd/entity/1660090491",
+        "http://id.who.int/icd/entity/1408178753",
+        "http://id.who.int/icd/entity/1232360409",
+        "http://id.who.int/icd/entity/917145686",
+        "http://id.who.int/icd/entity/1228282681",
+        "http://id.who.int/icd/entity/106289572",
+        "http://id.who.int/icd/entity/679043678",
+        "http://id.who.int/icd/entity/162404816",
+        "http://id.who.int/icd/entity/1594078652",
+        "http://id.who.int/icd/entity/1068400401",
+        "http://id.who.int/icd/entity/1598160218",
+        "http://id.who.int/icd/entity/1104175024",
+        "http://id.who.int/icd/entity/2134277624",
+        "http://id.who.int/icd/entity/534380467",
+        "http://id.who.int/icd/entity/1527340744",
+        "http://id.who.int/icd/entity/618104135",
+        "http://id.who.int/icd/entity/2057072036",
+        "http://id.who.int/icd/entity/462511137",
+        "http://id.who.int/icd/entity/1682933680",
+        "http://id.who.int/icd/entity/1954881050",
+        "http://id.who.int/icd/entity/1466073281",
+        "http://id.who.int/icd/entity/153708580",
+        "http://id.who.int/icd/entity/936331884",
+        "http://id.who.int/icd/entity/402293288",
+        "http://id.who.int/icd/entity/120593310",
+        "http://id.who.int/icd/entity/2028912657",
+        "http://id.who.int/icd/entity/1240670763",
+        "http://id.who.int/icd/entity/346241198",
+        "http://id.who.int/icd/entity/1803412257",
+        "http://id.who.int/icd/entity/350318672",
+        "http://id.who.int/icd/entity/1535292117",
+        "http://id.who.int/icd/entity/485378793",
+        "http://id.who.int/icd/entity/1974339883",
+        "http://id.who.int/icd/entity/1417245351",
+        "http://id.who.int/icd/entity/265995002",
+        "http://id.who.int/icd/entity/1870071891",
+        "http://id.who.int/icd/entity/261655064",
+        "http://id.who.int/icd/entity/285812978",
+        "http://id.who.int/icd/entity/804195002",
+        "http://id.who.int/icd/entity/1325435121",
+        "http://id.who.int/icd/entity/115226047",
+        "http://id.who.int/icd/entity/2030104112",
+        "http://id.who.int/icd/entity/659228371",
+        "http://id.who.int/icd/entity/1179006808",
+        "http://id.who.int/icd/entity/966323417",
+        "http://id.who.int/icd/entity/693269871",
+        "http://id.who.int/icd/entity/497537001",
+        "http://id.who.int/icd/entity/1139549964",
+        "http://id.who.int/icd/entity/2097808708",
+        "http://id.who.int/icd/entity/1564462336",
+        "http://id.who.int/icd/entity/1307923638",
+        "http://id.who.int/icd/entity/841715513",
+        "http://id.who.int/icd/entity/53898499",
+        "http://id.who.int/icd/entity/247398596",
+        "http://id.who.int/icd/entity/1902238539",
+        "http://id.who.int/icd/entity/251480102",
+        "http://id.who.int/icd/entity/1100909247",
+        "http://id.who.int/icd/entity/1873948993",
+        "http://id.who.int/icd/entity/1315261133",
+        "http://id.who.int/icd/entity/443690738",
+        "http://id.who.int/icd/entity/2061493337",
+        "http://id.who.int/icd/entity/439379476",
+        "http://id.who.int/icd/entity/77710586",
+        "http://id.who.int/icd/entity/977790642",
+        "http://id.who.int/icd/entity/590587802",
+        "http://id.who.int/icd/entity/707448694"
+      ],
+      "descendantResolved": [
+        {
+          "reference": "http://id.who.int/icd/entity/729639831",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/729639831",
+          "code": "6A61.0",
+          "title": "Bipolar type II disorder, current episode hypomanic",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/489432052",
+          "id": "http://id.who.int/icd/entity/489432052",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1660090491",
+          "id": "http://id.who.int/icd/entity/1660090491",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1408178753",
+          "id": "http://id.who.int/icd/entity/1408178753",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1232360409",
+          "id": "http://id.who.int/icd/entity/1232360409",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/917145686",
+          "id": "http://id.who.int/icd/entity/917145686",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1228282681",
+          "id": "http://id.who.int/icd/entity/1228282681",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/106289572",
+          "id": "http://id.who.int/icd/entity/106289572",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/679043678",
+          "id": "http://id.who.int/icd/entity/679043678",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/162404816",
+          "id": "http://id.who.int/icd/entity/162404816",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1594078652",
+          "id": "http://id.who.int/icd/entity/1594078652",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1068400401",
+          "id": "http://id.who.int/icd/entity/1068400401",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1598160218",
+          "id": "http://id.who.int/icd/entity/1598160218",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1104175024",
+          "id": "http://id.who.int/icd/entity/1104175024",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2134277624",
+          "id": "http://id.who.int/icd/entity/2134277624",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/534380467",
+          "id": "http://id.who.int/icd/entity/534380467",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1527340744",
+          "id": "http://id.who.int/icd/entity/1527340744",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/618104135",
+          "id": "http://id.who.int/icd/entity/618104135",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2057072036",
+          "id": "http://id.who.int/icd/entity/2057072036",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/462511137",
+          "id": "http://id.who.int/icd/entity/462511137",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1682933680",
+          "id": "http://id.who.int/icd/entity/1682933680",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1954881050",
+          "id": "http://id.who.int/icd/entity/1954881050",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1466073281",
+          "id": "http://id.who.int/icd/entity/1466073281",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/153708580",
+          "id": "http://id.who.int/icd/entity/153708580",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/936331884",
+          "id": "http://id.who.int/icd/entity/936331884",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/402293288",
+          "id": "http://id.who.int/icd/entity/402293288",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/120593310",
+          "id": "http://id.who.int/icd/entity/120593310",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2028912657",
+          "id": "http://id.who.int/icd/entity/2028912657",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1240670763",
+          "id": "http://id.who.int/icd/entity/1240670763",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/346241198",
+          "id": "http://id.who.int/icd/entity/346241198",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1803412257",
+          "id": "http://id.who.int/icd/entity/1803412257",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/350318672",
+          "id": "http://id.who.int/icd/entity/350318672",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1535292117",
+          "id": "http://id.who.int/icd/entity/1535292117",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/485378793",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/485378793",
+          "code": "6A61.1",
+          "title": "Bipolar type II disorder, current episode depressive, mild",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1974339883",
+          "id": "http://id.who.int/icd/entity/1974339883",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1417245351",
+          "id": "http://id.who.int/icd/entity/1417245351",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/265995002",
+          "id": "http://id.who.int/icd/entity/265995002",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1870071891",
+          "id": "http://id.who.int/icd/entity/1870071891",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/261655064",
+          "id": "http://id.who.int/icd/entity/261655064",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/285812978",
+          "id": "http://id.who.int/icd/entity/285812978",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/804195002",
+          "id": "http://id.who.int/icd/entity/804195002",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1325435121",
+          "id": "http://id.who.int/icd/entity/1325435121",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/115226047",
+          "id": "http://id.who.int/icd/entity/115226047",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2030104112",
+          "id": "http://id.who.int/icd/entity/2030104112",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/659228371",
+          "id": "http://id.who.int/icd/entity/659228371",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1179006808",
+          "id": "http://id.who.int/icd/entity/1179006808",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/966323417",
+          "id": "http://id.who.int/icd/entity/966323417",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/693269871",
+          "id": "http://id.who.int/icd/entity/693269871",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/497537001",
+          "id": "http://id.who.int/icd/entity/497537001",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1139549964",
+          "id": "http://id.who.int/icd/entity/1139549964",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2097808708",
+          "id": "http://id.who.int/icd/entity/2097808708",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1564462336",
+          "id": "http://id.who.int/icd/entity/1564462336",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1307923638",
+          "id": "http://id.who.int/icd/entity/1307923638",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/841715513",
+          "id": "http://id.who.int/icd/entity/841715513",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/53898499",
+          "id": "http://id.who.int/icd/entity/53898499",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/247398596",
+          "id": "http://id.who.int/icd/entity/247398596",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1902238539",
+          "id": "http://id.who.int/icd/entity/1902238539",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/251480102",
+          "id": "http://id.who.int/icd/entity/251480102",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1100909247",
+          "id": "http://id.who.int/icd/entity/1100909247",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1873948993",
+          "id": "http://id.who.int/icd/entity/1873948993",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1315261133",
+          "id": "http://id.who.int/icd/entity/1315261133",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/443690738",
+          "id": "http://id.who.int/icd/entity/443690738",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2061493337",
+          "id": "http://id.who.int/icd/entity/2061493337",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/439379476",
+          "id": "http://id.who.int/icd/entity/439379476",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/77710586",
+          "id": "http://id.who.int/icd/entity/77710586",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/977790642",
+          "id": "http://id.who.int/icd/entity/977790642",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/590587802",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/590587802",
+          "code": "6A61.2",
+          "title": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/707448694",
+          "id": "http://id.who.int/icd/entity/707448694",
+          "code": "",
+          "title": ""
+        }
+      ],
+      "chunk_part": 1,
+      "chunk_count": 3,
+      "original_index": 130,
+      "split_reason": "Original LLaMA-Factory sample exceeded cutoff_len=16384; descendant fields were split into shorter generation chunks."
+    },
+    {
+      "id": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+      "code": "6A61",
+      "title": "Bipolar type II disorder (structure chunk 2/3)",
+      "parent": [
+        "http://id.who.int/icd/release/11/2025-01/mms/613065957"
+      ],
+      "child": [
+        "http://id.who.int/icd/release/11/2025-01/mms/729639831",
+        "http://id.who.int/icd/release/11/2025-01/mms/485378793",
+        "http://id.who.int/icd/release/11/2025-01/mms/590587802",
+        "http://id.who.int/icd/release/11/2025-01/mms/678752877",
+        "http://id.who.int/icd/release/11/2025-01/mms/183967754",
+        "http://id.who.int/icd/release/11/2025-01/mms/349321697",
+        "http://id.who.int/icd/release/11/2025-01/mms/51767575",
+        "http://id.who.int/icd/release/11/2025-01/mms/520107262",
+        "http://id.who.int/icd/release/11/2025-01/mms/2003493658",
+        "http://id.who.int/icd/release/11/2025-01/mms/2021041320",
+        "http://id.who.int/icd/release/11/2025-01/mms/948425503",
+        "http://id.who.int/icd/release/11/2025-01/mms/199053300/other",
+        "http://id.who.int/icd/release/11/2025-01/mms/199053300/unspecified"
+      ],
+      "classKind": "category",
+      "blockId": "",
+      "synonyms": [],
+      "ancestor": [
+        "http://id.who.int/icd/entity/613065957",
+        "http://id.who.int/icd/entity/76398729",
+        "http://id.who.int/icd/entity/334423054",
+        "http://id.who.int/icd/entity/455013390",
+        "http://id.who.int/icd/entity/448895267"
+      ],
+      "inclusions": [],
+      "exclusions": [],
+      "indexTerms": [],
+      "browserUrl": "https://icd.who.int/browse/2025-01/mms/en#199053300",
+      "excel_metadata": {
+        "code": "6A61",
+        "title": "- - - Bipolar type II disorder",
+        "foundation_uri": "http://id.who.int/icd/entity/199053300",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/199053300",
+        "chapter_no": "06",
+        "class_kind": "category",
+        "browser_link": null
+      },
+      "source_id": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+      "parentResolved": [
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/613065957",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/613065957",
+          "code": "",
+          "title": ""
+        }
+      ],
+      "childResolved": [
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/729639831",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/729639831",
+          "code": "6A61.0",
+          "title": "Bipolar type II disorder, current episode hypomanic",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/485378793",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/485378793",
+          "code": "6A61.1",
+          "title": "Bipolar type II disorder, current episode depressive, mild",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/590587802",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/590587802",
+          "code": "6A61.2",
+          "title": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/678752877",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/678752877",
+          "code": "6A61.3",
+          "title": "Bipolar type II disorder, current episode depressive, moderate with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/183967754",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/183967754",
+          "code": "6A61.4",
+          "title": "Bipolar type II disorder, current episode depressive, severe without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/349321697",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/349321697",
+          "code": "6A61.5",
+          "title": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/51767575",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/51767575",
+          "code": "6A61.6",
+          "title": "Bipolar type II disorder, current episode depressive, unspecified severity",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/520107262",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/520107262",
+          "code": "6A61.7",
+          "title": "Bipolar type II disorder, currently in partial remission, most recent episode hypomanic",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/2003493658",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/2003493658",
+          "code": "6A61.8",
+          "title": "Bipolar type II disorder, currently in partial remission, most recent episode depressive",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/2021041320",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/2021041320",
+          "code": "6A61.9",
+          "title": "Bipolar type II disorder, currently in partial remission, most recent episode unspecified",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/948425503",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/948425503",
+          "code": "6A61.A",
+          "title": "Bipolar type II disorder, currently in full remission",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/199053300/other",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/199053300/other",
+          "code": "6A61.Y",
+          "title": "Other specified bipolar type II disorder",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/199053300/unspecified",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/199053300/unspecified",
+          "code": "6A61.Z",
+          "title": "Bipolar type II disorder, unspecified",
+          "classKind": "category"
+        }
+      ],
+      "ancestorResolved": [
+        {
+          "reference": "http://id.who.int/icd/entity/613065957",
+          "id": "http://id.who.int/icd/entity/613065957",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/76398729",
+          "id": "http://id.who.int/icd/entity/76398729",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/334423054",
+          "id": "http://id.who.int/icd/entity/334423054",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/455013390",
+          "id": "http://id.who.int/icd/entity/455013390",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/448895267",
+          "id": "http://id.who.int/icd/entity/448895267",
+          "code": "",
+          "title": ""
+        }
+      ],
+      "descendant": [
+        "http://id.who.int/icd/entity/1543350905",
+        "http://id.who.int/icd/entity/1604699351",
+        "http://id.who.int/icd/entity/2121449307",
+        "http://id.who.int/icd/entity/459647122",
+        "http://id.who.int/icd/entity/1371322219",
+        "http://id.who.int/icd/entity/1953622697",
+        "http://id.who.int/icd/entity/906819899",
+        "http://id.who.int/icd/entity/149609331",
+        "http://id.who.int/icd/entity/757565105",
+        "http://id.who.int/icd/entity/940935815",
+        "http://id.who.int/icd/entity/500750149",
+        "http://id.who.int/icd/entity/427866603",
+        "http://id.who.int/icd/entity/1817049772",
+        "http://id.who.int/icd/entity/1233168232",
+        "http://id.who.int/icd/entity/56211603",
+        "http://id.who.int/icd/entity/1237512074",
+        "http://id.who.int/icd/entity/2099746866",
+        "http://id.who.int/icd/entity/1136769658",
+        "http://id.who.int/icd/entity/156953953",
+        "http://id.who.int/icd/entity/1894563093",
+        "http://id.who.int/icd/entity/625390540",
+        "http://id.who.int/icd/entity/1043301538",
+        "http://id.who.int/icd/entity/812957694",
+        "http://id.who.int/icd/entity/1709093155",
+        "http://id.who.int/icd/entity/808908572",
+        "http://id.who.int/icd/entity/103465230",
+        "http://id.who.int/icd/entity/41070498",
+        "http://id.who.int/icd/entity/598070316",
+        "http://id.who.int/icd/entity/1186120679",
+        "http://id.who.int/icd/entity/208395292",
+        "http://id.who.int/icd/entity/698778080",
+        "http://id.who.int/icd/entity/678752877",
+        "http://id.who.int/icd/entity/891750371",
+        "http://id.who.int/icd/entity/197207467",
+        "http://id.who.int/icd/entity/1798219746",
+        "http://id.who.int/icd/entity/993948767",
+        "http://id.who.int/icd/entity/1155575762",
+        "http://id.who.int/icd/entity/447432499",
+        "http://id.who.int/icd/entity/1868956788",
+        "http://id.who.int/icd/entity/280551421",
+        "http://id.who.int/icd/entity/7489099",
+        "http://id.who.int/icd/entity/541560329",
+        "http://id.who.int/icd/entity/2114741994",
+        "http://id.who.int/icd/entity/1089094818",
+        "http://id.who.int/icd/entity/1661852283",
+        "http://id.who.int/icd/entity/1942438861",
+        "http://id.who.int/icd/entity/203003970",
+        "http://id.who.int/icd/entity/1023703674",
+        "http://id.who.int/icd/entity/861880614",
+        "http://id.who.int/icd/entity/1283562155",
+        "http://id.who.int/icd/entity/857541060",
+        "http://id.who.int/icd/entity/1918465504",
+        "http://id.who.int/icd/entity/1551224350",
+        "http://id.who.int/icd/entity/2107815316",
+        "http://id.who.int/icd/entity/851539721",
+        "http://id.who.int/icd/entity/1382858148",
+        "http://id.who.int/icd/entity/847462377",
+        "http://id.who.int/icd/entity/953348039",
+        "http://id.who.int/icd/entity/104123791",
+        "http://id.who.int/icd/entity/1725648836",
+        "http://id.who.int/icd/entity/919313531",
+        "http://id.who.int/icd/entity/1226131444",
+        "http://id.who.int/icd/entity/392081175",
+        "http://id.who.int/icd/entity/1872621667",
+        "http://id.who.int/icd/entity/183967754",
+        "http://id.who.int/icd/entity/272837612",
+        "http://id.who.int/icd/entity/9024090",
+        "http://id.who.int/icd/entity/549222938"
+      ],
+      "descendantResolved": [
+        {
+          "reference": "http://id.who.int/icd/entity/1543350905",
+          "id": "http://id.who.int/icd/entity/1543350905",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1604699351",
+          "id": "http://id.who.int/icd/entity/1604699351",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2121449307",
+          "id": "http://id.who.int/icd/entity/2121449307",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/459647122",
+          "id": "http://id.who.int/icd/entity/459647122",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1371322219",
+          "id": "http://id.who.int/icd/entity/1371322219",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1953622697",
+          "id": "http://id.who.int/icd/entity/1953622697",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/906819899",
+          "id": "http://id.who.int/icd/entity/906819899",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/149609331",
+          "id": "http://id.who.int/icd/entity/149609331",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/757565105",
+          "id": "http://id.who.int/icd/entity/757565105",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/940935815",
+          "id": "http://id.who.int/icd/entity/940935815",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/500750149",
+          "id": "http://id.who.int/icd/entity/500750149",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/427866603",
+          "id": "http://id.who.int/icd/entity/427866603",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1817049772",
+          "id": "http://id.who.int/icd/entity/1817049772",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1233168232",
+          "id": "http://id.who.int/icd/entity/1233168232",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/56211603",
+          "id": "http://id.who.int/icd/entity/56211603",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1237512074",
+          "id": "http://id.who.int/icd/entity/1237512074",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2099746866",
+          "id": "http://id.who.int/icd/entity/2099746866",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1136769658",
+          "id": "http://id.who.int/icd/entity/1136769658",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/156953953",
+          "id": "http://id.who.int/icd/entity/156953953",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1894563093",
+          "id": "http://id.who.int/icd/entity/1894563093",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/625390540",
+          "id": "http://id.who.int/icd/entity/625390540",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1043301538",
+          "id": "http://id.who.int/icd/entity/1043301538",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/812957694",
+          "id": "http://id.who.int/icd/entity/812957694",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1709093155",
+          "id": "http://id.who.int/icd/entity/1709093155",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/808908572",
+          "id": "http://id.who.int/icd/entity/808908572",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/103465230",
+          "id": "http://id.who.int/icd/entity/103465230",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/41070498",
+          "id": "http://id.who.int/icd/entity/41070498",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/598070316",
+          "id": "http://id.who.int/icd/entity/598070316",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1186120679",
+          "id": "http://id.who.int/icd/entity/1186120679",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/208395292",
+          "id": "http://id.who.int/icd/entity/208395292",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/698778080",
+          "id": "http://id.who.int/icd/entity/698778080",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/678752877",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/678752877",
+          "code": "6A61.3",
+          "title": "Bipolar type II disorder, current episode depressive, moderate with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/891750371",
+          "id": "http://id.who.int/icd/entity/891750371",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/197207467",
+          "id": "http://id.who.int/icd/entity/197207467",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1798219746",
+          "id": "http://id.who.int/icd/entity/1798219746",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/993948767",
+          "id": "http://id.who.int/icd/entity/993948767",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1155575762",
+          "id": "http://id.who.int/icd/entity/1155575762",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/447432499",
+          "id": "http://id.who.int/icd/entity/447432499",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1868956788",
+          "id": "http://id.who.int/icd/entity/1868956788",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/280551421",
+          "id": "http://id.who.int/icd/entity/280551421",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/7489099",
+          "id": "http://id.who.int/icd/entity/7489099",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/541560329",
+          "id": "http://id.who.int/icd/entity/541560329",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2114741994",
+          "id": "http://id.who.int/icd/entity/2114741994",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1089094818",
+          "id": "http://id.who.int/icd/entity/1089094818",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1661852283",
+          "id": "http://id.who.int/icd/entity/1661852283",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1942438861",
+          "id": "http://id.who.int/icd/entity/1942438861",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/203003970",
+          "id": "http://id.who.int/icd/entity/203003970",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1023703674",
+          "id": "http://id.who.int/icd/entity/1023703674",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/861880614",
+          "id": "http://id.who.int/icd/entity/861880614",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1283562155",
+          "id": "http://id.who.int/icd/entity/1283562155",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/857541060",
+          "id": "http://id.who.int/icd/entity/857541060",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1918465504",
+          "id": "http://id.who.int/icd/entity/1918465504",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1551224350",
+          "id": "http://id.who.int/icd/entity/1551224350",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2107815316",
+          "id": "http://id.who.int/icd/entity/2107815316",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/851539721",
+          "id": "http://id.who.int/icd/entity/851539721",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1382858148",
+          "id": "http://id.who.int/icd/entity/1382858148",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/847462377",
+          "id": "http://id.who.int/icd/entity/847462377",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/953348039",
+          "id": "http://id.who.int/icd/entity/953348039",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/104123791",
+          "id": "http://id.who.int/icd/entity/104123791",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1725648836",
+          "id": "http://id.who.int/icd/entity/1725648836",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/919313531",
+          "id": "http://id.who.int/icd/entity/919313531",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1226131444",
+          "id": "http://id.who.int/icd/entity/1226131444",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/392081175",
+          "id": "http://id.who.int/icd/entity/392081175",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1872621667",
+          "id": "http://id.who.int/icd/entity/1872621667",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/183967754",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/183967754",
+          "code": "6A61.4",
+          "title": "Bipolar type II disorder, current episode depressive, severe without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/272837612",
+          "id": "http://id.who.int/icd/entity/272837612",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/9024090",
+          "id": "http://id.who.int/icd/entity/9024090",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/549222938",
+          "id": "http://id.who.int/icd/entity/549222938",
+          "code": "",
+          "title": ""
+        }
+      ],
+      "chunk_part": 2,
+      "chunk_count": 3,
+      "original_index": 130,
+      "split_reason": "Original LLaMA-Factory sample exceeded cutoff_len=16384; descendant fields were split into shorter generation chunks."
+    },
+    {
+      "id": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+      "code": "6A61",
+      "title": "Bipolar type II disorder (structure chunk 3/3)",
+      "parent": [
+        "http://id.who.int/icd/release/11/2025-01/mms/613065957"
+      ],
+      "child": [
+        "http://id.who.int/icd/release/11/2025-01/mms/729639831",
+        "http://id.who.int/icd/release/11/2025-01/mms/485378793",
+        "http://id.who.int/icd/release/11/2025-01/mms/590587802",
+        "http://id.who.int/icd/release/11/2025-01/mms/678752877",
+        "http://id.who.int/icd/release/11/2025-01/mms/183967754",
+        "http://id.who.int/icd/release/11/2025-01/mms/349321697",
+        "http://id.who.int/icd/release/11/2025-01/mms/51767575",
+        "http://id.who.int/icd/release/11/2025-01/mms/520107262",
+        "http://id.who.int/icd/release/11/2025-01/mms/2003493658",
+        "http://id.who.int/icd/release/11/2025-01/mms/2021041320",
+        "http://id.who.int/icd/release/11/2025-01/mms/948425503",
+        "http://id.who.int/icd/release/11/2025-01/mms/199053300/other",
+        "http://id.who.int/icd/release/11/2025-01/mms/199053300/unspecified"
+      ],
+      "classKind": "category",
+      "blockId": "",
+      "synonyms": [],
+      "ancestor": [
+        "http://id.who.int/icd/entity/613065957",
+        "http://id.who.int/icd/entity/76398729",
+        "http://id.who.int/icd/entity/334423054",
+        "http://id.who.int/icd/entity/455013390",
+        "http://id.who.int/icd/entity/448895267"
+      ],
+      "inclusions": [],
+      "exclusions": [],
+      "indexTerms": [],
+      "browserUrl": "https://icd.who.int/browse/2025-01/mms/en#199053300",
+      "excel_metadata": {
+        "code": "6A61",
+        "title": "- - - Bipolar type II disorder",
+        "foundation_uri": "http://id.who.int/icd/entity/199053300",
+        "linearization_uri": "http://id.who.int/icd/release/11/mms/199053300",
+        "chapter_no": "06",
+        "class_kind": "category",
+        "browser_link": null
+      },
+      "source_id": "http://id.who.int/icd/release/11/2025-01/mms/199053300",
+      "parentResolved": [
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/613065957",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/613065957",
+          "code": "",
+          "title": ""
+        }
+      ],
+      "childResolved": [
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/729639831",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/729639831",
+          "code": "6A61.0",
+          "title": "Bipolar type II disorder, current episode hypomanic",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/485378793",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/485378793",
+          "code": "6A61.1",
+          "title": "Bipolar type II disorder, current episode depressive, mild",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/590587802",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/590587802",
+          "code": "6A61.2",
+          "title": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/678752877",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/678752877",
+          "code": "6A61.3",
+          "title": "Bipolar type II disorder, current episode depressive, moderate with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/183967754",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/183967754",
+          "code": "6A61.4",
+          "title": "Bipolar type II disorder, current episode depressive, severe without psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/349321697",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/349321697",
+          "code": "6A61.5",
+          "title": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/51767575",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/51767575",
+          "code": "6A61.6",
+          "title": "Bipolar type II disorder, current episode depressive, unspecified severity",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/520107262",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/520107262",
+          "code": "6A61.7",
+          "title": "Bipolar type II disorder, currently in partial remission, most recent episode hypomanic",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/2003493658",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/2003493658",
+          "code": "6A61.8",
+          "title": "Bipolar type II disorder, currently in partial remission, most recent episode depressive",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/2021041320",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/2021041320",
+          "code": "6A61.9",
+          "title": "Bipolar type II disorder, currently in partial remission, most recent episode unspecified",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/948425503",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/948425503",
+          "code": "6A61.A",
+          "title": "Bipolar type II disorder, currently in full remission",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/199053300/other",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/199053300/other",
+          "code": "6A61.Y",
+          "title": "Other specified bipolar type II disorder",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/release/11/2025-01/mms/199053300/unspecified",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/199053300/unspecified",
+          "code": "6A61.Z",
+          "title": "Bipolar type II disorder, unspecified",
+          "classKind": "category"
+        }
+      ],
+      "ancestorResolved": [
+        {
+          "reference": "http://id.who.int/icd/entity/613065957",
+          "id": "http://id.who.int/icd/entity/613065957",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/76398729",
+          "id": "http://id.who.int/icd/entity/76398729",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/334423054",
+          "id": "http://id.who.int/icd/entity/334423054",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/455013390",
+          "id": "http://id.who.int/icd/entity/455013390",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/448895267",
+          "id": "http://id.who.int/icd/entity/448895267",
+          "code": "",
+          "title": ""
+        }
+      ],
+      "descendant": [
+        "http://id.who.int/icd/entity/2130154235",
+        "http://id.who.int/icd/entity/1074901171",
+        "http://id.who.int/icd/entity/1961101877",
+        "http://id.who.int/icd/entity/1680774019",
+        "http://id.who.int/icd/entity/468731918",
+        "http://id.who.int/icd/entity/720218678",
+        "http://id.who.int/icd/entity/615944554",
+        "http://id.who.int/icd/entity/1533561573",
+        "http://id.who.int/icd/entity/620026252",
+        "http://id.who.int/icd/entity/1749372298",
+        "http://id.who.int/icd/entity/1181349492",
+        "http://id.who.int/icd/entity/1740541434",
+        "http://id.who.int/icd/entity/685592419",
+        "http://id.who.int/icd/entity/1215333834",
+        "http://id.who.int/icd/entity/681510787",
+        "http://id.who.int/icd/entity/1694860466",
+        "http://id.who.int/icd/entity/1541646074",
+        "http://id.who.int/icd/entity/990651571",
+        "http://id.who.int/icd/entity/1797060364",
+        "http://id.who.int/icd/entity/348269699",
+        "http://id.who.int/icd/entity/1250542688",
+        "http://id.who.int/icd/entity/1061455649",
+        "http://id.who.int/icd/entity/1083858094",
+        "http://id.who.int/icd/entity/1347470616",
+        "http://id.who.int/icd/entity/1885670748",
+        "http://id.who.int/icd/entity/774825401",
+        "http://id.who.int/icd/entity/281593841",
+        "http://id.who.int/icd/entity/691233092",
+        "http://id.who.int/icd/entity/972683510",
+        "http://id.who.int/icd/entity/349321697",
+        "http://id.who.int/icd/entity/1176970107",
+        "http://id.who.int/icd/entity/2000339265",
+        "http://id.who.int/icd/entity/2036464157",
+        "http://id.who.int/icd/entity/113189266",
+        "http://id.who.int/icd/entity/2032382717",
+        "http://id.who.int/icd/entity/578814626",
+        "http://id.who.int/icd/entity/212646236",
+        "http://id.who.int/icd/entity/763085522",
+        "http://id.who.int/icd/entity/1645740107",
+        "http://id.who.int/icd/entity/45468386",
+        "http://id.who.int/icd/entity/1650084011",
+        "http://id.who.int/icd/entity/2132393180",
+        "http://id.who.int/icd/entity/1107271316",
+        "http://id.who.int/icd/entity/554704089",
+        "http://id.who.int/icd/entity/1895878502",
+        "http://id.who.int/icd/entity/249435369",
+        "http://id.who.int/icd/entity/1352006666",
+        "http://id.who.int/icd/entity/734845299",
+        "http://id.who.int/icd/entity/1410466558",
+        "http://id.who.int/icd/entity/1155046220",
+        "http://id.who.int/icd/entity/1693274888",
+        "http://id.who.int/icd/entity/984005611",
+        "http://id.who.int/icd/entity/71342499",
+        "http://id.who.int/icd/entity/817177381",
+        "http://id.who.int/icd/entity/545241747",
+        "http://id.who.int/icd/entity/1604411676",
+        "http://id.who.int/icd/entity/1857848104",
+        "http://id.who.int/icd/entity/1625798780",
+        "http://id.who.int/icd/entity/523854837",
+        "http://id.who.int/icd/entity/1621487770",
+        "http://id.who.int/icd/entity/906517746",
+        "http://id.who.int/icd/entity/405071632",
+        "http://id.who.int/icd/entity/51767575",
+        "http://id.who.int/icd/entity/520107262",
+        "http://id.who.int/icd/entity/2003493658",
+        "http://id.who.int/icd/entity/2021041320",
+        "http://id.who.int/icd/entity/948425503"
+      ],
+      "descendantResolved": [
+        {
+          "reference": "http://id.who.int/icd/entity/2130154235",
+          "id": "http://id.who.int/icd/entity/2130154235",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1074901171",
+          "id": "http://id.who.int/icd/entity/1074901171",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1961101877",
+          "id": "http://id.who.int/icd/entity/1961101877",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1680774019",
+          "id": "http://id.who.int/icd/entity/1680774019",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/468731918",
+          "id": "http://id.who.int/icd/entity/468731918",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/720218678",
+          "id": "http://id.who.int/icd/entity/720218678",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/615944554",
+          "id": "http://id.who.int/icd/entity/615944554",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1533561573",
+          "id": "http://id.who.int/icd/entity/1533561573",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/620026252",
+          "id": "http://id.who.int/icd/entity/620026252",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1749372298",
+          "id": "http://id.who.int/icd/entity/1749372298",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1181349492",
+          "id": "http://id.who.int/icd/entity/1181349492",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1740541434",
+          "id": "http://id.who.int/icd/entity/1740541434",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/685592419",
+          "id": "http://id.who.int/icd/entity/685592419",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1215333834",
+          "id": "http://id.who.int/icd/entity/1215333834",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/681510787",
+          "id": "http://id.who.int/icd/entity/681510787",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1694860466",
+          "id": "http://id.who.int/icd/entity/1694860466",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1541646074",
+          "id": "http://id.who.int/icd/entity/1541646074",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/990651571",
+          "id": "http://id.who.int/icd/entity/990651571",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1797060364",
+          "id": "http://id.who.int/icd/entity/1797060364",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/348269699",
+          "id": "http://id.who.int/icd/entity/348269699",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1250542688",
+          "id": "http://id.who.int/icd/entity/1250542688",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1061455649",
+          "id": "http://id.who.int/icd/entity/1061455649",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1083858094",
+          "id": "http://id.who.int/icd/entity/1083858094",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1347470616",
+          "id": "http://id.who.int/icd/entity/1347470616",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1885670748",
+          "id": "http://id.who.int/icd/entity/1885670748",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/774825401",
+          "id": "http://id.who.int/icd/entity/774825401",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/281593841",
+          "id": "http://id.who.int/icd/entity/281593841",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/691233092",
+          "id": "http://id.who.int/icd/entity/691233092",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/972683510",
+          "id": "http://id.who.int/icd/entity/972683510",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/349321697",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/349321697",
+          "code": "6A61.5",
+          "title": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1176970107",
+          "id": "http://id.who.int/icd/entity/1176970107",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2000339265",
+          "id": "http://id.who.int/icd/entity/2000339265",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2036464157",
+          "id": "http://id.who.int/icd/entity/2036464157",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/113189266",
+          "id": "http://id.who.int/icd/entity/113189266",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2032382717",
+          "id": "http://id.who.int/icd/entity/2032382717",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/578814626",
+          "id": "http://id.who.int/icd/entity/578814626",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/212646236",
+          "id": "http://id.who.int/icd/entity/212646236",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/763085522",
+          "id": "http://id.who.int/icd/entity/763085522",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1645740107",
+          "id": "http://id.who.int/icd/entity/1645740107",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/45468386",
+          "id": "http://id.who.int/icd/entity/45468386",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1650084011",
+          "id": "http://id.who.int/icd/entity/1650084011",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2132393180",
+          "id": "http://id.who.int/icd/entity/2132393180",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1107271316",
+          "id": "http://id.who.int/icd/entity/1107271316",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/554704089",
+          "id": "http://id.who.int/icd/entity/554704089",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1895878502",
+          "id": "http://id.who.int/icd/entity/1895878502",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/249435369",
+          "id": "http://id.who.int/icd/entity/249435369",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1352006666",
+          "id": "http://id.who.int/icd/entity/1352006666",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/734845299",
+          "id": "http://id.who.int/icd/entity/734845299",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1410466558",
+          "id": "http://id.who.int/icd/entity/1410466558",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1155046220",
+          "id": "http://id.who.int/icd/entity/1155046220",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1693274888",
+          "id": "http://id.who.int/icd/entity/1693274888",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/984005611",
+          "id": "http://id.who.int/icd/entity/984005611",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/71342499",
+          "id": "http://id.who.int/icd/entity/71342499",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/817177381",
+          "id": "http://id.who.int/icd/entity/817177381",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/545241747",
+          "id": "http://id.who.int/icd/entity/545241747",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1604411676",
+          "id": "http://id.who.int/icd/entity/1604411676",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1857848104",
+          "id": "http://id.who.int/icd/entity/1857848104",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1625798780",
+          "id": "http://id.who.int/icd/entity/1625798780",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/523854837",
+          "id": "http://id.who.int/icd/entity/523854837",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/1621487770",
+          "id": "http://id.who.int/icd/entity/1621487770",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/906517746",
+          "id": "http://id.who.int/icd/entity/906517746",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/405071632",
+          "id": "http://id.who.int/icd/entity/405071632",
+          "code": "",
+          "title": ""
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/51767575",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/51767575",
+          "code": "6A61.6",
+          "title": "Bipolar type II disorder, current episode depressive, unspecified severity",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/520107262",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/520107262",
+          "code": "6A61.7",
+          "title": "Bipolar type II disorder, currently in partial remission, most recent episode hypomanic",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2003493658",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/2003493658",
+          "code": "6A61.8",
+          "title": "Bipolar type II disorder, currently in partial remission, most recent episode depressive",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/2021041320",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/2021041320",
+          "code": "6A61.9",
+          "title": "Bipolar type II disorder, currently in partial remission, most recent episode unspecified",
+          "classKind": "category"
+        },
+        {
+          "reference": "http://id.who.int/icd/entity/948425503",
+          "id": "http://id.who.int/icd/release/11/2025-01/mms/948425503",
+          "code": "6A61.A",
+          "title": "Bipolar type II disorder, currently in full remission",
+          "classKind": "category"
+        }
+      ],
+      "chunk_part": 3,
+      "chunk_count": 3,
+      "original_index": 130,
+      "split_reason": "Original LLaMA-Factory sample exceeded cutoff_len=16384; descendant fields were split into shorter generation chunks."
+    }
+  ]
+}
