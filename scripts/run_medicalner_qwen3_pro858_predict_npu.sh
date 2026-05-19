@@ -58,6 +58,32 @@ if hasattr(torch, "npu"):
     print("torch.npu.device_count():", torch.npu.device_count())
 PY
 
+# === Runtime 覆盖 NPU FlashAttention patch ===
+# 镜像里的 patch 在 generate() 解码步会因 attn_mask=None 报 AttributeError；
+# 用 repo 里的修复版直接覆盖到容器内 llamafactory 安装位置（loader.py 的 import 行不变）。
+# 不动镜像、每次任务起新容器都需重做。
+echo "===== Apply runtime NPU FA patch fix ====="
+FA_PATCH_SRC="${PROJECT_DIR}/docker/npu_flash_attn.py"
+if [[ -f "${FA_PATCH_SRC}" ]]; then
+    LF_DIR="$(python3 -c 'import importlib.util, pathlib, sys; s=importlib.util.find_spec("llamafactory"); print(pathlib.Path(s.origin).parent) if s else sys.exit(1)')"
+    if [[ -n "${LF_DIR}" && -d "${LF_DIR}/model/model_utils" ]]; then
+        cp -v "${FA_PATCH_SRC}" "${LF_DIR}/model/model_utils/npu_flash_attn.py"
+        # 校验关键行已是修复版
+        if grep -q "attn_mask is not None" "${LF_DIR}/model/model_utils/npu_flash_attn.py"; then
+            echo "[predict] FA patch fix applied OK."
+        else
+            echo "[predict] ERROR: FA patch fix not present after copy." >&2
+            exit 1
+        fi
+    else
+        echo "[predict] ERROR: cannot locate llamafactory site-packages." >&2
+        exit 1
+    fi
+else
+    echo "[predict] ERROR: ${FA_PATCH_SRC} not found in repo." >&2
+    exit 1
+fi
+
 echo "===== Adapter files ====="
 ls -lh "${ADAPTER}" 2>/dev/null | head -n 50 || {
     echo "ERROR: adapter dir not found: ${ADAPTER}" >&2

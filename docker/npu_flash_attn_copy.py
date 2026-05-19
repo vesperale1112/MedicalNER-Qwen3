@@ -10,9 +10,7 @@ logger = logging.get_logger(__name__)
 original_sdpa = torch.nn.functional.scaled_dot_product_attention
 
 def npu_fas_sdpa(query, key, value, attn_mask=None, dropout_p=0.0, is_causal=False, scale=None):
-    # generate() 走 KV cache 的解码步（query 长度=1）会传 attn_mask=None，is_causal=False，
-    # 此时无需 mask，直接透传给原 SDPA；否则会 AttributeError: NoneType has no 'dtype'
-    if not is_causal and attn_mask is not None:
+    if not is_causal:
         if attn_mask.dtype == torch.bool:
             attn_mask_npu = torch.logical_not(attn_mask.bool()).to(query.device)
         else:
