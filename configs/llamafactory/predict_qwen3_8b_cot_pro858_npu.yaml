@@ -28,7 +28,7 @@ predict_with_generate: true
 ddp_timeout: 180000000
 
 ### generation
-max_new_tokens: 2048
+max_new_tokens: 16384
 do_sample: false
 
 ### hardware
