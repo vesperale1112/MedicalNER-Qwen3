@@ -1,0 +1,38 @@
+{
+  "cutoff_len": 16384,
+  "model_requested": "gemini-3.1-pro",
+  "model_used": "gemini-3.1-pro-preview",
+  "original_files": {
+    "structure": "data/generated/gemini_split/pro_structure_001_858_complete_schema0413.json",
+    "cot": "data/generated/gemini_split/pro_cot_001_858_complete_schema0413.json"
+  },
+  "new_files": {
+    "structure": "data/generated/16384cutoff/pro_structure_001_858_complete_schema0413.json",
+    "cot": "data/generated/16384cutoff/pro_cot_001_858_complete_schema0413.json"
+  },
+  "replacement_summary": {
+    "structure": {
+      "original_count": 858,
+      "new_count": 862,
+      "replaced_indices": [
+        111,
+        130
+      ],
+      "replacement_counts": {
+        "111": 3,
+        "130": 3
+      }
+    },
+    "cot": {
+      "original_count": 858,
+      "new_count": 860,
+      "replaced_indices": [
+        0
+      ],
+      "replacement_counts": {
+        "0": 3
+      }
+    }
+  },
+  "notes": "Bipolar I structure chunks regenerated with lean inputs after token validation showed the first 3 chunks remained over cutoff."
+}

@@ -1,0 +1,40 @@
+{
+  "cutoff_len": 16384,
+  "model_requested": "gemini-3.1-pro",
+  "model_used": "gemini-3.1-pro-preview",
+  "validation": {
+    "structure": {
+      "samples": 862,
+      "max_tokens": 14933,
+      "over_cutoff": 0
+    },
+    "cot": {
+      "samples": 860,
+      "max_tokens": 12726,
+      "over_cutoff": 0,
+      "skipped": 0
+    }
+  },
+  "replacements": {
+    "structure": {
+      "111": {
+        "title": "Bipolar type I disorder",
+        "chunks": 3
+      },
+      "130": {
+        "title": "Bipolar type II disorder",
+        "chunks": 3
+      }
+    },
+    "cot": {
+      "0": {
+        "title": "Disorders of intellectual development",
+        "chunks": 3
+      }
+    }
+  },
+  "notes": [
+    "Exact API model name gemini-3.1-pro returned 404; available Gemini 3.1 Pro endpoint gemini-3.1-pro-preview was used.",
+    "Bipolar I structure chunks use lean inputs without raw descendant URL lists so Qwen3 chat-template length stays below 16384."
+  ]
+}

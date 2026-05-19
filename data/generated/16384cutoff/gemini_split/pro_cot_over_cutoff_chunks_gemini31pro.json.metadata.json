@@ -1,0 +1,42 @@
+{
+  "input": "data/generated/16384cutoff/inputs/over_cutoff_cot_chunks.json",
+  "model": "gemini-3.1-pro-preview",
+  "offset": 0,
+  "requested_samples": 3,
+  "max_output_tokens": 65535,
+  "records": 3,
+  "failures": 0,
+  "generation_diagnostics": [
+    {
+      "global_idx": 0,
+      "code": "6A00",
+      "prompt_chars": 31123,
+      "finish_reason": "STOP",
+      "prompt_token_count": 6243,
+      "candidates_token_count": 3505,
+      "total_token_count": 11322,
+      "thoughts_token_count": 1574
+    },
+    {
+      "global_idx": 1,
+      "code": "6A00",
+      "prompt_chars": 27002,
+      "finish_reason": "STOP",
+      "prompt_token_count": 6796,
+      "candidates_token_count": 1284,
+      "total_token_count": 9125,
+      "thoughts_token_count": 1045
+    },
+    {
+      "global_idx": 2,
+      "code": "6A00",
+      "prompt_chars": 24845,
+      "finish_reason": "STOP",
+      "prompt_token_count": 6231,
+      "candidates_token_count": 1036,
+      "total_token_count": 8318,
+      "thoughts_token_count": 1051
+    }
+  ],
+  "failures_detail": []
+}

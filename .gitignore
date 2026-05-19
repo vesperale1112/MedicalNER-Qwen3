@@ -17,6 +17,8 @@ data/generated/*
 !data/generated/0413_cot_standard_635_12000_8000.json
 !data/generated/gemini_split/
 !data/generated/gemini_split/*.json
+!data/generated/16384cutoff/
+!data/generated/16384cutoff/**
 data/llamafactory/*.json
 !data/llamafactory/dataset_info.json
 !data/llamafactory/.gitkeep
