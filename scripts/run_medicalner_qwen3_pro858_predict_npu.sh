@@ -65,11 +65,11 @@ ls -lh "${ADAPTER}" 2>/dev/null | head -n 50 || {
 }
 
 echo "===== Trainer state / best checkpoint ====="
-python3 - <<PY
-import json
+ADAPTER="${ADAPTER}" python3 - <<'PY'
+import json, os
 from pathlib import Path
 
-p = Path("${ADAPTER}") / "trainer_state.json"
+p = Path(os.environ["ADAPTER"]) / "trainer_state.json"
 if p.exists():
     s = json.loads(p.read_text())
     print("best_model_checkpoint:", s.get("best_model_checkpoint"))
@@ -92,11 +92,11 @@ echo "===== Output files ====="
 ls -lh "${OUTDIR}" || true
 
 echo "===== Preview generated predictions ====="
-python3 - <<PY
-import json
+OUTDIR="${OUTDIR}" python3 - <<'PY'
+import json, os
 from pathlib import Path
 
-p = Path("${OUTDIR}") / "generated_predictions.jsonl"
+p = Path(os.environ["OUTDIR"]) / "generated_predictions.jsonl"
 print("prediction file:", p)
 print("exists:", p.exists())
 if not p.exists():
@@ -119,17 +119,16 @@ with p.open(encoding="utf-8") as f:
 PY
 
 echo "===== JSON format quick check ====="
-python3 - <<PY
-import json
-import re
+OUTDIR="${OUTDIR}" python3 - <<'PY'
+import json, os, re
 from pathlib import Path
 
-p = Path("${OUTDIR}") / "generated_predictions.jsonl"
+p = Path(os.environ["OUTDIR"]) / "generated_predictions.jsonl"
 
 def clean_json_text(text):
     text = text.strip()
-    text = re.sub(r"^\`\`\`(?:json)?", "", text, flags=re.I).strip()
-    text = re.sub(r"\`\`\`$", "", text).strip()
+    text = re.sub(r"^```(?:json)?", "", text, flags=re.I).strip()
+    text = re.sub(r"```$", "", text).strip()
     start = text.find("{")
     end = text.rfind("}")
     if start != -1 and end != -1 and end > start:
