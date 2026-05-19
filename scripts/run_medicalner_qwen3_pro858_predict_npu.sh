@@ -58,31 +58,53 @@ if hasattr(torch, "npu"):
     print("torch.npu.device_count():", torch.npu.device_count())
 PY
 
-# === Runtime 覆盖 NPU FlashAttention patch ===
-# 镜像里的 patch 在 generate() 解码步会因 attn_mask=None 报 AttributeError；
-# 用 repo 里的修复版直接覆盖到容器内 llamafactory 安装位置（loader.py 的 import 行不变）。
-# 不动镜像、每次任务起新容器都需重做。
-echo "===== Apply runtime NPU FA patch fix ====="
+# === Runtime NPU FA patch via import-time shadowing ===
+# 容器内不是 root，不能写 site-packages。改用 sitecustomize + meta path finder：
+# Python 解释器启动时（site.py）会 import sitecustomize；我们的 finder 把
+# llamafactory.model.model_utils.npu_flash_attn 重定向到 repo 里 docker/npu_flash_attn.py。
+# 镜像 / site-packages 一字不动，每次任务起新容器都自动生效。
+echo "===== Apply runtime NPU FA patch (import shadow) ====="
 FA_PATCH_SRC="${PROJECT_DIR}/docker/npu_flash_attn.py"
-if [[ -f "${FA_PATCH_SRC}" ]]; then
-    LF_DIR="$(python3 -c 'import importlib.util, pathlib, sys; s=importlib.util.find_spec("llamafactory"); print(pathlib.Path(s.origin).parent) if s else sys.exit(1)')"
-    if [[ -n "${LF_DIR}" && -d "${LF_DIR}/model/model_utils" ]]; then
-        cp -v "${FA_PATCH_SRC}" "${LF_DIR}/model/model_utils/npu_flash_attn.py"
-        # 校验关键行已是修复版
-        if grep -q "attn_mask is not None" "${LF_DIR}/model/model_utils/npu_flash_attn.py"; then
-            echo "[predict] FA patch fix applied OK."
-        else
-            echo "[predict] ERROR: FA patch fix not present after copy." >&2
-            exit 1
-        fi
-    else
-        echo "[predict] ERROR: cannot locate llamafactory site-packages." >&2
-        exit 1
-    fi
-else
+if [[ ! -f "${FA_PATCH_SRC}" ]]; then
     echo "[predict] ERROR: ${FA_PATCH_SRC} not found in repo." >&2
     exit 1
 fi
+if ! grep -q "attn_mask is not None" "${FA_PATCH_SRC}"; then
+    echo "[predict] ERROR: ${FA_PATCH_SRC} does not contain the fixed guard. Did the repo file get reverted?" >&2
+    exit 1
+fi
+
+SHADOW_DIR="${KG_CACHE_ROOT}/py_shadow"
+mkdir -p "${SHADOW_DIR}"
+cat >"${SHADOW_DIR}/sitecustomize.py" <<EOF
+import importlib.util, sys
+_TARGET = "llamafactory.model.model_utils.npu_flash_attn"
+_FIXED = r"${FA_PATCH_SRC}"
+
+class _NpuFAFinder:
+    @classmethod
+    def find_spec(cls, name, path=None, target=None):
+        if name == _TARGET:
+            return importlib.util.spec_from_file_location(name, _FIXED)
+        return None
+
+sys.meta_path.insert(0, _NpuFAFinder)
+print("[sitecustomize] NPU FA shadow active ->", _FIXED, flush=True)
+EOF
+
+export PYTHONPATH="${SHADOW_DIR}${PYTHONPATH:+:${PYTHONPATH}}"
+echo "[predict] PYTHONPATH=${PYTHONPATH}"
+
+# 自检：新解释器进程能否解析到修复版文件
+python3 - <<'PY'
+import importlib.util
+spec = importlib.util.find_spec("llamafactory.model.model_utils.npu_flash_attn")
+origin = spec.origin if spec else None
+print("[predict] resolved npu_flash_attn ->", origin)
+assert origin and "/projects/MedicalNER-Qwen3/docker/npu_flash_attn.py" in origin, \
+    f"import shadow not active, still resolving to {origin}"
+print("[predict] shadow OK")
+PY
 
 echo "===== Adapter files ====="
 ls -lh "${ADAPTER}" 2>/dev/null | head -n 50 || {
