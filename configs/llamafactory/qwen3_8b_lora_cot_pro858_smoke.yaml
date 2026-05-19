@@ -23,7 +23,7 @@ val_size: 0.20
 ### output
 output_dir: models/adapters/qwen3-8b-cot-pro858-smoke
 logging_steps: 1
-save_strategy: no
+save_strategy: "no"
 plot_loss: false
 overwrite_output_dir: true
 report_to: none
@@ -42,4 +42,4 @@ gradient_checkpointing: true
 
 ### eval
 per_device_eval_batch_size: 1
-eval_strategy: no
+eval_strategy: "no"
