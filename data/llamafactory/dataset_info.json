@@ -12,5 +12,19 @@
       "assistant_tag": "assistant",
       "system_tag": "system"
     }
+  },
+  "kg_test_set_20_medical_review": {
+    "file_name": "kg_test_set_20_medical_review_llamafactory.json",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "messages"
+    },
+    "tags": {
+      "role_tag": "role",
+      "content_tag": "content",
+      "user_tag": "user",
+      "assistant_tag": "assistant",
+      "system_tag": "system"
+    }
   }
 }

@@ -19,18 +19,6 @@ data/generated/*
 !data/generated/gemini_split/*.json
 !data/generated/16384cutoff/
 !data/generated/16384cutoff/**
-data/llamafactory/*.json
-!data/llamafactory/dataset_info.json
-!data/llamafactory/.gitkeep
-!data/llamafactory/kg_cot_specific_614.json
-!data/llamafactory/kg_cot_standard_635.json
-!data/llamafactory/pro_cot_001_005_llamafactory.json
-!data/llamafactory/pro_cot_006_110_llamafactory.json
-!data/llamafactory/pro_cot_111_210_llamafactory.json
-!data/llamafactory/pro_cot_211_310_llamafactory.json
-!data/llamafactory/pro_cot_311_410_llamafactory.json
-!data/llamafactory/pro_cot_001_471_partial_llamafactory.json
-!data/llamafactory/pro_cot_001_858_complete_llamafactory.json
 
 outputs/*
 !outputs/.gitkeep
