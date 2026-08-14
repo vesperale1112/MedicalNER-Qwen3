@@ -1,0 +1,16 @@
+﻿Label,Node,Core Properties（核心属性）,说明
+Disease,疾病,ICD-11 Code、DSM-5 Mapping、Definition、Subtype、Specifier、Severity、Course、Epidemiology、Prognosis,疾病主体
+Symptom,症状,Name、Description、Category、Parent Symptom、Severity、Duration、Frequency、Sensitivity、Specificity、Risk Factor,所有症状统一建模
+Diagnostic Criterion,诊断标准,Source、Criterion ID、Description、Required、Logic、Threshold,DSM/ICD诊断标准
+Assessment,临床评估,Assessment Type、Question、Trigger、Follow-up Question、Purpose,问诊及精神检查
+Patient,患者信息,Age、Sex、Occupation、Education、Marriage、Family History、Psychiatric History、Trauma、Substance Use、Special Population,患者背景
+Medication,药物,Generic Name、ATC Code、Mechanism、Dose、Indication、Contraindication、Side Effects、Drug Interaction、Metabolism、Pregnancy、Lactation,药物
+Treatment,非药物治疗,Treatment Type、Description、Mechanism、Indication、Contraindication、Duration、Frequency、Evidence Level,心理治疗等
+Treatment Plan,治疗方案,Plan Name、Applicable Disease、Disease Stage、Severity、Target Population、Recommendation Level、Description,综合治疗策略
+Examination,检查,Test Type、Description、Purpose、Interpretation,MRI、EEG等
+Assessment Scale,量表,Scale Name、Cutoff、Score Range、Interpretation、Target Disease,PHQ-9等
+Etiology,病因,Etiology Type、Description、Evidence,遗传、感染等
+Risk,风险,Risk Type、Risk Level、Description、Evidence Level、Risk Increase Factors、Protective Factors、Alert Trigger Condition,自杀等
+Communication Strategy,沟通策略,Strategy、Scenario、Target Population、Contraindication、Applicable Stage、Requires Family Support,医患沟通
+Guideline,临床指南,Guideline Name、Organization、Version、Publication Year,APA、NICE等
+Evidence,文献证据,PMID、DOI、Study Type、Journal、GRADE、Publication Year,RCT等

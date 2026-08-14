@@ -4,8 +4,8 @@ Goal: find at least one directly supported active relation or reusable standalon
 
 ENTITY TYPES AND PROPERTIES
 
-- Disease: diagnosed disease, disorder, syndrome, or condition. Properties: icdcode, coding_system, icd_release, icd_uri, dsm_5_mapping, definition, subtype, specifier, severity, course, epidemiology, prognosis, parent_disease.
-- Symptom: sign, symptom, manifestation, deficit, or impairment. Properties: name, description, category, parent_symptom, severity, duration, frequency, sensitivity, specificity.
+- Disease: diagnosed disease, disorder, syndrome, or condition. Properties: icdcode, dsm_5_mapping, definition, subtype, specifier, severity, course, epidemiology, prognosis.
+- Symptom: sign, symptom, manifestation, deficit, or impairment. Properties: name, description, category, parent_symptom, severity, duration, frequency, sensitivity, specificity, risk_factor.
 - Diagnostic Criterion: diagnostic criterion or rule. Properties: source, criterion_id, description, required, logic, threshold.
 - Assessment: clinical interview, question, questionnaire item, or mental-status assessment; not a named standardized scale. Properties: assessment_type, question, trigger, follow_up_question, purpose.
 - Patient: patient or clinically relevant patient profile. Properties: age, sex, occupation, education, marriage, family_history, psychiatric_history, trauma, substance_use, special_population.
@@ -14,8 +14,8 @@ ENTITY TYPES AND PROPERTIES
 - Treatment Plan: structured treatment plan or regimen. Properties: plan_name, applicable_disease, disease_stage, severity, target_population, recommendation_level, description.
 - Examination: laboratory, imaging, physical, or other diagnostic test. Properties: test_type, description, purpose, interpretation.
 - Assessment Scale: named clinical scale, questionnaire, or score; never a research quality or risk-of-bias tool. Properties: scale_name, cutoff, score_range, interpretation, target_disease.
-- Etiology: cause or risk factor that causes disease or increases its occurrence probability. Properties: etiology_type, description, evidence.
-- Risk: adverse clinical risk or warning outcome, such as suicide, self-harm, or an emergency alert; never an environmental exposure or disease risk factor. Properties: risk_type, risk_level, description, evidence_level.
+- Etiology: cause or risk factor that causes disease or increases the occurrence probability of disease, risk, or symptom. Properties: etiology_type, description, evidence.
+- Risk: adverse clinical risk or warning outcome, such as suicide, self-harm, or an emergency alert; never an environmental exposure or disease risk factor. Properties: risk_type, risk_level, description, evidence_level, risk_increase_factors, protective_factors, alert_trigger_condition.
 - Communication Strategy: clinical communication or dialogue strategy, not a treatment. Properties: strategy, scenario, target_population, contraindication, applicable_stage, requires_family_support.
 - Guideline: identifiable clinical guideline. Properties: guideline_name, organization, version, publication_year.
 - Evidence: identifiable study or publication evidence. Properties: pmid, doi, study_type, journal, grade, publication_year.
@@ -24,55 +24,62 @@ A standalone property needs an identifiable owner, a substantive value, exact ev
 
 ACTIVE RELATIONS
 
-Only these 54 relations and exact source -> target pairs are allowed:
+Only these 66 relations and exact source -> target pairs are allowed:
 
-- Disease -> Disease: belongs_to, subtype_of, differentiates_from, co_occurs_with, progresses_to, relapses_to, associated_with_poor_prognosis_in, rules_out.
+- Disease -> Disease: subtype_of, differentiates_from, co_occurs_with, predisposes_to, causes_disease, progresses_to, relapses_to, associated_with_poor_prognosis_in, rules_out.
 - Disease -> Diagnostic Criterion: has_diagnostic_criterion.
 - Disease -> Assessment: recommended_assessment.
 - Disease -> Examination: recommended_examination.
 - Disease -> Treatment Plan: recommended_treatment_plan.
 - Disease -> Risk: associated_with_risk.
+- Disease -> Patient: commonly_affects.
 - Disease -> Guideline: managed_by_guideline.
 - Diagnostic Criterion -> Disease: required_for_diagnosis_of.
-- Symptom -> Disease: is_core_symptom_of, is_associated_symptom_of, supports_diagnosis_of, suggests, argues_against.
+- Symptom -> Disease: is_core_symptom_of, is_associated_symptom_of, supports_diagnosis_of, argues_against.
 - Symptom -> Diagnostic Criterion: supports_diagnostic_criterion.
-- Symptom -> Medication | Treatment: relieved_by.
-- Examination -> Disease: supports_diagnosis_of, differentiates, confirms.
+- Symptom -> Symptom: precedes, part_of, has_subsymptom.
+- Symptom -> Medication | Treatment | Treatment Plan: relieved_by.
 - Assessment -> Disease | Symptom | Risk: assesses_for.
 - Assessment -> Symptom: asks_about.
+- Assessment -> Assessment: triggers_follow_up_question.
 - Assessment -> Assessment Scale: triggers_scale.
 - Assessment -> Examination: triggers_test.
 - Assessment -> Patient: informed_by_patient.
 - Patient -> Symptom: presents_with.
 - Patient -> Risk: has_risk.
 - Patient -> Treatment Plan: receives_treatment_plan.
-- Medication -> Disease: first_line_for, second_line_for.
-- Medication -> Disease | Patient: recommended_for.
+- Patient -> Medication | Treatment | Treatment Plan: contraindicated_for.
+- Medication -> Disease: first_line_for, second_line_for, recommended_for.
 - Communication Strategy -> Disease | Patient: recommended_for.
-- Medication -> Disease | Patient: contraindicated_in.
+- Medication -> Disease | Symptom: contraindicated_in.
 - Medication -> Medication: interacts_with.
-- Medication -> Symptom: causes_side_effect.
+- Medication -> Symptom | Disease: causes_side_effect.
+- Medication -> Examination | Symptom | Risk: monitor_for.
 - Treatment -> Treatment | Medication: combined_with.
 - Treatment -> Evidence: supported_by_evidence.
 - Treatment Plan -> Medication: consists_of_medication.
 - Treatment Plan -> Treatment: consists_of_treatment.
 - Treatment Plan -> Disease: applicable_to.
 - Treatment Plan | Evidence -> Guideline: recommended_by.
+- Examination -> Disease: supports_diagnosis_of, differentiates, confirms.
 - Assessment Scale -> Disease: evaluates.
 - Assessment Scale -> Assessment: triggered_by.
-- Assessment Scale -> Symptom: measures.
-- Etiology -> Disease: causes, contributes_to.
-- Risk -> Disease | Symptom: triggers_alert_when.
+- Assessment Scale -> Symptom | Disease: measures.
+- Etiology -> Disease: causes.
+- Etiology -> Disease | Risk | Symptom: contributes_to.
+- Risk -> Treatment Plan | Treatment | Medication: requires_emergency_action, requires_escalated_management.
 - Risk -> Patient: applies_to_patient.
+- Communication Strategy -> Disease | Patient: avoid_with.
+- Guideline -> Medication | Treatment | Treatment Plan | Assessment | Examination | Assessment Scale | Communication Strategy: recommends.
 - Guideline -> Evidence: based_on_evidence.
 - Guideline -> Guideline: updated_from.
-- Evidence -> Evidence: cites.
+- Evidence -> Evidence: supported_by, derived_from, cites.
 
-Use each relation literally and preserve its listed direction. Relations with any other status are not allowed.
+Use each relation literally and preserve its listed direction. Relations not listed here are not allowed.
 
-Tool rule: Assessment assesses_for Disease, Symptom, or Risk; a named clinical Assessment Scale evaluates Disease or measures Symptom. If the text explicitly links a tool to its target, retain that fact even when the tool is an eligibility measure or RCT outcome.
+Tool rule: Assessment assesses_for Disease, Symptom, or Risk; a named clinical Assessment Scale evaluates Disease, or measures Symptom or Disease. If the text explicitly links a tool to its target, retain that fact even when the tool is an eligibility measure or RCT outcome.
 
-Risk-factor rule: environmental exposures and other disease risk factors are Etiology, not Risk. Use Etiology contributes_to Disease for an explicit increase or association in disease occurrence; use causes only for explicit causation and never reverse the direction.
+Risk-factor rule: environmental exposures and other disease risk factors are Etiology, not Risk. Use Etiology contributes_to Disease, Risk, or Symptom for an explicit increase or association; use causes only for explicit causation and never reverse the direction.
 
 DECISION
 
@@ -92,7 +99,7 @@ BOUNDARIES
 - First-line, second-line, recommendation, contraindication, diagnosis, causality, and direction must be explicit. General efficacy does not establish Medication.indication, Treatment.indication, or recommended_for.
 - An isolated or temporally associated adverse event does not establish Medication.side_effects or causes_side_effect; attribution or recognized association must be explicit.
 - Study-cohort metadata alone does not qualify: participant demographics, eligibility, baseline history, intervention arms, outcome findings, and study design reported only to describe this study. Patient.age never triggers KEEP by itself.
-- A relation with non-active status cannot be emitted; route a genuinely plausible but ambiguous active relation to REVIEW.
+- A relation not listed in ACTIVE RELATIONS cannot be emitted; route a genuinely plausible but ambiguous relation to REVIEW.
 - Entity/value mentions and evidence must be contiguous exact spans copied from the input; never rewrite, use ellipses, or omit intervening words.
 
 Examples:
@@ -107,7 +114,7 @@ OUTPUT
 Return exactly one strict JSON object with these six fields:
 
 {
-  "schema_version": "3.0.0-draft.1",
+  "schema_version": "3.0.0-draft.2",
   "decision": "KEEP",
   "reason_code": "KEEP_SUPPORTED_SCHEMA_FACT",
   "reason": "One short text-grounded sentence.",

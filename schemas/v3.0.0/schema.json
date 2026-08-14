@@ -1,21 +1,11 @@
 {
-  "schema_version": "3.0.0-draft.1",
+  "schema_version": "3.0.0-draft.2",
   "status": "draft",
   "source_release": "2026-08",
-  "coding": {
-    "coding_system": "ICD-11-MMS",
-    "code_property": "icdcode",
-    "release_property": "icd_release",
-    "uri_property": "icd_uri",
-    "main_disease_only": true
-  },
   "entity_types": {
     "Disease": {
       "properties": [
         "icdcode",
-        "coding_system",
-        "icd_release",
-        "icd_uri",
         "dsm_5_mapping",
         "definition",
         "subtype",
@@ -23,8 +13,7 @@
         "severity",
         "course",
         "epidemiology",
-        "prognosis",
-        "parent_disease"
+        "prognosis"
       ]
     },
     "Symptom": {
@@ -37,7 +26,8 @@
         "duration",
         "frequency",
         "sensitivity",
-        "specificity"
+        "specificity",
+        "risk_factor"
       ]
     },
     "Diagnostic Criterion": {
@@ -140,7 +130,10 @@
         "risk_type",
         "risk_level",
         "description",
-        "evidence_level"
+        "evidence_level",
+        "risk_increase_factors",
+        "protective_factors",
+        "alert_trigger_condition"
       ]
     },
     "Communication Strategy": {
@@ -182,7 +175,6 @@
     "Course": "course",
     "Epidemiology": "epidemiology",
     "Prognosis": "prognosis",
-    "Parent Disease": "parent_disease",
     "Name": "name",
     "Description": "description",
     "Category": "category",
@@ -191,6 +183,7 @@
     "Frequency": "frequency",
     "Sensitivity": "sensitivity",
     "Specificity": "specificity",
+    "Risk Factor": "risk_factor",
     "Source": "source",
     "Criterion ID": "criterion_id",
     "Required": "required",
@@ -239,6 +232,9 @@
     "Evidence": "evidence",
     "Risk Type": "risk_type",
     "Risk Level": "risk_level",
+    "Risk Increase Factors": "risk_increase_factors",
+    "Protective Factors": "protective_factors",
+    "Alert Trigger Condition": "alert_trigger_condition",
     "Strategy": "strategy",
     "Scenario": "scenario",
     "Guideline Name": "guideline_name",
@@ -250,24 +246,10 @@
     "Study Type": "study_type",
     "Journal": "journal",
     "GRADE": "grade",
-    "ICD Code": "icdcode",
-    "icd_code": "icdcode",
-    "Coding System": "coding_system",
-    "ICD Release": "icd_release",
-    "ICD URI": "icd_uri",
     "Applicable Stage": "applicable_stage",
     "Requires Family Support": "requires_family_support"
   },
   "relation_types": {
-    "belongs_to": {
-      "source": [
-        "Disease"
-      ],
-      "target": [
-        "Disease"
-      ],
-      "status": "active"
-    },
     "subtype_of": {
       "source": [
         "Disease"
@@ -302,7 +284,7 @@
       "target": [
         "Disease"
       ],
-      "status": "needs_medical_review"
+      "status": "active"
     },
     "causes_disease": {
       "source": [
@@ -311,7 +293,7 @@
       "target": [
         "Disease"
       ],
-      "status": "needs_medical_review"
+      "status": "active"
     },
     "progresses_to": {
       "source": [
@@ -392,7 +374,7 @@
       "target": [
         "Patient"
       ],
-      "status": "needs_medical_review"
+      "status": "active"
     },
     "rules_out": {
       "source": [
@@ -468,15 +450,6 @@
       ],
       "status": "active"
     },
-    "suggests": {
-      "source": [
-        "Symptom"
-      ],
-      "target": [
-        "Disease"
-      ],
-      "status": "active"
-    },
     "argues_against": {
       "source": [
         "Symptom"
@@ -493,25 +466,7 @@
       "target": [
         "Symptom"
       ],
-      "status": "needs_medical_review"
-    },
-    "follows": {
-      "source": [
-        "Symptom"
-      ],
-      "target": [
-        "Symptom"
-      ],
-      "status": "needs_medical_review"
-    },
-    "worsens": {
-      "source": [
-        "Symptom"
-      ],
-      "target": [
-        "Symptom"
-      ],
-      "status": "needs_medical_review"
+      "status": "active"
     },
     "relieved_by": {
       "source": [
@@ -519,20 +474,10 @@
       ],
       "target": [
         "Medication",
-        "Treatment"
+        "Treatment",
+        "Treatment Plan"
       ],
       "status": "active"
-    },
-    "modulated_by": {
-      "source": [
-        "Symptom"
-      ],
-      "target": [
-        "Etiology",
-        "Medication",
-        "Treatment"
-      ],
-      "status": "needs_medical_review"
     },
     "part_of": {
       "source": [
@@ -541,16 +486,16 @@
       "target": [
         "Symptom"
       ],
-      "status": "needs_medical_review"
+      "status": "active"
     },
-    "has_manifestation": {
+    "has_subsymptom": {
       "source": [
         "Symptom"
       ],
       "target": [
         "Symptom"
       ],
-      "status": "needs_medical_review"
+      "status": "active"
     },
     "assesses_for": {
       "source": [
@@ -579,7 +524,7 @@
       "target": [
         "Assessment"
       ],
-      "status": "needs_medical_review"
+      "status": "active"
     },
     "triggers_scale": {
       "source": [
@@ -641,9 +586,10 @@
       ],
       "target": [
         "Medication",
-        "Treatment"
+        "Treatment",
+        "Treatment Plan"
       ],
-      "status": "needs_medical_review"
+      "status": "active"
     },
     "first_line_for": {
       "source": [
@@ -694,7 +640,7 @@
       ],
       "target": [
         "Disease",
-        "Patient"
+        "Symptom"
       ],
       "status": "active"
     },
@@ -712,7 +658,8 @@
         "Medication"
       ],
       "target": [
-        "Symptom"
+        "Symptom",
+        "Disease"
       ],
       "status": "active"
     },
@@ -725,7 +672,7 @@
         "Symptom",
         "Risk"
       ],
-      "status": "needs_medical_review"
+      "status": "active"
     },
     "combined_with": {
       "source": [
@@ -834,7 +781,8 @@
         "Assessment Scale"
       ],
       "target": [
-        "Symptom"
+        "Symptom",
+        "Disease"
       ],
       "status": "active"
     },
@@ -852,34 +800,8 @@
         "Etiology"
       ],
       "target": [
-        "Disease"
-      ],
-      "status": "active"
-    },
-    "increases_risk_of": {
-      "source": [
-        "Risk"
-      ],
-      "target": [
-        "Risk"
-      ],
-      "status": "needs_medical_review"
-    },
-    "protective_against": {
-      "source": [
-        "Risk"
-      ],
-      "target": [
-        "Risk"
-      ],
-      "status": "needs_medical_review"
-    },
-    "triggers_alert_when": {
-      "source": [
-        "Risk"
-      ],
-      "target": [
         "Disease",
+        "Risk",
         "Symptom"
       ],
       "status": "active"
@@ -889,29 +811,22 @@
         "Risk"
       ],
       "target": [
-        "Treatment Plan"
+        "Treatment Plan",
+        "Treatment",
+        "Medication"
       ],
-      "status": "needs_medical_review"
+      "status": "active"
     },
     "requires_escalated_management": {
       "source": [
         "Risk"
       ],
       "target": [
-        "Treatment Plan"
+        "Treatment Plan",
+        "Treatment",
+        "Medication"
       ],
-      "status": "needs_medical_review"
-    },
-    "mediated_by": {
-      "source": [
-        "Risk"
-      ],
-      "target": [
-        "Etiology",
-        "Symptom",
-        "Disease"
-      ],
-      "status": "needs_medical_review"
+      "status": "active"
     },
     "applies_to_patient": {
       "source": [
@@ -930,7 +845,7 @@
         "Disease",
         "Patient"
       ],
-      "status": "needs_medical_review"
+      "status": "active"
     },
     "recommends": {
       "source": [
@@ -945,7 +860,7 @@
         "Assessment Scale",
         "Communication Strategy"
       ],
-      "status": "needs_medical_review"
+      "status": "active"
     },
     "based_on_evidence": {
       "source": [
@@ -972,7 +887,7 @@
       "target": [
         "Evidence"
       ],
-      "status": "needs_medical_review"
+      "status": "active"
     },
     "derived_from": {
       "source": [
@@ -981,7 +896,7 @@
       "target": [
         "Evidence"
       ],
-      "status": "needs_medical_review"
+      "status": "active"
     },
     "cites": {
       "source": [
@@ -1040,7 +955,9 @@
         "Risk"
       ],
       "target": [
-        "Treatment Plan"
+        "Treatment Plan",
+        "Treatment",
+        "Medication"
       ],
       "to": "requires_escalated_management"
     }

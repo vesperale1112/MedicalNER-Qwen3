@@ -64,6 +64,33 @@
 
 ---
 
+## 筛选 Schema（schemas/ 目录，v3.0.0）
+
+文章筛选管线（`data/treatment_related_articles/filtering/`）用的 KG 筛选 schema 与上面训练管线的 `SYSTEM_PROMPT` schema 是**两套独立定义**，不要混用。
+
+**目录结构：**
+
+| 路径 | 作用 |
+|------|------|
+| `schemas/current.json` | 指针文件，当前指向 `v3.0.0/schema.json`（3.0.0-draft.2） |
+| `schemas/v3.0.0/nodes.csv` / `relations.csv` | 人工维护的决策表（推断依据、处置建议、重命名等） |
+| `schemas/v3.0.0/schema.json` | 由 CSV 生成的机器可读定义，筛选/训练脚本消费 |
+| `schemas/v3.0.0/final_schema.xlsx` | 决策表工作簿 |
+| `schemas/treatment_article_kg_screening_prompt.md` | 筛选 prompt，被 `filtering/` 下脚本直接使用 |
+| `schemas/v2.0.0/` | 旧版归档 |
+
+**维护工作流**：人工更新 `nodes.csv` / `relations.csv` → 同步生成 `schema.json` → 同步 `treatment_article_kg_screening_prompt.md`（ACTIVE RELATIONS 列表、实体属性列表、Tool rule / Risk-factor rule 等说辞、OUTPUT 里的 schema_version 必须全部对齐）。三者不一致会导致筛选结果和 schema 定义脱节。
+
+**当前状态（2026-08-14，v3.0.0-draft.2）**：15 类实体、66 个关系，**所有关系 status 均为 active**（needs_medical_review 状态已废除）。
+
+**决策约定（本次更新定下）：**
+- `relations.csv` 的 Target（最终推断）列是最终裁决；与建议状态列矛盾时按 Target 列处理。
+- 标记"改为节点属性/不建边"的关系：不建边，属性写入对应实体（如 `Risk.alert_trigger_condition`、`Symptom.risk_factor`），nodes.csv 与 schema.json 同步补属性。
+- schema.json 已删 `coding` 段和 `Disease.parent_disease`；Disease 仅保留 `icdcode`（ICD-11 Code）。
+- 全 active 后筛选口径变宽（以前 needs_medical_review 的关系现在可直接 KEEP），跑下一轮筛选前建议先跑 `filtering_tests/` 里的测试脚本。
+
+---
+
 ## 整体流水线
 
 ```
