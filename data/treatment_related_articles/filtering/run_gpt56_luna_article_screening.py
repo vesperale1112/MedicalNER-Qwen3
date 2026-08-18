@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Screen every indexed treatment article with gpt-5.6-luna.
+"""Screen every indexed treatment article with the configured model.
 
 Requests run in deterministic worker partitions (``index % workers``). Every
-attempt is appended to a durable JSONL checkpoint before more work is accepted;
-reruns skip all attempted indices unless ``--retry-failed`` is supplied. Once
-all records have valid outputs, a compact index/output JSON file is assembled.
+API response is appended to a durable JSONL checkpoint before more work is
+accepted. Request failures are reported but left uncheckpointed so a later scan
+can pick up their missing indices. Once all records have valid outputs, a
+compact index/output JSON file is assembled.
 """
 
 from __future__ import annotations
@@ -27,7 +28,7 @@ from typing import Any, Callable, Iterator, TextIO
 api_key = "sk-SCP0FiLRcsRfCwUX0b4aB1B512E94075913c8f0d2d273b38"
 api_base = "https://api-2.xi-ai.cn/v1"
 
-MODEL_NAME = "gpt-5.6-luna"
+MODEL_NAME = "gemini-3.7-flash"
 AUTOMATIC_RETRIES = 0
 CHECKPOINT_SCHEMA_VERSION = "treatment-article-screening-jsonl-v1"
 
@@ -983,18 +984,24 @@ def run(
         producer.start()
 
         attempts_received = 0
+        request_failures_not_checkpointed = 0
         workers_done = 0
         producer_result: dict[str, Any] | None = None
         with checkpoint_path.open("a", encoding="utf-8") as checkpoint:
             while producer_result is None or workers_done < args.workers:
                 message_type, payload = result_queue.get()
                 if message_type == "attempt":
-                    append_attempt(checkpoint, payload)
                     attempts_received += 1
+                    if payload["status"] == "request_failed":
+                        request_failures_not_checkpointed += 1
+                    else:
+                        append_attempt(checkpoint, payload)
                     print(
                         f"[{attempts_received}/{plan['pending_requests']}] "
                         f"index={payload['index']} status={payload['status']}"
                     )
+                    if payload["status"] == "request_failed":
+                        print(f"  error={payload['error']}")
                 elif message_type == "worker_done":
                     workers_done += 1
                 elif message_type == "producer_done":
@@ -1010,8 +1017,13 @@ def run(
             raise RuntimeError(f"Producer failed: {producer_result['error']}")
         if attempts_received != producer_result["dispatched"]:
             raise RuntimeError(
-                f"Checkpointed {attempts_received} attempts but dispatched "
+                f"Received {attempts_received} attempt results but dispatched "
                 f"{producer_result['dispatched']}"
+            )
+        if request_failures_not_checkpointed:
+            print(
+                "Request failures not checkpointed: "
+                f"{request_failures_not_checkpointed}"
             )
 
     if checkpoint_path.exists():
@@ -1028,7 +1040,7 @@ def run(
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Screen indexed treatment articles with gpt-5.6-luna"
+        description=f"Screen indexed treatment articles with {MODEL_NAME}"
     )
     parser.add_argument(
         "--workers",
