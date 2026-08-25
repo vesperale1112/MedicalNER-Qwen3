@@ -77,9 +77,13 @@ Only these 66 relations and exact source -> target pairs are allowed:
 
 Use each relation literally and preserve its listed direction. Relations not listed here are not allowed.
 
-Tool rule: Assessment assesses_for Disease, Symptom, or Risk; a named clinical Assessment Scale evaluates Disease, or measures Symptom or Disease. If the text explicitly links a tool to its target, retain that fact even when the tool is an eligibility measure or RCT outcome.
+Tool rule: Assessment assesses_for Disease, Symptom, or Risk; a named clinical Assessment Scale evaluates Disease, or measures Symptom or Disease. A tool explicitly linked to its target still qualifies when used as an eligibility measure or RCT outcome. Positive: "PHQ-9 measured depressive symptoms" supports Assessment Scale measures Symptom. Negative: "Newcastle-Ottawa Scale assessed study quality" is not a clinical Assessment Scale.
 
-Risk-factor rule: environmental exposures and other disease risk factors are Etiology, not Risk. Use Etiology contributes_to Disease, Risk, or Symptom for an explicit increase or association; use causes only for explicit causation and never reverse the direction.
+Risk-factor rule: environmental exposures and other disease risk factors are Etiology, not Risk. Use contributes_to for an explicit increase or association and causes only for explicit causation. Positive: "Air pollution was associated with increased depression risk" supports Etiology contributes_to Disease, not causes; air pollution is Etiology, not Risk.
+
+Treatment-effect rule: an affirmative finding that an identifiable Medication, Treatment, or Treatment Plan reduces, improves, or relieves an explicit Symptom supports relieved_by, including an RCT or meta-analysis outcome. Positive: "Treatment X significantly reduced fatigue" supports fatigue relieved_by Treatment X. Negative: disease-level improvement, aims, treatment assignment, and non-significant or negative results do not support relieved_by.
+
+Use/indication rule: explicit general-use wording such as "approved for", "an evidence-based treatment for", or "used in clinical practice to treat" supports Medication.indication or Treatment.indication. General efficacy, study-arm assignment, or "evaluated in patients with" does not.
 
 DECISION
 
@@ -96,18 +100,17 @@ BOUNDARIES
 - Use only the supplied text; do not add medical knowledge or infer a fact from co-mention.
 - Preserve negation, uncertainty, population limits, and conflicting claims.
 - Do not convert correlation to causation, co-occurrence to progression, treatment efficacy to recommendation or indication, comparison to differential diagnosis, the measurement tool itself to a symptom, or an aim to a finding.
-- First-line, second-line, recommendation, contraindication, diagnosis, causality, and direction must be explicit. General efficacy does not establish Medication.indication, Treatment.indication, or recommended_for.
+- First-line, second-line, recommendation, contraindication, diagnosis, causality, and direction must be explicit.
 - An isolated or temporally associated adverse event does not establish Medication.side_effects or causes_side_effect; attribution or recognized association must be explicit.
-- Study-cohort metadata alone does not qualify: participant demographics, eligibility, baseline history, intervention arms, outcome findings, and study design reported only to describe this study. Patient.age never triggers KEEP by itself.
+- Study-cohort metadata alone does not qualify: participant demographics, eligibility, baseline history, intervention assignment, and study design. An outcome qualifies only if it directly supports an active relation or reusable property; being an RCT or meta-analysis outcome neither qualifies nor disqualifies it. Patient.age never triggers KEEP by itself.
 - A relation not listed in ACTIVE RELATIONS cannot be emitted; route a genuinely plausible but ambiguous relation to REVIEW.
 - Entity/value mentions and evidence must be contiguous exact spans copied from the input; never rewrite, use ellipses, or omit intervening words.
 
-Examples:
+Other examples:
 
 - "Drug X is recommended as first-line treatment for disease Y" -> KEEP relation, first_line_for.
 - "Nausea is a recognized side effect of Drug X" -> KEEP property, Medication.side_effects.
 - "Participants were aged 7 to 10 years" -> not KEEP by itself; study-cohort age is metadata.
-- "Drug X improved disease Y" -> neither recommended_for nor Medication.indication by itself.
 
 OUTPUT
 
