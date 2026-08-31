@@ -76,6 +76,15 @@ PROPERTY_CANDIDATE_KEYS = {
     "value_text",
     "evidence_quote",
 }
+ATTEMPT_STATUSES = frozenset(
+    {
+        "completed",
+        "completed_with_validation_errors",
+        "parse_failed",
+        "request_failed",
+    }
+)
+RETRYABLE_STATUSES = ATTEMPT_STATUSES - {"completed"}
 
 
 @dataclass(frozen=True)
@@ -460,30 +469,11 @@ def usage_dict(completion: Any) -> dict[str, Any]:
     return result
 
 
-def checkpoint_metadata(
-    articles_path: Path,
-    total_records: int,
-    system_prompt_path: Path,
-    kg_schema_path: Path,
-) -> dict[str, Any]:
-    return {
-        "checkpoint_schema_version": CHECKPOINT_SCHEMA_VERSION,
-        "record_type": "run_metadata",
-        "model": MODEL_NAME,
-        "api_base": api_base,
-        "automatic_retries": AUTOMATIC_RETRIES,
-        "articles_file": str(articles_path),
-        "total_records": total_records,
-        "system_prompt_file": str(system_prompt_path),
-        "kg_schema_file": str(kg_schema_path),
-    }
-
-
 def load_checkpoint(
     path: Path, total_records: int
-) -> tuple[dict[int, AttemptState], dict[str, Any] | None]:
+) -> dict[int, AttemptState]:
     if not path.exists():
-        return {}, None
+        return {}
     states: dict[int, AttemptState] = {}
     with path.open("rb") as handle:
         first_line = handle.readline()
@@ -529,45 +519,38 @@ def load_checkpoint(
             if type(index) is not int or not 0 <= index < total_records:
                 raise ValueError(f"Invalid checkpoint index at line {line_number}")
             status = attempt.get("status")
-            if status not in {
-                "completed",
-                "completed_with_validation_errors",
-                "parse_failed",
-                "request_failed",
-            }:
+            if status not in ATTEMPT_STATUSES:
                 raise ValueError(f"Invalid checkpoint status at line {line_number}")
             states[index] = AttemptState(
                 status=status,
                 valid_output=attempt.get("valid_output") is True,
                 offset=offset,
             )
-    return states, metadata
+    return states
 
 
-def create_checkpoint(path: Path, run_metadata: dict[str, Any]) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    metadata = {**run_metadata, "created_at": utc_now()}
-    with path.open("x", encoding="utf-8") as handle:
-        handle.write(json.dumps(metadata, ensure_ascii=False, separators=(",", ":")))
-        handle.write("\n")
-        handle.flush()
-        os.fsync(handle.fileno())
-
-
-def append_attempt(handle: TextIO, attempt: dict[str, Any]) -> None:
-    handle.write(json.dumps(attempt, ensure_ascii=False, separators=(",", ":")))
+def write_jsonl_record(handle: TextIO, record: dict[str, Any]) -> None:
+    handle.write(json.dumps(record, ensure_ascii=False, separators=(",", ":")))
     handle.write("\n")
     handle.flush()
     os.fsync(handle.fileno())
 
 
+def create_checkpoint(path: Path, run_metadata: dict[str, Any]) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("x", encoding="utf-8") as handle:
+        write_jsonl_record(handle, {**run_metadata, "created_at": utc_now()})
+
+
 def should_request(
-    index: int, states: dict[int, AttemptState], retry_failed: bool
+    index: int,
+    states: dict[int, AttemptState],
+    retry_statuses: frozenset[str],
 ) -> bool:
     state = states.get(index)
     if state is None:
         return True
-    return retry_failed and not state.valid_output
+    return state.status in retry_statuses
 
 
 def request_article(
@@ -693,7 +676,7 @@ def producer_loop(
     articles_path: Path,
     task_queues: list[queue.Queue[Any]],
     states: dict[int, AttemptState],
-    retry_failed: bool,
+    retry_statuses: frozenset[str],
     start_index: int,
     end_index: int,
     result_queue: queue.Queue[tuple[str, Any]],
@@ -703,7 +686,7 @@ def producer_loop(
     try:
         for record in iter_article_range(articles_path, start_index, end_index):
             index = record["index"]
-            if not should_request(index, states, retry_failed):
+            if not should_request(index, states, retry_statuses):
                 continue
             worker_id = index % len(task_queues)
             task_queues[worker_id].put(record)
@@ -721,7 +704,7 @@ def producer_loop(
 def build_request_plan(
     total_records: int,
     states: dict[int, AttemptState],
-    retry_failed: bool,
+    retry_statuses: frozenset[str],
     start_index: int,
     end_index: int | None,
     max_samples: int | None,
@@ -742,7 +725,7 @@ def build_request_plan(
     pending_requests = 0
     partition_counts = [0] * workers
     for index in range(start_index, end_index_exclusive):
-        if should_request(index, states, retry_failed):
+        if should_request(index, states, retry_statuses):
             pending_requests += 1
             partition_counts[index % workers] += 1
     return {
@@ -902,18 +885,17 @@ def run(
         raise ValueError(f"System prompt is empty: {system_prompt_path}")
     contract = load_schema_contract(kg_schema_path)
 
-    preliminary_total = article_record_count(articles_path)
-    metadata_for_new_checkpoint = checkpoint_metadata(
-        articles_path,
-        preliminary_total,
-        system_prompt_path,
-        kg_schema_path,
+    total_records = article_record_count(articles_path)
+    states = load_checkpoint(checkpoint_path, total_records)
+    retry_statuses = (
+        RETRYABLE_STATUSES
+        if args.retry_failed
+        else frozenset(args.retry_status or ())
     )
-    states, metadata = load_checkpoint(checkpoint_path, preliminary_total)
     plan = build_request_plan(
-        preliminary_total,
+        total_records,
         states,
-        args.retry_failed,
+        retry_statuses,
         args.start_index,
         args.end_index,
         args.max_samples,
@@ -926,6 +908,7 @@ def run(
     print(f"Workers: {args.workers}")
     print(f"Index range (inclusive): {plan['start_index']}..{plan['end_index']}")
     print(f"Selected records: {plan['selected_records']}")
+    print(f"Retry statuses: {sorted(retry_statuses)}")
     print(f"Pending paid requests: {plan['pending_requests']}")
     print(f"Worker partitions: {plan['partition_counts']}")
     print(f"Automatic retries: {AUTOMATIC_RETRIES}")
@@ -933,7 +916,7 @@ def run(
     print(f"Final output: {output_path}")
     if args.preview:
         print("Preview completed; no checkpoint was changed and no API request was sent.")
-        return {"plan": plan, "summary": summarize_states(preliminary_total, states)}
+        return {"plan": plan, "summary": summarize_states(total_records, states)}
 
     if plan["pending_requests"]:
         resolved_api_key = os.getenv("XI_AI_API_KEY", "").strip() or api_key.strip()
@@ -943,8 +926,21 @@ def run(
             )
         factory = client_factory or default_client_factory
         clients = [factory(worker_id, resolved_api_key) for worker_id in range(args.workers)]
-        if metadata is None:
-            create_checkpoint(checkpoint_path, metadata_for_new_checkpoint)
+        if not checkpoint_path.exists():
+            create_checkpoint(
+                checkpoint_path,
+                {
+                    "checkpoint_schema_version": CHECKPOINT_SCHEMA_VERSION,
+                    "record_type": "run_metadata",
+                    "model": MODEL_NAME,
+                    "api_base": api_base,
+                    "automatic_retries": AUTOMATIC_RETRIES,
+                    "articles_file": str(articles_path),
+                    "total_records": total_records,
+                    "system_prompt_file": str(system_prompt_path),
+                    "kg_schema_file": str(kg_schema_path),
+                },
+            )
 
         task_queues = [queue.Queue(maxsize=2) for _ in range(args.workers)]
         result_queue: queue.Queue[tuple[str, Any]] = queue.Queue()
@@ -974,7 +970,7 @@ def run(
                 articles_path,
                 task_queues,
                 states,
-                args.retry_failed,
+                retry_statuses,
                 plan["start_index"],
                 plan["end_index_exclusive"],
                 result_queue,
@@ -992,15 +988,16 @@ def run(
                 message_type, payload = result_queue.get()
                 if message_type == "attempt":
                     attempts_received += 1
-                    if payload["status"] == "request_failed":
+                    request_failed = payload["status"] == "request_failed"
+                    if request_failed:
                         request_failures_not_checkpointed += 1
                     else:
-                        append_attempt(checkpoint, payload)
+                        write_jsonl_record(checkpoint, payload)
                     print(
                         f"[{attempts_received}/{plan['pending_requests']}] "
                         f"index={payload['index']} status={payload['status']}"
                     )
-                    if payload["status"] == "request_failed":
+                    if request_failed:
                         print(f"  error={payload['error']}")
                 elif message_type == "worker_done":
                     workers_done += 1
@@ -1026,11 +1023,11 @@ def run(
                 f"{request_failures_not_checkpointed}"
             )
 
-    if checkpoint_path.exists():
-        states, _ = load_checkpoint(checkpoint_path, preliminary_total)
-    summary = summarize_states(preliminary_total, states)
-    if summary["valid_outputs"] == preliminary_total:
-        build_final_output(checkpoint_path, output_path, states, preliminary_total)
+    if plan["pending_requests"]:
+        states = load_checkpoint(checkpoint_path, total_records)
+    summary = summarize_states(total_records, states)
+    if summary["valid_outputs"] == total_records:
+        build_final_output(checkpoint_path, output_path, states, total_records)
         summary["final_output"] = str(output_path)
     else:
         summary["final_output"] = None
@@ -1072,10 +1069,17 @@ def parse_args() -> argparse.Namespace:
         help="Seconds to wait between requests in each worker (default: 0)",
     )
     parser.add_argument("--preview", action="store_true")
-    parser.add_argument(
+    retry_group = parser.add_mutually_exclusive_group()
+    retry_group.add_argument(
         "--retry-failed",
         action="store_true",
-        help="Explicitly retry failed or schema-invalid checkpoint records",
+        help="Retry every failed or schema-invalid checkpoint record",
+    )
+    retry_group.add_argument(
+        "--retry-status",
+        nargs="+",
+        choices=sorted(RETRYABLE_STATUSES),
+        help="Retry only checkpoint records with the selected status",
     )
     parser.add_argument("--articles", type=Path, default=DEFAULT_ARTICLES_PATH)
     parser.add_argument(
