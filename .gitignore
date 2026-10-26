@@ -50,3 +50,8 @@ data/Embase
 data/pubmed
 data/cochrane
 data/treatment_related_articles/articles.json
+/temp
+data/treatment_related_articles/filtering/gpt56_luna_article_screening.json
+data/treatment_related_articles/filtering/gpt56_luna_article_screening_checkpoint.jsonl
+data/treatment_related_articles/filtering/treatment_article_rescreen.json
+data/treatment_related_articles/filtering/treatment_article_rescreen_checkpoint.jsonl
