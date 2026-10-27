@@ -1,0 +1,576 @@
+{
+  "selection_date": "2026-10-27",
+  "purpose": "从最终KEEP文章池补选20篇，与原20篇合并，为schema v3.1.0提供更广的实体和关系标注材料；覆盖证据、待确认项和缺口见schema_v3.1.0_review/coverage.json。",
+  "schema_reference": "schemas/v3.1.0/schema1026.xlsx",
+  "input_files": [
+    "data/treatment_related_articles/filtering/treatment_article_rescreen.json",
+    "data/treatment_related_articles/articles.json"
+  ],
+  "original_selection": "benchmarks/datasets/kg_pilot_20/kg_article_selection_20.json",
+  "selection_criteria": [
+    "仅从最终rescreen结果为KEEP的记录中选择，以index关联原文。",
+    "优先补充旧标注较少涉及的诊断、评估、沟通、指南、病因、监测、禁忌及量表维度材料。",
+    "逐篇核对摘要，不将试验排除条件、阴性结果或仅有关键词视为肯定关系。",
+    "新增文章不含预填图谱；类型解释有歧义或缺少直接证据的项目单列。"
+  ],
+  "summary": {
+    "selected": 20,
+    "original": 20,
+    "combined": 40,
+    "source_counts": {
+      "Embase": 10,
+      "pubmed": 10
+    },
+    "research_design_counts": {
+      "临床指南更新": 1,
+      "临床指南": 2,
+      "病例报告及文献讨论（会议摘要）": 1,
+      "病例报告及评估方法讨论（会议摘要）": 1,
+      "病例报告及文献回顾（会议摘要）": 2,
+      "诊断试验系统综述与荟萃分析": 1,
+      "系统综述": 4,
+      "随机对照试验亚组结果（会议摘要）": 1,
+      "系统文献回顾与专家Delphi共识（会议摘要）": 1,
+      "二期随机双盲剂量反应临床试验": 1,
+      "随机对照临床试验": 2,
+      "网络荟萃分析": 1,
+      "系统综述与荟萃分析": 1,
+      "系统综述与病例系列": 1
+    }
+  },
+  "records": [
+    {
+      "index": 98091,
+      "source": "Embase",
+      "disease_codes": [
+        "32",
+        "33"
+      ],
+      "doi": "10.1177/07067437241245384",
+      "title": "Canadian Network for Mood and Anxiety Treatments (CANMAT) 2023 Update on Clinical Guidelines for Management of Major Depressive Disorder in Adults: Réseau canadien pour les traitements de l'humeur et de l'anxiété (CANMAT) 2023 : Mise à jour des lignes directrices cliniques pour la prise en charge du trouble dépressif majeur chez les adultes",
+      "abstract": "Background: The Canadian Network for Mood and Anxiety Treatments (CANMAT) last published clinical guidelines for the management of major depressive disorder (MDD) in 2016. Owing to advances in the field, an update was needed to incorporate new evidence and provide new and revised recommendations for the assessment and management of MDD in adults. Methods: CANMAT convened a guidelines editorial group comprised of academic clinicians and patient partners. A systematic literature review was conducted, focusing on systematic reviews and meta-analyses published since the 2016 guidelines. Recommendations were organized by lines of treatment, which were informed by CANMAT-defined levels of evidence and supplemented by clinical support (consisting of expert consensus on safety, tolerability, and feasibility). Drafts were revised based on review by patient partners, expert peer review, and a defined expert consensus process. Results: The updated guidelines comprise eight primary topics, in a question-and-answer format, that map a patient care journey from assessment to selection of evidence-based treatments, prevention of recurrence, and strategies for inadequate response. The guidelines adopt a personalized care approach that emphasizes shared decision-making that reflects the values, preferences, and treatment history of the patient with MDD. Tables provide new and updated recommendations for psychological, pharmacological, lifestyle, complementary and alternative medicine, digital health, and neuromodulation treatments. Caveats and limitations of the evidence are highlighted. Conclusions: The CANMAT 2023 updated guidelines provide evidence-informed recommendations for the management of MDD, in a clinician-friendly format. These updated guidelines emphasize a collaborative, personalized, and systematic management approach that will help optimize outcomes for adults with MDD.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "候选明确涉及成人重度抑郁障碍的临床管理指南。"
+      },
+      "selection_order": 1,
+      "topic": "抑郁障碍·指南更新",
+      "selection_summary_cn": "CANMAT 2023 成人抑郁障碍指南更新",
+      "research_design": "临床指南更新",
+      "selection_reasons": [
+        "摘要明确对照2016版与2023版，适合核对指南版本更新内容。",
+        "交代系统综述、证据分级和患者参与的推荐形成过程。",
+        "包含共同决策、个体化治疗及多种治疗方式，补充原批次以试验为主的材料。"
+      ],
+      "abstract_word_count": 253
+    },
+    {
+      "index": 57744,
+      "source": "Embase",
+      "disease_codes": [
+        "41"
+      ],
+      "doi": "10.1016/j.jogc.2024.102696",
+      "title": "Guideline No. 454: Identification and Treatment of Perinatal Mood and Anxiety Disorders",
+      "abstract": "Objective: To help perinatal health care providers identify and assist pregnant and postpartum patients with perinatal mental illness, specifically perinatal mood and anxiety disorders. Areas of focus include risk factors and identification, screening, treatment, and referral. Target Population: All individuals who are pregnant or in the first year postpartum. Outcomes: Open dialogue and evidence-informed care for perinatal mood and anxiety disorders, including competency for identification, screening, treatment, and referral, which will lead to improvements in patient care. Benefits, Harms, and Costs: Pregnant and postpartum individuals with untreated perinatal mental illness, including mood and anxiety disorders, may suffer devastating effects and their family may experience short- and long-term adverse outcomes. Evidence: A literature search was conducted using Medline (Ovid), PubMed, Embase and the Cochrane library from inception to June 2024. Additional articles were identified from article bibliographies and grey literature published by reputable societies and organizations (see online Appendix A). Validation Methods: The authors rated the quality of evidence and strength of recommendations using the Grading of Recommendations Assessment, Development and Evaluation (GRADE) approach. See online Appendix B (Tables B1 for definitions and B2 for interpretations of strong and weak recommendations). Intended Audience: All heath care providers who provide preconception counselling and/or care during pregnancy and the postpartum period. The term “perinatal” will be used throughout this guideline to refer to these health care providers. Social Media Abstract: New SOGC Guideline! Identify, support, and treat perinatal mood and anxiety disorders. Focused on risk factors, screening, treatment and referrals during pregnancy and the postpartum period. Let's open dialogue and provide evidence-informed care for improved patient outcomes. SUMMARY STATEMENTS: 1. Perinatal mood and anxiety disorders are common (high); postpartum depression and anxiety are the most common maternal complications of pregnancy (high). 2. The psychological aspects of the transition to parenthood are important factors that affect perinatal mental health (moderate). 3. Suicide in the perinatal period is emerging as one of the most common causes of maternal mortality in Canada (moderate). 4. Symptoms of anxiety or depression during pregnancy are highly predictive of postpartum mental illness (high). 5. Untreated depression or anxiety during pregnancy is associated with adverse perinatal outcomes, including persistent depression in pregnant patients and their partners, maternal self-harm, low birth weight, preterm birth, and poor infant development (high). 6. Experiencing a perinatal loss, having a history of previous mental illness, and intimate partner violence are important risk factors for perinatal mood and anxiety disorders (high). 7. Race, culture, language, ability, age, and sexual identity may contribute to an individual's risk for perinatal mental illness (high). 8. Perinatal care providers may be the patients's first point of contact with the health care system as well as the first health care provider to establish a positive and trusting relationship with them. They play an important role in identification, screening, and referral for perinatal mood and anxiety disorders (moderate). 9. Different treatment approaches/intensities may be required, depending on the severity of illness and individual preferences (high). 10. Most of the common pharmacologic agents to treat perinatal mood and anxiety disorders are not teratogenic (high). 11. Tapering or stopping antidepressant medication during pregnancy can lead to relapse in patients with history of severe disease (moderate). 12. Pregnant and postpartum individuals will benefit from counselling focused on shared decision-making (moderate). RECOMMENDATIONS: IDENTIFICATION AND RISK 1. Perinatal death or losing custody of the infant both increase a patient's vulnerability for mental illness, and additional monitoring and support may be needed in these circumstances (strong, high). 2. For patients who have experienced trauma, education to help reduce fears related to childbirth should be provided (strong, moderate). 3. A review of health history should be included in mental health assessments, and risk factors should be discussed during preconception counselling and/or during pregnancy (strong, high). 4. Perinatal care providers should inquire about mental health status at each visit throughout pregnancy and in the year following the pregnancy, especially in circumstances of perinatal loss (strong, high).SCREENING 5. Screening should be complemented with a clearly defined and locally tailored referral process (strong, high). 6. Patients with risk factors for mood and anxiety disorders should be screened at least once during pregnancy and once during the postpartum period using a validated screening tool (e.g., Edinburgh Postnatal Depression Scale, Personalized Health Questionnaire-9, Generalized Anxiety Disorder-7) (strong, moderate). 7. When a concern about mental health is identified by the patient or provider, the patient should be screened at that visit using a validated screening tool (e.g., Edinburgh Postnatal Depression Scale, Personalized Health Questionnaire-9, Generalized Anxiety Disorder-7) (strong, moderate). 8. Perinatal care providers should provide information about psychosocial and community-based supports (in person, virtual, or hybrid models) with patients presenting with perinatal mental health concerns (strong, moderate).TREATMENT 9. For pregnant and postpartum patients with moderate perinatal depression or anxiety, health care providers should recommend psychoeducation, psychotherapy, pharmacological therapy, or a combination of these approaches as first-line treatment (strong, high). 10. Perinatal care providers should recommend that patients with perinatal mood or anxiety disorders receive routine counselling about the psychological aspects of the transition to parenthood and other important factors that can affect perinatal mental health (strong, moderate). 11. The health care provider should have a comprehensive discussion about possible maternal, fetal, and neonatal risks and side effects to initiating, continuing, or changing medication as well as its benefits (strong, high). 12. Patients with pre-existing mental health diagnoses who are well maintained on pharmacological agents should not abruptly discontinue medication during pregnancy. Patients should speak to their mental health clinician and obstetrical care provider prior to considering discontinuation or tapering medications during pregnancy (strong, moderate). 13. Patients taking certain pharmacologic agents (see online Appendix C) should be referred for preconception counselling by their health care provider; if the patient is already pregnant, consultation with a psychiatrist is warranted, particularly for individuals with mental disorders such as bipolar disorder and schizophrenia (strong, high). 14. Pregnant individuals with a severe perinatal mood or anxiety disorder should be urgently referred by their care provider to specialized psychiatric services with immediate action (strong, high). 15. Shared decision-making regarding treatment options should consider the patient's values, beliefs, and preferences (strong, moderate).",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "候选关系明确涉及围产期情绪和焦虑障碍及其风险因素。"
+      },
+      "selection_order": 2,
+      "topic": "围产期精神健康·评估与指南",
+      "selection_summary_cn": "围产期情绪与焦虑障碍的识别、筛查和治疗指南",
+      "research_design": "临床指南",
+      "selection_reasons": [
+        "摘要完整列出15条推荐，包含筛查、转诊、病史评估与治疗。",
+        "明确在发现心理健康担忧时使用量表，并要求评估考虑病史和风险因素。",
+        "描述围产期特殊人群及共同决策，补充原批次较少涉及的临床流程。"
+      ],
+      "abstract_word_count": 1019
+    },
+    {
+      "index": 54297,
+      "source": "Embase",
+      "disease_codes": [
+        "41"
+      ],
+      "doi": "10.1016/j.jaclp.2022.10.010",
+      "title": "(7) When the Labs Don't Add Up: A Case of Factitious Disorder Diagnosis and Management",
+      "abstract": "Background: Factitious disorder (FD) requires evidence that the patient is provoking symptoms. Convincing symptoms with rare objective evidence make diagnosis challenging; C-L psychiatrists frequently assist with care (Jimenez 2020). Case: Ms. H is a 33-year-old with diagnoses including postural tachycardia syndrome (PoTS), epilepsy, iron deficiency anemia, and generalized anxiety disorder. She was admitted for hypotension, syncope, and acute kidney injury in the setting of reported nausea, vomiting and diarrhea. She was hospitalized one month prior for the same and diagnosed with digoxin toxicity, resulting in discontinuation. On admission, she had a detectable digoxin level (1.2) despite reported discontinuation; digoxin level was 0.4 (0.8-2.0 ng/mL) one week before presentation. Her level increased (1.3) the following day despite fluid resuscitation, indicating she was still taking digoxin; toxicology stated alternative explanations were unlikely. Other inconsistencies included reported epilepsy with undetectable levetiracetam levels despite reported adherence, reported thalassemia with negative electrophoresis, reported PoTS without objective data, and anemia of unclear etiology. On psychiatric consultation, she endorsed anxiety in the context of illness and denied acute psychosocial stressors. The patient had several factors that increased concern for FD including medical work, receiving healthcare in multiple states, and eagerness to undergo medical interventions. Ms. H was diagnosed with FD but not confronted with the diagnosis. The medical record now includes the FD diagnosis and toxicology’s recommendations for specific labs when she re-presents with symptoms. Discussion: There is a dearth of evidence to support any one FD management strategy (Eastwood 2008); the approach taken here includes careful record documentation and avoidance of confrontation, keeping Ms. H engaged in outpatient care and reducing unnecessary hospitalizations. She continues to see her PCP weekly, unusual in that many patients are lost to follow-up (Bass 2014). Cardiac FD presentations are more likely falsely reported or feigned, rather than induced (Yates 2016). It is rare to have objective data for FD, as was available here with digoxin levels. Implication: Although more research is needed, a non-confrontational strategy with coordination between healthcare teams may represent an effective approach to caring for FD patients. C-L psychiatrists play an important role in working developing effective management strategies across the spectrum of care. References: Bass, C., Halligan, P. Factitious disorders and malingering: challenges for clinical assessment and management. Lancet, 2014, 383: 1422–1432. Eastwood, S., Bisson, J.I. Management of factitious disorders: a systematic review. Psychother. Psychosom., 2008, 77: 209–218. Jimenez, X.F., Nkanginieme, N., Dhand, N., Karafa, M., Salerno, K. Clinical, demographic, psychological, and behavioral features of factitious disorder: A retrospective analysis. Gen. Hosp. Psychiatry, 2020, 62: 93–95. Yates, G.P., Feldman, M.D. Factitious disorder: a systematic review of 455 cases in the professional literature. Gen. Hosp. Psychiatry, 2016, 41: 20–28.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "候选明确涉及人为事实障碍及其诊断标准，属于精神障碍相关内容。"
+      },
+      "selection_order": 3,
+      "topic": "做作性障碍·沟通与诊断",
+      "selection_summary_cn": "做作性障碍的客观检查线索与非对抗性沟通",
+      "research_design": "病例报告及文献讨论（会议摘要）",
+      "selection_reasons": [
+        "包含具体病例、连续实验室结果、诊断依据及完整参考文献。",
+        "明确描述避免对质和采用非对抗性沟通的处理方式。",
+        "保留病情及沟通策略的情境，便于区分一般建议与个案处理。"
+      ],
+      "abstract_word_count": 442
+    },
+    {
+      "index": 54260,
+      "source": "Embase",
+      "disease_codes": [
+        "20"
+      ],
+      "doi": "10.1016/j.jaclp.2022.03.053",
+      "title": "(PO-047) Systematic Assessment of Decisional Capacity in Communication-Impaired Patients With Severe Psychiatric Symptoms",
+      "abstract": "Background: Severe psychiatric symptoms, such as suicidality or psychosis, can impair insight and judgment. Careful evaluation is often needed to ensure decision making capacity is not compromised, especially in end-of-life decisions. These evaluations can be challenging and are further complicated by limitations in communication. We present a case in which capacity to make end of life decisions was evaluated in a non-verbal patient with suicidality and psychosis and offer a systematic approach to such evaluations. Case: A 41-year-old man with schizophrenia and polysubstance use presented after a suicide attempt which resulted in C7-T2 fractures rendering him functionally quadriplegic. Surgical course left him alert but intubated and non-verbal. He intermittently refused urgent blood transfusions, requested withdrawal of life-supporting care, and declined to allow his next-of-kin to serve as surrogate decision-maker. Psychiatry was consulted to evaluate his capacity to make these medical decisions. The patient’s cognition, psychosis, mood, suicidal ideation, and understanding of his clinical condition and the recommended medical interventions were systematically assessed through a series of yes/no questions. On evaluation, he demonstrated adequate orientation, understanding, and comprehension; however, his reliability was questionable at times and his short-term recall was impaired. He was experiencing profound symptoms of psychosis including auditory hallucinations telling him to hurt himself and paranoia about his next-of-kin’s intentions. Therefore, we determined that the patient did not demonstrate capacity to consent to withdrawal of life-sustaining treatment or to choose his surrogate decision-maker. He could, however, assent to other interventions which he now wanted (e.g., transfusions and psychotropic medications). Discussion: To the authors’ knowledge, this is the first report regarding decision making capacity to withdraw life-sustaining treatment after a near-lethal suicide attempt in a non-verbal patient with psychosis. Given that 26.8% of patients with schizophrenia attempt suicide and the likelihood that severe bodily injury could render a patient non-verbal with adequate cognition, it is likely that consultation-liaison psychiatrists will encounter similar situations (Lu 2020). However, there are no recommendations on conducting such capacity assessments. Building upon communication strategies in patients with Locked-In Syndrome (Maiser 2016), we will present a suggested organizational framework to ensure comprehensive and reliable assessment of decision-making capacity in these situations. Conclusion: Non-verbal patients with severe psychiatric symptoms present unique challenges in the evaluation of decisional capacity. A structured and methodical approach to these evaluations is necessary to both maximize accuracy of determinations and ensure protection of patient autonomy. References: 1. Lu, L., et al. (2019). Prevalence of suicide attempts in individuals with schizophrenia: a meta-analysis of observational studies. Epidemiology and psychiatric sciences, 29, e39. 2. Maiser, S., et al. (2016). Locked-In Syndrome: Case Report and Discussion of Decisional Capacity. Journal of pain and symptom management, 51(4), 789–793.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "候选证据明确涉及精神分裂症及其临床自杀风险。"
+      },
+      "selection_order": 4,
+      "topic": "精神病性障碍·决策能力评估",
+      "selection_summary_cn": "严重精神症状且无法言语患者的决策能力评估",
+      "research_design": "病例报告及评估方法讨论（会议摘要）",
+      "selection_reasons": [
+        "通过一系列是非问题评估认知、精神病性症状、情绪与自杀意念。",
+        "明确交代患者沟通障碍及身体情况如何影响评估。",
+        "病例同时呈现患者背景、症状和自杀风险，补充临床评估场景。"
+      ],
+      "abstract_word_count": 442
+    },
+    {
+      "index": 107246,
+      "source": "Embase",
+      "disease_codes": [
+        "32",
+        "33"
+      ],
+      "doi": "10.1192/j.eurpsy.2023.1626",
+      "title": "MALIGNANT CATATONIA IN MEDICAL WARDS: A BROAD DIFFERENTIAL DIAGNOSIS",
+      "abstract": "Introduction: Catatonia is an uncommon and heterogeneous psychomotor syndrome. It can be not only the manifestation of a psychiatric disorder but also a wide range of medical conditions. The malignant catatonia is a subtype of catatonia which includes dysautonomic signs such as hyperthermia or hemodynamic instability, and because most of the affected patients are taking antipsychotics or antidepressants previously, it can be confounded with medical conditions such as neuroleptic or serotonin syndrome. Objectives: To present a case of malignant catatonia admitted in a medical ward Methods: The present study is a case report of a patient admitted with initial diagnosis of serotonin syndrome in a medical ward of our hospital and referred to the consultation and liaison psychiatry (CLP) unit. We also searched previously case reports, series and systematic reviews about catatonia secondary to medical conditions and hyperthermia catatonia. Results: Ms. TN is a 71-year-old woman, with prior history of major depressive disorder. One month ago she was admitted in a psychiatric ward of another hospital for a depressive episode with psychotics features, and was treated with escitalopram 10mg/day, vortioxetine 10mg/day, mirtazapine 15mg/day, trazodone 50mg/ day, quetiapine 700mg/day and haloperidol 5mg/day. She had a worsening of depressive symptoms with suicidal thoughts, negativism and psychomotor retardation, and subsequently hyperthermia, rigidity, mydriasis, tachicardia and increased bowel sound. She was tranfered to our medical ward, and diagnosed of serotonin syndrome. She was stopped all the psychiatric drugs and was treated with dantrolene and support measures. After 10 days without antidepressants or antipsychotics she maintened the same symptomatology and was referred to our CLP unit. The psychopathological evaluation showed stupor, mutism, waxy flexibility and negativism, and she responded to a challenge test with intravenous clonazepam 0,5mg. She was diagnosed of malignant catatonia and was started oral clonazepam 2mg/day. Although there was a partial response, she did not tolerate higher doses because of sedation and finally was treated with electroconvulsive therapy (ECT). She dad a remission of catatonic symptoms after only two sessions of ECT. Conclusions: Malignant catatonia can be confounded with other medical conditions such as serotonin or neuroleptic syndromes. All of them can have catatonic signs, and it is important to recognize them (a challenge test with a benzodiacepine can be helpful). The key to distingish malignant catatonia from them is that some of the catatonic signs (negativism and psychomotor retardation) happened before the dysautonomic signs. Also, it is uncommon that a serotonin syndrome persisted more than 3-5 days after the suspension of antidepressants. Consultation and liaison psychiatrists can help for the differential diagnosis and management of patients with suspected catatonia in medical wards.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "候选证据明确表明恶性紧张症是紧张症的亚型，属于临床精神健康综合征。"
+      },
+      "selection_order": 5,
+      "topic": "紧张症·鉴别诊断与症状时序",
+      "selection_summary_cn": "恶性紧张症与血清素综合征的鉴别病例",
+      "research_design": "病例报告及文献回顾（会议摘要）",
+      "selection_reasons": [
+        "明确写出紧张症状先于自主神经症状的时序。",
+        "讨论停药后症状持续时间对鉴别诊断的意义。",
+        "描述药物镇静副作用、剂量耐受和随后电休克治疗的过程。"
+      ],
+      "abstract_word_count": 431
+    },
+    {
+      "index": 157314,
+      "source": "pubmed",
+      "disease_codes": [
+        "F23",
+        "F25"
+      ],
+      "doi": "10.1016/j.eclinm.2022.101808",
+      "title": "The role of the electroencephalogram (EEG) in determining the aetiology of catatonia: a systematic review and meta-analysis of diagnostic test accuracy",
+      "abstract": "BACKGROUND: Catatonia is a psychomotor syndrome that has a wide range of aetiologies. Determining whether catatonia is due to a medical or psychiatric cause is important for directing treatment but is clinically challenging. We aimed to ascertain the performance of the electroencephalogram (EEG) in determining whether catatonia has a medical or psychiatric cause, conventionally defined. METHODS: In this systematic review and meta-analysis of diagnostic test accuracy (PROSPERO CRD42021239027), Medline, EMBASE, PsycInfo, and AMED were searched from inception to May 11, 2022 for articles published in peer-reviewed journals that reported EEG findings in catatonia of a medical or psychiatric origin and were reported in English, French, or Italian. Eligible study types were clinical trials, cohort studies, case-control studies, cross-sectional studies, case series, and case reports. The reference standard was the final clinical diagnosis. Data extraction was conducted using individual patient-level data, where available, by two authors. We prespecified two types of studies to overcome the limitations anticipated in the data: larger studies (n ≥ 5), which were suitable for formal meta-analytic methods but generally lacked detailed information about participants, and smaller studies (n < 5), which were unsuitable for formal meta-analytic methods but had detailed individual patient level data, enabling additional sensitivity analyses. Risk of bias and applicability were assessed with the QUADAS-2 tool for larger studies, and with a published tool designed for case reports and series for smaller studies. The primary outcomes were sensitivity and specificity, which were derived using a bivariate mixed-effects regression model. FINDINGS: 355 studies were included, spanning 707 patients. Of the 12 larger studies (5 cohort studies and 7 case series), 308 patients were included with a mean age of 48.2 (SD = 8.9) years. 85 (52.8%) were reported as male and 99 had catatonia due to a general medical condition. In the larger studies, we found that an abnormal EEG predicted a medical cause of catatonia with a sensitivity of 0.82 (95% CI 0.67-0.91) and a specificity of 0.66 (95% CI 0.45-0.82) with an I 2 of 74% (95% CI 42-100%). The area under the summary ROC curve offered excellent discrimination (AUC = 0.83). The positive likelihood ratio was 2.4 (95% CI 1.4-4.1) and the negative likelihood ratio was 0.28 (95% CI 0.15-0.51). Only 5 studies had low concerns in terms of risk of bias and applicability, but a sensitivity analysis limited to these studies was similar to the main analysis. Among the 343 smaller studies, 399 patients were included, resulting in a sensitivity of 0.76 (95% CI 0.71-0.81), specificity of 0.67 (0.57-0.76) and AUC = 0.71 (95% CI 0.67-0.76). In multiple sensitivity analyses, the results were robust to the exclusion of reports of studies and individuals considered at high risk of bias. Features of limbic encephalitis, epileptiform discharges, focal abnormality, or status epilepticus were highly specific to medical catatonia, but features of encephalopathy had only moderate specificity and occurred in 23% of the cases of psychiatric catatonia in smaller studies. INTERPRETATION: In cases of diagnostic uncertainty, the EEG should be used alongside other investigations to ascertain whether the underlying cause of catatonia is medical. The main limitation of this review is the differing thresholds for considering an EEG abnormal between studies. FUNDING: Wellcome Trust, NIHR Biomedical Research Centre at University College London Hospitals NHS Foundation Trust.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "候选证据明确将紧张症定义为临床精神健康综合征。"
+      },
+      "selection_order": 6,
+      "topic": "紧张症·检查鉴别",
+      "selection_summary_cn": "脑电图区分躯体病因与精神病因紧张症的诊断准确性综述",
+      "research_design": "诊断试验系统综述与荟萃分析",
+      "selection_reasons": [
+        "给出脑电图在不同病因紧张症中的灵敏度、特异度及具体异常模式。",
+        "检查用途与疾病鉴别清楚，有助于区分诊断支持与确诊。",
+        "摘要保留偏倚和异常阈值差异，便于人工限定证据范围。"
+      ],
+      "abstract_word_count": 543
+    },
+    {
+      "index": 107223,
+      "source": "Embase",
+      "disease_codes": [
+        "30",
+        "31"
+      ],
+      "doi": "10.1192/j.eurpsy.2023.1464",
+      "title": "Lithium intoxication due to furosemide interaction - a case report",
+      "abstract": "Introduction: Lithium has been used for the management of psychiatric illnesses over the years and it continues to be the firstline mood stabilizer used in treatment and prevention of bipolar disorder. Due to its narrow therapeutic index, other prescribed medications can increase lithium levels and potentiate its toxic effects. Among the most described drugs, non-steroid antiinflammatory drugs and diuretics (mainly thiazides and loop diuretics) are the most commonly implicated. Risk factors for developing lithium toxicity include old age, polypharmacy, renal impairment, hyponatremic and hypovolemic conditions. Although there is interindividual susceptibility, older patients are at particularly higher risk. Objectives: To summarize the latest literature about this field and to present a case report as a basis for discussion. Methods: A brief review of the latest literature was performed, using PubMed and the keywords lithium and acute renal injury . Also, a case report about a 73 year-old man who suffer from lithium intoxication due to lithium-furosemide interaction is presented. Results: In the presented case, Mr. F, 73 years old, independent for activities of daily living, was admitted to the Internal Medicine ward due to acute renal injury and lithium intoxication. Initially he was non-collaborative, sleepy, disoriented in all references and speechless. The creatinine was 1.28 mg/dL, urea 63 mg/dL, unspecific leucocitosis 17000/mm(3) , C-Reactive Protein 8 mg/dL, lithium 2.22 mEq/L. The psychiatrist was called to approach the psychiatric status, but as the patient awareness was impaired, the mental state examination was not possible. The patient's daughter was interviewed. The patient had bipolar disorder (BD) type 1 and was diagnosed with mild cognitive impairment (MCI) a year ago. He had been stable for BD and MCI until the last month. He began to present nocturia, so he went to a urologist who prescribed him furosemide 40 mg daily for benign prostatic hyperplasia (BPH). Since that moment, he started being confused and progressively went to the state that was previously described at the admission of internment. Furosemide, quetiapine and lithium were stopped. He got better, to his previous state, and then started quetiapine 200 mg/day and tansulosine 0.4 mg/day. Conclusions: Initiating diuretics in patients under lithium should be carefully considered and lithium blood levels must be monitored more regularly when new drugs are prescribed. Other medications must be regarded as alternatives but, if it is not possible, they should be used in the lowest dose and shortest duration as possible. With this case report, we highlight the importance of considering patients as a whole, taking both their physical and mental well-being into account. Healthcare professionals are invited to coordinate their efforts to deliver the best standard of care.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "候选证据明确涉及锂盐用于双相障碍的治疗与预防。"
+      },
+      "selection_order": 7,
+      "topic": "双相障碍·药物相互作用",
+      "selection_summary_cn": "锂与呋塞米相互作用导致中毒的病例",
+      "research_design": "病例报告及文献回顾（会议摘要）",
+      "selection_reasons": [
+        "明确命名相互作用的两种药物及事件发生顺序。",
+        "包含患者既往史、意识状态、检验值和停药后的变化。",
+        "明确提出新增药物时应更频繁监测血锂浓度。"
+      ],
+      "abstract_word_count": 435
+    },
+    {
+      "index": 241700,
+      "source": "pubmed",
+      "disease_codes": [
+        "F30",
+        "F31",
+        "F53"
+      ],
+      "doi": "10.3389/fphar.2019.01005",
+      "title": "Clinical Lactation Studies of Lithium: A Systematic Review",
+      "abstract": "Background: There is substantial evidence that postpartum prophylaxis with lithium lowers the rate of relapse in bipolar disorder. However, it is contraindicated during breastfeeding due to the high variability of the transfer into breast milk. Aims: We conducted a systematic review of the current evidence of studies assessing the transfer of lithium to lactating infants and short-term infant outcomes. Methods: An a priori protocol was designed based on PRISMA guidelines. Searches in PubMed and LactMed were conducted until September 2018. Studies assessing lithium pharmacokinetic parameters and short-term infant outcomes were included. Quality was assessed using a checklist based on international guidelines (i.e., FDA). Results: From 344 initial studies, 13 case reports/series with 39 mother-child dyads were included. Only 15% of studies complied with ≥50% of the items on the quality assessment checklist. Infants breastfeed a mean (SD) of 58.9 (83.3) days. Mean maternal lithium dose was 904 (293) mg/day, corresponding lithium plasma/serum concentration was 0.73(0.26) mEq/L, and breast milk concentration was 0.84(0.14) mEq/L. Mean infant lithium plasma/serum concentration was 0.23(0.26) mEq/L. Twenty-six (80%) infants had concentrations ≤0.30 mEq/L without adverse effects. Eight (20%) showed a transient adverse event (i.e., acute toxicity or thyroid alterations). All of them were also prenatally exposed to lithium monotherapy or polytherapy. Conclusion: The current evidence comes from studies with a degree of heterogeneity and of low-moderate quality. However, it identifies areas of improvement for future clinical lactation studies of lithium and provides support for some clinical recommendations.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "证据明确涉及双相障碍产后预防治疗及锂盐哺乳期安全性。"
+      },
+      "selection_order": 8,
+      "topic": "双相障碍·哺乳期用药",
+      "selection_summary_cn": "哺乳期锂暴露与母婴结局的系统综述",
+      "research_design": "系统综述",
+      "selection_reasons": [
+        "摘要明确涉及哺乳期特殊人群、药物暴露及禁忌表述。",
+        "提供母体、乳汁及婴儿血锂浓度和不良事件信息。",
+        "同时说明证据异质性与低至中等质量；其2019年文献背景表述应保持原有时间语境。"
+      ],
+      "abstract_word_count": 242
+    },
+    {
+      "index": 88037,
+      "source": "Embase",
+      "disease_codes": [
+        "21",
+        "60",
+        "61",
+        "62"
+      ],
+      "doi": "10.1111/eip.12396",
+      "title": "Transition rates from schizotypal disorder to psychotic disorder within an established specialized early intervention service. A randomized clinical trial of prolonged integrated treatment vs standard treatment - The OPUS II trial",
+      "abstract": "Purpose: One of the CAARMS criteria used to establish UHR status is schizotypal personality disorder. An earlier study of the OPUS I cohort showed that the specialized early intervention (SEI) treatment provided in the OPUS teams reduced the transition rate of patients with a schizotypal disorder to psychotic disorder from 33% to 8% over a 12 month period. In this study we wish to investigate the transition rates of patients with a schizotypal personality disorder treated in an early intervention service and if the prolonged treatment affect the transition rates. Materials and Methods: The study is part of a randomized controlled trial investigating the effect of prolonged early intervention compared to treatment as usual after end of standard SEI treatment. Patients were recruited at 1 1/2 year into their SEI treatment and randomized for all together five years of SEI treatment or discontinuation after the standard two year of treatment. Totally 400 patients were recruited for the study and 84 of them were diagnosed with a schizotypal personality disorder at baseline. Results: Preliminary analysis shows that approximately 30% of the patients with a schizotypal personality disorder were re-diagnosed with a psychotic disorder 3 1/2 year after the baseline interview. The transitions rates were not affected by treatment site. Conclusion: The transition rate seen in this study is much higher than in recent UHR studies, which might imply that persons with a schizotypal personality disorder are group with a higher risk of developing psychosis than others meeting CAARMS criteria.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "候选关系明确涉及分裂型障碍向精神病性障碍的临床转归。"
+      },
+      "selection_order": 9,
+      "topic": "精神病性障碍·疾病进展",
+      "selection_summary_cn": "分裂型人格障碍向精神病性障碍的转归",
+      "research_design": "随机对照试验亚组结果（会议摘要）",
+      "selection_reasons": [
+        "明确报告基线分裂型人格障碍及随访中重新诊断为精神病性障碍。",
+        "描述高危判定标准与早期干预背景。",
+        "保留初步分析的性质，补充原批次较少涉及的疾病转归。"
+      ],
+      "abstract_word_count": 248
+    },
+    {
+      "index": 50653,
+      "source": "Embase",
+      "disease_codes": [
+        "25"
+      ],
+      "doi": "10.1016/j.euroneuro.2019.09.634",
+      "title": "P.662 Development of diagnostic criteria and severity scale of polydipsia: A systematic literature review and expert consensus",
+      "abstract": "Background: Excessive fluid intake, as known as polydipsia, often occurs in patients with psychiatric disorders. Polydipsia and water intoxication have negative impact on their mental and physical conditions. Despite the clinical importance of polydipsia, to our knowledge, any diagnostic criteria and severity scales specifically designed for this condition have not been available. Thus, we aimed to establish both diagnostic criteria and severity scale of polydipsia. Methods: First, we conducted a systematic literature search in MEDLINE, Embase, and CINHAL using the following keywords: (polydipsi* OR water intoxi* OR polyuri*) AND (psychiatr* OR mental OR schizophreni* OR schizoaffective OR psychosis OR psychoses OR psychotic) AND (scale* OR criteria OR criterion OR definition* OR assessment* OR measurement* OR tool*) with a limitation of English language (last search: January 16, 2018). Two investigators independently identified studies related to diagnostic criteria or symptom scales of polydipsia and extracted information on the items used in the criteria and scales. Then, we created 2 questionnaires based on the results of the systematic literature review, sent them to 10 experts in this field, reached consensus using the Delphi method in terms of items for diagnostic criteria and severity scale of polydipsia, and developed new criteria and scale. We also asked the experts to score each item in the scale from 1 (the least severe) to 7 (the most severe) in the 2nd questionnaire. Results: From 27 identified studies, 39 items that were considered to be potentially useful for the diagnostic criteria and severity scale were extracted. Based on the answers from the experts, the following 5 items were chosen to be included in the diagnostic criteria: excessive drinking, low serum sodium, low serum osmolarity, abnormal normalized diurnal weight gain (NDWG), and low urinary gravity. As for the severity scale, 13 items, including all 5 items selected for the diagnostic criteria, were selected, On the scale ranging from 1 to 7, low serum sodium level (<120 mEq/L), disturbance of consciousness (loss of consciousness), and seizures scored 7; disturbance of consciousness (twilight state) scored 6; NDWG (≥4%), drinking dirty water, low serum sodium level (124-120 mEq/L), and stagger/gait disturbance/fall scored 5; excessive drinking (symptoms occur most of the time), development or worsening of psychiatric symptoms, and vomiting scored 4; excessive drinking (symptoms sometimes occur), NDWG (≥2.5%), low serum sodium level (129-125 mEq/L), low serum osmolarity (< 275mOsm/L), polyuria and Incontinent scored 3; low serum sodium level (130-134 mEq/L) and low urinary gravity (< 1.008) scored 2; excessive drinking (symptoms rarely occur) scored 1. A total score of the 13 items ranges from 0 to 59 points Conclusion: This is the first diagnostic criteria and symptom scale of polydipsia that were developed based on the findings of systematic literature search and expert consensus. Our diagnostic criteria and symptom scale of polydipsia can objectively and thoroughly assess this challenging condition in clinical practice as well as research settings, which may contribute to the further development of the treatment of polydipsia.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "abstract",
+        "reason": "针对精神障碍患者多饮及水中毒相关综合征，开发诊断标准和严重程度量表，具有明确的精神健康临床评估目的。"
+      },
+      "selection_order": 10,
+      "topic": "精神科多饮·诊断标准",
+      "selection_summary_cn": "精神科多饮的诊断标准与严重程度量表开发",
+      "research_design": "系统文献回顾与专家Delphi共识（会议摘要）",
+      "selection_reasons": [
+        "具体列出被纳入诊断标准的五项内容，便于核对症状与诊断标准的联系。",
+        "同时提供13项严重程度量表及分值信息。",
+        "区分专家共识形成的标准和已验证的临床结论，补充诊断标准类材料。"
+      ],
+      "abstract_word_count": 488
+    },
+    {
+      "index": 252351,
+      "source": "pubmed",
+      "disease_codes": [
+        "F20"
+      ],
+      "doi": "10.7759/cureus.87069",
+      "title": "Shared Decision-Making in the Management of Schizophrenia: A Systematic Review",
+      "abstract": "Schizophrenia is a chronic mental disorder that affects an individual's emotional, cognitive, and behavioral well-being. Schizophrenia is characterized by poor treatment adherence, frequent relapses, and worsening symptoms, often leading to increased hospitalizations. Shared decision-making (SDM) has been proposed to enhance adherence by involving patients and their caregivers in collaborative treatment decisions. However, the impact of SDM on adherence, quality of life, and mental health outcomes remains uncertain. This review evaluates the effectiveness of SDM interventions on treatment adherence in individuals with schizophrenia and explores health-related outcomes, including quality of life, mental health, self-efficacy, trust in healthcare providers, and self-regard. Following the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) guidelines, PubMed, CINAHL, and Web of Science were systematically searched. Randomized controlled trials, quasi-experimental, and observational studies assessing adherence were included. Data extraction was performed by two independent reviewers, and study quality was assessed using the Cochrane Risk of Bias Tool. Eight studies involving 2,314 participants met the inclusion criteria. SDM interventions improved treatment adherence in most studies, with rates increasing by 9% (78% vs. 69%, p < 0.01). Quality of life, measured by the World Health Organization Quality-of-Life Scale Abbreviated Version (WHOQOL-BREF), improved by 8.03 points (p < 0.002), and self-esteem, measured via the Rosenberg Scale, increased by 4.06 points (p < 0.001). Additional outcomes included a statistically significant increase in problem-solving ability scores in the SDM group, from 106.68 to 124.00 (n = 29, p < 0.001), while perceived autonomy support, patient activation, and confidence in communicating with providers were also notably higher for SDM participants (p < 0.05). In conclusion, SDM interventions demonstrate significant benefits in improving treatment adherence, quality of life, and various psychological outcomes in individuals with schizophrenia. The findings suggest that SDM fosters greater patient engagement, enhances self-efficacy, and strengthens trust in healthcare providers, ultimately leading to better mental health management. Further research is needed to explore long-term effects and optimize SDM strategies for sustained adherence and improved patient outcomes.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "候选明确指出精神分裂症属于慢性精神障碍，且综述主题涉及其临床管理。"
+      },
+      "selection_order": 11,
+      "topic": "精神分裂症·共同决策与评估维度",
+      "selection_summary_cn": "共同决策及生活质量、自尊等量表结局",
+      "research_design": "系统综述",
+      "selection_reasons": [
+        "明确命名WHOQOL-BREF与Rosenberg量表及其测量的生活质量、自尊。",
+        "共同决策的做法、患者群体和结局同时出现。",
+        "适合核对新增评估维度与疾病、量表之间的区别。"
+      ],
+      "abstract_word_count": 326
+    },
+    {
+      "index": 190928,
+      "source": "pubmed",
+      "disease_codes": [
+        "F20",
+        "F23",
+        "F25"
+      ],
+      "doi": "10.1080/20008198.2020.1748342",
+      "title": "Childhood trauma and substance use underlying psychosis: a systematic review",
+      "abstract": "Background: Schizophrenia spectrum disorders (SSD) are mental diseases caused by a combination of genetic susceptibility and a number of environmental factors. Among these factors, the role of traumatic events suffered in childhood, as well as that of substance use, have been of particular research interest. Objectives: To conduct a systematic review to clarify whether there is an interaction between childhood trauma and substance use related to the diagnosis or symptoms of SSD. It was also the objective of this review to collate the associations that may exist between the three variables of the study (trauma, substance use and psychosis). Methods: We conducted a systematic search resulting in 240 articles. We considered all of the original articles that explored childhood trauma and substance use in patients suffering from SSD. Results: Twenty-three articles were selected for this review. Several of the reviewed papers found associations between childhood trauma and substance use with SSD, as well as interactions between trauma and drug use on SSD. Conclusions: The results suggest that childhood trauma and substance use may be present at the basis of psychosis. This double hit on the pathogenesis could have clinical implications, since each of these impacts could be considered a window of opportunity for the primary prevention of SSD.\n\nPublisher: Introducción: Los trastornos del espectro de la esquizofrenia (SSD) son enfermedades mentales que parecen estar provocadas por una combinación de múltiples factores genéticos y ambientales. Entre los factores ambientales desencadenantes, el papel de los eventos traumáticos sufridos en la infancia y el consumo de sustancias resultan de particular interés para la investigación.Objetivos: Aclarar si existe una interacción entre el trauma infantil y el uso de sustancias relacionadas con el diagnóstico o los síntomas de las SSD. También fue el objetivo de esta revisión cotejar las asociaciones que pueden existir entre las tres variables del estudio (trauma, consumo de sustancias y psicosis).Métodos: Se realizó una búsqueda sistemática que resultó en 240 artículos. Consideramos todos los artículos originales que exploraron el trauma infantil y el consumo de sustancias en pacientes que presentaban trastornos psicóticos.Resultados: 23 artículos fueron seleccionados a los efectos de esta revisión. Varios de los artículos revisados encontraron asociaciones entre el trauma infantil y el consumo de sustancias con SSD, además de interacciones entre trauma y consumo en los trastornos psicóticos.Conclusiones: El doble impacto que representan el trauma en la infancia y el consumo de sustancias en la patogénesis de la enfermedad podría tener implicaciones clínicas por la ventana de oportunidad que supone la intervención en estos factores en la prevención primaria de los trastornos psicóticos.\n\nPublisher: 背景：精神分裂症谱系障碍（SSD）是由遗传易感性和许多环境因素共同导致的精神疾病。在这些因素中，童年遭受的创伤事件以及药物滥用的作用引起了特别的研究兴趣。目的：本系统综述想要阐明童年创伤与药物滥用之间是否存在与SSD的诊断或症状相关的相互作用。目的还有总结三个变量（创伤，药物滥用和思觉失调）之间可能存在的关联。方法：我们进行了系统搜索，共检索到240条文章，其中考虑了所有探讨SSD患儿的童年创伤和药物使用的原始文章。结果：共有23篇文章被纳入。一些已纳入论文中报告了童年创伤与SSD药物滥用之间，以及创伤与药物滥用对SSD的交互作用。结论：童年创伤和药物滥用可能是思觉失调的基础。二者在发病机理中的共存可能具有临床意义，因为这些影响中的每一个都可以被视为预防SSD的机会窗口。.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "候选关系明确涉及童年创伤与精神病性障碍的相关性。"
+      },
+      "selection_order": 12,
+      "topic": "精神病性障碍·病因与环境因素",
+      "selection_summary_cn": "童年创伤、物质使用与精神分裂症谱系障碍",
+      "research_design": "系统综述",
+      "selection_reasons": [
+        "讨论遗传易感性、环境因素、创伤和物质使用的共同作用。",
+        "结论使用可能及关联表述，适合保留证据强度和因果限制。",
+        "具有明确精神疾病背景，补充病因相关内容。"
+      ],
+      "abstract_word_count": 427
+    },
+    {
+      "index": 177523,
+      "source": "pubmed",
+      "disease_codes": [
+        "F43"
+      ],
+      "doi": "10.1016/s2215-0366(18)30135-4",
+      "title": "3,4-methylenedioxymethamphetamine (MDMA)-assisted psychotherapy for post-traumatic stress disorder in military veterans, firefighters, and police officers: a randomised, double-blind, dose-response, phase 2 clinical trial",
+      "abstract": "BACKGROUND: Post-traumatic stress disorder (PTSD) is prevalent in military personnel and first responders, many of whom do not respond to currently available treatments. This study aimed to assess the efficacy and safety of 3,4-methylenedioxymethamphetamine (MDMA)-assisted psychotherapy for treating chronic PTSD in this population. METHODS: We did a randomised, double-blind, dose-response, phase 2 trial at an outpatient psychiatric clinic in the USA. We included service personnel who were 18 years or older, with chronic PTSD duration of 6 months or more, and who had a Clinician-Administered PTSD Scale (CAPS-IV) total score of 50 or greater. Using a web-based randomisation system, we randomly assigned participants (1:1:2) to three different dose groups of MDMA plus psychotherapy: 30 mg (active control), 75 mg, or 125 mg. We masked investigators, independent outcome raters, and participants until after the primary endpoint. MDMA was administered orally in two 8-h sessions with concomitant manualised psychotherapy. The primary outcome was mean change in CAPS-IV total score from baseline to 1 month after the second experimental session. Participants in the 30 mg and 75 mg groups subsequently underwent three 100-125 mg MDMA-assisted psychotherapy sessions in an open-label crossover, and all participants were assessed 12 months after the last MDMA session. Safety was monitored through adverse events, spontaneously reported expected reactions, vital signs, and suicidal ideation and behaviour. This study is registered with ClinicalTrials.gov, number NCT01211405. FINDINGS: Between Nov 10, 2010, and Jan 29, 2015, 26 veterans and first responders met eligibility criteria and were randomly assigned to receive 30 mg (n=7), 75 mg (n=7), or 125 mg (n=12) of MDMA plus psychotherapy. At the primary endpoint, the 75 mg and 125 mg groups had significantly greater decreases in PTSD symptom severity (mean change CAPS-IV total scores of -58·3 [SD 9·8] and -44·3 [28·7]; p=0·001) than the 30 mg group (-11·4 [12·7]). Compared with the 30 mg group, Cohen's d effect sizes were large: 2·8 (95% CI 1·19-4·39) for the 75 mg group and 1·1 (0·04-2·08) for the 125 mg group. In the open-label crossover with full-dose MDMA (100-125 mg), PTSD symptom severity significantly decreased in the group that had previously received 30 mg (p=0·01), whereas no further significant decreases were observed in the group that previously achieved a large response after 75 mg doses in the blinded segment (p=0·81). PTSD symptoms were significantly reduced at the 12-month follow-up compared with baseline after all groups had full-dose MDMA (mean CAPS-IV total score of 38·8 [SD 28·1] vs 87·1 [16·1]; p<0·0001). 85 adverse events were reported by 20 participants. Of these adverse events, four (5%) were serious: three were deemed unrelated and one possibly related to study drug treatment. INTERPRETATION: Active doses (75 mg and 125 mg) of MDMA with adjunctive psychotherapy in a controlled setting were effective and well tolerated in reducing PTSD symptoms in veterans and first responders. FUNDING: Multidisciplinary Association for Psychedelic Studies.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "候选关系明确涉及MDMA辅助心理治疗PTSD及其症状改善。"
+      },
+      "selection_order": 13,
+      "topic": "创伤后应激障碍·试验性综合治疗",
+      "selection_summary_cn": "MDMA辅助心理治疗的二期随机试验",
+      "research_design": "二期随机双盲剂量反应临床试验",
+      "selection_reasons": [
+        "明确为二期试验，药物与心理治疗的组合及组成要素具体。",
+        "交代不良事件、生命体征和自杀意念行为的监测。",
+        "可用于区分试验性治疗、联合方案和已经形成临床推荐的治疗。"
+      ],
+      "abstract_word_count": 474
+    },
+    {
+      "index": 128282,
+      "source": "Embase",
+      "disease_codes": [
+        "32",
+        "33",
+        "41",
+        "51",
+        "52",
+        "66"
+      ],
+      "doi": "10.7326/l23-0246",
+      "title": "Nonpharmacologic and Pharmacologic Treatments of Adults in the Acute Phase of Major Depressive Disorder: A Living Clinical Guideline From the American College of Physicians",
+      "abstract": "Description: The purpose of this guideline from the American College of Physicians (ACP) is to present updated clinical recommendations on nonpharmacologic and pharmacologic interventions as initial and second-line treatments during the acute phase of a major depressive disorder (MDD) episode, based on the best available evidence on the comparative benefits and harms, consideration of patient values and preferences, and cost. Methods: The ACP Clinical Guidelines Committee based these recommendations on an updated systematic review of the evidence. Audience and Patient Population: The audience for this guideline includes clinicians caring for adult patients in the acute phase of MDD in ambulatory care. The patient population includes adults in the acute phase of MDD. Recommendation 1a: ACP recommends monotherapy with either cognitive behavioral therapy or a second-generation antidepressant as initial treatment in patients in the acute phase of moderate to severe major depressive disorder (strong recommendation; moderate-certainty evidence). Recommendation 1b: ACP suggests combination therapy with cognitive behavioral therapy and a second-generation antidepressant as initial treatment in patients in the acute phase of moderate to severe major depressive disorder (conditional recommendation; low-certainty evidence). The informed decision on the options of monotherapy with cognitive behavioral therapy versus second-generation antidepressants or combination therapy should be personalized and based on discussion of potential treatment benefits, harms, adverse effect profiles, cost, feasibility, patients' specific symptoms (such as insomnia, hypersomnia, or fluctuation in appetite), comorbidities, concomitant medication use, and patient preferences. Recommendation 2: ACP suggests monotherapy with cognitive behavioral therapy as initial treatment in patients in the acute phase of mild major depressive disorder (conditional recommendation; low-certainty evidence). Recommendation 3: ACP suggests one of the following options for patients in the acute phase of moderate to severe major depressive disorder who did not respond to initial treatment with an adequate dose of a second-generation antidepressant: Switching to or augmenting with cognitive behavioral therapy (conditional recommendation; low-certainty evidence) Switching to a different second-generation antidepressant or augmenting with a second pharmacologic treatment (see Clinical Considerations) (conditional recommendation; lowcertainty evidence) The informed decision on the options should be personalized and based on discussion of potential treatment benefits, harms, adverse effect profiles, cost, feasibility, patients' specific symptoms (such as insomnia, hypersomnia, or fluctuation in appetite), comorbidities, concomitant medication use, and patient preferences.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "证据明确涉及中重度抑郁障碍急性期的临床治疗推荐。"
+      },
+      "selection_order": 14,
+      "topic": "抑郁障碍·综合治疗推荐",
+      "selection_summary_cn": "ACP成人抑郁障碍急性期治疗指南",
+      "research_design": "临床指南",
+      "selection_reasons": [
+        "明确推荐认知行为治疗、第二代抗抑郁药及两者联合的方案。",
+        "按疾病严重程度、初始无反应等情形给出具体推荐。",
+        "推荐依据系统综述并考虑患者偏好和既往用药，适合补充指南与综合治疗材料。"
+      ],
+      "abstract_word_count": 370
+    },
+    {
+      "index": 130960,
+      "source": "pubmed",
+      "disease_codes": [
+        "F09",
+        "F32",
+        "F33",
+        "F34",
+        "F60",
+        "F61",
+        "F62",
+        "F81",
+        "F91"
+      ],
+      "doi": "10.1001/jamanetworkopen.2025.29427",
+      "title": "Measurement-Based Care to Enhance Antidepressant Treatment Outcomes in Major Depressive Disorder: A Randomized Clinical Trial",
+      "abstract": "IMPORTANCE: Measurement-based care (MBC) guides clinical decisions through structured monitoring of symptoms and adverse effects. Although MBC has been associated with improved outcomes in major depressive disorder (MDD), its effectiveness in low- and middle-income countries (LMICs) remains understudied. OBJECTIVE: To assess whether MBC accelerates the resolution of depressive symptoms compared with standard care among adults with MDD in Pakistan. DESIGN, SETTING, AND PARTICIPANTS: This multicenter, assessor-blinded, parallel-arm randomized clinical trial was conducted in Pakistan from September 2022 to January 2024, with 24 weeks of follow-up. Adults diagnosed with nonpsychotic MDD were recruited from psychiatric hospitals and primary care centers in 7 Pakistani cities (Karachi, Lahore, Rawalpindi, Hyderabad, Peshawar, Multan, and Quetta). Participants were randomized 1:1 to MBC or standard care. Intention-to-treat analyses were conducted. INTERVENTIONS: By design, pharmacotherapy was limited to paroxetine or mirtazapine in both MBC or standard care groups. The MBC group completed the 16-item Quick Inventory of Depressive Symptomatology-Self-Report and the Frequency, Intensity, and Burden of Side Effects Rating Scale at each visit (baseline and weeks 2, 4, 8, 12, and 24). Scores from these instruments informed antidepressant dose adjustments or switch. The standard care group received treatment based on clinician judgment and did not undergo repeated clinical measurements. MAIN OUTCOMES AND MEASURES: Primary outcomes were time to response (defined as ≥50% reduction in the 17-item Hamilton Depression Rating Scale [HDRS-17]; range: 0-52, with the highest score indicating severe depression) and time to remission (defined as HDRS-17 score of ≤7) within the 24-week follow-up period. Secondary outcomes included changes in HDRS-17 scores and rates of adverse effects or treatment discontinuation. RESULTS: A total of 154 adults (mean [SD] age, 34.5 [10.5] years; 105 females [68.2%]) were randomized. Median (IQR) time to response was faster with MBC than with standard care (2 [2-4] weeks vs 4 [2-12] weeks); similarly, median (IQR) time to remission was faster for MBC vs standard care (4 [4-8] weeks vs 8 weeks [2 weeks to no remission] weeks). At week 24, there were no significant differences in rates of response or remission between groups. After week 24, reduction in mean HDRS-17 scores was significantly but modestly greater in the MBC group than in the standard care group (-18.1 [95% CI, 16.4-19.6] points vs -17.0 [95% CI, 15.6-18.5] points; t129 = 0.71; P < .001). No differences were observed in other secondary outcomes. CONCLUSIONS AND RELEVANCE: This trial of adults with MDD found that MBC led to faster time to response and time to remission than standard care in low-resource settings. Future studies need to confirm the clinical effectiveness of MBC and assess its cost-effectiveness in LMICs. TRIAL REGISTRATION: ClinicalTrials.gov Identifier: NCT05431374.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "该候选明确涉及重度抑郁障碍的临床评估与抗抑郁治疗结局。"
+      },
+      "selection_order": 15,
+      "topic": "抑郁障碍·测量指导治疗",
+      "selection_summary_cn": "用量表结果调整抗抑郁治疗的随机试验",
+      "research_design": "随机对照临床试验",
+      "selection_reasons": [
+        "明确写出固定随访时间、症状和副作用量表。",
+        "量表结果直接用于调药或换药，临床决策链条清楚。",
+        "保留短期改善速度与末次缓解率无差异的区别，避免把所有结局视为阳性。"
+      ],
+      "abstract_word_count": 438
+    },
+    {
+      "index": 242894,
+      "source": "pubmed",
+      "disease_codes": [
+        "F32",
+        "F33"
+      ],
+      "doi": "10.3389/fpsyt.2024.1440738",
+      "title": "A systematic review of suicide risk management strategies in primary care settings",
+      "abstract": "INTRODUCTION AND OBJECTIVE: Suicide is a major public health concern. Recently, suicide rates have increased among traditionally low-risk groups (e.g., white, middle-aged males). Suicide risk assessments and prevention strategies should be tailored to specific at-risk populations. This systematic review examines suicide risk detection and management in primary care, focusing on treatments to reduce suicide rates and improve prevention efforts. METHODOLOGY: A systematic review was conducted following PRISMA guidelines. Literature was collected and analyzed using Boolean operators with relevant keywords in databases (e.g., PubMed, Google Scholar, PsycINFO) to identify randomized and non-randomized studies focusing on suicide risk factors and management strategies in primary care, published in the past 10 years. The risk of bias 2.0 and Newcastle Ottawa scale was used to assess risk of bias, and data from moderate-quality studies were synthesized. RESULTS: Thirteen moderate-quality studies were reviewed. Key findings include the need for assessing modifiable risk factors like substance use and mental health. General practitioner (GP) engagement post-suicide attempt (SA) improves outcomes and reduces repeat SAs. Effective strategies include comprehensive risk assessments, collaborative treatment, and enhanced GP support. Barriers to effective suicide prevention include insufficient information, judgmental communication, lack of positive therapeutic relationships, and inadequate holistic assessments. These findings highlight the need for tailored suicide prevention strategies in primary care. However, the evidence sample size is small with reduced statistical power that limits generalizability. The included studies were also regional examinations, which restrict their broader relevance. DISCUSSION: Significant risk factors, barriers, and effective strategies for suicide prevention were identified. For children aged 12 or younger, preexisting psychiatric, developmental, or behavioral disorders, impulsive behaviors, aggressiveness, and significant stressful life events within the family were critical. For adults, loneliness, gaps in depression treatment, and social factors are significant. Barriers to suicide prevention included insufficient information, judgmental communication, lack of positive therapeutic relationships, inadequate holistic risk assessments, lack of individualized care, insufficient tangible support and resources, inconsistent follow-up procedures, variability in risk assessment, poor communication, stigma, and negative attitudes. Effective methods include the Postvention Assisting Bereaved by Suicide training program, continued education, comprehensive clinical assessments, individualized care, and community-based interventions like the SUPRANET program. SYSTEMATIC REVIEW REGISTRATION: https://www.crd.york.ac.uk/PROSPERO, identifier CRD42024550904.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "abstract",
+        "reason": "聚焦基层医疗中的自杀风险评估、管理与预防，涉及抑郁、物质使用及其他精神/行为障碍的临床照护。"
+      },
+      "selection_order": 16,
+      "topic": "自杀风险·处理策略",
+      "selection_summary_cn": "初级保健中的自杀风险评估及处理综述",
+      "research_design": "系统综述",
+      "selection_reasons": [
+        "摘要聚焦自杀风险检测、处理和预防措施。",
+        "区分风险因素、沟通障碍、综合风险评估及协作治疗。",
+        "明确说明纳入研究数量少和地区性限制。"
+      ],
+      "abstract_word_count": 358
+    },
+    {
+      "index": 164994,
+      "source": "pubmed",
+      "disease_codes": [
+        "F32",
+        "F33",
+        "F34"
+      ],
+      "doi": "10.1016/j.jocn.2020.02.011",
+      "title": "Comparison of the efficacy and safety of melatonin and memantine in the alleviation of cognitive impairments induced by electroconvulsive therapy: A randomized clinical trial",
+      "abstract": "The purpose of this study was to assess and compare the efficacy and safety of melatonin and memantine in the alleviation of cognitive disorders in patients diagnosed with major depressive disorder (MDD) undergoing electroconvulsive therapy (ECT). Patients undergoing ECT for treatment of MDD were randomly allocated to the melatonin (3 mg/d) or memantine (5 mg/d) groups. The participants received either melatonin or memantine (tablet) through the ECT therapy, which was started at beginning the first day of ECT and continued to the sixth session. The Modified Mental State Examination (MMSE) was used to evaluate cognitive function before and after the intervention. Frothy eligible patients (22 females and 18 males) were studied. There was no significant difference between two groups in terms of demographic characteristics, hemodynamic parameters and baseline MMSE and item 3 MMSE. The Memantine group scored significantly higher at the end of the ECT sessions either by MMSE or item 3MMSE than the baseline (P = 0.04 and P = 0.03, respectively). In the melatonin group, both MMSE and item 3MMSE scores were decreased significantly than the baseline (p = 0.03 and p = 0.02, respectively). No withdrawal was observed due to the drugs' adverse effects. It seems that memantine (5 mg/d) is more effective than melatonin (3 mg/d), to alleviate cognitive disorders induced by ECT.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "abstract",
+        "reason": "研究聚焦重性抑郁障碍患者接受ECT期间的认知损害及其药物干预安全性，属于精神障碍治疗相关临床研究。"
+      },
+      "selection_order": 17,
+      "topic": "抑郁障碍·非药物治疗副作用",
+      "selection_summary_cn": "电休克相关认知损害及美金刚、褪黑素对照",
+      "research_design": "随机对照临床试验",
+      "selection_reasons": [
+        "摘要明确讨论电休克诱发的认知损害。",
+        "同时命名两种药物和认知测量工具。",
+        "两组认知结果不同，便于区分治疗目的、观察到的改善和不良结果。"
+      ],
+      "abstract_word_count": 217
+    },
+    {
+      "index": 145588,
+      "source": "pubmed",
+      "disease_codes": [
+        "F51"
+      ],
+      "doi": "10.1007/s11325-021-02512-y",
+      "title": "Central sleep apnea treatment in patients with heart failure with reduced ejection fraction: a network meta-analysis",
+      "abstract": "PURPOSE: Adaptive servo-ventilation (ASV) is contraindicated for the treatment of central sleep apnea (CSA) in patients with heart failure with reduced ejection fraction (HFrEF), limiting treatment options. Though continuous positive airway pressure (CPAP), bi-level PAP with back-up rate (BPAP-BUR), and transvenous phrenic nerve stimulation (TPNS) are alternatives, not much is known about their comparative efficacies, which formed the basis of conducting this network meta-analysis. We sought to analyze their comparative effectiveness in reducing apnea hypopnea index (AHI). Additionally, we also studied their comparative effectiveness on subjective daytime sleepiness as assessed by Epworth sleepiness score (ESS). METHODS: Randomized controlled trials (RCTs) from PubMed were analyzed in a network meta-analysis and relative superiority was computed based on P-score ranking and Hasse diagrams. RESULTS: Network meta-analysis based on 8 RCTs showed that when compared to guideline-directed medical therapy (GDMT-used as a common comparator across trials), reduction in AHI by ASV (- 26.05 [- 38.80; - 13.31]), TPNS (- 24.90 [- 42.88; - 6.92]), BPAP-BUR (- 20.36 [- 36.47; - 4.25]), and CPAP (- 16.01 [- 25.42; - 6.60]) were statistically significant but not between the interventions. Based on 6 RCTs of all the interventions, only TPNS showed a statistically significant decrease in ESS (- 3.70 (- 5.58; - 1.82)) when compared to GDMT, while also showing significant differences when compared with ASV (- 3.20 (- 5.86; - 0.54)), BPAP-BUR (- 4.00 (- 7.33; - 0.68)), and CPAP (- 4.45 (- 7.75; - 1.14)). Ranking of treatments based on Hasse diagram, accounting for both AHI and ESS as outcomes for relative hierarchy showed relative superiority of both ASV and TPNS over BPAP-BUR and CPAP. CONCLUSIONS: Results indicated relative superiority of TPNS and ASV to BPAP-BUR and CPAP in their effects on AHI and ESS.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "候选明确涉及中枢性睡眠呼吸暂停的治疗安全性，属于睡眠-觉醒障碍相关临床内容。"
+      },
+      "selection_order": 18,
+      "topic": "睡眠障碍·非药物治疗禁忌",
+      "selection_summary_cn": "合并射血分数降低心衰的中枢性睡眠呼吸暂停治疗",
+      "research_design": "网络荟萃分析",
+      "selection_reasons": [
+        "明确指出ASV在特定心衰人群中的治疗禁忌。",
+        "比较多种非药物治疗，并列出呼吸暂停和日间嗜睡结局。",
+        "来自最终KEEP文章池，补充非药物治疗禁忌的明确摘要实例。"
+      ],
+      "abstract_word_count": 290
+    },
+    {
+      "index": 167942,
+      "source": "pubmed",
+      "disease_codes": [
+        "F00",
+        "F23",
+        "F25",
+        "F63",
+        "F70-79"
+      ],
+      "doi": "10.1016/j.lanepe.2024.100870",
+      "title": "The impact of psychiatric comorbidity on Parkinson's disease outcomes: a systematic review and meta-analysis",
+      "abstract": "BACKGROUND: The burden of psychiatric symptoms in Parkinson's disease includes depression, anxiety, apathy, psychosis, and impulse control disorders. However, the relationship between psychiatric comorbidities and subsequent prognosis and neurological outcomes is not yet well understood. In this systematic review and meta-analysis, in individuals with Parkinson's disease, we aimed to characterise the association between specific psychiatric comorbidities and subsequent prognosis and neurological outcomes: cognitive impairment, death, disability, disease progression, falls or fractures and care home admission. METHODS: We searched MEDLINE, Embase, PsycINFO and AMED up to 13th November 2023 for longitudinal observational studies which measured disease outcomes in people with Parkinson's disease, with and without specific psychiatric comorbidities, and a minimum of two authors extracted summary data. Studies of individuals with other parkinsonian conditions and those with outcome measures that had high overlap with psychiatric symptoms were excluded to ensure face validity. For each exposure-outcome pair, a random-effects meta-analysis was conducted based on standardised mean difference, using adjusted effect sizes-where available-in preference to unadjusted effect sizes. Study quality was assessed using the Newcastle-Ottawa Scale. Between-study heterogeneity was assessed using the I2 statistic and publication bias was assessed using funnel plots. PROSPERO Study registration number: CRD42022373072. FINDINGS: There were 55 eligible studies for inclusion in meta-analysis (n = 165,828). Data on participants' sex was available for 164,514, of whom 99,182 (60.3%) were male and 65,460 (39.7%) female. Study quality was mostly high (84%). Significant positive associations were found between psychosis and cognitive impairment (standardised mean difference [SMD] 0.44, [95% confidence interval [CI] 0.23-0.66], I2 30.9), psychosis and disease progression (SMD 0.46, [95% CI 0.12-0.80], I2 70.3%), depression and cognitive impairment (SMD 0.37 [95% CI 0.10-0.65], I2 27.1%), depression and disease progression (SMD 0.46 [95% CI 0.18-0.74], I2 52.2), depression and disability (SMD 0.42 [95% CI 0.25-0.60], I2 7.9%), and apathy and cognitive impairment (SMD 0.60 [95% CI 0.02-1.19], I2 27.9%). Between-study heterogeneity was moderately high. INTERPRETATION: Psychosis, depression, and apathy in Parkinson's disease are all associated with at least one adverse outcome, including cognitive impairment, disease progression and disability. Whether this relationship is causal is not clear, but the mechanisms underlying these associations require exploration. Clinicians should consider these psychiatric comorbidities to be markers of a poorer prognosis in people with Parkinson's disease. Future studies should investigate the underlying mechanisms and which treatments for these comorbidities may affect Parkinson's disease outcomes. FUNDING: Wellcome Trust, UK National Institute for Health Research (NIHR), National Institute for Health Research (NIHR) Biomedical Research Centre (BRC) at South London and Maudsley NHS Foundation Trust and King's College London, National Institute for Health Research (NIHR) Biomedical Research Centre (BRC) at University College London Hospitals NHS Foundation Trust, National Brain Appeal.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "候选证据明确涉及帕金森病相关的抑郁这一精神健康共病。"
+      },
+      "selection_order": 19,
+      "topic": "帕金森病·精神共病与预后",
+      "selection_summary_cn": "精神共病与帕金森病不良结局的系统综述",
+      "research_design": "系统综述与荟萃分析",
+      "selection_reasons": [
+        "明确将精神病性症状、抑郁和淡漠与帕金森病预后相联系。",
+        "包含认知损害、疾病进展和残疾等不同结局。",
+        "原文明确因果关系不清楚，适合保留关联与因果之间的区别。"
+      ],
+      "abstract_word_count": 442
+    },
+    {
+      "index": 95596,
+      "source": "Embase",
+      "disease_codes": [
+        "02",
+        "41",
+        "42"
+      ],
+      "doi": "10.1159/000520618",
+      "title": "Cognitive Outcome after Deep Brain Stimulation for Refractory Obsessive-Compulsive Disorder: A Systematic Review and Case Series",
+      "abstract": "Introduction: Deep brain stimulation (DBS) is an effective treatment for refractory obsessive-compulsive disorder (OCD). Neuropsychological assessment contributes to DBS treatment in several ways: it monitors the cognitive safety of the treatment, identifies beneficial or detrimental cognitive side-effects and it could aid to explain variability in treatment outcome, and possibly the treatment's working mechanism(s). BackgroundThis systematic review and case-series assessed the cognitive safety of DBS for OCD and explored whether changes in cognitive function may help explain its working mechanism(s). Methods: EMBASE, PubMed/Medline, Psycinfo and the Cochrane Library were systematically searched for studies reporting cognitive outcomes following DBS for OCD. Searches were completed to November 2020. Included studies were appraised for study design and quality according to NIH quality assessment tools. For the case series, the cognitive outcome of seven patients was retrospectively assessed. Results: Five randomized controlled trials and nine observational studies comprising a total of 171 patients were analyzed collectively. Variable outcomes of DBS were observed in the domains of attention, memory and executive functioning and in particular cognitive flexibility. In the case series, the Trail Making Test ratio, which is indicative for cognitive flexibility, showed a significant decrease, with a medium effect size of 0.63. Conclusion: Although individual studies generally do not report cognitive deterioration after DBS for OCD, the variability of study designs and the multitude of cognitive measures used, precluded a meta-analysis to confirm its safety and recognition of a cognitive pattern through which the efficacy of DBS for OCD might be explained. Future, prospective studies should preferably include a standardized neuropsychological assessment battery specifically addressing executive functioning and have a longerterm follow-up in order to demonstrate the cognitive safety of the procedure. Such prospective and more uniform data collection may also contribute to our understanding of the working mechanisms of DBS in OCD.",
+      "rescreen": {
+        "decision": "KEEP",
+        "phase": "candidate",
+        "reason": "该候选涉及难治性强迫症深部脑刺激后的认知结局，属于精神障碍治疗相关内容。"
+      },
+      "selection_order": 20,
+      "topic": "强迫障碍·治疗监测",
+      "selection_summary_cn": "脑深部刺激后的认知安全监测",
+      "research_design": "系统综述与病例系列",
+      "selection_reasons": [
+        "明确说明神经心理评估用于治疗认知安全的监测。",
+        "命名连线测验和认知灵活性，提供新增评估维度实例。",
+        "对安全性的总结有限，原文要求更标准化和长期随访。"
+      ],
+      "abstract_word_count": 298
+    }
+  ]
+}

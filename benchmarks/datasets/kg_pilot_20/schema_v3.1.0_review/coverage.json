@@ -1,0 +1,1404 @@
+{
+  "review_date": "2026-10-27",
+  "schema_source": "schemas/v3.1.0/schema1026.xlsx",
+  "coverage_definition": "实体类型及Excel关系表每行至少一个符合端点类别的摘要实例。不是每个Target分支都已覆盖，不包括全部属性值。",
+  "evidence_scope": "只使用最终KEEP池中的原20篇与新增20篇标题/摘要；手工复核候选证据。未读全文，未形成医学金标准，未运行全池逐条语义穷举。",
+  "summary": {
+    "original_articles": 20,
+    "additional_articles": 20,
+    "combined_articles": 40,
+    "entity_types": 16,
+    "schema_entity_types": 16,
+    "relation_rows": 60,
+    "relation_status_counts": {
+      "supported": 51,
+      "needs_review": 6,
+      "gap": 3
+    },
+    "unique_relation_names": 50,
+    "allowed_typed_triples": 103,
+    "supported_typed_triples_with_explicit_examples": 51,
+    "remaining_typed_triples_without_explicit_supported_examples": 52,
+    "old_annotations_union_current_rows": 15,
+    "old_annotations_union_node_types": 13
+  },
+  "status_definitions": {
+    "supported": "有符合端点类别的明确摘要候选证据，供人工标注，不是金标准。",
+    "needs_review": "有相近素材，但类型、关系语义或实体粒度有关键歧义，不计明确覆盖。",
+    "gap": "本次40篇选文摘要无充分证据；不能据此断言整个KEEP池或全文没有。"
+  },
+  "entity_coverage": [
+    {
+      "label": "Disease",
+      "index": 107246,
+      "quote": "malignant catatonia",
+      "status": "supported"
+    },
+    {
+      "label": "Symptom",
+      "index": 107223,
+      "quote": "sleepy, disoriented",
+      "status": "supported"
+    },
+    {
+      "label": "Diagnostic Criterion",
+      "index": 50653,
+      "quote": "the following 5 items were chosen to be included in the diagnostic criteria",
+      "status": "supported"
+    },
+    {
+      "label": "Assessment",
+      "index": 54260,
+      "quote": "systematically assessed through a series of yes/no questions",
+      "status": "supported"
+    },
+    {
+      "label": "Patient",
+      "index": 107223,
+      "quote": "73 year-old man",
+      "status": "supported"
+    },
+    {
+      "label": "Medication",
+      "index": 107223,
+      "quote": "lithium-furosemide interaction",
+      "status": "supported"
+    },
+    {
+      "label": "Treatment",
+      "index": 164994,
+      "quote": "electroconvulsive therapy (ECT)",
+      "status": "supported"
+    },
+    {
+      "label": "Treatment Plan",
+      "index": 177523,
+      "quote": "MDMA plus psychotherapy",
+      "status": "supported"
+    },
+    {
+      "label": "Examination",
+      "index": 157314,
+      "quote": "electroencephalogram (EEG)",
+      "status": "supported"
+    },
+    {
+      "label": "Assessment Scale",
+      "index": 252351,
+      "quote": "World Health Organization Quality-of-Life Scale Abbreviated Version (WHOQOL-BREF)",
+      "status": "supported"
+    },
+    {
+      "label": "Etiology",
+      "index": 190928,
+      "quote": "genetic susceptibility",
+      "status": "supported"
+    },
+    {
+      "label": "Risk",
+      "index": 54260,
+      "quote": "suicidality",
+      "status": "supported"
+    },
+    {
+      "label": "Communication Strategy",
+      "index": 54297,
+      "quote": "avoidance of confrontation",
+      "status": "supported"
+    },
+    {
+      "label": "Guideline",
+      "index": 98091,
+      "quote": "CANMAT 2023 updated guidelines",
+      "status": "supported"
+    },
+    {
+      "label": "Evidence",
+      "index": 54297,
+      "quote": "Eastwood, S., Bisson, J.I. Management of factitious disorders: a systematic review.",
+      "status": "supported"
+    },
+    {
+      "label": "Assessment Dimension",
+      "index": 252351,
+      "quote": "quality of life",
+      "status": "supported"
+    }
+  ],
+  "relation_coverage": [
+    {
+      "excel_row": 2,
+      "source_label": "Disease",
+      "source_original": "Disease",
+      "relation": "subtype_of",
+      "name": "亚型",
+      "targets": [
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 107246,
+      "source_text": "malignant catatonia",
+      "target_text": "catatonia",
+      "target_label": "Disease",
+      "quotes": [
+        "The malignant catatonia is a subtype of catatonia which includes dysautonomic signs such as hyperthermia or hemodynamic instability"
+      ],
+      "note": "原文明示亚型。"
+    },
+    {
+      "excel_row": 3,
+      "source_label": "Disease",
+      "source_original": "Disease",
+      "relation": "differentiates_from",
+      "name": "鉴别诊断",
+      "targets": [
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 107246,
+      "source_text": "malignant catatonia",
+      "target_text": "serotonin syndrome",
+      "target_label": "Disease",
+      "quotes": [
+        "Malignant catatonia can be confounded with other medical conditions such as serotonin or neuroleptic syndromes."
+      ],
+      "note": "须保留文章给出的鉴别依据，不将两种诊断合并。"
+    },
+    {
+      "excel_row": 4,
+      "source_label": "Disease",
+      "source_original": "Disease",
+      "relation": "co_occurs_with",
+      "name": "共病",
+      "targets": [
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 167942,
+      "source_text": "depression",
+      "target_text": "Parkinson's disease",
+      "target_label": "Disease",
+      "quotes": [
+        "Clinicians should consider these psychiatric comorbidities to be markers of a poorer prognosis in people with Parkinson's disease."
+      ],
+      "note": "精神共病背景明确；不是把所有疾病并列提及当作共病。"
+    },
+    {
+      "excel_row": 5,
+      "source_label": "Disease",
+      "source_original": "Disease",
+      "relation": "predisposes_to",
+      "name": "增加...的易感性",
+      "targets": [
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 88037,
+      "source_text": "schizotypal personality disorder",
+      "target_text": "psychosis",
+      "target_label": "Disease",
+      "quotes": [
+        "persons with a schizotypal personality disorder are group with a higher risk of developing psychosis than others meeting CAARMS criteria."
+      ],
+      "note": "结论为初步结果及风险提示，不能改写成确定因果。"
+    },
+    {
+      "excel_row": 6,
+      "source_label": "Disease",
+      "source_original": "Disease",
+      "relation": "progresses_to",
+      "name": "进展为",
+      "targets": [
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 88037,
+      "source_text": "schizotypal personality disorder",
+      "target_text": "psychotic disorder",
+      "target_label": "Disease",
+      "quotes": [
+        "Preliminary analysis shows that approximately 30% of the patients with a schizotypal personality disorder were re-diagnosed with a psychotic disorder 3 1/2 year after the baseline interview."
+      ],
+      "note": "明确有基线疾病和随访诊断转归；仅为初步亚组分析。"
+    },
+    {
+      "excel_row": 7,
+      "source_label": "Disease",
+      "source_original": "Disease",
+      "relation": "relapses_to",
+      "name": "复发为",
+      "targets": [
+        "Disease"
+      ],
+      "status": "needs_review",
+      "index": 705,
+      "source_text": "bipolar disorder",
+      "target_text": "recurrence of manic symptoms",
+      "target_label": "Disease",
+      "quotes": [
+        "The estimated risk ratio (RR) for recurrence of manic symptom at one year as measured by the Young Mania Rating Scale (YMRS) was 0.67"
+      ],
+      "note": "原20篇有复发结局，但原文目标是躁狂症状；不能直接将Symptom改为Disease来满足relapses_to。疾病到疾病的定义需医学同学确认。"
+    },
+    {
+      "excel_row": 8,
+      "source_label": "Disease",
+      "source_original": "Disease",
+      "relation": "associated_with_poor_prognosis",
+      "name": "不良预后",
+      "targets": [
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 167942,
+      "source_text": "depression as psychiatric comorbidity",
+      "target_text": "Parkinson's disease",
+      "target_label": "Disease",
+      "quotes": [
+        "Psychosis, depression, and apathy in Parkinson's disease are all associated with at least one adverse outcome, including cognitive impairment, disease progression and disability.",
+        "Clinicians should consider these psychiatric comorbidities to be markers of a poorer prognosis in people with Parkinson's disease."
+      ],
+      "note": "是预后标志的关联；原文明确因果关系不清楚。"
+    },
+    {
+      "excel_row": 9,
+      "source_label": "Disease",
+      "source_original": "Disease",
+      "relation": "associated_with_risk",
+      "name": "相关风险",
+      "targets": [
+        "Risk"
+      ],
+      "status": "supported",
+      "index": 57744,
+      "source_text": "untreated depression or anxiety during pregnancy",
+      "target_text": "maternal self-harm",
+      "target_label": "Risk",
+      "quotes": [
+        "Untreated depression or anxiety during pregnancy is associated with adverse perinatal outcomes, including persistent depression in pregnant patients and their partners, maternal self-harm, low birth weight, preterm birth, and poor infant development (high)."
+      ],
+      "note": "保留未治疗、妊娠期等限定。"
+    },
+    {
+      "excel_row": 10,
+      "source_label": "Disease",
+      "source_original": "Disease",
+      "relation": "commonly_affects",
+      "name": "易感于",
+      "targets": [
+        "Patient"
+      ],
+      "status": "supported",
+      "index": 57744,
+      "source_text": "perinatal mood and anxiety disorders",
+      "target_text": "pregnant and postpartum individuals",
+      "target_label": "Patient",
+      "quotes": [
+        "Perinatal mood and anxiety disorders are common (high); postpartum depression and anxiety are the most common maternal complications of pregnancy (high)."
+      ],
+      "note": "人群型Patient实例；不是根据试验入组年龄反推易感人群。"
+    },
+    {
+      "excel_row": 11,
+      "source_label": "Diagnostic Criterion",
+      "source_original": "Diagnostic Criterion",
+      "relation": "required_for",
+      "name": "诊断标准",
+      "targets": [
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 54297,
+      "source_text": "evidence that the patient is provoking symptoms",
+      "target_text": "factitious disorder",
+      "target_label": "Disease",
+      "quotes": [
+        "Factitious disorder (FD) requires evidence that the patient is provoking symptoms."
+      ],
+      "note": "诊断要求明示；节点可保留该要求的描述，不虚构criterion编号。"
+    },
+    {
+      "excel_row": 12,
+      "source_label": "Symptom",
+      "source_original": "Symptom",
+      "relation": "is_symptom_of",
+      "name": "症状",
+      "targets": [
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 107246,
+      "source_text": "stupor, mutism, waxy flexibility and negativism",
+      "target_text": "malignant catatonia",
+      "target_label": "Disease",
+      "quotes": [
+        "The psychopathological evaluation showed stupor, mutism, waxy flexibility and negativism, and she responded to a challenge test with intravenous clonazepam 0,5mg. She was diagnosed of malignant catatonia and was started oral clonazepam 2mg/day."
+      ],
+      "note": "病例中的症状与诊断联系。"
+    },
+    {
+      "excel_row": 13,
+      "source_label": "Symptom",
+      "source_original": "Symptom",
+      "relation": "supports_Diagnostic Criterion_of",
+      "name": "支持诊断标准",
+      "targets": [
+        "Diagnostic Criterion"
+      ],
+      "status": "supported",
+      "index": 50653,
+      "source_text": "excessive drinking",
+      "target_text": "proposed diagnostic criteria of polydipsia",
+      "target_label": "Diagnostic Criterion",
+      "quotes": [
+        "the following 5 items were chosen to be included in the diagnostic criteria: excessive drinking, low serum sodium, low serum osmolarity, abnormal normalized diurnal weight gain (NDWG), and low urinary gravity."
+      ],
+      "note": "专家共识拟定的标准；不能称为已充分验证的诊断金标准。"
+    },
+    {
+      "excel_row": 14,
+      "source_label": "Symptom",
+      "source_original": "Symptom",
+      "relation": "suggests",
+      "name": "提示",
+      "targets": [
+        "Disease"
+      ],
+      "status": "needs_review",
+      "index": 107246,
+      "source_text": "catatonic signs preceding dysautonomic signs",
+      "target_text": "malignant catatonia",
+      "target_label": "Disease",
+      "quotes": [
+        "The key to distingish malignant catatonia from them is that some of the catatonic signs (negativism and psychomotor retardation) happened before the dysautonomic signs."
+      ],
+      "note": "提示依赖复合症状时序；是否允许将这一条件整体作为Symptom节点需确认，不能把任一单症状视为特异性提示。"
+    },
+    {
+      "excel_row": 15,
+      "source_label": "Symptom",
+      "source_original": "Symptom",
+      "relation": "argues_against",
+      "name": "排除",
+      "targets": [
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 107246,
+      "source_text": "same symptomatology persisting ten days after drug withdrawal",
+      "target_text": "serotonin syndrome",
+      "target_label": "Disease",
+      "quotes": [
+        "After 10 days without antidepressants or antipsychotics she maintened the same symptomatology and was referred to our CLP unit.",
+        "Also, it is uncommon that a serotonin syndrome persisted more than 3-5 days after the suspension of antidepressants."
+      ],
+      "note": "反对某诊断的证据，不等同于完全排除；必须保留停药后持续时间。"
+    },
+    {
+      "excel_row": 16,
+      "source_label": "Symptom",
+      "source_original": "Symptom",
+      "relation": "precedes",
+      "name": "先于",
+      "targets": [
+        "Symptom"
+      ],
+      "status": "supported",
+      "index": 107246,
+      "source_text": "negativism and psychomotor retardation",
+      "target_text": "dysautonomic signs",
+      "target_label": "Symptom",
+      "quotes": [
+        "some of the catatonic signs (negativism and psychomotor retardation) happened before the dysautonomic signs."
+      ],
+      "note": "明示症状先后；只描述此病例。"
+    },
+    {
+      "excel_row": 17,
+      "source_label": "Symptom",
+      "source_original": "Symptom",
+      "relation": "follows",
+      "name": "继发于",
+      "targets": [
+        "Symptom"
+      ],
+      "status": "supported",
+      "index": 107246,
+      "source_text": "dysautonomic signs",
+      "target_text": "negativism and psychomotor retardation",
+      "target_label": "Symptom",
+      "quotes": [
+        "some of the catatonic signs (negativism and psychomotor retardation) happened before the dysautonomic signs."
+      ],
+      "note": "与precedes为同一证据的反向表达；覆盖数不代表独立研究数。"
+    },
+    {
+      "excel_row": 18,
+      "source_label": "Symptom",
+      "source_original": "Symptom",
+      "relation": "relieved_by",
+      "name": "缓解",
+      "targets": [
+        "Medication",
+        "Treatment",
+        "Treatment Plan"
+      ],
+      "status": "supported",
+      "index": 164994,
+      "source_text": "cognitive disorders induced by ECT",
+      "target_text": "memantine",
+      "target_label": "Medication",
+      "quotes": [
+        "It seems that memantine (5 mg/d) is more effective than melatonin (3 mg/d), to alleviate cognitive disorders induced by ECT."
+      ],
+      "note": "保留比较对象和作者谨慎措辞；不将褪黑素也标为有效。"
+    },
+    {
+      "excel_row": 19,
+      "source_label": "Symptom",
+      "source_original": "Symptom",
+      "relation": "has_subsymptom",
+      "name": "表现为",
+      "targets": [
+        "Symptom"
+      ],
+      "status": "needs_review",
+      "index": 107246,
+      "source_text": "depressive symptoms",
+      "target_text": "suicidal thoughts",
+      "target_label": "Symptom",
+      "quotes": [
+        "She had a worsening of depressive symptoms with suicidal thoughts, negativism and psychomotor retardation"
+      ],
+      "note": "有症状并列及复合表现，但with不必然证明上位/下位症状；待确认has_subsymptom语义。"
+    },
+    {
+      "excel_row": 20,
+      "source_label": "Assessment",
+      "source_original": "Assessment",
+      "relation": "assesses_for",
+      "name": "用于评估",
+      "targets": [
+        "Disease",
+        "Symptom",
+        "Risk"
+      ],
+      "status": "supported",
+      "index": 54260,
+      "source_text": "systematic capacity evaluation with yes/no questions",
+      "target_text": "suicidal ideation",
+      "target_label": "Risk",
+      "quotes": [
+        "The patient’s cognition, psychosis, mood, suicidal ideation, and understanding of his clinical condition and the recommended medical interventions were systematically assessed through a series of yes/no questions."
+      ],
+      "note": "问诊过程作为Assessment，不将量表名称混作Assessment。"
+    },
+    {
+      "excel_row": 21,
+      "source_label": "Assessment",
+      "source_original": "Assessment",
+      "relation": "asks_about",
+      "name": "询问症状",
+      "targets": [
+        "Symptom"
+      ],
+      "status": "supported",
+      "index": 54260,
+      "source_text": "series of yes/no questions during capacity assessment",
+      "target_text": "psychotic symptoms",
+      "target_label": "Symptom",
+      "quotes": [
+        "The patient’s cognition, psychosis, mood, suicidal ideation, and understanding of his clinical condition and the recommended medical interventions were systematically assessed through a series of yes/no questions."
+      ],
+      "note": "具体问诊内容，不是把任何临床随访都当成询问症状。"
+    },
+    {
+      "excel_row": 22,
+      "source_label": "Assessment",
+      "source_original": "Assessment",
+      "relation": "triggers_follow_up_question",
+      "name": "触发追问",
+      "targets": [
+        "Assessment"
+      ],
+      "status": "gap",
+      "note": "本次选文摘要未找到由某次问诊回答触发具体追问的明确链条；定期随访不等同于触发追问。"
+    },
+    {
+      "excel_row": 23,
+      "source_label": "Assessment",
+      "source_original": "Assessment",
+      "relation": "triggers_scale",
+      "name": "触发量表",
+      "targets": [
+        "Assessment Scale"
+      ],
+      "status": "supported",
+      "index": 57744,
+      "source_text": "identification of a mental health concern at a visit",
+      "target_text": "EPDS / PHQ-9 / GAD-7 screening",
+      "target_label": "Assessment Scale",
+      "quotes": [
+        "When a concern about mental health is identified by the patient or provider, the patient should be screened at that visit using a validated screening tool (e.g., Edinburgh Postnatal Depression Scale, Personalized Health Questionnaire-9, Generalized Anxiety Disorder-7) (strong, moderate)."
+      ],
+      "note": "保留原摘要中Personalized Health Questionnaire-9的写法，不擅改原文；Assessment节点表示识别担忧的评估过程。"
+    },
+    {
+      "excel_row": 24,
+      "source_label": "Assessment",
+      "source_original": "Assessment",
+      "relation": "triggers_examination",
+      "name": "触发检查",
+      "targets": [
+        "Examination"
+      ],
+      "status": "gap",
+      "note": "有检查、评估及病例工作流程，但未找到由某一Assessment明确触发某项Examination的摘要证据；不从发生顺序推断触发。"
+    },
+    {
+      "excel_row": 25,
+      "source_label": "Assessment",
+      "source_original": "Assessment",
+      "relation": "informed_by_patient",
+      "name": "受患者影响",
+      "targets": [
+        "Patient"
+      ],
+      "status": "supported",
+      "index": 57744,
+      "source_text": "perinatal mental health assessment",
+      "target_text": "patient health history and risk factors",
+      "target_label": "Patient",
+      "quotes": [
+        "A review of health history should be included in mental health assessments, and risk factors should be discussed during preconception counselling and/or during pregnancy (strong, high)."
+      ],
+      "note": "Patient为带病史的患者/人群，不将病史本身创建为新实体类型。"
+    },
+    {
+      "excel_row": 26,
+      "source_label": "Patient",
+      "source_original": "Patient",
+      "relation": "presents_with",
+      "name": "出现症状",
+      "targets": [
+        "Symptom"
+      ],
+      "status": "supported",
+      "index": 107223,
+      "source_text": "73-year-old man with lithium toxicity",
+      "target_text": "sleepy and disoriented",
+      "target_label": "Symptom",
+      "quotes": [
+        "Initially he was non-collaborative, sleepy, disoriented in all references and speechless."
+      ],
+      "note": "个案观察，不外推到所有服锂患者。"
+    },
+    {
+      "excel_row": 27,
+      "source_label": "Patient",
+      "source_original": "Patient",
+      "relation": "has_risk",
+      "name": "存在风险",
+      "targets": [
+        "Risk"
+      ],
+      "status": "supported",
+      "index": 54260,
+      "source_text": "non-verbal patient with psychosis",
+      "target_text": "suicidality",
+      "target_label": "Risk",
+      "quotes": [
+        "a non-verbal patient with suicidality and psychosis",
+        "He was experiencing profound symptoms of psychosis including auditory hallucinations telling him to hurt himself and paranoia about his next-of-kin’s intentions."
+      ],
+      "note": "当前自杀相关风险与既往自杀企图均有情境。"
+    },
+    {
+      "excel_row": 28,
+      "source_label": "Patient",
+      "source_original": "Patient",
+      "relation": "recommended",
+      "name": "推荐治疗",
+      "targets": [
+        "Medication",
+        "Treatment",
+        "Treatment Plan"
+      ],
+      "status": "supported",
+      "index": 128282,
+      "source_text": "patients in acute moderate to severe MDD",
+      "target_text": "CBT plus second-generation antidepressant combination therapy",
+      "target_label": "Treatment Plan",
+      "quotes": [
+        "ACP suggests combination therapy with cognitive behavioral therapy and a second-generation antidepressant as initial treatment in patients in the acute phase of moderate to severe major depressive disorder (conditional recommendation; low-certainty evidence)."
+      ],
+      "note": "Patient人群实例；必须保留急性期、严重程度及条件推荐。"
+    },
+    {
+      "excel_row": 29,
+      "source_label": "Patient",
+      "source_original": "Patient",
+      "relation": "contraindicated_for",
+      "name": "治疗禁忌",
+      "targets": [
+        "Medication",
+        "Treatment",
+        "Treatment Plan"
+      ],
+      "status": "supported",
+      "index": 241700,
+      "source_text": "breastfeeding patients",
+      "target_text": "lithium",
+      "target_label": "Medication",
+      "quotes": [
+        "However, it is contraindicated during breastfeeding due to the high variability of the transfer into breast milk."
+      ],
+      "note": "与contraindicated_in为同一证据的反向表达；这是2019文献背景陈述，不代表当前用药指南，结论仍强调证据质量有限。"
+    },
+    {
+      "excel_row": 30,
+      "source_label": "Medication",
+      "source_original": "Medication",
+      "relation": "therapeutically_indicated_for",
+      "name": "临床治疗适用于",
+      "targets": [
+        "Symptom",
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 131854,
+      "source_text": "esketamine nasal spray with oral antidepressant",
+      "target_text": "treatment-resistant depression",
+      "target_label": "Disease",
+      "quotes": [
+        "Esketamine nasal spray, administered in conjunction with an oral antidepressant, is approved for treatment-resistant depression (TRD)."
+      ],
+      "note": "原20篇；不能把联合口服药的获批背景改写为本文单药方案已经获批。"
+    },
+    {
+      "excel_row": 31,
+      "source_label": "Medication",
+      "source_original": "Medication",
+      "relation": "investigational_treatment_for",
+      "name": "试验性用于",
+      "targets": [
+        "Symptom",
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 177523,
+      "source_text": "MDMA as adjunct to psychotherapy",
+      "target_text": "chronic PTSD",
+      "target_label": "Disease",
+      "quotes": [
+        "This study aimed to assess the efficacy and safety of 3,4-methylenedioxymethamphetamine (MDMA)-assisted psychotherapy for treating chronic PTSD in this population.",
+        "We did a randomised, double-blind, dose-response, phase 2 trial"
+      ],
+      "note": "二期试验语境；药物是辅助心理治疗使用，不据阳性结果宣称已形成临床适应证。"
+    },
+    {
+      "excel_row": 32,
+      "source_label": "Medication",
+      "source_original": "Medication",
+      "relation": "contraindicated_in",
+      "name": "禁忌",
+      "targets": [
+        "Disease",
+        "Patient",
+        "Symptom"
+      ],
+      "status": "supported",
+      "index": 241700,
+      "source_text": "lithium",
+      "target_text": "breastfeeding patients",
+      "target_label": "Patient",
+      "quotes": [
+        "However, it is contraindicated during breastfeeding due to the high variability of the transfer into breast milk."
+      ],
+      "note": "保持2019年文章的背景和证据局限，不能作为现行临床建议。"
+    },
+    {
+      "excel_row": 33,
+      "source_label": "Medication",
+      "source_original": "Medication",
+      "relation": "interacts_with",
+      "name": "药物相互作用",
+      "targets": [
+        "Medication"
+      ],
+      "status": "supported",
+      "index": 107223,
+      "source_text": "lithium",
+      "target_text": "furosemide",
+      "target_label": "Medication",
+      "quotes": [
+        "a case report about a 73 year-old man who suffer from lithium intoxication due to lithium-furosemide interaction is presented."
+      ],
+      "note": "两种具体药物和相互作用事件均明示。"
+    },
+    {
+      "excel_row": 34,
+      "source_label": "Medication",
+      "source_original": "Medication",
+      "relation": "causes_side_effect",
+      "name": "导致副作用",
+      "targets": [
+        "Symptom",
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 107246,
+      "source_text": "clonazepam",
+      "target_text": "sedation",
+      "target_label": "Symptom",
+      "quotes": [
+        "She was diagnosed of malignant catatonia and was started oral clonazepam 2mg/day. Although there was a partial response, she did not tolerate higher doses because of sedation"
+      ],
+      "note": "病例不耐受，不能推算发生率。"
+    },
+    {
+      "excel_row": 35,
+      "source_label": "Medication",
+      "source_original": "Medication",
+      "relation": "requires_monitoring_of",
+      "name": "用药需监测",
+      "targets": [
+        "Examination",
+        "Symptom",
+        "Risk"
+      ],
+      "status": "supported",
+      "index": 107223,
+      "source_text": "lithium treatment with newly prescribed drugs",
+      "target_text": "lithium blood level testing",
+      "target_label": "Examination",
+      "quotes": [
+        "lithium blood levels must be monitored more regularly when new drugs are prescribed."
+      ],
+      "note": "原文明示监测要求。"
+    },
+    {
+      "excel_row": 36,
+      "source_label": "Treatment",
+      "source_original": "Treatment",
+      "relation": "combined_with",
+      "name": "联合治疗",
+      "targets": [
+        "Treatment",
+        "Medication"
+      ],
+      "status": "supported",
+      "index": 177523,
+      "source_text": "manualised psychotherapy",
+      "target_text": "MDMA",
+      "target_label": "Medication",
+      "quotes": [
+        "MDMA was administered orally in two 8-h sessions with concomitant manualised psychotherapy."
+      ],
+      "note": "该关系从Treatment指向Medication，不从Medication擅造combined_with。"
+    },
+    {
+      "excel_row": 37,
+      "source_label": "Treatment",
+      "source_original": "Treatment",
+      "relation": "therapeutically_indicated_for",
+      "name": "临床治疗适用于",
+      "targets": [
+        "Symptom",
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 128282,
+      "source_text": "cognitive behavioral therapy",
+      "target_text": "mild major depressive disorder",
+      "target_label": "Disease",
+      "quotes": [
+        "ACP suggests monotherapy with cognitive behavioral therapy as initial treatment in patients in the acute phase of mild major depressive disorder (conditional recommendation; low-certainty evidence)."
+      ],
+      "note": "临床推荐与研究探索性使用分开。"
+    },
+    {
+      "excel_row": 38,
+      "source_label": "Treatment",
+      "source_original": "Treatment",
+      "relation": "investigational_treatment_for",
+      "name": "试验性用于",
+      "targets": [
+        "Symptom",
+        "Disease"
+      ],
+      "status": "needs_review",
+      "index": 95596,
+      "source_text": "deep brain stimulation",
+      "target_text": "refractory OCD",
+      "target_label": "Disease",
+      "quotes": [
+        "Deep brain stimulation (DBS) is an effective treatment for refractory obsessive-compulsive disorder (OCD)."
+      ],
+      "note": "摘要称有效并汇总RCT，但没有明确将DBS定为试验性；不能只因为有RCT就标investigational_treatment_for。当前不计明确覆盖。"
+    },
+    {
+      "excel_row": 39,
+      "source_label": "Treatment",
+      "source_original": "Treatment",
+      "relation": "contraindicated_in",
+      "name": "禁忌",
+      "targets": [
+        "Disease",
+        "Patient",
+        "Symptom"
+      ],
+      "status": "supported",
+      "index": 145588,
+      "source_text": "adaptive servo-ventilation",
+      "target_text": "heart failure with reduced ejection fraction",
+      "target_label": "Disease",
+      "quotes": [
+        "Adaptive servo-ventilation (ASV) is contraindicated for the treatment of central sleep apnea (CSA) in patients with heart failure with reduced ejection fraction (HFrEF), limiting treatment options."
+      ],
+      "note": "明确禁忌和特定合并病情；来自最终KEEP池中的睡眠医学文章。"
+    },
+    {
+      "excel_row": 40,
+      "source_label": "Treatment",
+      "source_original": "Treatment",
+      "relation": "causes_side_effect",
+      "name": "导致副作用",
+      "targets": [
+        "Symptom",
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 164994,
+      "source_text": "electroconvulsive therapy",
+      "target_text": "cognitive impairments",
+      "target_label": "Symptom",
+      "quotes": [
+        "to alleviate cognitive disorders induced by ECT."
+      ],
+      "note": "非药物治疗相关不良作用；不能将无药物不良反应退出等同于无认知不良作用。"
+    },
+    {
+      "excel_row": 41,
+      "source_label": "Treatment",
+      "source_original": "Treatment",
+      "relation": "requires_monitoring_of",
+      "name": "治疗需监测",
+      "targets": [
+        "Examination",
+        "Symptom",
+        "Risk"
+      ],
+      "status": "supported",
+      "index": 95596,
+      "source_text": "DBS for OCD",
+      "target_text": "cognitive side-effects",
+      "target_label": "Symptom",
+      "quotes": [
+        "Neuropsychological assessment contributes to DBS treatment in several ways: it monitors the cognitive safety of the treatment, identifies beneficial or detrimental cognitive side-effects"
+      ],
+      "note": "监测的是潜在认知副作用；不表示本文已经证实认知损害。"
+    },
+    {
+      "excel_row": 42,
+      "source_label": "Treatment Plan",
+      "source_original": "TreatmentPlan",
+      "relation": "consists_of_medication",
+      "name": "包含药物",
+      "targets": [
+        "Medication"
+      ],
+      "status": "supported",
+      "index": 177523,
+      "source_text": "MDMA-assisted psychotherapy protocol",
+      "target_text": "MDMA",
+      "target_label": "Medication",
+      "quotes": [
+        "we randomly assigned participants (1:1:2) to three different dose groups of MDMA plus psychotherapy: 30 mg (active control), 75 mg, or 125 mg."
+      ],
+      "note": "与consists_of_treatment共用方案组成证据。"
+    },
+    {
+      "excel_row": 43,
+      "source_label": "Treatment Plan",
+      "source_original": "TreatmentPlan",
+      "relation": "consists_of_treatment",
+      "name": "包含非药物",
+      "targets": [
+        "Treatment"
+      ],
+      "status": "supported",
+      "index": 177523,
+      "source_text": "MDMA-assisted psychotherapy protocol",
+      "target_text": "manualised psychotherapy",
+      "target_label": "Treatment",
+      "quotes": [
+        "MDMA was administered orally in two 8-h sessions with concomitant manualised psychotherapy."
+      ],
+      "note": "明确药物辅助心理治疗的组成。"
+    },
+    {
+      "excel_row": 44,
+      "source_label": "Treatment Plan",
+      "source_original": "TreatmentPlan",
+      "relation": "therapeutically_indicated_for",
+      "name": "临床治疗适用于",
+      "targets": [
+        "Symptom",
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 128282,
+      "source_text": "CBT plus second-generation antidepressant combination therapy",
+      "target_text": "acute moderate to severe MDD",
+      "target_label": "Disease",
+      "quotes": [
+        "ACP suggests combination therapy with cognitive behavioral therapy and a second-generation antidepressant as initial treatment in patients in the acute phase of moderate to severe major depressive disorder (conditional recommendation; low-certainty evidence)."
+      ],
+      "note": "保留条件推荐和低确定性证据。"
+    },
+    {
+      "excel_row": 45,
+      "source_label": "Treatment Plan",
+      "source_original": "TreatmentPlan",
+      "relation": "investigational_treatment_for",
+      "name": "试验性用于",
+      "targets": [
+        "Symptom",
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 177523,
+      "source_text": "MDMA-assisted psychotherapy protocol",
+      "target_text": "chronic PTSD",
+      "target_label": "Disease",
+      "quotes": [
+        "This study aimed to assess the efficacy and safety of 3,4-methylenedioxymethamphetamine (MDMA)-assisted psychotherapy for treating chronic PTSD in this population.",
+        "We did a randomised, double-blind, dose-response, phase 2 trial"
+      ],
+      "note": "整体方案的二期试验，不将效果结果提升为临床推荐。"
+    },
+    {
+      "excel_row": 46,
+      "source_label": "Treatment Plan",
+      "source_original": "TreatmentPlan",
+      "relation": "contraindicated_in",
+      "name": "禁忌",
+      "targets": [
+        "Disease",
+        "Patient",
+        "Symptom"
+      ],
+      "status": "gap",
+      "note": "找到单药及非药物治疗禁忌，但当前选文未有清楚针对整个Treatment Plan的禁忌；不将单药禁忌自动传播给任意含该药方案。"
+    },
+    {
+      "excel_row": 47,
+      "source_label": "Treatment Plan",
+      "source_original": "TreatmentPlan",
+      "relation": "causes_side_effect",
+      "name": "导致副作用",
+      "targets": [
+        "Symptom",
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 131836,
+      "source_text": "brexpiprazole plus sertraline",
+      "target_text": "nausea / fatigue / weight increase / somnolence",
+      "target_label": "Symptom",
+      "quotes": [
+        "Treatment-emergent adverse events with incidence of 5% or greater for brexpiprazole + sertraline (and corresponding incidences for sertraline + placebo) were nausea"
+      ],
+      "note": "原20篇；报告的是治疗期间不良事件，保留比较组，不能据此认定每一事件均为确定药物因果。"
+    },
+    {
+      "excel_row": 48,
+      "source_label": "Treatment Plan",
+      "source_original": "TreatmentPlan",
+      "relation": "requires_monitoring_of",
+      "name": "治疗需监测",
+      "targets": [
+        "Examination",
+        "Symptom",
+        "Risk"
+      ],
+      "status": "supported",
+      "index": 177523,
+      "source_text": "MDMA-assisted psychotherapy protocol",
+      "target_text": "suicidal ideation and behaviour",
+      "target_label": "Risk",
+      "quotes": [
+        "Safety was monitored through adverse events, spontaneously reported expected reactions, vital signs, and suicidal ideation and behaviour."
+      ],
+      "note": "整个试验方案的安全监测，不表示监测到的所有项目都是已发生副作用。"
+    },
+    {
+      "excel_row": 49,
+      "source_label": "Examination",
+      "source_original": "Examination",
+      "relation": "supports_diagnosis_of",
+      "name": "支持诊断",
+      "targets": [
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 157314,
+      "source_text": "abnormal EEG",
+      "target_text": "catatonia of medical origin",
+      "target_label": "Disease",
+      "quotes": [
+        "an abnormal EEG predicted a medical cause of catatonia with a sensitivity of 0.82"
+      ],
+      "note": "支持躯体病因紧张症的鉴别，非单凭EEG确诊；必须保留该疾病亚型及诊断不确定性。"
+    },
+    {
+      "excel_row": 50,
+      "source_label": "Examination",
+      "source_original": "Examination",
+      "relation": "differentiates",
+      "name": "鉴别",
+      "targets": [
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 157314,
+      "source_text": "EEG",
+      "target_text": "catatonia of medical versus psychiatric origin",
+      "target_label": "Disease",
+      "quotes": [
+        "In cases of diagnostic uncertainty, the EEG should be used alongside other investigations to ascertain whether the underlying cause of catatonia is medical."
+      ],
+      "note": "原文的直接用途是病因鉴别，应结合其他检查。"
+    },
+    {
+      "excel_row": 51,
+      "source_label": "Assessment Scale",
+      "source_original": "Assessment Scale",
+      "relation": "evaluates",
+      "name": "评估疾病/症状",
+      "targets": [
+        "Symptom",
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 50653,
+      "source_text": "proposed polydipsia symptom severity scale",
+      "target_text": "polydipsia",
+      "target_label": "Symptom",
+      "quotes": [
+        "Our diagnostic criteria and symptom scale of polydipsia can objectively and thoroughly assess this challenging condition in clinical practice as well as research settings"
+      ],
+      "note": "多饮在精神科语境可作症状；若团队将其独立疾病化，需统一标签。"
+    },
+    {
+      "excel_row": 52,
+      "source_label": "Assessment Scale",
+      "source_original": "Assessment Scale",
+      "relation": "measures",
+      "name": "测量某维度/指标",
+      "targets": [
+        "Assessment Dimension"
+      ],
+      "status": "supported",
+      "index": 252351,
+      "source_text": "WHOQOL-BREF",
+      "target_text": "quality of life",
+      "target_label": "Assessment Dimension",
+      "quotes": [
+        "Quality of life, measured by the World Health Organization Quality-of-Life Scale Abbreviated Version (WHOQOL-BREF), improved by 8.03 points"
+      ],
+      "note": "量表测量抽象维度；不再用旧measures连接Disease或Symptom。"
+    },
+    {
+      "excel_row": 53,
+      "source_label": "Etiology",
+      "source_original": "Etiology",
+      "relation": "contributes_to",
+      "name": "增加发生概率",
+      "targets": [
+        "Disease",
+        "Risk",
+        "Symptom"
+      ],
+      "status": "supported",
+      "index": 190928,
+      "source_text": "genetic susceptibility and environmental factors / childhood trauma",
+      "target_text": "schizophrenia spectrum disorders",
+      "target_label": "Disease",
+      "quotes": [
+        "Schizophrenia spectrum disorders (SSD) are mental diseases caused by a combination of genetic susceptibility and a number of environmental factors.",
+        "The results suggest that childhood trauma and substance use may be present at the basis of psychosis."
+      ],
+      "note": "保留may/suggest及多因素语境，不把童年创伤标为充分原因。"
+    },
+    {
+      "excel_row": 54,
+      "source_label": "Risk",
+      "source_original": "Risk",
+      "relation": "requires_action",
+      "name": "需要处理",
+      "targets": [
+        "Treatment Plan",
+        "Treatment",
+        "Medication"
+      ],
+      "status": "supported",
+      "index": 242894,
+      "source_text": "suicide risk",
+      "target_text": "collaborative treatment and individualized care",
+      "target_label": "Treatment Plan",
+      "quotes": [
+        "Suicide risk assessments and prevention strategies should be tailored to specific at-risk populations.",
+        "Effective strategies include comprehensive risk assessments, collaborative treatment, and enhanced GP support."
+      ],
+      "note": "风险管理策略及个体化方案，不能把风险本身等同于精神疾病诊断。"
+    },
+    {
+      "excel_row": 55,
+      "source_label": "Communication Strategy",
+      "source_original": "Communication",
+      "relation": "recommended_for",
+      "name": "推荐用于",
+      "targets": [
+        "Disease",
+        "Patient"
+      ],
+      "status": "supported",
+      "index": 98091,
+      "source_text": "shared decision-making",
+      "target_text": "patient with MDD",
+      "target_label": "Patient",
+      "quotes": [
+        "The guidelines adopt a personalized care approach that emphasizes shared decision-making that reflects the values, preferences, and treatment history of the patient with MDD."
+      ],
+      "note": "Communication统一使用节点表中的Communication Strategy。"
+    },
+    {
+      "excel_row": 56,
+      "source_label": "Communication Strategy",
+      "source_original": "Communication",
+      "relation": "avoid_with",
+      "name": "避免用于",
+      "targets": [
+        "Disease",
+        "Patient"
+      ],
+      "status": "supported",
+      "index": 54297,
+      "source_text": "confrontation",
+      "target_text": "factitious disorder",
+      "target_label": "Disease",
+      "quotes": [
+        "the approach taken here includes careful record documentation and avoidance of confrontation, keeping Ms. H engaged in outpatient care and reducing unnecessary hospitalizations."
+      ],
+      "note": "病例中使用的策略，原文同时说明该障碍的管理证据有限。"
+    },
+    {
+      "excel_row": 57,
+      "source_label": "Guideline",
+      "source_original": "Guideline",
+      "relation": "recommends",
+      "name": "推荐",
+      "targets": [
+        "Medication",
+        "Treatment",
+        "Treatment Plan",
+        "Assessment",
+        "Examination",
+        "Assessment Scale",
+        "Communication Strategy"
+      ],
+      "status": "supported",
+      "index": 128282,
+      "source_text": "ACP guideline",
+      "target_text": "CBT plus second-generation antidepressant combination therapy",
+      "target_label": "Treatment Plan",
+      "quotes": [
+        "ACP suggests combination therapy with cognitive behavioral therapy and a second-generation antidepressant as initial treatment in patients in the acute phase of moderate to severe major depressive disorder (conditional recommendation; low-certainty evidence)."
+      ],
+      "note": "其他指南及推荐对象也在选文中；一行覆盖不代表全部Target分支都覆盖。"
+    },
+    {
+      "excel_row": 58,
+      "source_label": "Guideline",
+      "source_original": "Guideline",
+      "relation": "based_on",
+      "name": "基于证据",
+      "targets": [
+        "Evidence"
+      ],
+      "status": "needs_review",
+      "index": 128282,
+      "source_text": "ACP guideline",
+      "target_text": "updated systematic review of the evidence",
+      "target_label": "Evidence",
+      "quotes": [
+        "The ACP Clinical Guidelines Committee based these recommendations on an updated systematic review of the evidence."
+      ],
+      "note": "依托证据的文字很明确，但摘要没有命名该系统综述或给出PMID/DOI；是否允许匿名证据集合节点需团队确认，当前不计明确覆盖。"
+    },
+    {
+      "excel_row": 59,
+      "source_label": "Guideline",
+      "source_original": "Guideline",
+      "relation": "updated_from",
+      "name": "更新自",
+      "targets": [
+        "Guideline"
+      ],
+      "status": "supported",
+      "index": 98091,
+      "source_text": "CANMAT 2023 guidelines",
+      "target_text": "CANMAT 2016 guidelines",
+      "target_label": "Guideline",
+      "quotes": [
+        "The Canadian Network for Mood and Anxiety Treatments (CANMAT) last published clinical guidelines for the management of major depressive disorder (MDD) in 2016. Owing to advances in the field, an update was needed to incorporate new evidence and provide new and revised recommendations"
+      ],
+      "note": "新版指向旧版；不是任意两份不同组织指南之间的更新关系。"
+    },
+    {
+      "excel_row": 60,
+      "source_label": "Evidence",
+      "source_original": "Evidence",
+      "relation": "recommended_by",
+      "name": "被指南引用",
+      "targets": [
+        "Guideline"
+      ],
+      "status": "needs_review",
+      "index": 128282,
+      "source_text": "updated systematic review of the evidence",
+      "target_text": "ACP guideline",
+      "target_label": "Guideline",
+      "quotes": [
+        "The ACP Clinical Guidelines Committee based these recommendations on an updated systematic review of the evidence."
+      ],
+      "note": "与based_on为同一信息的逆向候选；摘要未给具体文献身份，且需按中文“被指南引用”解释recommended_by，不能理解为指南推荐一篇文章用于治疗。"
+    },
+    {
+      "excel_row": 61,
+      "source_label": "Assessment Dimension",
+      "source_original": "Assessment Dimension",
+      "relation": "associated_with",
+      "name": "是疾病的相关特征",
+      "targets": [
+        "Disease"
+      ],
+      "status": "supported",
+      "index": 252351,
+      "source_text": "emotional, cognitive, and behavioral well-being",
+      "target_text": "schizophrenia",
+      "target_label": "Disease",
+      "quotes": [
+        "Schizophrenia is a chronic mental disorder that affects an individual's emotional, cognitive, and behavioral well-being."
+      ],
+      "note": "疾病相关的抽象功能/情绪维度，不将所有心理词汇自动视为具体症状。"
+    }
+  ],
+  "old_annotation_usage": [
+    {
+      "file": "MedicalNER_DHY_20articles_2026-10-22.json",
+      "annotator": "DHY",
+      "articles": 20,
+      "entities": 186,
+      "relations": 146,
+      "deprecated_relations": 66,
+      "deprecated_properties": 0,
+      "current_relation_rows": {
+        "2": 6,
+        "9": 1,
+        "18": 9,
+        "34": 32,
+        "36": 3,
+        "42": 2,
+        "49": 1,
+        "51": 26
+      }
+    },
+    {
+      "file": "MedicalNER_尤雅_20articles_2026-10-26.json",
+      "annotator": "尤雅",
+      "articles": 20,
+      "entities": 165,
+      "relations": 124,
+      "deprecated_relations": 46,
+      "deprecated_properties": 0,
+      "current_relation_rows": {
+        "2": 5,
+        "9": 2,
+        "10": 1,
+        "19": 7,
+        "20": 1,
+        "34": 36,
+        "42": 3,
+        "49": 1,
+        "51": 22
+      }
+    },
+    {
+      "file": "MedicalNER_标注员_20articles_2026-10-23.json",
+      "annotator": "标注员",
+      "articles": 20,
+      "entities": 156,
+      "relations": 142,
+      "deprecated_relations": 58,
+      "deprecated_properties": 54,
+      "current_relation_rows": {
+        "2": 3,
+        "4": 1,
+        "8": 2,
+        "9": 1,
+        "10": 2,
+        "18": 22,
+        "34": 31,
+        "36": 1,
+        "42": 3,
+        "50": 1,
+        "51": 16,
+        "57": 1
+      }
+    }
+  ],
+  "schema_aliases": {
+    "TreatmentPlan": "Treatment Plan",
+    "Communication": "Communication Strategy"
+  },
+  "deprecated_properties": {
+    "Disease": [
+      "Subtype",
+      "Parent Disease"
+    ],
+    "Symptom": [
+      "Category",
+      "Parent Symptom",
+      "Sensitivity",
+      "Specificity",
+      "risk_factor"
+    ],
+    "Medication": [
+      "Indication",
+      "Side Effects"
+    ],
+    "Treatment": [
+      "Evidence Level"
+    ],
+    "Treatment Plan": [
+      "Applicable Disease",
+      "Severity"
+    ],
+    "Assessment Scale": [
+      "Target Disease"
+    ],
+    "Risk": [
+      "Evidence Level",
+      "risk_increase_factors",
+      "protective_factors",
+      "alert_trigger_condition"
+    ],
+    "Communication Strategy": [
+      "stage",
+      "family support"
+    ]
+  }
+}

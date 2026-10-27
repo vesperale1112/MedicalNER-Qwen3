@@ -8,8 +8,34 @@ const NODE_TYPES = new Map(DATA.schema.nodes.map((item) => [item.label, item]));
 const EDGE_TYPES = DATA.schema.relations.filter((item) => item.targets.length > 0);
 const EDGE_BY_KEY = new Map(EDGE_TYPES.map((item) => [item.key, item]));
 const STATUS_NAMES = {pending: "未开始", in_progress: "标注中", completed: "已完成"};
-const PREFIXES = {Disease: "D", Symptom: "S", "Diagnostic Criterion": "DC", Assessment: "A", Patient: "P", Medication: "M", Treatment: "T", "Treatment Plan": "TP", Examination: "EX", "Assessment Scale": "AS", Etiology: "ET", Risk: "R", "Communication Strategy": "CS", Guideline: "G", Evidence: "E"};
-const COLORS = {Disease: "#527fba", Symptom: "#bd8654", "Diagnostic Criterion": "#8b72b2", Assessment: "#638dac", Patient: "#bd7998", Medication: "#298e79", Treatment: "#70904f", "Treatment Plan": "#5d9c96", Examination: "#7b90b1", "Assessment Scale": "#998056", Etiology: "#947765", Risk: "#c2766e", "Communication Strategy": "#a385af", Guideline: "#6c8293", Evidence: "#708d9c"};
+const PREFIXES = {Disease: "D", Symptom: "S", "Diagnostic Criterion": "DC", Assessment: "A", Patient: "P", Medication: "M", Treatment: "T", "Treatment Plan": "TP", Examination: "EX", "Assessment Scale": "AS", Etiology: "ET", Risk: "R", "Communication Strategy": "CS", Guideline: "G", Evidence: "E", "Assessment Dimension": "AD"};
+const COLORS = {Disease: "#527fba", Symptom: "#bd8654", "Diagnostic Criterion": "#8b72b2", Assessment: "#638dac", Patient: "#bd7998", Medication: "#298e79", Treatment: "#70904f", "Treatment Plan": "#5d9c96", Examination: "#7b90b1", "Assessment Scale": "#998056", Etiology: "#947765", Risk: "#c2766e", "Communication Strategy": "#a385af", Guideline: "#6c8293", Evidence: "#708d9c", "Assessment Dimension": "#488f98"};
+const CURRENT_EDGES = EDGE_TYPES.filter((rule) => !rule.legacy);
+
+function matchingCurrentRule(sourceLabel, relation, targetLabel) {
+  return CURRENT_EDGES.find((rule) => rule.source === sourceLabel && rule.relation === relation && rule.targets.includes(targetLabel));
+}
+
+function definitionForEdge(edge, record = currentRecord()) {
+  const rule = EDGE_BY_KEY.get(edge.schema_key);
+  const source = record.entities.find((node) => node.id === edge.source);
+  const target = record.entities.find((node) => node.id === edge.target);
+  return matchingCurrentRule(source.label, rule.relation, target.label) || rule;
+}
+
+function schemaIssues(record) {
+  const issues = [];
+  record.entities.forEach((node) => {
+    const definition = NODE_TYPES.get(node.label);
+    if (definition.deprecated) issues.push({kind: "entity", id: node.id, label: node.label});
+    Object.keys(node.properties).filter((key) => !definition.properties.includes(key)).forEach((property) => issues.push({kind: "property", id: node.id, property}));
+  });
+  record.relations.forEach((edge, index) => {
+    const rule = definitionForEdge(edge, record);
+    if (rule.legacy) issues.push({kind: "relation", index, source: edge.source, target: edge.target, relation: rule.relation});
+  });
+  return issues;
+}
 
 function element(tag, className, text) {
   const node = document.createElement(tag);
@@ -25,7 +51,7 @@ function option(value, text) {
 }
 
 function emptyRecord() {
-  return {status: "pending", entities: [], relations: [], notes: "", updated_at: null, positions: {}};
+  return {status: "pending", entities: [], relations: [], notes: "", updated_at: null, positions: {}, schema_reviewed: true, previous_status: null};
 }
 
 function emptyState() {
@@ -40,6 +66,15 @@ try {
 } catch (error) {
   state = emptyState();
   storageAvailable = false;
+}
+// Keep the original storage key and row keys so browser-local progress survives the update.
+if (state.schema_version !== DATA.schema.version) {
+  Object.values(state.reviewers).forEach((profile) => Object.values(profile.articles).forEach((record) => {
+    record.previous_status = record.status;
+    record.schema_reviewed = !record.entities.length;
+    if (record.entities.length && record.status === "completed") record.status = "in_progress";
+  }));
+  state.schema_version = DATA.schema.version;
 }
 let activeTab = "graph";
 let activeSchemaTab = "nodes";
@@ -112,11 +147,13 @@ function renderSidebar() {
   $("progress-fill").style.width = completed / DATA.articles.length * 100 + "%";
   const query = $("article-search").value.trim().toLowerCase();
   const filter = $("article-filter").value;
+  const batch = $("batch-filter").value;
   const list = $("article-list");
   list.replaceChildren();
   DATA.articles.forEach((article, ordinal) => {
     const record = articleRecord(article.index, false);
-    if (filter !== "all" && record.status !== filter) return;
+    if (filter === "needs_review" ? record.schema_reviewed && !schemaIssues(record).length : filter !== "all" && record.status !== filter) return;
+    if (batch !== "all" && article.batch !== batch) return;
     if (query && ![article.title, article.topic, String(article.index)].join(" ").toLowerCase().includes(query)) return;
     const button = element("button", "article-item" + (ordinal === state.activeArticle ? " active" : ""));
     button.type = "button";
@@ -126,7 +163,7 @@ function renderSidebar() {
     const main = element("span", "article-item-main");
     main.append(element("span", "article-item-title", article.title));
     const meta = element("span", "article-item-meta");
-    meta.append(element("span", "", article.topic), element("span", "", record.entities.length ? `${record.entities.length} 节点 · ${record.relations.length} 关系` : "未开始"));
+    meta.append(element("span", "", (article.batch === "supplement" ? "新增 · " : "原批 · ") + article.topic), element("span", "", record.entities.length ? `${record.entities.length} 节点 · ${record.relations.length} 关系` : "未开始"));
     main.append(meta);
     button.append(main, element("span", "article-item-state " + record.status));
     button.addEventListener("click", () => selectArticle(ordinal));
@@ -161,7 +198,7 @@ function selectArticle(ordinal) {
 function renderArticle() {
   const article = currentArticle();
   $("article-number").textContent = `ARTICLE ${String(state.activeArticle + 1).padStart(2, "0")} / ${DATA.articles.length}`;
-  $("article-topic").textContent = article.topic;
+  $("article-topic").textContent = (article.batch === "supplement" ? "新增 · " : "原批 · ") + article.topic;
   $("article-title").textContent = article.title;
   $("article-source").textContent = article.source;
   $("article-original-index").textContent = "原始索引 " + article.index;
@@ -195,6 +232,11 @@ function renderEditor() {
   $("node-tab-count").textContent = record.entities.length;
   $("relation-tab-count").textContent = record.relations.length;
   $("add-relation").disabled = record.entities.length < 2;
+  const issues = schemaIssues(record);
+  $("schema-review-notice").hidden = record.schema_reviewed && !issues.length;
+  $("schema-review-notice").textContent = issues.length
+    ? `本篇有 ${issues.length} 处已弃用的实体、属性或关系，请逐项修订。旧内容和证据均已保留；不会自动替换关系含义。`
+    : "这篇旧标注待按 v3.1.0 复核。检查后请重新标记完成。";
   renderNodes();
   renderRelations();
   $("json-preview").textContent = JSON.stringify(outputFor(currentArticle(), record), null, 2);
@@ -207,14 +249,16 @@ function renderNodes() {
   currentRecord().entities.forEach((node) => {
     const card = element("article", "entity-card");
     const top = element("div", "entity-card-top");
-    const kind = element("span", "entity-kind", NODE_TYPES.get(node.label).name + " · " + node.label);
+    const definition = NODE_TYPES.get(node.label);
+    const kind = element("span", "entity-kind", definition.name + " · " + node.label + (definition.deprecated ? "〔已弃用〕" : ""));
     kind.style.color = COLORS[node.label];
     top.append(kind, element("span", "entity-id", node.id));
     card.append(top, element("h4", "", node.name));
     const properties = element("div", "entity-properties");
     Object.entries(node.properties).forEach(([key, value]) => {
       const property = element("div", "entity-property");
-      property.append(element("strong", "", key), element("span", "", value));
+      const deprecated = !definition.properties.includes(key);
+      property.append(element("strong", deprecated ? "deprecated-text" : "", key + (deprecated ? "〔已弃用〕" : "")), element("span", "", value));
       properties.append(property);
     });
     card.append(properties);
@@ -236,10 +280,10 @@ function renderRelations() {
   record.relations.forEach((edge, ordinal) => {
     const source = record.entities.find((node) => node.id === edge.source);
     const target = record.entities.find((node) => node.id === edge.target);
-    const definition = EDGE_BY_KEY.get(edge.schema_key);
+    const definition = definitionForEdge(edge, record);
     const card = element("article", "relation-card");
     const path = element("div", "relation-card-path");
-    path.append(element("strong", "", source.name), element("span", "", "→"), element("span", "relation-badge", definition.name + " · " + definition.relation), element("span", "", "→"), element("strong", "", target.name));
+    path.append(element("strong", "", source.name), element("span", "", "→"), element("span", "relation-badge" + (definition.legacy ? " deprecated-text" : ""), definition.name + " · " + definition.relation + (definition.legacy ? "〔已弃用〕" : "")), element("span", "", "→"), element("strong", "", target.name));
     card.append(path, element("blockquote", "", edge.evidence));
     const actions = element("div", "card-actions");
     const edit = element("button", "button quiet small", "编辑关系");
@@ -265,14 +309,15 @@ function collectPropertyDraft() {
 }
 
 function renderPropertyFields() {
-  const properties = NODE_TYPES.get($("node-type").value)?.properties || [];
+  const definition = NODE_TYPES.get($("node-type").value);
+  const properties = definition ? [...definition.properties, ...(definition.legacy_properties || [])] : [];
   const fields = $("property-fields");
   fields.replaceChildren();
   nodePropertiesDraft.forEach((item, index) => {
     const row = element("div", "property-field");
     const select = element("select");
     select.setAttribute("aria-label", "属性名称");
-    properties.forEach((property) => select.append(option(property, property)));
+    properties.forEach((property) => select.append(option(property, property + (definition.properties.includes(property) ? "" : "〔已弃用〕"))));
     select.value = item.key;
     const input = element("textarea");
     input.rows = 2;
@@ -287,7 +332,7 @@ function renderPropertyFields() {
     fields.append(row);
   });
   $("property-empty").hidden = nodePropertiesDraft.length > 0;
-  $("add-property").disabled = nodePropertiesDraft.length >= properties.length;
+  $("add-property").disabled = !definition || definition.properties.every((key) => nodePropertiesDraft.some((item) => item.key === key));
 }
 
 function openNode(id = null, name = "") {
@@ -316,7 +361,7 @@ function nodeTypeChanged() {
     renderPropertyFields();
     return;
   }
-  nodePropertiesDraft = nodePropertiesDraft.filter((property) => definition.properties.includes(property.key));
+  nodePropertiesDraft = nodePropertiesDraft.filter((property) => [...definition.properties, ...(definition.legacy_properties || [])].includes(property.key));
   if (!editingNodeId) $("node-id").value = nextNodeId(definition.label);
   $("node-type-description").textContent = definition.description;
   $("node-error").textContent = "";
@@ -336,7 +381,11 @@ function saveNode(event) {
   if (editingNodeId) {
     const incompatible = record.relations.find((edge) => {
       const rule = EDGE_BY_KEY.get(edge.schema_key);
-      return (edge.source === id && rule.source !== label) || (edge.target === id && !rule.targets.includes(label));
+      if (edge.source !== id && edge.target !== id) return false;
+      const sourceLabel = edge.source === id ? label : record.entities.find((node) => node.id === edge.source).label;
+      const targetLabel = edge.target === id ? label : record.entities.find((node) => node.id === edge.target).label;
+      return !matchingCurrentRule(sourceLabel, rule.relation, targetLabel)
+        && !(rule.source === sourceLabel && rule.targets.includes(targetLabel));
     });
     if (incompatible) { $("node-error").textContent = "该节点已有关系不符合新的节点类别，请先修改或删除相关关系。"; return; }
   }
@@ -344,6 +393,9 @@ function saveNode(event) {
   const node = {id, label, name, properties};
   if (editingNodeId) record.entities[record.entities.findIndex((item) => item.id === id)] = node;
   else record.entities.push(node);
+  record.relations.filter((edge) => edge.source === id || edge.target === id).forEach((edge) => {
+    edge.schema_key = definitionForEdge(edge, record).key;
+  });
   viewport = null;
   markModified();
   $("node-dialog").close();
@@ -368,11 +420,14 @@ function deleteNode() {
 
 function populateRelationTypes(preferredKey = "", preferredTarget = "") {
   const source = currentRecord().entities.find((node) => node.id === $("relation-source").value);
-  const choices = source ? EDGE_TYPES.filter((rule) => rule.source === source.label) : [];
+  const choices = source ? CURRENT_EDGES.filter((rule) => rule.source === source.label) : [];
+  // A legacy relation is editable without making deprecated types available for new edges.
+  const old = EDGE_BY_KEY.get(preferredKey);
+  if (source && old?.legacy && old.source === source.label) choices.push(old);
   $("relation-type").replaceChildren();
   $("relation-type").append(option("", choices.length ? "请选择关系" : "该起点类别没有可用关系"));
   choices.forEach((rule) => {
-    const status = rule.status.includes("暂缓") ? "〔暂缓〕" : rule.status.includes("复核") ? "〔需复核〕" : "";
+    const status = rule.legacy ? "〔已弃用〕" : "";
     $("relation-type").append(option(rule.key, `${rule.name} · ${rule.relation} ${status}`));
   });
   if (choices.some((rule) => rule.key === preferredKey)) $("relation-type").value = preferredKey;
@@ -387,7 +442,7 @@ function populateRelationTargets(preferredTarget = "") {
   targets.forEach((node) => $("relation-target").append(option(node.id, `${node.name} · ${node.label} · ${node.id}`)));
   if (targets.some((node) => node.id === preferredTarget)) $("relation-target").value = preferredTarget;
   $("save-relation").disabled = !rule || !targets.length;
-  $("relation-schema-hint").textContent = rule ? `${rule.source} → ${rule.targets.join(" / ")} · Excel第${rule.row}行 · ${rule.status}${rule.note ? "\n" + rule.note : ""}` : "请选择已有节点。";
+  $("relation-schema-hint").textContent = rule ? `${rule.source} → ${rule.targets.join(" / ")} · v${rule.version} Excel第${rule.row}行${rule.legacy ? "\n已弃用：仅保留用于修订旧标注。请按证据选择新版关系；可能需要先修改节点类别。" : ""}${rule.note ? "\n" + rule.note : ""}` : "请选择已有节点。";
   $("relation-schema-hint").style.whiteSpace = "pre-line";
 }
 
@@ -403,7 +458,7 @@ function openRelation(index = null, evidence = "") {
     const usable = currentRecord().entities.find((node) => EDGE_TYPES.some((rule) => rule.source === node.label && currentRecord().entities.some((target) => target.id !== node.id && rule.targets.includes(target.label))));
     if (usable) $("relation-source").value = usable.id;
   }
-  populateRelationTypes(edge ? edge.schema_key : "", edge ? edge.target : "");
+  populateRelationTypes(edge ? definitionForEdge(edge).key : "", edge ? edge.target : "");
   $("relation-evidence").value = edge ? edge.evidence : evidence;
   $("relation-error").textContent = "";
   $("delete-relation").hidden = !edge;
@@ -488,8 +543,8 @@ function renderGraph() {
   record.relations.forEach((edge, ordinal) => {
     const source = record.positions[edge.source];
     const target = record.positions[edge.target];
-    const rule = EDGE_BY_KEY.get(edge.schema_key);
-    const group = svgElement("g", {class: "graph-edge", "data-edge": ordinal, tabindex: 0, role: "button", "aria-label": "编辑关系 " + rule.name});
+    const rule = definitionForEdge(edge, record);
+    const group = svgElement("g", {class: "graph-edge" + (rule.legacy ? " deprecated-edge" : ""), "data-edge": ordinal, tabindex: 0, role: "button", "aria-label": "编辑关系 " + rule.name});
     let path;
     let labelX;
     let labelY;
@@ -509,7 +564,7 @@ function renderGraph() {
       labelX = (startX + endX) / 2;
       labelY = (startY + endY) / 2 + lane - 7;
     }
-    group.append(svgElement("path", {d: path, class: "edge-hit"}), svgElement("path", {d: path, class: "edge-line", "marker-end": "url(#edge-arrow)"}), svgElement("text", {x: labelX, y: labelY, "text-anchor": "middle"}, rule.name));
+    group.append(svgElement("path", {d: path, class: "edge-hit"}), svgElement("path", {d: path, class: "edge-line", "marker-end": "url(#edge-arrow)"}), svgElement("text", {x: labelX, y: labelY, "text-anchor": "middle"}, rule.name + (rule.legacy ? "〔已弃用〕" : "")));
     group.append(svgElement("title", {}, `${rule.relation}\n${edge.evidence}`));
     svg.append(group);
   });
@@ -565,7 +620,7 @@ function relationSchemaRow(rule) {
   relation.lastChild.append(code);
   const target = element("td", "", rule.targets.length ? rule.targets.join(" / ") : rule.target_text);
   const notes = element("td");
-  notes.append(element("div", "schema-status", rule.status), element("div", "muted", rule.note));
+  notes.append(element("div", "schema-status", rule.legacy ? (rule.deprecated ? "已弃用：" + (rule.deprecated_targets.join(" / ") || rule.target_text) : "新版仍保留") : "v3.1.0"), element("div", "muted", rule.note));
   if (rule.rename_suggestion) notes.append(element("div", "muted", "原表重命名建议：" + rule.rename_suggestion));
   row.append(source, relation, target, notes);
   return row;
@@ -595,14 +650,20 @@ function renderSchema() {
       label.append(element("strong", "", node.name), element("div", "muted", node.label));
       const properties = element("td");
       node.properties.forEach((property) => properties.append(element("span", "property-chip", property)));
+      (node.legacy_properties || []).forEach((property) => properties.append(element("span", "property-chip deprecated-text", property + "〔已弃用〕")));
       row.append(label, properties, element("td", "muted", node.description));
       body.append(row);
     });
-    content.append(element("p", "schema-rule", "属性使用 Excel 节点表的原名；关系表 Target 列明确改为属性的条目，也列入对应节点属性。"), table);
+    content.append(element("p", "schema-rule", "使用 v3.1.0 节点表定义。旧版属性保留供修订，并明确标记已弃用。"), table);
   } else if (activeSchemaTab === "relations") {
-    content.append(element("p", "schema-rule", "按 Excel 最终 Target 及 Source 修正建议提供选项，关系名称保留 Relation 列原名。改为属性或明确不建边的条目不出现在关系编辑器中；需复核、暂缓等标记保留。"));
+    content.append(element("p", "schema-rule", "以 v3.1.0 的60行关系为准。TreatmentPlan / Communication 按节点表名称统一；量表 measures 的终点为 Assessment Dimension，evaluates 的终点为 Disease / Symptom。"));
     const {table, body} = tableWithHeaders(["起点", "关系", "终点 / 属性处理", "原表状态与备注"]);
-    DATA.schema.relations.filter((rule) => !query || JSON.stringify(rule).toLowerCase().includes(query)).forEach((rule) => body.append(relationSchemaRow(rule)));
+    CURRENT_EDGES.filter((rule) => !query || JSON.stringify(rule).toLowerCase().includes(query)).forEach((rule) => body.append(relationSchemaRow(rule)));
+    content.append(table);
+  } else if (activeSchemaTab === "legacy") {
+    content.append(element("p", "schema-rule", "这里保留 v3.0.0 原关系定义。已弃用按起点类别＋关系＋终点类别判断；导入时保留节点、属性、关系和证据，不自动改名或改变方向。"));
+    const {table, body} = tableWithHeaders(["旧起点", "旧关系", "旧终点 / 属性处理", "兼容状态"]);
+    DATA.schema.relations.filter((rule) => rule.legacy && (!query || JSON.stringify(rule).toLowerCase().includes(query))).forEach((rule) => body.append(relationSchemaRow(rule)));
     content.append(table);
   } else {
     DATA.schema.sheets.forEach((sheet) => {
@@ -635,7 +696,7 @@ function outputFor(article, record) {
     title: article.title,
     entities: record.entities.map((node) => ({id: node.id, label: node.label, name: node.name, properties: {...node.properties}})),
     relations: record.relations.map((edge) => {
-      const rule = EDGE_BY_KEY.get(edge.schema_key);
+      const rule = definitionForEdge(edge, record);
       const source = record.entities.find((node) => node.id === edge.source);
       const target = record.entities.find((node) => node.id === edge.target);
       return {source: edge.source, target: edge.target, relation_type: `${source.label}-${target.label}`, relation_name: rule.name, relation: rule.relation, evidence: edge.evidence};
@@ -653,7 +714,9 @@ function exportRecord(article) {
     abstract: article.abstract,
     input: article.title + "\n\n" + article.abstract,
     output: outputFor(article, record),
-    annotation: {status: record.status, notes: record.notes, updated_at: record.updated_at},
+    annotation: {status: record.status, notes: record.notes, updated_at: record.updated_at,
+      schema_reviewed: record.schema_reviewed, previous_status: record.previous_status,
+      schema_issues: schemaIssues(record)},
   };
 }
 
@@ -666,7 +729,7 @@ function buildExport(articles = DATA.articles) {
     dataset_id: DATA.dataset_id,
     annotator: {name: state.activeReviewer},
     exported_at: new Date().toISOString(),
-    schema: {source: DATA.schema.source, interpretation: {...DATA.schema.interpretation}},
+    schema: {version: DATA.schema.version, source: DATA.schema.source, legacy_source: DATA.schema.legacy_source, interpretation: {...DATA.schema.interpretation}},
     summary: {articles: records.length, ...statusCounts, entities: records.reduce((sum, record) => sum + record.output.entities.length, 0), relations: records.reduce((sum, record) => sum + record.output.relations.length, 0)},
     records,
   };
@@ -692,7 +755,7 @@ function exportJSON(currentOnly = false) {
   const result = buildExport(currentOnly ? [currentArticle()] : DATA.articles);
   const name = state.activeReviewer.replace(/[\\/:*?"<>|]/g, "_");
   const date = new Date().toISOString().slice(0, 10);
-  const filename = currentOnly ? `MedicalNER_${name}_article_${currentArticle().index}_${date}.json` : `MedicalNER_${name}_20articles_${date}.json`;
+  const filename = currentOnly ? `MedicalNER_${name}_article_${currentArticle().index}_${date}.json` : `MedicalNER_${name}_${result.records.length}articles_v3.1.0_${date}.json`;
   downloadBlob(new Blob([JSON.stringify(result, null, 2) + "\n"], {type: "application/json;charset=utf-8"}), filename);
   toast(`已生成 ${result.records.length} 篇文章的 JSON，已完成 ${result.summary.completed} 篇。`);
 }
@@ -727,7 +790,7 @@ function saveIdentity(event) {
   else toast("已打开「" + name + "」的标注进度");
 }
 
-function importedGraph(record) {
+function importedGraph(record, schemaVersion = "3.0.0") {
   const output = record.output;
   if (!output || !Array.isArray(output.entities) || !Array.isArray(output.relations)) throw new Error(`文章 ${record.index} 的 output 格式不完整。`);
   const entities = output.entities.map((node) => {
@@ -735,7 +798,7 @@ function importedGraph(record) {
     if (!definition || typeof node.id !== "string" || !node.id || typeof node.name !== "string" || !node.name.trim()) throw new Error(`文章 ${record.index} 有无效节点。`);
     if (!node.properties || typeof node.properties !== "object" || Array.isArray(node.properties)) throw new Error(`节点 ${node.id} 的 properties 应为对象。`);
     for (const [key, value] of Object.entries(node.properties)) {
-      if (!definition.properties.includes(key) || typeof value !== "string") throw new Error(`节点 ${node.id} 的属性 ${key} 不符合本工具的 Excel schema。`);
+      if (![...definition.properties, ...(definition.legacy_properties || [])].includes(key) || typeof value !== "string") throw new Error(`节点 ${node.id} 的属性 ${key} 不符合新版或兼容的旧版 schema。`);
     }
     return {id: node.id, label: node.label, name: node.name, properties: {...node.properties}};
   });
@@ -751,7 +814,10 @@ function importedGraph(record) {
   const annotation = record.annotation || {};
   const status = STATUS_NAMES[annotation.status] ? annotation.status : entities.length ? "in_progress" : "pending";
   if (status === "completed" && !entities.length) throw new Error(`文章 ${record.index} 标为已完成，但没有节点。`);
-  return {status, entities, relations, notes: typeof annotation.notes === "string" ? annotation.notes : "", updated_at: annotation.updated_at || null, positions: {}};
+  const reviewed = schemaVersion === DATA.schema.version ? annotation.schema_reviewed !== false : !entities.length;
+  return {status: !reviewed && status === "completed" ? "in_progress" : status, entities, relations,
+    notes: typeof annotation.notes === "string" ? annotation.notes : "", updated_at: annotation.updated_at || null,
+    positions: {}, schema_reviewed: reviewed, previous_status: annotation.previous_status || (reviewed ? null : status)};
 }
 
 async function importJSON(file) {
@@ -764,9 +830,9 @@ async function importJSON(file) {
     const known = new Set(DATA.articles.map((article) => article.index));
     const incoming = {};
     for (const record of result.records) {
-      if (!known.has(record.index)) throw new Error(`文章 ${record.index} 不在当前20篇文章中。`);
+      if (!known.has(record.index)) throw new Error(`文章 ${record.index} 不在当前 ${DATA.articles.length} 篇文章中。`);
       if (incoming[record.index]) throw new Error(`导入文件重复包含文章 ${record.index}。`);
-      incoming[record.index] = importedGraph(record);
+      incoming[record.index] = importedGraph(record, result.schema?.version || "3.0.0");
     }
     const existing = state.reviewers[name]?.articles || {};
     const overwrite = Object.keys(incoming).filter((index) => existing[index] && (existing[index].entities.length || existing[index].notes)).length;
@@ -779,7 +845,7 @@ async function importJSON(file) {
     renderIdentity();
     renderSidebar();
     renderArticle();
-    toast(`已导入「${name}」的 ${Object.keys(incoming).length} 篇标注进度。`);
+    toast(`已导入「${name}」的 ${Object.keys(incoming).length} 篇进度。旧标注已保留，请按 v3.1.0 复核。`);
   } catch (error) {
     alert("无法导入：" + error.message);
   } finally {
@@ -790,6 +856,7 @@ async function importJSON(file) {
 // Article navigation and workbench controls.
 $("article-search").addEventListener("input", renderSidebar);
 $("article-filter").addEventListener("change", renderSidebar);
+$("batch-filter").addEventListener("change", renderSidebar);
 $("previous-article").addEventListener("click", () => selectArticle(state.activeArticle - 1));
 $("next-article").addEventListener("click", () => selectArticle(state.activeArticle + 1));
 document.querySelectorAll("[data-tab]").forEach((button) => button.addEventListener("click", () => setTab(button.dataset.tab)));
@@ -817,11 +884,14 @@ $("use-selection-evidence").addEventListener("click", () => {
 $("complete-button").addEventListener("click", () => {
   const record = currentRecord();
   if (!record.entities.length) { toast("请先创建节点，再标记本篇完成。"); return; }
+  if (record.status !== "completed" && schemaIssues(record).length) { toast("本篇还有已弃用的内容，请修订后再标记完成。"); return; }
   record.status = record.status === "completed" ? "in_progress" : "completed";
+  record.schema_reviewed = record.status === "completed";
   record.updated_at = new Date().toISOString();
   persist();
   renderStatus();
   renderSidebar();
+  renderEditor();
   toast(record.status === "completed" ? "本篇已标记完成" : "本篇已改为标注中");
 });
 $("article-notes").addEventListener("input", () => { currentRecord().notes = $("article-notes").value; markModified(); });
@@ -903,7 +973,7 @@ $("schema-search").addEventListener("input", renderSchema);
 document.querySelectorAll("[data-schema-tab]").forEach((button) => button.addEventListener("click", () => { activeSchemaTab = button.dataset.schemaTab; renderSchema(); }));
 $("download-schema").addEventListener("click", () => {
   const bytes = Uint8Array.from(atob(DATA.schema.workbook_base64), (character) => character.charCodeAt(0));
-  downloadBlob(new Blob([bytes], {type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"}), "final_schema.xlsx");
+  downloadBlob(new Blob([bytes], {type: "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"}), "schema1026_v3.1.0.xlsx");
 });
 $("reviewer-button").addEventListener("click", () => { pendingIdentityAction = null; openIdentity(); });
 $("reviewer-form").addEventListener("submit", saveIdentity);
@@ -933,7 +1003,11 @@ $("copy-json").addEventListener("click", async () => {
 });
 
 $("node-type").append(option("", "请选择节点类别"));
-DATA.schema.nodes.forEach((node) => $("node-type").append(option(node.label, `${node.name} · ${node.label}`)));
+DATA.schema.nodes.forEach((node) => $("node-type").append(option(node.label, `${node.name} · ${node.label}${node.deprecated ? "〔已弃用〕" : ""}`)));
+$("article-total").textContent = DATA.articles.length + " 篇";
+$("progress-total").textContent = `/ ${DATA.articles.length} 已完成`;
+$("schema-node-count").textContent = DATA.schema.nodes.filter((node) => !node.deprecated).length;
+$("schema-relation-count").textContent = CURRENT_EDGES.length;
 renderIdentity();
 renderSidebar();
 renderArticle();

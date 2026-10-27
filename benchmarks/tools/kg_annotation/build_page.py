@@ -10,8 +10,10 @@ from zipfile import ZipFile
 
 ROOT = Path(__file__).resolve().parents[3]
 UI_DIR = Path(__file__).resolve().parent
-WORKBOOK_PATH = ROOT / "schemas/v3.0.0/final_schema.xlsx"
+WORKBOOK_PATH = ROOT / "schemas/v3.1.0/schema1026.xlsx"
+LEGACY_WORKBOOK_PATH = ROOT / "schemas/v3.0.0/final_schema.xlsx"
 SELECTION_PATH = ROOT / "benchmarks/datasets/kg_pilot_20/kg_article_selection_20.json"
+SUPPLEMENT_PATH = ROOT / "benchmarks/datasets/kg_pilot_20/kg_article_supplement_v3.1.0.json"
 OUTPUT_PATH = ROOT / "benchmarks/datasets/kg_pilot_20/pages/kg_annotation_20.html"
 NS = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main"}
 
@@ -55,92 +57,95 @@ def read_workbook(path):
     return sheets
 
 
-sheets = read_workbook(WORKBOOK_PATH)
-node_sheet = next(sheet for sheet in sheets if sheet["name"] == "节点表new")
-relation_sheet = next(sheet for sheet in sheets if sheet["name"] == "关系表new")
-nodes = []
-for row in node_sheet["rows"][1:]:
-    cells = row["cells"]
-    nodes.append(
-        {
-            "label": cells["A"],
-            "name": cells["B"],
-            "description": cells.get("D", ""),
-            "properties": re.split(r"、", cells.get("C", "")),
-            "row": row["row"],
-        }
-    )
-
-relations = []
-for row in relation_sheet["rows"][1:]:
-    cells = row["cells"]
-    target_text = cells.get("D", "").strip()
-    targets = json.loads(target_text.replace("，", ",")) if target_text.startswith("[") else []
-    property_match = re.match(r"改为属性\s*(.+)", target_text)
-    relations.append(
-        {
-            "key": "row_" + str(row["row"]),
-            "row": row["row"],
-            "source_original": cells["A"],
-            "source": cells.get("I") or cells["A"],
-            "relation": cells["B"],
-            "name": cells.get("C", ""),
-            "target_text": target_text,
-            "targets": targets,
+def parse_schema(path, legacy=False):
+    sheets = read_workbook(path)
+    node_sheet, relation_sheet = sheets[:2]
+    nodes = []
+    for row in node_sheet["rows"][1:]:
+        cells = row["cells"]
+        # The new dimension row uses English commas, including one inside parentheses.
+        properties = re.split(r"、|,\s*(?![^()]*\))", cells.get("C", ""))
+        nodes.append({"label": cells["A"], "name": cells["B"],
+                      "description": cells.get("D", ""), "properties": properties,
+                      "row": row["row"], "deprecated": False})
+    aliases = {"TreatmentPlan": "Treatment Plan", "Communication": "Communication Strategy"}
+    relations = []
+    for row in relation_sheet["rows"][1:]:
+        cells = row["cells"]
+        target_text = cells.get("D", "").strip()
+        targets = json.loads(target_text.replace("，", ",")) if target_text.startswith("[") else []
+        property_match = re.match(r"改为属性\s*(.+)", target_text)
+        source = cells.get("I") or cells["A"]
+        relations.append({
+            "key": ("row_" if legacy else "v3_1_row_") + str(row["row"]),
+            "row": row["row"], "source_original": cells["A"],
+            "source": aliases.get(source, source), "relation": cells["B"],
+            "name": cells.get("C", ""), "target_text": target_text, "targets": targets,
             "property": property_match.group(1).strip() if property_match else "",
-            "status": cells.get("F", ""),
-            "confidence": cells.get("E", ""),
-            "note": cells.get("H", ""),
-            "rename_suggestion": cells.get("J", ""),
-        }
-    )
+            "status": cells.get("F", ""), "confidence": cells.get("E", ""),
+            "note": cells.get("H", ""), "rename_suggestion": cells.get("J", ""),
+            "version": "3.0.0" if legacy else "3.1.0", "legacy": legacy,
+        })
+    for relation in relations:
+        if relation["property"]:
+            node = next(item for item in nodes if item["label"] == relation["source"])
+            if relation["property"] not in node["properties"]:
+                node["properties"].append(relation["property"])
+    return nodes, relations, sheets
 
-# The workbook's final Target column explicitly converts these rows to properties.
-for relation in relations:
-    if relation["property"]:
-        node = next(item for item in nodes if item["label"] == relation["source"])
-        if relation["property"] not in node["properties"]:
-            node["properties"].append(relation["property"])
 
-selection = json.loads(SELECTION_PATH.read_text(encoding="utf-8"))
-articles = [
-    {key: record[key] for key in ("index", "source", "disease_codes", "doi", "title", "abstract", "topic")}
-    for record in selection["records"]
-]
-data = {
-    "dataset_id": "medicalner-manual-kg-20-final-schema",
-    "articles": articles,
-    "schema": {
-        "source": "schemas/v3.0.0/final_schema.xlsx",
-        "nodes": nodes,
-        "relations": relations,
-        "sheets": sheets,
+def build_schema():
+    nodes, relations, sheets = parse_schema(WORKBOOK_PATH)
+    old_nodes, old_relations, old_sheets = parse_schema(LEGACY_WORKBOOK_PATH, legacy=True)
+    by_label = {node["label"]: node for node in nodes}
+    for old in old_nodes:
+        if old["label"] not in by_label:
+            old["deprecated"] = True
+            nodes.append(old)
+            by_label[old["label"]] = old
+        node = by_label[old["label"]]
+        node["legacy_properties"] = [p for p in old["properties"] if p not in node["properties"]]
+    for old in old_relations:
+        current_targets = {target for rule in relations
+                           if rule["source"] == old["source"] and rule["relation"] == old["relation"]
+                           for target in rule["targets"]}
+        old["deprecated_targets"] = [target for target in old["targets"] if target not in current_targets]
+        old["deprecated"] = bool(old["deprecated_targets"]) or not old["targets"]
+    return {
+        "version": "3.1.0", "source": str(WORKBOOK_PATH.relative_to(ROOT)),
+        "legacy_source": str(LEGACY_WORKBOOK_PATH.relative_to(ROOT)),
+        "nodes": nodes, "relations": relations + old_relations,
+        "sheets": sheets, "legacy_sheets": old_sheets,
         "workbook_base64": base64.b64encode(WORKBOOK_PATH.read_bytes()).decode("ascii"),
         "interpretation": {
-            "relations": "按Target（最终推断）列区分关系和属性；有节点类型Target的条目可建关系。",
-            "sources": "采用Excel中明确填写的Source修正建议。",
-            "names": "保留Relation列原名，不自动采用重命名建议。",
-            "status": "保留原表的需复核、暂缓等标记，不据此自动删去有明确Target的关系。",
+            "relations": "以 v3.1.0 关系表的 Source、Relation、Target 为准；保留 Relation 原名。",
+            "sources": "TreatmentPlan 统一为 Treatment Plan；Communication 统一为 Communication Strategy，与节点表一致。",
+            "legacy": "旧实体、属性和关系保留供导入及修订；新版不再允许的类型或端点组合标为已弃用，不自动改写语义。",
         },
-    },
-}
+    }
 
-template = (UI_DIR / "index.template.html").read_text(encoding="utf-8")
-embedded_data = json.dumps(data, ensure_ascii=False).replace("<", "\\u003c")
-page = template.replace("__APP_CSS__", (UI_DIR / "styles.css").read_text(encoding="utf-8"))
-page = page.replace("__APP_DATA__", embedded_data)
-page = page.replace("__APP_JS__", (UI_DIR / "app.js").read_text(encoding="utf-8"))
-OUTPUT_PATH.write_text(page, encoding="utf-8")
-print(
-    json.dumps(
-        {
-            "output": str(OUTPUT_PATH),
-            "articles": len(articles),
-            "node_types": len(nodes),
-            "schema_rows": len(relations),
-            "edge_definitions": sum(bool(item["targets"]) for item in relations),
-            "bytes": OUTPUT_PATH.stat().st_size,
-        },
-        ensure_ascii=False,
-    )
-)
+
+def main():
+    articles = []
+    for path, batch in [(SELECTION_PATH, "original"), (SUPPLEMENT_PATH, "supplement")]:
+        selection = json.loads(path.read_text(encoding="utf-8"))
+        for record in selection["records"]:
+            article = {key: record[key] for key in
+                       ("index", "source", "disease_codes", "doi", "title", "abstract", "topic")}
+            articles.append({**article, "batch": batch})
+    data = {"dataset_id": "medicalner-manual-kg-20-final-schema",
+            "articles": articles, "schema": build_schema()}
+    template = (UI_DIR / "index.template.html").read_text(encoding="utf-8")
+    embedded_data = json.dumps(data, ensure_ascii=False).replace("<", "\\u003c")
+    page = template.replace("__APP_CSS__", (UI_DIR / "styles.css").read_text(encoding="utf-8"))
+    page = page.replace("__APP_DATA__", embedded_data)
+    page = page.replace("__APP_JS__", (UI_DIR / "app.js").read_text(encoding="utf-8"))
+    OUTPUT_PATH.write_text(page, encoding="utf-8")
+    print(json.dumps({"output": str(OUTPUT_PATH), "articles": len(articles),
+                      "node_types": len(data["schema"]["nodes"]),
+                      "current_relation_rows": sum(not r["legacy"] for r in data["schema"]["relations"]),
+                      "bytes": OUTPUT_PATH.stat().st_size}, ensure_ascii=False))
+
+
+if __name__ == "__main__":
+    main()
