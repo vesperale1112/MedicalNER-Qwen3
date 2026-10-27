@@ -1,0 +1,8 @@
+T1	method 16 60	United States Preventive Services Task Force
+T2	method 62 68	USPSTF
+T3	Health_factors 91 97	adults
+T4	disease 102 112	depression
+T6	method 116 137	primary care settings
+T7	method 143 188	staff-assisted depression management programs
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+T5	method 81 90	screening

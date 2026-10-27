@@ -1,0 +1,55 @@
+T1	disease 20 36	Mental Disorders
+T2	disease 96 112	mental disorders
+T3	disease 505 521	mental disorders
+T4	disease 722 738	mental disorders
+T5	disease 822 838	mental disorders
+T6	disease 1007 1022	mental disorder
+T7	disease 1168 1183	mental disorder
+T8	disease 1270 1286	mental disorders
+T9	disease 1364 1379	mental disorder
+T10	disease 1451 1475	organic mental disorders
+T11	disease 1502 1508	cancer
+T12	disease 1584 1600	eating disorders
+T13	disease 1605 1626	urogenital conditions
+T14	disease 1703 1716	schizophrenia
+T15	disease 1721 1747	musculoskeletal conditions
+T16	disease 1810 1825	mental disorder
+T17	disease 1892 1907	mental disorder
+T18	disease 1987 2009	developmental disorder
+T19	disease 2025 2045	circulatory disorder
+T20	disease 2066 2089	organic mental disorder
+T21	disease 2110 2126	mental disorders
+T22	disease 2300 2315	mental disorder
+T23	disease 52 70	Medical Conditions
+T25	disease 204 222	medical conditions
+T27	disease 548 566	medical conditions
+T28	method 619 640	Cox regression models
+T29	method 662 675	hazard ratios
+T31	disease 743 761	medical conditions
+T32	Health_factors 784 787	age
+T33	Health_factors 789 792	sex
+T34	Health_factors 1035 1038	age
+T35	method 1096 1102	cohort
+T36	method 1142 1151	follow-up
+T37	disease 1291 1309	medical conditions
+T38	method 1315 1334	median hazard ratio
+T39	method 1425 1437	hazard ratio
+T40	method 1514 1533	confidence interval
+T41	method 1535 1537	CI
+T42	method 1632 1634	CI
+T43	method 2201 2214	hazard ratios
+T44	method 2389 2407	ClinicalTrials.gov
+T45	method 886 919	competing-risks survival analyses
+T46	method 840 854	Absolute risks
+T47	method 680 708	time-dependent hazard ratios
+T48	method 244 267	population-based cohort
+R1	associated_with Arg1:T1 Arg2:T23	
+R2	risk_factor_of Arg1:T2 Arg2:T25	
+T24	disease 1386 1403	medical condition
+R3	abbreviation_for Arg1:T41 Arg2:T40	
+T26	method 1831 1844	absolute risk
+T30	disease 1850 1867	medical condition
+T49	disease 1945 1965	urogenital condition
+T50	disease 2182 2199	medical condition
+R4	risk_factor_of Arg1:T21 Arg2:T50	
+T51	Health_factors 143 161	general population

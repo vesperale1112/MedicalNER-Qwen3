@@ -1,0 +1,4 @@
+T1	method 4 49	non-convulsive neurostimulation interventions
+T3	disease 114 124	depression
+T2	physiology 61 98	neurohormonal and neuroimmune changes
+R1	characteristic_of Arg1:T2 Arg2:T3	

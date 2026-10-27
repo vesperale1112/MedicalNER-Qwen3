@@ -1,0 +1,7 @@
+T2	drug 98 107	lidocaine
+T3	drug 108 119	bupivacaine
+T4	physiology 63 83	systolic contraction
+T1	physiology 147 172	depression of contraction
+R1	associated_with Arg1:T2 Arg2:T1	
+R2	associated_with Arg1:T3 Arg2:T1	
+T6	drug 5 11	agents

@@ -1,0 +1,61 @@
+T2	disease 58 77	depressive symptoms
+T3	drug 211 219	antimony
+T4	drug 249 257	antimony
+T5	disease 262 281	depression symptoms
+T6	signs 336 367	urinary antimony concentrations
+T7	disease 372 391	depressive symptoms
+T8	drug 542 558	urinary antimony
+T9	disease 571 590	Depressive symptoms
+T10	signs 701 732	urinary antimony concentrations
+T11	disease 737 756	depressive symptoms
+T12	disease 927 946	depressive symptoms
+T13	signs 1011 1042	urinary antimony concentrations
+T14	disease 1047 1066	depressive symptoms
+T15	signs 1279 1310	urinary antimony concentrations
+T16	disease 1343 1362	depressive symptoms
+T17	drug 1482 1489	arsenic
+T18	drug 1491 1498	cadmium
+T19	drug 1504 1511	mercury
+T20	disease 1711 1730	depressive symptoms
+T21	signs 1802 1832	urinary antimony concentration
+T22	drug 1892 1908	urinary antimony
+T23	disease 1935 1954	depressive symptoms
+T1	signs 22 53	urinary antimony concentrations
+T24	drug 101 109	Antimony
+T25	method 427 448	cross-sectional study
+T26	method 470 518	National Health and Nutrition Examination Survey
+T27	method 520 526	NHANES
+R3	abbreviation_for Arg1:T27 Arg2:T26	
+T28	method 613 643	Patient's Health Questionnaire
+T29	method 645 650	PHQ-9
+R4	abbreviation_for Arg1:T29 Arg2:T28	
+R5	help_diagnose Arg1:T28 Arg2:T9	
+R6	help_diagnose Arg1:T29 Arg2:T9	
+T30	method 758 790	binary logistic regression model
+T31	method 795 818	restricted cubic spline
+T32	method 830 848	Dominance analysis
+R7	associated_with Arg1:T13 Arg2:T14	
+T33	method 1098 1100	OR
+T34	method 1110 1112	CI
+T35	method 1212 1214	OR
+T36	method 1224 1226	CI
+R8	associated_with Arg1:T15 Arg2:T16	
+T37	method 1415 1417	OR
+T38	method 1427 1429	CI
+T39	method 1579 1581	OR
+T40	method 1591 1593	CI
+T41	method 1617 1640	Restricted cubic spline
+T42	drug 1690 1706	urinary antimony
+R9	associated_with Arg1:T42 Arg2:T20	
+T43	method 1755 1773	dominance analysis
+R10	associated_with Arg1:T22 Arg2:T23	
+T45	Health_factors 1970 1976	female
+T48	Health_factors 395 401	adults
+T51	Health_factors 1267 1273	gender
+T44	Health_factors 1390 1396	female
+T46	drug 1468 1480	urinary lead
+T47	Health_factors 81 87	adults
+R11	occurs_in Arg1:T23 Arg2:T45	
+T50	Health_factors 155 173	general population
+R1	occurs_in Arg1:T16 Arg2:T44	
+R2	associated_with Arg1:T1 Arg2:T2	

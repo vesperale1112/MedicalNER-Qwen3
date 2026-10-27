@@ -1,0 +1,8 @@
+T1	Health_factors 57 67	rumination
+T2	disease 91 135	aberrant default-mode network (DMN) activity
+T3	region 122 125	DMN
+T5	disease 45 55	depression
+T6	region 100 120	default-mode network
+R2	abbreviation_for Arg1:T3 Arg2:T6	
+R3	associated_with Arg1:T1 Arg2:T2	
+R1	associated_with Arg1:T5 Arg2:T1	

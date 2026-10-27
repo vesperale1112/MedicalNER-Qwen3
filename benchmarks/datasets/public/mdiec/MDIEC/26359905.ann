@@ -1,0 +1,25 @@
+T1	disease 17 24	suicide
+T2	disease 30 39	self-harm
+T3	disease 49 57	distress
+T4	disease 69 76	anxiety
+T8	method 187 200	clinical care
+T9	Health_factors 148 165	emotional support
+T10	Health_factors 114 129	health settings
+T11	disease 239 247	distress
+T12	Health_factors 278 288	clinicians
+T13	Health_factors 327 348	therapeutic engagemen
+T17	disease 434 443	self-harm
+T19	Health_factors 365 379	health systems
+T21	Health_factors 544 558	health systems
+T22	physiology 869 884	decision making
+T24	method 801 830	diagnosis and risk assessment
+T26	disease 975 983	distress
+T27	Health_factors 1050 1056	carers
+T34	method 1128 1145	clinical practice
+T35	disease 1167 1176	self-harm
+T36	disease 1181 1188	suicide
+T39	Health_factors 0 15	Health services
+T5	disease 100 110	distressed
+R1	occurs_in Arg1:T5 Arg2:T10	
+R2	associated_with Arg1:T11 Arg2:T13	
+T6	disease 416 429	suicidal acts

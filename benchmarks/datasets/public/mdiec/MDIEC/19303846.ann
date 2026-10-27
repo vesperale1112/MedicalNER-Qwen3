@@ -1,0 +1,51 @@
+T0	gene 0 28	Disrupted in schizophrenia 1
+T1	physiology 39 72	neuronal progenitor proliferation
+T3	physiology 91 122	GSK3beta/beta-catenin signaling
+T4	gene 128 156	Disrupted in Schizophrenia 1
+T5	gene 158 163	DISC1
+T6	disease 290 306	major depression
+T7	disease 308 321	schizophrenia
+T8	disease 327 343	bipolar disorder
+T9	gene 165 169	gene
+T10	gene 188 243	balanced chromosomal translocation (1; 11) (q42; q14.3)
+T11	gene 390 395	DISC1
+T12	physiology 412 429	brain development
+T14	physiology 472 488	DISC1 expression
+T15	physiology 497 528	neural progenitor proliferation
+T17	physiology 541 586	premature cell cycle exit and differentiation
+T18	gene 627 632	DISC1
+T19	gene 670 678	GSK3beta
+T21	gene 687 692	DISC1
+T22	physiology 702 719	GSK3beta activity
+T23	physiology 771 799	beta-catenin phosphorylation
+T24	gene 815 827	beta-catenin
+T26	gene 867 879	beta-catenin
+T27	disease 894 932	impairment of progenitor proliferation
+T28	physiology 943 965	DISC1 loss of function
+T31	drug 980 995	GSK3 inhibitors
+T32	physiology 1006 1030	progenitor proliferation
+T33	physiology 1064 1086	DISC1 loss of function
+T34	disease 1035 1053	behavioral defects
+T35	gene 1122 1127	DISC1
+T37	physiology 1131 1171	GSK3beta/beta-catenin signaling pathways
+T38	disease 1280 1301	psychiatric disorders
+R1	associated_with Arg1:T0 Arg2:T1	
+R2	associated_with Arg1:T1 Arg2:T3	
+R3	abbreviation_for Arg1:T5 Arg2:T4	
+R4	associated_with Arg1:T4 Arg2:T10	
+R5	associated_with Arg1:T5 Arg2:T10	
+R6	associated_with Arg1:T11 Arg2:T12	
+R7	associated_with Arg1:T14 Arg2:T15	
+R8	risk_factor_of Arg1:T15 Arg2:T17	
+R9	associated_with Arg1:T18 Arg2:T19	
+R10	associated_with Arg1:T21 Arg2:T22	
+R11	associated_with Arg1:T22 Arg2:T23	
+R12	associated_with Arg1:T22 Arg2:T24	
+R13	associated_with Arg1:T26 Arg2:T27	
+R14	risk_factor_of Arg1:T28 Arg2:T27	
+R15	treatment_for Arg1:T31 Arg2:T32	
+R16	treatment_for Arg1:T31 Arg2:T34	
+R17	risk_factor_of Arg1:T33 Arg2:T32	
+R18	risk_factor_of Arg1:T33 Arg2:T34	
+R19	associated_with Arg1:T35 Arg2:T37	
+R20	associated_with Arg1:T37 Arg2:T38	

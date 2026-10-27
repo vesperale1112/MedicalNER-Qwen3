@@ -1,0 +1,5 @@
+T1	disease 26 48	Post stroke depression
+T2	Health_factors 115 131	stroke survivors
+T3	disease 102 111	mortality
+R1	risk_factor_of Arg1:T1 Arg2:T3	
+R2	occurs_in Arg1:T3 Arg2:T2	

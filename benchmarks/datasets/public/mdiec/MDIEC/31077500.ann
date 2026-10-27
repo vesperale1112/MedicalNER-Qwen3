@@ -1,0 +1,63 @@
+T1	disease 28 53	major depression disorder
+T2	disease 266 291	major depressive disorder
+T3	disease 293 296	MDD
+T4	disease 433 436	MDD
+T5	method 441 443	HC
+T6	disease 611 614	MDD
+T7	disease 989 992	MDD
+T8	method 997 999	HC
+T9	disease 1278 1281	MDD
+T10	method 1289 1291	HC
+T11	disease 1513 1516	MDD
+T12	method 1522 1524	HC
+#1	AnnotatorNotes T1	C1269683
+#2	AnnotatorNotes T2	C1269683
+#3	AnnotatorNotes T3	C1269683
+T13	method 60 109	arterial spin labeling MRI perfusion measurements
+#4	AnnotatorNotes T13	C4303902
+T14	method 116 175	Neuroimaging-based multivariate pattern-recognition methods
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	help_diagnose Arg1:T14 Arg2:T2	
+T15	method 303 319	healthy controls
+T16	method 321 323	HC
+R3	abbreviation_for Arg1:T16 Arg2:T15	
+T17	method 371 405	multivariate classification method
+T18	signs 450 469	cerebral blood flow
+T19	signs 471 474	CBF
+R4	abbreviation_for Arg1:T19 Arg2:T18	
+T20	method 510 532	arterial spin labeling
+T21	method 534 537	ASL
+R5	abbreviation_for Arg1:T21 Arg2:T20	
+T23	method 624 639	DSM-IV criteria
+T24	method 647 649	HC
+T25	method 660 693	pseudo-continuous 3-D-ASL imaging
+R6	help_diagnose Arg1:T23 Arg2:T6	
+#5	AnnotatorNotes T23	C2199206
+T27	method 718 738	atlas-based approach
+T29	method 858 894	linear kernel support vector machine
+T30	method 1001 1020	Permutation testing
+T31	method 1099 1141	automatic classifier based on CBF features
+R8	help_diagnose Arg1:T31 Arg2:T9	
+T33	method 1432 1481	Machine-learning models based on CBF measurements
+R9	help_diagnose Arg1:T33 Arg2:T11	
+R10	help_diagnose Arg1:T14 Arg2:T3	
+T34	method 1563 1576	study cohorts
+R12	help_diagnose Arg1:T13 Arg2:T1	
+T32	region 1378 1418	cortical, limbic, and paralimbic regions
+T22	method 497 542	non-invasive arterial spin labeling (ASL) MRI
+T35	method 215 236	diagnostic algorithms
+T36	region 779 784	brain
+T40	signs 704 707	CBF
+T41	signs 740 752	regional CBF
+T42	Health_factors 816 819	sex
+T43	Health_factors 824 827	age
+T44	Health_factors 1350 1353	sex
+T45	signs 1358 1370	regional CBF
+T46	method 1600 1616	imaging measures
+R7	help_diagnose Arg1:T29 Arg2:T7	
+T28	drug 564 574	medication
+R11	help_diagnose Arg1:T22 Arg2:T19	
+R13	help_diagnose Arg1:T22 Arg2:T18	
+R14	help_diagnose Arg1:T25 Arg2:T40	
+R15	help_diagnose Arg1:T17 Arg2:T4	
+R16	located_in Arg1:T45 Arg2:T32	

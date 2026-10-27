@@ -1,0 +1,18 @@
+T2	signs 0 58	Neutrophil to-lymphocyte and platelet-to-lymphocyte ratios
+T3	signs 62 72	biomarkers
+T4	disease 77 94	suicidal behavior
+T5	Health_factors 98 106	children
+T6	Health_factors 111 122	adolescents
+T7	disease 128 138	depression
+T8	disease 142 149	anxiety
+T9	drug 163 202	selective serotonin reuptake inhibitors
+R1	hyponym_of Arg1:T2 Arg2:T3	
+R2	characteristic_of Arg1:T2 Arg2:T4	
+R3	treatment_for Arg1:T9 Arg2:T7	
+R4	treatment_for Arg1:T9 Arg2:T8	
+R5	occurs_in Arg1:T4 Arg2:T5	
+R6	occurs_in Arg1:T4 Arg2:T6	
+R7	occurs_in Arg1:T5 Arg2:T7	
+R8	occurs_in Arg1:T6 Arg2:T7	
+R9	occurs_in Arg1:T5 Arg2:T8	
+R10	occurs_in Arg1:T6 Arg2:T8	

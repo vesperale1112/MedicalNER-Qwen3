@@ -1,0 +1,105 @@
+T0	drug 0 12	Escitalopram
+T1	disease 35 63	generalized anxiety disorder
+T2	Health_factors 17 29	older adults
+T3	method 67 94	randomized controlled trial
+T4	disease 104 132	Generalized anxiety disorder
+T5	disease 134 137	GAD
+T6	disease 165 186	psychiatric disorders
+T7	Health_factors 190 202	older adults
+T8	Health_factors 237 247	clinicians
+T10	disease 371 374	GAD
+T12	drug 283 322	Selective serotonin reuptake inhibitors
+T13	drug 324 329	SSRIs
+T14	Health_factors 351 365	younger adults
+T15	Health_factors 419 431	older adults
+T17	Health_factors 523 535	older adults
+T18	disease 541 544	GAD
+T19	drug 502 519	SSRI escitalopram
+T21	method 584 611	randomized controlled trial
+T22	Health_factors 650 667	specialty clinics
+T23	Health_factors 717 721	aged
+T24	Health_factors 734 739	older
+T25	disease 770 773	GAD
+T26	drug 803 815	escitalopram
+T30	method 882 895	INTERVENTIONS
+T31	drug 929 941	escitalopram
+T35	disease 1135 1142	anxiety
+T36	method 1235 1264	Hamilton Anxiety Rating Scale
+T38	method 1266 1296	Penn State Worry Questionnaire
+T39	method 1298 1372	Late-Life Function and Disability Instrument activity limitations subscale
+T41	method 1445 1486	Medical Outcome Survey 36-item Short Form
+T42	method 1188 1233	Clinical Global Impressions-Improvement scale
+T45	method 1036 1081	Clinical Global Impressions-Improvement score
+T48	drug 1634 1646	escitalopram
+T49	method 1660 1679	confidence interval
+T50	method 1681 1683	CI
+T51	method 1707 1709	CI
+T53	method 1600 1629	mean cumulative response rate
+T54	method 1505 1530	primary analytic strategy
+T55	drug 1848 1860	escitalopram
+T57	method 1883 1885	CI
+T58	method 1908 1910	CI
+T59	method 1810 1839	mean cumulative response rate
+T60	method 1745 1785	conservative intention-to-treat analysis
+T61	drug 1957 1969	escitalopram
+T63	disease 2018 2034	anxiety symptoms
+T64	method 2127 2129	CI
+T66	method 2152 2182	Penn State Worry Questionnaire
+T67	method 2194 2196	CI
+T68	method 2250 2252	CI
+T70	method 2339 2341	CI
+T71	Health_factors 2312 2327	social function
+T72	disease 2282 2307	role-emotional impairment
+T73	disease 2218 2238	activity limitations
+T74	method 2104 2115	effect size
+T75	method 2057 2102	Clinical Global Impressions-Improvement scale
+T76	symptom 2039 2055	role functioning
+T77	drug 2383 2395	escitalopram
+T78	disease 2422 2429	fatigue
+T79	disease 2433 2443	somnolence
+T80	disease 2503 2519	urinary symptoms
+T81	Health_factors 2364 2379	Adverse effects
+T83	disease 2467 2484	sleep disturbance
+T84	Health_factors 2546 2558	Older adults
+T85	disease 2564 2567	GAD
+T86	drug 2582 2594	escitalopram
+T88	method 2741 2768	intention-to-treat analysis
+T89	method 2608 2632	cumulative response rate
+T90	Health_factors 2838 2857	treatment durations
+R1	abbreviation_for Arg1:T5 Arg2:T4	
+R2	hyponym_of Arg1:T5 Arg2:T6	
+R3	hyponym_of Arg1:T4 Arg2:T6	
+R5	abbreviation_for Arg1:T13 Arg2:T12	
+R6	treatment_for Arg1:T13 Arg2:T10	
+R7	treatment_for Arg1:T12 Arg2:T10	
+R8	occurs_in Arg1:T14 Arg2:T10	
+R9	occurs_in Arg1:T2 Arg2:T1	
+R10	occurs_in Arg1:T17 Arg2:T18	
+T9	method 615 637	primary care practices
+T11	symptom 1147 1163	role functioning
+R13	help_diagnose Arg1:T36 Arg2:T35	
+R14	help_diagnose Arg1:T38 Arg2:T35	
+R16	help_diagnose Arg1:T41 Arg2:T11	
+R17	abbreviation_for Arg1:T50 Arg2:T49	
+R18	treatment_for Arg1:T61 Arg2:T63	
+R19	treatment_for Arg1:T61 Arg2:T76	
+T16	method 1005 1024	Cumulative response
+R20	help_diagnose Arg1:T45 Arg2:T16	
+T20	disease 1382 1407	role-emotional impairment
+T27	Health_factors 1412 1427	social function
+R12	help_diagnose Arg1:T39 Arg2:T11	
+T28	method 1113 1129	time to response
+R15	risk_factor_of Arg1:T77 Arg2:T78	
+R21	risk_factor_of Arg1:T77 Arg2:T79	
+R22	risk_factor_of Arg1:T77 Arg2:T83	
+R23	risk_factor_of Arg1:T77 Arg2:T80	
+R24	occurs_in Arg1:T84 Arg2:T85	
+R25	treatment_for Arg1:T86 Arg2:T85	
+R4	associated_with Arg1:T5 Arg2:T7	
+R26	associated_with Arg1:T4 Arg2:T7	
+R11	help_diagnose Arg1:T42 Arg2:T35	
+R27	help_diagnose Arg1:T41 Arg2:T35	
+R28	help_diagnose Arg1:T39 Arg2:T35	
+R29	help_diagnose Arg1:T38 Arg2:T11	
+R30	help_diagnose Arg1:T36 Arg2:T11	
+R31	help_diagnose Arg1:T42 Arg2:T11	

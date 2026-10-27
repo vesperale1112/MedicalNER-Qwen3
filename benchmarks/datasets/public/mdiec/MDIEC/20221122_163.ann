@@ -1,0 +1,12 @@
+T3	disease 55 87	late-life-onset major depression
+T4	method 130 133	MRI
+T5	disease 146 166	cognitive impairment
+T7	disease 208 241	early-life-onset major depression
+T8	disease 259 278	subcortical disease
+T9	disease 299 319	late-life depression
+T10	signs 98 126	subcortical hyperintensities
+T2	Health_factors 172 175	age
+T1	Health_factors 184 202	geriatric patients
+T6	Health_factors 31 49	geriatric patients
+R1	occurs_in Arg1:T6 Arg2:T3	
+R2	occurs_in Arg1:T1 Arg2:T7	

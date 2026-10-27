@@ -1,0 +1,61 @@
+T0	drug 30 40	sertraline
+T1	disease 62 79	childhood anxiety
+T2	method 0 28	Cognitive behavioral therapy
+T3	disease 92 109	Anxiety disorders
+T4	disease 121 143	psychiatric conditions
+T5	Health_factors 154 162	children
+T6	Health_factors 167 178	adolescents
+T7	method 189 217	cognitive behavioral therapy
+T8	drug 222 261	selective serotonin-reuptake inhibitors
+T14	method 388 416	randomized, controlled trial
+T15	Health_factors 434 442	children
+T16	Health_factors 455 459	ages
+T17	disease 538 566	generalized anxiety disorder
+T18	method 611 639	cognitive behavioral therapy
+T19	drug 641 651	sertraline
+T21	method 691 749	combination of sertraline and cognitive behavioral therapy
+T22	drug 756 768	placebo drug
+T25	disease 857 864	anxiety
+T26	disease 878 888	impairment
+T27	Health_factors 957 965	children
+T29	method 1079 1098	combination therapy
+T30	method 1120 1148	cognitive behavioral therapy
+T31	drug 1174 1184	sertraline
+T32	method 1200 1209	therapies
+T34	method 1018 1063	Clinician Global Impression-Improvement scale
+T36	method 1244 1263	Combination therapy
+T37	method 1285 1298	monotherapies
+T38	drug 1514 1524	sertraline
+T40	method 1412 1431	combination therapy
+T41	method 1460 1488	cognitive behavioral therapy
+T42	method 1534 1543	therapies
+T46	method 1325 1355	Pediatric Anxiety Rating Scale
+T47	drug 1658 1668	sertraline
+T49	Health_factors 1570 1584	Adverse events
+T50	disease 1596 1604	suicidal
+T51	disease 1609 1627	homicidal ideation
+T52	Health_factors 1705 1710	child
+T53	disease 1711 1728	attempted suicide
+T55	disease 1745 1753	insomnia
+T56	disease 1755 1762	fatigue
+T57	disease 1764 1772	sedation
+T58	disease 1778 1790	restlessness
+T59	drug 1846 1856	sertraline
+T60	method 1807 1835	cognitive behavioral therapy
+T61	method 1877 1905	cognitive behavioral therapy
+T62	drug 1910 1920	sertraline
+T63	disease 1945 1952	anxiety
+T64	Health_factors 1956 1964	children
+T65	disease 1970 1987	anxiety disorders
+T66	method 2014 2023	therapies
+R1	hyponym_of Arg1:T3 Arg2:T4	
+R2	associated_with Arg1:T3 Arg2:T5	
+R3	associated_with Arg1:T3 Arg2:T6	
+T9	disease 509 536	separation anxiety disorder
+T10	disease 571 584	social phobia
+R4	hyponym_of Arg1:T50 Arg2:T49	
+R5	hyponym_of Arg1:T51 Arg2:T49	
+R6	treatment_for Arg1:T62 Arg2:T63	
+R7	treatment_for Arg1:T61 Arg2:T63	
+R8	occurs_in Arg1:T63 Arg2:T64	
+R10	occurs_in Arg1:T64 Arg2:T65	

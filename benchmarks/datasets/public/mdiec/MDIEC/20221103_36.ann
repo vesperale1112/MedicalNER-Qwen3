@@ -1,0 +1,21 @@
+T4	drug 119 154	soluble epoxide hydrolase inhibitor
+T5	physiology 160 185	anti-inflammatory effects
+T6	disease 203 233	spontaneous recurrent seizures
+T7	disease 235 238	SRS
+T8	disease 244 285	epilepsy-associated depressive behaviours
+T9	disease 293 375	lithium chloride (LiCl)-pilocarpine-induced post-status epilepticus (SE) rat model
+T10	disease 349 360	epilepticus
+T14	disease 362 364	SE
+T1	drug 49 108	1-trifluoromethoxyphenyl-3-(1-propionylpiperidin-4-yl) urea
+T2	drug 110 114	TPPU
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+R2	hyponym_of Arg1:T2 Arg2:T4	
+R3	hyponym_of Arg1:T1 Arg2:T4	
+R6	abbreviation_for Arg1:T7 Arg2:T6	
+T3	drug 311 315	LiCl
+T11	drug 293 309	lithium chloride
+R7	abbreviation_for Arg1:T3 Arg2:T11	
+R8	abbreviation_for Arg1:T14 Arg2:T10	
+R4	occurs_in Arg1:T6 Arg2:T9	
+R5	occurs_in Arg1:T7 Arg2:T9	
+R9	occurs_in Arg1:T8 Arg2:T9	

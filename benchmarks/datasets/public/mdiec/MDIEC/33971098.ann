@@ -1,0 +1,10 @@
+T1	disease 0 10	Depression
+T2	disease 79 89	depression
+T3	disease 170 180	depression
+T4	disease 242 252	depression
+T5	disease 430 455	major depressive disorder
+T6	method 50 62	primary care
+T7	Health_factors 269 292	primary care clinicians
+T10	method 17 33	psychiatric care
+T9	disease 120 139	psychiatric symptom
+R1	hyponym_of Arg1:T2 Arg2:T9	

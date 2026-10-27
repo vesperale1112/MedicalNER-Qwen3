@@ -1,0 +1,92 @@
+T1	gene 97 102	NEGR1
+T2	disease 128 153	major depression disorder
+T3	disease 263 288	major depression disorder
+T4	disease 290 293	MDD
+T5	disease 679 682	MDD
+T6	disease 886 889	MDD
+T7	gene 978 1005	Neuronal growth regulator 1
+T8	gene 1007 1012	NEGR1
+T9	physiology 1046 1074	expression level of RPL31P12
+T10	disease 1123 1126	MDD
+T11	gene 1283 1288	NEGR1
+T12	gene 1319 1345	prostaglandin E receptor 3
+T13	gene 1347 1353	PTGER3
+T14	gene 1390 1412	ZRANB2 antisense RNA 2
+T15	gene 1497 1507	NEGR1 gene
+T16	gene 1900 1905	NEGR1
+T17	disease 1927 1930	MDD
+T18	gene 1970 1975	NEGR1
+T19	disease 1999 2002	MDD
+T20	method 12 41	genome-wide association study
+R1	risk_factor_of Arg1:T1 Arg2:T2	
+T21	method 167 198	Genome-wide association studies
+T22	method 200 204	GWAS
+R2	abbreviation_for Arg1:T22 Arg2:T21	
+T23	gene 230 246	genetic variants
+R3	abbreviation_for Arg1:T4 Arg2:T3	
+T24	method 446 488	Summary data-based Mendelian Randomization
+T25	method 490 493	SMR
+R6	abbreviation_for Arg1:T25 Arg2:T24	
+T26	method 500 531	Psychiatric Genomics Consortium
+T27	method 533 536	PGC
+R7	abbreviation_for Arg1:T27 Arg2:T26	
+T28	method 538 542	GWAS
+T29	gene 561 595	expression quantitative trait loci
+T30	gene 597 601	eQTL
+R8	abbreviation_for Arg1:T30 Arg2:T29	
+T31	method 702 734	differential expression analysis
+T32	method 736 780	methylation quantitative trait loci analysis
+T33	method 786 813	cognitive genetics analysis
+T34	method 908 932	SMR integrative analysis
+R9	abbreviation_for Arg1:T8 Arg2:T7	
+T36	gene 952 966	SNP rs10789336
+T35	region 1078 1091	brain tissues
+R13	risk_factor_of Arg1:T36 Arg2:T10	
+T37	gene 1164 1178	SNP rs10789336
+T38	gene 1238 1259	DNA methylation sites
+T39	gene 1271 1281	cg09256413
+T40	gene 1307 1317	cg11418303
+R14	abbreviation_for Arg1:T13 Arg2:T12	
+T41	gene 1378 1388	cg23032215
+T42	gene 1414 1424	ZRANB2-AS2
+R15	abbreviation_for Arg1:T42 Arg2:T14	
+T43	method 1445 1477	Differential expression analysis
+T44	region 1527 1544	prefrontal cortex
+T45	method 1564 1591	Cognitive genetics analysis
+T46	gene 1608 1622	SNP rs10789336
+T47	symptom 1643 1664	cognitive performance
+R16	associated_with Arg1:T46 Arg2:T47	
+T48	Health_factors 1685 1707	educational attainment
+T49	physiology 1728 1754	general cognitive function
+T50	physiology 1779 1805	verbal numerical reasoning
+R17	associated_with Arg1:T46 Arg2:T48	
+R18	associated_with Arg1:T46 Arg2:T49	
+R19	associated_with Arg1:T46 Arg2:T50	
+T51	gene 1882 1896	SNP rs10789336
+R20	risk_factor_of Arg1:T51 Arg2:T17	
+T52	gene 46 80	expression quantitative trait loci
+T53	region 555 560	brain
+T55	physiology 1203 1214	methylation
+R4	located_in Arg1:T36 Arg2:T7	
+R5	located_in Arg1:T36 Arg2:T8	
+R38	located_in Arg1:T9 Arg2:T35	
+R10	associated_with Arg1:T36 Arg2:T9	
+R12	hyponym_of Arg1:T39 Arg2:T38	
+R21	located_in Arg1:T51 Arg2:T16	
+R22	help_diagnose Arg1:T22 Arg2:T23	
+R23	help_diagnose Arg1:T21 Arg2:T23	
+R24	hyponym_of Arg1:T40 Arg2:T38	
+R26	hyponym_of Arg1:T41 Arg2:T38	
+R27	associated_with Arg1:T15 Arg2:T44	
+T54	gene 120 124	gene
+T56	gene 1014 1018	gene
+T57	gene 620 625	genes
+T58	gene 857 862	genes
+R28	hyponym_of Arg1:T1 Arg2:T54	
+R29	associated_with Arg1:T23 Arg2:T3	
+R30	associated_with Arg1:T23 Arg2:T4	
+R33	associated_with Arg1:T37 Arg2:T55	
+R34	located_in Arg1:T55 Arg2:T38	
+R35	located_in Arg1:T55 Arg2:T39	
+R36	located_in Arg1:T55 Arg2:T40	
+R37	located_in Arg1:T55 Arg2:T41	

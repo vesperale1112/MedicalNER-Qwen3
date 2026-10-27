@@ -1,0 +1,112 @@
+T0	disease 51 68	anxiety behaviour
+T1	drug 2 24	gut-derived metabolite
+T2	physiology 32 46	brain activity
+T3	method 72 76	mice
+T6	Health_factors 150 166	animal behaviour
+T8	Health_factors 313 323	microbiota
+T10	region 401 406	brain
+T11	region 379 385	organs
+T12	drug 331 354	gut-derived metabolites
+T13	Health_factors 196 219	environmental molecules
+T15	method 414 418	mice
+T16	Health_factors 424 438	gut microbiota
+T17	region 514 519	brain
+T18	physiology 541 558	brain development
+T19	physiology 563 583	myelination patterns
+T20	physiology 471 498	neurotransmitter production
+T21	physiology 622 644	gut-brain interactions
+T22	region 698 729	humoral or neuronal connections
+T23	drug 798 819	4-ethylphenyl sulfate
+T24	drug 821 825	4EPS
+T25	disease 862 887	atypical neurodevelopment
+T26	drug 777 797	microbial metabolite
+T27	method 847 858	mouse model
+T28	drug 993 1001	tyrosine
+T29	drug 1005 1018	4-ethylphenol
+T30	drug 1020 1023	4EP
+T31	drug 1080 1084	4EPS
+T33	Health_factors 939 953	gut microbiome
+T34	method 1088 1092	mice
+T35	method 1030 1043	bioengineered
+T36	gene 911 929	biosynthetic genes
+T37	drug 1094 1098	4EPS
+T38	region 1111 1116	brain
+T39	physiology 1152 1204	region-specific activity and functional connectivity
+T40	symptom 1242 1274	altered oligodendrocyte function
+T41	drug 1293 1297	4EPS
+T42	physiology 1356 1391	oligodendrocyte-neuron interactions
+T45	region 1282 1287	brain
+T47	method 1337 1341	mice
+T50	method 1395 1417	ex vivo brain cultures
+T51	physiology 1307 1333	oligodendrocyte maturation
+T53	method 1206 1232	Gene expression signatures
+T54	region 1495 1509	neuronal axons
+T55	method 1419 1423	Mice
+T56	symptom 1472 1491	reduced myelination
+T57	drug 1439 1461	4EP-producing bacteria
+T58	region 1547 1552	brain
+T59	Health_factors 1579 1599	behavioural outcomes
+T60	drug 1655 1659	4EPS
+T61	disease 1670 1693	anxiety-like behaviours
+T62	physiology 1739 1770	oligodendrocyte differentiation
+T64	method 1639 1643	mice
+T65	method 1699 1725	pharmacological treatments
+T66	physiology 1785 1812	behavioural effects of 4EPS
+T67	physiology 1921 1945	oligodendrocyte function
+T68	method 1897 1901	mice
+T69	region 1975 1980	brain
+R1	associated_with Arg1:T1 Arg2:T2	
+R2	associated_with Arg1:T1 Arg2:T0	
+R3	occurs_in Arg1:T0 Arg2:T3	
+R4	occurs_in Arg1:T2 Arg2:T3	
+T4	Health_factors 93 121	sensory and molecular inputs
+R5	associated_with Arg1:T4 Arg2:T6	
+T5	region 227 249	gastrointestinal tract
+R6	associated_with Arg1:T13 Arg2:T5	
+T7	Health_factors 260 278	dietary components
+R7	associated_with Arg1:T7 Arg2:T8	
+R8	hyponym_of Arg1:T10 Arg2:T11	
+R9	associated_with Arg1:T12 Arg2:T11	
+R10	associated_with Arg1:T12 Arg2:T10	
+T9	symptom 447 456	behaviour
+R11	associated_with Arg1:T16 Arg2:T9	
+R12	associated_with Arg1:T16 Arg2:T20	
+T14	region 506 509	gut
+R13	located_in Arg1:T20 Arg2:T14	
+R14	located_in Arg1:T20 Arg2:T17	
+R15	associated_with Arg1:T16 Arg2:T18	
+R16	associated_with Arg1:T16 Arg2:T19	
+R17	occurs_in Arg1:T15 Arg2:T16	
+R18	abbreviation_for Arg1:T24 Arg2:T23	
+R19	associated_with Arg1:T21 Arg2:T22	
+R21	occurs_in Arg1:T27 Arg2:T25	
+R20	characteristic_of Arg1:T23 Arg2:T25	
+R22	characteristic_of Arg1:T24 Arg2:T25	
+T32	Health_factors 985 992	dietary
+R23	associated_with Arg1:T36 Arg2:T28	
+R24	abbreviation_for Arg1:T30 Arg2:T29	
+T71	Health_factors 1044 1056	gut bacteria
+R25	associated_with Arg1:T71 Arg2:T31	
+R26	occurs_in Arg1:T31 Arg2:T34	
+R27	associated_with Arg1:T37 Arg2:T39	
+R28	located_in Arg1:T37 Arg2:T38	
+R29	located_in Arg1:T40 Arg2:T45	
+R30	associated_with Arg1:T41 Arg2:T51	
+R31	occurs_in Arg1:T51 Arg2:T47	
+R32	occurs_in Arg1:T42 Arg2:T50	
+R33	associated_with Arg1:T41 Arg2:T42	
+R34	located_in Arg1:T56 Arg2:T54	
+T43	symptom 1511 1539	Altered myelination dynamics
+R35	located_in Arg1:T43 Arg2:T58	
+R36	associated_with Arg1:T43 Arg2:T59	
+R37	associated_with Arg1:T65 Arg2:T62	
+R38	treatment_for Arg1:T65 Arg2:T66	
+T44	drug 1843 1863	gut-derived molecule
+T46	Health_factors 1875 1893	complex behaviours
+R39	associated_with Arg1:T44 Arg2:T46	
+R40	occurs_in Arg1:T46 Arg2:T68	
+T48	physiology 1950 1967	myelin patterning
+R41	located_in Arg1:T48 Arg2:T69	
+R42	located_in Arg1:T67 Arg2:T69	
+R43	associated_with Arg1:T44 Arg2:T67	
+R44	associated_with Arg1:T44 Arg2:T48	

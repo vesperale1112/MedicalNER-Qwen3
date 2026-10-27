@@ -1,0 +1,67 @@
+T1	disease 33 41	insomnia
+T2	disease 164 172	insomnia
+T3	disease 314 322	insomnia
+T4	disease 1658 1683	major depressive disorder
+T5	method 1823 1846	Insomnia Severity Index
+T6	disease 2115 2123	insomnia
+T7	disease 2280 2288	insomnia
+T8	disease 2303 2328	major depression disorder
+T9	method 18 29	acupuncture
+T10	method 45 62	systematic review
+T11	method 67 79	meta-analysi
+T12	method 94 105	Acupuncture
+R2	treatment_for Arg1:T12 Arg2:T2	
+T13	method 289 310	acupuncture treatment
+T14	method 360 377	systematic review
+T15	method 384 397	meta-analysis
+T16	method 444 455	acupuncture
+T17	method 465 476	acupuncture
+T18	method 501 507	PubMed
+T19	method 509 515	Embase
+T20	method 517 531	Web of Science
+T21	method 541 557	Cochrane Library
+T22	method 578 582	CNKI
+T23	method 584 587	VIP
+T24	method 593 600	Wanfang
+T25	method 712 740	randomized controlled trials
+T26	method 783 798	polysomnography
+T27	method 800 803	PSG
+R4	abbreviation_for Arg1:T27 Arg2:T26	
+T28	method 806 816	actigraphy
+T29	method 821 856	self-assessment sleep quality tools
+T30	method 895 908	meta-analysis
+T31	method 931 951	random-effects model
+T32	method 961 991	Pittsburgh Sleep Quality Index
+T33	method 993 997	PSQI
+R5	abbreviation_for Arg1:T33 Arg2:T32	
+T34	method 1102 1113	acupuncture
+T35	method 1138 1149	acupuncture
+T36	method 1159 1176	subgroup analysis
+T37	method 1262 1281	acupuncture methods
+T38	method 1378 1382	PSQI
+T39	method 1422 1433	acupuncture
+T40	method 1462 1466	PSQI
+T41	method 1487 1504	subgroup analysis
+T42	method 1539 1558	acupuncture methods
+T43	method 1589 1593	PSQI
+T44	method 1733 1737	PSQI
+T45	method 1848 1851	ISI
+R6	abbreviation_for Arg1:T45 Arg2:T5	
+T46	method 1899 1910	acupuncture
+T47	method 1920 1931	acupuncture
+T48	method 1948 1951	PSG
+T49	method 1956 1966	actigraphy
+T50	method 1977 1988	acupuncture
+T51	method 2090 2111	Acupuncture treatment
+R7	treatment_for Arg1:T51 Arg2:T6	
+T52	method 2201 2212	acupuncture
+T53	method 2362 2383	acupuncture treatment
+T58	Health_factors 1035 1040	adult
+T59	Health_factors 1865 1870	adult
+T60	method 118 137	alternative therapy
+R1	hyponym_of Arg1:T12 Arg2:T60	
+T62	symptom 2052 2075	sleep structure changes
+T61	method 142 160	clinical treatment
+T63	Health_factors 1296 1317	crowd characteristics
+R3	associated_with Arg1:T39 Arg2:T40	
+R9	treatment_for Arg1:T13 Arg2:T3	

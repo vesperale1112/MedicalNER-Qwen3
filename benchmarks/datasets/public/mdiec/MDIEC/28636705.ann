@@ -1,0 +1,91 @@
+T0	disease 38 67	Obsessive-Compulsive Disorder
+T1	disease 0 12	Inflammation
+T2	disease 106 135	obsessive-compulsive disorder
+T3	disease 137 140	OCD
+T4	disease 218 235	neuroinflammation
+T5	disease 170 195	neuropsychiatric symptoms
+T6	region 250 263	basal ganglia
+T7	disease 293 303	infections
+T8	physiology 270 289	autoimmune response
+T9	disease 343 360	neuroinflammation
+T10	region 20 34	Neurocircuitry
+R1	located_in Arg1:T1 Arg2:T10	
+R3	abbreviation_for Arg1:T3 Arg2:T2	
+R4	characteristic_of Arg1:T5 Arg2:T2	
+R5	characteristic_of Arg1:T5 Arg2:T3	
+R6	located_in Arg1:T4 Arg2:T6	
+R7	associated_with Arg1:T4 Arg2:T7	
+R8	hyponym_of Arg1:T4 Arg2:T8	
+T11	region 434 474	cortico-striato-thalamo-cortical circuit
+T12	disease 478 481	OCD
+R9	associated_with Arg1:T9 Arg2:T11	
+R2	occurs_in Arg1:T1 Arg2:T0	
+T13	disease 495 513	brain inflammation
+T14	method 553 581	positron emission tomography
+T15	method 583 586	PET
+R10	abbreviation_for Arg1:T15 Arg2:T14	
+T16	gene 618 638	translocator protein
+T17	gene 640 644	TSPO
+R11	abbreviation_for Arg1:T17 Arg2:T16	
+R12	help_diagnose Arg1:T14 Arg2:T13	
+R13	help_diagnose Arg1:T15 Arg2:T13	
+T18	signs 647 675	Translocator protein density
+T19	region 691 700	microglia
+T20	disease 722 739	neuroinflammation
+T21	signs 748 772	TSPO distribution volume
+T22	signs 774 776	VT
+R14	abbreviation_for Arg1:T22 Arg2:T21	
+T23	signs 793 805	TSPO density
+R15	associated_with Arg1:T18 Arg2:T19	
+T24	signs 840 847	TSPO VT
+T25	region 867 881	dorsal caudate
+T26	region 883 903	orbitofrontal cortex
+T27	region 905 913	thalamus
+T28	region 915 931	ventral striatum
+T29	region 933 947	dorsal putamen
+T30	region 953 978	anterior cingulate cortex
+T31	disease 982 985	OCD
+R16	characteristic_of Arg1:T18 Arg2:T20	
+T32	symptom 990 1001	Compulsions
+T33	method 1025 1062	Yale-Brown Obsessive Compulsive Scale
+R17	help_diagnose Arg1:T33 Arg2:T32	
+T34	disease 1079 1082	OCD
+T35	method 1113 1115	SD
+T36	Health_factors 1117 1121	ages
+T37	Health_factors 1210 1215	women
+T38	disease 1234 1237	OCD
+T39	signs 1239 1246	TSPO VT
+T40	region 1283 1296	brain regions
+R18	characteristic_of Arg1:T39 Arg2:T38	
+T41	region 1331 1356	anterior cingulate cortex
+T42	signs 1454 1461	TSPO VT
+R19	associated_with Arg1:T39 Arg2:T40	
+R20	located_in Arg1:T24 Arg2:T25	
+R21	located_in Arg1:T24 Arg2:T26	
+R22	located_in Arg1:T24 Arg2:T27	
+R23	located_in Arg1:T24 Arg2:T28	
+R24	located_in Arg1:T24 Arg2:T29	
+R25	located_in Arg1:T24 Arg2:T30	
+T43	region 1494 1513	gray matter regions
+R26	located_in Arg1:T42 Arg2:T43	
+T44	method 1519 1556	Yale-Brown Obsessive Compulsive Scale
+T45	disease 1568 1576	distress
+T46	disease 1604 1624	compulsive behaviors
+T47	signs 1655 1662	TSPO VT
+R27	associated_with Arg1:T45 Arg2:T47	
+T48	region 1670 1690	orbitofrontal cortex
+R28	located_in Arg1:T47 Arg2:T48	
+T49	method 1692 1723	uncorrected Pearson correlation
+T50	disease 1825 1837	inflammation
+T51	region 1849 1863	neurocircuitry
+T52	disease 1867 1870	OCD
+R29	located_in Arg1:T50 Arg2:T51	
+R30	occurs_in Arg1:T50 Arg2:T52	
+T53	signs 1910 1917	TSPO VT
+T54	method 1934 1971	autoimmune/neuroinflammatory theories
+T55	disease 1975 1978	OCD
+T56	region 2004 2017	basal ganglia
+T57	region 2033 2073	cortico-striato-thalamo-cortical circuit
+R31	associated_with Arg1:T55 Arg2:T57	
+R32	help_diagnose Arg1:T44 Arg2:T45	
+R33	associated_with Arg1:T45 Arg2:T46	

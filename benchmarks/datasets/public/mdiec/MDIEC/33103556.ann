@@ -1,0 +1,72 @@
+T1	disease 123 148	major depression disorder
+T2	disease 228 253	major depression disorder
+T3	disease 255 258	MDD
+T4	disease 379 398	MDD related suicide
+T5	gene 1195 1237	nitric-oxide synthase and endoribonuclease
+T6	physiology 1239 1265	estrogen signaling pathway
+T7	physiology 1267 1293	glucagon signaling pathway
+T8	physiology 1299 1320	legionellosis pathway
+T9	disease 1343 1346	MDD
+T10	gene 1595 1601	HSPA1A
+T11	gene 1603 1608	RASEF
+T12	gene 1610 1617	TBC1D8B
+T13	disease 1882 1885	MDD
+T14	method 0 17	Genome-wide study
+T15	method 35 49	scoring system
+T16	disease 103 119	suicide behavior
+T17	method 194 224	molecular biological detection
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T19	physiology 484 498	RNA expression
+T20	method 529 552	Gene Expression Omnibus
+T21	method 554 557	GEO
+R2	abbreviation_for Arg1:T21 Arg2:T20	
+T22	method 574 618	weighted gene co-expression network analysis
+T23	method 620 625	WGCNA
+R3	abbreviation_for Arg1:T23 Arg2:T22	
+T24	method 661 680	Logistic regression
+T25	method 743 757	scoring system
+T26	method 886 900	WGCNA analysis
+T27	disease 986 1002	suicide behavior
+T28	region 916 948	tan and green functional modules
+R4	associated_with Arg1:T28 Arg2:T27	
+T31	method 1114 1133	Functional analysis
+R6	characteristic_of Arg1:T8 Arg2:T9	
+R7	characteristic_of Arg1:T7 Arg2:T9	
+R8	characteristic_of Arg1:T6 Arg2:T9	
+R9	characteristic_of Arg1:T5 Arg2:T9	
+T33	physiology 1372 1399	protein-protein interaction
+T34	physiology 1401 1404	PPI
+R11	abbreviation_for Arg1:T34 Arg2:T33	
+T35	method 1558 1583	logistic regression model
+T36	disease 1702 1719	suicide behaviors
+T37	gene 1662 1678	tan module genes
+R12	associated_with Arg1:T37 Arg2:T36	
+T38	physiology 1747 1784	multiple signaling pathway activation
+R13	risk_factor_of Arg1:T38 Arg2:T36	
+T39	disease 1861 1878	suicidal behavior
+T40	method 1790 1817	three-genes-based signature
+R14	associated_with Arg1:T40 Arg2:T39	
+T42	signs 63 85	noninvasive biomarkers
+T43	region 1137 1147	tan module
+T44	gene 1177 1184	enzymes
+R17	hyponym_of Arg1:T5 Arg2:T44	
+R19	hyponym_of Arg1:T6 Arg2:T44	
+R20	hyponym_of Arg1:T7 Arg2:T44	
+R21	hyponym_of Arg1:T8 Arg2:T44	
+T29	region 1033 1044	tan modules
+T30	disease 1096 1112	suicide behavior
+R5	characteristic_of Arg1:T44 Arg2:T9	
+T32	gene 1429 1438	hub genes
+T41	gene 342 351	hub genes
+R15	occurs_in Arg1:T39 Arg2:T13	
+R10	occurs_in Arg1:T16 Arg2:T1	
+R16	help_diagnose Arg1:T15 Arg2:T16	
+T46	gene 25 30	genes
+R18	help_diagnose Arg1:T46 Arg2:T16	
+R22	hyponym_of Arg1:T15 Arg2:T42	
+R23	hyponym_of Arg1:T46 Arg2:T42	
+T47	gene 1518 1522	gene
+T48	gene 845 850	genes
+T49	gene 1008 1013	genes
+T50	gene 1446 1451	genes
+R24	associated_with Arg1:T49 Arg2:T30	

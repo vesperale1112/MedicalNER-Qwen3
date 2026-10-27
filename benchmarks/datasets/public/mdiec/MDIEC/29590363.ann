@@ -1,0 +1,76 @@
+T0	disease 43 50	anxiety
+T1	disease 52 62	depression
+T2	disease 64 75	suicidality
+T3	Health_factors 81 94	mental health
+T6	Health_factors 105 129	children of war veterans
+T7	Health_factors 194 207	mental health
+T9	Health_factors 337 361	children's mental health
+T11	Health_factors 211 223	war veterans
+T13	Health_factors 560 573	mental health
+T17	Health_factors 581 618	adult children of Australian veterans
+T21	method 423 448	propensity score analysis
+T22	method 379 418	retrospective, multigenerational survey
+T25	Health_factors 686 691	women
+T26	Health_factors 704 711	fathers
+T27	Health_factors 778 781	men
+T28	Health_factors 666 675	adult men
+T30	Health_factors 855 858	age
+T33	disease 954 976	anxiety and depression
+T35	method 913 926	self-reported
+T42	Health_factors 1078 1099	current mental health
+T43	Health_factors 1204 1211	fathers
+T44	disease 1369 1376	anxiety
+T45	disease 1441 1451	depression
+T46	Health_factors 1640 1666	non-deployed army veterans
+T50	method 1378 1388	odds ratio
+T51	method 1390 1392	OR
+T52	method 1400 1419	confidence interval
+T53	method 1421 1423	CI
+T54	method 1453 1455	OR
+T55	method 1462 1464	CI
+T56	disease 1502 1509	suicide
+T57	disease 1514 1523	self-harm
+T58	method 1525 1527	OR
+T59	method 1534 1536	CI
+T60	Health_factors 1566 1580	suicidal plans
+T61	method 1582 1584	OR
+T62	method 1591 1593	CI
+T63	Health_factors 1615 1624	offspring
+T66	Health_factors 1288 1323	adult children of deployed veterans
+T68	method 1736 1738	CI
+T69	Health_factors 1702 1715	mental health
+T70	Health_factors 1825 1840	adverse effects
+T71	Health_factors 1871 1884	mental health
+T72	Health_factors 1888 1917	children in military families
+T73	Health_factors 1991 2011	military engagements
+R1	occurs_in Arg1:T0 Arg2:T6	
+R2	occurs_in Arg1:T1 Arg2:T6	
+R3	occurs_in Arg1:T2 Arg2:T6	
+R4	occurs_in Arg1:T3 Arg2:T6	
+T4	Health_factors 38 41	war
+T5	Health_factors 167 186	military deployment
+R5	associated_with Arg1:T5 Arg2:T7	
+R6	occurs_in Arg1:T7 Arg2:T11	
+T8	Health_factors 314 333	parental deployment
+T10	Health_factors 533 552	parental deployment
+T12	Health_factors 626 637	Vietnam War
+R7	occurs_in Arg1:T13 Arg2:T17	
+T14	Health_factors 800 815	Australian army
+T15	Health_factors 827 838	Vietnam War
+T16	disease 1016 1027	suicidality
+T18	method 1037 1072	Psychiatric Symptom Frequency Scale
+R8	help_diagnose Arg1:T18 Arg2:T16	
+T19	method 1119 1155	Mental Health Inventory of the SF-36
+R9	help_diagnose Arg1:T19 Arg2:T42	
+T20	Health_factors 1233 1244	Vietnam War
+T23	Health_factors 1279 1282	war
+R10	risk_factor_of Arg1:T66 Arg2:T44	
+R11	abbreviation_for Arg1:T51 Arg2:T50	
+R12	abbreviation_for Arg1:T53 Arg2:T52	
+R13	risk_factor_of Arg1:T66 Arg2:T45	
+R14	risk_factor_of Arg1:T66 Arg2:T56	
+R15	risk_factor_of Arg1:T66 Arg2:T57	
+R16	risk_factor_of Arg1:T66 Arg2:T60	
+T24	Health_factors 1844 1863	parental deployment
+R17	associated_with Arg1:T24 Arg2:T71	
+R18	occurs_in Arg1:T71 Arg2:T72	

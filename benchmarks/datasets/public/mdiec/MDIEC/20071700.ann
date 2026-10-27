@@ -1,0 +1,52 @@
+T0	drug 0 8	Morphine
+T1	disease 19 32	combat injury
+T2	disease 45 75	post-traumatic stress disorder
+T3	disease 88 118	Post-traumatic stress disorder
+T4	disease 120 124	PTSD
+T6	Health_factors 206 224	military personnel
+T7	disease 246 252	trauma
+T9	Health_factors 138 167	adverse mental health outcome
+T10	disease 395 399	PTSD
+T11	method 254 269	Pharmacotherapy
+T12	Health_factors 317 345	exposure to traumatic events
+T15	disease 290 313	serious physical injury
+T18	method 509 590	Navy-Marine Corps Combat Trauma Registry Expeditionary Medical Encounter Database
+T22	disease 694 698	PTSD
+T23	method 802 817	medical records
+T25	disease 889 893	PTSD
+T27	drug 922 930	morphine
+T28	method 962 973	trauma care
+T29	disease 1024 1028	PTSD
+T30	disease 1035 1041	injury
+T32	method 938 957	early resuscitation
+T33	disease 1070 1074	PTSD
+T34	drug 1099 1107	morphine
+T35	disease 1129 1133	PTSD
+T36	drug 1164 1172	morphine
+T37	method 1174 1184	odds ratio
+T38	Health_factors 1278 1281	age
+T39	disease 1352 1358	injury
+T40	disease 1327 1337	amputation
+T41	disease 1296 1302	injury
+T42	disease 1261 1267	injury
+R1	hyponym_of Arg1:T4 Arg2:T3	
+R2	hyponym_of Arg1:T4 Arg2:T9	
+R3	hyponym_of Arg1:T3 Arg2:T9	
+T5	Health_factors 174 201	seriously injured civilians
+R4	associated_with Arg1:T5 Arg2:T3	
+R5	associated_with Arg1:T5 Arg2:T4	
+R6	associated_with Arg1:T6 Arg2:T3	
+R7	associated_with Arg1:T6 Arg2:T4	
+R8	treatment_for Arg1:T11 Arg2:T10	
+T8	Health_factors 442 460	military personnel
+T13	disease 469 499	serious traumatic brain injury
+T14	method 721 773	Career History Archival Medical and Personnel System
+R9	treatment_for Arg1:T27 Arg2:T29	
+T17	drug 1436 1444	morphine
+T19	method 1452 1463	trauma care
+T21	disease 1513 1517	PTSD
+T24	disease 1524 1538	serious injury
+R10	treatment_for Arg1:T17 Arg2:T21	
+T16	drug 609 620	medications
+R11	help_diagnose Arg1:T14 Arg2:T22	
+R12	occurs_in Arg1:T1 Arg2:T2	

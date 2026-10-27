@@ -1,0 +1,38 @@
+T0	physiology 0 34	Cortical 5-HT2A receptor signaling
+T1	disease 45 67	anxiety-like behaviors
+T2	method 71 75	mice
+T3	drug 77 86	Serotonin
+T4	drug 88 107	5-hydroxytryptamine
+T5	drug 109 113	5-HT
+T6	disease 174 184	depression
+T7	disease 189 214	anxiety-related behaviors
+T8	physiology 77 133	Serotonin [5-hydroxytryptamine (5-HT)] neurotransmission
+T9	region 141 163	central nervous system
+T11	physiology 346 380	5-HT2A receptor (5HT2AR) signaling
+T12	gene 363 369	5HT2AR
+T13	disease 411 437	conflict anxiety paradigms
+T15	method 384 388	mice
+T17	disease 456 505	fear-conditioned and depression-related behaviors
+T18	physiology 507 548	Selective restoration of 5HT2AR signaling
+T19	disease 574 600	conflict anxiety behaviors
+T20	region 556 562	cortex
+T23	gene 646 670	cortical 5HT2AR function
+T25	disease 692 708	conflict anxiety
+R1	occurs_in Arg1:T1 Arg2:T2	
+R2	associated_with Arg1:T0 Arg2:T1	
+R3	abbreviation_for Arg1:T5 Arg2:T4	
+R4	located_in Arg1:T8 Arg2:T9	
+R5	associated_with Arg1:T8 Arg2:T6	
+T10	Health_factors 218 224	humans
+T14	method 229 236	rodents
+R6	occurs_in Arg1:T7 Arg2:T10	
+R7	occurs_in Arg1:T7 Arg2:T14	
+R8	associated_with Arg1:T8 Arg2:T7	
+R9	occurs_in Arg1:T6 Arg2:T10	
+R10	occurs_in Arg1:T6 Arg2:T14	
+R11	occurs_in Arg1:T11 Arg2:T15	
+R12	associated_with Arg1:T11 Arg2:T13	
+R13	located_in Arg1:T18 Arg2:T20	
+R14	treatment_for Arg1:T18 Arg2:T19	
+R15	associated_with Arg1:T23 Arg2:T25	
+T16	region 736 744	cortical

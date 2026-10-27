@@ -1,0 +1,87 @@
+T0	drug 0 11	Amisulpride
+T1	drug 16 26	olanzapine
+T2	drug 65 74	clozapine
+T3	disease 78 105	first-episode schizophrenia
+T4	disease 110 135	schizophreniform disorder
+T5	method 150 177	three-phase switching study
+T7	disease 250 263	schizophrenia
+T8	method 205 224	treatment algorithm
+T9	drug 314 323	clozapine
+T10	disease 360 373	schizophrenia
+T11	drug 283 297	antipsychotics
+T17	Health_factors 479 508	psychiatric specialty clinics
+T19	method 401 418	three-phase study
+T20	disease 608 621	schizophrenia
+T21	disease 623 648	schizophreniform disorder
+T22	disease 653 677	schizoaffective disorder
+T23	drug 725 736	amisulpride
+T24	Health_factors 556 560	aged
+T25	method 597 603	DSM-IV
+T26	method 737 743	orally
+T27	method 750 767	open-label design
+T28	drug 882 893	amisulpride
+T29	drug 907 917	olanzapine
+T30	method 805 835	symptomatic remission criteria
+T31	Health_factors 1145 1148	sex
+T32	method 1166 1185	minimisation method
+T34	drug 1263 1272	clozapine
+T35	method 1319 1336	open-label design
+T36	disease 1230 1239	remission
+T37	method 1485 1512	intention-to-treat analysis
+T41	method 1579 1624	logistic link and binomial error distribution
+T42	method 1540 1570	generalised linear mixed model
+T43	method 1656 1674	ClinicalTrials.gov
+T44	drug 1914 1925	amisulpride
+T45	disease 1960 1969	remission
+T46	drug 2128 2138	olanzapine
+T47	drug 2149 2160	amisulpride
+T48	drug 2184 2195	amisulpride
+T49	drug 2215 2225	olanzapine
+T50	disease 2235 2244	remission
+T51	method 2047 2075	double-blind switching trial
+T52	disease 2013 2022	remission
+T53	drug 2348 2357	clozapine
+T54	disease 2434 2443	remission
+T57	disease 2289 2298	remission
+T58	drug 2551 2561	olanzapine
+T59	disease 2601 2618	epileptic seizure
+T60	drug 2639 2650	amisulpride
+T61	Health_factors 2459 2481	serious adverse events
+T62	disease 2710 2728	psychotic symptoms
+T65	disease 2772 2788	suicide attempts
+T67	method 2753 2758	trial
+T68	disease 2862 2875	schizophrenia
+T69	drug 2994 3005	amisulpride
+T70	drug 3010 3019	clozapine
+T71	method 2965 2990	sequential administration
+T72	method 2923 2949	simple treatment algorithm
+T74	drug 3040 3050	olanzapine
+T75	drug 3076 3085	clozapine
+T76	method 3130 3149	antipsychotic trial
+T77	drug 3164 3178	antipsychotics
+T80	method 137 145	OPTiMiSE
+R1	treatment_for Arg1:T0 Arg2:T3	
+R2	treatment_for Arg1:T0 Arg2:T4	
+R3	treatment_for Arg1:T1 Arg2:T3	
+R4	treatment_for Arg1:T1 Arg2:T4	
+R5	treatment_for Arg1:T2 Arg2:T3	
+R6	treatment_for Arg1:T2 Arg2:T4	
+T6	Health_factors 457 474	general hospitals
+R7	help_diagnose Arg1:T25 Arg2:T20	
+R8	help_diagnose Arg1:T25 Arg2:T21	
+R9	help_diagnose Arg1:T25 Arg2:T22	
+R10	treatment_for Arg1:T23 Arg2:T20	
+R11	treatment_for Arg1:T23 Arg2:T21	
+R12	treatment_for Arg1:T23 Arg2:T22	
+T12	method 946 964	double-blind phase
+T13	method 1067 1088	randomisation website
+T14	Health_factors 1408 1429	symptomatic remission
+R13	help_diagnose Arg1:T37 Arg2:T14	
+T15	method 1856 1881	intention-to-treat sample
+T16	method 2115 2120	trial
+R14	risk_factor_of Arg1:T58 Arg2:T59	
+R15	risk_factor_of Arg1:T60 Arg2:T62	
+T18	Health_factors 2877 2898	symptomatic remission
+R16	treatment_for Arg1:T72 Arg2:T68	
+R17	treatment_for Arg1:T69 Arg2:T68	
+R18	treatment_for Arg1:T70 Arg2:T68	

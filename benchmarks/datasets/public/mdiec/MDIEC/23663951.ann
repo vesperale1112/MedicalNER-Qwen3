@@ -1,0 +1,29 @@
+T1	disease 12 28	bipolar disorder
+T2	disease 127 143	bipolar disorder
+T3	gene 394 401	CACNA1C
+T4	gene 403 407	ODZ4
+T5	gene 413 417	NCAN
+T6	disease 579 595	bipolar disorder
+T7	disease 600 613	schizophrenia
+T8	disease 752 768	bipolar disorder
+T9	disease 785 798	schizophrenia
+T10	disease 918 934	bipolar disorder
+T11	gene 0 8	Genetics
+T12	Health_factors 54 59	twins
+T13	gene 83 98	genetic factors
+T14	gene 168 175	genetic
+T15	method 293 324	genome-wide association studies
+T16	gene 343 356	polymorphisms
+T17	gene 388 393	genes
+T18	gene 816 823	genetic
+T19	disease 902 914	pathogenesis
+T20	method 1061 1080	clinical management
+R1	associated_with Arg1:T13 Arg2:T2	
+T23	gene 448 457	polygenic
+T21	gene 489 501	risk alleles
+T22	gene 637 649	risk alleles
+T24	drug 691 719	genomic structural variation
+R2	associated_with Arg1:T24 Arg2:T8	
+R3	associated_with Arg1:T24 Arg2:T9	
+T25	gene 662 676	polygenic risk
+T26	method 888 897	aetiology

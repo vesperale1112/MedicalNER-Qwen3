@@ -1,0 +1,48 @@
+T1	disease 0 13	Schizophrenia
+T2	disease 15 28	Schizophrenia
+T3	disease 34 62	chronic psychiatric disorder
+T4	disease 230 244	hallucinations
+T5	disease 246 255	delusions
+T6	disease 260 321	disorganization - and motivational and cognitive dysfunctions
+T7	disease 571 584	schizophrenia
+T9	disease 704 717	Schizophrenia
+T10	disease 724 758	cognitive and behavioural disorder
+T11	disease 927 966	first-episode and chronic schizophrenia
+T12	disease 1008 1021	schizophrenia
+T13	disease 1364 1377	schizophrenia
+T14	gene 84 91	genetic
+T16	disease 201 219	psychotic symptoms
+T17	signs 332 351	lifetime prevalence
+T18	method 528 543	brain pathology
+T19	region 788 793	brain
+T20	method 825 845	neuroimaging studies
+T22	disease 1034 1052	psychotic symptoms
+T23	drug 1059 1064	drugs
+T24	method 1166 1192	Psychosocial interventions
+T28	method 1201 1230	cognitive-behavioural therapy
+T29	method 977 1003	pharmacological treatments
+T30	physiology 862 884	information processing
+T31	physiology 139 162	early brain development
+R1	hyponym_of Arg1:T2 Arg2:T3	
+R2	characteristic_of Arg1:T16 Arg2:T2	
+R3	hyponym_of Arg1:T4 Arg2:T16	
+R4	hyponym_of Arg1:T5 Arg2:T16	
+R5	characteristic_of Arg1:T6 Arg2:T16	
+R6	characteristic_of Arg1:T4 Arg2:T2	
+R7	characteristic_of Arg1:T5 Arg2:T2	
+R8	characteristic_of Arg1:T6 Arg2:T2	
+T8	region 648 671	neural cell populations
+T15	physiology 679 702	cell-cell communication
+R9	hyponym_of Arg1:T9 Arg2:T10	
+R10	associated_with Arg1:T9 Arg2:T19	
+R11	characteristic_of Arg1:T30 Arg2:T11	
+R12	treatment_for Arg1:T29 Arg2:T12	
+R13	treatment_for Arg1:T29 Arg2:T22	
+R14	characteristic_of Arg1:T8 Arg2:T7	
+R15	characteristic_of Arg1:T15 Arg2:T7	
+T21	Health_factors 1118 1164	social, cognitive and occupational functioning
+T25	method 1232 1253	cognitive remediation
+T26	method 1258 1292	supported education and employment
+R16	hyponym_of Arg1:T28 Arg2:T24	
+R17	hyponym_of Arg1:T25 Arg2:T24	
+R18	hyponym_of Arg1:T26 Arg2:T24	

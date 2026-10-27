@@ -1,0 +1,6 @@
+T3	disease 103 113	depression
+T4	disease 275 285	depression
+T5	disease 118 125	anxiety
+T1	method 85 98	unguided ICBT
+T2	method 188 223	persuasively designed interventions
+R3	treatment_for Arg1:T2 Arg2:T4	

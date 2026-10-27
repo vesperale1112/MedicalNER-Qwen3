@@ -1,0 +1,10 @@
+T1	physiology 6 19	ERK signaling
+T2	region 27 62	depression-implicated brain regions
+T5	disease 103 113	depression
+T7	disease 220 244	depression-like behavior
+T9	drug 275 290	antidepressants
+R1	associated_with Arg1:T1 Arg2:T5	
+T3	physiology 140 197	long-lasting and transcription-dependent neuroadaptations
+R3	associated_with Arg1:T1 Arg2:T3	
+R4	associated_with Arg1:T3 Arg2:T7	
+R6	located_in Arg1:T1 Arg2:T2	

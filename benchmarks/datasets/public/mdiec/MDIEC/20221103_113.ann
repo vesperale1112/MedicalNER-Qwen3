@@ -1,0 +1,14 @@
+T1	disease 21 24	MDD
+T2	method 30 74	21-item Hamilton Rating Scale for Depression
+T4	method 84 111	Continuous Performance Test
+T5	method 113 116	CPT
+T6	method 119 138	Finger-Tapping Test
+T7	method 150 177	Wisconsin Card-Sorting Test
+T8	method 220 244	antidepressant treatment
+T3	method 76 81	HAM-D
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	abbreviation_for Arg1:T5 Arg2:T4	
+T9	method 140 143	FTT
+R3	abbreviation_for Arg1:T9 Arg2:T6	
+T10	method 179 183	WCST
+R4	abbreviation_for Arg1:T10 Arg2:T7	

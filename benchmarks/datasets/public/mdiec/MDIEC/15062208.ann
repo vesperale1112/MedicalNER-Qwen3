@@ -1,0 +1,37 @@
+T0	disease 13 21	insomnia
+T1	disease 38 57	clinical depression
+T2	disease 121 131	depression
+T3	disease 59 77	Sleep disturbances
+T4	disease 198 208	depression
+T5	disease 140 158	sleep disturbances
+T6	Health_factors 243 253	poor sleep
+T8	disease 304 312	insomnia
+T9	disease 335 355	new-onset depression
+T10	disease 360 384	recurrence of depression
+T11	disease 408 416	insomnia
+T12	disease 433 443	depression
+T15	disease 605 615	depression
+T16	drug 480 501	Antidepressant agents
+T17	Health_factors 527 532	sleep
+T18	drug 551 566	antidepressants
+T19	Health_factors 582 587	sleep
+T22	disease 710 718	insomnia
+T23	disease 723 733	depression
+T24	drug 745 758	single agents
+T25	method 760 782	combination strategies
+T26	method 787 811	behavioral interventions
+R1	characteristic_of Arg1:T3 Arg2:T2	
+R2	characteristic_of Arg1:T6 Arg2:T4	
+R3	risk_factor_of Arg1:T8 Arg2:T9	
+R4	risk_factor_of Arg1:T8 Arg2:T10	
+R5	associated_with Arg1:T16 Arg2:T17	
+R6	risk_factor_of Arg1:T18 Arg2:T19	
+R7	occurs_in Arg1:T19 Arg2:T15	
+R8	treatment_for Arg1:T24 Arg2:T23	
+R9	treatment_for Arg1:T25 Arg2:T23	
+R10	treatment_for Arg1:T26 Arg2:T23	
+R11	treatment_for Arg1:T24 Arg2:T22	
+R12	treatment_for Arg1:T25 Arg2:T22	
+R13	treatment_for Arg1:T26 Arg2:T22	
+R14	associated_with Arg1:T11 Arg2:T12	
+R15	associated_with Arg1:T0 Arg2:T1	

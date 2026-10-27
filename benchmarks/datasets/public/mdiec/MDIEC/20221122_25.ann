@@ -1,0 +1,16 @@
+T1	physiology 24 27	LTP
+T2	physiology 33 53	long-term depression
+T3	physiology 55 58	LTD
+T4	region 160 163	CA1
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T6	physiology 0 22	Long-term potentiation
+R2	abbreviation_for Arg1:T1 Arg2:T6	
+T7	physiology 92 109	synaptic efficacy
+T8	physiology 133 152	information storage
+R3	associated_with Arg1:T6 Arg2:T8	
+R4	associated_with Arg1:T1 Arg2:T8	
+R5	associated_with Arg1:T2 Arg2:T8	
+R6	associated_with Arg1:T3 Arg2:T8	
+R7	located_in Arg1:T8 Arg2:T4	
+T5	region 178 189	hippocampus
+R8	located_in Arg1:T4 Arg2:T5	

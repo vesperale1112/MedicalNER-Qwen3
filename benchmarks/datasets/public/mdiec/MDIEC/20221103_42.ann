@@ -1,0 +1,26 @@
+T1	disease 6 15	depressed
+T2	Health_factors 29 35	female
+T3	gene 55 59	IL-8
+T6	disease 89 101	inflammation
+T7	gene 112 116	IL-6
+T8	gene 118 123	IL-10
+T9	gene 125 146	tumor necrosis factor
+T10	gene 148 151	TNF
+T11	gene 164 182	C-reactive protein
+T12	gene 184 187	CRP
+T14	method 230 233	ECT
+R1	abbreviation_for Arg1:T10 Arg2:T9	
+T4	gene 125 158	tumor necrosis factor (TNF)-alpha
+R2	abbreviation_for Arg1:T12 Arg2:T11	
+R3	characteristic_of Arg1:T7 Arg2:T6	
+R4	characteristic_of Arg1:T8 Arg2:T6	
+R5	characteristic_of Arg1:T4 Arg2:T6	
+R6	characteristic_of Arg1:T11 Arg2:T6	
+R7	characteristic_of Arg1:T12 Arg2:T6	
+T5	signs 78 85	markers
+R9	hyponym_of Arg1:T7 Arg2:T5	
+R10	hyponym_of Arg1:T8 Arg2:T5	
+R11	hyponym_of Arg1:T4 Arg2:T5	
+R12	hyponym_of Arg1:T11 Arg2:T5	
+R13	hyponym_of Arg1:T12 Arg2:T5	
+T13	region 38 44	plasma

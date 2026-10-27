@@ -1,0 +1,104 @@
+T1	gene 0 6	IL-17a
+T2	disease 47 75	neurodevelopmental disorders
+T3	disease 103 127	autism spectrum disorder
+T4	disease 211 216	fever
+T5	disease 228 249	systemic inflammation
+T6	disease 348 360	inflammation
+T7	disease 437 465	neurodevelopmental disorders
+T8	disease 592 641	deficient for contactin-associated protein-like 2
+T9	gene 606 641	contactin-associated protein-like 2
+T10	gene 643 650	Cntnap2
+T12	gene 654 684	fragile X mental retardation-1
+T13	gene 686 690	Fmr1
+T14	gene 696 737	Sh3 and multiple ankyrin repeat domains 3
+T17	gene 739 745	Shank3
+T18	Health_factors 800 809	offspring
+T19	gene 1562 1577	interleukin-17a
+T20	gene 1579 1585	IL-17a
+T21	disease 1618 1631	MIA offspring
+T22	gene 1682 1688	IL-17a
+T23	disease 1776 1789	MIA offspring
+T24	gene 1832 1856	IL-17 receptor subunit a
+T25	gene 1858 1865	IL-17Ra
+T26	region 1874 1881	neurons
+T27	disease 1965 1978	MIA offspring
+T28	disease 2036 2064	neurodevelopmental disorders
+T29	gene 2092 2098	IL-17a
+T33	method 31 43	mouse models
+T34	Health_factors 89 97	children
+T35	method 393 397	mice
+T36	method 475 479	mice
+T37	disease 496 522	maternal immune activation
+T38	disease 524 527	MIA
+T39	method 558 570	mouse models
+T41	disease 821 824	MIA
+T42	region 1032 1069	somatosensory cortex dysgranular zone
+T43	symptom 1082 1095	hyperactivity
+T44	disease 1278 1293	social deficits
+T45	disease 1406 1409	MIA
+T46	method 1514 1535	monogenic mutant mice
+T47	method 1740 1761	monogenic mutant mice
+T48	disease 2106 2118	inflammation
+T49	region 2225 2247	central nervous system
+T50	physiology 2200 2217	neuronal activity
+T51	physiology 1476 1495	cytokine production
+T52	symptom 1155 1177	behavioural phenotypes
+T53	physiology 999 1016	neuronal activity
+T54	method 414 433	environmental model
+T56	symptom 167 187	behavioural symptoms
+T57	Health_factors 16 27	sociability
+R1	treatment_for Arg1:T1 Arg2:T57	
+R2	occurs_in Arg1:T57 Arg2:T33	
+R3	occurs_in Arg1:T57 Arg2:T2	
+T58	physiology 276 307	molecular and neural mechanisms
+T55	disease 364 389	social behaviour deficits
+R4	associated_with Arg1:T6 Arg2:T55	
+R5	occurs_in Arg1:T55 Arg2:T35	
+R6	abbreviation_for Arg1:T38 Arg2:T37	
+T59	physiology 536 549	embryogenesis
+R7	abbreviation_for Arg1:T10 Arg2:T9	
+R8	abbreviation_for Arg1:T13 Arg2:T12	
+R9	abbreviation_for Arg1:T17 Arg2:T14	
+T11	disease 771 796	social behaviour deficits
+T15	physiology 859 880	inflammatory response
+R10	treatment_for Arg1:T15 Arg2:T11	
+R11	occurs_in Arg1:T11 Arg2:T18	
+R12	occurs_in Arg1:T11 Arg2:T41	
+T16	drug 915 933	lipopolysaccharide
+T40	drug 935 938	LPS
+R13	abbreviation_for Arg1:T40 Arg2:T16	
+R14	risk_factor_of Arg1:T40 Arg2:T15	
+R15	risk_factor_of Arg1:T16 Arg2:T15	
+T60	region 1071 1075	S1DZ
+R16	abbreviation_for Arg1:T60 Arg2:T42	
+T61	Health_factors 1194 1203	offspring
+T62	disease 1215 1218	MIA
+T63	drug 1256 1259	LPS
+T64	method 1301 1316	monogenic model
+T65	drug 1380 1383	LPS
+T66	method 1418 1434	monogenic models
+T67	drug 1497 1500	LPS
+R17	abbreviation_for Arg1:T20 Arg2:T19	
+T69	region 1694 1698	S1DZ
+T68	Health_factors 1725 1736	sociability
+R19	treatment_for Arg1:T22 Arg2:T68	
+R20	occurs_in Arg1:T68 Arg2:T47	
+R21	occurs_in Arg1:T68 Arg2:T23	
+R22	abbreviation_for Arg1:T25 Arg2:T24	
+T70	physiology 1818 1856	expression of IL-17 receptor subunit a
+R23	located_in Arg1:T70 Arg2:T26	
+T71	region 1889 1893	S1DZ
+T72	drug 1920 1923	LPS
+R24	located_in Arg1:T26 Arg2:T71	
+T73	Health_factors 1939 1961	sociability phenotypes
+R25	associated_with Arg1:T70 Arg2:T73	
+R26	occurs_in Arg1:T73 Arg2:T27	
+T74	physiology 1999 2020	neuroimmune mechanism
+R27	associated_with Arg1:T74 Arg2:T28	
+T75	disease 2152 2177	social behaviour deficits
+R28	treatment_for Arg1:T29 Arg2:T75	
+R29	associated_with Arg1:T29 Arg2:T50	
+R30	located_in Arg1:T50 Arg2:T49	
+R31	associated_with Arg1:T75 Arg2:T50	
+R32	located_in Arg1:T22 Arg2:T69	
+R18	occurs_in Arg1:T61 Arg2:T62	

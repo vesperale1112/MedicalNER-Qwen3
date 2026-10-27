@@ -1,0 +1,65 @@
+T1	disease 109 125	eating disorders
+T3	disease 48 84	childhood eating and weight problems
+T9	disease 249 265	eating disorders
+T11	Health_factors 269 283	affected women
+T13	disease 191 227	childhood eating and weight problems
+T18	Health_factors 332 337	Women
+T19	disease 349 357	anorexia
+T20	disease 366 381	bulimia nervosa
+T21	Health_factors 485 488	age
+T25	Health_factors 551 556	Women
+T26	disease 589 599	overweight
+T27	Health_factors 607 611	ages
+T28	method 630 632	OR
+T29	method 662 664	OR
+T30	method 700 702	OR
+T31	method 737 739	OR
+T32	Health_factors 769 773	ages
+T33	Health_factors 651 660	ate a lot
+T34	disease 851 853	AN
+T35	Health_factors 840 845	women
+T37	method 908 910	OR
+T38	method 940 942	OR
+T39	symptom 888 894	weight
+T41	disease 1045 1047	AN
+T43	Health_factors 995 1011	Childhood eating
+T44	Health_factors 1034 1039	women
+T47	Health_factors 1102 1122	childhood overeating
+T48	Health_factors 1143 1156	bulimic women
+T49	disease 1210 1212	AN
+T51	disease 1290 1292	BN
+T53	disease 1361 1393	childhood obesity and overweight
+T55	disease 1425 1427	BN
+T56	Health_factors 1300 1320	childhood overweight
+R1	risk_factor_of Arg1:T3 Arg2:T1	
+R2	occurs_in Arg1:T9 Arg2:T11	
+T2	Health_factors 302 320	unaffected sisters
+R3	occurs_in Arg1:T18 Arg2:T19	
+T4	disease 359 361	AN
+R4	abbreviation_for Arg1:T4 Arg2:T19	
+R5	occurs_in Arg1:T18 Arg2:T4	
+T5	disease 383 385	BN
+R6	abbreviation_for Arg1:T5 Arg2:T20	
+R7	occurs_in Arg1:T18 Arg2:T20	
+R8	occurs_in Arg1:T18 Arg2:T5	
+T6	Health_factors 456 473	unaffected sister
+T7	Health_factors 512 539	childhood eating and weight
+T8	disease 562 564	BN
+R9	occurs_in Arg1:T25 Arg2:T8	
+R10	associated_with Arg1:T8 Arg2:T26	
+R11	associated_with Arg1:T8 Arg2:T33	
+T10	Health_factors 688 698	less picky
+T12	Health_factors 724 735	ate quickly
+R12	associated_with Arg1:T8 Arg2:T10	
+R13	associated_with Arg1:T8 Arg2:T12	
+T14	Health_factors 812 819	sisters
+R14	occurs_in Arg1:T35 Arg2:T34	
+R15	characteristic_of Arg1:T39 Arg2:T34	
+T15	Health_factors 986 993	sisters
+R16	occurs_in Arg1:T44 Arg2:T41	
+T16	Health_factors 1058 1076	unaffected sisters
+R17	associated_with Arg1:T47 Arg2:T48	
+T17	Health_factors 1175 1194	unaffected siblings
+T22	Health_factors 1239 1246	sisters
+T23	Health_factors 1250 1256	eating
+R18	risk_factor_of Arg1:T56 Arg2:T51	

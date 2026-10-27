@@ -1,0 +1,21 @@
+T0	disease 39 52	schizophrenia
+T1	method 61 70	follow-up
+T2	method 78 104	Copenhagen Prodromal Study
+T5	disease 231 253	schizophrenia spectrum
+T8	method 316 356	Copenhagen Schizophrenia Prodromal Study
+T11	disease 452 461	psychosis
+T15	method 360 392	prospective, observational study
+T16	disease 548 570	schizophrenia spectrum
+T17	disease 623 643	schizotypal disorder
+T18	disease 647 660	schizophrenia
+T19	method 511 520	follow-up
+T21	signs 700 730	self-disorders baseline scores
+T22	disease 792 824	schizophrenia spectrum disorders
+T24	disease 881 901	schizotypal disorder
+T25	disease 905 918	schizophrenia
+T4	method 477 486	follow-up
+T6	symptom 670 695	High levels of perplexity
+R3	associated_with Arg1:T6 Arg2:T22	
+R4	associated_with Arg1:T21 Arg2:T22	
+T10	method 957 975	psychopathological
+R1	hyponym_of Arg1:T8 Arg2:T15	

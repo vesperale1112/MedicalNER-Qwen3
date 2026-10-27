@@ -1,0 +1,70 @@
+T0	disease 16 32	bipolar disorder
+T1	drug 55 62	lithium
+T2	drug 67 77	divalproex
+T3	disease 0 7	Suicide
+T5	drug 123 130	lithium
+T6	disease 168 184	bipolar disorder
+T7	drug 250 260	divalproex
+T8	disease 157 164	suicide
+T9	disease 215 222	suicide
+T12	drug 291 312	mood-stabilizing drug
+T16	disease 386 399	suicide death
+T17	drug 422 429	lithium
+T18	drug 462 472	divalproex
+T19	disease 366 381	suicide attempt
+T20	method 495 521	Retrospective cohort study
+T24	Health_factors 662 666	aged
+T25	Health_factors 679 684	older
+T26	disease 728 744	bipolar disorder
+T27	drug 784 791	lithium
+T28	drug 793 803	divalproex
+T29	drug 808 821	carbamazepine
+T31	Health_factors 704 714	outpatient
+T32	method 608 631	Population-based sample
+T33	method 870 879	Follow-up
+T34	disease 956 961	death
+T42	disease 1149 1162	suicide death
+T43	method 1176 1193	death certificate
+T44	method 1082 1110	hospital discharge diagnosis
+T48	drug 1279 1289	divalproex
+T49	drug 1317 1324	lithium
+T51	disease 1350 1365	suicide attempt
+T52	Health_factors 1441 1456	hospitalization
+T53	disease 1506 1519	suicide death
+T54	Health_factors 1329 1349	emergency department
+T57	disease 1627 1670	comorbid medical and psychiatric conditions
+T58	drug 1834 1844	divalproex
+T59	drug 1872 1879	lithium
+T60	Health_factors 1585 1588	age
+T61	Health_factors 1590 1593	sex
+T63	drug 1701 1719	psychotropic drugs
+T64	disease 1729 1742	suicide death
+T65	method 1769 1788	confidence interval
+T66	method 1790 1792	CI
+T70	method 1895 1908	hazard ratios
+T71	method 1945 1947	CI
+T72	Health_factors 1993 2008	hospitalization
+T73	method 2022 2024	CI
+T74	Health_factors 2073 2093	emergency department
+T75	disease 1913 1930	nonfatal attempts
+T76	disease 2135 2151	bipolar disorder
+T77	disease 2161 2176	suicide attempt
+T78	disease 2181 2194	suicide death
+T79	drug 2226 2233	lithium
+T80	drug 2261 2271	divalproex
+R1	treatment_for Arg1:T5 Arg2:T8	
+R2	occurs_in Arg1:T8 Arg2:T6	
+R3	occurs_in Arg1:T3 Arg2:T0	
+R4	treatment_for Arg1:T1 Arg2:T0	
+R5	treatment_for Arg1:T2 Arg2:T0	
+R6	hyponym_of Arg1:T7 Arg2:T12	
+T10	disease 1051 1066	Suicide attempt
+T11	Health_factors 1117 1147	emergency department diagnosis
+R7	risk_factor_of Arg1:T48 Arg2:T51	
+R8	risk_factor_of Arg1:T48 Arg2:T52	
+R9	risk_factor_of Arg1:T48 Arg2:T53	
+R10	risk_factor_of Arg1:T58 Arg2:T64	
+R11	abbreviation_for Arg1:T66 Arg2:T65	
+T13	disease 1412 1427	suicide attempt
+R12	risk_factor_of Arg1:T13 Arg2:T52	
+T4	Health_factors 1608 1625	year of diagnosis

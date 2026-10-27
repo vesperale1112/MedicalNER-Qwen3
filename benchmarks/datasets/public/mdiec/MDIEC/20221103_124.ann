@@ -1,0 +1,13 @@
+T3	method 80 102	stand-alone treatments
+T4	method 104 130	face-to-face psychotherapy
+T5	method 202 250	face-to-face psychotherapy plus a smartphone app
+T7	method 154 170	internet program
+T8	method 258 315	internet program combined with face-to-face psychotherapy
+T13	method 181 200	combined treatments
+T14	method 317 335	treatment as usual
+T1	method 132 137	email
+T2	method 139 148	telephone
+T6	method 340 355	email/telephone
+T9	method 43 63	treatment conditions
+R9	hyponym_of Arg1:T3 Arg2:T9	
+R10	hyponym_of Arg1:T13 Arg2:T9	

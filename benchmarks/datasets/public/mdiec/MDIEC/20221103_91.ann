@@ -1,0 +1,8 @@
+T2	method 69 73	ICBT
+T3	method 96 131	weekly real-time therapist sessions
+T6	disease 165 186	adolescent depression
+T7	disease 198 222	major depressive episode
+T8	disease 224 227	MDE
+R1	abbreviation_for Arg1:T8 Arg2:T7	
+R2	hyponym_of Arg1:T7 Arg2:T6	
+R3	hyponym_of Arg1:T8 Arg2:T6	

@@ -1,0 +1,35 @@
+T0	disease 28 35	anxiety
+T1	disease 53 59	cancer
+T2	method 0 24	Evidence-based treatment
+T3	disease 157 163	cancer
+T4	disease 72 79	Anxiety
+T6	Health_factors 105 121	perceived threat
+T7	physiology 85 101	dynamic response
+T8	disease 298 305	anxiety
+T9	Health_factors 342 359	etiologic factors
+T11	disease 432 439	anxiety
+T12	method 443 460	oncology settings
+T13	disease 521 528	anxiety
+T14	disease 608 614	cancer
+T15	method 548 561	meta-analyses
+T16	method 563 581	systematic reviews
+T18	method 587 604	individual trials
+T22	disease 750 766	anxiety symptoms
+T23	method 678 725	psychosocial and psychopharmacologic treatments
+T24	method 861 867	trials
+T25	disease 919 926	anxiety
+T28	disease 1072 1078	cancer
+T29	method 985 1010	evidence-based treatments
+T31	method 931 948	oncology settings
+T32	disease 1151 1158	anxiety
+T33	Health_factors 1163 1182	patient preferences
+T34	method 1187 1203	psychiatric care
+R2	occurs_in Arg1:T0 Arg2:T1	
+R3	associated_with Arg1:T4 Arg2:T3	
+T5	method 384 414	evidence-based recommendations
+R4	treatment_for Arg1:T5 Arg2:T11	
+R5	occurs_in Arg1:T11 Arg2:T12	
+R6	treatment_for Arg1:T23 Arg2:T22	
+T10	method 1089 1107	Treatment planning
+R1	hyponym_of Arg1:T4 Arg2:T7	
+R7	risk_factor_of Arg1:T9 Arg2:T8	

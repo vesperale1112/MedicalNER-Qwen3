@@ -1,0 +1,15 @@
+T2	drug 69 72	PCP
+T4	gene 103 132	stress-induced corticosterone
+T5	disease 141 182	anxiety- and depression-related behaviors
+T6	Health_factors 186 191	males
+T9	disease 262 272	depression
+T10	method 276 287	female mice
+T11	Health_factors 291 300	adulthood
+T12	disease 220 227	anxiety
+R1	associated_with Arg1:T2 Arg2:T4	
+R2	associated_with Arg1:T2 Arg2:T5	
+R3	treatment_for Arg1:T2 Arg2:T12	
+R4	occurs_in Arg1:T5 Arg2:T6	
+R5	occurs_in Arg1:T4 Arg2:T6	
+R6	occurs_in Arg1:T9 Arg2:T10	
+R7	occurs_in Arg1:T10 Arg2:T11	

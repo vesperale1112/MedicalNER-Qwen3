@@ -1,0 +1,19 @@
+T1	method 0 46	Multivariable antepartum and postpartum models
+T4	Health_factors 77 85	language
+T6	Health_factors 110 130	language interaction
+T7	Health_factors 136 140	race
+T9	method 146 162	postpartum model
+T10	Health_factors 174 199	planned cesarean delivery
+T11	disease 227 244	suicidal ideation
+T12	disease 348 365	suicidal ideation
+T13	method 263 265	OR
+T14	method 372 374	OR
+T20	method 384 386	CI
+T21	disease 295 320	severe vaginal laceration
+R1	treatment_for Arg1:T10 Arg2:T11	
+T2	method 251 261	odds ratio
+R2	abbreviation_for Arg1:T13 Arg2:T2	
+R3	risk_factor_of Arg1:T21 Arg2:T12	
+T3	method 277 279	CI
+T5	Health_factors 56 75	relationship status
+T8	Health_factors 87 106	relationship status

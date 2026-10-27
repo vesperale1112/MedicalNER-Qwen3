@@ -1,0 +1,1 @@
+The apps were (1) Project: EVO, a cognitive training app theorized to mitigate depressive symptoms by improving cognitive control, (2) iPST, an app based on an evidence-based psychotherapy for depression, and (3) Health Tips, a treatment control.

@@ -1,0 +1,72 @@
+T0	disease 0 29	Obsessive-compulsive disorder
+T1	disease 51 64	schizophrenia
+T2	method 68 84	nationwide study
+T4	disease 135 164	obsessive-compulsive disorder
+T5	disease 166 169	OCD
+T6	disease 175 188	schizophrenia
+T9	Health_factors 386 396	clinicians
+T11	Health_factors 328 347	etiological factors
+T12	disease 486 489	OCD
+T13	disease 532 545	schizophrenia
+T14	disease 550 582	schizophrenia spectrum disorders
+T17	disease 662 675	schizophrenia
+T18	disease 680 712	schizophrenia spectrum disorders
+T23	method 834 858	prospective cohort study
+T24	method 891 900	follow-up
+T25	method 777 817	longitudinal nationwide Danish registers
+T28	Health_factors 942 945	sex
+T29	Health_factors 947 950	age
+T32	physiology 1019 1024	birth
+T33	Health_factors 967 979	parental age
+T34	Health_factors 952 965	calendar year
+T35	method 906 923	survival analyses
+T36	method 1112 1123	followed up
+T37	disease 1216 1229	schizophrenia
+T38	disease 1233 1265	schizophrenia spectrum disorders
+T42	disease 1383 1396	schizophrenia
+T43	Health_factors 1449 1461	psychiatrist
+T45	Health_factors 1467 1494	hospital, outpatient clinic
+T49	method 1579 1599	confidence intervals
+T50	method 1624 1637	relative risk
+T53	method 1529 1550	Incidence rate ratios
+T54	disease 1684 1687	OCD
+T55	disease 1740 1753	schizophrenia
+T56	method 1769 1771	CI
+T57	disease 1788 1820	schizophrenia spectrum disorders
+T58	method 1836 1838	CI
+T63	disease 1947 1960	schizophrenia
+T64	disease 1995 2027	schizophrenia spectrum disorders
+T65	Health_factors 1877 1921	offspring of parents diagnosed as having OCD
+T67	method 1976 1978	CI
+T68	method 2043 2045	CI
+T71	Health_factors 2112 2151	family history of psychiatric disorders
+T73	Health_factors 2160 2189	patient's psychiatric history
+T74	disease 2234 2237	OCD
+T75	disease 2274 2287	schizophrenia
+T76	disease 2292 2324	schizophrenia spectrum disorders
+T79	disease 2370 2373	OCD
+T80	disease 2375 2388	schizophrenia
+T81	disease 2394 2426	schizophrenia spectrum disorders
+R1	risk_factor_of Arg1:T0 Arg2:T1	
+R2	abbreviation_for Arg1:T5 Arg2:T4	
+R3	associated_with Arg1:T4 Arg2:T6	
+R4	associated_with Arg1:T5 Arg2:T6	
+T3	Health_factors 398 409	researchers
+T7	Health_factors 610 631	family history of OCD
+T8	Health_factors 985 1003	place of residence
+T10	disease 1333 1336	OCD
+T15	disease 1403 1434	schizophrenia spectrum disorder
+T16	Health_factors 1499 1527	emergency department setting
+T19	method 1552 1556	IRRs
+R5	abbreviation_for Arg1:T19 Arg2:T53	
+R6	risk_factor_of Arg1:T54 Arg2:T55	
+T20	method 1755 1758	IRR
+R7	risk_factor_of Arg1:T54 Arg2:T57	
+T21	method 1822 1825	IRR
+R8	risk_factor_of Arg1:T65 Arg2:T63	
+R9	risk_factor_of Arg1:T65 Arg2:T64	
+T22	method 1962 1965	IRR
+T26	method 2029 2032	IRR
+R10	risk_factor_of Arg1:T74 Arg2:T75	
+R11	risk_factor_of Arg1:T74 Arg2:T76	
+T27	physiology 2452 2471	etiological pathway

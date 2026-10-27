@@ -1,0 +1,37 @@
+T0	disease 18 79	comorbid serious mental illnesses and substance use disorders
+T2	disease 92 145	Comorbid mental illnesses and substance use disorders
+T4	Health_factors 166 211	adverse criminal, social, and health outcomes
+T5	disease 328 389	comorbid serious mental illnesses and substance use disorders
+R1	associated_with Arg1:T2 Arg2:T4	
+T1	Health_factors 259 277	prison populations
+T3	Health_factors 423 429	prison
+R2	occurs_in Arg1:T5 Arg2:T3	
+T6	Health_factors 566 572	prison
+T7	method 729 731	SD
+T8	method 760 762	CI
+T9	disease 774 805	current non-affective psychosis
+T10	disease 815 846	comorbid substance use disorder
+T11	disease 891 914	non-affective psychosis
+T12	disease 937 961	current major depression
+T13	disease 966 998	comorbid substance use disorders
+T14	disease 1045 1061	major depression
+T15	method 1063 1091	Between-sample heterogeneity
+T16	Health_factors 1126 1132	prison
+T17	disease 1138 1169	current non-affective psychosis
+R3	occurs_in Arg1:T16 Arg2:T17	
+T18	disease 1209 1232	substance use disorders
+R4	risk_factor_of Arg1:T17 Arg2:T18	
+T19	method 1262 1264	OR
+T20	method 1273 1275	CI
+T21	disease 1296 1312	major depression
+T22	disease 1332 1355	substance use disorders
+R5	risk_factor_of Arg1:T21 Arg2:T22	
+T23	Health_factors 1423 1440	prison population
+T24	disease 1446 1469	non-affective psychosis
+T25	disease 1473 1489	major depression
+R6	occurs_in Arg1:T23 Arg2:T24	
+R7	occurs_in Arg1:T23 Arg2:T25	
+T26	disease 1497 1528	comorbid substance use disorder
+R8	characteristic_of Arg1:T26 Arg2:T24	
+R9	characteristic_of Arg1:T26 Arg2:T25	
+T27	method 1563 1572	screening

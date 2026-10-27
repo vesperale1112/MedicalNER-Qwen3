@@ -1,0 +1,77 @@
+T2	disease 78 88	depression
+T3	method 111 137	interferon-alpha treatment
+T4	gene 157 170	interleukin-6
+T8	disease 291 301	depression
+T9	drug 403 422	omega-3 fatty acids
+T10	method 172 195	Cross-sectional studies
+T12	disease 437 456	depressive symptoms
+T14	method 307 338	controlled intervention studies
+T16	drug 472 488	arachidonic acid
+T17	drug 493 512	omega-3 fatty acids
+T19	physiology 538 560	inflammatory signaling
+T20	gene 634 638	IFN-
+T21	disease 654 672	depressive episode
+T23	gene 616 632	interferon-alpha
+T25	Health_factors 688 705	vulnerable people
+T26	gene 594 632	inflammatory cytokine interferon-alpha
+T27	method 562 586	Exogenous administration
+T28	drug 872 892	docosahexaenoic acid
+T29	drug 895 898	DHA
+T30	drug 900 921	eicosapentaenoic acid
+T31	drug 924 927	EPA
+T32	drug 942 958	arachidonic acid
+T33	drug 965 993	di-homo-gamma-linolenic acid
+T34	drug 996 1000	DGLA
+T35	drug 1002 1012	fatty acid
+T36	disease 1068 1079	hepatitis C
+T37	drug 1102 1106	IFN-
+T38	method 772 805	within-subject prospective design
+T39	drug 852 870	long-chain omega-3
+T40	drug 933 940	omega-6
+T41	drug 961 963	AA
+T42	physiology 1040 1064	depression vulnerability
+T44	signs 1174 1190	AA/EPA+DHA ratio
+T47	drug 1207 1210	DHA
+T48	disease 1221 1231	depression
+T49	drug 1268 1272	DGLA
+T50	signs 1298 1314	AA/EPA+DHA ratio
+T53	signs 1330 1346	AA/EPA+DHA ratio
+T55	disease 1357 1367	depression
+T57	Health_factors 1427 1440	sleep quality
+T58	Health_factors 1445 1449	race
+T59	symptom 1453 1476	higher AA/EPA+DHA ratio
+T61	gene 1604 1617	interleukin-6
+T64	gene 1651 1669	C-reactive protein
+T65	method 1524 1566	Montgomery-Asperg Depression Rating Scores
+T66	drug 1684 1714	omega-3 and omega-6 fatty acid
+T67	method 1774 1788	IFN- treatment
+T69	drug 1833 1843	fatty acid
+T70	drug 1913 1932	omega-3 fatty acids
+T71	disease 1954 1985	inflammation-induced depression
+T72	physiology 1854 1878	depression vulnerability
+T73	method 1940 1950	prevention
+T75	method 1796 1812	prospective data
+T5	signs 224 271	ratio of arachidonic acid to omega-3 fatty acid
+R1	associated_with Arg1:T5 Arg2:T8	
+R2	treatment_for Arg1:T9 Arg2:T12	
+R3	associated_with Arg1:T16 Arg2:T19	
+R4	associated_with Arg1:T17 Arg2:T19	
+R5	associated_with Arg1:T26 Arg2:T21	
+R6	occurs_in Arg1:T21 Arg2:T25	
+R7	abbreviation_for Arg1:T20 Arg2:T23	
+R8	abbreviation_for Arg1:T29 Arg2:T28	
+R9	abbreviation_for Arg1:T31 Arg2:T30	
+R10	abbreviation_for Arg1:T41 Arg2:T32	
+R11	abbreviation_for Arg1:T34 Arg2:T33	
+T6	signs 9 68	ratio of arachidonic acid to long-chain omega-3 fatty acids
+R12	associated_with Arg1:T47 Arg2:T48	
+R13	associated_with Arg1:T6 Arg2:T2	
+R14	associated_with Arg1:T48 Arg2:T49	
+R15	associated_with Arg1:T48 Arg2:T50	
+R16	associated_with Arg1:T53 Arg2:T55	
+R17	associated_with Arg1:T59 Arg2:T65	
+R18	associated_with Arg1:T59 Arg2:T61	
+T1	physiology 1746 1770	sustained viral response
+R19	associated_with Arg1:T69 Arg2:T72	
+R20	treatment_for Arg1:T70 Arg2:T71	
+R21	occurs_in Arg1:T42 Arg2:T36	

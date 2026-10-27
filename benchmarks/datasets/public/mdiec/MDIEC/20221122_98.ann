@@ -1,0 +1,5 @@
+T2	signs 20 42	anterior ST depression
+T3	method 86 105	reperfusion therapy
+T5	disease 123 153	inferior myocardial infarction
+T1	signs 57 75	myocardial salvage
+R1	associated_with Arg1:T2 Arg2:T1	

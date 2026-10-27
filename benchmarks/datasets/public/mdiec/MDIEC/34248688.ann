@@ -1,0 +1,38 @@
+T1	disease 50 80	Recurrence of Major Depression
+T2	disease 110 135	Major Depression Disorder
+T3	disease 175 201	Major depressive disorders
+T4	disease 404 431	depression-related symptoms
+T5	disease 463 492	recurrent depressive episodes
+T6	disease 649 679	recurrence of Major depression
+T7	Health_factors 826 866	history of recurrent depressive episodes
+T8	disease 948 964	Major depression
+T9	disease 1107 1142	major depressive episode recurrence
+T10	disease 1294 1333	recurrence of Major Depressive episodes
+T11	method 23 38	WatchPAT Device
+T12	symptom 231 276	alterations in sleep pattern and architecture
+T13	physiology 303 321	Rapid Eye Movement
+T14	physiology 323 326	REM
+R2	abbreviation_for Arg1:T14 Arg2:T13	
+T15	method 618 633	WatchPAT device
+T16	disease 681 691	Depression
+T17	method 722 758	Beck Depression Inventory version II
+T18	method 760 766	BDI-II
+R3	abbreviation_for Arg1:T18 Arg2:T17	
+T19	signs 1033 1055	Rem Latency parameters
+T20	method 1073 1079	BDI-II
+T21	method 0 16	Sleep Monitoring
+T22	method 582 609	ambulatory sleep monitoring
+R5	help_diagnose Arg1:T17 Arg2:T16	
+R6	help_diagnose Arg1:T18 Arg2:T16	
+T23	method 1210 1237	ambulatory sleep monitoring
+T27	symptom 372 389	sleep alterations
+T28	Health_factors 808 817	old woman
+R4	help_diagnose Arg1:T11 Arg2:T1	
+T24	method 1380 1402	treatment intervention
+T25	method 150 161	Case Report
+R9	hyponym_of Arg1:T13 Arg2:T12	
+R10	hyponym_of Arg1:T14 Arg2:T12	
+R11	associated_with Arg1:T3 Arg2:T13	
+R12	associated_with Arg1:T3 Arg2:T14	
+R8	help_diagnose Arg1:T23 Arg2:T10	
+R1	associated_with Arg1:T3 Arg2:T12	

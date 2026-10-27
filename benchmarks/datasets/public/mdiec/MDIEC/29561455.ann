@@ -1,0 +1,87 @@
+T1	disease 0 25	Major depression disorder
+T2	disease 43 54	HIV disease
+T3	disease 161 186	Major depression disorder
+T4	disease 188 191	MDD
+T6	disease 304 307	MDD
+T7	disease 395 398	MDD
+T8	disease 584 587	MDD
+T10	disease 800 803	HIV
+T11	disease 819 822	MDD
+T12	signs 1051 1060	CD4 count
+T13	signs 1126 1135	CD4 count
+T14	signs 1322 1331	CD4 count
+T15	disease 1687 1690	MDD
+T16	signs 1708 1718	CD4 counts
+T17	disease 1958 1969	MDD illness
+T18	disease 2233 2244	MDD illness
+T19	method 90 114	outpatient clinic cohort
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+T20	disease 241 244	HIV
+T21	disease 211 239	human immunodeficiency virus
+R2	abbreviation_for Arg1:T20 Arg2:T21	
+T22	disease 452 463	HIV disease
+T23	disease 532 535	HIV
+T24	method 620 648	latent class growth analysis
+T25	method 653 684	generalized linear mixed models
+T9	region 728 745	CD4+ T-lymphocyte
+T26	method 1775 1801	electronic medical records
+T28	disease 2134 2145	HIV disease
+T29	method 2159 2181	Targeted interventions
+T30	disease 2269 2280	HIV disease
+#1	AnnotatorNotes T1	C1269683
+#2	AnnotatorNotes T3	C1269683
+#3	AnnotatorNotes T4	C1269683
+#4	AnnotatorNotes T6	C1269683
+#5	AnnotatorNotes T11	C1269683
+#6	AnnotatorNotes T18	C1269683
+#7	AnnotatorNotes T15	C1269683
+#8	AnnotatorNotes T8	C1269683
+T27	method 1164 1183	adjusted Odds Ratio
+T31	method 1185 1188	aOR
+R7	abbreviation_for Arg1:T31 Arg2:T27	
+#9	AnnotatorNotes T12	C0003323
+#10	AnnotatorNotes T9	C0039215
+#11	AnnotatorNotes T23	C0019682
+#13	AnnotatorNotes T2	C0019682
+T32	method 1200 1202	CI
+T33	method 1267 1270	aOR
+T34	method 1281 1283	CI
+T35	method 1356 1359	aOR
+T36	method 1370 1372	CI
+T37	method 1419 1422	aOR
+T38	method 1433 1435	CI
+T39	method 1471 1474	aOR
+T40	method 1485 1487	CI
+T41	method 1512 1515	aOR
+T42	method 1526 1528	CI
+T43	method 477 497	Retrospective cohort
+T44	disease 1976 1979	HIV
+T5	Health_factors 969 977	male sex
+T45	Health_factors 1350 1354	male
+T47	Health_factors 1546 1564	divorced/separated
+T48	method 1575 1578	aOR
+T49	method 1589 1591	CI
+T53	Health_factors 989 1002	minority race
+T54	Health_factors 1014 1023	older age
+T55	Health_factors 1386 1400	minority races
+T56	Health_factors 1402 1417	American Indian
+T57	Health_factors 1452 1469	African Americans
+T58	Health_factors 1502 1510	Hispanic
+R12	hyponym_of Arg1:T56 Arg2:T55	
+R13	hyponym_of Arg1:T57 Arg2:T55	
+T59	method 519 528	follow-up
+T60	method 777 786	follow-up
+R3	associated_with Arg1:T45 Arg2:T14	
+R5	associated_with Arg1:T55 Arg2:T14	
+R6	associated_with Arg1:T56 Arg2:T14	
+R8	associated_with Arg1:T57 Arg2:T14	
+R9	associated_with Arg1:T58 Arg2:T14	
+R10	associated_with Arg1:T47 Arg2:T14	
+R14	help_diagnose Arg1:T24 Arg2:T8	
+T46	disease 335 342	illness
+T50	disease 421 428	illness
+R11	risk_factor_of Arg1:T4 Arg2:T21	
+R17	risk_factor_of Arg1:T3 Arg2:T21	
+R18	risk_factor_of Arg1:T4 Arg2:T20	
+R19	risk_factor_of Arg1:T3 Arg2:T20	
+R4	risk_factor_of Arg1:T17 Arg2:T28	

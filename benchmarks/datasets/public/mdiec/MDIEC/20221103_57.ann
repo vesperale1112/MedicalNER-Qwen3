@@ -1,0 +1,12 @@
+T1	method 0 19	Regression analysis
+T2	physiology 34 52	treatment response
+T3	signs 70 103	pre-treatment SERT binding ratios
+T5	physiology 111 123	SERT binding
+T6	physiology 258 270	SERT binding
+T8	disease 142 152	depression
+T9	region 163 181	bilateral habenula
+T10	region 216 242	subgenual cingulate cortex
+T12	region 293 313	dorsal raphe nucleus
+T4	region 183 211	amygdala-hippocampus complex
+R4	associated_with Arg1:T2 Arg2:T3	
+T7	method 322 335	FDR-corrected

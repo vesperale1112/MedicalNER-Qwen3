@@ -1,0 +1,104 @@
+T1	disease 85 110	major depression disorder
+T2	disease 138 163	Major depressive disorder
+T3	disease 165 168	MDD
+T4	disease 182 197	mental disorder
+T5	disease 286 289	MDD
+T6	drug 353 363	[99mTc]ECD
+T7	disease 440 443	MDD
+T9	disease 621 624	MDD
+T11	disease 784 796	unipolar MDD
+T12	disease 1008 1011	MDD
+T15	disease 1199 1202	MDD
+T16	signs 1456 1475	depression severity
+T17	signs 1720 1736	anxiety severity
+T18	signs 1991 2003	MDD severity
+T19	disease 2075 2078	MDD
+T20	method 116 124	SPECT/CT
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	hyponym_of Arg1:T2 Arg2:T4	
+R3	hyponym_of Arg1:T3 Arg2:T4	
+T21	drug 314 351	technetium-99 m ethylcysteinate dimer
+R4	abbreviation_for Arg1:T6 Arg2:T21	
+T23	signs 394 422	regional cerebral blood flow
+T24	signs 424 428	rCBF
+R5	abbreviation_for Arg1:T24 Arg2:T23	
+T25	method 472 511	objective image assessment model of MDD
+T26	method 700 704	HAMD
+T27	method 709 713	HAMA
+R6	help_diagnose Arg1:T26 Arg2:T9	
+R7	help_diagnose Arg1:T27 Arg2:T9	
+T10	method 715 739	[99mTc]ECD rCBF SPECT/CT
+T28	method 842 879	CT attenuation-corrected SPECT images
+T29	method 943 949	3D-SSP
+T30	method 954 958	eZIS
+T31	physiology 27 54	regional cerebral perfusion
+T32	method 987 991	HAMD
+T33	method 996 1000	HAMA
+T34	method 1151 1155	HAMD
+T39	method 1937 1950	rCBF SPECT/CT
+R12	help_diagnose Arg1:T39 Arg2:T18	
+#1	AnnotatorNotes T31	C3162005
+#2	AnnotatorNotes T26	C0451203
+#3	AnnotatorNotes T27	C3541258
+T42	region 1215 1228	frontal lobes
+T46	region 1278 1291	temporal lobe
+T43	region 1318 1335	cingulated cortex
+T44	region 1388 1402	occipital lobe
+T38	region 1230 1243	bilateral B11
+T41	region 1404 1417	bilateral B17
+T48	symptom 1507 1521	decreased rCBF
+R15	associated_with Arg1:T16 Arg2:T48	
+T49	symptom 1604 1618	decreased rCBF
+R16	associated_with Arg1:T16 Arg2:T49	
+T50	symptom 1768 1782	decreased rCBF
+R17	associated_with Arg1:T17 Arg2:T50	
+T51	symptom 1661 1675	increased rCBF
+R18	associated_with Arg1:T16 Arg2:T51	
+T40	region 1245 1248	B47
+T52	region 1253 1261	right B4
+T53	region 1263 1265	B6
+T54	region 1267 1270	B10
+T55	region 1272 1275	B46
+T56	region 1293 1302	right B21
+T57	region 1304 1307	B41
+T58	region 1309 1312	B42
+T59	region 1337 1350	bilateral B24
+T47	region 1352 1355	B33
+T60	region 1419 1422	B19
+T61	region 1427 1435	left B18
+T62	symptom 1370 1384	increased rCBF
+T63	method 760 776	healthy controls
+T22	method 365 373	SPECT/CT
+T64	Health_factors 655 668	psychiatrists
+T65	symptom 1181 1195	decreased rCBF
+T66	Health_factors 1130 1139	MDD women
+T67	Health_factors 1168 1175	MDD men
+R32	characteristic_of Arg1:T65 Arg2:T15	
+R43	characteristic_of Arg1:T62 Arg2:T15	
+T13	region 1525 1567	left ventral anterior cingulate cortex B24
+T14	region 1622 1656	left inferior prefrontal gyrus B47
+T35	region 1679 1714	right associative visual cortex B19
+T36	region 1786 1811	left subgenual cortex B25
+R8	located_in Arg1:T65 Arg2:T42	
+R9	located_in Arg1:T65 Arg2:T38	
+R10	located_in Arg1:T65 Arg2:T40	
+R11	located_in Arg1:T65 Arg2:T52	
+R33	located_in Arg1:T65 Arg2:T53	
+R34	located_in Arg1:T65 Arg2:T54	
+R35	located_in Arg1:T65 Arg2:T55	
+R36	located_in Arg1:T65 Arg2:T46	
+R37	located_in Arg1:T65 Arg2:T56	
+R38	located_in Arg1:T65 Arg2:T57	
+R39	located_in Arg1:T65 Arg2:T58	
+R40	located_in Arg1:T65 Arg2:T43	
+R41	located_in Arg1:T65 Arg2:T59	
+R42	located_in Arg1:T65 Arg2:T47	
+R44	located_in Arg1:T62 Arg2:T44	
+R45	located_in Arg1:T62 Arg2:T41	
+R46	located_in Arg1:T62 Arg2:T60	
+R47	located_in Arg1:T62 Arg2:T61	
+R48	located_in Arg1:T48 Arg2:T13	
+R49	located_in Arg1:T49 Arg2:T14	
+R50	located_in Arg1:T51 Arg2:T35	
+R51	located_in Arg1:T50 Arg2:T36	
+R54	help_diagnose Arg1:T64 Arg2:T9	

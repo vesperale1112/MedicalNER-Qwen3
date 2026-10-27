@@ -1,0 +1,8 @@
+T1	method 0 40	Adjunctive lifestyle-oriented approaches
+T2	disease 45 55	depression
+T3	Health_factors 67 84	physical exercise
+T4	Health_factors 89 102	special diets
+T6	drug 156 183	traditional antidepressants
+R1	hyponym_of Arg1:T3 Arg2:T1	
+R2	hyponym_of Arg1:T4 Arg2:T1	
+R3	treatment_for Arg1:T1 Arg2:T2	

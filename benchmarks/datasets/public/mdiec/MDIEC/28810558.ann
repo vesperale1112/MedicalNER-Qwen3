@@ -1,0 +1,112 @@
+T1	disease 59 84	major depression disorder
+T3	physiology 302 320	glucose metabolism
+T4	disease 361 386	major depression disorder
+T5	disease 388 391	MDD
+T6	disease 463 482	depressive symptoms
+T8	disease 655 658	MDD
+T9	disease 707 726	depressive symptoms
+T10	drug 914 921	18F-FDG
+T11	disease 1409 1412	MDD
+T12	method 1735 1749	18F-FDG PET/CT
+T13	disease 2019 2022	MDD
+T14	method 146 218	18F-fluorodeoxyglucose positron emission tomography/computed tomography.
+T2	method 0 21	Functional assessment
+#1	AnnotatorNotes T14	C2732676
+#2	AnnotatorNotes T1	C1269683
+#3	AnnotatorNotes T2	C0278372
+#4	AnnotatorNotes T4	C1269683
+#5	AnnotatorNotes T5	C1269683
+R1	abbreviation_for Arg1:T5 Arg2:T4	
+#6	AnnotatorNotes T6	C0086132
+T16	method 484 509	3D-arterial spin labeling
+T17	method 511 514	ASL
+R2	abbreviation_for Arg1:T17 Arg2:T16	
+T18	drug 544 547	FDG
+T19	method 520 597	18F-fluorodeoxyglucose (FDG) positron emission tomography/computed tomography
+T20	method 549 597	positron emission tomography/computed tomography
+T21	method 599 605	PET/CT
+R4	abbreviation_for Arg1:T21 Arg2:T20	
+T7	drug 520 542	18F-fluorodeoxyglucose
+#7	AnnotatorNotes T7	C0046056
+R3	abbreviation_for Arg1:T18 Arg2:T7	
+#8	AnnotatorNotes T18	C0046056
+#9	AnnotatorNotes T19	C2732676
+#10	AnnotatorNotes T12	C2732676
+T22	method 798 830	Hamilton Depression Rating Scale
+T24	signs 878 904	standardized uptake values
+T25	signs 906 909	SUV
+R5	abbreviation_for Arg1:T25 Arg2:T24	
+T26	signs 841 860	cerebral blood flow
+T27	signs 862 865	CBF
+R6	abbreviation_for Arg1:T27 Arg2:T26	
+T28	method 1018 1035	two-sample t-test
+T29	signs 1078 1081	SUV
+T30	method 1136 1144	Hamilton
+T31	method 1173 1201	Pearson correlation analysis
+T32	signs 1494 1497	CBF
+T33	method 1519 1527	Hamilton
+T34	signs 1650 1654	SUVs
+T35	method 1669 1677	Hamilton
+T36	method 1790 1796	3D-ASL
+T37	disease 1816 1840	functional abnormalities
+R10	help_diagnose Arg1:T12 Arg2:T37	
+T39	method 1939 1947	Hamilton
+#12	AnnotatorNotes T16	C0037914
+#13	AnnotatorNotes T17	C0037914
+#14	AnnotatorNotes T36	C0037914
+#15	AnnotatorNotes T20	C1699633
+#16	AnnotatorNotes T21	C1699633
+#17	AnnotatorNotes T9	C0086132
+#18	AnnotatorNotes T22	C0451203
+#19	AnnotatorNotes T33	C4545802
+#20	AnnotatorNotes T35	C4545802
+#21	AnnotatorNotes T28	C0871472
+#22	AnnotatorNotes T30	C4545802
+#23	AnnotatorNotes T39	C4545802
+#28	AnnotatorNotes T10	C0046056
+#29	AnnotatorNotes T13	C1269683
+#30	AnnotatorNotes T11	C1269683
+#31	AnnotatorNotes T8	C1269683
+T41	symptom 1865 1886	Decreased CBF and SUV
+#36	AnnotatorNotes T31	C1709490
+T43	symptom 1203 1225	Decreased regional CBF
+T44	symptom 1305 1327	decreased regional SUV
+R18	characteristic_of Arg1:T44 Arg2:T11	
+R19	characteristic_of Arg1:T43 Arg2:T11	
+T23	symptom 440 458	functional changes
+T40	region 25 41	prefrontal lobes
+T42	region 328 343	prefrontal lobe
+R22	help_diagnose Arg1:T22 Arg2:T9	
+T45	region 1089 1116	prefrontal cerebral regions
+T46	region 1247 1299	bilateral middle and the right superior frontal gyri
+T47	region 1349 1401	bilateral superior, middle and inferior frontal gyri
+T48	region 1894 1909	prefrontal lobe
+T49	region 1959 1984	left middle frontal gyrus
+R23	associated_with Arg1:T49 Arg2:T13	
+T50	region 1542 1583	left middle and right middle frontal gyri
+T53	region 1692 1733	left middle and right middle frontal gyri
+T54	method 93 112	dual-mode technique
+T55	region 1848 1863	prefrontal lobe
+T51	method 666 682	healthy controls
+T56	method 993 1009	healthy controls
+T64	physiology 273 297	cerebral blood perfusion
+T65	region 935 940	brain
+T66	signs 1070 1073	CBF
+R9	associated_with Arg1:T32 Arg2:T33	
+R11	associated_with Arg1:T34 Arg2:T35	
+R12	associated_with Arg1:T41 Arg2:T39	
+R8	located_in Arg1:T44 Arg2:T47	
+R27	located_in Arg1:T37 Arg2:T55	
+R28	located_in Arg1:T41 Arg2:T48	
+R7	located_in Arg1:T43 Arg2:T46	
+R14	located_in Arg1:T3 Arg2:T42	
+R15	located_in Arg1:T64 Arg2:T42	
+R20	located_in Arg1:T25 Arg2:T65	
+R21	located_in Arg1:T24 Arg2:T65	
+R24	located_in Arg1:T27 Arg2:T65	
+R29	located_in Arg1:T26 Arg2:T65	
+R30	located_in Arg1:T29 Arg2:T45	
+R31	located_in Arg1:T66 Arg2:T45	
+R25	located_in Arg1:T33 Arg2:T50	
+R26	located_in Arg1:T35 Arg2:T53	
+T15	method 116 141	3D-arterial spin labeling

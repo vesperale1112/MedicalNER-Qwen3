@@ -1,0 +1,10 @@
+T1	disease 23 33	depression
+T5	Health_factors 140 159	annual examinations
+T6	Health_factors 161 192	obstetricians and gynecologists
+T12	disease 44 58	mood disorders
+T13	disease 269 283	mood disorders
+T14	disease 294 313	comorbid conditions
+T15	method 9 18	screening
+T2	method 101 110	screening
+R1	help_diagnose Arg1:T6 Arg2:T13	
+R3	help_diagnose Arg1:T6 Arg2:T14	

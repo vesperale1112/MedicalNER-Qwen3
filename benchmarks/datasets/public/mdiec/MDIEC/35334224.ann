@@ -1,0 +1,100 @@
+T0	drug 25 34	clozapine
+T1	drug 93 102	Clozapine
+T2	disease 141 154	schizophrenia
+T3	disease 258 273	agranulocytosis
+T4	drug 45 64	antipsychotic drugs
+T5	disease 192 201	mortality
+T6	drug 217 236	antipsychotic drugs
+T9	disease 345 372	haematological malignancies
+T12	disease 442 469	haematological malignancies
+T13	drug 493 502	clozapine
+T14	drug 513 527	antipsychotics
+T16	disease 605 618	schizophrenia
+T18	Health_factors 659 685	Finnish national registers
+T19	method 626 653	prospectively gathered data
+T20	disease 765 810	lymphoid and haematopoietic tissue malignancy
+T21	disease 843 849	cancer
+T22	disease 884 897	schizophrenia
+T24	Health_factors 853 856	age
+T25	Health_factors 858 861	sex
+T26	method 689 714	nested case-control study
+T27	disease 973 985	malignancies
+T28	disease 1121 1131	malignancy
+T30	method 917 935	case-control study
+T33	disease 1204 1223	comorbid conditions
+T34	method 1158 1189	conditional logistic regression
+T35	disease 1306 1351	lymphoid and haematopoietic tissue malignancy
+T36	disease 1418 1431	schizophrenia
+T37	method 1243 1261	case-control study
+T40	Health_factors 1577 1580	age
+T41	disease 1618 1628	malignancy
+T43	disease 1722 1728	cancer
+T44	disease 1795 1808	schizophrenia
+T45	method 1773 1779	cohort
+T47	method 1818 1830	cohort study
+T48	disease 1906 1933	haematological malignancies
+T49	drug 2035 2044	clozapine
+T50	disease 2173 2185	malignancies
+T51	drug 2255 2264	clozapine
+T52	method 1950 1959	follow-up
+T53	method 1974 1976	SD
+T54	method 2128 2137	follow-up
+T55	method 2152 2154	SD
+T56	drug 2225 2249	antipsychotic medication
+T60	disease 2346 2373	haematological malignancies
+T61	disease 2379 2388	lymphomas
+T62	disease 2393 2402	leukaemia
+T63	disease 2407 2415	myelomas
+T64	Health_factors 2470 2475	males
+T65	Health_factors 2495 2501	female
+T69	disease 2700 2727	haematological malignancies
+T70	drug 2594 2608	antipsychotics
+T71	drug 2631 2645	antipsychotics
+T73	method 2755 2774	adjusted odds ratio
+T74	method 2785 2787	CI
+T76	drug 2877 2896	antipsychotic drugs
+T80	drug 2978 2987	clozapine
+T81	disease 3027 3054	haematological malignancies
+T82	disease 3103 3115	malignancies
+T83	method 2939 2961	complementary analysis
+T84	disease 3190 3215	haematological malignancy
+T85	drug 3242 3251	clozapine
+T86	disease 3284 3309	haematological malignancy
+T87	drug 3356 3365	clozapine
+T88	disease 3393 3399	cancer
+T89	disease 3454 3469	agranulocytosis
+T90	method 3134 3143	follow-up
+T91	method 3156 3162	cohort
+T92	disease 3167 3173	deaths
+T93	disease 3431 3437	deaths
+T96	drug 3526 3535	clozapine
+T97	disease 3577 3604	haematological malignancies
+T98	drug 3500 3514	antipsychotics
+T101	drug 3616 3625	clozapine
+T102	disease 3670 3678	lymphoma
+T103	disease 3683 3692	leukaemia
+T104	disease 3705 3720	agranulocytosis
+T105	disease 3653 3662	mortality
+T109	disease 3967 3994	haematological malignancies
+T110	disease 4070 4095	haematological malignancy
+T112	drug 4121 4130	clozapine
+T113	Health_factors 3914 3924	caregivers
+T117	Health_factors 4000 4024	mental health clinicians
+T120	Health_factors 4145 4190	Finnish Ministry of Social Affairs and Health
+R1	treatment_for Arg1:T1 Arg2:T2	
+R2	risk_factor_of Arg1:T1 Arg2:T3	
+T7	method 547 589	nationwide case-control (and cohort) study
+T10	Health_factors 2503 2512	Ethnicity
+T11	drug 2563 2572	clozapine
+T15	drug 2648 2657	clozapine
+R3	risk_factor_of Arg1:T15 Arg2:T69	
+R4	risk_factor_of Arg1:T80 Arg2:T81	
+R5	risk_factor_of Arg1:T84 Arg2:T92	
+R6	risk_factor_of Arg1:T89 Arg2:T93	
+R7	risk_factor_of Arg1:T96 Arg2:T97	
+R8	associated_with Arg1:T101 Arg2:T105	
+R9	risk_factor_of Arg1:T102 Arg2:T105	
+R10	risk_factor_of Arg1:T103 Arg2:T105	
+T23	disease 3842 3861	all-cause mortality
+T8	method 951 969	inclusion criteria
+R11	treatment_for Arg1:T112 Arg2:T110	

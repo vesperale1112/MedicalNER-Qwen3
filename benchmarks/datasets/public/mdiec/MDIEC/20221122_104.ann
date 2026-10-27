@@ -1,0 +1,9 @@
+T3	disease 109 119	depression
+T4	method 121 152	Psychiatric Genomics Consortium
+T5	method 166 176	UK Biobank
+T6	method 231 241	UK Biobank
+T7	disease 182 185	IBD
+T8	method 199 217	GWAS meta-analysis
+T1	method 154 161	FinnGen
+T2	method 219 226	FinnGen
+T9	method 0 18	Summary statistics

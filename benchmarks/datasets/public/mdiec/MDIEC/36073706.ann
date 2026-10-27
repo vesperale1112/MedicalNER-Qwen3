@@ -1,0 +1,62 @@
+T0	disease 56 72	bipolar disorder
+T2	disease 82 98	Bipolar disorder
+T3	method 119 132	phenomenology
+T4	disease 134 152	illness trajectory
+T7	method 218 246	multimodal-ity interventions
+T8	Health_factors 325 348	full syndromal recovery
+T10	method 488 513	electronic health records
+T11	method 569 585	machine learning
+T14	method 531 561	advanced computational methods
+T20	disease 937 953	bipolar disorder
+T22	Health_factors 991 1006	health outcomes
+T23	Health_factors 1020 1038	patient management
+T25	disease 1128 1144	bipolar disorder
+T26	physiology 1195 1210	decision making
+T30	disease 1308 1327	depressive episodes
+T31	disease 1337 1375	physical and psychiatric comorbidities
+T32	disease 1384 1402	illness trajectory
+T33	disease 1431 1438	suicide
+T34	method 1404 1425	response to treatment
+T35	Health_factors 1495 1520	sexual and physical abuse
+T36	Health_factors 1522 1539	emotional neglect
+T37	disease 1573 1606	complicated illness presentations
+T39	method 1630 1690	developmentally-oriented and integrated treatment approaches
+T40	Health_factors 1458 1487	early environmental exposures
+T41	disease 1755 1771	bipolar disorder
+T43	disease 1779 1788	bipolar I
+T44	method 1833 1862	pharmacological interventions
+T46	disease 1878 1901	severe mental disorders
+T47	Health_factors 1903 1921	social functioning
+T49	Health_factors 2027 2042	health outcomes
+T50	Health_factors 2048 2063	quality of life
+T51	Health_factors 1962 1981	internalized stigma
+T52	disease 2155 2171	bipolar disorder
+T53	disease 2091 2100	mortality
+T54	disease 2121 2128	suicide
+T55	disease 2133 2151	suicidal behaviour
+T58	method 2410 2426	clinical metrics
+T59	method 2383 2405	decision support tools
+T6	Health_factors 37 42	adult
+R1	occurs_in Arg1:T6 Arg2:T0	
+R2	hyponym_of Arg1:T11 Arg2:T14	
+T5	Health_factors 918 923	adult
+R3	occurs_in Arg1:T5 Arg2:T20	
+R4	hyponym_of Arg1:T35 Arg2:T40	
+R5	hyponym_of Arg1:T36 Arg2:T40	
+R6	risk_factor_of Arg1:T40 Arg2:T37	
+R7	risk_factor_of Arg1:T35 Arg2:T37	
+R8	risk_factor_of Arg1:T36 Arg2:T37	
+R9	hyponym_of Arg1:T43 Arg2:T41	
+T9	Health_factors 1923 1957	interpersonal/family relationships
+T12	Health_factors 2013 2025	relapse risk
+R10	associated_with Arg1:T47 Arg2:T49	
+R11	associated_with Arg1:T47 Arg2:T12	
+R12	associated_with Arg1:T47 Arg2:T50	
+R13	associated_with Arg1:T9 Arg2:T12	
+R14	associated_with Arg1:T9 Arg2:T49	
+R15	associated_with Arg1:T9 Arg2:T50	
+R16	associated_with Arg1:T51 Arg2:T12	
+R17	associated_with Arg1:T51 Arg2:T49	
+R18	associated_with Arg1:T51 Arg2:T50	
+R19	occurs_in Arg1:T55 Arg2:T52	
+R20	occurs_in Arg1:T54 Arg2:T52	

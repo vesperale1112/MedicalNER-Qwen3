@@ -1,0 +1,61 @@
+T1	drug 0 10	Psilocybin
+T2	disease 42 72	treatment-resistant depression
+T3	drug 118 128	Psilocybin
+T5	drug 134 160	serotonin receptor agonist
+T6	drug 267 277	psilocybin
+T7	disease 312 331	end-of-life anxiety
+T8	disease 333 362	obsessive-compulsive disorder
+T10	drug 507 517	psilocybin
+T11	disease 535 574	unipolar treatment-resistant depression
+T12	disease 692 728	treatment-resistant major depression
+T13	drug 756 766	psilocybin
+T14	drug 1005 1015	psilocybin
+T15	drug 1421 1431	Psilocybin
+T16	drug 1729 1739	Psilocybin
+T17	disease 1873 1890	transient anxiety
+T18	disease 1925 1964	transient confusion or thought disorder
+T20	disease 1982 2007	mild and transient nausea
+T21	disease 2029 2047	transient headache
+T22	disease 2087 2106	depressive symptoms
+T23	disease 2334 2341	anxiety
+T24	disease 2346 2355	anhedonia
+T25	drug 2461 2471	psilocybin
+T26	disease 2476 2506	treatment-resistant depression
+T28	Health_factors 368 398	smoking and alcohol dependence
+T29	Health_factors 641 644	men
+T30	Health_factors 650 655	women
+T31	disease 682 690	unipolar
+T32	Health_factors 852 873	Psychological support
+T33	method 1133 1142	follow-up
+T34	disease 1144 1163	Depressive symptoms
+T36	method 1652 1654	SD
+T37	method 1694 1696	SD
+T39	Health_factors 1790 1826	serious or unexpected adverse events
+T40	drug 1898 1902	drug
+T42	method 2168 2170	CI
+T43	method 2231 2233	CI
+T45	disease 1841 1858	adverse reactions
+T46	method 1254 1300	16-item Quick Inventory of Depressive Symptoms
+T47	method 1183 1203	standard assessments
+T49	disease 1055 1072	adverse reactions
+T27	Health_factors 16 37	psychological support
+R1	treatment_for Arg1:T27 Arg2:T2	
+R2	treatment_for Arg1:T1 Arg2:T2	
+T51	method 77 105	open-label feasibility study
+R3	hyponym_of Arg1:T3 Arg2:T5	
+R4	treatment_for Arg1:T6 Arg2:T7	
+R5	treatment_for Arg1:T6 Arg2:T8	
+R6	treatment_for Arg1:T6 Arg2:T28	
+T4	method 594 622	open-label feasibility trial
+R7	treatment_for Arg1:T13 Arg2:T31	
+R8	treatment_for Arg1:T13 Arg2:T12	
+T9	method 1302 1306	QIDS
+R9	abbreviation_for Arg1:T9 Arg2:T46	
+R10	help_diagnose Arg1:T47 Arg2:T34	
+T35	physiology 1434 1459	acute psychedelic effects
+R11	hyponym_of Arg1:T17 Arg2:T45	
+R12	hyponym_of Arg1:T21 Arg2:T45	
+R13	hyponym_of Arg1:T20 Arg2:T45	
+R14	hyponym_of Arg1:T18 Arg2:T45	
+T19	method 2142 2146	QIDS
+R15	treatment_for Arg1:T25 Arg2:T26	

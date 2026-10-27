@@ -1,0 +1,7 @@
+T1	signs 32 50	cortical thickness
+T5	method 122 129	cohorts
+T6	region 141 176	left dorsolateral prefrontal cortex
+T8	disease 201 211	depression
+T2	method 177 181	rTMS
+T3	Health_factors 76 93	clinical outcomes
+R1	treatment_for Arg1:T2 Arg2:T8	

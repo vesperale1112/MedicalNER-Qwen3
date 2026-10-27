@@ -1,0 +1,109 @@
+T0	disease 115 138	substance use disorders
+T3	method 21 57	mindfulness-based relapse prevention
+T6	method 92 110	treatment as usual
+T7	method 142 167	randomized clinical trial
+T8	method 59 86	standard relapse prevention
+T9	method 218 244	substance abuse treatments
+T10	disease 180 187	Relapse
+T12	method 281 304	aftercare interventions
+T15	method 306 342	Mindfulness-based relapse prevention
+T17	method 430 461	mindfulness-based interventions
+T21	method 466 505	cognitive-behavioral relapse prevention
+T22	physiology 400 424	evidence-based practices
+T23	method 353 387	group-based psychosocial aftercare
+T25	disease 590 597	relapse
+T26	method 619 637	treatment as usual
+T27	method 639 642	TAU
+T28	Health_factors 668 683	psychoeducation
+T29	disease 879 902	substance use disorders
+T31	method 978 991	TAU aftercare
+T34	Health_factors 1077 1081	aged
+T35	Health_factors 1109 1113	male
+T37	method 1158 1171	INTERVENTIONS
+T39	method 1272 1275	TAU
+T41	Health_factors 1343 1351	drug use
+T44	Health_factors 1395 1408	substance use
+T46	Health_factors 1356 1370	heavy drinking
+T50	method 1494 1503	follow-up
+T53	method 1535 1546	self-report
+T54	disease 1550 1557	relapse
+T55	method 1562 1600	urinalysis drug and alcohol screenings
+T57	method 1626 1629	TAU
+T58	Health_factors 1716 1729	substance use
+T61	Health_factors 1815 1828	substance use
+T63	method 1863 1872	follow-up
+T65	Health_factors 1833 1847	heavy drinking
+T67	Health_factors 1734 1748	heavy drinking
+T69	method 1874 1897	Cognitive-behavioral RP
+T70	Health_factors 1945 1953	drug use
+T72	method 1971 1980	follow-up
+T73	Health_factors 2037 2050	substance use
+T75	method 2115 2118	TAU
+T76	Health_factors 2079 2093	heavy drinking
+T80	disease 2209 2232	substance use disorders
+T81	method 2261 2264	TAU
+T83	Health_factors 2326 2340	heavy drinking
+T86	drug 2453 2460	alcohol
+T89	method 2342 2360	Relapse prevention
+T91	method 2403 2412	follow-up
+T93	Health_factors 2496 2510	heavy drinking
+T95	Health_factors 2383 2391	drug use
+T98	method 2560 2569	follow-up
+T99	method 2610 2613	TAU
+T101	Health_factors 2639 2653	heavy drinking
+T104	disease 2782 2792	discomfort
+T108	method 2655 2685	Targeted mindfulness practices
+R1	associated_with Arg1:T10 Arg2:T9	
+T1	method 344 348	MBRP
+R2	abbreviation_for Arg1:T1 Arg2:T15	
+R3	hyponym_of Arg1:T15 Arg2:T23	
+R4	hyponym_of Arg1:T1 Arg2:T23	
+T2	method 487 505	relapse prevention
+T4	method 507 509	RP
+R5	abbreviation_for Arg1:T4 Arg2:T2	
+T5	method 573 577	MBRP
+T11	method 612 614	RP
+R6	abbreviation_for Arg1:T27 Arg2:T26	
+T13	method 704 713	follow-up
+T14	method 965 969	MBRP
+T16	method 971 973	RP
+T18	Health_factors 1132 1154	ethnic/racial minority
+T19	method 1238 1242	MBRP
+T20	method 1244 1267	cognitive-behavioral RP
+T24	method 1656 1660	MBRP
+T30	method 1665 1667	RP
+R7	treatment_for Arg1:T24 Arg2:T58	
+R8	treatment_for Arg1:T30 Arg2:T58	
+R9	treatment_for Arg1:T24 Arg2:T67	
+R10	treatment_for Arg1:T30 Arg2:T67	
+T32	method 1923 1927	MBRP
+T33	method 1982 1986	MBRP
+R11	treatment_for Arg1:T33 Arg2:T73	
+R12	treatment_for Arg1:T33 Arg2:T76	
+T36	method 2108 2110	RP
+T38	method 2234 2236	RP
+T40	method 2241 2245	MBRP
+T42	disease 2297 2304	relapse
+T43	Health_factors 2313 2321	drug use
+R13	treatment_for Arg1:T38 Arg2:T43	
+R14	treatment_for Arg1:T40 Arg2:T43	
+R15	treatment_for Arg1:T38 Arg2:T83	
+R16	treatment_for Arg1:T40 Arg2:T83	
+T45	disease 1705 1712	relapse
+T47	disease 1332 1339	relapse
+R17	treatment_for Arg1:T69 Arg2:T70	
+R18	associated_with Arg1:T89 Arg2:T95	
+T48	method 2419 2423	MBRP
+T49	method 2428 2430	RP
+T51	method 2530 2533	TAU
+R19	treatment_for Arg1:T48 Arg2:T93	
+R20	treatment_for Arg1:T49 Arg2:T93	
+T52	method 2571 2575	MBRP
+T56	method 2603 2605	RP
+T59	Health_factors 2626 2634	drug use
+R21	treatment_for Arg1:T52 Arg2:T59	
+R22	treatment_for Arg1:T52 Arg2:T101	
+R23	treatment_for Arg1:T108 Arg2:T104	
+R24	treatment_for Arg1:T3 Arg2:T0	
+R25	treatment_for Arg1:T8 Arg2:T0	
+R26	treatment_for Arg1:T6 Arg2:T0	

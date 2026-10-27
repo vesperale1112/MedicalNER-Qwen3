@@ -1,0 +1,95 @@
+T0	disease 14 21	Anxiety
+T1	disease 26 36	Depression
+T3	Health_factors 40 65	Adult Survivors of Cancer
+T4	disease 182 189	anxiety
+T5	disease 194 204	depression
+T8	Health_factors 208 230	adult cancer survivors
+T9	method 113 160	American Society of Clinical Oncology guideline
+T11	method 310 327	systematic review
+T13	method 423 441	systematic reviews
+T14	method 467 493	psychosocial interventions
+T15	Health_factors 504 521	physical exercise
+T16	method 533 567	mindfulness-based stress reduction
+T18	method 639 667	randomized controlled trials
+T19	method 588 615	pharmacologic interventions
+T20	method 443 456	meta analyses
+T21	disease 751 761	depression
+T22	disease 766 773	anxiety
+T23	method 669 727	Psychological, educational, and psychosocial interventions
+T25	disease 816 826	depression
+T26	disease 831 838	anxiety
+T27	Health_factors 842 858	cancer survivors
+T28	method 788 812	pharmacologic management
+T29	Health_factors 1024 1051	ethnic minority populations
+T30	Health_factors 1002 1019	high-quality care
+T32	method 1163 1194	resource-intensive intervention
+T33	signs 1204 1220	symptom severity
+T34	disease 1226 1234	oncology
+T35	disease 1282 1292	depression
+T36	disease 1297 1304	anxiety
+T37	Health_factors 1262 1271	education
+T38	disease 1324 1355	moderate symptoms of depression
+T39	Health_factors 1357 1367	clinicians
+T40	method 1381 1407	cognitive behavior therapy
+T41	method 1409 1412	CBT
+T42	method 1415 1436	behavioral activation
+T43	method 1438 1440	BA
+T46	method 1482 1530	empirically supported psychosocial interventions
+T47	Health_factors 1449 1477	structured physical activity
+T48	disease 1550 1578	moderate symptoms of anxiety
+T49	Health_factors 1580 1590	clinicians
+T50	method 1604 1607	CBT
+T51	method 1609 1611	BA
+T54	method 1681 1707	psychosocial interventions
+T55	method 1643 1676	acceptance and commitment therapy
+T56	Health_factors 1613 1641	structured physical activity
+T57	disease 1727 1767	severe symptoms of depression or anxiety
+T59	Health_factors 1769 1779	clinicians
+T60	method 1793 1810	cognitive therapy
+T61	method 1812 1814	BA
+T62	method 1816 1819	CBT
+T63	method 1830 1851	interpersonal therapy
+T65	disease 1911 1921	depression
+T66	disease 1925 1932	anxiety
+T68	method 1972 1992	first-line treatment
+T69	method 2001 2016	pharmacotherapy
+T70	method 2052 2067	pharmacotherapy
+T72	method 2100 2149	first-line psychological or behavioral management
+T73	method 1885 1906	pharmacologic regimen
+T74	Health_factors 1853 1872	Treating clinicians
+T2	method 67 81	ASCO Guideline
+R1	occurs_in Arg1:T0 Arg2:T3	
+R2	occurs_in Arg1:T1 Arg2:T3	
+T6	method 243 273	multidisciplinary expert panel
+T7	method 569 573	MBSR
+R3	abbreviation_for Arg1:T7 Arg2:T16	
+R4	treatment_for Arg1:T23 Arg2:T21	
+R5	treatment_for Arg1:T23 Arg2:T22	
+R6	occurs_in Arg1:T25 Arg2:T27	
+R7	occurs_in Arg1:T26 Arg2:T27	
+T10	method 1097 1115	stepped-care model
+R8	abbreviation_for Arg1:T41 Arg2:T40	
+R9	abbreviation_for Arg1:T43 Arg2:T42	
+T17	method 1443 1447	MBSR
+R10	treatment_for Arg1:T40 Arg2:T38	
+R11	treatment_for Arg1:T41 Arg2:T38	
+R12	treatment_for Arg1:T42 Arg2:T38	
+R13	treatment_for Arg1:T43 Arg2:T38	
+R14	treatment_for Arg1:T17 Arg2:T38	
+R15	treatment_for Arg1:T47 Arg2:T38	
+R16	treatment_for Arg1:T46 Arg2:T38	
+R17	treatment_for Arg1:T50 Arg2:T48	
+R18	treatment_for Arg1:T51 Arg2:T48	
+R19	treatment_for Arg1:T56 Arg2:T48	
+R20	treatment_for Arg1:T55 Arg2:T48	
+R21	treatment_for Arg1:T54 Arg2:T48	
+R22	treatment_for Arg1:T60 Arg2:T57	
+R24	treatment_for Arg1:T61 Arg2:T57	
+R25	treatment_for Arg1:T62 Arg2:T57	
+T12	method 1821 1825	MBSR
+R26	treatment_for Arg1:T12 Arg2:T57	
+R27	treatment_for Arg1:T63 Arg2:T57	
+R23	occurs_in Arg1:T5 Arg2:T8	
+R28	treatment_for Arg1:T9 Arg2:T4	
+R29	treatment_for Arg1:T9 Arg2:T5	
+R30	occurs_in Arg1:T4 Arg2:T8	

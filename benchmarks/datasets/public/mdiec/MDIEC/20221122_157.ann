@@ -1,0 +1,8 @@
+T1	method 63 75	DMIA systems
+T2	method 114 139	primary care consultation
+T3	disease 144 152	diabetes
+T4	disease 157 167	depression
+T5	disease 196 214	chronic conditions
+R1	associated_with Arg1:T1 Arg2:T3	
+R2	associated_with Arg1:T1 Arg2:T4	
+R3	associated_with Arg1:T1 Arg2:T5	

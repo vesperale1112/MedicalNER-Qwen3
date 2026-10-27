@@ -1,0 +1,73 @@
+T0	disease 0 35	Microstructural brain abnormalities
+T1	disease 53 82	obsessive-compulsive disorder
+T2	disease 278 307	obsessive-compulsive disorder
+T3	disease 309 312	OCD
+T7	method 161 163	DT
+T8	method 185 187	MR
+T9	method 189 196	imaging
+T12	signs 350 367	clinical measures
+T13	region 242 260	brain white matter
+T14	method 165 183	magnetic resonance
+T15	method 84 117	diffusion-tensor MR imaging study
+T19	disease 586 589	OCD
+T24	Health_factors 634 637	age
+T25	Health_factors 639 642	sex
+T26	Health_factors 644 653	education
+T27	method 550 565	3.0-T MR imager
+T28	method 514 524	DT imaging
+T29	signs 731 733	FA
+T31	method 927 964	Yale-Brown Obsessive-Compulsive Scale
+T32	Health_factors 1016 1032	illness duration
+T33	method 1055 1114	simple regression in statistical parametric mapping program
+T34	method 829 846	two-sample t test
+T35	method 686 706	voxel-based analysis
+T37	signs 1208 1210	FA
+T40	region 1271 1299	right superior frontal gyrus
+T41	signs 1357 1359	FA
+T42	region 1304 1319	corpus callosum
+T43	region 1255 1267	white matter
+T44	region 1218 1250	genu and body of corpus callosum
+T45	signs 1395 1397	FA
+T46	disease 1584 1587	OCD
+T48	region 1538 1550	white matter
+T49	signs 1624 1641	clinical measures
+T50	region 1554 1580	left middle temporal gyrus
+T52	disease 1678 1681	OCD
+T53	region 1749 1761	white matter
+T54	disease 1782 1807	impaired axonal integrity
+T55	disease 1998 2001	OCD
+T61	disease 1984 1994	disability
+T63	method 1921 1931	DT imaging
+T64	disease 1869 1885	DT abnormalities
+R1	occurs_in Arg1:T0 Arg2:T1	
+T4	method 143 159	diffusion-tensor
+R2	abbreviation_for Arg1:T7 Arg2:T4	
+R3	abbreviation_for Arg1:T8 Arg2:T14	
+R4	abbreviation_for Arg1:T3 Arg2:T2	
+T5	method 331 333	DT
+T6	method 597 621	healthy control subjects
+T10	Health_factors 665 675	handedness
+T11	signs 708 729	fractional anisotropy
+R5	abbreviation_for Arg1:T29 Arg2:T11	
+T16	signs 739 769	axial and radial diffusivities
+T17	method 969 1005	obsessive-compulsive subscale scores
+T18	disease 1158 1161	OCD
+R6	located_in Arg1:T43 Arg2:T40	
+R7	located_in Arg1:T43 Arg2:T42	
+R8	characteristic_of Arg1:T37 Arg2:T18	
+R9	located_in Arg1:T37 Arg2:T44	
+R10	located_in Arg1:T37 Arg2:T43	
+T20	signs 1399 1416	axial diffusivity
+T21	signs 1465 1483	radial diffusivity
+T22	signs 1521 1523	FA
+R11	hyponym_of Arg1:T48 Arg2:T50	
+R12	located_in Arg1:T22 Arg2:T48	
+R13	associated_with Arg1:T22 Arg2:T49	
+T23	disease 1701 1737	axonal microstructural abnormalities
+R15	located_in Arg1:T23 Arg2:T53	
+R16	associated_with Arg1:T52 Arg2:T23	
+R17	associated_with Arg1:T23 Arg2:T54	
+R18	occurs_in Arg1:T61 Arg2:T55	
+R19	help_diagnose Arg1:T63 Arg2:T61	
+R20	help_diagnose Arg1:T33 Arg2:T32	
+R14	occurs_in Arg1:T22 Arg2:T46	

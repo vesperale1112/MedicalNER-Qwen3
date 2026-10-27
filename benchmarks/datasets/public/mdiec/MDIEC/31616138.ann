@@ -1,0 +1,75 @@
+T2	disease 72 84	Hearing loss
+T3	disease 86 88	HL
+T4	disease 165 189	chronic health condition
+T5	disease 367 386	unipolar depression
+T6	disease 468 478	depression
+T11	disease 699 718	depression symptoms
+T12	disease 996 1006	depression
+T13	disease 1139 1158	depression symptoms
+T14	disease 1198 1223	major depression disorder
+T15	symptom 1309 1336	poor mental health outcomes
+T16	disease 1364 1371	anxiety
+T17	disease 1376 1393	suicidal ideation
+T18	disease 1479 1504	comorbid depression in HL
+T20	disease 1624 1640	depression in HL
+T22	disease 2117 2119	HL
+T25	disease 0 10	Depression
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+#2	AnnotatorNotes T3	C1384666
+R2	hyponym_of Arg1:T2 Arg2:T4	
+R3	hyponym_of Arg1:T3 Arg2:T4	
+T26	disease 345 347	HL
+R4	associated_with Arg1:T26 Arg2:T5	
+T27	disease 461 463	HL
+T28	method 725 765	cross-sectional and longitudinal studies
+T29	disease 780 782	HL
+T30	disease 807 835	unipolar depression symptoms
+R6	associated_with Arg1:T29 Arg2:T30	
+T31	disease 975 977	HL
+T32	disease 1111 1113	HL
+R7	associated_with Arg1:T32 Arg2:T13	
+T33	disease 1265 1267	HL
+R8	associated_with Arg1:T33 Arg2:T15	
+R9	hyponym_of Arg1:T16 Arg2:T15	
+#3	AnnotatorNotes T17	C4554104
+R10	hyponym_of Arg1:T17 Arg2:T15	
+R11	associated_with Arg1:T33 Arg2:T16	
+R12	associated_with Arg1:T33 Arg2:T17	
+T34	physiology 1415 1436	cognitive functioning
+T35	method 1692 1719	audiological rehabilitation
+T36	Health_factors 1731 1750	use of hearing aids
+T37	method 1763 1800	community-based hearing interventions
+R13	hyponym_of Arg1:T36 Arg2:T35	
+R14	hyponym_of Arg1:T37 Arg2:T35	
+#4	AnnotatorNotes T36	C1820672
+T38	method 1833 1859	Psychological intervention
+#5	AnnotatorNotes T38	C5392103
+T39	method 2010 2030	online interventions
+#6	AnnotatorNotes T39	C3898714
+R16	associated_with Arg1:T33 Arg2:T34	
+T41	Health_factors 289 304	quality of life
+T42	Health_factors 403 415	older adults
+T43	Health_factors 958 961	age
+T44	Health_factors 1340 1352	older adults
+T45	Health_factors 1553 1565	older adults
+T47	Health_factors 2302 2314	older adults
+T40	Health_factors 110 125	older adulthood
+T48	disease 557 583	comorbid depression and HL
+T7	disease 618 643	comorbid depression in HL
+T19	Health_factors 1818 1831	mental health
+T46	Health_factors 14 21	elderly
+T49	Health_factors 1529 1546	mental well-being
+R20	treatment_for Arg1:T35 Arg2:T19	
+R21	treatment_for Arg1:T36 Arg2:T19	
+R22	treatment_for Arg1:T37 Arg2:T19	
+T50	Health_factors 1874 1894	communication skills
+T51	Health_factors 1909 1926	coping strategies
+R25	associated_with Arg1:T40 Arg2:T3	
+R26	associated_with Arg1:T40 Arg2:T2	
+R28	occurs_in Arg1:T15 Arg2:T44	
+R17	occurs_in Arg1:T5 Arg2:T42	
+R29	treatment_for Arg1:T38 Arg2:T50	
+R30	treatment_for Arg1:T38 Arg2:T51	
+T1	Health_factors 2275 2288	mental health
+T8	disease 36 48	hearing loss
+T9	disease 2320 2322	HL

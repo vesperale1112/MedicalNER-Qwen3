@@ -1,0 +1,99 @@
+T0	disease 79 92	schizophrenia
+T1	physiology 0 29	Pathophysiological mechanisms
+T3	disease 103 126	severe mental illnesses
+T4	disease 142 155	schizophrenia
+T5	disease 171 180	mortality
+T6	disease 185 194	morbidity
+T7	Health_factors 213 231	general population
+T8	disease 299 312	schizophrenia
+T9	disease 338 360	cardiovascular disease
+T10	disease 375 381	cancer
+T11	disease 362 369	suicide
+T12	Health_factors 263 279	shorter lifespan
+T13	disease 397 418	severe mental illness
+T14	disease 445 467	cardiovascular disease
+T15	disease 502 510	diabetes
+T16	disease 512 524	hypertension
+T17	disease 546 553	obesity
+T18	disease 555 568	dyslipidaemia
+T19	disease 570 588	metabolic syndrome
+T20	Health_factors 526 533	smoking
+T25	physiology 617 652	side-effects of antipsychotic drugs
+T26	Health_factors 590 611	low physical activity
+T27	Health_factors 535 544	poor diet
+T29	drug 697 706	clozapine
+T30	drug 708 718	olanzapine
+T31	drug 720 730	quetiapine
+T32	drug 736 747	risperidone
+T33	disease 806 813	obesity
+T34	disease 866 881	hyperlipidaemia
+T35	disease 887 909	cardiovascular disease
+T36	drug 659 691	second-generation antipsychotics
+T37	symptom 790 801	weight gain
+T38	disease 815 841	impaired glucose tolerance
+T39	disease 846 864	new-onset diabetes
+T41	disease 935 948	schizophrenia
+T42	disease 1008 1033	cardiometabolic disorders
+T43	disease 967 988	severe mental illness
+T45	drug 1109 1128	antipsychotic drugs
+T47	Health_factors 1058 1073	lifestyle risks
+T48	disease 1232 1257	cardiometabolic disorders
+T49	disease 1261 1274	schizophrenia
+T50	disease 1279 1300	severe mental illness
+T52	method 1186 1199	interventions
+R1	risk_factor_of Arg1:T4 Arg2:T5	
+R2	risk_factor_of Arg1:T4 Arg2:T6	
+R3	risk_factor_of Arg1:T9 Arg2:T12	
+R4	risk_factor_of Arg1:T11 Arg2:T12	
+R5	risk_factor_of Arg1:T10 Arg2:T12	
+R6	risk_factor_of Arg1:T13 Arg2:T14	
+R7	risk_factor_of Arg1:T13 Arg2:T15	
+R8	risk_factor_of Arg1:T13 Arg2:T16	
+R9	risk_factor_of Arg1:T13 Arg2:T20	
+R10	risk_factor_of Arg1:T13 Arg2:T27	
+R11	risk_factor_of Arg1:T13 Arg2:T17	
+R12	risk_factor_of Arg1:T13 Arg2:T18	
+R13	risk_factor_of Arg1:T13 Arg2:T19	
+R14	risk_factor_of Arg1:T13 Arg2:T26	
+R15	risk_factor_of Arg1:T13 Arg2:T25	
+R16	hyponym_of Arg1:T29 Arg2:T36	
+R17	hyponym_of Arg1:T30 Arg2:T36	
+R18	hyponym_of Arg1:T31 Arg2:T36	
+R19	hyponym_of Arg1:T32 Arg2:T36	
+R20	risk_factor_of Arg1:T36 Arg2:T37	
+R21	risk_factor_of Arg1:T36 Arg2:T33	
+R22	risk_factor_of Arg1:T36 Arg2:T38	
+R23	risk_factor_of Arg1:T36 Arg2:T39	
+R24	risk_factor_of Arg1:T36 Arg2:T34	
+R25	risk_factor_of Arg1:T36 Arg2:T35	
+R26	risk_factor_of Arg1:T29 Arg2:T37	
+R27	risk_factor_of Arg1:T29 Arg2:T33	
+R28	risk_factor_of Arg1:T29 Arg2:T38	
+R29	risk_factor_of Arg1:T29 Arg2:T39	
+R30	risk_factor_of Arg1:T29 Arg2:T34	
+R31	risk_factor_of Arg1:T29 Arg2:T35	
+R32	risk_factor_of Arg1:T30 Arg2:T37	
+R33	risk_factor_of Arg1:T30 Arg2:T33	
+R34	risk_factor_of Arg1:T30 Arg2:T38	
+R35	risk_factor_of Arg1:T30 Arg2:T39	
+R36	risk_factor_of Arg1:T30 Arg2:T34	
+R37	risk_factor_of Arg1:T30 Arg2:T35	
+R38	risk_factor_of Arg1:T31 Arg2:T37	
+R39	risk_factor_of Arg1:T31 Arg2:T33	
+R40	risk_factor_of Arg1:T31 Arg2:T38	
+R41	risk_factor_of Arg1:T31 Arg2:T39	
+R42	risk_factor_of Arg1:T31 Arg2:T34	
+R43	risk_factor_of Arg1:T31 Arg2:T35	
+R44	risk_factor_of Arg1:T32 Arg2:T37	
+R45	risk_factor_of Arg1:T32 Arg2:T33	
+R46	risk_factor_of Arg1:T32 Arg2:T38	
+R47	risk_factor_of Arg1:T32 Arg2:T39	
+R48	risk_factor_of Arg1:T32 Arg2:T34	
+R49	risk_factor_of Arg1:T32 Arg2:T35	
+R50	risk_factor_of Arg1:T41 Arg2:T42	
+R51	risk_factor_of Arg1:T43 Arg2:T42	
+R52	risk_factor_of Arg1:T47 Arg2:T42	
+R53	risk_factor_of Arg1:T45 Arg2:T42	
+R54	treatment_for Arg1:T52 Arg2:T48	
+R55	occurs_in Arg1:T48 Arg2:T49	
+R56	occurs_in Arg1:T48 Arg2:T50	

@@ -1,0 +1,67 @@
+T1	disease 52 65	Schizophrenia
+T2	drug 2 30	Non-D2-Receptor-Binding Drug
+T3	drug 96 106	SEP-363856
+T5	gene 129 150	dopamine D2 receptors
+T7	gene 179 212	trace amine-associated receptor 1
+T8	gene 214 219	TAAR1
+T10	gene 225 271	5-hydroxytryptamine type 1A (5-HT1A) receptors
+T11	disease 342 351	psychosis
+T12	disease 355 368	schizophrenia
+T15	drug 302 320	psychotropic agent
+T17	drug 81 94	oral compound
+T20	Health_factors 477 483	adults
+T21	disease 492 527	acute exacerbation of schizophrenia
+T23	method 395 423	randomized, controlled trial
+T24	drug 617 627	SEP-363856
+T27	method 746 781	Positive and Negative Symptom Scale
+T28	method 783 788	PANSS
+T29	disease 843 861	psychotic symptoms
+T34	method 1008 1013	CGI-S
+T35	method 970 1006	Clinical Global Impressions Severity
+T39	drug 1231 1241	SEP-363856
+T41	method 1196 1201	PANSS
+T42	method 1405 1424	confidence interval
+T43	method 1357 1386	least-squares mean difference
+T46	method 1473 1478	CGI-S
+T48	method 1483 1487	BNSS
+T49	drug 1656 1666	SEP-363856
+T50	disease 1676 1686	somnolence
+T51	disease 1691 1716	gastrointestinal symptoms
+T52	disease 1722 1742	sudden cardiac death
+T53	drug 1759 1769	SEP-363856
+T54	Health_factors 1636 1650	Adverse events
+T55	disease 1794 1817	extrapyramidal symptoms
+T56	gene 1855 1874	glycated hemoglobin
+T57	gene 1880 1889	prolactin
+T58	drug 1847 1853	lipids
+T59	method 1910 1915	trial
+T64	disease 1986 2021	acute exacerbation of schizophrenia
+T66	drug 2037 2079	non-D2-receptor-binding antipsychotic drug
+T70	method 1953 1958	trial
+T71	drug 2248 2258	SEP-363856
+T72	disease 2339 2352	schizophrenia
+T73	method 2184 2190	trials
+T74	method 2305 2320	drug treatments
+T76	Health_factors 2232 2244	side effects
+R1	treatment_for Arg1:T2 Arg2:T1	
+R2	hyponym_of Arg1:T3 Arg2:T17	
+R3	associated_with Arg1:T3 Arg2:T7	
+R4	abbreviation_for Arg1:T8 Arg2:T7	
+R5	associated_with Arg1:T3 Arg2:T10	
+R6	occurs_in Arg1:T11 Arg2:T12	
+T4	drug 463 473	SEP-363856
+R7	occurs_in Arg1:T20 Arg2:T21	
+R8	abbreviation_for Arg1:T28 Arg2:T27	
+R9	help_diagnose Arg1:T27 Arg2:T29	
+R10	help_diagnose Arg1:T28 Arg2:T29	
+R11	abbreviation_for Arg1:T34 Arg2:T35	
+T6	method 1029 1057	Brief Negative Symptom Scale
+T9	method 1059 1063	BNSS
+R12	abbreviation_for Arg1:T9 Arg2:T6	
+T13	drug 1121 1131	SEP-363856
+T14	method 1614 1634	multiple comparisons
+R13	risk_factor_of Arg1:T49 Arg2:T50	
+T16	drug 2023 2033	SEP-363856
+R14	hyponym_of Arg1:T16 Arg2:T66	
+T18	method 2134 2139	PANSS
+R15	risk_factor_of Arg1:T51 Arg2:T49	

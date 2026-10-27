@@ -1,0 +1,47 @@
+T0	disease 0 40	Attention-deficit hyperactivity disorder
+T1	disease 42 82	Attention-deficit hyperactivity disorder
+T2	disease 84 88	ADHD
+T3	disease 107 118	inattention
+T4	disease 120 131	impulsivity
+T5	disease 137 150	hyperactivity
+T7	disease 214 218	ADHD
+T8	Health_factors 230 233	age
+T9	Health_factors 252 260	children
+T10	Health_factors 311 320	adulthood
+T11	disease 289 307	impairing symptoms
+T13	disease 373 377	ADHD
+T15	disease 435 458	obstetric complications
+T16	Health_factors 463 485	psychosocial adversity
+T18	method 322 367	Twin, adoption, and molecular genetic studies
+T19	disease 682 686	ADHD
+T20	disease 731 772	abnormalities of the dopamine transporter
+T26	method 663 678	pathophysiology
+T28	disease 781 807	impaired neurotransmission
+T29	disease 581 655	dysregulation of frontal-subcortical-cerebellar catecholaminergic circuits
+T30	method 541 565	animal and human studies
+T31	drug 939 954	methylphenidate
+T32	drug 959 969	amfetamine
+T33	drug 887 906	non-stimulant drugs
+T35	method 1095 1110	pharmacotherapy
+T38	method 1036 1068	targeted psychosocial treatments
+R1	associated_with Arg1:T29 Arg2:T19	
+R2	risk_factor_of Arg1:T20 Arg2:T28	
+T21	drug 911 935	long-acting formulations
+T14	Health_factors 391 400	heritable
+R3	associated_with Arg1:T13 Arg2:T14	
+T17	Health_factors 173 181	children
+R4	abbreviation_for Arg1:T2 Arg2:T1	
+R5	characteristic_of Arg1:T3 Arg2:T1	
+R6	characteristic_of Arg1:T4 Arg2:T1	
+R7	characteristic_of Arg1:T5 Arg2:T1	
+R8	characteristic_of Arg1:T3 Arg2:T2	
+R9	characteristic_of Arg1:T4 Arg2:T2	
+R10	characteristic_of Arg1:T5 Arg2:T2	
+R11	associated_with Arg1:T1 Arg2:T17	
+R12	associated_with Arg1:T2 Arg2:T17	
+R13	associated_with Arg1:T7 Arg2:T8	
+R14	occurs_in Arg1:T11 Arg2:T10	
+R15	characteristic_of Arg1:T11 Arg2:T7	
+R16	risk_factor_of Arg1:T15 Arg2:T13	
+R17	risk_factor_of Arg1:T16 Arg2:T13	
+T6	method 692 717	molecular imaging studies

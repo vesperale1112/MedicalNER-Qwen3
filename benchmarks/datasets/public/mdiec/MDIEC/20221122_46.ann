@@ -1,0 +1,5 @@
+T1	region 24 34	OX neurons
+T2	region 42 70	DMH-PFA and MCH-ergic system
+T3	disease 112 132	depressive disorders
+R1	associated_with Arg1:T1 Arg2:T3	
+R2	located_in Arg1:T1 Arg2:T2	

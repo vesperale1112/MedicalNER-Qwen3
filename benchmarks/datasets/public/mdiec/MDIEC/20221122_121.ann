@@ -1,0 +1,12 @@
+T3	disease 86 102	major depression
+T4	gene 114 132	polymorphic region
+T1	gene 13 26	genetic locus
+T6	physiology 35 51	serotonin uptake
+T2	gene 134 142	5-HTTLPR
+T5	region 151 166	promoter region
+R3	risk_factor_of Arg1:T1 Arg2:T6	
+R4	associated_with Arg1:T6 Arg2:T3	
+R1	associated_with Arg1:T1 Arg2:T4	
+R2	associated_with Arg1:T1 Arg2:T2	
+R5	located_in Arg1:T4 Arg2:T5	
+R6	located_in Arg1:T2 Arg2:T5	

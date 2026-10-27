@@ -1,0 +1,9 @@
+T1	disease 22 39	chronic back pain
+T3	method 268 283	health controls
+T5	Health_factors 213 246	passive-avoidant coping responses
+T2	disease 114 132	pain exacerbations
+T6	Health_factors 160 182	general life stressors
+T7	disease 308 357	combination of CLBP and concurrent depressed mood
+T8	disease 376 380	CLBP
+R1	associated_with Arg1:T5 Arg2:T7	
+R2	associated_with Arg1:T5 Arg2:T8	

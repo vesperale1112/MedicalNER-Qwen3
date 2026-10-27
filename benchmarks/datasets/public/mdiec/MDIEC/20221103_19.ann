@@ -1,0 +1,62 @@
+T1	region 50 69	cerebrospinal fluid
+T2	region 71 74	CSF
+T6	drug 94 120	5-hydroxyindoleacetic acid
+T8	drug 155 164	serotonin
+T9	disease 175 194	drug-free depressed
+T11	disease 1117 1136	drug-free depressed
+T12	region 254 277	postmortem brain tissue
+T13	region 798 821	postmortem brain tissue
+T14	region 1031 1054	postmortem brain tissue
+T15	disease 300 308	suicidal
+T16	signs 333 365	plasma tryptophan concentrations
+T18	disease 369 378	depressed
+T19	disease 423 432	depressed
+T20	disease 825 834	depressed
+T22	disease 1078 1087	depressed
+T25	drug 466 493	serotonergic antidepressant
+T26	drug 584 599	antidepressants
+T27	physiology 608 630	5-HT neurotransmission
+T28	method 641 658	chronic treatment
+T29	physiology 687 708	antidepressant action
+T31	physiology 730 741	5-HT uptake
+T32	gene 775 794	5-HT2 binding sites
+T33	disease 848 855	suicide
+T34	disease 1058 1065	suicide
+T35	region 879 888	platelets
+T36	region 1104 1113	platelets
+T37	gene 946 962	5-HT transporter
+T38	drug 980 994	[3H]imipramine
+T39	drug 998 1012	[3H]paroxetine
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+T3	drug 122 128	5-HIAA
+R2	abbreviation_for Arg1:T3 Arg2:T6	
+T43	drug 166 170	5-HT
+R3	abbreviation_for Arg1:T43 Arg2:T8	
+T44	drug 141 164	metabolite of serotonin
+T7	disease 281 290	depressed
+R9	characteristic_of Arg1:T16 Arg2:T18	
+T5	drug 499 515	brain tryptophan
+T10	disease 892 911	drug-free depressed
+R8	characteristic_of Arg1:T6 Arg2:T9	
+R26	characteristic_of Arg1:T3 Arg2:T9	
+T17	signs 50 90	cerebrospinal fluid (CSF) concentrations
+T21	drug 235 239	5-HT
+R29	characteristic_of Arg1:T21 Arg2:T7	
+R31	characteristic_of Arg1:T21 Arg2:T15	
+R10	associated_with Arg1:T26 Arg2:T27	
+R4	located_in Arg1:T21 Arg2:T12	
+T23	disease 403 410	relapse
+R5	located_in Arg1:T32 Arg2:T13	
+R6	characteristic_of Arg1:T32 Arg2:T20	
+R7	characteristic_of Arg1:T32 Arg2:T33	
+R12	located_in Arg1:T32 Arg2:T35	
+R13	characteristic_of Arg1:T32 Arg2:T10	
+R14	located_in Arg1:T37 Arg2:T14	
+R15	characteristic_of Arg1:T37 Arg2:T34	
+R16	characteristic_of Arg1:T37 Arg2:T22	
+R17	located_in Arg1:T37 Arg2:T36	
+R18	characteristic_of Arg1:T37 Arg2:T11	
+T4	drug 244 250	5-HIAA
+R21	occurs_in Arg1:T4 Arg2:T12	
+R22	characteristic_of Arg1:T4 Arg2:T7	
+R23	characteristic_of Arg1:T4 Arg2:T15	

@@ -1,0 +1,77 @@
+T0	drug 0 8	D-serine
+T1	symptom 66 101	clinical high risk of schizophrenia
+T3	disease 30 47	negative symptoms
+T4	method 105 206	pilot, double-blind, placebo-controlled, randomised parallel group mechanistic proof-of-concept trial
+T8	gene 234 279	N-methyl-D-aspartate-type glutamate receptors
+T10	gene 281 286	NMDAR
+T11	disease 335 348	schizophrenia
+T12	disease 360 377	negative symptoms
+T13	drug 379 387	D-serine
+T14	drug 413 428	NMDAR modulator
+T15	drug 458 475	NMDAR antagonists
+T16	method 479 509	animal models of schizophrenia
+T18	drug 511 519	D-serine
+T19	disease 587 600	schizophrenia
+T21	drug 677 685	D-serine
+T22	disease 689 706	negative symptoms
+T24	method 750 824	double-blind, placebo-controlled, parallel-group randomised clinical trial
+T25	symptom 923 958	clinical high risk of schizophrenia
+T26	Health_factors 960 964	aged
+T27	method 1107 1121	clinical trial
+T29	method 1027 1054	Scale of Prodromal Symptoms
+T32	disease 1351 1361	depression
+T33	disease 1179 1197	psychosis symptoms
+T37	method 1123 1141	Exclusion criteria
+T40	method 1579 1608	centralised drug dispensation
+T42	drug 1630 1638	D-serine
+T43	method 1660 1666	orally
+T44	method 1846 1870	post-baseline assessment
+T48	signs 1898 1927	Serum cytokine concentrations
+T49	method 2040 2062	laboratory assessments
+T51	method 2128 2146	ClinicalTrials.gov
+T52	drug 2302 2310	D-serine
+T53	drug 2364 2372	D-serine
+T56	method 2344 2359	assessable data
+T57	drug 2387 2395	D-serine
+T58	drug 2546 2554	D-serine
+T59	method 2412 2414	SD
+T60	disease 2435 2452	negative symptoms
+T62	method 2534 2537	SEM
+T64	drug 2638 2646	D-serine
+T65	disease 2790 2799	psychosis
+T67	method 2759 2768	follow-up
+T70	Health_factors 2807 2842	laboratory-confirmed adverse events
+T74	method 2924 2949	NMDAR-based interventions
+T76	disease 2986 3021	prodromal symptoms of schizophrenia
+T80	physiology 3198 3232	NMDAR-related inflammatory changes
+T84	method 3048 3060	effect sizes
+T85	disease 3284 3304	psychosis conversion
+T87	symptom 3323 3358	clinical high risk of schizophrenia
+T88	method 3234 3251	Long-term studies
+R1	treatment_for Arg1:T0 Arg2:T3	
+R2	occurs_in Arg1:T3 Arg2:T1	
+R3	abbreviation_for Arg1:T10 Arg2:T8	
+T5	drug 219 279	Antagonists of N-methyl-D-aspartate-type glutamate receptors
+R4	risk_factor_of Arg1:T5 Arg2:T11	
+R5	risk_factor_of Arg1:T5 Arg2:T12	
+R6	characteristic_of Arg1:T12 Arg2:T11	
+R7	hyponym_of Arg1:T13 Arg2:T14	
+R8	associated_with Arg1:T13 Arg2:T15	
+R9	treatment_for Arg1:T18 Arg2:T19	
+T2	method 1056 1060	SOPS
+R10	abbreviation_for Arg1:T2 Arg2:T29	
+R11	help_diagnose Arg1:T29 Arg2:T25	
+R12	help_diagnose Arg1:T2 Arg2:T25	
+T6	disease 1227 1236	prodromal
+R13	hyponym_of Arg1:T6 Arg2:T33	
+T7	method 1295 1299	SOPS
+T9	Health_factors 1493 1506	investigators
+T17	Health_factors 1512 1521	assessors
+T20	method 1733 1746	negative SOPS
+R14	treatment_for Arg1:T57 Arg2:T60	
+T23	method 2510 2514	SOPS
+T28	drug 2959 2967	D-serine
+R15	hyponym_of Arg1:T28 Arg2:T74	
+R16	treatment_for Arg1:T74 Arg2:T76	
+R17	treatment_for Arg1:T28 Arg2:T76	
+R18	occurs_in Arg1:T85 Arg2:T87	

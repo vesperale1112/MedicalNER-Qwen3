@@ -1,0 +1,38 @@
+T0	disease 0 29	Obsessive-compulsive disorder
+T1	physiology 49 74	cortico-striatal pathways
+T2	disease 76 105	Obsessive-compulsive disorder
+T3	disease 107 110	OCD
+T4	disease 335 342	anxiety
+T5	symptom 227 262	repetitive behaviors or mental acts
+T6	disease 313 323	obsessions
+T7	disease 211 221	obsessions
+T8	symptom 181 209	recurrent intrusive thoughts
+T10	method 394 413	OCD pathophysiology
+T11	region 430 456	cortico-striatal circuitry
+T14	region 587 619	dorsal anterior cingulate cortex
+T15	region 624 651	amygdalo-cortical circuitry
+T16	region 668 694	cortico-striatal circuitry
+T17	method 703 718	pathophysiology
+T19	region 540 581	lateral and medial orbitofrontal cortices
+T21	disease 973 976	OCD
+T22	method 786 805	OCD pathophysiology
+T23	symptom 935 956	behavioral inhibition
+T24	physiology 903 918	fear extinction
+T25	physiology 825 859	parallel cortico-striatal pathways
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	characteristic_of Arg1:T8 Arg2:T2	
+R3	characteristic_of Arg1:T8 Arg2:T3	
+R4	characteristic_of Arg1:T7 Arg2:T2	
+R5	characteristic_of Arg1:T7 Arg2:T3	
+T13	disease 264 275	compulsions
+R6	characteristic_of Arg1:T5 Arg2:T2	
+R7	characteristic_of Arg1:T5 Arg2:T3	
+R8	characteristic_of Arg1:T13 Arg2:T2	
+R9	characteristic_of Arg1:T13 Arg2:T3	
+T9	method 470 482	neuroimaging
+R11	associated_with Arg1:T19 Arg2:T17	
+R12	associated_with Arg1:T14 Arg2:T17	
+R13	associated_with Arg1:T15 Arg2:T17	
+R14	associated_with Arg1:T16 Arg2:T17	
+R15	characteristic_of Arg1:T24 Arg2:T21	
+R16	characteristic_of Arg1:T23 Arg2:T21	

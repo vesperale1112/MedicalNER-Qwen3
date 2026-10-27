@@ -1,0 +1,81 @@
+T0	drug 12 49	venlafaxine extended-release capsules
+T1	disease 83 111	generalized anxiety disorder
+T3	method 123 150	randomized controlled trial
+T5	Health_factors 53 77	nondepressed outpatients
+T6	disease 160 188	Generalized anxiety disorder
+T7	disease 190 193	GAD
+T8	disease 200 216	chronic disorder
+T9	disease 241 282	debilitating psychic and somatic symptoms
+T10	drug 284 326	Venlafaxine extended-release (XR) capsules
+T11	disease 400 403	GAD
+T12	disease 412 437	major depressive disorder
+T13	disease 439 442	MDD
+T14	drug 501 506	agent
+T19	Health_factors 633 644	outpatients
+T20	disease 650 653	GAD
+T21	disease 673 676	MDD
+T23	method 698 764	randomized, double-blind, placebo-controlled, parallel-group trial
+T24	Health_factors 820 838	outpatient clinics
+T25	Health_factors 843 872	private psychiatric practices
+T27	Health_factors 925 936	outpatients
+T28	Health_factors 937 941	aged
+T29	Health_factors 954 959	older
+T30	method 968 1037	Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition
+T31	method 1039 1045	DSM-IV
+T32	disease 1060 1063	GAD
+T33	disease 1139 1142	MDD
+T39	method 1146 1159	INTERVENTIONS
+T42	method 1378 1411	Hamilton Rating Scale for Anxiety
+T45	method 1545 1570	Global Improvement scores
+T47	method 1437 1471	HAM-A psychic anxiety factor score
+T54	drug 1802 1816	venlafaxine XR
+T55	disease 1862 1869	anxiety
+T58	method 2031 2047	CGI scale scores
+T59	method 1984 2012	HAM-A psychic anxiety factor
+T61	method 1774 1800	evaluable-patient analysis
+T62	drug 2168 2182	venlafaxine XR
+T63	drug 2246 2260	venlafaxine XR
+T64	drug 2315 2329	venlafaxine XR
+T70	disease 2410 2416	nausea
+T71	disease 2430 2440	somnolence
+T72	disease 2445 2454	dry mouth
+T73	Health_factors 2373 2405	treatment-emergent adverse event
+T77	Health_factors 2583 2594	outpatients
+T78	method 2600 2606	DSM-IV
+T79	disease 2617 2620	GAD
+T81	drug 2622 2636	Venlafaxine XR
+T82	disease 2740 2747	anxiety
+T83	drug 2687 2692	agent
+T84	drug 2812 2823	anxiolytics
+R1	occurs_in Arg1:T5 Arg2:T1	
+R2	abbreviation_for Arg1:T7 Arg2:T6	
+R3	hyponym_of Arg1:T7 Arg2:T8	
+R4	hyponym_of Arg1:T6 Arg2:T8	
+R5	associated_with Arg1:T7 Arg2:T9	
+R6	associated_with Arg1:T6 Arg2:T9	
+R7	abbreviation_for Arg1:T13 Arg2:T12	
+R8	treatment_for Arg1:T10 Arg2:T11	
+T2	drug 615 629	venlafaxine XR
+R9	abbreviation_for Arg1:T31 Arg2:T30	
+R10	help_diagnose Arg1:T30 Arg2:T32	
+R11	help_diagnose Arg1:T31 Arg2:T32	
+T4	drug 1233 1247	venlafaxine XR
+T15	method 1413 1418	HAM-A
+R12	abbreviation_for Arg1:T15 Arg2:T42	
+T16	method 1481 1508	Clinical Global Impressions
+T17	method 1584 1596	intervention
+T18	method 1510 1513	CGI
+R13	abbreviation_for Arg1:T18 Arg2:T16	
+T22	drug 1663 1677	venlafaxine XR
+R14	treatment_for Arg1:T54 Arg2:T55	
+T34	method 1958 1963	HAM-A
+T35	method 2111 2151	last-observation-carried-forward methods
+T36	method 2161 2166	HAM-A
+T37	method 2217 2244	HAM-A psychic anxiety score
+T38	method 2298 2313	CGI-Improvement
+R15	help_diagnose Arg1:T78 Arg2:T79	
+R16	hyponym_of Arg1:T81 Arg2:T83	
+R17	treatment_for Arg1:T81 Arg2:T82	
+R18	occurs_in Arg1:T19 Arg2:T20	
+T26	drug 2560 2564	drug
+R19	occurs_in Arg1:T77 Arg2:T79	

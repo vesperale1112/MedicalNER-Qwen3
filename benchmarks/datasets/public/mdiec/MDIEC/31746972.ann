@@ -1,0 +1,144 @@
+T0	disease 15 40	Maternal Eating Disorders
+T1	physiology 46 55	Pregnancy
+T2	symptom 60 77	Neonatal Outcomes
+T3	disease 108 124	eating disorders
+T4	disease 189 205	eating disorders
+T5	Health_factors 139 164	women of reproductive age
+T9	symptom 239 254	neonatal health
+T10	disease 211 234	pregnancy complications
+T13	Health_factors 402 407	women
+T14	disease 413 429	eating disorders
+T15	symptom 358 397	adverse pregnancy and neonatal outcomes
+T17	method 472 501	population-based cohort study
+T20	method 548 578	Swedish Medical Birth Register
+T21	physiology 515 531	singleton births
+T22	disease 650 666	eating disorders
+T23	disease 708 724	eating disorders
+T24	Health_factors 639 644	women
+T25	Health_factors 694 699	women
+T28	method 726 746	Statistical analysis
+T29	disease 861 877	eating disorders
+T30	disease 930 945	eating disorder
+T31	Health_factors 850 855	women
+T32	Health_factors 912 917	women
+T33	method 823 848	national patient register
+T34	disease 947 963	Eating disorders
+T42	symptom 1094 1120	adverse pregnancy outcomes
+T43	disease 1143 1155	preeclampsia
+T44	disease 1306 1319	preterm birth
+T45	Health_factors 1347 1362	gestational age
+T47	method 1433 1460	Poisson regression analysis
+T48	symptom 1287 1304	neonatal outcomes
+T49	method 1247 1276	instrumental vaginal delivery
+T50	Health_factors 1207 1224	cesarean delivery
+T54	Health_factors 1517 1520	age
+T55	Health_factors 1530 1544	smoking status
+T58	Health_factors 1588 1593	women
+T59	disease 1599 1615	anorexia nervosa
+T60	method 1623 1625	SD
+T61	Health_factors 1627 1630	age
+T62	Health_factors 1656 1661	women
+T63	disease 1667 1682	bulimia nervosa
+T64	method 1690 1692	SD
+T65	Health_factors 1694 1697	age
+T66	Health_factors 1727 1732	women
+T67	method 1795 1797	SD
+T68	Health_factors 1799 1802	age
+T69	Health_factors 1872 1877	women
+T70	disease 1886 1902	eating disorders
+T71	method 1910 1912	SD
+T72	Health_factors 1914 1917	age
+T73	disease 1954 1979	maternal eating disorders
+T74	disease 2043 2054	hyperemesis
+T75	disease 2073 2089	anorexia nervosa
+T76	disease 2118 2133	bulimia nervosa
+T77	disease 2162 2167	EDNOS
+T78	physiology 2062 2071	pregnancy
+T79	method 2091 2093	RR
+T80	method 2104 2106	CI
+T81	method 2135 2137	RR
+T82	method 2148 2150	CI
+T83	method 2169 2171	RR
+T84	method 2182 2184	CI
+T86	disease 2209 2215	anemia
+T87	disease 2267 2283	anorexia nervosa
+T88	disease 2315 2320	EDNOS
+T89	physiology 2223 2232	pregnancy
+T90	Health_factors 2249 2254	women
+T91	method 2285 2287	RR
+T92	method 2298 2300	CI
+T93	method 2322 2324	RR
+T94	method 2335 2337	CI
+T95	disease 2350 2375	Maternal anorexia nervosa
+T96	disease 2417 2438	antepartum hemorrhage
+T97	method 2440 2442	RR
+T98	method 2453 2455	CI
+T101	disease 2536 2552	anorexia nervosa
+T102	disease 2596 2601	EDNOS
+T103	Health_factors 2525 2530	Women
+T104	method 2554 2556	RR
+T105	method 2567 2569	CI
+T106	Health_factors 2585 2590	women
+T107	method 2603 2605	RR
+T108	method 2616 2618	CI
+T109	method 2656 2692	instrumental-assisted vaginal births
+T110	disease 2769 2785	eating disorders
+T111	disease 2844 2860	anorexia nervosa
+T112	disease 2889 2904	bulimia nervosa
+T113	disease 2937 2942	EDNOS
+T114	disease 3003 3015	microcephaly
+T115	disease 3017 3033	anorexia nervosa
+T116	disease 3062 3077	bulimia nervosa
+T117	disease 3106 3111	EDNOS
+T118	Health_factors 2758 2763	Women
+T119	disease 2829 2842	preterm birth
+T120	method 2862 2864	RR
+T121	method 2875 2877	CI
+T122	method 2906 2908	RR
+T123	method 2919 2921	CI
+T124	method 2944 2946	RR
+T125	method 2957 2959	CI
+T126	method 3035 3037	RR
+T127	method 3048 3050	CI
+T128	method 3079 3081	RR
+T129	method 3092 3094	CI
+T130	method 3113 3115	RR
+T131	method 3126 3128	CI
+T132	Health_factors 3209 3214	women
+T133	disease 3239 3255	eating disorders
+T135	method 3384 3411	antenatal and delivery care
+T137	symptom 3305 3344	adverse pregnancy and neonatal outcomes
+R1	associated_with Arg1:T0 Arg2:T1	
+R2	associated_with Arg1:T0 Arg2:T2	
+R3	associated_with Arg1:T3 Arg2:T5	
+R4	occurs_in Arg1:T13 Arg2:T14	
+R5	occurs_in Arg1:T24 Arg2:T22	
+R6	occurs_in Arg1:T31 Arg2:T29	
+T6	disease 1122 1133	hyperemesis
+T7	disease 1136 1137	n
+T8	disease 1161 1182	antepartum hemorrhage
+T12	disease 1226 1242	vaginal delivery
+T16	disease 1397 1409	microcephaly
+T18	method 1473 1484	risk ratios
+T11	method 1486 1489	RRs
+R7	abbreviation_for Arg1:T11 Arg2:T18	
+T19	Health_factors 1522 1528	parity
+T26	Health_factors 1550 1560	birth year
+R8	occurs_in Arg1:T58 Arg2:T59	
+R9	occurs_in Arg1:T62 Arg2:T63	
+T27	disease 1741 1780	eating disorder not otherwise specified
+R10	occurs_in Arg1:T66 Arg2:T27	
+T35	disease 1782 1787	EDNOS
+R11	abbreviation_for Arg1:T35 Arg2:T27	
+R12	risk_factor_of Arg1:T73 Arg2:T74	
+R15	risk_factor_of Arg1:T95 Arg2:T96	
+R17	occurs_in Arg1:T103 Arg2:T101	
+R18	occurs_in Arg1:T106 Arg2:T102	
+R19	risk_factor_of Arg1:T87 Arg2:T86	
+R20	occurs_in Arg1:T90 Arg2:T87	
+R21	risk_factor_of Arg1:T88 Arg2:T86	
+R22	occurs_in Arg1:T118 Arg2:T110	
+R26	risk_factor_of Arg1:T110 Arg2:T114	
+R23	risk_factor_of Arg1:T110 Arg2:T119	
+R13	occurs_in Arg1:T132 Arg2:T133	
+R14	risk_factor_of Arg1:T133 Arg2:T137	

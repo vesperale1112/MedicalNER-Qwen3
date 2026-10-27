@@ -1,0 +1,77 @@
+T1	disease 141 157	major depression
+T2	disease 162 185	social anxiety disorder
+T3	disease 214 239	Major depression disorder
+T4	disease 241 244	MDD
+T5	disease 250 273	social anxiety disorder
+T6	disease 275 278	SAD
+T7	physiology 468 470	PC
+T8	disease 714 717	MDD
+T9	disease 719 722	SAD
+T10	physiology 780 782	PC
+T11	disease 964 967	SAD
+T12	physiology 1003 1005	PC
+T13	disease 1024 1027	MDD
+T14	physiology 1042 1044	PC
+T15	disease 1095 1098	SAD
+T16	disease 1206 1209	MDD
+#1	AnnotatorNotes T3	C1269683
+#2	AnnotatorNotes T4	C1269683
+T17	method 121 137	ecological study
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+T18	disease 312 335	perseverative cognition
+T19	physiology 337 339	PC
+R4	characteristic_of Arg1:T18 Arg2:T5	
+R5	characteristic_of Arg1:T18 Arg2:T6	
+R8	characteristic_of Arg1:T18 Arg2:T4	
+R9	characteristic_of Arg1:T18 Arg2:T3	
+T21	signs 625 647	heart rate variability
+T22	signs 649 652	HRV
+R12	abbreviation_for Arg1:T22 Arg2:T21	
+T23	method 658 690	ecological momentary assessments
+T24	symptom 803 817	mood worsening
+T25	region 845 875	parasympathetic nervous system
+T26	region 888 893	vagus
+R13	associated_with Arg1:T10 Arg2:T24	
+R15	associated_with Arg1:T10 Arg2:T26	
+R16	characteristic_of Arg1:T12 Arg2:T11	
+T27	signs 1149 1152	HRV
+T28	physiology 1106 1108	PC
+R17	associated_with Arg1:T28 Arg2:T27	
+T29	disease 1236 1243	sadness
+T30	physiology 1251 1253	PC
+T32	physiology 1370 1372	PC
+T33	disease 1339 1346	anxiety
+#4	AnnotatorNotes T19	C0679047
+#5	AnnotatorNotes T23	C4277684
+R19	hyponym_of Arg1:T26 Arg2:T25	
+#6	AnnotatorNotes T25	C0030510
+#7	AnnotatorNotes T26	C0228767
+R20	characteristic_of Arg1:T29 Arg2:T16	
+#8	AnnotatorNotes T29	C3536794
+T31	disease 1571 1601	maladaptive emotion regulation
+T34	disease 551 580	psychopathological conditions
+T20	disease 93 116	perseverative cognition
+T35	Health_factors 728 731	sex
+T38	symptom 933 944	reduced HRV
+T39	physiology 906 925	sympathetic arousal
+T36	Health_factors 37 55	social interaction
+T40	Health_factors 494 513	social interactions
+R21	associated_with Arg1:T10 Arg2:T25	
+T37	Health_factors 1159 1187	negative social interactions
+T41	Health_factors 1072 1090	ongoing activities
+R18	associated_with Arg1:T14 Arg2:T41	
+T42	Health_factors 1299 1317	social interaction
+T43	Health_factors 1383 1404	positive interactions
+R22	characteristic_of Arg1:T33 Arg2:T16	
+T44	Health_factors 1502 1520	social interaction
+R3	abbreviation_for Arg1:T19 Arg2:T18	
+R6	characteristic_of Arg1:T19 Arg2:T3	
+R7	characteristic_of Arg1:T19 Arg2:T4	
+R10	characteristic_of Arg1:T19 Arg2:T5	
+R11	characteristic_of Arg1:T19 Arg2:T6	
+R23	associated_with Arg1:T25 Arg2:T39	
+R24	associated_with Arg1:T26 Arg2:T39	
+T45	Health_factors 346 375	dysfunctional coping strategy
+R25	hyponym_of Arg1:T19 Arg2:T45	
+R26	hyponym_of Arg1:T18 Arg2:T45	

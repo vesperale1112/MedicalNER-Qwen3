@@ -1,0 +1,7 @@
+T2	method 129 164	interactive Web-based interventions
+T4	disease 192 202	depression
+T1	method 42 48	Google
+T3	method 50 55	Yahoo
+T5	method 61 65	Bing
+R1	treatment_for Arg1:T2 Arg2:T4	
+T6	Health_factors 92 101	reviewers

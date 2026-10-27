@@ -1,0 +1,37 @@
+T1	gene 0 23	Benzodiazepine receptor
+T2	disease 47 54	anxiety
+T3	drug 73 120	ethyl ester of beta-carboline-3-carboxylic acid
+T5	gene 145 169	benzodiazepine receptors
+T6	region 177 182	brain
+T7	drug 326 341	plasma cortisol
+T8	drug 347 361	catecholamines
+T10	signs 298 308	heart rate
+T13	signs 310 324	blood pressure
+T14	disease 232 257	acute behavioral syndrome
+T16	Health_factors 191 204	rhesus monkey
+T17	drug 390 405	benzodiazepines
+T19	drug 423 468	benzodiazepine receptor antagonist Ro 15-1788
+T22	gene 474 497	benzodiazepine receptor
+T23	drug 635 679	beta-carboline-3-carboxylic acid ethyl ester
+T25	drug 590 601	antagonists
+T26	drug 581 588	agonist
+T28	gene 712 735	benzodiazepine receptor
+T29	disease 806 813	anxiety
+T30	drug 846 878	beta-carboxylic acid ethyl ester
+T31	disease 952 959	anxiety
+T32	symptom 760 802	affective and physiological manifestations
+T33	method 930 942	animal model
+T34	Health_factors 59 67	primates
+R1	associated_with Arg1:T2 Arg2:T34	
+R2	associated_with Arg1:T1 Arg2:T2	
+R3	located_in Arg1:T5 Arg2:T6	
+R4	characteristic_of Arg1:T10 Arg2:T14	
+R5	characteristic_of Arg1:T13 Arg2:T14	
+R6	characteristic_of Arg1:T7 Arg2:T14	
+R7	characteristic_of Arg1:T8 Arg2:T14	
+R9	associated_with Arg1:T28 Arg2:T32	
+T4	Health_factors 882 889	monkeys
+T9	Health_factors 946 951	human
+R10	occurs_in Arg1:T32 Arg2:T29	
+T11	drug 606 626	'active' antagonists
+R8	hyponym_of Arg1:T23 Arg2:T11	

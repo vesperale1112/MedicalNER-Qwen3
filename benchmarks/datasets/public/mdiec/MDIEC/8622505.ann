@@ -1,0 +1,53 @@
+T0	disease 20 33	schizophrenia
+T2	gene 64 105	5-hydroxytryptamine type 2a-receptor gene
+T6	method 107 162	European Multicentre Association Study of Schizophrenia
+T7	disease 212 225	schizophrenia
+T9	gene 269 314	5-hydroxytryptamine type 2a (5-HT2a) receptor
+T10	disease 412 425	schizophrenic
+T11	gene 260 264	gene
+T12	gene 352 360	allele 2
+T14	disease 473 486	schizophrenia
+T15	gene 511 531	5-HT2a-receptor gene
+T16	method 543 560	multicentre study
+T21	disease 719 732	schizophrenia
+T22	disease 736 760	schizoaffective disorder
+T23	region 806 817	lymphocytes
+T24	gene 762 787	High-molecular-weight DNA
+T25	gene 916 936	5-HT2a-receptor gene
+T26	gene 890 908	sequence variation
+T27	method 841 869	restriction enzyme digestion
+T28	method 819 836	PCR amplification
+T29	gene 938 947	Genotypes
+T30	disease 1040 1053	schizophrenia
+T31	gene 1058 1066	allele 2
+T33	disease 1151 1164	schizophrenia
+T34	gene 1169 1177	allele 2
+T35	method 1186 1196	odds ratio
+T37	disease 1359 1372	schizophrenia
+T38	gene 1338 1355	1-2/2-2 genotypes
+T39	method 1392 1405	relative risk
+T40	method 1432 1453	attributable fraction
+T43	disease 1608 1621	schizophrenia
+T44	disease 1773 1786	schizophrenic
+T45	gene 1623 1631	Allele 2
+T46	physiology 1713 1732	nearby polymorphism
+T3	method 164 169	EMASS
+R1	abbreviation_for Arg1:T3 Arg2:T6	
+T4	physiology 234 252	T102C polymorphism
+T5	physiology 38 56	T102C polymorphism
+R2	associated_with Arg1:T0 Arg2:T5	
+R3	associated_with Arg1:T7 Arg2:T4	
+T1	gene 369 381	polymorphism
+R4	characteristic_of Arg1:T1 Arg2:T10	
+T8	Health_factors 621 626	white
+T13	disease 627 640	schizophrenic
+T17	method 981 995	Woolf's method
+T18	gene 1075 1087	2/2 genotype
+R5	associated_with Arg1:T33 Arg2:T34	
+T19	method 1209 1211	Cl
+R6	characteristic_of Arg1:T38 Arg2:T37	
+T20	gene 1519 1534	5-HT2a-receptor
+T32	gene 1541 1572	locus in linkage disequilibrium
+R7	risk_factor_of Arg1:T20 Arg2:T43	
+R8	risk_factor_of Arg1:T32 Arg2:T43	
+R9	associated_with Arg1:T46 Arg2:T44	

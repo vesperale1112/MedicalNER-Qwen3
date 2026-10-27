@@ -1,0 +1,23 @@
+T1	drug 29 90	(E)-4-hydroxy-N'-(4-(phenylethynyl)benzylidene)benzohydrazide
+T49	disease 111 135	depression-like behavior
+T50	method 139 169	young female LRRK2-G2019S mice
+T51	physiology 183 195	neurogenesis
+T52	region 203 214	hippocampus
+T53	region 390 403	dentate gyrus
+T54	region 405 407	DG
+T55	region 259 307	bromodeoxyuridine/neuronal nuclei-positive cells
+T56	region 343 370	doublecortin-positive cells
+T2	drug 2 27	synthetic ERRgamma ligand
+T3	drug 92 96	HPB2
+R1	abbreviation_for Arg1:T3 Arg2:T1	
+R4	treatment_for Arg1:T1 Arg2:T49	
+R5	treatment_for Arg1:T3 Arg2:T49	
+R6	associated_with Arg1:T1 Arg2:T51	
+R7	associated_with Arg1:T3 Arg2:T51	
+R10	abbreviation_for Arg1:T54 Arg2:T53	
+T4	region 378 403	hippocampal dentate gyrus
+R11	occurs_in Arg1:T49 Arg2:T50	
+R8	located_in Arg1:T51 Arg2:T52	
+R9	located_in Arg1:T56 Arg2:T4	
+R2	hyponym_of Arg1:T1 Arg2:T2	
+R3	hyponym_of Arg1:T3 Arg2:T2	

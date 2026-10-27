@@ -1,0 +1,133 @@
+T1	disease 171 200	moderate or severe depression
+T2	disease 495 505	depression
+T3	disease 510 517	anxiety
+T4	method 535 561	Counselling for depression
+T5	disease 947 977	moderate and severe depression
+T7	disease 1328 1348	personality disorder
+T8	disease 1350 1366	bipolar disorder
+T9	disease 1371 1384	schizophrenia
+T10	disease 1386 1412	drug or alcohol dependency
+T11	signs 1969 1988	Depression severity
+T12	disease 4984 5008	depression-related event
+T13	disease 4725 4750	depression-related events
+T15	method 0 35	Person-centred experiential therapy
+T16	method 43 72	cognitive behavioural therapy
+T17	method 90 149	English Improving Access to Psychological Therapies service
+T18	method 216 260	pragmatic, randomised, non-inferiority trial
+T19	method 324 367	Improving Access to Psychological Therapies
+T20	method 369 373	IAPT
+R2	abbreviation_for Arg1:T20 Arg2:T19	
+T21	method 438 467	cognitive behavioural therapy
+T22	method 469 472	CBT
+R3	abbreviation_for Arg1:T22 Arg2:T21	
+T23	method 521 533	primary care
+R5	treatment_for Arg1:T22 Arg2:T2	
+R6	treatment_for Arg1:T21 Arg2:T3	
+R7	treatment_for Arg1:T22 Arg2:T3	
+T24	method 572 607	person-centred experiential therapy
+T25	method 609 613	PCET
+R8	abbreviation_for Arg1:T25 Arg2:T24	
+R9	hyponym_of Arg1:T4 Arg2:T24	
+R10	hyponym_of Arg1:T4 Arg2:T25	
+T26	method 645 666	IAPT-approved therapy
+T27	method 714 742	randomised controlled trials
+T28	method 744 748	RCTs
+R11	abbreviation_for Arg1:T28 Arg2:T27	
+T29	method 880 884	PCET
+T30	method 923 926	CBT
+T31	method 989 1001	IAPT service
+T32	method 1017 1061	pragmatic, randomised, non-inferiority trial
+T33	method 1078 1100	Sheffield IAPT service
+T34	method 1204 1239	Clinical Interview Schedule-Revised
+T35	disease 1285 1302	organic condition
+T36	disease 1457 1485	long-term physical condition
+T37	method 1664 1668	PCET
+T38	method 1672 1675	CBT
+T39	Health_factors 1881 1897	PCET counsellors
+T40	Health_factors 1902 1916	CBT therapists
+T41	method 1940 1967	IAPT service delivery model
+T42	method 2024 2054	Patient Health Questionnaire-9
+T43	method 2056 2061	PHQ-9
+R14	abbreviation_for Arg1:T43 Arg2:T42	
+R15	help_diagnose Arg1:T42 Arg2:T11	
+R16	help_diagnose Arg1:T43 Arg2:T11	
+T44	method 2128 2133	PHQ-9
+T46	method 2610 2615	PHQ-9
+T47	method 2949 2971	Sheffield IAPT service
+T48	disease 2983 3005	mental health problems
+T50	method 3134 3138	PCET
+T51	method 3150 3153	CBT
+T52	method 3170 3174	PCET
+T53	method 3339 3342	CBT
+T54	method 3512 3548	modified intention-to-treat analysis
+T55	method 3610 3614	PCET
+T56	method 3633 3636	CBT
+T57	method 3661 3697	modified intention-to-treat analysis
+T58	method 3737 3741	PCET
+T59	method 3760 3763	CBT
+T61	method 3845 3849	PCET
+T62	method 3868 3871	CBT
+T63	method 3912 3916	PCET
+T64	method 3937 3940	CBT
+T65	method 3984 3989	PHQ-9
+T66	method 4003 4005	SD
+T67	method 4019 4023	PCET
+T68	method 4054 4057	CBT
+T69	method 4101 4103	CI
+T70	method 4163 4165	SD
+T71	method 4179 4183	PCET
+T72	method 4214 4217	CBT
+T73	method 4235 4237	CI
+T74	method 4354 4359	PHQ-9
+T75	method 4379 4382	CBT
+T76	method 4394 4396	CI
+T77	method 4421 4423	CI
+T78	method 4521 4525	PCET
+T79	disease 4506 4513	suicide
+T80	method 4592 4595	CBT
+T83	method 5098 5121	psychological therapies
+T84	method 5129 5141	IAPT service
+T85	method 5177 5181	PCET
+T86	method 5185 5188	CBT
+T87	method 5276 5290	IAPT programme
+T88	method 5318 5341	psychological therapies
+T89	method 5462 5466	PCET
+T90	method 5519 5523	PCET
+T91	method 5545 5548	CBT
+R1	hyponym_of Arg1:T4 Arg2:T26	
+T92	disease 1443 1450	suicide
+T97	method 4778 4782	PCET
+T98	method 4801 4804	CBT
+T99	method 4869 4873	PCET
+T100	method 4894 4897	CBT
+T101	method 4943 4947	PCET
+T94	method 4958 4977	inpatient treatment
+T49	method 3784 3805	per-protocol analysis
+T60	Health_factors 3210 3216	female
+T81	Health_factors 3378 3384	female
+T82	Health_factors 3236 3240	male
+T95	Health_factors 3404 3408	male
+T106	Health_factors 1139 1143	aged
+T112	Health_factors 2354 2377	per-protocol population
+T117	Health_factors 3261 3266	White
+T118	Health_factors 3281 3290	non-White
+T120	Health_factors 3429 3434	White
+T121	Health_factors 3449 3458	non-White
+T125	Health_factors 3948 3977	intention-to-treat population
+T126	Health_factors 4131 4154	per-protocol population
+T127	Health_factors 4641 4650	clinician
+T105	disease 4497 4502	death
+T107	Health_factors 2248 2277	intention-to-treat population
+T45	Health_factors 2738 2760	serious adverse events
+R4	treatment_for Arg1:T21 Arg2:T2	
+R12	treatment_for Arg1:T15 Arg2:T1	
+R13	treatment_for Arg1:T16 Arg2:T1	
+T14	Health_factors 1156 1161	older
+T93	Health_factors 3316 3325	ethnicity
+T96	Health_factors 3484 3493	ethnicity
+T102	disease 4485 4491	deaths
+T103	disease 4547 4584	chronic obstructive pulmonary disease
+R17	help_diagnose Arg1:T34 Arg2:T6	
+T6	disease 1167 1196	moderate or severe depression
+T104	method 2699 2722	service risk procedures
+R18	risk_factor_of Arg1:T10 Arg2:T92	

@@ -1,0 +1,1 @@
+RESULTS: Random-effects meta-analysis of 17 prospective studies involving 206 641 participants and 6086 cases demonstrated a significant positive association between depression and subsequent risk of stroke (pooled relative risk, 1.34; 95% confidence interval, 1.17-1.54) after adjustment for potential confounding factors.

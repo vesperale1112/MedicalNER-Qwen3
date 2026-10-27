@@ -1,0 +1,24 @@
+T1	disease 24 34	depressive
+T2	disease 53 69	major depression
+T3	disease 71 73	UP
+T4	disease 85 104	bipolar disorder II
+T5	disease 106 111	BP II
+T7	disease 126 144	bipolar disorder I
+T9	disease 146 150	BP I
+T10	method 165 180	DSM-IV criteria
+T12	method 226 239	bilateral ECT
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	abbreviation_for Arg1:T5 Arg2:T4	
+R3	abbreviation_for Arg1:T9 Arg2:T7	
+R4	help_diagnose Arg1:T10 Arg2:T2	
+R5	help_diagnose Arg1:T10 Arg2:T3	
+R6	help_diagnose Arg1:T10 Arg2:T4	
+R7	help_diagnose Arg1:T10 Arg2:T5	
+R8	help_diagnose Arg1:T10 Arg2:T7	
+R9	help_diagnose Arg1:T10 Arg2:T9	
+R10	treatment_for Arg1:T12 Arg2:T9	
+R11	treatment_for Arg1:T12 Arg2:T7	
+R12	treatment_for Arg1:T12 Arg2:T5	
+R13	treatment_for Arg1:T12 Arg2:T4	
+R14	treatment_for Arg1:T12 Arg2:T3	
+R15	treatment_for Arg1:T12 Arg2:T2	

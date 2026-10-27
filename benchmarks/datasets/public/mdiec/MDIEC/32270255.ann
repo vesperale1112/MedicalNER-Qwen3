@@ -1,0 +1,71 @@
+T1	disease 0 25	Major depressive disorder
+T2	disease 30 54	cardiometabolic diseases
+T3	disease 189 214	major depressive disorder
+T4	disease 216 219	MDD
+T5	disease 225 249	cardiometabolic diseases
+T6	disease 363 366	MDD
+T7	disease 372 387	type 2 diabetes
+T8	disease 389 412	coronary artery disease
+T9	disease 414 417	CAD
+T10	disease 423 436	heart failure
+T11	disease 498 501	MDD
+T12	disease 503 518	type 2 diabetes
+T13	disease 520 523	CAD
+T14	disease 528 541	heart failure
+T15	disease 674 677	MDD
+T16	disease 692 707	type 2 diabetes
+T17	disease 721 724	CAD
+T18	disease 741 754	heart failure
+T19	disease 963 966	MDD
+T20	disease 1001 1016	type 2 diabetes
+T21	disease 1021 1024	CAD
+T22	disease 1084 1099	type 2 diabetes
+T23	disease 1104 1107	CAD
+T24	disease 1244 1247	MDD
+T25	disease 1292 1295	MDD
+T26	disease 1300 1313	heart failure
+T27	disease 1411 1435	cardiometabolic diseases
+T28	disease 1439 1442	MDD
+T29	disease 1553 1556	MDD
+T30	disease 1588 1603	type 2 diabetes
+T31	disease 1608 1611	CAD
+T32	disease 1621 1624	MDD
+T33	disease 1648 1661	heart failure
+T34	method 58 101	bidirectional Mendelian randomisation study
+T35	method 120 141	Observational studies
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+R2	associated_with Arg1:T4 Arg2:T5	
+R3	associated_with Arg1:T3 Arg2:T5	
+T36	method 291 314	Mendelian randomisation
+T37	method 316 318	MR
+R4	abbreviation_for Arg1:T37 Arg2:T36	
+R5	abbreviation_for Arg1:T9 Arg2:T8	
+T38	method 577 608	genome-wide association studies
+T39	gene 665 669	SNPs
+T40	gene 683 687	SNPs
+T41	gene 712 716	SNPs
+T42	gene 732 736	SNPs
+T43	method 853 900	random-effects inverse-variance weighted method
+R6	associated_with Arg1:T19 Arg2:T20	
+R7	associated_with Arg1:T19 Arg2:T21	
+T44	method 1077 1080	ORs
+T45	method 1136 1138	CI
+T46	method 1179 1181	CI
+R8	associated_with Arg1:T25 Arg2:T26	
+T47	method 1315 1317	OR
+T48	method 1328 1330	CI
+T49	method 1455 1474	reverse MR analyses
+R9	risk_factor_of Arg1:T29 Arg2:T30	
+R10	risk_factor_of Arg1:T29 Arg2:T31	
+T50	method 1813 1818	GWASs
+T51	method 1828 1841	GWAS datasets
+T52	method 1843 1853	UK Biobank
+T53	method 1855 1862	23andMe
+T54	method 1867 1887	Psychiatric Genomics
+T55	method 1938 1945	DIAGRAM
+T56	method 1993 2010	CARDIoGRAMplusCD4
+T57	method 2040 2046	HERMES
+T58	method 802 832	genome-wide significance level
+T59	method 1032 1071	Bonferroni-corrected significance level
+T60	method 266 325	two-sample bidirectional Mendelian randomisation (MR) study
+T61	Health_factors 634 650	European-descent

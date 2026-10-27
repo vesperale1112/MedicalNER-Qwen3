@@ -1,0 +1,54 @@
+T0	gene 20 52	neuropeptide receptor gene VIPR2
+T1	disease 81 94	schizophrenia
+T3	disease 171 184	schizophrenia
+T4	disease 195 221	neuropsychiatric disorders
+T5	method 158 167	aetiology
+T6	gene 96 121	Rare copy number variants
+T7	disease 244 257	schizophrenia
+T9	gene 554 559	genes
+T10	physiology 564 590	neurobiological mechanisms
+T12	disease 768 781	schizophrenia
+T13	gene 745 762	chromosome 7q36.3
+T15	method 636 668	large two-stage genome-wide scan
+T17	gene 1054 1103	vasoactive intestinal peptide receptor gene VIPR2
+T18	physiology 1105 1124	VIPR2 transcription
+T19	physiology 1129 1150	cyclic-AMP signalling
+T20	region 1192 1203	lymphocytes
+T22	physiology 1285 1325	vasoactive intestinal peptide signalling
+T23	disease 1349 1362	schizophrenia
+T24	gene 1380 1394	VPAC2 receptor
+T25	disease 1333 1345	pathogenesis
+T26	drug 1444 1463	antipsychotic drugs
+R1	risk_factor_of Arg1:T0 Arg2:T1	
+T2	gene 123 127	CNVs
+R2	abbreviation_for Arg1:T2 Arg2:T6	
+R3	associated_with Arg1:T6 Arg2:T3	
+R4	associated_with Arg1:T2 Arg2:T3	
+R5	associated_with Arg1:T6 Arg2:T4	
+R6	associated_with Arg1:T2 Arg2:T4	
+T8	gene 296 300	CNVs
+T29	gene 312 316	loci
+R7	located_in Arg1:T8 Arg2:T29	
+R8	risk_factor_of Arg1:T8 Arg2:T7	
+T31	gene 328 352	microdeletions at 1q21.1
+T32	gene 363 367	3q29
+T33	gene 378 385	15q13.3
+T34	gene 399 406	22q11.2
+R9	risk_factor_of Arg1:T31 Arg2:T7	
+R10	risk_factor_of Arg1:T32 Arg2:T7	
+R11	risk_factor_of Arg1:T33 Arg2:T7	
+R12	risk_factor_of Arg1:T34 Arg2:T7	
+T30	gene 420 447	microduplication at 16p11.2
+R13	risk_factor_of Arg1:T30 Arg2:T7	
+T35	gene 473 477	CNVs
+T11	gene 672 681	rare CNVs
+R14	associated_with Arg1:T13 Arg2:T12	
+R15	characteristic_of Arg1:T18 Arg2:T14	
+R16	characteristic_of Arg1:T19 Arg2:T14	
+T14	gene 1223 1250	microduplications of 7q36.3
+R17	located_in Arg1:T18 Arg2:T20	
+R18	located_in Arg1:T19 Arg2:T20	
+R19	associated_with Arg1:T22 Arg2:T23	
+T27	gene 724 735	copy number
+T28	gene 783 800	Microduplications
+R20	associated_with Arg1:T24 Arg2:T26	

@@ -1,0 +1,63 @@
+T0	disease 60 67	anxiety
+T1	disease 73 83	depression
+T2	disease 41 58	physical symptoms
+T3	method 24 39	prostate biopsy
+T5	disease 222 229	anxiety
+T6	disease 234 244	depression
+T7	disease 185 217	physical biopsy-related symptoms
+T8	method 136 151	prostate biopsy
+T10	Health_factors 299 302	men
+T11	method 322 369	Prostate Testing for Cancer and Treatment trial
+T12	method 424 438	questionnaires
+T14	method 502 531	Prostate Biopsy Effects study
+T15	disease 449 481	physical and psychological harms
+T16	method 397 412	prostate biopsy
+T17	method 271 289	prospective cohort
+T19	method 577 614	Hospital Anxiety and Depression Scale
+T20	disease 669 692	biopsy-related symptoms
+T21	Health_factors 533 553	Psychological impact
+T22	Health_factors 798 801	men
+T23	method 819 833	questionnaires
+T25	disease 1023 1030	anxiety
+T26	disease 1035 1045	depression
+T27	Health_factors 927 930	men
+T29	disease 943 966	biopsy-related symptoms
+T30	disease 1352 1361	hematuria
+T31	disease 1374 1386	hematochezia
+T32	Health_factors 1091 1094	men
+T33	disease 1141 1148	anxiety
+T34	disease 1314 1318	pain
+T35	disease 1252 1275	nonproblematic symptoms
+T36	disease 1183 1218	problematic biopsy-related symptoms
+T37	disease 1429 1436	Anxiety
+T39	disease 1612 1618	cancer
+T40	disease 1511 1518	anxiety
+T41	Health_factors 1589 1592	men
+T46	disease 1697 1704	anxiety
+T47	disease 1643 1674	Problematic postbiopsy symptoms
+T48	method 1880 1913	prostate-specific antigen testing
+T49	Health_factors 1770 1773	Men
+T50	Health_factors 1778 1785	doctors
+T51	disease 1830 1835	harms
+R1	help_diagnose Arg1:T12 Arg2:T15	
+T4	method 488 494	biopsy
+T9	Health_factors 0 20	Psychological impact
+T13	Health_factors 112 132	psychological impact
+R2	help_diagnose Arg1:T19 Arg2:T21	
+T18	method 696 702	biopsy
+T43	method 755 761	biopsy
+T24	method 837 843	biopsy
+R3	risk_factor_of Arg1:T36 Arg2:T33	
+T28	disease 1331 1338	shivers
+T44	disease 1403 1416	hemoejaculate
+R4	risk_factor_of Arg1:T34 Arg2:T33	
+R5	risk_factor_of Arg1:T28 Arg2:T33	
+R6	risk_factor_of Arg1:T30 Arg2:T33	
+R7	risk_factor_of Arg1:T31 Arg2:T33	
+R8	risk_factor_of Arg1:T44 Arg2:T33	
+R14	risk_factor_of Arg1:T47 Arg2:T46	
+T38	disease 1720 1728	distress
+T42	disease 1753 1768	prostate cancer
+T45	method 1839 1845	biopsy
+T52	method 1116 1122	biopsy
+R9	associated_with Arg1:T38 Arg2:T42	

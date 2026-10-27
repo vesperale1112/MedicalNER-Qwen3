@@ -1,0 +1,76 @@
+T0	disease 86 110	autism spectrum disorder
+T2	Health_factors 72 80	children
+T3	method 114 139	randomized clinical trial
+T4	symptom 49 68	behavioral problems
+T5	method 29 45	parent education
+T6	method 10 25	parent training
+T7	disease 199 223	autism spectrum disorder
+T9	Health_factors 185 193	children
+T10	symptom 152 171	Disruptive behavior
+T11	method 225 249	Behavioral interventions
+T14	method 319 348	large-scale randomized trials
+T15	symptom 268 287	disruptive behavior
+T16	Health_factors 410 418	children
+T17	disease 424 448	autism spectrum disorder
+T19	symptom 453 472	disruptive behavior
+T20	method 390 405	parent training
+T21	method 523 539	randomized trial
+T25	method 575 591	parent education
+T26	method 549 564	parent training
+T27	disease 804 828	autism spectrum disorder
+T28	Health_factors 759 767	children
+T29	Health_factors 773 781	children
+T30	Health_factors 783 787	aged
+T32	Health_factors 882 887	white
+T33	Health_factors 893 897	male
+T34	symptom 833 853	disruptive behaviors
+T35	method 943 956	INTERVENTIONS
+T38	symptom 1080 1099	disruptive behavior
+T39	Health_factors 1028 1039	home visits
+T41	method 957 972	Parent training
+T42	disease 1178 1184	autism
+T45	method 1192 1222	behavior management strategies
+T46	Health_factors 1139 1149	home visit
+T48	method 1101 1117	Parent education
+T50	Health_factors 1253 1260	Parents
+T52	method 1329 1382	the Aberrant Behavior Checklist-Irritability subscale
+T55	method 1405 1459	Home Situations Questionnaire-Autism Spectrum Disorder
+T58	symptom 1267 1286	disruptive behavior
+T62	Health_factors 1586 1595	clinician
+T65	drug 1689 1694	range
+T68	method 1787 1836	Aberrant Behavior Checklist-Irritability subscale
+T71	method 1976 1978	CI
+T72	method 2002 2026	standardized effect size
+T73	method 1915 1931	parent education
+T74	method 1855 1870	parent training
+T76	method 2038 2092	Home Situations Questionnaire-Autism Spectrum Disorder
+T78	method 2206 2208	CI
+T79	method 2147 2163	parent education
+T82	method 2479 2495	parent education
+T83	method 2450 2465	parent training
+T84	method 2390 2434	Clinical Global Impression-Improvement scale
+T85	Health_factors 2538 2546	children
+T86	disease 2552 2576	autism spectrum disorder
+T90	symptom 2658 2677	disruptive behavior
+T91	method 2628 2644	parent education
+R1	occurs_in Arg1:T4 Arg2:T2	
+R2	occurs_in Arg1:T2 Arg2:T0	
+R3	associated_with Arg1:T10 Arg2:T7	
+R4	occurs_in Arg1:T9 Arg2:T7	
+R5	treatment_for Arg1:T11 Arg2:T15	
+R6	occurs_in Arg1:T16 Arg2:T17	
+R7	occurs_in Arg1:T16 Arg2:T19	
+R8	occurs_in Arg1:T29 Arg2:T27	
+R9	occurs_in Arg1:T29 Arg2:T34	
+T1	symptom 1291 1304	noncompliance
+R10	help_diagnose Arg1:T52 Arg2:T58	
+R11	help_diagnose Arg1:T52 Arg2:T1	
+R12	help_diagnose Arg1:T55 Arg2:T58	
+R13	help_diagnose Arg1:T55 Arg2:T1	
+T8	method 1636 1687	Improvement scale of the Clinical Global Impression
+T12	method 1948 1964	treatment effect
+T13	method 2178 2194	treatment effect
+T18	method 2232 2256	standardized effect size
+R14	occurs_in Arg1:T85 Arg2:T86	
+T22	method 2588 2611	parent training program
+R15	treatment_for Arg1:T22 Arg2:T90	

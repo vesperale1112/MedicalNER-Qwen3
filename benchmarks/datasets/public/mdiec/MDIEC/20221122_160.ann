@@ -1,0 +1,11 @@
+T1	physiology 26 61	prenatal maternal immune activation
+T2	physiology 76 93	HPA axis activity
+T3	disease 95 133	anxiety- and depression-like behaviors
+T5	disease 331 357	neuropsychiatric disorders
+R1	associated_with Arg1:T1 Arg2:T2	
+R2	associated_with Arg1:T1 Arg2:T3	
+T6	Health_factors 176 185	offspring
+R3	occurs_in Arg1:T2 Arg2:T6	
+R4	occurs_in Arg1:T3 Arg2:T6	
+T4	Health_factors 361 367	humans
+R5	occurs_in Arg1:T5 Arg2:T4	

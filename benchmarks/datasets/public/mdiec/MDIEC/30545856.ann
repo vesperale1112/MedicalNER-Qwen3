@@ -1,0 +1,43 @@
+T1	disease 50 53	ASD
+T2	disease 55 68	schizophrenia
+T3	disease 74 90	bipolar disorder
+T4	disease 114 133	psychiatric disease
+T6	region 390 395	brain
+T7	disease 431 455	autism spectrum disorder
+T8	disease 457 460	ASD
+T9	disease 463 476	schizophrenia
+T10	disease 482 498	bipolar disorder
+T16	method 241 266	comprehensive assessments
+T17	region 310 316	brains
+T21	gene 900 907	genetic
+T23	disease 1135 1162	major psychiatric disorders
+T26	method 1102 1121	molecular pathology
+T27	physiology 1021 1032	cis effects
+T28	gene 989 1001	disease loci
+T29	method 938 974	transcriptome-wide association study
+T30	symptom 722 759	disease-specific neuronal alterations
+T31	method 692 713	Coexpression networks
+T36	method 372 386	RNA sequencing
+T37	gene 358 367	genotypes
+T38	region 142 160	regulatory regions
+T39	gene 97 109	genetic risk
+T40	gene 0 46	Transcriptome-wide isoform-level dysregulation
+R1	located_in Arg1:T39 Arg2:T38	
+T15	physiology 174 198	pathogenic dysregulation
+T41	physiology 202 230	gene expression and splicing
+T5	gene 270 297	transcriptomic organization
+R2	abbreviation_for Arg1:T8 Arg2:T7	
+T42	gene 542 555	transcriptome
+T18	physiology 578 586	splicing
+T11	region 772 782	microglial
+T12	region 784 793	astrocyte
+T19	physiology 799 818	interferon-response
+T20	physiology 860 884	neural-immune mechanisms
+T32	gene 912 919	genomic
+T22	physiology 1036 1052	brain expression
+R3	associated_with Arg1:T28 Arg2:T27	
+R4	associated_with Arg1:T28 Arg2:T22	
+T33	method 1059 1094	transcriptome-wide characterization
+R5	occurs_in Arg1:T40 Arg2:T1	
+R6	occurs_in Arg1:T40 Arg2:T2	
+R7	occurs_in Arg1:T40 Arg2:T3	

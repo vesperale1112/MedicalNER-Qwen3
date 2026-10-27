@@ -1,0 +1,46 @@
+T1	gene 24 47	neuron specific enolase
+T2	gene 49 52	NSE
+T4	disease 103 119	bipolar disorder
+T5	disease 180 196	major depression
+T6	disease 201 217	bipolar disorder
+T7	gene 323 326	NSE
+T8	disease 350 365	neuronal damage
+T9	disease 391 416	major depressive disorder
+T10	disease 421 437	bipolar disorder
+T11	disease 760 785	major depression disorder
+T12	disease 807 823	bipolar disorder
+T13	gene 825 844	Serum levels of NSE
+T14	disease 884 909	major depression disorder
+T15	disease 935 951	bipolar disorder
+T17	disease 1109 1145	drug-naive major depression disorder
+T18	disease 1150 1166	bipolar disorder
+T3	disease 82 98	major depression
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+#1	AnnotatorNotes T3	C1269683
+#2	AnnotatorNotes T4	C0005586
+T19	gene 288 321	protein neuronal specific enolase
+R2	abbreviation_for Arg1:T7 Arg2:T19	
+T20	method 588 637	Mini-International Neuropsychiatric Interview 5.0
+#3	AnnotatorNotes T20	C4505426
+T21	gene 129 147	biological factors
+R4	associated_with Arg1:T21 Arg2:T5	
+R5	associated_with Arg1:T21 Arg2:T6	
+T22	method 469 487	case-control study
+T23	method 500 539	cross-sectional population-based survey
+T24	gene 1049 1085	peripheral neuronal specific enolase
+T25	method 725 741	healthy controls
+T26	gene 8 47	serum levels of neuron specific enolase
+T27	method 541 563	Psychopathology screen
+R7	characteristic_of Arg1:T13 Arg2:T14	
+R8	characteristic_of Arg1:T13 Arg2:T15	
+R9	characteristic_of Arg1:T24 Arg2:T17	
+R10	characteristic_of Arg1:T24 Arg2:T18	
+T32	region 642 647	blood
+T16	gene 263 321	peripheral levels of the protein neuronal specific enolase
+T29	Health_factors 680 692	young adults
+R3	characteristic_of Arg1:T16 Arg2:T8	
+R6	characteristic_of Arg1:T26 Arg2:T4	
+T28	Health_factors 57 76	drug-naive subjects
+R11	characteristic_of Arg1:T26 Arg2:T3	
+R12	occurs_in Arg1:T28 Arg2:T3	
+R13	occurs_in Arg1:T28 Arg2:T4	

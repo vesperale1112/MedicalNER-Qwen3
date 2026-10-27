@@ -1,0 +1,40 @@
+T1	disease 16 35	maternal depression
+T2	disease 113 132	Maternal depression
+T3	disease 136 168	non-psychotic depressive episode
+T4	disease 275 294	Maternal depression
+T5	disease 409 453	psychological and developmental disturbances
+T6	disease 522 541	maternal depression
+T7	disease 716 736	perinatal depression
+T8	disease 899 919	perinatal depression
+T9	disease 1268 1288	perinatal depression
+T10	disease 1442 1461	maternal depression
+T11	method 0 12	Epidemiology
+T14	Health_factors 73 111	low-income and middle-income countries
+T18	Health_factors 296 306	antepartum
+T21	Health_factors 381 397	adverse outcomes
+T22	Health_factors 457 464	infants
+T23	Health_factors 466 474	children
+T24	Health_factors 480 491	adolescents
+T25	Health_factors 545 583	low-income and middle-income countries
+T26	method 652 673	systematically review
+T27	method 700 712	epidemiology
+T28	Health_factors 749 783	antepartum and post-partum periods
+T29	Health_factors 791 796	women
+T30	Health_factors 809 847	low-income and middle-income countries
+T35	Health_factors 1215 1251	infant and childhood health outcomes
+T36	Health_factors 1465 1503	low-income and middle-income countries
+T37	Health_factors 925 954	infant and childhood outcomes
+T38	physiology 342 376	negative health-related behaviours
+T39	disease 232 273	pregnancy-related morbidity and mortality
+T40	Health_factors 55 69	child outcomes
+R1	hyponym_of Arg1:T2 Arg2:T3	
+R2	associated_with Arg1:T2 Arg2:T39	
+T12	Health_factors 310 321	post partum
+R3	associated_with Arg1:T4 Arg2:T38	
+R4	associated_with Arg1:T4 Arg2:T21	
+R5	hyponym_of Arg1:T5 Arg2:T21	
+R6	occurs_in Arg1:T5 Arg2:T22	
+R7	occurs_in Arg1:T5 Arg2:T23	
+R8	occurs_in Arg1:T5 Arg2:T24	
+R9	associated_with Arg1:T8 Arg2:T37	
+R10	associated_with Arg1:T35 Arg2:T9	

@@ -1,0 +1,83 @@
+T0	disease 79 102	Substance Use Disorders
+T1	disease 107 119	Chronic Pain
+T6	Health_factors 68 73	Women
+T7	method 123 148	Randomized Clinical Trial
+T8	method 14 55	Psychosocial Pain Management Intervention
+T9	disease 161 173	Chronic pain
+T10	disease 198 221	substance use disorders
+T11	disease 223 227	SUDs
+T14	Health_factors 249 276	addiction treatment outcome
+T2	Health_factors 60 63	Men
+R1	occurs_in Arg1:T2 Arg2:T0	
+R2	occurs_in Arg1:T2 Arg2:T1	
+R3	occurs_in Arg1:T6 Arg2:T0	
+R4	occurs_in Arg1:T6 Arg2:T1	
+R5	abbreviation_for Arg1:T11 Arg2:T10	
+R6	associated_with Arg1:T9 Arg2:T10	
+R7	associated_with Arg1:T9 Arg2:T11	
+R8	associated_with Arg1:T9 Arg2:T14	
+T3	method 319 369	integrated behavioral pain management intervention
+T4	method 370 412	(Improving Pain During Addiction Treatment
+T5	method 414 419	ImPAT
+R9	abbreviation_for Arg1:T5 Arg2:T4	
+T12	Health_factors 426 429	men
+T13	Health_factors 434 439	women
+T15	disease 445 449	SUDs
+R10	occurs_in Arg1:T12 Arg2:T15	
+R11	occurs_in Arg1:T13 Arg2:T15	
+T16	disease 459 463	pain
+T17	physiology 465 476	functioning
+T18	Health_factors 482 494	substance us
+T19	method 541 566	randomized clinical trial
+T20	method 582 587	ImPAT
+T21	method 623 658	supportive psychoeducational contro
+T22	method 661 664	SPC
+R12	abbreviation_for Arg1:T22 Arg2:T21	
+T23	Health_factors 680 686	adults
+T24	disease 692 696	pain
+R13	occurs_in Arg1:T23 Arg2:T24	
+T25	method 769 778	follow-up
+T26	method 801 819	ImPAT intervention
+T27	symptom 840 864	higher tolerance of pain
+T28	Health_factors 871 874	men
+R14	occurs_in Arg1:T27 Arg2:T28	
+R15	associated_with Arg1:T26 Arg2:T27	
+T29	method 912 914	CI
+T30	method 710 749	large residential SUD treatment program
+T31	method 938 945	Cohen d
+T32	method 981 983	CI
+T33	method 1007 1014	Cohen d
+T34	Health_factors 1035 1040	Women
+T35	method 1055 1073	ImPAT intervention
+T36	disease 1101 1115	pain intensity
+R16	treatment_for Arg1:T35 Arg2:T36	
+T37	Health_factors 1143 1148	women
+T38	method 1163 1166	SPC
+T39	disease 1204 1218	pain intensity
+R17	risk_factor_of Arg1:T38 Arg2:T39	
+T40	disease 1239 1243	pain
+T41	method 1251 1256	ImPAT
+T42	method 1296 1298	CI
+T43	method 1322 1329	Cohen d
+T44	method 1389 1394	ImPAT
+T45	method 1399 1402	SPC
+T46	Health_factors 1417 1436	alcohol or drug use
+T47	method 1466 1492	Behavioral pain management
+T48	method 1522 1540	addiction treatmen
+T49	Health_factors 1634 1655	pain-related outcomes
+T50	symptom 1667 1681	pain tolerance
+T51	Health_factors 1685 1688	men
+T52	disease 1693 1707	pain intensity
+T53	Health_factors 1711 1716	women
+R18	occurs_in Arg1:T52 Arg2:T53	
+R19	occurs_in Arg1:T50 Arg2:T51	
+R20	hyponym_of Arg1:T50 Arg2:T49	
+R21	hyponym_of Arg1:T52 Arg2:T49	
+R22	treatment_for Arg1:T47 Arg2:T49	
+R23	treatment_for Arg1:T47 Arg2:T50	
+R24	treatment_for Arg1:T47 Arg2:T52	
+T54	Health_factors 1734 1764	substance use-related outcomes
+T55	method 1789 1807	treatment as usual
+T56	method 1827 1845	Treatment programs
+T57	method 1872 1909	psychosocial pain management services
+T58	method 1921 1948	standard addiction treatmen

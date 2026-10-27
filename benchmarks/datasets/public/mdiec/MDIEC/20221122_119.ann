@@ -1,0 +1,7 @@
+T2	disease 75 99	PD-associated depression
+T3	physiology 114 132	adult neurogenesis
+T4	physiology 137 156	BDNF/TrkB signaling
+T5	gene 32 40	ERRgamma
+R1	associated_with Arg1:T5 Arg2:T2	
+R3	associated_with Arg1:T5 Arg2:T3	
+R5	associated_with Arg1:T5 Arg2:T4	

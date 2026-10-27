@@ -1,0 +1,8 @@
+T0	disease 37 70	clozapine-resistant schizophrenia
+T2	disease 141 154	schizophrenia
+T3	Health_factors 212 227	quality of life
+T6	disease 274 307	clozapine-resistant schizophrenia
+T7	method 345 355	psychiatry
+T48	disease 72 100	Treatment-resistant symptoms
+R1	characteristic_of Arg1:T48 Arg2:T2	
+R2	associated_with Arg1:T48 Arg2:T3	

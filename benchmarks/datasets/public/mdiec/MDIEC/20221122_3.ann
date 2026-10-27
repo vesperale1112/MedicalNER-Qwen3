@@ -1,0 +1,19 @@
+T1	gene 39 60	small interfering RNA
+T3	gene 62 67	siRNA
+T4	region 76 93	prefrontal cortex
+T5	disease 101 125	depression-like behavior
+T6	Health_factors 137 169	decrease in exploratory behavior
+T7	Health_factors 215 245	decrease in social interaction
+T8	Health_factors 247 272	increased immobility time
+T9	Health_factors 287 295	swimming
+T11	disease 366 373	anxiety
+T12	disease 378 408	cognitive or motor dysfunction
+T13	method 4 35	MAGE-D1 knock-out and knockdown
+R1	abbreviation_for Arg1:T3 Arg2:T1	
+T2	Health_factors 323 353	decrease in sucrose preference
+R2	hyponym_of Arg1:T6 Arg2:T5	
+R3	hyponym_of Arg1:T7 Arg2:T5	
+R4	hyponym_of Arg1:T8 Arg2:T5	
+R5	hyponym_of Arg1:T2 Arg2:T5	
+R6	located_in Arg1:T3 Arg2:T4	
+R7	located_in Arg1:T1 Arg2:T4	

@@ -1,0 +1,9 @@
+T1	Health_factors 52 74	mental health care use
+T3	disease 113 123	depression
+T4	method 163 176	interventions
+T6	Health_factors 232 250	mental health care
+T7	method 12 21	Screening
+T2	Health_factors 81 86	women
+R1	associated_with Arg1:T7 Arg2:T1	
+R2	associated_with Arg1:T4 Arg2:T6	
+R3	occurs_in Arg1:T1 Arg2:T2	

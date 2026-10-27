@@ -1,0 +1,71 @@
+T1	disease 55 80	Major Depressive Disorder
+T2	disease 85 102	Anxiety Disorders
+T3	disease 268 293	major depression disorder
+T4	disease 295 298	MDD
+T5	disease 304 321	anxiety disorders
+T6	disease 323 326	ADs
+T10	disease 948 951	MDD
+T11	disease 955 958	ADs
+T12	disease 992 1050	abnormal 5-HT, NE, and DA receptors binding and regulation
+T14	disease 1192 1195	MDD
+T15	disease 1200 1203	ADs
+T16	symptom 1412 1473	altered 5-HT, NE and DA mono-amine neurotransmitter functions
+T18	disease 1482 1485	MDD
+T19	disease 1490 1493	ADs
+T20	drug 19 51	Mono-Aminergic Neurotransmitters
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+T25	method 644 657	Animal models
+T27	disease 696 746	disturbance of 5-HT, NE, and DA neurotransmissions
+T29	method 748 782	Postmortem and biochemical studies
+T32	method 960 980	Neuroimaging studies
+T36	gene 1106 1143	5-HT, NE, and DA neurons or receptors
+T37	drug 1153 1158	SSRIs
+T38	drug 1163 1168	SNRIs
+R12	treatment_for Arg1:T38 Arg2:T14	
+R13	treatment_for Arg1:T38 Arg2:T15	
+R14	treatment_for Arg1:T37 Arg2:T14	
+R15	treatment_for Arg1:T37 Arg2:T15	
+#1	AnnotatorNotes T20	C0815020
+#3	AnnotatorNotes T25	C0599779
+#5	AnnotatorNotes T37	C0360105
+#6	AnnotatorNotes T38	C1579361
+R3	associated_with Arg1:T20 Arg2:T1	
+R4	associated_with Arg1:T20 Arg2:T2	
+T41	physiology 911 915	mood
+R22	associated_with Arg1:T16 Arg2:T18	
+R26	associated_with Arg1:T16 Arg2:T19	
+T43	physiology 230 255	neurobiological processes
+T17	region 852 857	brain
+T44	physiology 484 513	aberrant signal transductions
+T46	symptom 333 354	physiological changes
+T47	disease 602 642	impaired intracellular signal processing
+T49	disease 366 404	abnormal signaling of 5-HT, NE, and DA
+T50	symptom 426 453	reduced presynaptic release
+T7	physiology 1221 1239	treatment response
+T23	disease 152 222	dysfunction of serotoninergic, noradrenergic, and dopaminergic systems
+R11	associated_with Arg1:T23 Arg2:T43	
+R16	associated_with Arg1:T23 Arg2:T3	
+R17	associated_with Arg1:T23 Arg2:T4	
+R18	associated_with Arg1:T23 Arg2:T5	
+R25	associated_with Arg1:T23 Arg2:T6	
+T22	drug 463 480	neurotransmitters
+T8	physiology 920 930	motivation
+T21	drug 1082 1093	Medications
+T24	symptom 794 848	altered concentrations of 5-HT, NE, and DA metabolites
+R33	associated_with Arg1:T24 Arg2:T41	
+R34	associated_with Arg1:T24 Arg2:T8	
+R35	occurs_in Arg1:T41 Arg2:T10	
+R42	occurs_in Arg1:T41 Arg2:T11	
+R43	occurs_in Arg1:T8 Arg2:T10	
+R44	occurs_in Arg1:T8 Arg2:T11	
+R36	hyponym_of Arg1:T37 Arg2:T21	
+R37	hyponym_of Arg1:T38 Arg2:T21	
+R38	treatment_for Arg1:T21 Arg2:T14	
+R39	treatment_for Arg1:T21 Arg2:T15	
+R5	risk_factor_of Arg1:T50 Arg2:T49	
+R9	risk_factor_of Arg1:T44 Arg2:T49	
+R10	associated_with Arg1:T50 Arg2:T47	
+R29	associated_with Arg1:T44 Arg2:T47	
+R6	located_in Arg1:T24 Arg2:T17	
+T9	symptom 544 594	alterations in regulation or function of receptors

@@ -1,0 +1,1 @@
+In the final model, 3 PD-specific variables (increased disease duration, more severe motor symptoms, the use of levodopa) and 6 nonspecific variables (female sex, history of anxiety and/or depression, family history of depression, worse functioning on activities of daily living, and worse cognitive status) were maintained and significantly associated with depression.

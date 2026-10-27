@@ -1,0 +1,36 @@
+T1	drug 0 10	Quetiapine
+T2	drug 205 215	Quetiapine
+T3	drug 12 20	Seroquel
+T4	drug 26 48	atypical antipsychotic
+T5	disease 161 171	depression
+T6	method 227 238	monotherapy
+T7	drug 262 269	lithium
+T8	drug 273 290	divalproex sodium
+T9	drug 292 312	valproate semisodium
+T10	disease 369 383	manic symptoms
+T11	Health_factors 387 392	adult
+T13	Health_factors 397 407	adolescent
+T14	disease 422 441	acute bipolar mania
+T15	Health_factors 470 476	adults
+T16	disease 95 108	schizophrenia
+T17	disease 145 156	acute mania
+R1	abbreviation_for Arg1:T3 Arg2:T1	
+R2	hyponym_of Arg1:T3 Arg2:T4	
+R3	hyponym_of Arg1:T1 Arg2:T4	
+R4	treatment_for Arg1:T3 Arg2:T16	
+R5	treatment_for Arg1:T1 Arg2:T16	
+R6	treatment_for Arg1:T1 Arg2:T17	
+R7	treatment_for Arg1:T1 Arg2:T5	
+T18	disease 188 204	bipolar disorder
+R9	treatment_for Arg1:T2 Arg2:T10	
+R10	treatment_for Arg1:T7 Arg2:T10	
+R11	treatment_for Arg1:T9 Arg2:T10	
+R12	treatment_for Arg1:T8 Arg2:T10	
+R13	occurs_in Arg1:T10 Arg2:T11	
+R14	occurs_in Arg1:T10 Arg2:T13	
+R15	treatment_for Arg1:T3 Arg2:T17	
+R16	treatment_for Arg1:T3 Arg2:T5	
+R18	associated_with Arg1:T5 Arg2:T18	
+R19	associated_with Arg1:T17 Arg2:T18	
+R8	occurs_in Arg1:T13 Arg2:T14	
+R17	occurs_in Arg1:T11 Arg2:T14	

@@ -1,0 +1,50 @@
+T0	disease 0 13	Schizophrenia
+T1	gene 24 67	complex variation of complement component 4
+T3	disease 69 82	Schizophrenia
+T4	disease 88 111	heritable brain illness
+T5	physiology 125 146	pathogenic mechanisms
+T7	disease 148 161	Schizophrenia
+T8	gene 242 274	major histocompatibility complex
+T9	gene 276 279	MHC
+T11	gene 296 301	genes
+T12	physiology 306 326	molecular mechanisms
+T14	gene 478 500	complement component 4
+T15	gene 502 504	C4
+T18	gene 442 470	structurally diverse alleles
+T22	gene 630 639	C4 allele
+T23	disease 657 670	schizophrenia
+T24	symptom 713 738	greater expression of C4A
+T25	gene 533 540	alleles
+T26	physiology 576 598	C4A and C4B expression
+T27	region 606 611	brain
+T30	gene 740 756	Human C4 protein
+T31	region 770 787	neuronal synapses
+T32	region 811 822	cell bodies
+T33	gene 833 835	C4
+T35	method 827 831	mice
+T36	physiology 845 864	synapse elimination
+T37	disease 971 984	schizophrenia
+T38	symptom 1010 1037	reduced numbers of synapses
+T39	disease 1072 1085	schizophrenia
+R1	hyponym_of Arg1:T3 Arg2:T4	
+R2	abbreviation_for Arg1:T9 Arg2:T8	
+R3	risk_factor_of Arg1:T1 Arg2:T0	
+T2	gene 225 286	variation in the major histocompatibility complex (MHC) locus
+R4	associated_with Arg1:T2 Arg2:T7	
+R5	abbreviation_for Arg1:T15 Arg2:T14	
+R6	located_in Arg1:T26 Arg2:T27	
+R7	associated_with Arg1:T22 Arg2:T23	
+T6	region 789 798	dendrites
+T10	region 800 805	axons
+R8	located_in Arg1:T30 Arg2:T31	
+R9	located_in Arg1:T30 Arg2:T6	
+R10	located_in Arg1:T30 Arg2:T10	
+R11	located_in Arg1:T30 Arg2:T32	
+R12	occurs_in Arg1:T35 Arg2:T33	
+R13	associated_with Arg1:T33 Arg2:T36	
+T13	physiology 872 893	postnatal development
+T16	physiology 919 948	excessive complement activity
+R14	associated_with Arg1:T16 Arg2:T37	
+T17	region 1045 1051	brains
+R15	located_in Arg1:T38 Arg2:T17	
+R16	characteristic_of Arg1:T38 Arg2:T39	

@@ -1,0 +1,6 @@
+T2	disease 56 64	diabetes
+T4	disease 31 41	depression
+T5	disease 103 113	depression
+R1	associated_with Arg1:T2 Arg2:T5	
+T1	Health_factors 121 128	elderly
+R2	occurs_in Arg1:T5 Arg2:T1	

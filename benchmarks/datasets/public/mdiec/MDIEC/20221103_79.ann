@@ -1,0 +1,6 @@
+T2	drug 58 83	antidepressant medication
+T3	method 85 113	cognitive-behavioral therapy
+T5	Health_factors 167 184	older individuals
+T1	disease 34 44	depression
+R1	treatment_for Arg1:T2 Arg2:T1	
+R2	treatment_for Arg1:T3 Arg2:T1	

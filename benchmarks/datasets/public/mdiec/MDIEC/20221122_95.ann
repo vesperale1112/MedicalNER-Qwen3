@@ -1,0 +1,9 @@
+T4	physiology 104 121	(18)F-DOPA uptake
+T5	region 143 150	putamen
+T6	Health_factors 185 188	age
+T7	Health_factors 193 196	sex
+T2	region 155 162	caudate	
+T1	disease 59 79	comorbid RBD and MDD
+R1	characteristic_of Arg1:T4 Arg2:T1	
+R2	located_in Arg1:T4 Arg2:T5	
+R3	located_in Arg1:T4 Arg2:T2	

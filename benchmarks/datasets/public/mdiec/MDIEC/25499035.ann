@@ -1,0 +1,41 @@
+T0	method 11 55	subcallosal cingulate deep brain stimulation
+T1	disease 95 125	treatment-resistant depression
+T3	method 189 213	antidepressant treatment
+T5	physiology 392 396	mood
+T10	physiology 291 311	emotional processing
+T13	physiology 221 237	emotional biases
+T14	method 142 176	cognitive neuropsychological model
+T15	method 493 515	deep brain stimulation
+T16	method 517 520	DBS
+T17	signs 640 656	symptom severity
+T18	physiology 600 616	emotional biases
+T19	disease 688 718	treatment-resistant depression
+T25	method 1028 1060	general emotion recognition task
+T26	method 1000 1021	self-referential task
+T27	method 901 924	event-related potential
+T29	method 1092 1095	DBS
+T33	physiology 1104 1130	automatic attentional bias
+T34	method 1375 1378	DBS
+T35	signs 1407 1426	depression severity
+T36	method 1444 1447	DBS
+T37	method 1505 1526	self-referential task
+T38	physiology 1459 1479	emotional processing
+T39	drug 1657 1666	monoamine
+T41	method 1667 1691	antidepressant treatment
+T42	physiology 1742 1764	antidepressant effects
+T43	method 1768 1775	SCC DBS
+T45	method 1581 1615	cognitive neuropsychological model
+T46	physiology 59 77	negative self-bias
+R1	associated_with Arg1:T3 Arg2:T13	
+T2	Health_factors 313 350	environmental and social interactions
+T4	Health_factors 401 409	behavior
+T6	physiology 432 450	negative self-bias
+T7	region 457 486	chronic subcallosal cingulate
+T8	region 488 491	SCC
+R2	abbreviation_for Arg1:T8 Arg2:T7	
+R3	abbreviation_for Arg1:T16 Arg2:T15	
+T9	method 853 856	LPP
+T11	method 858 881	late positive potential
+R4	abbreviation_for Arg1:T9 Arg2:T11	
+R5	treatment_for Arg1:T29 Arg2:T33	
+R6	treatment_for Arg1:T34 Arg2:T35	

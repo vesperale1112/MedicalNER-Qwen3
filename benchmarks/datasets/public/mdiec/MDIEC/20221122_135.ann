@@ -1,0 +1,8 @@
+T1	disease 0 10	Depression
+T2	disease 15 53	anxiety-related psychological symptoms
+T4	disease 127 153	inflammatory bowel disease
+T5	disease 155 158	IBD
+T6	disease 95 109	co-morbidities
+R1	abbreviation_for Arg1:T5 Arg2:T4	
+R2	associated_with Arg1:T1 Arg2:T4	
+R3	associated_with Arg1:T2 Arg2:T4	

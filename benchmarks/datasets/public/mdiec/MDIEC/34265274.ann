@@ -1,0 +1,66 @@
+T1	disease 48 58	depression
+T2	disease 463 473	depression
+T3	disease 809 819	depression
+T4	method 1826 1861	psychiatric hospitalisation records
+T5	disease 2279 2292	Suicide death
+T6	disease 2353 2366	suicide death
+T7	disease 2498 2516	Bipolar depression
+T8	disease 2532 2551	unipolar depression
+T9	disease 2867 2877	depression
+T10	disease 3135 3145	depression
+T11	method 72 97	electroconvulsive therapy
+T12	method 101 153	propensity score-matched, retrospective cohort study
+T13	method 233 258	electroconvulsive therapy
+T14	method 487 512	electroconvulsive therapy
+T15	method 549 574	electroconvulsive therapy
+T16	method 596 648	propensity score-matched, retrospective cohort study
+T17	method 860 885	Electroconvulsive therapy
+T18	method 1168 1193	electroconvulsive therapy
+T19	method 1377 1402	electroconvulsive therapy
+T20	disease 1583 1601	psychotic symptoms
+T21	disease 1708 1721	suicide death
+T22	method 1773 1806	propensity score matched analyses
+T23	method 1911 1913	SD
+T25	method 2057 2088	propensity score matched cohort
+T28	method 2225 2252	cause-specific hazard ratio
+T29	method 2263 2265	CI
+T31	method 2636 2661	electroconvulsive therapy
+T32	method 2663 2688	Electroconvulsive therapy
+T33	method 2988 3013	electroconvulsive therapy
+T34	disease 3031 3038	suicide
+T35	method 3105 3130	electroconvulsive therapy
+R3	treatment_for Arg1:T35 Arg2:T10	
+T36	method 1031 1056	propensity score matching
+T24	method 984 1000	unit of analysis
+T37	Health_factors 8 30	serious medical events
+T38	Health_factors 363 385	serious medical events
+T39	disease 436 441	death
+T40	Health_factors 710 716	adults
+T41	Health_factors 922 931	physician
+T42	Health_factors 1239 1261	serious medical events
+T43	disease 1339 1356	non-suicide death
+R4	hyponym_of Arg1:T43 Arg2:T42	
+T44	Health_factors 1566 1569	sex
+T45	disease 1607 1623	illness polarity
+T46	disease 1678 1695	non-suicide death
+T47	Health_factors 1736 1758	serious medical events
+T48	Health_factors 1868 1873	women
+T49	Health_factors 1880 1883	men
+T50	Health_factors 2107 2129	serious medical events
+T51	Health_factors 2608 2630	serious medical events
+T52	Health_factors 2948 2970	serious medical events
+T53	disease 2740 2757	non-suicide death
+T54	Health_factors 2792 2813	serious medical event
+T26	disease 206 227	medical complications
+T27	Health_factors 1650 1673	medical hospitalisation
+T30	Health_factors 1278 1305	hospitalisation for medical
+T56	Health_factors 417 432	hospitalisation
+R6	hyponym_of Arg1:T30 Arg2:T42	
+T57	Health_factors 1895 1898	age
+T58	Health_factors 2713 2736	medical hospitalisation
+T59	Health_factors 2849 2861	hospitalised
+T55	Health_factors 740 762	psychiatric facilities
+R1	treatment_for Arg1:T11 Arg2:T1	
+T60	Health_factors 963 978	hospitalisation
+T61	Health_factors 1927 1936	ethnicity
+R5	associated_with Arg1:T7 Arg2:T51	

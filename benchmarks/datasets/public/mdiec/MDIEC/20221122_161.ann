@@ -1,0 +1,6 @@
+T1	disease 63 72	mortality
+T2	Health_factors 84 94	old people
+T3	Health_factors 15 32	history of stroke
+R1	risk_factor_of Arg1:T3 Arg2:T1	
+T4	disease 130 139	depressed
+R2	occurs_in Arg1:T1 Arg2:T2	

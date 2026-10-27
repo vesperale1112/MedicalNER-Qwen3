@@ -1,0 +1,14 @@
+T1	physiology 27 39	neurogenesis
+T2	disease 56 72	major depression
+T3	disease 221 237	major depression
+T4	disease 120 149	lack of new, immature neurons
+T5	region 157 168	hippocampus
+T7	physiology 80 113	rarefication of neuronal networks	
+R5	risk_factor_of Arg1:T1 Arg2:T3	
+R6	risk_factor_of Arg1:T7 Arg2:T3	
+R7	risk_factor_of Arg1:T4 Arg2:T3	
+T6	disease 200 217	clinical symptoms
+R1	characteristic_of Arg1:T1 Arg2:T2	
+R2	characteristic_of Arg1:T7 Arg2:T2	
+R3	characteristic_of Arg1:T4 Arg2:T2	
+R4	occurs_in Arg1:T4 Arg2:T5	

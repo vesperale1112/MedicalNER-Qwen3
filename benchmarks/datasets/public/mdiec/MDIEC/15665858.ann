@@ -1,0 +1,67 @@
+T1	gene 0 32	Metabotropic glutamate receptors
+T2	disease 54 61	anxiety
+T4	disease 84 91	Anxiety
+T5	disease 152 168	mental illnesses
+T7	disease 268 285	anxiety disorders
+T11	drug 338 347	Glutamate
+T12	gene 434 491	G-protein-coupled metabotropic glutamate (mGlu) receptors
+T15	physiology 530 562	pre- and postsynaptic mechanisms
+T16	physiology 513 525	excitability
+T17	region 396 428	mammalian central nervous system
+T18	drug 361 388	excitatory neurotransmitter
+T19	gene 572 594	mGlu receptor subtypes
+T20	gene 615 622	mGlu(1)
+T21	gene 627 634	mGlu(5)
+T22	gene 647 654	mGlu(2)
+T23	gene 659 666	mGlu(3)
+T24	gene 684 691	mGlu(4)
+T25	gene 693 700	mGlu(7)
+T26	gene 705 712	mGlu(8)
+T27	disease 804 811	anxiety
+T28	region 775 791	brain structures
+T30	physiology 747 759	excitability
+T32	gene 856 865	mGlu(2/3)
+T33	gene 920 927	mGlu(5)
+T34	disease 996 1000	fear
+T35	disease 1002 1009	anxiety
+T36	disease 1013 1019	stress
+T39	gene 1049 1081	metabotropic glutamate receptors
+T40	disease 1119 1136	anxiety disorders
+R1	associated_with Arg1:T1 Arg2:T2	
+T3	disease 96 112	stress disorders
+R2	hyponym_of Arg1:T3 Arg2:T5	
+R3	hyponym_of Arg1:T4 Arg2:T5	
+T6	method 315 336	neuroscience research
+R4	hyponym_of Arg1:T11 Arg2:T18	
+R5	located_in Arg1:T18 Arg2:T17	
+R6	associated_with Arg1:T12 Arg2:T16	
+R7	hyponym_of Arg1:T20 Arg2:T19	
+R8	hyponym_of Arg1:T21 Arg2:T19	
+R9	hyponym_of Arg1:T22 Arg2:T19	
+R10	hyponym_of Arg1:T23 Arg2:T19	
+R11	hyponym_of Arg1:T24 Arg2:T19	
+R12	hyponym_of Arg1:T25 Arg2:T19	
+R13	hyponym_of Arg1:T26 Arg2:T19	
+R14	located_in Arg1:T30 Arg2:T28	
+R15	occurs_in Arg1:T30 Arg2:T27	
+R16	associated_with Arg1:T19 Arg2:T30	
+R17	associated_with Arg1:T20 Arg2:T30	
+R18	associated_with Arg1:T21 Arg2:T30	
+R19	associated_with Arg1:T22 Arg2:T30	
+R20	associated_with Arg1:T23 Arg2:T30	
+R21	associated_with Arg1:T24 Arg2:T30	
+R22	associated_with Arg1:T25 Arg2:T30	
+R23	associated_with Arg1:T26 Arg2:T30	
+R24	associated_with Arg1:T32 Arg2:T34	
+R25	associated_with Arg1:T33 Arg2:T34	
+R26	associated_with Arg1:T32 Arg2:T35	
+R27	associated_with Arg1:T32 Arg2:T36	
+R28	associated_with Arg1:T33 Arg2:T35	
+R29	associated_with Arg1:T33 Arg2:T36	
+T8	Health_factors 976 981	human
+T9	Health_factors 962 968	animal
+R30	associated_with Arg1:T39 Arg2:T40	
+T10	Health_factors 1140 1146	humans
+R31	occurs_in Arg1:T40 Arg2:T10	
+T13	disease 66 82	stress disorders
+R32	associated_with Arg1:T1 Arg2:T13	

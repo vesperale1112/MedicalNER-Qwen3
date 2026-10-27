@@ -1,0 +1,108 @@
+T0	disease 0 7	Anxiety
+T1	disease 9 19	depression
+T2	disease 25 45	posttraumatic stress
+T3	Health_factors 70 86	chemical warfare
+T4	Health_factors 49 66	Iranian survivors
+T5	disease 188 197	morbidity
+T6	disease 202 211	mortality
+T8	Health_factors 371 384	mental health
+T11	Health_factors 468 487	civilian population
+T12	method 525 558	Cross-sectional randomized survey
+T14	disease 863 892	posttraumatic stress disorder
+T15	disease 894 898	PTSD
+T16	disease 911 927	anxiety symptoms
+T17	disease 933 952	depressive symptoms
+T18	method 973 1028	Farsi versions of the Clinician-Administered PTSD Scale
+T20	method 1062 1087	Beck Depression Inventory
+T22	Health_factors 1172 1175	age
+T23	Health_factors 1204 1221	Kurdish ethnicity
+T25	disease 1323 1336	lifetime PTSD
+T26	disease 1346 1350	PTSD
+T27	disease 1352 1374	major anxiety symptoms
+T28	disease 1380 1406	severe depressive symptoms
+T32	disease 1852 1865	lifetime PTSD
+T33	disease 1939 1943	PTSD
+T34	disease 2046 2065	depressive symptoms
+T35	method 1867 1877	odds ratio
+T36	method 1879 1881	OR
+T37	method 1894 1913	confidence interval
+T38	method 1915 1917	CI
+T39	method 1945 1947	OR
+T40	method 1959 1961	CI
+T41	disease 1985 2001	anxiety symptoms
+T42	method 2003 2005	OR
+T43	method 2017 2019	CI
+T44	method 2067 2069	OR
+T45	method 2080 2082	CI
+T48	disease 2197 2210	lifetime PTSD
+T49	method 2212 2214	OR
+T50	method 2225 2227	CI
+T51	disease 2462 2475	lifetime PTSD
+T52	disease 2512 2516	PTSD
+T53	disease 2616 2635	depressive symptoms
+T54	method 2477 2479	OR
+T55	method 2490 2492	CI
+T56	method 2518 2520	OR
+T57	method 2531 2533	CI
+T58	disease 2556 2572	anxiety symptoms
+T59	method 2574 2576	OR
+T60	method 2587 2589	CI
+T61	method 2637 2639	OR
+T62	method 2650 2652	CI
+T64	Health_factors 2782 2795	mental health
+R1	occurs_in Arg1:T0 Arg2:T4	
+R2	occurs_in Arg1:T1 Arg2:T4	
+R3	occurs_in Arg1:T2 Arg2:T4	
+T13	Health_factors 113 126	Iran-Iraq War
+T63	Health_factors 145 161	chemical weapons
+R4	risk_factor_of Arg1:T63 Arg2:T5	
+R5	risk_factor_of Arg1:T63 Arg2:T6	
+T7	Health_factors 268 284	chemical warfare
+T9	Health_factors 351 367	chemical attacks
+T10	Health_factors 446 462	chemical warfare
+T67	Health_factors 621 628	warfare
+T68	Health_factors 804 820	chemical weapons
+R6	abbreviation_for Arg1:T15 Arg2:T14	
+R7	help_diagnose Arg1:T18 Arg2:T14	
+R8	help_diagnose Arg1:T18 Arg2:T15	
+T21	method 1030 1056	Hamilton Scale for Anxiety
+R9	help_diagnose Arg1:T21 Arg2:T16	
+R10	help_diagnose Arg1:T20 Arg2:T17	
+T24	Health_factors 1284 1300	chemical weapons
+T69	Health_factors 1257 1279	high-intensity warfare
+T70	Health_factors 663 697	low-intensity conventional warfare
+T71	Health_factors 707 742	high-intensity conventional warfare
+T72	Health_factors 764 799	high-intensity conventional warfare
+T74	Health_factors 1460 1481	low-intensity warfare
+T31	Health_factors 1612 1634	high-intensity warfare
+T73	Health_factors 1646 1662	chemical weapons
+T30	Health_factors 1739 1760	low-intensity warfare
+T75	Health_factors 1784 1806	high-intensity warfare
+T76	Health_factors 1811 1827	chemical weapons
+R12	abbreviation_for Arg1:T36 Arg2:T35	
+R13	risk_factor_of Arg1:T75 Arg2:T32	
+R14	risk_factor_of Arg1:T76 Arg2:T32	
+R15	abbreviation_for Arg1:T38 Arg2:T37	
+R16	risk_factor_of Arg1:T75 Arg2:T33	
+R17	risk_factor_of Arg1:T76 Arg2:T33	
+R18	risk_factor_of Arg1:T75 Arg2:T41	
+R19	risk_factor_of Arg1:T76 Arg2:T41	
+R20	risk_factor_of Arg1:T75 Arg2:T34	
+R21	risk_factor_of Arg1:T76 Arg2:T34	
+T46	Health_factors 2107 2129	high-intensity warfare
+T47	Health_factors 2141 2157	chemical weapons
+R22	associated_with Arg1:T46 Arg2:T48	
+T77	Health_factors 2267 2288	low-intensity warfare
+T78	Health_factors 2342 2364	high-intensity warfare
+T79	Health_factors 2394 2416	high-intensity warfare
+T80	Health_factors 2421 2437	chemical weapons
+R23	risk_factor_of Arg1:T79 Arg2:T51	
+R24	risk_factor_of Arg1:T80 Arg2:T51	
+R25	risk_factor_of Arg1:T79 Arg2:T58	
+R26	risk_factor_of Arg1:T79 Arg2:T53	
+R27	risk_factor_of Arg1:T80 Arg2:T58	
+R28	risk_factor_of Arg1:T80 Arg2:T53	
+T66	Health_factors 2689 2705	chemical warfare
+T81	Health_factors 2720 2735	traumatic event
+R29	associated_with Arg1:T66 Arg2:T64	
+R30	hyponym_of Arg1:T66 Arg2:T81	

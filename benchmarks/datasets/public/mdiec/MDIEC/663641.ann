@@ -1,0 +1,25 @@
+T4	method 23 61	electroencephalographic alpha feedback
+T9	physiology 206 244	electroencephalographic alpha activity
+T10	physiology 157 171	alpha feedback
+T11	disease 144 151	anxiety
+T14	disease 348 355	anxiety
+T15	symptom 250 263	alpha changes
+T16	disease 588 595	anxiety
+T18	Health_factors 457 483	Low trait-anxiety subjects
+T19	symptom 554 567	alpha changes
+T20	method 506 542	enhancement and suppression training
+T21	disease 621 628	anxiety
+T22	signs 731 747	respiration rate
+T23	method 701 726	frontalis electromyograms
+T24	disease 846 853	anxiety
+T27	method 776 809	long-term alpha feedback training
+T28	disease 0 7	Anxiety
+T1	Health_factors 75 96	high anxiety subjects
+R1	occurs_in Arg1:T4 Arg2:T1	
+T2	disease 287 294	anxiety
+R2	associated_with Arg1:T15 Arg2:T2	
+T3	Health_factors 316 337	high anxiety subjects
+R3	occurs_in Arg1:T2 Arg2:T3	
+T5	symptom 385 400	alpha increases
+T6	symptom 437 454	alpha suppression
+R4	treatment_for Arg1:T27 Arg2:T24	

@@ -1,0 +1,15 @@
+T1	method 4 27	random-effects analysis
+T2	disease 51 67	major depression
+T4	physiology 136 148	leukocytosis
+T5	signs 150 174	increased CD4/CD8 ratios
+T6	physiology 176 217	reduced proliferative response to mitogen
+T8	Health_factors 72 101	naturally occurring stressors
+T3	physiology 223 251	reduced NK cell cytotoxicity
+R1	characteristic_of Arg1:T4 Arg2:T2	
+R2	characteristic_of Arg1:T5 Arg2:T2	
+R3	characteristic_of Arg1:T6 Arg2:T2	
+R4	characteristic_of Arg1:T3 Arg2:T2	
+R5	characteristic_of Arg1:T4 Arg2:T8	
+R6	characteristic_of Arg1:T5 Arg2:T8	
+R7	characteristic_of Arg1:T6 Arg2:T8	
+R8	characteristic_of Arg1:T3 Arg2:T8	

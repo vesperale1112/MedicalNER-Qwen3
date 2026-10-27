@@ -1,0 +1,8 @@
+T1	method 7 10	CDI
+T2	disease 135 154	depression symptoms
+T3	Health_factors 166 197	diabetes management and control
+T4	signs 40 74	blood glucose monitoring frequency
+T5	gene 86 100	hemoglobin A1c
+R1	associated_with Arg1:T1 Arg2:T4	
+R2	associated_with Arg1:T1 Arg2:T5	
+R3	associated_with Arg1:T2 Arg2:T3	

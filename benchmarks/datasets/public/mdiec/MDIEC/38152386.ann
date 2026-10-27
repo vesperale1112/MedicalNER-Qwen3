@@ -1,0 +1,59 @@
+T0	disease 71 100	obsessive-compulsive disorder
+T2	symptom 26 59	spontaneous ritualistic behaviors
+T3	Health_factors 0 14	Rhesus monkeys
+T4	disease 102 131	Obsessive-compulsive disorder
+T5	disease 133 136	OCD
+T6	disease 168 188	psychiatric disorder
+T7	disease 245 275	spontaneous OCD-like behaviors
+T11	symptom 434 460	sequential motor behaviors
+T14	Health_factors 390 397	monkeys
+T15	disease 652 655	OCD
+T18	gene 617 635	mutations in genes
+T19	disease 711 715	SMBs
+T21	method 672 685	Brain imaging
+T22	region 727 738	gray matter
+T23	region 740 742	GM
+T25	region 819 834	corpus callosum
+T26	region 759 779	left caudate nucleus
+T30	region 857 877	left caudate nucleus
+T31	Health_factors 956 964	stressor
+T32	Health_factors 966 971	human
+T34	drug 1025 1035	fluoxetine
+T35	disease 1081 1084	OCD
+T37	drug 1039 1062	serotonergic medication
+T38	disease 1214 1217	OCD
+R1	abbreviation_for Arg1:T5 Arg2:T4	
+R2	hyponym_of Arg1:T4 Arg2:T6	
+R3	hyponym_of Arg1:T5 Arg2:T6	
+T1	Health_factors 279 297	non-human primates
+R4	occurs_in Arg1:T7 Arg2:T1	
+T8	Health_factors 354 376	rhesus monkey colonies
+T9	symptom 462 466	SMBs
+R5	abbreviation_for Arg1:T9 Arg2:T11	
+T10	method 573 589	Genetic analysis
+R6	risk_factor_of Arg1:T18 Arg2:T15	
+T12	Health_factors 664 670	humans
+R7	occurs_in Arg1:T15 Arg2:T12	
+T13	Health_factors 698 705	monkeys
+R8	occurs_in Arg1:T13 Arg2:T19	
+R9	abbreviation_for Arg1:T23 Arg2:T22	
+R10	characteristic_of Arg1:T22 Arg2:T19	
+R11	characteristic_of Arg1:T23 Arg2:T19	
+R12	located_in Arg1:T22 Arg2:T26	
+R13	located_in Arg1:T23 Arg2:T26	
+T16	signs 790 811	fractional anisotropy
+R14	occurs_in Arg1:T16 Arg2:T25	
+R15	characteristic_of Arg1:T16 Arg2:T19	
+R16	characteristic_of Arg1:T16 Arg2:T19	
+T17	signs 840 849	GM volume
+R17	occurs_in Arg1:T17 Arg2:T30	
+T20	disease 927 931	SMBs
+R18	associated_with Arg1:T17 Arg2:T20	
+T24	disease 1006 1010	SMBs
+R19	risk_factor_of Arg1:T31 Arg2:T24	
+R20	hyponym_of Arg1:T34 Arg2:T37	
+R21	treatment_for Arg1:T34 Arg2:T35	
+T27	disease 1096 1100	SMBs
+T28	Health_factors 1110 1117	monkeys
+R22	occurs_in Arg1:T27 Arg2:T28	
+R23	treatment_for Arg1:T34 Arg2:T27	

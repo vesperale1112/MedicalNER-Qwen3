@@ -1,0 +1,1 @@
+C-X-C motif chemokine ligand 1 (CXCL1)-related molecular networks responsible for depression-like behaviors were assessed through intrahippocampal microinjection of lenti-CXCL1, the antidepressant fluoxetine, the C-X-C motif chemokine receptor 2 (CXCR2) inhibitor SB265610, and the glycogen synthase kinase-3beta (GSK3beta) inhibitor AR-A014418.

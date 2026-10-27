@@ -1,0 +1,115 @@
+T1	disease 130 146	mental disorders
+T2	disease 260 276	mental disorders
+T3	disease 556 572	mental disorders
+T4	disease 857 873	mental disorders
+T5	disease 887 903	mental disorders
+T6	disease 1121 1137	mental disorders
+T7	disease 1151 1167	mental disorders
+T8	drug 1433 1445	amphetamines
+T9	drug 1447 1462	methylphenidate
+T10	drug 1553 1565	aripiprazole
+T11	drug 1567 1578	risperidone
+T12	disease 1621 1627	autism
+T13	drug 1629 1640	risperidone
+T14	disease 1673 1702	disruptive behavior disorders
+T15	disease 1730 1762	schizophrenia spectrum disorders
+T16	drug 1764 1774	fluoxetine
+T17	method 1780 1838	combination of fluoxetine and cognitive behavioral therapy
+T18	disease 1875 1885	depression
+T19	drug 1887 1899	aripiprazole
+T20	disease 1903 1908	mania
+T21	drug 1910 1920	fluoxetine
+T22	disease 1938 1955	anxiety disorders
+T23	drug 1957 1967	fluoxetine
+T24	disease 2116 2146	post-traumatic stress disorder
+T25	drug 2148 2158	imipramine
+T26	disease 2196 2204	enuresis
+T27	disease 2228 2238	encopresis
+T28	disease 2262 2278	anorexia nervosa
+T29	disease 2335 2351	mental disorders
+T33	method 30 96	pharmacological, psychosocial, and brain stimulation interventions
+T34	Health_factors 100 108	children
+T35	Health_factors 113 124	adolescents
+T36	method 151 166	umbrella review
+T37	drug 219 230	medications
+T38	Health_factors 234 242	children
+T39	Health_factors 243 254	adolescents
+T40	drug 430 441	medications
+T41	method 443 470	psychosocial inter-ventions
+T42	method 475 503	brain stimulation techniques
+T43	Health_factors 530 538	children
+T44	Health_factors 539 550	adolescents
+T45	method 583 598	umbrella review
+T47	method 660 673	meta-analyses
+T48	method 683 711	randomized controlled trials
+T49	method 713 717	RCTs
+T50	drug 733 744	medications
+T51	method 749 775	psychosocial interventions
+T52	method 786 814	brain stimulation techniques
+T53	Health_factors 818 826	children
+T54	Health_factors 827 838	adolescents
+T55	drug 1181 1192	medications
+T57	method 1259 1285	psychosocial interventions
+T58	method 1489 1507	behavioral therapy
+T59	disease 1511 1551	attention-deficit/hyperactivity disorder
+T60	method 1591 1617	psychosocial interventions
+T61	method 1645 1669	behavioral interventions
+T62	drug 1712 1726	antipsychotics
+T63	method 1810 1838	cognitive behavioral therapy
+T64	method 1840 1843	CBT
+T65	method 1850 1871	interpersonal therapy
+T66	method 1925 1934	group CBT
+T67	drug 1968 2007	selective serotonin reuptake inhibitors
+T68	method 2009 2012	CBT
+T69	method 2018 2036	behavioral therapy
+T71	disease 2078 2107	obsessive-compulsive disorder
+T72	method 2109 2112	CBT
+T73	method 2163 2192	alarm behavioral intervention
+T75	method 2206 2224	behavioral therapy
+T76	method 2244 2258	family therapy
+T77	method 2298 2313	umbrella review
+T78	method 2317 2330	interventions
+T79	Health_factors 2355 2363	children
+T80	Health_factors 2364 2375	adolescents
+T83	disease 989 1013	disease-specific symptom
+T84	method 627 648	network meta-analyses
+T30	method 331 348	clinical practice
+R1	treatment_for Arg1:T40 Arg2:T3	
+R2	treatment_for Arg1:T41 Arg2:T3	
+R3	treatment_for Arg1:T42 Arg2:T3	
+R4	occurs_in Arg1:T44 Arg2:T3	
+R5	occurs_in Arg1:T43 Arg2:T3	
+T31	method 650 654	NMAs
+R6	abbreviation_for Arg1:T31 Arg2:T84	
+T32	method 675 678	MAs
+R7	abbreviation_for Arg1:T32 Arg2:T47	
+R8	abbreviation_for Arg1:T49 Arg2:T48	
+T46	method 1088 1092	NMAs
+T85	method 1100 1103	MAs
+T56	method 1360 1373	meta-analytic
+R9	treatment_for Arg1:T8 Arg2:T59	
+R10	treatment_for Arg1:T9 Arg2:T59	
+R11	treatment_for Arg1:T58 Arg2:T59	
+R12	treatment_for Arg1:T10 Arg2:T12	
+R13	treatment_for Arg1:T11 Arg2:T12	
+R14	treatment_for Arg1:T60 Arg2:T12	
+R15	treatment_for Arg1:T13 Arg2:T14	
+R16	treatment_for Arg1:T61 Arg2:T14	
+R17	treatment_for Arg1:T62 Arg2:T15	
+R18	abbreviation_for Arg1:T64 Arg2:T63	
+R19	treatment_for Arg1:T16 Arg2:T18	
+R20	treatment_for Arg1:T17 Arg2:T18	
+R21	treatment_for Arg1:T65 Arg2:T18	
+R22	treatment_for Arg1:T19 Arg2:T20	
+R23	treatment_for Arg1:T21 Arg2:T22	
+R24	treatment_for Arg1:T66 Arg2:T22	
+R25	treatment_for Arg1:T23 Arg2:T71	
+R26	treatment_for Arg1:T67 Arg2:T71	
+R27	treatment_for Arg1:T68 Arg2:T71	
+R28	treatment_for Arg1:T69 Arg2:T71	
+R29	treatment_for Arg1:T72 Arg2:T24	
+R30	treatment_for Arg1:T73 Arg2:T26	
+R31	treatment_for Arg1:T25 Arg2:T26	
+R32	treatment_for Arg1:T75 Arg2:T27	
+R33	treatment_for Arg1:T76 Arg2:T28	
+T70	Health_factors 1028 1053	all-cause discontinuation

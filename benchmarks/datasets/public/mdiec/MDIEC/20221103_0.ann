@@ -1,0 +1,11 @@
+T4	drug 92 137	potent melatonin MT1 and MT2 receptor agonist
+T6	drug 142 177	serotonin 5HT2C receptor antagonist
+T7	disease 191 210	depressive symptoms
+T8	physiology 274 295	inflammatory response
+T1	drug 62 88	antidepressant agomelatine
+R2	hyponym_of Arg1:T1 Arg2:T4	
+R3	hyponym_of Arg1:T1 Arg2:T6	
+R4	treatment_for Arg1:T1 Arg2:T7	
+R5	associated_with Arg1:T1 Arg2:T8	
+T3	disease 232 255	chronic epileptic phase
+R1	occurs_in Arg1:T7 Arg2:T3	

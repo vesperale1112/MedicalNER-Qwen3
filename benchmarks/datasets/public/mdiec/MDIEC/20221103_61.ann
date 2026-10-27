@@ -1,0 +1,5 @@
+T1	method 0 32	Multimodal multi-center analysis
+T2	method 36 61	electroconvulsive therapy
+T3	disease 73 83	depression
+T4	region 85 106	Brainwide gray matter
+R1	associated_with Arg1:T2 Arg2:T4	

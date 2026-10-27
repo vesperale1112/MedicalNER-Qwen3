@@ -1,0 +1,32 @@
+T0	disease 0 25	Orbitofrontal dysfunction
+T1	disease 43 72	obsessive-compulsive disorder
+T2	Health_factors 83 103	unaffected relatives
+T3	disease 105 134	Obsessive-compulsive disorder
+T4	disease 136 139	OCD
+T5	disease 161 194	repetitive thoughts and behaviors
+T7	disease 222 263	dysregulation of frontostriatal circuitry
+T10	method 276 305	neurobiological models of OCD
+T13	physiology 397 414	negative feedback
+T14	physiology 416 433	reversal learning
+T15	region 337 350	neural region
+T16	region 313 333	orbitofrontal cortex
+T18	disease 581 584	OCD
+T19	region 491 507	cortical regions
+T21	physiology 560 577	reversal learning
+T22	symptom 709 722	endophenotype
+T25	Health_factors 604 641	clinically unaffected close relatives
+T26	region 523 551	lateral orbitofrontal cortex
+R1	occurs_in Arg1:T0 Arg2:T1	
+R2	abbreviation_for Arg1:T4 Arg2:T3	
+R3	associated_with Arg1:T5 Arg2:T7	
+R4	characteristic_of Arg1:T5 Arg2:T3	
+R5	characteristic_of Arg1:T5 Arg2:T4	
+R6	hyponym_of Arg1:T16 Arg2:T15	
+T6	symptom 368 390	behavioral flexibility
+R7	associated_with Arg1:T16 Arg2:T6	
+R8	hyponym_of Arg1:T26 Arg2:T19	
+T8	physiology 450 479	abnormally reduced activation
+R11	located_in Arg1:T8 Arg2:T19	
+R12	located_in Arg1:T8 Arg2:T26	
+R9	associated_with Arg1:T8 Arg2:T21	
+R10	occurs_in Arg1:T21 Arg2:T18	

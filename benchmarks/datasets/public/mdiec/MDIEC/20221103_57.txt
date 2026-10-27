@@ -1,0 +1,1 @@
+Regression analysis revealed that treatment response was predicted by pre-treatment SERT binding ratios, i.e., SERT binding in key regions of depression including bilateral habenula, amygdala-hippocampus complex and subgenual cingulate cortex in relation to SERT binding in the median but not dorsal raphe nucleus (p<0.05 FDR-corrected).

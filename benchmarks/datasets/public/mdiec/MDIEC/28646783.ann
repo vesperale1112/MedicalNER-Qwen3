@@ -1,0 +1,51 @@
+T1	disease 40 65	major depression disorder
+T2	disease 100 125	Major depression disorder
+T3	disease 127 130	MDD
+T4	disease 149 185	dysfunction autonomic nervous system
+T6	disease 446 449	MDD
+T7	disease 680 683	MDD
+T8	disease 1130 1133	MDD
+T9	disease 1327 1330	MDD
+#1	AnnotatorNotes T1	C1269683
+#2	AnnotatorNotes T2	C1269683
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T10	symptom 196 226	reduced heart rate variability
+R2	characteristic_of Arg1:T4 Arg2:T2	
+R3	characteristic_of Arg1:T10 Arg2:T2	
+T13	disease 1202 1222	long-term depression
+T11	region 187 190	ANS
+T14	region 161 185	autonomic nervous system
+R5	abbreviation_for Arg1:T11 Arg2:T14	
+T15	signs 228 231	HRV
+T16	signs 204 226	heart rate variability
+R6	abbreviation_for Arg1:T15 Arg2:T16	
+T17	region 358 361	ANS
+T18	method 491 525	clinical autonomic test-Ewing test
+T19	method 666 676	Ewing test
+T20	method 876 889	Valsalva test
+T21	method 936 965	nonlinear dynamical parameter
+T22	method 967 973	RCMSE1
+T23	method 1037 1050	Valsalva test
+T24	region 1096 1126	parasympathetic nervous system
+T25	disease 1160 1172	mental state
+R7	associated_with Arg1:T24 Arg2:T25	
+T27	method 75 98	clinical autonomic test
+R4	characteristic_of Arg1:T4 Arg2:T3	
+R8	characteristic_of Arg1:T10 Arg2:T3	
+T28	method 337 354	stimulation tests
+#5	AnnotatorNotes T14	C4703580
+T31	disease 370 373	MDD
+T5	signs 0 22	Heart rate variability
+T34	signs 527 544	Parameters of HRV
+T35	signs 644 658	HRV parameters
+T37	signs 825 835	heart rate
+R9	hyponym_of Arg1:T22 Arg2:T21	
+T41	signs 1415 1418	HRV
+T40	physiology 1293 1313	Sympathetic activity
+T29	method 588 618	nonlinear dynamical parameters
+T32	physiology 1247 1270	physiological functions
+R12	characteristic_of Arg1:T40 Arg2:T9	
+R11	characteristic_of Arg1:T35 Arg2:T7	
+R16	occurs_in Arg1:T24 Arg2:T8	
+T12	physiology 857 871	deep breathing
+R10	occurs_in Arg1:T5 Arg2:T1	

@@ -1,0 +1,61 @@
+T0	symptom 43 69	age at schizophrenia onset
+T2	method 73 101	deep phenotyping-based study
+T3	Health_factors 0 30	Accumulated environmental risk
+T4	disease 114 127	Schizophrenia
+T7	method 215 227	twin studies
+T8	Health_factors 158 191	genetic and environmental factors
+T9	disease 295 308	schizophrenia
+T12	signs 416 423	markers
+T14	method 388 400	effect sizes
+T15	method 320 357	large genome-wide association studies
+T17	disease 595 608	schizophrenia
+T20	Health_factors 656 678	socioeconomic measures
+T22	Health_factors 541 567	environmental risk factors
+T25	disease 833 846	schizophrenia
+T27	gene 885 916	single-nucleotide polymorphisms
+T28	method 755 802	Gttingen Research Association for Schizophrenia
+T29	method 698 715	parallel analysis
+T31	disease 1167 1190	perinatal brain insults
+T32	disease 1206 1217	neurotrauma
+T33	disease 1219 1231	psychotrauma
+T35	gene 1022 1048	schizophrenia risk alleles
+T37	Health_factors 1192 1204	cannabis use
+T40	symptom 1332 1350	symptom expression
+T41	symptom 1315 1330	age at prodrome
+T42	Health_factors 1249 1258	migration
+T43	method 1082 1117	large genome-wide association study
+T44	Health_factors 1436 1457	environmental factors
+T45	symptom 1482 1507	early schizophrenia onset
+T46	disease 1526 1534	prodrome
+T50	Health_factors 1594 1606	cannabis use
+T53	symptom 1686 1709	earlier age at prodrome
+T54	Health_factors 1620 1645	environmental risk factor
+T55	disease 1829 1853	schizophrenia phenotypes
+T59	method 1738 1789	polygenic genome-wide association study risk scores
+T61	method 1911 1930	preventive measures
+T62	symptom 1975 2004	age at onset of schizophrenia
+T63	disease 2103 2110	illness
+T64	Health_factors 2071 2095	total socioeconomic cost
+T65	Health_factors 1941 1967	environmental risk factors
+R1	risk_factor_of Arg1:T3 Arg2:T0	
+R2	risk_factor_of Arg1:T8 Arg2:T4	
+T5	method 488 517	genome-wide association study
+T6	Health_factors 732 736	male
+T10	method 804 808	GRAS
+R3	abbreviation_for Arg1:T10 Arg2:T28	
+T11	method 921 951	deep clinical phenotyping data
+T13	Health_factors 1140 1161	environmental hazards
+R4	risk_factor_of Arg1:T44 Arg2:T45	
+R5	hyponym_of Arg1:T50 Arg2:T54	
+R6	associated_with Arg1:T50 Arg2:T53	
+T1	Health_factors 1233 1243	urbanicity
+R7	hyponym_of Arg1:T31 Arg2:T13	
+R8	hyponym_of Arg1:T37 Arg2:T13	
+R9	hyponym_of Arg1:T32 Arg2:T13	
+R10	hyponym_of Arg1:T33 Arg2:T13	
+R11	hyponym_of Arg1:T1 Arg2:T13	
+R12	hyponym_of Arg1:T42 Arg2:T13	
+T16	symptom 1300 1313	disease onset
+T19	Health_factors 1356 1380	socioeconomic parameters
+T21	symptom 619 632	disease onset
+R13	associated_with Arg1:T62 Arg2:T64	

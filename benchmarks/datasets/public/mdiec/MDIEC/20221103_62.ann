@@ -1,0 +1,8 @@
+T2	physiology 38 50	neurogenesis
+T5	physiology 131 155	antidepressant responses
+T1	disease 116 126	depression
+R1	associated_with Arg1:T2 Arg2:T1	
+R2	associated_with Arg1:T2 Arg2:T5	
+T4	physiology 98 112	pathomechanism
+T3	physiology 181 222	hippocampal cellular or molecular changes
+R3	associated_with Arg1:T2 Arg2:T3	

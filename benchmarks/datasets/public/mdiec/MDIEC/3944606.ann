@@ -1,0 +1,27 @@
+T1	disease 0 7	Anxiety
+T2	Health_factors 12 22	drug taste
+T4	method 63 82	cancer chemotherapy
+T5	disease 40 59	anticipatory nausea
+T8	disease 236 255	anticipatory nausea
+T10	method 127 149	cytotoxic chemotherapy
+T11	method 84 98	Interview data
+T12	disease 257 277	Posttreatment nausea
+T13	disease 282 290	vomiting
+T14	disease 305 313	vomiting
+T15	Health_factors 316 331	tastes of drugs
+T16	disease 355 362	anxiety
+T18	disease 434 453	anticipatory nausea
+T19	method 370 380	injections
+T21	disease 699 718	anticipatory nausea
+T22	Health_factors 506 509	age
+T24	method 752 764	chemotherapy
+T27	method 618 645	chemotherapy administration
+R1	occurs_in Arg1:T5 Arg2:T4	
+R2	risk_factor_of Arg1:T1 Arg2:T5	
+T3	method 339 349	injections
+R3	risk_factor_of Arg1:T12 Arg2:T18	
+R4	risk_factor_of Arg1:T13 Arg2:T18	
+R5	risk_factor_of Arg1:T14 Arg2:T18	
+R6	risk_factor_of Arg1:T2 Arg2:T5	
+R7	risk_factor_of Arg1:T15 Arg2:T18	
+R8	risk_factor_of Arg1:T16 Arg2:T18	

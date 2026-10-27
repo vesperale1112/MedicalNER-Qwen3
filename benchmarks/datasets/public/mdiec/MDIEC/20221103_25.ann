@@ -1,0 +1,14 @@
+T1	physiology 13 36	Brain activity patterns
+T2	disease 40 50	depression
+T3	disease 218 228	depression
+T4	physiology 69 87	treatment response
+T5	physiology 196 214	treatment response
+T6	physiology 124 138	brain activity
+T9	region 151 165	brain circuits
+T10	method 91 95	rTMS
+T11	method 172 176	rTMS
+R2	associated_with Arg1:T6 Arg2:T5	
+R4	occurs_in Arg1:T1 Arg2:T2	
+R5	associated_with Arg1:T1 Arg2:T4	
+R1	located_in Arg1:T6 Arg2:T9	
+R3	occurs_in Arg1:T5 Arg2:T3	

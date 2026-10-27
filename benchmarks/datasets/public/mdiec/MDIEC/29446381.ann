@@ -1,0 +1,57 @@
+T1	drug 0 8	Ketamine
+T2	gene 84 113	N-methyl-d-aspartate receptor
+T3	drug 133 141	ketamine
+T7	disease 599 609	depressive
+T8	drug 645 653	ketamine
+T9	disease 724 733	anhedonia
+T10	gene 824 869	low-voltage-sensitive T-type calcium channels
+T11	drug 1037 1045	ketamine
+T12	disease 68 78	depression
+R1	treatment_for Arg1:T1 Arg2:T12	
+T13	gene 115 120	NMDAR
+R2	abbreviation_for Arg1:T13 Arg2:T2	
+T14	drug 84 132	N-methyl-d-aspartate receptor (NMDAR) antagonist
+T15	physiology 213 241	rapid antidepressant actions
+T16	physiology 323 356	NMDAR-dependent bursting activity
+T17	method 471 505	rat and mouse models of depression
+T18	region 390 406	lateral habenula
+T19	region 408 411	LHb
+R4	abbreviation_for Arg1:T19 Arg2:T18	
+T20	region 507 518	LHb neurons
+T22	disease 700 719	behavioural despair
+T24	gene 871 878	T-VSCCs
+R7	abbreviation_for Arg1:T24 Arg2:T10	
+T25	gene 813 819	NMDARs
+T26	gene 912 917	NMDAR
+T27	gene 921 928	T-VSCCs
+T28	region 936 939	LHb
+T30	physiology 1080 1128	NMDAR-dependent bursting activity of LHb neurons
+T4	drug 1227 1255	rapid-acting antidepressants
+T29	method 177 199	mental health research
+T32	physiology 655 692	Burst-evoking photostimulation of LHb
+T33	physiology 16 24	bursting
+T35	method 735 773	Pharmacology and modelling experiments
+T36	region 1154 1182	monoaminergic reward centres
+T37	physiology 427 467	rapid antidepressant actions of ketamine
+T38	physiology 569 595	theta-band synchronization
+T39	physiology 964 992	rapid antidepressant effects
+R6	associated_with Arg1:T16 Arg2:T37	
+T40	physiology 550 564	burst activity
+R12	associated_with Arg1:T32 Arg2:T22	
+R13	associated_with Arg1:T32 Arg2:T9	
+T21	physiology 786 798	LHb bursting
+R17	associated_with Arg1:T21 Arg2:T25	
+R18	associated_with Arg1:T21 Arg2:T10	
+R19	associated_with Arg1:T21 Arg2:T24	
+R20	associated_with Arg1:T27 Arg2:T39	
+R21	associated_with Arg1:T26 Arg2:T39	
+T23	physiology 1063 1067	mood
+R24	associated_with Arg1:T11 Arg2:T23	
+R23	associated_with Arg1:T30 Arg2:T36	
+R22	located_in Arg1:T27 Arg2:T28	
+R31	located_in Arg1:T26 Arg2:T28	
+R33	characteristic_of Arg1:T20 Arg2:T7	
+T41	region 32 48	lateral habenula
+T6	region 365 383	anti-reward center
+R3	located_in Arg1:T16 Arg2:T6	
+R5	occurs_in Arg1:T37 Arg2:T17	

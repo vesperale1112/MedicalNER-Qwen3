@@ -1,0 +1,148 @@
+T1	drug 0 12	Cannabinoids
+T2	disease 34 50	mental disorders
+T3	disease 67 83	mental disorders
+T4	drug 135 157	Medicinal cannabinoids
+T5	drug 192 219	pharmaceutical cannabinoids
+T6	drug 261 281	tetrahydrocannabinol
+T7	drug 283 286	THC
+T8	drug 292 303	cannabidiol
+T9	drug 305 308	CBD
+T10	disease 369 385	mental disorders
+T11	drug 480 502	medicinal cannabinoids
+T12	disease 535 551	mental disorders
+T13	disease 1110 1120	depression
+T14	disease 1122 1129	anxiety
+T15	disease 1131 1171	attention-deficit hyperactivity disorder
+T16	disease 1173 1177	ADHD
+T17	disease 1180 1197	Tourette syndrome
+T18	disease 1199 1229	post-traumatic stress disorder
+T19	disease 1234 1243	psychosis
+T20	disease 1533 1549	mental disorders
+T21	drug 1565 1587	medicinal cannabinoids
+T22	disease 1598 1614	mental disorders
+T23	disease 2258 2268	depression
+T24	disease 2319 2326	anxiety
+T25	disease 2379 2396	Tourette syndrome
+T26	disease 2449 2453	ADHD
+T27	disease 2502 2532	post-traumatic stress disorder
+T28	disease 2585 2594	psychosis
+T29	drug 2653 2656	THC
+T30	drug 2674 2677	CBD
+T31	disease 2764 2787	chronic non-cancer pain
+T32	disease 2792 2810	multiple sclerosis
+T33	drug 2924 2927	THC
+T34	drug 2945 2948	CBD
+T35	disease 2980 2989	psychosis
+T36	drug 3060 3063	THC
+T37	drug 3081 3084	CBD
+T38	disease 3150 3166	mental disorders
+T39	disease 3397 3413	mental disorders
+T40	drug 3493 3496	CBD
+T41	drug 3578 3590	cannabinoids
+T42	disease 3599 3619	depressive disorders
+T43	disease 3634 3651	anxiety disorders
+T44	disease 3653 3693	attention-deficit hyperactivity disorder
+T45	disease 3695 3712	Tourette syndrome
+T46	disease 3714 3744	post-traumatic stress disorder
+T47	disease 3749 3758	psychosis
+T48	drug 3815 3818	THC
+T49	drug 3836 3839	CBD
+T50	disease 3885 3892	anxiety
+T51	drug 4012 4024	cannabinoids
+T52	disease 4038 4054	mental disorders
+T53	drug 4148 4160	cannabinoids
+T54	disease 4173 4189	mental disorders
+T57	method 87 104	systematic review
+T58	method 109 122	meta-analysis
+T60	method 572 589	systematic review
+T61	method 594 607	meta-analysis
+T62	method 620 627	MEDLINE
+T63	method 629 635	Embase
+T64	method 637 645	PsycINFO
+T65	method 651 706	Cochrane Central Register of Controlled Clinical Trials
+T67	method 716 724	Cochrane
+T68	method 737 755	Systematic Reviews
+T70	method 874 892	ClinicalTrials.gov
+T71	Health_factors 1079 1085	adults
+T74	Health_factors 1348 1356	language
+T76	method 1648 1676	randomised controlled trials
+T77	method 1696 1707	odds ratios
+T78	method 1709 1712	ORs
+T79	Health_factors 1738 1752	adverse events
+T80	method 1777 1806	standardised mean differences
+T81	method 1808 1812	SMDs
+T82	method 1842 1870	random-effects meta-analyses
+T83	method 1922 1948	Cochrane risk of bias tool
+T84	method 2198 2226	randomised controlled trials
+T85	method 2273 2301	randomised controlled trials
+T86	method 2331 2359	randomised controlled trials
+T87	method 2402 2430	randomised controlled trials
+T88	method 2600 2628	randomised controlled trials
+T90	disease 2688 2704	anxiety symptoms
+T91	method 2812 2815	SMD
+T92	method 2826 2828	CI
+T94	method 3009 3012	SMD
+T95	method 3022 3024	CI
+T98	Health_factors 3222 3236	adverse events
+T99	method 3238 3240	OR
+T100	method 3250 3252	CI
+T101	Health_factors 3310 3324	adverse events
+T103	method 3428 3456	randomised controlled trials
+T110	Health_factors 4364 4396	US National Institutes of Health
+T111	drug 3500 3518	medicinal cannabis
+T112	disease 3291 3302	withdrawals
+T113	disease 1758 1769	withdrawals
+T116	drug 230 251	synthetic derivatives
+T117	drug 169 187	medicinal cannabis
+R1	treatment_for Arg1:T1 Arg2:T2	
+R2	treatment_for Arg1:T1 Arg2:T3	
+R3	hyponym_of Arg1:T117 Arg2:T4	
+R4	hyponym_of Arg1:T5 Arg2:T4	
+R5	hyponym_of Arg1:T116 Arg2:T4	
+R6	abbreviation_for Arg1:T7 Arg2:T6	
+R7	abbreviation_for Arg1:T9 Arg2:T8	
+R8	hyponym_of Arg1:T6 Arg2:T116	
+R9	hyponym_of Arg1:T7 Arg2:T116	
+R10	hyponym_of Arg1:T8 Arg2:T116	
+R11	hyponym_of Arg1:T9 Arg2:T116	
+R12	treatment_for Arg1:T4 Arg2:T10	
+R13	treatment_for Arg1:T117 Arg2:T10	
+R14	treatment_for Arg1:T5 Arg2:T10	
+R15	treatment_for Arg1:T116 Arg2:T10	
+R16	treatment_for Arg1:T6 Arg2:T10	
+R17	treatment_for Arg1:T7 Arg2:T10	
+R18	treatment_for Arg1:T8 Arg2:T10	
+R19	treatment_for Arg1:T9 Arg2:T10	
+R20	treatment_for Arg1:T11 Arg2:T12	
+T59	method 898 925	EU Clinical Trials Register
+T66	drug 1054 1075	medicinal cannabinoid
+R21	treatment_for Arg1:T66 Arg2:T13	
+R22	treatment_for Arg1:T66 Arg2:T14	
+R23	abbreviation_for Arg1:T16 Arg2:T15	
+R24	treatment_for Arg1:T66 Arg2:T15	
+R25	treatment_for Arg1:T66 Arg2:T16	
+R26	treatment_for Arg1:T66 Arg2:T17	
+R27	treatment_for Arg1:T66 Arg2:T18	
+R28	treatment_for Arg1:T66 Arg2:T19	
+R29	occurs_in Arg1:T66 Arg2:T71	
+T69	disease 1299 1317	medical conditions
+T72	method 1402 1446	experimental and observational study designs
+R30	abbreviation_for Arg1:T78 Arg2:T77	
+R31	abbreviation_for Arg1:T81 Arg2:T80	
+T73	method 1953 2019	Grading of Recommendations, Assessment, Development and Evaluation
+T75	method 2021 2026	GRADE
+R32	abbreviation_for Arg1:T75 Arg2:T73	
+T118	method 2459 2486	randomised controlled trial
+T119	method 2538 2565	randomised controlled trial
+R33	treatment_for Arg1:T29 Arg2:T90	
+T89	disease 2734 2752	medical conditions
+R34	hyponym_of Arg1:T31 Arg2:T89	
+R35	hyponym_of Arg1:T32 Arg2:T89	
+T120	method 2889 2894	GRADE
+R36	associated_with Arg1:T33 Arg2:T35	
+T93	disease 3922 3940	medical conditions
+T96	Health_factors 4212 4255	Therapeutic Goods Administration, Australia
+T97	Health_factors 4257 4301	Commonwealth Department of Health, Australia
+T102	Health_factors 4303 4358	Australian National Health and Medical Research Council
+R37	treatment_for Arg1:T48 Arg2:T50	
+R38	occurs_in Arg1:T50 Arg2:T93	

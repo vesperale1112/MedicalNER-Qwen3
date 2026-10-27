@@ -1,0 +1,83 @@
+T0	disease 50 67	anxiety disorders
+T1	method 12 36	evidence-based treatment
+T2	method 71 83	primary care
+T3	method 87 114	randomized controlled trial
+T5	Health_factors 149 167	mental health care
+T7	method 184 206	clinical interventions
+T9	disease 318 328	depression
+T10	disease 365 382	anxiety disorders
+T13	disease 479 496	anxiety disorders
+T14	disease 498 503	panic
+T15	disease 546 576	posttraumatic stress disorders
+T16	method 599 609	usual care
+T17	method 466 478	primary care
+T18	method 419 452	flexible treatment-delivery model
+T20	Health_factors 769 789	primary care clinics
+T21	method 695 738	Coordinated Anxiety Learning and Management
+T22	method 650 691	randomized controlled effectiveness trial
+T23	disease 859 876	anxiety disorders
+T24	disease 894 910	major depression
+T25	Health_factors 913 917	aged
+T28	method 1034 1063	Blinded follow-up assessments
+T29	method 1137 1149	INTERVENTION
+T30	method 1173 1201	cognitive behavioral therapy
+T31	method 1203 1206	CBT
+T32	drug 1209 1219	medication
+T33	method 1368 1371	CBT
+T34	Health_factors 1417 1440	primary care clinicians
+T35	Health_factors 1454 1463	adherence
+T36	drug 1479 1490	medications
+T37	Health_factors 1375 1398	nonexpert care managers
+T38	method 1249 1278	Web-based outcomes monitoring
+T40	disease 1561 1568	anxiety
+T41	method 1725 1731	BSI-12
+T44	disease 1815 1831	anxiety symptoms
+T45	method 1856 1872	mean differences
+T46	method 1887 1906	confidence interval
+T47	method 1908 1910	CI
+T48	method 1941 1943	CI
+T49	method 1977 1979	CI
+T51	method 2089 2091	UC
+T52	method 2110 2112	CI
+T53	method 2144 2146	CI
+T54	method 2180 2182	CI
+T55	method 2214 2216	CI
+T56	method 2277 2279	CI
+T57	method 2319 2321	CI
+T58	disease 2064 2073	remission
+T60	disease 2380 2397	anxiety disorders
+T61	Health_factors 2409 2429	primary care clinics
+T62	disease 2488 2504	anxiety symptoms
+T63	disease 2506 2525	depression symptoms
+T65	method 2590 2599	follow-up
+T67	disease 2527 2548	functional disability
+T4	disease 505 524	generalized anxiety
+T6	disease 526 540	social anxiety
+T8	method 611 613	UC
+R1	abbreviation_for Arg1:T8 Arg2:T16	
+T11	method 760 762	UC
+T12	method 740 744	CALM
+R2	abbreviation_for Arg1:T12 Arg2:T21	
+R3	abbreviation_for Arg1:T31 Arg2:T30	
+T19	method 1318 1343	computer-assisted program
+T26	method 1516 1551	Twelve-item Brief Symptom Inventory
+T27	method 1553 1559	BSI-12
+R4	abbreviation_for Arg1:T27 Arg2:T26	
+T39	disease 1573 1589	somatic symptoms
+T42	method 1690 1696	BSI-12
+T43	method 1794 1798	CALM
+T59	method 1802 1804	UC
+T50	method 1843 1849	BSI-12
+R5	treatment_for Arg1:T43 Arg2:T44	
+R6	abbreviation_for Arg1:T47 Arg2:T46	
+T68	method 2081 2085	CALM
+T69	method 2431 2435	CALM
+T70	method 2450 2452	UC
+R7	treatment_for Arg1:T69 Arg2:T62	
+R8	occurs_in Arg1:T60 Arg2:T69	
+R9	treatment_for Arg1:T69 Arg2:T63	
+R10	treatment_for Arg1:T69 Arg2:T67	
+T64	method 1150 1154	CALM
+R11	occurs_in Arg1:T0 Arg2:T2	
+R12	treatment_for Arg1:T1 Arg2:T0	
+T66	disease 2338 2347	remission

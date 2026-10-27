@@ -1,0 +1,11 @@
+T2	drug 38 55	GABAB antagonists
+T6	method 198 212	rodent studies
+T9	method 280 304	antidepressant therapies
+T10	method 306 319	animal models
+T1	method 112 131	clinical experience
+T3	method 165 196	murine genetic GABAB knock-outs
+T4	method 344 375	functional and post mortem data
+T7	drug 141 163	GABAB agonist baclofen
+T8	physiology 216 254	GABAB receptor expression and function
+T5	disease 323 333	depression
+T11	Health_factors 381 386	human

@@ -1,0 +1,57 @@
+T1	disease 15 36	post-traumatic stress
+T3	disease 546 576	post-traumatic stress disorder
+T4	disease 578 582	PTSD
+T5	disease 840 850	depression
+T6	disease 854 871	anxiety disorders
+T8	disease 1197 1207	depression
+T9	disease 1433 1437	PTSD
+T10	disease 1730 1740	depression
+T11	disease 1829 1833	PTSD
+T12	disease 1877 1887	depression
+T17	disease 0 10	Depression
+T18	method 88 112	prospective cohort study
+T2	method 322 357	population-based prospective cohort
+T19	disease 454 464	depression
+T20	method 488 518	Patient Health Questionnaire-9
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+T21	method 591 622	PTSD Checklist-Civilian Version
+R2	help_diagnose Arg1:T20 Arg2:T19	
+R3	help_diagnose Arg1:T21 Arg2:T3	
+R4	help_diagnose Arg1:T21 Arg2:T4	
+T22	method 724 757	multivariable logistic regression
+T23	method 1235 1237	CI
+T13	Health_factors 44 63	major social unrest
+T14	Health_factors 171 192	violent social unrest
+T15	Health_factors 359 364	adult
+T16	Health_factors 378 382	aged
+T24	Health_factors 693 714	ongoing social unrest
+T26	Health_factors 883 889	unrest
+T27	Health_factors 1026 1066	ambulatory specialist psychiatric visits
+T28	Health_factors 1162 1168	adults
+T30	Health_factors 1354 1377	Occupy Central Movement
+T31	Health_factors 1393 1407	current unrest
+T32	Health_factors 1485 1488	Age
+T33	Health_factors 1490 1493	sex
+T34	Health_factors 1495 1517	educational attainment
+T35	Health_factors 1522 1538	household income
+T36	Health_factors 1594 1610	social media use
+T37	Health_factors 1653 1671	Political attitude
+T38	Health_factors 1675 1696	protest participation
+T39	Health_factors 1835 1849	Family support
+R5	treatment_for Arg1:T39 Arg2:T12	
+T40	Health_factors 2123 2136	social unrest
+T41	Health_factors 2235 2260	social care professionals
+T43	Health_factors 2353 2359	unrest
+T29	Health_factors 649 677	exposure to traumatic events
+T7	method 1122 1133	followed up
+T45	Health_factors 2091 2104	mental health
+T46	Health_factors 2448 2461	mental health
+T42	Health_factors 249 262	mental health
+T47	Health_factors 2304 2326	mental health sequelae
+T48	method 289 300	health-care
+T49	method 969 986	professional care
+T50	Health_factors 1746 1785	neutrality towards the extradition bill
+R6	risk_factor_of Arg1:T50 Arg2:T11	
+T51	method 2219 2230	Health-care
+T52	Health_factors 395 400	older
+T25	Health_factors 823 829	doctor

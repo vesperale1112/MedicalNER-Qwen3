@@ -1,0 +1,4 @@
+T2	Health_factors 13 46	Behavioral and linguistic changes
+T3	disease 82 92	depression
+T4	drug 104 129	antidepressant medication
+R1	associated_with Arg1:T2 Arg2:T4	

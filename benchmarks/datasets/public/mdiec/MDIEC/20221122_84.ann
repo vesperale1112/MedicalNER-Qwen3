@@ -1,0 +1,8 @@
+T1	disease 0 3	MDD
+T2	Health_factors 30 33	age
+T3	Health_factors 110 113	age
+T4	gene 94 97	CRP
+T5	gene 101 105	IL-6
+T7	method 167 169	CI
+T8	gene 79 84	suPAR
+R1	associated_with Arg1:T1 Arg2:T8	

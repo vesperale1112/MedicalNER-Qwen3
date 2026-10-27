@@ -1,0 +1,74 @@
+T0	disease 50 57	anxiety
+T1	disease 83 97	critically ill
+T3	method 151 176	randomized clinical trial
+T4	method 62 79	sedative exposure
+T5	method 11 46	patient-directed music intervention
+T6	drug 205 225	sedative medications
+T7	disease 260 267	anxiety
+T8	method 284 303	ventilatory support
+T11	disease 401 408	anxiety
+T12	method 438 457	ventilatory support
+T13	method 413 430	sedative exposure
+T15	method 518 543	Randomized clinical trial
+T16	Health_factors 579 599	intensive care units
+T17	Health_factors 824 829	white
+T18	Health_factors 840 846	female
+T19	method 862 864	SD
+T20	Health_factors 866 869	age
+T23	method 914 916	SD
+T25	method 918 979	Acute Physiology, Age and Chronic Health Evaluation III score
+T26	method 1005 1007	SD
+T27	method 1036 1049	INTERVENTIONS
+T28	method 1257 1267	usual care
+T29	method 1211 1237	noise-canceling headphones
+T30	method 1168 1187	ventilatory support
+T31	Health_factors 1119 1134	music therapist
+T32	disease 1329 1336	anxiety
+T38	method 1508 1510	SD
+T39	method 1584 1587	NCH
+T40	method 1640 1642	SD
+T41	method 1603 1627	noise-abating headphones
+T44	method 1836 1838	CI
+T45	method 1704 1725	mixed-models analysis
+T46	method 1961 1964	PDM
+T47	disease 1929 1936	anxiety
+T48	method 2019 2022	PDM
+T49	method 2062 2079	sedative exposure
+T51	method 2095 2105	usual care
+T52	method 2166 2168	CI
+T53	method 2248 2250	CI
+T54	method 2388 2391	NCH
+T2	method 117 147	mechanical ventilatory support
+T9	method 235 240	music
+R1	treatment_for Arg1:T9 Arg2:T7	
+T10	method 361 383	patient-directed music
+T14	method 385 388	PDM
+R2	abbreviation_for Arg1:T14 Arg2:T10	
+T21	disease 461 475	critically ill
+T33	Health_factors 601 605	ICUs
+R5	abbreviation_for Arg1:T33 Arg2:T16	
+T34	method 676 712	acute mechanical ventilatory support
+T37	disease 717 736	respiratory failure
+R6	treatment_for Arg1:T34 Arg2:T37	
+T24	method 1065 1068	PDM
+T42	method 1239 1242	NCH
+R7	abbreviation_for Arg1:T42 Arg2:T29	
+T22	method 1341 1367	100-mm visual analog scale
+R8	help_diagnose Arg1:T22 Arg2:T32	
+T35	method 1397 1414	sedative exposure
+T36	method 1468 1471	PDM
+T43	method 1773 1776	PDM
+T50	disease 1790 1797	anxiety
+T55	method 1876 1886	usual care
+R9	treatment_for Arg1:T43 Arg2:T50	
+R10	treatment_for Arg1:T48 Arg2:T49	
+T56	method 2111 2114	PDM
+T57	method 2294 2297	PDM
+T58	method 2316 2334	sedation frequency
+R11	associated_with Arg1:T57 Arg2:T58	
+T59	method 2133 2151	sedation intensity
+R12	associated_with Arg1:T56 Arg2:T59	
+T60	method 1490 1495	music
+R13	treatment_for Arg1:T5 Arg2:T0	
+R3	associated_with Arg1:T7 Arg2:T8	
+R4	treatment_for Arg1:T46 Arg2:T47	

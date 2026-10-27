@@ -1,0 +1,34 @@
+T0	disease 25 58	treatment-resistant schizophrenia
+T3	method 62 79	systematic review
+T4	method 0 21	Brain-imaging studies
+T5	disease 109 122	schizophrenia
+T7	physiology 173 193	treatment resistance
+T8	physiology 131 168	inadequate response to antipsychotics
+T10	method 195 215	Neuroimaging studies
+T11	drug 378 387	clozapine
+T12	drug 433 442	clozapine
+T13	region 395 400	brain
+T14	physiology 492 512	treatment resistance
+T16	drug 714 723	clozapine
+T17	method 544 550	PubMed
+T18	method 608 628	neuroimaging studies
+T21	region 980 992	white matter
+T22	method 1027 1039	effect sizes
+T23	region 939 961	frontotemporal regions
+T24	region 910 921	grey matter
+T26	drug 1075 1084	Clozapine
+T30	disease 1262 1295	treatment-resistant schizophrenia
+T31	disease 1323 1357	treatment-responsive schizophrenia
+T32	symptom 1230 1253	neurobiological changes
+T33	signs 1444 1454	biomarkers
+R1	hyponym_of Arg1:T7 Arg2:T8	
+R2	characteristic_of Arg1:T8 Arg2:T5	
+R3	characteristic_of Arg1:T7 Arg2:T5	
+T1	region 997 1010	basal ganglia
+T2	signs 1116 1138	caudate nucleus volume
+R4	associated_with Arg1:T26 Arg2:T2	
+R5	characteristic_of Arg1:T32 Arg2:T30	
+T6	method 1504 1516	neuroimaging
+T9	physiology 834 853	treatment-resistant
+T15	physiology 858 878	treatment-responsive
+T19	method 783 801	inclusion criteria

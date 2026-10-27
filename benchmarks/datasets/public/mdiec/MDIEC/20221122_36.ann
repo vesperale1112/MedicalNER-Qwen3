@@ -1,0 +1,25 @@
+T1	Health_factors 0 11	Younger age
+T3	disease 26 37	comorbidity
+T4	disease 39 59	higher-grade disease
+T5	disease 222 242	higher-grade disease
+T6	disease 61 83	lymph node involvement
+T7	method 88 100	chemotherapy
+T8	method 205 217	chemotherapy
+T9	disease 163 170	anxiety
+T10	disease 174 189	invasive cancer
+T12	disease 282 295	comorbidities
+T13	Health_factors 324 341	late-onset events
+T14	disease 148 158	depression
+R1	risk_factor_of Arg1:T1 Arg2:T14	
+R2	risk_factor_of Arg1:T3 Arg2:T14	
+R3	risk_factor_of Arg1:T4 Arg2:T14	
+R4	risk_factor_of Arg1:T6 Arg2:T14	
+R5	risk_factor_of Arg1:T7 Arg2:T14	
+R6	risk_factor_of Arg1:T7 Arg2:T9	
+R7	risk_factor_of Arg1:T1 Arg2:T9	
+R8	risk_factor_of Arg1:T3 Arg2:T9	
+R9	risk_factor_of Arg1:T4 Arg2:T9	
+R10	risk_factor_of Arg1:T6 Arg2:T9	
+R11	associated_with Arg1:T12 Arg2:T13	
+R12	occurs_in Arg1:T9 Arg2:T10	
+R13	occurs_in Arg1:T14 Arg2:T10	

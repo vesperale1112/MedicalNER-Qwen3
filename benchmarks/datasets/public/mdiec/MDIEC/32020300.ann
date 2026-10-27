@@ -1,0 +1,43 @@
+T1	disease 59 80	Neurologic Conditions
+T2	drug 298 304	copper
+T3	disease 783 808	major depression disorder
+T4	disease 813 842	obsessive-compulsive disorder
+T5	disease 907 929	neurological disorders
+T6	disease 978 1001	neurological conditions
+T7	disease 1013 1019	stroke
+T8	disease 1024 1034	spasticity
+T9	disease 1036 1044	migraine
+T10	disease 1050 1058	dementia
+T11	method 0 33	Transcranial Magnetic Stimulation
+T12	method 101 134	Transcranial magnetic stimulation
+T13	method 136 139	TMS
+R2	abbreviation_for Arg1:T13 Arg2:T12	
+T14	method 156 186	Non-Invasive Brain Stimulation
+R3	hyponym_of Arg1:T13 Arg2:T14	
+R4	hyponym_of Arg1:T12 Arg2:T14	
+T15	method 265 275	TMS device
+T16	region 366 371	brain
+T17	region 468 473	scalp
+T18	region 553 586	cortical and subcortical networks
+T20	method 641 644	TMS
+T21	method 692 695	TMS
+T22	method 759 762	TMS
+R5	treatment_for Arg1:T22 Arg2:T3	
+R6	treatment_for Arg1:T22 Arg2:T4	
+T23	method 894 897	TMS
+R7	treatment_for Arg1:T23 Arg2:T5	
+T24	method 963 966	TMS
+R8	hyponym_of Arg1:T7 Arg2:T6	
+R9	hyponym_of Arg1:T8 Arg2:T6	
+R10	hyponym_of Arg1:T9 Arg2:T6	
+R11	hyponym_of Arg1:T10 Arg2:T6	
+T25	method 1060 1063	TMS
+T26	method 1090 1120	non-invasive brain stimulation
+T27	physiology 521 542	axonal depolarization
+R17	associated_with Arg1:T27 Arg2:T18	
+T29	physiology 1228 1247	neuronal plasticity
+T30	physiology 1265 1286	synaptic transmission
+T31	method 1415 1430	clinical trials
+T32	method 204 231	electro-physical principles
+T28	physiology 493 514	axonal depolarization
+R1	treatment_for Arg1:T11 Arg2:T1	

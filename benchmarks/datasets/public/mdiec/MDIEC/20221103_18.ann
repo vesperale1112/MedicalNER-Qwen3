@@ -1,0 +1,16 @@
+T2	drug 64 102	selective serotonin reuptake inhibitor
+T3	drug 104 116	escitalopram
+T4	disease 137 147	depression
+T5	disease 180 189	anhedonia
+T7	method 226 258	chronic antidepressant treatment
+T10	physiology 309 346	serotoninergic autoinhibitory feedbac
+T11	disease 163 178	sleep anomalies
+R2	characteristic_of Arg1:T11 Arg2:T4	
+R3	characteristic_of Arg1:T5 Arg2:T4	
+T6	disease 201 213	helplessness
+R4	characteristic_of Arg1:T6 Arg2:T4	
+T8	physiology 269 293	response to acute stress
+R5	characteristic_of Arg1:T8 Arg2:T4	
+R6	treatment_for Arg1:T7 Arg2:T6	
+R7	characteristic_of Arg1:T10 Arg2:T4	
+T9	method 19 30	female mice

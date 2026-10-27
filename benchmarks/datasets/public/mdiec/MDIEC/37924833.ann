@@ -1,0 +1,97 @@
+T0	drug 23 31	TV-46000
+T1	drug 88 99	risperidone
+T2	disease 105 118	schizophrenia
+T3	method 48 60	subcutaneous
+T4	method 122 147	randomised clinical trial
+T5	drug 185 193	TV-46000
+T7	drug 260 271	risperidone
+T10	drug 226 245	antipsychotic agent
+T11	method 291 331	copolymer-based drug delivery technology
+T13	drug 513 520	TV46000
+T14	disease 524 537	schizophrenia
+T15	method 426 467	Risperidone Subcutaneous Extended-release
+T16	drug 650 661	risperidone
+T17	drug 781 789	TV-46000
+T18	method 645 649	oral
+T21	method 680 762	open-ended, randomised, double-blind, placebo-controlled, relapse-prevention phase
+T22	method 768 780	subcutaneous
+T24	disease 879 892	schizophrenia
+T26	method 917 926	screening
+T27	method 962 971	screening
+T29	disease 1044 1051	relapse
+T30	method 1076 1085	screening
+T33	method 979 1018	Structured Clinical Interview for DSM-5
+T34	drug 1299 1307	TV-46000
+T35	drug 1322 1330	TV-46000
+T37	Health_factors 1133 1144	outpatients
+T38	method 1286 1298	subcutaneous
+T40	disease 1369 1376	relapse
+T42	Health_factors 1567 1604	intention-to-treat patient population
+T43	Health_factors 1542 1559	impending relapse
+T44	method 1647 1665	ClinicalTrials.gov
+T45	drug 2231 2239	TV-46000
+T47	Health_factors 1867 1871	male
+T48	Health_factors 1886 1892	female
+T49	method 1913 1915	SD
+T50	Health_factors 1917 1920	age
+T51	Health_factors 1980 1985	White
+T52	Health_factors 2000 2005	Asian
+T53	Health_factors 2074 2078	race
+T54	Health_factors 2113 2117	race
+T55	method 2187 2199	subcutaneous
+T57	Health_factors 1940 1965	Black or African American
+T60	drug 2360 2368	TV-46000
+T61	drug 2455 2463	TV-46000
+T62	Health_factors 2297 2314	impending relapse
+T63	method 2383 2395	hazard ratio
+T64	method 2407 2409	CI
+T68	drug 2780 2788	TV-46000
+T69	drug 2810 2818	TV-46000
+T70	disease 2906 2929	extrapyramidal disorder
+T72	Health_factors 2556 2588	treatment-related adverse events
+T75	drug 3025 3033	TV-46000
+T76	drug 3079 3087	TV-46000
+T78	Health_factors 2957 2979	Serious adverse events
+T79	drug 3180 3188	TV-46000
+T80	drug 3240 3251	risperidone
+T83	disease 3325 3338	schizophrenia
+T84	drug 3353 3361	TV-46000
+T85	method 3340 3352	subcutaneous
+T88	Health_factors 3421 3438	impending relapse
+T89	drug 3455 3463	TV-46000
+T90	disease 3567 3580	schizophrenia
+T94	drug 3507 3526	antipsychotic agent
+T9	method 930 935	DSM-5
+R1	help_diagnose Arg1:T9 Arg2:T24	
+T95	method 62 84	injectable formulation
+R2	hyponym_of Arg1:T0 Arg2:T1	
+T96	method 212 224	subcutaneous
+R3	hyponym_of Arg1:T5 Arg2:T10	
+T6	method 337 347	suspension
+T97	method 385 401	subcutaneous use
+T12	method 469 473	RISE
+R4	abbreviation_for Arg1:T12 Arg2:T15	
+T98	method 552 562	RISE study
+T19	method 609 639	open-label stabilisation phase
+R5	help_diagnose Arg1:T33 Arg2:T24	
+T20	disease 1485 1492	relapse
+T23	Health_factors 2017 2058	Native Hawaiian or other Pacific Islander
+T28	Health_factors 2133 2141	Hispanic
+T31	Health_factors 2145 2151	Latinx
+T32	drug 2200 2208	TV-46000
+R6	treatment_for Arg1:T60 Arg2:T62	
+R7	treatment_for Arg1:T61 Arg2:T62	
+T39	drug 2619 2627	TV-46000
+T41	drug 2682 2690	TV-46000
+R8	occurs_in Arg1:T83 Arg2:T84	
+R9	treatment_for Arg1:T84 Arg2:T88	
+T8	method 3493 3505	subcutaneous
+T25	Health_factors 3547 3552	adult
+R10	hyponym_of Arg1:T89 Arg2:T94	
+R11	treatment_for Arg1:T89 Arg2:T90	
+R12	occurs_in Arg1:T25 Arg2:T90	
+T36	disease 2749 2771	injection site nodules
+T46	symptom 2857 2873	weight increased
+R13	risk_factor_of Arg1:T41 Arg2:T36	
+R14	risk_factor_of Arg1:T41 Arg2:T46	
+R15	risk_factor_of Arg1:T41 Arg2:T70	

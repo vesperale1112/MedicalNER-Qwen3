@@ -1,0 +1,32 @@
+T1	disease 30 40	depression
+T2	disease 144 160	mental disorders
+T3	disease 258 274	mental disorders
+T4	disease 278 288	depression
+T6	disease 636 646	depression
+T7	disease 926 936	depression
+T8	method 1475 1499	psychiatric epidemiology
+T9	disease 1658 1668	depression
+T10	method 14 26	GWAS studies
+R1	hyponym_of Arg1:T4 Arg2:T3	
+T13	method 464 476	DSM-V/ICD-10
+T14	disease 446 462	mental disorders
+T5	disease 698 708	depression
+T16	method 809 838	Genome-Wide Association Study
+T17	method 840 844	GWAS
+R4	abbreviation_for Arg1:T17 Arg2:T16	
+T18	method 980 992	DSM-V/ICD-10
+T20	method 1106 1142	electronic diagnostic questionnaires
+T21	method 1152 1164	DSM-V/ICD-10
+T23	method 1409 1429	categorical approach
+T24	method 1388 1407	diagnostic criteria
+T25	method 1577 1596	diagnostic criteria
+T26	method 1611 1615	GWAS
+T11	method 351 376	resource-intensive method
+T27	Health_factors 406 416	physicians
+T28	method 568 580	self-reports
+T29	Health_factors 1051 1070	medical specialists
+T15	disease 747 764	clinical symptoms
+T22	gene 123 140	genetic risk loci
+T31	signs 290 309	lifetime prevalence
+T30	method 1301 1336	official diagnostic classifications
+T32	method 522 541	minimal phenotyping

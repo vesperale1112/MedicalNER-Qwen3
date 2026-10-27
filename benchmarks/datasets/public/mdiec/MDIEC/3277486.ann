@@ -1,0 +1,53 @@
+T0	physiology 0 21	Nalbuphine antagonism
+T2	disease 25 64	fentanyl-induced ventilatory depression
+T3	method 68 84	randomized trial
+T4	drug 223 231	fentanyl
+T5	method 172 203	coronary artery bypass grafting
+T6	physiology 133 167	pulmonary and ventricular function
+T8	drug 348 358	nalbuphine
+T9	drug 458 468	nalbuphine
+T10	signs 276 287	vital signs
+T11	Health_factors 302 321	intensive care unit
+T13	method 473 482	analgesia
+T14	method 406 425	extubation criteria
+T15	drug 561 571	nalbuphine
+T17	method 516 535	tracheal extubation
+T18	drug 617 627	nalbuphine
+T19	drug 720 730	nalbuphine
+T23	method 690 704	placebo trials
+T26	drug 815 825	nalbuphine
+T28	method 770 789	tracheal extubation
+T31	signs 971 1000	plasma fentanyl concentration
+T32	drug 1036 1046	nalbuphine
+T35	method 928 947	tracheal extubation
+T37	disease 1164 1176	hypertension
+T38	disease 1180 1191	tachycardia
+T39	drug 1230 1240	nalbuphine
+T41	drug 1146 1159	beta-blockers
+T43	drug 1125 1142	vasoactive agents
+T45	drug 1287 1297	nalbuphine
+T46	drug 1322 1330	morphine
+T47	disease 1351 1355	pain
+T48	signs 1381 1404	fentanyl concentrations
+T49	region 1408 1414	plasma
+T50	physiology 1470 1484	motor activity
+T52	drug 1486 1496	Nalbuphine
+T53	method 1537 1556	fentanyl anesthesia
+T56	disease 1747 1769	respiratory depression
+T57	Health_factors 1625 1648	post-sternotomy patient
+T58	method 1607 1616	analgesia
+T59	Health_factors 1589 1601	side effects
+T60	drug 1513 1530	opioid antagonist
+R1	treatment_for Arg1:T43 Arg2:T37	
+R2	treatment_for Arg1:T43 Arg2:T38	
+R3	treatment_for Arg1:T41 Arg2:T37	
+R4	treatment_for Arg1:T41 Arg2:T38	
+T1	method 98 110	anesthetized
+T7	method 674 683	extubated
+T12	physiology 905 917	renarcotized
+T16	method 1298 1307	analgesia
+R5	treatment_for Arg1:T46 Arg2:T47	
+R6	occurs_in Arg1:T48 Arg2:T49	
+R7	associated_with Arg1:T48 Arg2:T50	
+R8	hyponym_of Arg1:T52 Arg2:T60	
+R9	associated_with Arg1:T0 Arg2:T2	

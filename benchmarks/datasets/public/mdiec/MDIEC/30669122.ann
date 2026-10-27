@@ -1,0 +1,89 @@
+T1	disease 88 113	major depression disorder
+T2	disease 355 380	Major depression disorder
+T3	disease 382 385	MDD
+T5	disease 680 683	MDD
+T6	disease 809 812	MDD
+T7	gene 910 931	oxygenated hemoglobin
+T8	gene 945 968	deoxygenated hemoglobin
+T9	method 1036 1038	HC
+T10	disease 1144 1147	MDD
+T11	gene 1239 1245	oxy-Hb
+T12	gene 1250 1258	deoxy-Hb
+T13	disease 1337 1340	MDD
+T14	disease 1784 1794	depression
+T15	disease 2047 2050	MDD
+#1	AnnotatorNotes T1	C1269683
+#2	AnnotatorNotes T2	C1269683
+#3	AnnotatorNotes T3	C1269683
+T16	method 122 159	functional near-infrared spectroscopy
+#4	AnnotatorNotes T16	C5446361
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T18	method 525 551	near-infrared spectroscopy
+T19	method 490 518	portable neuroimaging system
+T20	method 710 726	healthy controls
+T21	method 728 730	HC
+R4	abbreviation_for Arg1:T21 Arg2:T20	
+T4	signs 879 902	Mayer wave power ratios
+T22	gene 933 939	oxy-Hb
+R5	abbreviation_for Arg1:T22 Arg2:T7	
+T23	gene 970 978	deoxy-Hb
+R6	abbreviation_for Arg1:T23 Arg2:T8	
+#6	AnnotatorNotes T8	C0057437
+#7	AnnotatorNotes T23	C0057437
+T24	disease 1064 1093	abnormal oxidative metabolism
+T25	symptom 1098 1135	weaker local hemodynamic oscillations
+R7	characteristic_of Arg1:T25 Arg2:T10	
+R8	characteristic_of Arg1:T24 Arg2:T10	
+T26	method 1158 1184	cross wavelet coefficients
+T27	method 1201 1230	wavelet coherence coefficient
+T29	method 1384 1386	HC
+T30	method 1719 1724	fNIRS
+T31	symptom 1609 1628	hemodynamic changes
+R9	help_diagnose Arg1:T31 Arg2:T14	
+#8	AnnotatorNotes T18	C5446361
+T32	physiology 1408 1448	abnormal locally functional connectivity
+R11	characteristic_of Arg1:T32 Arg2:T13	
+T33	method 1850 1883	transcranial magnetic stimulation
+T35	region 1268 1290	left prefrontal cortex
+T37	region 1531 1560	bilateral prefrontal cortices
+T39	region 1677 1706	bilateral prefrontal cortices
+T40	region 1893 1928	left dorsolateral prefrontal cortex
+T41	region 1956 1973	prefrontal cortex
+T42	region 778 800	left prefrontal cortex
+T43	region 1458 1480	left prefrontal cortex
+T28	gene 1313 1329	bilateral oxy-Hb
+#10	AnnotatorNotes T25	C4062278
+T45	physiology 57 83	facial emotion recognition
+T47	signs 245 254	biomarker
+T48	Health_factors 265 275	clinicians
+T49	physiology 629 655	facial emotion recognition
+T50	symptom 751 770	hemodynamic changes
+T51	symptom 573 621	prefrontal cortex hemodynamic activation changes
+T52	symptom 8 49	prefrontal cortex hemodynamic alterations
+T53	physiology 991 1017	emotional face recognition
+T34	region 1638 1660	left prefrontal cortex
+T36	method 329 353	individualized treatment
+T38	region 1490 1518	inter-hemispheric connection
+T44	symptom 425 467	processing of facial emotional expressions
+R2	characteristic_of Arg1:T44 Arg2:T3	
+R3	characteristic_of Arg1:T44 Arg2:T2	
+R25	located_in Arg1:T50 Arg2:T42	
+T54	signs 857 870	median values
+R27	located_in Arg1:T32 Arg2:T43	
+R16	characteristic_of Arg1:T38 Arg2:T13	
+R28	located_in Arg1:T38 Arg2:T37	
+R29	located_in Arg1:T31 Arg2:T34	
+R30	located_in Arg1:T31 Arg2:T39	
+T55	symptom 1988 2039	diminished regulation of emotion-generative systems
+R39	located_in Arg1:T12 Arg2:T35	
+R40	located_in Arg1:T11 Arg2:T35	
+R42	help_diagnose Arg1:T30 Arg2:T31	
+R12	characteristic_of Arg1:T55 Arg2:T15	
+R10	characteristic_of Arg1:T50 Arg2:T6	
+R13	characteristic_of Arg1:T7 Arg2:T6	
+R14	characteristic_of Arg1:T22 Arg2:T6	
+R15	characteristic_of Arg1:T8 Arg2:T6	
+R17	characteristic_of Arg1:T23 Arg2:T6	
+R18	characteristic_of Arg1:T12 Arg2:T13	
+R19	characteristic_of Arg1:T11 Arg2:T13	
+R20	located_in Arg1:T11 Arg2:T28	

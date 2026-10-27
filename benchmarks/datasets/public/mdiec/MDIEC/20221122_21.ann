@@ -1,0 +1,16 @@
+T1	disease 42 58	oxidative damage
+T2	drug 64 75	antioxidant
+T3	drug 77 93	N-acetylcysteine
+T4	drug 95 98	NAC
+T5	disease 149 166	neuronal deficits
+T6	disease 186 206	depressive behaviors
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+R4	treatment_for Arg1:T3 Arg2:T5	
+R5	associated_with Arg1:T3 Arg2:T6	
+R6	treatment_for Arg1:T4 Arg2:T5	
+R7	associated_with Arg1:T4 Arg2:T6	
+R8	treatment_for Arg1:T3 Arg2:T1	
+R9	treatment_for Arg1:T4 Arg2:T1	
+T7	method 210 214	rats
+R10	occurs_in Arg1:T6 Arg2:T7	
+R2	occurs_in Arg1:T5 Arg2:T7	

@@ -1,0 +1,13 @@
+T0	disease 38 61	auditory hallucinations
+T1	disease 65 78	schizophrenia
+T2	method 0 33	Transcranial magnetic stimulation
+T3	disease 97 110	schizophrenia
+T4	disease 115 138	auditory hallucinations
+T5	method 148 186	1 Hz transcranial magnetic stimulation
+T6	region 190 218	left temporoparietial cortex
+T7	disease 296 310	hallucinations
+T8	method 323 339	sham stimulation
+T9	method 255 273	active stimulation
+T10	method 225 253	double-blind crossover trial
+R1	occurs_in Arg1:T0 Arg2:T1	
+R2	treatment_for Arg1:T9 Arg2:T7	

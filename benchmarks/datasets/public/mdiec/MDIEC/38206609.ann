@@ -1,0 +1,113 @@
+T0	disease 0 23	Substance Use Disorders
+T2	Health_factors 33 55	Adult Cancer Survivors
+T3	disease 105 111	cancer
+T4	disease 190 213	cancer-related symptoms
+T6	drug 169 179	substances
+T7	disease 239 261	substance use disorder
+T8	disease 263 266	SUD
+T9	disease 272 278	cancer
+T10	disease 304 307	SUD
+T11	method 338 349	cancer care
+T12	disease 379 385	cancer
+T13	disease 424 427	SUD
+T14	physiology 454 463	attention
+T15	method 511 524	interventions
+T17	disease 567 573	cancer
+T18	disease 602 605	SUD
+T20	Health_factors 612 634	adult cancer survivors
+T21	Health_factors 834 863	history of solid tumor cancer
+T22	method 676 697	cross-sectional study
+T25	Health_factors 820 826	adults
+T26	disease 865 887	Substance use disorder
+T27	method 927 996	Diagnostic and Statistical Manual of Mental Disorders (Fourth Edition
+T29	signs 1143 1150	weights
+T30	signs 1163 1170	weights
+T34	disease 1361 1364	SUD
+T35	Health_factors 1438 1464	lifetime history of cancer
+T36	disease 1520 1526	cancer
+T37	method 1473 1491	secondary analyses
+T38	method 1315 1318	SEs
+T41	Health_factors 1664 1686	adult cancer survivors
+T42	Health_factors 1700 1704	aged
+T43	Health_factors 1717 1722	older
+T44	Health_factors 1739 1745	female
+T46	Health_factors 1754 1779	lifetime cancer survivors
+T47	disease 1806 1809	SUD
+T48	method 1821 1823	SE
+T49	disease 1891 1911	head and neck cancer
+T50	disease 1923 1973	mouth, tongue, lip, throat, and pharyngeal cancers
+T51	disease 1995 2024	esophageal and gastric cancer
+T52	disease 2046 2061	cervical cancer
+T53	disease 2087 2095	melanoma
+T55	method 1982 1984	SE
+T56	method 2033 2035	SE
+T57	method 2070 2072	SE
+T58	method 2104 2106	SE
+T59	disease 2117 2137	Alcohol use disorder
+T60	disease 2158 2161	SUD
+T61	disease 2210 2230	head and neck cancer
+T62	disease 2232 2247	cervical cancer
+T63	disease 2253 2261	melanoma
+T64	method 2170 2172	SE
+T65	disease 2279 2309	esophageal and gastric cancers
+T66	disease 2311 2332	cannabis use disorder
+T67	disease 2356 2359	SUD
+T68	method 2368 2370	SE
+T69	disease 2414 2420	cancer
+T70	disease 2477 2480	SUD
+T72	method 2508 2539	lifetime cancer survivor cohort
+T73	method 2548 2550	SE
+T76	disease 2577 2580	SUD
+T77	disease 2606 2619	head and neck
+T78	method 2629 2631	SE
+T80	method 2681 2683	SE
+T81	Health_factors 2646 2671	cervical cancer survivors
+T83	method 2768 2799	lifetime cancer survivor cohort
+T85	disease 2868 2889	sedative use disorder
+T86	disease 2910 2913	SUD
+T87	method 2922 2924	SE
+T88	disease 2998 3001	SUD
+T89	disease 3059 3065	cancer
+T90	Health_factors 3110 3126	cancer survivors
+T91	method 3148 3178	integrated cancer and SUD care
+T95	disease 3262 3274	comorbid SUD
+T96	disease 3293 3299	cancer
+T97	disease 3321 3324	SUD
+T98	Health_factors 3234 3256	adult cancer survivors
+R1	occurs_in Arg1:T0 Arg2:T2	
+T1	Health_factors 127 148	substance use history
+R2	risk_factor_of Arg1:T1 Arg2:T3	
+R3	treatment_for Arg1:T6 Arg2:T4	
+R4	abbreviation_for Arg1:T8 Arg2:T7	
+R5	associated_with Arg1:T10 Arg2:T11	
+R6	occurs_in Arg1:T18 Arg2:T20	
+T5	method 739 777	National Survey on Drug Use and Health
+T16	method 779 784	NSDUH
+R7	abbreviation_for Arg1:T16 Arg2:T5	
+R8	occurs_in Arg1:T25 Arg2:T21	
+R9	help_diagnose Arg1:T27 Arg2:T26	
+T19	method 1093 1098	NSDUH
+R10	help_diagnose Arg1:T5 Arg2:T21	
+R11	help_diagnose Arg1:T16 Arg2:T21	
+T23	method 1194 1199	NSDUH
+T24	disease 1833 1855	Substance use disorder
+R12	associated_with Arg1:T24 Arg2:T49	
+R13	hyponym_of Arg1:T50 Arg2:T49	
+R14	associated_with Arg1:T24 Arg2:T50	
+R15	associated_with Arg1:T24 Arg2:T51	
+R16	associated_with Arg1:T24 Arg2:T52	
+R17	associated_with Arg1:T24 Arg2:T53	
+R18	hyponym_of Arg1:T59 Arg2:T60	
+R19	hyponym_of Arg1:T59 Arg2:T61	
+R20	hyponym_of Arg1:T59 Arg2:T62	
+R21	hyponym_of Arg1:T59 Arg2:T63	
+R22	associated_with Arg1:T65 Arg2:T66	
+R23	hyponym_of Arg1:T66 Arg2:T67	
+R24	risk_factor_of Arg1:T77 Arg2:T76	
+R25	risk_factor_of Arg1:T81 Arg2:T76	
+T28	disease 2723 2727	SUDs
+T31	Health_factors 2836 2866	head and neck cancer survivors
+R26	associated_with Arg1:T31 Arg2:T85	
+R27	hyponym_of Arg1:T85 Arg2:T86	
+R28	risk_factor_of Arg1:T89 Arg2:T88	
+R29	occurs_in Arg1:T98 Arg2:T95	

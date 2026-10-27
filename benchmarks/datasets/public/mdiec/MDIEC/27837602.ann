@@ -1,0 +1,103 @@
+T5	disease 770 792	psychological distress
+T6	disease 797 818	functional impairment
+T7	disease 1268 1275	anxiety
+T8	disease 1280 1299	depression symptoms
+T9	disease 1420 1449	posttraumatic stress symptoms
+T10	method 1451 1500	Posttraumatic Stress Disorder Checklist for DSM-5
+T11	disease 1643 1662	depressive disorder
+T12	disease 2015 2022	anxiety
+T13	method 2080 2083	AMD
+T14	disease 2119 2129	depression
+T15	method 2161 2164	AMD
+T16	disease 2321 2328	anxiety
+T17	method 2359 2362	AMD
+T18	disease 2399 2409	depression
+T19	method 2439 2442	AMD
+T20	method 2564 2567	AMD
+T21	disease 2601 2622	functional impairment
+T22	method 2624 2627	AMD
+T23	method 2704 2707	AMD
+T24	disease 2757 2776	depressive disorder
+T25	method 2778 2781	AMD
+T27	disease 3119 3126	anxiety
+T28	disease 3131 3150	depressive symptoms
+T29	method 12 50	Multicomponent Behavioral Intervention
+T31	method 139 164	Randomized Clinical Trial
+T32	method 388 426	multicomponent behavioral intervention
+T33	method 500 512	primary care
+T34	method 560 585	randomized clinical trial
+T35	method 654 666	primary care
+T36	method 836 872	12-item General Health Questionnaire
+T38	method 881 941	World Health Organization Disability Assessment Schedule 2.0
+T39	method 943 953	WHODAS 2.0
+R1	abbreviation_for Arg1:T39 Arg2:T38	
+R2	help_diagnose Arg1:T36 Arg2:T5	
+R3	help_diagnose Arg1:T36 Arg2:T6	
+R4	help_diagnose Arg1:T38 Arg2:T5	
+R5	help_diagnose Arg1:T38 Arg2:T6	
+R6	help_diagnose Arg1:T39 Arg2:T5	
+R7	help_diagnose Arg1:T39 Arg2:T6	
+T40	method 956 969	Interventions
+T41	method 1166 1183	stress management
+T42	method 1109 1130	behavioral activation
+T43	method 1350 1387	Hospital Anxiety and Depression Scale
+T44	method 1389 1393	HADS
+R8	abbreviation_for Arg1:T44 Arg2:T43	
+R9	help_diagnose Arg1:T43 Arg2:T7	
+R10	help_diagnose Arg1:T44 Arg2:T7	
+R11	help_diagnose Arg1:T43 Arg2:T8	
+R12	help_diagnose Arg1:T44 Arg2:T8	
+T46	disease 1503 1524	functional impairment
+T47	method 1526 1536	WHODAS 2.0
+T48	method 1664 1699	9-item Patient Health Questionnaire
+T49	method 1737 1739	SD
+T53	method 1984 1986	SD
+T54	method 1988 1992	HADS
+T55	method 2054 2078	adjusted mean difference
+R13	abbreviation_for Arg1:T13 Arg2:T55	
+T56	method 2096 2098	CI
+T57	method 2176 2178	CI
+T59	method 2278 2280	SD
+T60	method 2282 2286	HADS
+T62	method 2375 2377	CI
+T63	method 2455 2457	CI
+T64	disease 2542 2562	posttraumatic stress
+T65	method 2580 2582	CI
+T66	method 2640 2642	CI
+T67	method 2720 2722	CI
+T68	method 2794 2796	CI
+T69	method 2963 2990	multicomponent intervention
+R14	treatment_for Arg1:T69 Arg2:T27	
+R15	treatment_for Arg1:T69 Arg2:T28	
+T3	disease 311 333	mental health problems
+T45	method 1201 1220	enhanced usual care
+T70	method 1837 1856	enhanced usual care
+T71	method 3049 3068	enhanced usual care
+T4	Health_factors 225 233	violence
+T73	Health_factors 440 458	lay health workers
+T74	Health_factors 971 989	Lay health workers
+T1	Health_factors 1771 1776	women
+T52	Health_factors 3012 3033	behavioral strategies
+T61	Health_factors 54 95	Adults Impaired by Psychological Distress
+T77	Health_factors 462 468	adults
+T78	method 1594 1624	Psychological Outcome Profiles
+T79	Health_factors 1741 1744	age
+T80	Health_factors 2848 2889	adults impaired by psychological distress
+T81	Health_factors 2919 2936	lay health worker
+T75	Health_factors 101 135	Conflict-Affected Area of Pakistan
+T83	Health_factors 716 744	adult primary care attendees
+T84	Health_factors 1132 1160	strengthening social support
+T85	method 1056 1107	empirically supported strategies of problem solving
+T50	Health_factors 2895 2917	conflict-affected area
+T51	method 266 288	Scalable interventions
+T58	Health_factors 182 195	mental health
+T82	Health_factors 212 220	conflict
+T72	Health_factors 1022 1041	individual sessions
+R19	hyponym_of Arg1:T85 Arg2:T72	
+R20	hyponym_of Arg1:T42 Arg2:T72	
+R21	hyponym_of Arg1:T84 Arg2:T72	
+R22	hyponym_of Arg1:T41 Arg2:T72	
+T76	method 1813 1825	intervention
+T86	method 1934 1946	intervention
+T87	method 2229 2241	intervention
+T2	disease 474 496	psychological distress

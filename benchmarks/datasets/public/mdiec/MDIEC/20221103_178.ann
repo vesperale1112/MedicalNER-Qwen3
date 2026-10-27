@@ -1,0 +1,9 @@
+T1	method 45 48	RCT
+T3	disease 145 164	depression symptoms
+T5	disease 184 200	anxiety symptoms
+T6	disease 202 212	disability
+T7	disease 218 235	suicidal ideation
+T9	method 16 43	randomized controlled trial
+R1	abbreviation_for Arg1:T1 Arg2:T9	
+T2	method 81 121	video-based transdiagnostic intervention
+T10	method 122 132	FitMindKit

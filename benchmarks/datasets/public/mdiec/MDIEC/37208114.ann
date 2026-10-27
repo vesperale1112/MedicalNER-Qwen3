@@ -1,0 +1,78 @@
+T0	disease 39 52	schizophrenia
+T1	disease 58 74	bipolar disorder
+T2	disease 115 134	psychotic disorders
+T3	Health_factors 25 37	cannabis use
+T4	Health_factors 139 151	cannabis use
+T8	disease 281 300	psychotic disorders
+T9	disease 302 315	schizophrenia
+T10	disease 320 336	bipolar disorder
+T11	disease 389 410	cannabis use disorder
+T13	physiology 253 272	genetic association
+T14	Health_factors 342 361	cannabis phenotypes
+T16	Health_factors 363 384	lifetime cannabis use
+T19	Health_factors 495 512	European ancestry
+T20	method 522 553	Psychiatric Genomics Consortium
+T21	method 555 565	UK Biobank
+T23	Health_factors 619 631	heritability
+T26	method 699 741	genome-wide and local genetic correlations
+T27	gene 785 790	genes
+T28	method 814 835	functional enrichment
+T30	disease 867 886	psychotic disorders
+T31	method 979 1028	Norwegian Thematically Organized Psychosis cohort
+T34	physiology 837 863	Shared genetic liabilities
+T35	Health_factors 891 910	cannabis phenotypes
+T37	method 931 946	causal analyses
+T39	disease 1040 1059	Psychotic disorders
+T40	disease 1129 1150	cannabis use disorder
+T43	gene 1114 1123	polygenic
+T44	disease 1214 1233	psychotic disorders
+T47	Health_factors 1238 1257	cannabis phenotypes
+T49	method 1281 1340	mixture of positive and negative local genetic correlations
+T50	disease 1390 1408	psychotic disorder
+T53	region 1477 1505	neuronal and olfactory cells
+T54	drug 1539 1547	nicotine
+T55	drug 1549 1556	alcohol
+T56	drug 1562 1572	duloxetine
+T57	gene 1460 1465	genes
+T58	drug 1517 1521	drug
+T59	gene 1522 1526	gene
+T60	disease 1574 1593	Psychotic disorders
+T61	disease 1690 1706	bipolar disorder
+T65	Health_factors 1645 1666	lifetime cannabis use
+T66	method 1747 1796	Norwegian Thematically Organized Psychosis cohort
+T70	Health_factors 1856 1863	females
+T71	Health_factors 1885 1890	males
+T72	Health_factors 1897 1900	age
+T73	method 1912 1914	SD
+T75	disease 1943 1959	bipolar disorder
+T76	disease 1969 1982	schizophrenia
+T77	method 1998 2014	healthy controls
+T78	disease 2087 2106	psychotic disorders
+T79	disease 2180 2199	psychotic disorders
+T83	signs 2156 2171	polygenic score
+T84	disease 2290 2308	psychotic disorder
+T85	gene 2261 2273	genetic risk
+T86	drug 2319 2327	cannabis
+T87	disease 2455 2474	psychotic disorders
+T93	gene 2487 2498	shared loci
+T94	Health_factors 2592 2624	US National Institutes of Health
+T95	Health_factors 2679 2685	Health
+T96	Health_factors 2754 2762	European
+T5	method 430 472	genome-wide association summary statistics
+T6	method 571 604	International Cannabis Consortium
+T7	signs 2036 2076	polygenic scores for cannabis phenotypes
+T15	method 1808 1837	polygenic risk score analyses
+T22	physiology 633 645	polygenicity
+T24	method 951 967	polygenic scores
+T12	Health_factors 1085 1104	cannabis phenotypes
+T17	Health_factors 1070 1079	heritable
+T18	method 1164 1205	positive genome-wide genetic correlations
+R1	associated_with Arg1:T44 Arg2:T47	
+T25	Health_factors 1413 1431	cannabis phenotype
+T29	gene 1361 1365	loci
+T32	Health_factors 1620 1639	cannabis phenotypes
+T33	gene 190 202	genetic risk
+R2	risk_factor_of Arg1:T60 Arg2:T32	
+R3	risk_factor_of Arg1:T65 Arg2:T61	
+R4	associated_with Arg1:T7 Arg2:T78	
+T38	Health_factors 2383 2395	cannabis use

@@ -1,0 +1,88 @@
+T0	disease 156 183	childhood anxiety disorders
+T1	Health_factors 0 17	Clinical outcomes
+T4	method 187 214	randomised controlled trial
+T6	method 108 138	solution-focused brief therapy
+T7	method 44 103	brief guided parent-delivered cognitive behavioural therapy
+T8	disease 248 265	anxiety disorders
+T9	Health_factors 280 283	age
+T12	Health_factors 356 373	affected children
+T13	method 313 351	evidence-based psychological therapies
+T14	disease 504 511	anxiety
+T16	Health_factors 407 424	clinical outcomes
+T18	Health_factors 490 498	children
+T19	method 455 485	brief psychological treatments
+T20	method 613 642	cognitive behavioural therapy
+T21	method 644 647	CBT
+T22	Health_factors 681 698	clinical outcomes
+T24	method 704 734	solution-focused brief therapy
+T25	method 583 642	brief guided parent-delivered cognitive behavioural therapy
+T26	method 786 813	randomised controlled trial
+T29	Health_factors 846 886	primary child and mental health services
+T30	disease 945 952	anxiety
+T31	disease 1179 1195	parental anxiety
+T33	Health_factors 916 920	aged
+T36	Health_factors 1138 1141	age
+T37	Health_factors 1143 1146	sex
+T38	signs 1148 1164	anxiety severity
+T39	method 1084 1114	solution-focused brief therapy
+T40	method 1047 1080	brief guided parent-delivered CBT
+T41	method 1422 1434	intervention
+T42	Health_factors 1389 1403	clinical staff
+T44	Health_factors 1304 1318	Research staff
+T45	Health_factors 1485 1493	recovery
+T47	Health_factors 1563 1570	Parents
+T49	Health_factors 1699 1722	Child Health Utility 9D
+T50	method 1655 1676	cost-utility analysis
+T51	Health_factors 1608 1635	Quality-adjusted life-years
+T54	method 1878 1896	intention to treat
+T55	method 1903 1908	trial
+T58	method 2116 2146	solution-focused brief therapy
+T59	method 2072 2105	brief guided parent-delivered CBT
+T60	Health_factors 2233 2241	children
+T61	method 2249 2282	brief guided parent-delivered CBT
+T62	Health_factors 2305 2313	children
+T63	method 2321 2351	solution-focused brief therapy
+T64	method 2488 2501	relative risk
+T65	method 2511 2513	CI
+T68	method 2712 2714	CI
+T70	method 2854 2884	solution-focused brief therapy
+T71	method 2686 2701	mean difference
+T73	method 2619 2652	brief guided parent-delivered CBT
+T74	Health_factors 2924 2938	adverse events
+T78	method 3044 3077	brief guided parent-delivered CBT
+T80	disease 3263 3279	anxiety problems
+T83	method 3224 3244	first-line treatment
+T84	Health_factors 3249 3257	children
+T85	method 3164 3194	solution-focused brief therapy
+T86	method 3088 3115	guided parent-delivered CBT
+R1	treatment_for Arg1:T7 Arg2:T0	
+R2	treatment_for Arg1:T6 Arg2:T0	
+T2	Health_factors 22 40	cost-effectiveness
+T3	Health_factors 429 447	cost-effectiveness
+T5	Health_factors 524 560	routine child mental health settings
+R3	abbreviation_for Arg1:T21 Arg2:T20	
+T10	Health_factors 907 915	Children
+T11	method 1010 1034	online minimisation tool
+R4	treatment_for Arg1:T40 Arg2:T30	
+R5	treatment_for Arg1:T39 Arg2:T30	
+R6	occurs_in Arg1:T10 Arg2:T30	
+T15	method 1511 1553	Clinical Global Impressions of Improvement
+T17	method 1555 1560	CGI-I
+R7	abbreviation_for Arg1:T17 Arg2:T15	
+R8	help_diagnose Arg1:T15 Arg2:T45	
+R9	help_diagnose Arg1:T17 Arg2:T45	
+T23	Health_factors 1637 1642	QALYs
+R10	abbreviation_for Arg1:T23 Arg2:T51	
+T27	method 2401 2406	CGI-I
+T28	method 2481 2486	CGI-I
+T32	Health_factors 2543 2547	QALY
+T34	method 2549 2564	mean difference
+R11	hyponym_of Arg1:T86 Arg2:T83	
+R12	treatment_for Arg1:T86 Arg2:T80	
+R13	treatment_for Arg1:T85 Arg2:T80	
+R14	occurs_in Arg1:T84 Arg2:T80	
+R15	occurs_in Arg1:T18 Arg2:T14	
+R16	associated_with Arg1:T61 Arg2:T27	
+R17	associated_with Arg1:T63 Arg2:T27	
+R18	occurs_in Arg1:T60 Arg2:T61	
+R19	occurs_in Arg1:T62 Arg2:T63	

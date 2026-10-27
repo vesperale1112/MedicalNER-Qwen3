@@ -1,0 +1,86 @@
+T1	drug 41 67	Marine Omega-3 Fatty Acids
+T2	disease 90 100	Depression
+T3	disease 104 143	Clinically Relevant Depressive Symptoms
+T4	drug 215 240	Marine omega-3 fatty acid
+T5	disease 287 297	depression
+T6	disease 327 337	depression
+T7	disease 440 459	ate-life depression
+T9	disease 681 703	cardiovascular disease
+T10	method 708 725	cancer prevention
+T12	disease 812 822	depression
+T13	disease 844 864	recurrent depression
+T14	disease 875 885	depression
+T15	drug 1085 1095	vitamin D3
+T16	drug 1109 1135	marine omega-3 fatty acids
+T17	drug 1176 1197	eicosapentaenoic acid
+T18	drug 1212 1232	docosahexaenoic acid
+T19	disease 1397 1407	depression
+T20	disease 1411 1450	clinically relevant depressive symptoms
+T21	drug 1861 1877	vitamin D agents
+T22	disease 1925 1935	Depression
+T24	disease 2554 2579	gastrointestinal bleeding
+T25	disease 2632 2645	stomach upset
+T26	disease 2649 2653	pain
+T27	disease 2743 2782	clinically relevant depressive symptoms
+T28	disease 2939 2949	depression
+T29	disease 3147 3157	depression
+T30	method 176 201	Randomized Clinical Trial
+T31	drug 242 249	omega-3
+R1	abbreviation_for Arg1:T31 Arg2:T4	
+R2	treatment_for Arg1:T31 Arg2:T5	
+T32	drug 412 435	omega-3 supplementation
+T8	method 573 631	Vitamin D and Omega-3 Trial-Depression Endpoint Prevention
+T33	method 562 571	VITAL-DEP
+R4	abbreviation_for Arg1:T8 Arg2:T33	
+T34	method 652 657	VITAL
+T35	method 661 677	randomized trial
+T38	drug 1270 1277	omega-3
+T39	method 1521 1556	8-item Patient Health Questionnaire
+T40	method 1558 1563	PHQ-8
+R5	abbreviation_for Arg1:T40 Arg2:T39	
+T41	method 1656 1658	SD
+T42	drug 1845 1852	omega-3
+T43	drug 1976 1983	omega-3
+T44	method 2079 2091	hazard ratio
+T45	method 2093 2095	HR
+R6	abbreviation_for Arg1:T45 Arg2:T44	
+T46	method 2108 2110	CI
+T47	drug 2184 2191	omega-3
+T49	method 1509 1519	mood score
+T50	method 2228 2239	mood scores
+T51	method 2274 2279	PHQ-8
+T52	method 2307 2309	CI
+T53	drug 2417 2424	omega-3
+T54	disease 2528 2535	suicide
+T55	disease 2596 2609	easy bruising
+T56	drug 2811 2830	omega-3 supplements
+T57	disease 2953 2992	clinically relevant depressive symptoms
+T58	method 3014 3025	mood scores
+T59	drug 3106 3125	omega-3 supplements
+T60	method 469 480	mood scores
+T61	drug 1146 1154	fish oil
+R7	hyponym_of Arg1:T17 Arg2:T61	
+R8	hyponym_of Arg1:T18 Arg2:T61	
+R9	risk_factor_of Arg1:T56 Arg2:T28	
+T67	Health_factors 2197 2204	placebo
+T70	method 1565 1581	depression scale
+T71	Health_factors 535 541	adults
+T72	Health_factors 739 748	US adults
+T74	Health_factors 1645 1648	age
+T75	Health_factors 1678 1683	women
+T76	Health_factors 2365 2379	adverse events
+T77	disease 2448 2475	major cardiovascular events
+T78	disease 2492 2511	all-cause mortality
+T79	Health_factors 2705 2711	adults
+T80	Health_factors 2712 2716	aged
+T81	Health_factors 3129 3135	adults
+R10	risk_factor_of Arg1:T56 Arg2:T57	
+T62	method 3041 3050	follow-up
+T23	method 161 172	Mood Scores
+T36	method 1029 1042	Interventions
+R3	treatment_for Arg1:T4 Arg2:T5	
+T37	Health_factors 345 369	general adult population
+T48	Health_factors 1774 1792	treatment duration
+R11	risk_factor_of Arg1:T43 Arg2:T22	
+T63	Health_factors 2729 2734	older
+T11	disease 788 798	depression

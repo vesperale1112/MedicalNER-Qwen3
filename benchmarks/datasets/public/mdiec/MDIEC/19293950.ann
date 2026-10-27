@@ -1,0 +1,34 @@
+T0	disease 0 18	Metabolic syndrome
+T1	disease 34 47	schizophrenia
+T2	disease 59 77	Metabolic syndrome
+T3	disease 152 165	schizophrenia
+T5	Health_factors 88 115	cardiovascular risk factors
+T8	disease 192 211	premature mortality
+T12	drug 449 469	antipsychotic agents
+T13	Health_factors 512 535	modifiable risk factors
+T14	Health_factors 364 373	poor diet
+T15	Health_factors 333 352	unhealthy lifestyle
+T16	Health_factors 283 312	cardio-metabolic risk factors
+T17	Health_factors 541 553	psychiatrist
+T18	drug 615 639	antipsychotic medication
+T19	drug 716 729	antipsychotic
+T21	physiology 589 611	metabolic side effects
+T23	disease 857 873	physical illness
+T28	method 875 903	Multidisciplinary assessment
+T29	disease 1019 1033	mental illness
+R1	risk_factor_of Arg1:T3 Arg2:T2	
+R2	risk_factor_of Arg1:T3 Arg2:T5	
+R3	occurs_in Arg1:T0 Arg2:T1	
+T4	Health_factors 247 267	physical health care
+T7	Health_factors 378 397	sedentary behaviour
+R4	associated_with Arg1:T16 Arg2:T15	
+R5	hyponym_of Arg1:T14 Arg2:T15	
+R6	hyponym_of Arg1:T7 Arg2:T15	
+R7	associated_with Arg1:T16 Arg2:T14	
+R8	associated_with Arg1:T16 Arg2:T7	
+R9	associated_with Arg1:T12 Arg2:T13	
+T10	method 801 822	screening assessments
+T6	Health_factors 1056 1075	general health care
+T9	Health_factors 1083 1117	non-psychiatrically ill population
+T11	method 957 975	somatic treatments
+R10	treatment_for Arg1:T11 Arg2:T29	

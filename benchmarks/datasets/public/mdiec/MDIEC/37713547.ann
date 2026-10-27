@@ -1,0 +1,86 @@
+T0	disease 106 137	schizophrenia spectrum disorder
+T3	method 156 166	OPUS study
+T4	disease 65 88	first psychotic episode
+T5	disease 24 54	positive and negative symptoms
+T6	disease 342 373	schizophrenia spectrum disorder
+T10	Health_factors 427 445	long-term outcomes
+T11	Health_factors 398 422	baseline characteristics
+T12	disease 266 289	first psychotic episode
+T13	disease 225 255	positive and negative symptoms
+T14	method 517 527	OPUS trial
+T16	disease 636 695	Scales for the Assessment of Positive and Negative Symptoms
+T19	method 773 805	multinominal regression analyses
+T21	symptom 1083 1109	continuous severe symptoms
+T22	disease 1039 1069	relapse with moderate symptoms
+T23	disease 895 912	positive symptoms
+T24	disease 1118 1140	Substance use disorder
+T25	disease 1212 1231	untreated psychosis
+T26	disease 1444 1463	untreated psychosis
+T27	method 1142 1152	odds ratio
+T28	method 1154 1156	OR
+T29	method 1168 1170	CI
+T30	method 1233 1235	OR
+T31	method 1247 1249	CI
+T32	disease 1291 1308	negative symptoms
+T33	method 1310 1312	OR
+T34	method 1324 1326	CI
+T35	disease 1371 1401	relapse with moderate symptoms
+T36	method 1465 1467	OR
+T37	method 1479 1481	CI
+T39	disease 1590 1607	negative symptoms
+T40	disease 1655 1674	continuous symptoms
+T41	symptom 1625 1642	symptom remission
+T42	disease 1809 1828	untreated psychosis
+T43	Health_factors 1738 1746	male sex
+T44	method 1748 1750	OR
+T45	method 1762 1764	CI
+T46	method 1830 1832	OR
+T47	method 1844 1846	CI
+T49	disease 1893 1934	continuous positive and negative symptoms
+T50	method 1991 2037	Brief Assessment of Cognition in Schizophrenia
+T51	method 2062 2064	CI
+T52	method 2132 2134	CI
+T53	disease 2156 2184	continuous negative symptoms
+T55	drug 2243 2267	antipsychotic medication
+T56	method 2279 2288	follow-up
+T58	disease 2325 2353	continuous negative symptoms
+T59	disease 2290 2318	continuous positive symptoms
+T62	disease 2419 2464	first-episode schizophrenia spectrum disorder
+T63	symptom 2488 2531	early stable remission of positive symptoms
+T65	disease 2550 2569	untreated psychosis
+T66	disease 2574 2598	comorbid substance abuse
+T67	disease 2650 2667	positive symptoms
+T68	disease 2714 2731	negative symptoms
+T69	symptom 2811 2853	poor social and neurocognitive functioning
+R1	occurs_in Arg1:T4 Arg2:T0	
+T1	disease 1702 1721	continuous symptoms
+R2	risk_factor_of Arg1:T43 Arg2:T1	
+R3	risk_factor_of Arg1:T42 Arg2:T1	
+T2	method 322 328	ICD-10
+R4	help_diagnose Arg1:T2 Arg2:T6	
+T7	method 705 742	latent class growth mixture modelling
+T8	symptom 930 956	early continuous remission
+T9	symptom 980 998	stable improvement
+T15	symptom 1008 1029	intermittent symptoms
+R5	hyponym_of Arg1:T8 Arg2:T23	
+R6	hyponym_of Arg1:T9 Arg2:T23	
+R7	hyponym_of Arg1:T15 Arg2:T23	
+R8	hyponym_of Arg1:T22 Arg2:T23	
+R9	hyponym_of Arg1:T21 Arg2:T23	
+R10	risk_factor_of Arg1:T24 Arg2:T35	
+R11	risk_factor_of Arg1:T25 Arg2:T35	
+R12	risk_factor_of Arg1:T32 Arg2:T35	
+T17	symptom 1531 1557	continuous severe symptoms
+R13	associated_with Arg1:T26 Arg2:T17	
+R14	hyponym_of Arg1:T41 Arg2:T39	
+R15	hyponym_of Arg1:T40 Arg2:T39	
+T18	physiology 1956 1970	neurocognition
+R16	associated_with Arg1:T49 Arg2:T18	
+T20	method 2039 2043	BACS
+R17	abbreviation_for Arg1:T20 Arg2:T50	
+R18	help_diagnose Arg1:T50 Arg2:T18	
+R19	help_diagnose Arg1:T20 Arg2:T18	
+T38	disease 2086 2114	continuous positive symptoms
+R20	characteristic_of Arg1:T63 Arg2:T62	
+R21	risk_factor_of Arg1:T65 Arg2:T67	
+R22	risk_factor_of Arg1:T66 Arg2:T67	

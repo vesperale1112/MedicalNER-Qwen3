@@ -1,0 +1,61 @@
+T1	gene 0 7	MiR-155
+T2	disease 23 48	major depression disorder
+T3	gene 92 97	SIRT1
+T4	disease 99 124	Major depressive disorder
+T5	disease 126 129	MDD
+T6	disease 143 156	mood disorder
+T7	disease 179 182	MDD
+T8	gene 245 275	Silent information regulator 1
+T9	gene 277 282	SIRT1
+T10	disease 305 308	MDD
+T11	gene 418 425	miR-155
+T12	disease 447 450	MDD
+T13	gene 522 558	cellular and serum levels of miR-155
+T14	disease 597 607	depression
+T15	gene 684 689	SIRT1
+T16	gene 705 712	miR-155
+T17	method 737 758	dual-luciferase assay
+T18	drug 867 877	citalopram
+T19	physiology 893 911	miR-155 expression
+T20	physiology 929 945	SIRT1 expression
+T21	gene 974 981	miR-155
+T22	disease 1031 1041	depression
+T23	gene 1043 1050	miR-155
+T24	method 53 77	antidepressant treatment
+R4	abbreviation_for Arg1:T5 Arg2:T4	
+R5	hyponym_of Arg1:T4 Arg2:T6	
+R6	hyponym_of Arg1:T5 Arg2:T6	
+R7	abbreviation_for Arg1:T9 Arg2:T8	
+T25	gene 408 416	microRNA
+T26	method 457 483	quantitative real-time PCR
+T27	method 485 492	qRT-PCR
+R9	abbreviation_for Arg1:T27 Arg2:T26	
+T28	method 649 668	TargetScan analysis
+T29	method 760 767	qRT-PCR
+T30	method 772 793	Western blot analyses
+T31	drug 847 866	antidepressant drug
+T32	method 1100 1125	antidepressant treatments
+R2	associated_with Arg1:T1 Arg2:T2	
+#1	AnnotatorNotes T1	C1537811
+#2	AnnotatorNotes T8	C1423062
+#3	AnnotatorNotes T9	C1423062
+#4	AnnotatorNotes T25	C1101610
+#5	AnnotatorNotes T26	C2236987
+#6	AnnotatorNotes T30	C0949466
+#7	AnnotatorNotes T27	C2236987
+R11	associated_with Arg1:T8 Arg2:T10	
+R12	associated_with Arg1:T9 Arg2:T10	
+R13	characteristic_of Arg1:T13 Arg2:T14	
+R14	associated_with Arg1:T21 Arg2:T22	
+T33	region 808 837	human neural progenitor cells
+T34	method 205 231	biopsychosocial approaches
+T35	method 631 647	healthy controls
+R15	associated_with Arg1:T18 Arg2:T19	
+R16	associated_with Arg1:T18 Arg2:T20	
+R1	associated_with Arg1:T1 Arg2:T24	
+T38	method 457 502	quantitative real-time PCR (qRT-PCR) analysis
+R3	associated_with Arg1:T15 Arg2:T16	
+R17	associated_with Arg1:T1 Arg2:T3	
+T36	method 1012 1027	pathophysiology
+R8	associated_with Arg1:T23 Arg2:T32	
+R10	treatment_for Arg1:T34 Arg2:T7	

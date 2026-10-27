@@ -1,0 +1,114 @@
+T0	disease 20 26	trauma
+T1	disease 31 61	post-traumatic stress disorder
+T2	method 4 16	epidemiology
+T4	Health_factors 92 104	young people
+T5	method 67 88	representative cohort
+T9	method 189 199	psychiatry
+T10	method 241 253	epidemiology
+T11	disease 257 263	trauma
+T13	Health_factors 302 314	young people
+T14	Health_factors 169 185	childhood trauma
+T15	disease 435 465	post-traumatic stress disorder
+T16	disease 467 471	PTSD
+T17	Health_factors 415 430	trauma exposure
+T18	Health_factors 476 488	young people
+T22	physiology 656 661	birth
+T23	method 662 668	cohort
+T24	Health_factors 677 685	children
+T25	method 584 626	Environmental Risk Longitudinal Twin Study
+T26	method 517 552	comprehensive epidemiological study
+T27	disease 844 848	PTSD
+T28	disease 886 907	functional impairment
+T30	Health_factors 755 758	age
+T31	method 801 822	structured interviews
+T32	Health_factors 827 842	trauma exposure
+T33	method 856 871	psychopathology
+T34	Health_factors 913 924	service use
+T35	Health_factors 873 884	risk events
+T37	disease 943 947	PTSD
+T38	Health_factors 1015 1018	age
+T40	disease 1145 1149	PTSD
+T41	Health_factors 1125 1140	trauma exposure
+T45	disease 1205 1209	PTSD
+T46	Health_factors 1293 1308	trauma exposure
+T47	disease 1343 1347	PTSD
+T48	Health_factors 1351 1354	age
+T50	disease 1450 1474	major depressive episode
+T51	disease 1542 1560	alcohol dependence
+T53	disease 1692 1713	functional impairment
+T56	method 1411 1426	psychopathology
+T57	disease 1498 1514	conduct disorder
+T58	disease 1598 1607	self-harm
+T59	Health_factors 1563 1574	risk events
+T61	disease 1742 1746	PTSD
+T62	disease 1810 1834	major depressive episode
+T63	disease 1857 1873	conduct disorder
+T66	disease 2051 2072	functional impairment
+T68	method 1772 1787	psychopathology
+T69	disease 1955 1964	self-harm
+T70	Health_factors 1921 1932	risk events
+T71	disease 2123 2127	PTSD
+T72	Health_factors 2147 2174	mental health professionals
+T73	disease 2180 2184	PTSD
+T74	disease 2375 2379	PTSD
+T76	method 2244 2283	receiver operating characteristic curve
+T77	Health_factors 2519 2534	Trauma exposure
+T78	disease 2539 2543	PTSD
+T80	disease 2626 2636	impairment
+T81	Health_factors 2640 2652	young people
+T82	disease 2564 2597	complex psychiatric presentations
+T83	disease 2817 2821	PTSD
+T84	method 2663 2672	screening
+T89	Health_factors 2774 2801	trauma-exposed young people
+T90	method 2714 2747	comprehensive clinical assessment
+T93	Health_factors 2919 2924	Child
+T94	Health_factors 2925 2931	Health
+T98	Health_factors 3126 3132	Health
+T99	Health_factors 3001 3055	National Society for Prevention of Cruelty to Children
+T100	method 2976 2995	Nuffield Foundation
+T101	method 2953 2970	Jacobs Foundation
+T102	Health_factors 2867 2891	Medical Research Council
+T103	Health_factors 1365 1379	Trauma-exposed
+R1	associated_with Arg1:T103 Arg2:T56	
+R2	associated_with Arg1:T103 Arg2:T50	
+R3	associated_with Arg1:T103 Arg2:T57	
+R4	associated_with Arg1:T103 Arg2:T51	
+R5	associated_with Arg1:T103 Arg2:T59	
+R6	associated_with Arg1:T103 Arg2:T58	
+T52	disease 1629 1644	suicide attempt
+R7	associated_with Arg1:T103 Arg2:T52	
+T60	Health_factors 1670 1685	violent offence
+R8	associated_with Arg1:T103 Arg2:T60	
+R9	associated_with Arg1:T103 Arg2:T53	
+R10	risk_factor_of Arg1:T61 Arg2:T68	
+R11	risk_factor_of Arg1:T61 Arg2:T62	
+R12	risk_factor_of Arg1:T61 Arg2:T63	
+T6	disease 1900 1918	alcohol dependence
+R13	risk_factor_of Arg1:T61 Arg2:T6	
+R14	risk_factor_of Arg1:T61 Arg2:T70	
+R15	risk_factor_of Arg1:T61 Arg2:T69	
+T29	disease 1987 2002	suicide attempt
+R16	risk_factor_of Arg1:T61 Arg2:T29	
+T54	Health_factors 2029 2044	violent offence
+R17	risk_factor_of Arg1:T61 Arg2:T54	
+R18	risk_factor_of Arg1:T61 Arg2:T66	
+T55	Health_factors 2330 2344	trauma-exposed
+R19	associated_with Arg1:T77 Arg2:T82	
+R20	associated_with Arg1:T78 Arg2:T82	
+R21	risk_factor_of Arg1:T77 Arg2:T80	
+R22	risk_factor_of Arg1:T78 Arg2:T80	
+R23	occurs_in Arg1:T80 Arg2:T81	
+T39	method 731 751	follow-up home visit
+R24	help_diagnose Arg1:T31 Arg2:T32	
+R25	help_diagnose Arg1:T31 Arg2:T27	
+R26	help_diagnose Arg1:T31 Arg2:T33	
+R27	help_diagnose Arg1:T31 Arg2:T35	
+R28	help_diagnose Arg1:T31 Arg2:T28	
+R29	help_diagnose Arg1:T31 Arg2:T34	
+R30	abbreviation_for Arg1:T16 Arg2:T15	
+R31	occurs_in Arg1:T17 Arg2:T18	
+R32	occurs_in Arg1:T15 Arg2:T18	
+R33	occurs_in Arg1:T16 Arg2:T18	
+T7	Health_factors 268 298	trauma-related psychopathology
+R34	occurs_in Arg1:T7 Arg2:T13	
+R35	occurs_in Arg1:T11 Arg2:T13	

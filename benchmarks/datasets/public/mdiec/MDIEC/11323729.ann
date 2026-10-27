@@ -1,0 +1,67 @@
+T0	drug 0 11	Fluvoxamine
+T1	disease 33 50	anxiety disorders
+T2	Health_factors 54 62	children
+T3	Health_factors 67 78	adolescents
+T6	method 84 149	Research Unit on Pediatric Psychopharmacology Anxiety Study Group
+T7	drug 173 211	selectively inhibit serotonin reuptake
+T8	disease 253 279	mood and anxiety disorders
+T9	disease 389 406	anxiety disorders
+T10	drug 162 167	Drugs
+T12	Health_factors 241 247	adults
+T13	drug 342 371	serotonin-reuptake inhibitors
+T14	Health_factors 375 383	children
+T17	Health_factors 433 441	children
+T18	Health_factors 468 471	age
+T19	disease 545 573	generalized anxiety disorder
+T20	method 596 619	psychological treatment
+T21	drug 704 715	fluvoxamine
+T22	disease 847 854	anxiety
+T23	Health_factors 661 669	children
+T25	method 800 813	rating scales
+T26	disease 859 869	impairment
+T29	Health_factors 881 889	Children
+T30	method 930 932	SD
+T31	disease 978 985	anxiety
+T33	disease 1098 1105	anxiety
+T34	Health_factors 1162 1170	children
+T35	method 993 1023	Pediatric Anxiety Rating Scale
+T37	drug 1282 1293	fluvoxamine
+T39	Health_factors 1266 1274	children
+T40	Health_factors 1407 1415	children
+T41	method 1210 1255	Clinical Global Impressions-Improvement scale
+T42	drug 1481 1492	fluvoxamine
+T44	Health_factors 1465 1473	children
+T45	Health_factors 1545 1559	adverse events
+T46	Health_factors 1582 1587	child
+T51	drug 1636 1647	Fluvoxamine
+T52	Health_factors 1678 1686	children
+T53	Health_factors 1691 1702	adolescents
+T54	disease 1755 1783	generalized anxiety disorder
+R1	treatment_for Arg1:T0 Arg2:T1	
+R2	occurs_in Arg1:T1 Arg2:T2	
+R3	occurs_in Arg1:T1 Arg2:T3	
+R4	treatment_for Arg1:T7 Arg2:T8	
+R5	occurs_in Arg1:T12 Arg2:T8	
+R7	occurs_in Arg1:T14 Arg2:T9	
+T4	disease 498 511	social phobia
+T5	disease 513 540	separation anxiety disorder
+R8	help_diagnose Arg1:T25 Arg2:T22	
+R9	help_diagnose Arg1:T25 Arg2:T26	
+T11	drug 897 908	fluvoxamine
+R10	help_diagnose Arg1:T35 Arg2:T31	
+T15	disease 1708 1721	social phobia
+T16	disease 1723 1750	separation anxiety disorder
+R11	treatment_for Arg1:T51 Arg2:T15	
+R12	treatment_for Arg1:T51 Arg2:T16	
+R13	treatment_for Arg1:T51 Arg2:T54	
+R14	occurs_in Arg1:T52 Arg2:T15	
+R15	occurs_in Arg1:T52 Arg2:T16	
+R16	occurs_in Arg1:T52 Arg2:T54	
+R17	occurs_in Arg1:T53 Arg2:T15	
+R18	occurs_in Arg1:T53 Arg2:T16	
+R19	occurs_in Arg1:T53 Arg2:T54	
+R20	treatment_for Arg1:T11 Arg2:T31	
+R6	occurs_in Arg1:T11 Arg2:T29	
+R21	help_diagnose Arg1:T35 Arg2:T33	
+R22	occurs_in Arg1:T37 Arg2:T39	
+R23	occurs_in Arg1:T42 Arg2:T44	

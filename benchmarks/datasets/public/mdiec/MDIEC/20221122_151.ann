@@ -1,0 +1,10 @@
+T1	Health_factors 33 37	male
+T3	physiology 57 77	behavioral responses
+T4	disease 103 113	depression
+T5	drug 138 142	ADXR
+T2	disease 91 98	anxiety
+T6	Health_factors 50 56	female
+R1	associated_with Arg1:T3 Arg2:T5	
+R2	occurs_in Arg1:T1 Arg2:T3	
+R3	occurs_in Arg1:T3 Arg2:T2	
+R4	occurs_in Arg1:T3 Arg2:T4	

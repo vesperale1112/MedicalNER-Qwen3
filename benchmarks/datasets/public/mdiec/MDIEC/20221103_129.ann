@@ -1,0 +1,23 @@
+T1	method 13 57	Repetitive transcranial magnetic stimulation
+T2	disease 128 148	psychiatric diseases
+T3	disease 150 160	depression
+T4	disease 162 167	mania
+T5	disease 169 182	schizophrenia
+T6	disease 184 213	obsessive-complusive disorder
+T7	disease 215 220	panic
+T8	disease 222 251	posttraumatic stress disorder
+T9	method 61 100	transcranial direct current stimulation
+R7	treatment_for Arg1:T1 Arg2:T2	
+R8	treatment_for Arg1:T1 Arg2:T3	
+R9	treatment_for Arg1:T1 Arg2:T4	
+R10	treatment_for Arg1:T1 Arg2:T5	
+R11	treatment_for Arg1:T1 Arg2:T6	
+R12	treatment_for Arg1:T1 Arg2:T7	
+R13	treatment_for Arg1:T1 Arg2:T8	
+R14	treatment_for Arg1:T9 Arg2:T2	
+R15	treatment_for Arg1:T9 Arg2:T3	
+R16	treatment_for Arg1:T9 Arg2:T4	
+R17	treatment_for Arg1:T9 Arg2:T5	
+R18	treatment_for Arg1:T9 Arg2:T6	
+R19	treatment_for Arg1:T9 Arg2:T7	
+R20	treatment_for Arg1:T9 Arg2:T8	

@@ -1,0 +1,17 @@
+T1	physiology 36 66	pulmonary arteriovenous shunts
+T2	disease 87 108	serious complications
+T3	disease 117 132	cerebral emboli
+T4	disease 134 140	stroke
+T5	disease 146 164	migraine with aura
+T7	physiology 11 31	Patent foramen ovale
+R1	hyponym_of Arg1:T3 Arg2:T2	
+R2	hyponym_of Arg1:T4 Arg2:T2	
+R3	hyponym_of Arg1:T5 Arg2:T2	
+R4	associated_with Arg1:T1 Arg2:T2	
+R6	associated_with Arg1:T1 Arg2:T3	
+R8	associated_with Arg1:T1 Arg2:T4	
+R11	associated_with Arg1:T1 Arg2:T5	
+R5	associated_with Arg1:T7 Arg2:T2	
+R7	associated_with Arg1:T7 Arg2:T3	
+R9	associated_with Arg1:T7 Arg2:T4	
+R10	associated_with Arg1:T7 Arg2:T5	

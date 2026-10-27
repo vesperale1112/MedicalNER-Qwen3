@@ -1,0 +1,68 @@
+T0	drug 26 36	olanzapine
+T1	drug 41 52	haloperidol
+T2	disease 73 86	schizophrenia
+T3	method 90 117	randomized controlled trial
+T4	drug 136 146	olanzapine
+T5	disease 200 213	schizophrenia
+T7	method 282 298	controlled trial
+T8	drug 329 346	antipsychotic dru
+T10	drug 410 420	olanzapine
+T11	drug 435 446	haloperidol
+T12	disease 467 480	schizophrenia
+T15	method 612 661	US Department of Veterans Affairs medical centers
+T16	method 503 544	Double-blind, randomized controlled trial
+T18	disease 796 809	schizophrenia
+T19	disease 813 837	schizoaffective disorder
+T20	disease 861 880	serious dysfunction
+T21	disease 839 855	serious symptoms
+T22	method 970 991	follow-up assessments
+T24	method 995 1008	INTERVENTIONS
+T25	drug 1067 1077	olanzapine
+T26	drug 1150 1161	haloperidol
+T28	Health_factors 1261 1276	quality of life
+T29	Health_factors 1305 1334	adverse effects of medication
+T31	physiology 1278 1299	neurocognitive status
+T34	method 1336 1372	Veterans Affairs administrative data
+T35	method 1377 1387	interviews
+T38	method 1474 1495	VA health care system
+T39	disease 1707 1720	schizophrenia
+T40	Health_factors 1722 1737	quality of life
+T41	disease 1742 1765	extrapyramidal symptoms
+T45	drug 1767 1777	Olanzapine
+T46	disease 1806 1815	akathisia
+T47	disease 1887 1905	tardive dyskinesia
+T48	drug 1994 1998	drug
+T50	method 1965 1982	blinded treatment
+T51	method 1911 1929	secondary analysis
+T52	method 1823 1850	intention-to-treat analysis
+T53	physiology 2067 2073	memory
+T54	physiology 2078 2092	motor function
+T56	drug 2094 2104	Olanzapine
+T57	symptom 2155 2166	weight gain
+T62	drug 2346 2356	Olanzapine
+T63	drug 2403 2414	haloperidol
+T64	Health_factors 2523 2538	quality of life
+T65	disease 2569 2578	akathisia
+T66	physiology 2593 2602	cognition
+T67	symptom 2641 2652	weight gain
+R1	treatment_for Arg1:T0 Arg2:T2	
+R2	treatment_for Arg1:T1 Arg2:T2	
+R3	treatment_for Arg1:T4 Arg2:T5	
+R4	treatment_for Arg1:T10 Arg2:T12	
+R5	treatment_for Arg1:T11 Arg2:T12	
+T6	method 713 782	Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition
+R6	help_diagnose Arg1:T6 Arg2:T18	
+R7	help_diagnose Arg1:T6 Arg2:T19	
+R8	help_diagnose Arg1:T6 Arg2:T21	
+R9	help_diagnose Arg1:T6 Arg2:T20	
+T9	drug 1098 1122	prophylactic benztropine
+T13	method 1399 1417	non-VA service use
+R10	treatment_for Arg1:T45 Arg2:T46	
+R11	treatment_for Arg1:T45 Arg2:T47	
+R12	risk_factor_of Arg1:T56 Arg2:T57	
+T14	disease 2487 2510	extrapyramidal symptoms
+T17	drug 2436 2460	prophylactic benztropine
+T23	Health_factors 2465 2475	compliance
+R13	treatment_for Arg1:T62 Arg2:T65	
+R14	treatment_for Arg1:T62 Arg2:T66	
+R15	associated_with Arg1:T62 Arg2:T67	

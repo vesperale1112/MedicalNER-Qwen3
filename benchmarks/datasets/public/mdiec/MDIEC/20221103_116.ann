@@ -1,0 +1,13 @@
+T1	method 10 40	Patient Health Questionnaire-9
+T2	method 42 47	PHQ-9
+T3	disease 72 82	depression
+T4	method 106 145	random-effect logistic panel regression
+T5	method 150 183	receiver operating characteristic
+T6	method 185 188	ROC
+T7	method 150 198	receiver operating characteristic (ROC) analysis
+T8	method 215 224	screening
+T9	method 244 272	mobile mental-health tracker
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+R2	help_diagnose Arg1:T2 Arg2:T3	
+R3	help_diagnose Arg1:T1 Arg2:T3	
+R4	abbreviation_for Arg1:T6 Arg2:T5	

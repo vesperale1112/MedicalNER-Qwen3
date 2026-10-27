@@ -1,0 +1,44 @@
+T1	disease 25 50	major depression disorder
+T2	disease 310 335	major depression disorder
+T3	disease 337 340	MDD
+T4	disease 529 532	MDD
+T5	disease 917 920	MDD
+T6	disease 1006 1017	MDD symptom
+T7	disease 1094 1097	MDD
+T8	disease 1192 1195	MDD
+T10	disease 1789 1801	maternal MDD
+T11	disease 1940 1943	MDD
+T12	disease 1989 1992	MDD
+T13	method 114 135	cross-sectional study
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T14	method 552 610	Center of Epidemiological Studies on Depression-Short Form
+T15	method 787 823	Bayesian binomial latent class model
+T16	method 848 875	prevalence proportion ratio
+T17	method 877 880	PPR
+R2	abbreviation_for Arg1:T17 Arg2:T16	
+T18	method 1385 1412	Bayesian Credible Intervals
+T19	method 1414 1417	BCI
+R3	abbreviation_for Arg1:T19 Arg2:T18	
+R4	help_diagnose Arg1:T14 Arg2:T4	
+T21	method 721 744	home visitation studies
+#1	AnnotatorNotes T13	C0010362
+T20	method 1346 1349	PPR
+T22	method 1476 1480	BCI:
+T23	method 1605 1608	BCI
+T24	method 1674 1677	BCI
+T25	method 146 170	home visitation programs
+T9	method 1993 2012	prevention research
+T26	Health_factors 1438 1463	intimate partner violence
+T27	method 243 267	case-finding instruments
+T29	Health_factors 85 110	mothers of young children
+T30	Health_factors 692 699	mothers
+T31	Health_factors 1290 1308	low-income mothers
+T32	Health_factors 1503 1512	ethnicity
+T33	Health_factors 1498 1502	race
+T34	Health_factors 1519 1543	native-born US residents
+T35	Health_factors 1558 1577	Hispanic immigrants
+T36	Health_factors 1628 1661	history of childhood maltreatment
+T28	Health_factors 622 652	prenatal and postnatal periods
+T37	Health_factors 1106 1114	prenatal
+T38	Health_factors 1118 1127	postnatal
+T39	Health_factors 1696 1724	adequacy of family resources

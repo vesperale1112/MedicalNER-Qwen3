@@ -1,0 +1,2904 @@
+--- PAGE 1 ---
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Large language model powered knowledge
+graph construction for mental health
+exploration
+Shan Gao1, Kaixian Yu2, Yue Yang3, Sheng Yu
+4, Chenglong Shi5,
+Xueqin Wang
+6, Niansheng Tang1
+& Hongtu Zhu
+3,7,8,9,10
+Mental health is a major global concern, yet ﬁndings remain fragmented across
+studies and databases, hindering integrative understanding and clinical
+translation. To address this gap, we present the Mental Disorders Knowledge
+Graph (MDKG)—a large-scale, contextualized knowledge graph built using
+large language models to unify evidence from biomedical literature and
+curated databases. MDKG comprises over 10 million relations, including nearly
+1 million novel associations absent from existing resources. By structurally
+encoding contextual features such as conditionality, demographic factors, and
+co-occurring clinical attributes, the graph enables more nuanced interpreta-
+tion and rapid expert validation, reducing evaluation time by up to 70%.
+Applied to predictive modeling in the UK Biobank, MDKG-enhanced repre-
+sentations yielded signiﬁcant gains in predictive performance across multiple
+mental disorders. As a scalable and semantically enriched resource, MDKG
+offers a powerful foundation for accelerating psychiatric research and
+enabling interpretable, data-driven clinical insights.
+Mental health disorders are a leading cause of disability globally,
+incurring trillions of dollars in economic costs1. Despite advancements
+in research, understanding the pathophysiological pathways of mental
+disorders and identifying reliable diagnostic and therapeutic bio-
+markers remains challenging1–6. The research community has gener-
+ated a vast and rapidly expanding corpus of information on mental
+disorders, including journal articles, databases, and trial reports. The
+sheer magnitude and growth rate of these resources make it difﬁcult
+for individual researchers to fully gather, organize, and stay current
+with all available information. Efﬁcient utilization of these accumulat-
+ing resources can help accelerate mental disorders research, offering
+meaningful beneﬁts to a broad segment of the population.
+Knowledge graphs (KGs) can help address this challenge by
+organizing real-world knowledge in a format accessible to both
+humans and machines7–9. For instance, they can transform a statement
+like “The orbitofrontal-hippocampal pathway is crucial in mediating
+depression”10 into a structured format known as a triplet—a semantic
+unit in the form of (head entity, relation, tail entity)—such as (orbito-
+frontal-hippocampal pathway, associated with, depression), optionally
+enriched with additional contextual properties for precision. By inte-
+grating diverse data sources into a uniﬁed graph structure, KGs sum-
+marize existing knowledge and apply statistical and machine-learning
+techniques to uncover hidden patterns and connections, leading to
+new insights. This structured approach makes KGs particularly
+Received: 26 August 2024
+Accepted: 29 July 2025
+Check for updates
+1Yunnan Key Laboratory of Statistical Modeling and Data Analysis, Yunnan University, Kunming, Yunnan, China. 2Insilicom LLC, Tallahassee, FL, USA.
+3Department of Biostatistics, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA. 4Department of Statistics and Data Science, Tsinghua University,
+Beijing, China. 5The Second Afﬁliated Hospital of Kunming Medical University, Kunming Medical University, Kunming, Yunnan, China. 6School of Manage-
+ment, University of Science and Technology of China, Hefei, Anhui, China. 7Department of Genetics, University of North Carolina at Chapel Hill, Chapel Hill,
+NC, USA. 8Biomedical Research Imaging Center, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA. 9Department of Computer Science,
+University of North Carolina at Chapel Hill, Chapel Hill, NC, USA. 10Department of Statistics and Operations Research, University of North Carolina at Chapel
+Hill, Chapel Hill, NC, USA.
+e-mail: nstang@ynu.edu.cn; htzhu@email.unc.edu
+Nature Communications|  (2025) 16:7526 
+1
+1234567890():,;
+1234567890():,;
+
+
+--- PAGE 2 ---
+promising for investigating complex human illnesses like mental dis-
+orders, which are highly polygenic and exhibit biological alterations
+across various data types shared between diagnoses1–6,8.
+Despite several pioneering efforts in developing KGs for mental
+disorders11–16, disease-speciﬁc KGs remain rare, with no published KGs
+for extensively researched disorders such as schizophrenia and bipolar
+disorder8. Furthermore, the effectiveness of mental disorder-speciﬁc
+KGs is fundamentally limited from their inception. Creating high-quality
+training data for information extraction is costly and time-consuming,
+limiting the development of precise models for mental disorders.
+Existing KG databases often omit crucial lifestyle information and focus
+on a limited number of relationship types, restricting our understanding
+of complex relationships in mental disorder studies. Many KGs fail to
+capture the complexity of biomedical facts due to the omission of
+contextual details, reducing their generalizability and accuracy. Addi-
+tionally, varying conﬁdence levels across data sources compromise the
+integrity of the extracted knowledge and skew analyses.
+Here, we address these challenges by creating the Mental Disorders
+Knowledge Graph (MDKG), a framework starting with data annotation
+and culminating in a disease-speciﬁc KG tailored for the mental dis-
+orders domain. As shown in Fig. 1a, MDKG is a multi-relational, attributed
+biomedical KG encompassing over 10 million interconnections sourced
+from biomedical literature and pre-existing databases. Each relationship
+extracted from the literature is enriched with diverse, domain-speciﬁc
+contextual information, such as conditional statements, baseline char-
+acteristics, and contextual side information—ensuring both semantic
+and biomedical validity, and enabling researchers to conduct subgraph
+studies under speciﬁc conditions. In terms of data volume, MDKG con-
+tains 5–50 times more data on mental disorders than existing KGs,
+capturing a broad spectrum of therapeutic, risk, and lifestyle-related
+relationships embedded in the literature—many of which are absent
+from current databases. Beyond its construction, we conducted an
+expert evaluation, demonstrating a correctness rate of 0.79 and showing
+that the inclusion of contextual features improves usability, reducing
+evaluation time by ~70% compared to other KGs. Furthermore, we
+leveraged MDKG embeddings to encode patient medical histories from
+the UK Biobank, improving the prediction of major depressive disorder
+(MDD), anxiety, and bipolar disorder. Across all three conditions, inte-
+grating KG embeddings led to performance gains, with the Area Under
+the Receiver Operating Characteristic Curve (AUC) improvements ran-
+ging from 0.02 to 0.21, depending on the experimental setting. These
+results highlight MDKG’s potential to enhance predictive modeling in
+mental health research, even in scenarios with limited clinical data.
+Additionally, the MDKG contains extensive causal pathways, revealing
+numerous potential mechanisms underlying mental disorder etiology.
+As a structured resource, it supports ongoing research efforts and may
+facilitate the development of improved treatments and a deeper
+understanding of these conditions.
+Results
+Overview of MDKG
+MDKG is a semantically enriched biomedical KG tailored for mental
+health research. It encompasses entities across nine categories—
+including health factors, anatomy, phenotypes, clinical signs, biome-
+dical procedures, physiological processes, genes and proteins, dis-
+eases
+and
+symptoms,
+and
+drugs
+or
+chemicals—and
+encodes
+relationships spanning seven relation types, such as risk, diagnostic,
+characteristic, association, therapeutic, hierarchical, and abbreviation
+relationships (see Supplementary for detailed deﬁnitions of entity and
+relationship types). Each relationship is enriched with three types of
+contextual information: conditional statements specifying population
+or experimental contexts, baseline characteristics describing cohort-
+level metadata (e.g., age, gender, sample size), and side information
+such as source provenance and conﬁdence scores to support down-
+stream interpretation (see Fig. 1a).
+After extracting information from the unstructured data of
+PubMed abstracts, we construct a literature-based MDKG with 236,542
+entities and 1,913,461 triplets, including 880,692 normalized unique
+triplets. Among these, 210,096 triplets feature conditional statements,
+115,391 include baseline characteristics of the study population, and all
+carry side information. Our analysis of the MDKG’s graph structure,
+with an average in/out-degree of 5.87, indicates a densely inter-
+connected network. This connectivity enriches the potential for
+uncovering complex biomedical relationships. The identiﬁcation of
+99,472 strongly connected components highlights distinct clusters
+within the graph, likely representing specialized domains in medical
+research, such as speciﬁc diseases or biological pathways. This struc-
+tural complexity enhances the graph’s utility for detailed insights and
+nuanced explorations of medical data.
+To further enrich our literature-based MDKG, we employ a
+knowledge fusion methodology to integrate high-quality, diverse
+biomedical databases. This process begins with a meticulous evalua-
+tion of various databases, examining origins, data generation meth-
+odologies, evidence robustness, and update frequencies. Using
+systematic entity alignment and linking techniques (details in “Meth-
+ods” subsection “Entity and relationship alignment”), we merge this
+curated data with the literature-based MDKG, transforming hetero-
+geneous datasets into a coherent, standardized framework. As a result,
+our enriched MDKG now encompasses 1,642,543 entities across nine
+categories and graphs 10,702,976 relationships within nine relation-
+ship categories. It is publicly accessible via the BiomedKG portal
+(https://biomedkg.com), providing researchers with efﬁcient access to
+structured mental health knowledge.
+As depicted in Fig. 2b, integrating existing biomedical databases
+signiﬁcantly enhances the depth of MDKG, particularly in associative
+and hierarchical relationships, which predominate in established bio-
+medical knowledge databases. However, excluding these two types, a
+substantial portion of MDKG’s relationships remains literature-based.
+Speciﬁcally, in the diagnostic category, literature-based relationships
+make up 53.75% of the total; in location-based relationships, they
+constitute 72.79%; in risk relationships, they account for 32.01%; and in
+therapeutic relationships, an impressive 77.16%. This demonstrates
+that despite the wealth of structured database data, signiﬁcant
+knowledge remains embedded within unstructured text, highlighting
+the importance of extracting knowledge from unstructured text for
+advancing medical research.
+Enhancing graph expressiveness through contextualized
+triplets
+In our research, we enhance the traditional KG by integrating three
+types of contextual information from literature: conditional state-
+ments that provide nuanced dependencies between entities at the
+sentence level, baseline characteristics regarding experiments and
+research populations at the study level, and ancillary side information
+to supplement the primary data (shown in Fig. 1a). These additions
+transform the KG into a multi-dimensional and trustworthy resource,
+offering a deeper understanding of complex interrelationships and
+enabling more accurate and user-friendly applications in medical
+research and practice.
+(1)
+Conditional Statements: Biomedical statements are often con-
+ditional, with their validity depending on speciﬁc contextual
+conditions17. Omitting these details can misrepresent relation-
+ships between entities. Existing biomedical KGs typically use a
+ﬂat representation, neglecting these crucial conditions. For
+example, a typical biomedical statement is as follows: “There are
+differences in CCN during the early stage of MDD, as identiﬁed
+by increased FCs among part of the frontal gyrus, parietal cor-
+tex, cingulate cortex...”10 or “Depression is associated with FMS
+among women but not among men.”18
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Nature Communications|  (2025) 16:7526 
+2
+
+
+--- PAGE 3 ---
+Abstract
+……
+……
+CONCLUSION: Lewy bodies(LBs) in the amygdala
+and in cortical areas increase the risk for major
+depression in Alzheimer disease
+Baseline characteristics table
+Table 1 Demographic and neuropsychiatric characteristics of the patients
+AD alone
+Without
+depression
+With
+depression
+AD + LB
+Without
+depression
+With
+depression
+x2/F ratio
+Number of cases
+Age, y
+Male /female
+Education. v
+114
+73.8+9.1
+42/72
+12.5+3.0
+11
+69.7+10.9
+5/6
+12.9+3.5
+117
+72.1+7.1
+55/62
+12.3+3.1
+25
+69.6+7.7
+13/12
+12.0+3.4
+2.45
+2.80
+0.29
+Alzheimer
+disease
+Condition
+amygdala
+Condition
+Condition
+occurs in
+located in
+Risk factor
+located in
+cortical
+Lewy
+bodies
+major
+depression
+ID:0000002
+Source Information
+Confidence Level
+Side Information
+Journal: Neurology
+          Lewy bodies in the amygdala increase risk for major
+              depression in subjects with Alzheimer disease
+PMID: 16924019
+Date: 2006
+First Author: Lopez OL
+Title:
+Model Prediction Score: 0.96
+Frequency: 9
+Publication types: Clinical Trial
+Analysis Methods: Multiple Regression Analysis
+Sample size: 
+“Sample Size”
+   “AD alone”
+        “without depression”  114
+        “with depression” 11
+ 
+“AD  +  LB”
+    “without depression”   117
+    “with depression”   25
+AGE: ......
+Male: ......
+Education: ......
+Race: ......
+Employment: ......
+Cohort Name: UK Biobank
+Baseline Characteristics
+of Research Populations
+Detailed Overview of Extracted Triplet Information
+a
+Pub     ed
+®
+M
+Pipeline for Mental Disorders Knowledge Graph Construction
+Application
+Step1
+Step1
+Step2
+Step2
+Step3
+Step3
+Step4
+Step4
+Step1
+Step1
+Step2
+Step2
+Knowledge Graph
+Schema Design
+Chemicals
+Anatomy
+Phenotype
+Genes
+Disease
+Physiology
+Signs
+Health
+Factors
+Unstructured Data
+Literature
+Reports
+Data Resources
+Structured Data
+Biomedical
+Database
+Knowledge
+Graph
+Mental Disorders
+Annotated Dataset
+Data Annotation
+Pre-labeling with GPT-4
+Information Extraction
+Database
+Quality Assessment
+Active Learning
+A. Model Training
+1.NER
+2.RE
+3.Entity or Relationship
+    Conditions Extraction
+B. Table-based Baseline 
+Characteristic Extraction
+C. Side Information Extraction
+Triple Extraction from
+Unannotated Abstracts
+LLM-based Triplets
+Refinement
+Extracted
+Data
+Knowledge Fusion
+1.Entity/Relationship Alignment
+2.Entity Linking
+Mental Disorders
+Mental Disorders
+Knowledge Graph
+Knowledge Graph
+Knowledge Filter
+Structure
+Data
+Knowledge Portal
+Knowledge QA
+Question Answering
+Causal Graph
+Combine with EHR Data
+b
+Fig. 1 | Construction and contextualization of the Mental Disorders Knowledge
+Graph (MDKG). a Example of a structured triplet representation derived from
+literature, demonstrating how biomedical relationships are contextualized with
+supporting metadata. In this case, the association between Lewy bodies in the
+amygdala and increased risk of major depression in Alzheimer’s disease is enriched
+with source information, sample characteristics, and analytical context48.
+b Schematic overview of the MDKG construction pipeline. Unstructured data from
+literature abstracts and structured data from biomedical databases are processed
+through a multi-stage workﬂow involving GPT-4-assisted pre-labeling, active
+learning-based annotation, named entity recognition, relation extraction, tabular
+data parsing, and large language model (LLM)-powered triplet reﬁnement. The
+resulting knowledge is aligned to a uniﬁed schema and enriched with contextual
+attributes to support downstream applications. The source data are provided as a
+Source Data ﬁle.
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Nature Communications|  (2025) 16:7526 
+3
+
+
+--- PAGE 4 ---
+abnormal
+oxidtive metabolism
+weaker local
+hemodynamic oscillations
+bifidobacterium
+ateralization in
+brain electrical activity
+dysfunction
+autonomic nervous system
+ateralization in
+brain electrical activity memory impairment
+gut microbiota
+lower transient
+outward potassium current
+cognitive dysfunction
+social deficits
+sadness
+characteristics
+altered
+functional connectivity
+poorer ability in processing
+of facial emotional expressions
+lower perceptual
+judgment accuracies
+glutamatetamate receptor
+metabotropic 4
+immune mechanisms
+slc17a5
+dysfunction of
+dopaminergic systems
+sigma-1 receptor
+cthyroid-stimulating
+hormone
+metabolism pathway
+poor sleep quality
+sex-specific
+gene networks
+rs2272260
+rs12526133
+inflammation
+autonomic imbalance
+microbial tryptophan(trp)
+biosynthesis
+dysfunction of
+serotoninergic systems
+mono-aminergic
+neurotransmitters
+MDD
+covid-19 pandemic
+hypoesthesia
+social isolation
+chronic unpredictable
+mild stress
+famales
+rs10789336
+loneliness
+human mobility
+patients livingwith
+human immunodeficlency virus
+unemploymen
+risk factor
+treatment
+association
+increased
+rcerebral blood flow
+right hemisphere
+function deficiency
+structural and functional
+brain alterations
+scopolamine
+esketamine
+sertraline
+n-acetylcysteine
+S-adenosyl methionine
+repetitive transcranial magnetic
+stimulation-sleep deprivation
+mindfulness-based
+cognitive therapy
+biopsychosocial
+approaches
+cognitive behavi-
+oural therapy
+electroconvulsive therapy
+web-based guided
+self-help intervention
+serotonin-norepinephrine
+reuptake inhibitors
+Resources
+Relationships
+absent
+Association
+characteristic
+contains
+Diagnostic
+Hierarchical
+location
+Risk
+Therapeutic
+bgee
+CTD
+GO
+Drugbank
+Reactome
+clinvar
+disgenet
+model prediction
+UMLS
+HPO
+MONDO
+UBERON
+SIDER
+Other(47%)
+Other(32.33%)
+Other(40.49%)
+Other(30.78%)
+Other(34.89%)
+Drug-Physiology (3%)
+Disease-Physiology (4%)
+Gene-Physiology (4%)
+Physiology-Diseases (4%)
+Physiology-Physiology (5%)
+Health_factors-Health_faceors (5%)
+Gene-Diseases (5%)
+Diseases-Diseases (11%)
+Association
+Hierarchical
+Risk
+Therapeutic
+Characteristic
+Diagnostic
+Health_factors-Diseases (13%)
+Method - Health_factors (15.32%)
+Method-Diseases (52.35%)
+Phenotype-Diseases (15.09%)
+Physiology-Diseases (16.01%)
+Diseases-Diseases (28.41%)
+Method-Health_factors (7.64%)
+Diseases-Health_factors (6.39%)
+Diseases-Diseases (30.11%)
+Health_factors-Diseases (22.04%)
+Drug-Diseases (28.63%)
+Drug-Diseases (6.56%)
+Method-Diseases (32.95%)
+bgee
+Association
+UBERON
+UMLS
+UMLS
+UMLS
+model prediction (72.79%)
+Drugbank
+model prediction (77.16%)
+model prediction (53.75%)
+model prediction (38.86%)
+model prediction (32.01%)
+Drugbank
+SIDER
+bgee
+UBERON
+MONDO
+model prediction (5.34%)
+UMLS
+disgenet
+CTD
+GO
+model prediction (7.38%)
+Drugbank
+Hierarchical
+absent
+Characteristic
+contains
+Diagnostic
+Therapeutic
+location
+c
+MDD Knowledge Retrieval from MDKG.
+b
+Integrated MDKG’s Resource Distribution 
+a
+Distribution of Relation Types and Entity Pairs in Literature-based MDKG
+Risk
+Fig. 2 | Composition and knowledge retrieval capabilities of the MDKG.
+a Distribution of relation types and entity pairs in the literature-based Mental
+Disorders Knowledge Graph (MDKG). b Distribution of MDKG triplets across
+curated biomedical resources (e.g., DrugBank, DisGeNET, UMLS), model
+predictions, and other sources. c Example output of knowledge retrieval from
+MDKG for major depressive disorder (MDD), showing interconnected concepts
+such as physiological abnormalities, behavioral features, genetic variants, and
+therapeutic options. The source data are provided as a Source Data ﬁle.
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Nature Communications|  (2025) 16:7526 
+4
+
+
+--- PAGE 5 ---
+Conventional KGs extract basic facts, e.g., (MDD, char-
+acteristic of, increased FCs) or (Depression, associated with,
+FMS). However, this approach often omits crucial details like the
+location of increased FCs or the speciﬁc populations (e.g.,
+women), reducing the conﬁdence of the triplet. To address this,
+we propose a reﬁned representation. We assign attributes to the
+head and tail entities within a triplet, including relevant features
+or descriptive information. We then incorporate speciﬁc condi-
+tions into the triplets, outlining the precise contexts in which
+these relationships are valid. Applying this framework to the
+example would yield the following results:
+• Triplet 1: {“triplet”: [“MDD”, “characteristic of”, “increased FCs”],
+“head entity attributes”: None, “tail entity attributes”: {“located
+in”: [“frontal gyrus”, “parietal cortex”, “cingulate cortex”]},
+“relation conditions”: None};
+• Triplet 2: {“triplet”: [“Depression”, “associated with”, “FMS”],
+“head entity attributes": None, “tail entity attributes”: None,
+“relation conditions”: “women”}.
+By incorporating entity attributes and relation conditions, we
+enhance the precision and reliability of the relationships
+in MDKG.
+(2)
+Baseline Characteristics about the Study Population: In addition
+to conditional statements, baseline characteristics of the study
+population, such as cohort information, are critically important.
+Results from a narrowly deﬁned sample may not be generalizable
+to a wider population and may introduce systematic biases. This
+is especially signiﬁcant in mental disorders, where demographic
+factors like age, gender, and race heavily inﬂuence outcomes. To
+ensure our MDKG provides a comprehensive view, we incorpo-
+rate seven essential characteristics as triplet properties: average
+age, gender distribution, racial composition, educational attain-
+ment, employment status, overall sample size, and cohort name.
+(3)
+Side Information: Our research extracts information from
+scholarly publications and integrates data from various sources,
+such as biomedical databases and existing KGs. Given the vary-
+ing credibility of each data source, it is crucial to consider source
+reliability in practical applications. To address this, we append
+two types of side information to the triplets in our MDKG,
+enabling users to trace the origins and assess the quality of the
+embedded knowledge.
+• Source Information: It refers to the source of extracted entities
+and relationships, such as literature, databases, or other KGs. For
+triplets derived from literature, this includes details like the
+publication name, ﬁrst author, and publication date. Doc-
+umenting this source information allows for easy veriﬁcation
+and updates of the graph’s content.
+• Conﬁdence: To assess the credibility of triplets within MDKG, we
+incorporate multiple factors that inﬂuence their conﬁdence
+levels. Reliability is ﬁrst evaluated through cross-source con-
+sensus, where triplets appearing in multiple sources are
+considered more trustworthy. For literature-derived triplets,
+we further document key attributes such as publication type
+(e.g., reviews, clinical trials, meta-analyses) and analytical
+methods used (e.g., multivariate analysis, multiple regression,
+logistic regression), as these factors contribute to varying levels
+of evidentiary strength. To enhance reliability assessment, we
+assign a conﬁdence score (detailed in Supplementary) to each
+triplet. This score integrates multiple factors, including model
+prediction scores, journal impact, frequency across sources,
+distinct publication years count, maximum publication year, and
+contradiction counts in the data. By appending this conﬁdence
+score to each triplet, MDKG enables users to prioritize high-
+quality data and better assess the reliability of the extracted
+knowledge.
+Literature-derived insights into mental health mechanisms and
+treatments
+Our literature-based MDKG has been instrumental in identifying the
+connections between various lifestyles and diseases, capturing 10% of the
+total relationships through “Association” and “Risk” (shown in Fig. 2a).
+For instance, in the context of endogenous anxiety, MDKG reveals sig-
+niﬁcant associations between physical activity and mental health. Factors
+such as “daily walking,” “poor activity participation,” and “physical
+activity intensity” are linked to endogenous anxiety levels, indicating a
+risk relationship between physical activity and mental well-being. Addi-
+tionally, MDKG highlights the impact of dietary habits, associating
+“obesity” and “high-fat diets” with heightened risks of endogenous
+anxiety, aligning with evidence that conditions like “gestational and type
+2 diabetes” and “hypertension” exacerbate psychological distress.
+Beyond individual lifestyle factors, MDKG illuminates the inﬂu-
+ence of social determinants on endogenous anxiety. Notable associa-
+tions include “long-term social comparison,” “social eating behavior,”
+“working in a public hospital,” and “social demands,” showcasing the
+complex interplay between social context and mental health out-
+comes. Modern lifestyle factors such as “social media usage” and “free-
+time internet use” are also identiﬁed as contributors to endogenous
+anxiety. These insights highlight MDKG’s role in deepening our
+understanding of the multifaceted nature of endogenous anxiety risks,
+providing a foundation for developing targeted, personalized treat-
+ment and prevention strategies.
+In addition to risk-related insights, MDKG also contributes to the
+characterization and treatment of speciﬁc mental disorders. For instance,
+inquiries into MDD reveal associations such as “abnormal oxidative
+metabolism,” “increased cerebral blood ﬂow,” and “brain anomalies”
+(shown in Fig. 2c). Additional observations include “lateralization in brain
+electrical activity,” “memory deﬁcits,” “reduced perceptual judgment,”
+and “difﬁculties in processing facial emotional expressions,” enhancing
+our understanding of MDD’s complexity. Regarding treatment, MDKG
+outlines
+options
+such
+as
+“scopolamine,”
+“sertraline,”
+“s-adenosyl
+methionine,” “esketamine,” and “serotonin-norepinephrine reuptake
+inhibitors,” along with non-pharmacological interventions like “web-
+based guided self-help,” “electroconvulsive therapy,” “biopsychosocial
+approaches,” and “mindfulness-based cognitive therapy.” These insights
+offer a holistic approach to studying MDD.
+Population-speciﬁc mental health concerns revealed by condi-
+tional statements
+In our literature-based MDKG, we analyze 283,417 conditional state-
+ments. This analysis, visualized through a word cloud of these
+condition-speciﬁc populations (as shown in Fig. 3a), highlights three
+primary areas of focus. First, we note substantial references to
+demographic groups across various ages and genders, including
+“children,” “women,” “adults,” “adolescents,” “offspring,” “young
+adults,” and “outpatients.” Second, we pinpoint groups linked to spe-
+ciﬁc diseases such as “schizophrenia,” “bipolar disorder,” “depression,”
+“cancer,” “type 2 diabetes,” and “Parkinson’s disease.” Third, our
+research subjects predominantly include “humans” and various
+experimental animals like “rodents,” “rats,” and “mice.” These condi-
+tional statements enrich our MDKG by clarifying the contexts in which
+speciﬁc relationships hold, facilitating focused subgroup analyses. The
+recurrent appearance of terms associated with particular age and
+gender groups, alongside a broad spectrum of disease-related terms,
+underscores the intricate link between mental disorders and distinct
+population segments. This association is further complicated by the
+overlap with other medical conditions.
+Building on this foundation, a deeper analysis of entity frequencies
+based on conditional statements in our literature-based MDKG highlights
+different mental health concerns prevalent among adolescents and the
+elderly (as shown in Fig. 3b). In elderly populations, “depression patho-
+physiology” is the most frequently mentioned entity, signiﬁcantly more
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Nature Communications|  (2025) 16:7526 
+5
+
+
+--- PAGE 6 ---
+so than in adolescents, alongside issues such as “mortality,” “peripheral
+muscle,” and “disability,” reﬂecting health problems accumulated with
+aging. In contrast, adolescent studies frequently mention “depression
+pathophysiology” but also highlight “attention deﬁcit hyperactivity dis-
+order,” “autism spectrum disorders,” “conduct disorder,” and “eating
+disorders,” underscoring concerns typical of developmental periods.
+This difference emphasizes the need for age-tailored mental health
+interventions and strategies that account for unique biopsychosocial
+factors at different life stages.
+Mapping causal pathways in mental disorders
+Based on the risk relationships identiﬁed in the literature-based
+MDKG, we construct a causal KG for mental disorders that illustrates
+unidirectional causal relationships. This graph reveals the etiology
+and risk links between mental disorders and related factors,
+providing a valuable reference for exploring the mechanisms
+underlying these disorders. As shown in Fig. 3c, the graph displays
+multiple causal pathways for depression, including one with inter-
+mediary nodes: “hyperactive glutamate transport – abnormal gluta-
+matergic neurotransmission – hypofunction of NMDA receptors –
+cognitive impairments – stress – ablation of neurogenesis – hippo-
+campal size reduction – depression.” This pathway begins with
+hyperactive glutamate transport, leading to a reduction in synaptic
+glutamate concentrations and disrupting neural transmission. This
+reduction impairs NMDA receptor function, crucial for neuronal
+plasticity and long-term potentiation, essential for memory and
+learning. Dysfunctional NMDA receptors cause cognitive deﬁcits,
+increasing vulnerability to stress. Over time, heightened stress sen-
+sitivity suppresses neurogenesis in the hippocampus, essential for
+emotional
+regulation
+and
+cognitive
+function.
+The
+decline
+in
+Possible causal paths: 
+1  hyperactive glutamate transport -> abnormal glutamatergic neurotransmission -> hypofunction of NMDA receptors ->
+cognitive impairments -> stress -> Ablation of neurogenesis -> hippocampal size reduction -> depression
+2  genetic deletion of fibroblast growth factor 14 -> loss of parvalbumin-containing interneurons -> dopamine supersensitivity ->
+psychotic and general psychopathology symptoms -> inflammatory, metabolic syndrome -> depression 
+3  delayed and deficient maturation of astrocytes -> disruption of glutamatergic, potassium, and neuromodulatory homoeostasis ->
+synaptic dysfunction -> autism spectrum disorder -> cognitive and temperament -> depression
+4  depression of electron transport -> injury depolarizations -> secretion of Glu -> diabetes -> psychomotor slowing -> depression
+……
+20
+Elderly Populations
+Adolescence
+Top 10 Entity Frequencies in Elderly Populations
+15
+Percentage (%)
+10
+5
+0
+depression
+pathophysiology
+situational
+major
+depression
+endogenous
+anxiety
+ongoing
+cognition
+cognitive
+impairments
+mortality
+peripheral
+muscles
+pial middle
+cerebral artery
+total quality
+of life
+disability
+Entity
+Top 10 Entity Frequencies in adolescents
+20
+Elderly Populations
+Adolescence
+15
+Percentage (%)
+10
+5
+0
+depression
+pathophysiology
+Narrative
+Attention
+deficit
+hyperactivity
+disorder
+situational
+major
+depression
+autism
+spectrum
+disorder-only
+endogenous
+anxiety
+medically
+compromised
+eating
+disorders
+anxiety
+courses
+Bipolar
+disorder
+Conduct
+disorder
+psychiatric
+involvement
+Entity
+attention-deficit/hyperactivity
+chronic obstructive pulmonary disease type 2 diabetes mallitus
+pos tpartum
+father
+young people
+depressed
+mouse
+coronary artery disease
+youth
+female
+human
+conduct disorder
+mood disorders
+bipolar
+bipolar disorders
+early pregnancy
+lrrltable bowel syndrome
+psychiatric disorders
+multiple sclerosis
+outpatient
+covid-19 pandemic
+psoriasis
+nurse
+pd
+experimental animals
+lung cancer
+old age
+fibromyalgia
+anxiety
+alzheimer’s disease
+sex
+cums mice
+attention deficit/hyper activity disor der
+attention-deficit hyperactivity disorder
+boy
+parkinson disease
+chronic schizophrenia
+eating disorder
+mdd
+caucasian
+cancer survivors
+schizophrenia spectrum disorders
+animal models
+social anxiety disorder
+stress
+psychosisbinge eating disorder
+childhood
+asd
+girl
+parkinson ’s disease
+elderly people
+young children
+anxiety disorders
+hiv
+cancer
+young adulthood
+chiese population
+hemodialysis
+forced swimming test
+bd
+preschooler
+family mambers
+parents of children
+young adults
+primary care
+men
+depressive disorders
+breast cancer
+medical students
+asthma
+animal
+chronic kidney disease
+caregiver
+cums rats
+depressive
+sleep
+eating  disorders rodent
+coronary heart disease
+rat
+migraine
+probands
+asd children
+infant
+young
+heart failure
+han chinese population
+major depression
+generalized anxiety disorder
+early childhood
+autism spectrum disorders
+student
+systemic lupus erythematosus
+polycystic ovary syndrome
+myocardial infarction
+intellectual disability
+inflamma tory bowel disease
+tail suspension test
+peopel living with hiv
+early adulthood
+veteran
+stroke
+relative
+hospitalized patients
+adolesecent girls
+university students
+adult life
+acute coronary syndrome
+mother
+male
+obese
+sibling
+adhd
+mental disorders
+autism
+bulimia nervosa
+cardiovascular disease
+depressive disorder
+covid-19
+age
+preschool children
+adul thood
+alderly
+adolescence
+college students
+bipolar depression
+obsessive-compulsive disorder
+chronic pain
+panic disorder
+male mice
+pregnancy
+chinese han population
+obesity
+insomnia
+asian
+healthy controls
+type 2 diabetes
+ad
+scz
+ed
+dementia
+hea1thcare workers
+forced swim test
+anorexia nervosa
+bipolar i disorder
+first-degree relatives
+bipolar disorder
+disorder
+japanese population
+illness
+mothers of children
+young women
+pandemic
+schizophrenic
+offspring
+older adults
+postmenopausal women
+parent
+pregnant women
+copd
+adult
+woman
+diabetes
+depressive symptoms
+diabetic
+depression
+adolescent
+major depressive disorder
+attention deficit hyperactivity disorder
+autism spectrum disorder
+child
+schizophrenia
+late-life depression
+community-divelling older adults
+korean population
+treatment-resistant depression
+epilepsy
+older people
+toddler
+adult offspring
+psychiatric
+han chinese
+quality of life
+adult rats
+schizoaffective disorder
+stroke survivors
+traumatic brain injury
+first-episode schizophrenia
+older
+adult outpatients
+inpatient general population
+smoker
+chinese
+bor derline personmlity disor der
+depression of electron transport
+injury depolarizations
+calcium channel
+secretion of Glu
+diabetes
+glycated hemoglobin
+poor physical health
+psychomotor slowing
+kidney problems
+anger
+anhedonia
+stress
+hyperactive glutamate transport
+abnormal glutamatergic neurotransmission
+hypofunction of NMDA receptors
+cognitive impairments
+social skills deficits
+low quality of life
+endogenous anxiety
+macro- and micronutrient deficiencies
+pain
+age-related diseases
+peer pressure
+inflammatory bowel disease
+thyroid syndromes
+morbidity
+depression
+perceived stress
+metabolic and thyroid disorders
+neuronal damage
+inflammatory , metabolic syndrome
+psychotic and generaI psychopathology symptoms
+dopamine supersensitivity
+loss of parvalbumin-containing interneurons
+genetic deletion of fibroblast growth factor 14
+peripheral muscles
+suicidal ideation
+autism spectrum disorder
+synaptic dysfunction
+disruption of glutamatergic , potassium , and neuromodulatory homoeostasis
+delayed and deficient maturation of astrocytes
+Ablationh of neurogenesis
+hippocampal size reduction
+enhanced SNARE activity
+neurotoxicity
+a Word Cloud of Condition-Related Entities in Triplets
+c Example Causal Knowledge Graph Centered on Depression
+b Top 10 Most Frequent Entities in Elderly and 
+Adolescent Populations
+Fig. 3 | Condition-related knowledge and causal structure in the MDKG. a Word
+cloud showing the most frequent condition-related entities extracted from
+literature-derived triplets in the MDKG. Font size is proportional to entity fre-
+quency, highlighting prevalent clinical and behavioral features linked to mental
+disorders. b Top 10 most frequently mentioned condition-related entities in elderly
+and adolescent populations based on literature triplets containing conditional
+statements. c Example of a causal knowledge graph centered on depression, con-
+structed by linking unidirectional risk relationships extracted from the literature.
+Nodes represent biological, psychological, or environmental factors, while directed
+edges indicate potential causal inﬂuence as inferred from the literature. The source
+data are provided as a Source Data ﬁle.
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Nature Communications|  (2025) 16:7526 
+6
+
+
+--- PAGE 7 ---
+hippocampal neurogenesis reduces hippocampal volume, impairing
+emotional regulation and cognitive processing. Ultimately, these
+physiological changes amplify depressive symptoms, highlighting a
+potential mechanistic pathway from glutamate dysregulation to
+depression. Exploring these causal pathways enables advances in
+understanding
+mental
+disorder
+mechanisms,
+improving
+early
+detection, and enhancing treatment strategies. This exploration also
+generates hypotheses for subsequent validation.
+Comparative evaluation of triplet quality across
+knowledge graphs
+We conducted a comparative analysis of MDKG against two large-scale
+general biomedical KGs—PrimeKG19 and SPOKE20—as well as a mental
+health-speciﬁc KG, GENA16. Our focus was on the density of directly
+connected information relevant to MDD, anxiety, bipolar disorder,
+schizophrenia, and depression. The analysis revealed that MDKG
+contains 5 to 50 times more information on these mental disorders
+than the comparative KGs, as shown in Fig. 4c, highlighting its superior
+coverage and comprehensiveness.
+To further assess MDKG’s quality, we conducted a human eva-
+luation of randomly selected relationships from PrimeKG, MDKG, and
+GENA. Four evaluators—two psychiatrists (d1, d2) and two medical
+PhDs (phd1, phd2)—assessed the correctness and relevance of the
+extracted triplets. Given the varying information richness of the three
+KGs, we provided the maximum available data for each: triplets,
+PMIDs, and sentences for GENA; triplets and database sources for
+PrimeKG; and triplets, PMIDs, sentences, journal, impact factor, fre-
+quency, and date for MDKG. For evaluation, we selected two diseases,
+schizophrenia and anxiety disorders, and randomly sampled 100 non-
+redundant triplets per disease. Each evaluator reviewed the same set of
+examples, ensuring a consistent and unbiased comparison.
+Evaluation metrics included correctness (whether the triplet was
+correct based on the provided sentence), insightfulness (rated 1–3 for
+novelty, reliability, and usefulness), and evaluation time (average time
+for 200 examples). Correctness was excluded for PrimeKG, as it lacks
+original sources. Data analysis used Cohen’s Kappa for inter-rater
+consistency, with values ranging from −1 (no agreement) to 1 (perfect
+agreement), and the agreement rate between evaluators. Following is a
+summary of our ﬁndings:
+• Comparative Analysis of Triplet Distributions: Overall, for triplets
+related to anxiety and schizophrenia, the relation and entity
+architecture across the KGs demonstrate distinct graph differ-
+ences, as shown in Fig. 4a. PrimeKG predominantly contains
+generic associations, with ~90% of the relations labeled as “asso-
+ciated with,” mostly involving gene entities. In contrast, MDKG
+exhibits more clinically actionable relationships, including ~20%
+“therapeutic relationships,” 11% “risk relationships,” and 10%
+“diagnostic
+relationships.”
+GENA’s
+relationship
+distribution
+demonstrates linguistic speciﬁcity but clinical fragmentation,
+with ~85% of relations occurring ≤5 times. As a result, many of
+Ontology
+DrugBank
+GO
+HPO
+UMLS
+MONDO
+NCBI
+UBERON
+MDKG
+Ontology Distribution by Entity Type (Count)
+Entity Type
+1e6
+Count
+7
+6
+5
+4
+3
+2
+1
+0
+Health_factors    anatomy           diseases             drug                 gene              method         phenotype        physiology            signs
+Comparison lof Relationships of Mental Health Conditions from Different Knowledge Graphs
+50000
+Adjusted Counts
+major depressive                          anxiety                                     bipolar                                schizophrenia                              depression
+40000
+30000
+20000
+10000
+0
+PrimeKG
+GENA
+SPOKE
+Literature based MDKG
+Final MDKG
+Databases
+Kappa Coefficient
+Kappa
+Correct
+d2 - phd2
+d2 - phd1
+d1 - phd2
+d1 - phd1
+phd1 - phd2
+d1 - d2
+Insightful
+0.00                      0.25                       0.50                      0.75                       1.00
+Agreement Rate
+Agreement (%)
+Correct
+Insightful
+d2 - phd2
+d2 - phd1
+d1 - phd2
+d1 - phd1
+phd1 - phd2
+d1 - d2
+0                           25                         50                         75                         100
+disease
+drug
+effect/phenotype
+exposure
+gene/protein
+Entity Types
+0
+100
+0
+0 0
+100
+200
+300
+400
+500
+600
+700
+800
+900
+100
+0
+110
+0
+120
+0
+130
+0
+140
+0
+150
+0
+160
+0
+170
+0
+0
+180
+0
+170
+0
+160
+0
+150
+0
+140
+0
+130
+0
+120
+0
+800
+700
+600
+500
+400
+300
+200
+190
+0
+180
+0
+170
+0
+160
+0
+150
+0
+140
+0
+130
+0
+120
+0
+110
+0
+10
+00
+900
+800
+700
+600
+500
+400
+300
+200
+100
+PrimeKG
+MDKG
+250
+00
+260
+00
+270
+00
+280
+00
+290
+00
+300
+00
+310
+00
+320
+00
+0
+100
+0
+0
+100
+0
+200
+0
+300
+0
+400
+0 5
+000
+0
+100
+0 2
+000
+0
+100
+0
+200
+0
+300
+0
+0
+100
+0
+0
+100
+0
+0
+100
+0
+200
+0
+0
+240
+00
+230
+00
+220
+00
+210
+00
+200
+00
+190
+00
+180
+00
+170
+00
+160
+00
+150
+00
+140
+00
+130
+00
+120
+00
+11
+000
+100
+00
+900
+0
+800
+0
+700
+0
+600
+0
+500
+0
+400
+0
+300
+0
+200
+0
+100
+0
+0
+200
+0
+100
+0
+drug
+gene
+method
+physiology
+regionsigns
+symptom
+disease
+Health_factors
+GENA
+80
+120
+160
+200
+240
+280
+320
+360
+400
+44
+0
+480
+520
+560
+600
+640
+680
+720
+760
+0
+0
+40
+0
+40
+0
+480
+440
+400
+360
+320
+280
+240
+200
+160
+120
+80
+40
+0
+120
+80
+40
+MENTAL_HEALTH
+DISEASE
+CHEMICAL
+BIOCHEMICAL
+NUTRITION
+a Triplet Distribution Across KGs
+d Inter-rater Agreement on Human Evaluation
+b Human Evaluation Scores Across KGs
+c Mental Disorder Triplet Counts Across KGs
+e Entity Ontology Distribution
+0.77
+0.78
+0.79
+0.80
+GENA
+MDKG
+Knowledge Graph
+Correct Score
+Correctness Score
+2.10
+2.15
+2.20
+2.25
+2.30
+PrimeKG
+GENA
+MDKG
+Knowledge Graph
+Insightful Score
+Insightful Score
+50
+100
+PrimeKG
+GENA
+MDKG
+Knowledge Graph
+Evaluation Time (s)
+Evaluation Time
+Evaluator
+d1
+d2
+phd1
+phd2
+Evaluator
+Mean
+Fig. 4 | Comparative evaluation and structural composition of MDKG.
+a Distribution of relation types in triplets related to anxiety and schizophrenia
+across PrimeKG, GENA, and MDKG. b Triplet quality evaluation across knowledge
+graphs by four independent human evaluators. Left: Correctness scores (box
+plots); Middle: Insightfulness ratings (1–3 scale, box plots); Right: Evaluation time
+per triplet (in seconds). Each dot represents the mean value from one evaluator
+based on 200 evaluated triplets. Box plots show the median (center line), inter-
+quartile range (box: 25th to 75th percentile), and whiskers extending to 1.5 times
+the interquartile range (IQR). Points outside this range are shown as outliers.
+c Coverage of triplets relevant to ﬁve mental disorders (major depressive disorder,
+anxiety, bipolar disorder, schizophrenia, and depression) across ﬁve knowledge
+graphs. d Inter-rater agreement on triplet evaluations. Kappa values and agreement
+rates are shown for six evaluator pairs across correctness and insightfulness
+judgments. e Ontological distribution of entity types in the integrated MDKG. The
+source data are provided as a Source Data ﬁle.
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Nature Communications|  (2025) 16:7526 
+7
+
+
+--- PAGE 8 ---
+these relations lack standardization, such as “RECEIVE APPROVAL
+BY U.S. FOOD AND DRUG ADMINISTRATION FOR TREAT-
+MENT OF.”
+• Quality Metric Performance: For correctness (Fig. 4b), MDKG
+achieved an accuracy of 79.0% (SD = 0.01%), slightly out-
+performing GENA, which reached 78.3% (SD = 0.01%). The errors
+in MDKG were primarily attributed to semantic ambiguities (28%),
+rather than factual inaccuracies (12%). In terms of insightfulness,
+reported as mean ± SD, were highest for GENA (2.29 ± 0.03), fol-
+lowed by MDKG (2.18 ± 0.02) and PrimeKG (2.09 ± 0.01). This
+difference likely reﬂects evaluators’ emphasis on the novelty of
+knowledge as a key metric. While PrimeKG and MDKG offer more
+extensive knowledge integration—especially MDKG, which incor-
+porates clinical consensus data dating back to 1985—24.34% of
+MDKG’s schizophrenia-related triplets were derived from studies
+published before 2010. Evaluators frequently described these
+entries as “consolidated textbook knowledge" in their post-
+evaluation feedback. This observation highlights the challenge
+of the need to balance evidence maturity (strength) with temporal
+relevance (novelty) in KG development.
+• Inter-Rater Reliability Assessment: We observed signiﬁcant intra-
+group vs inter-group discrepancies in evaluation consistency
+(Fig. 4d). Clinical experts (d1–d2) achieved moderate agreement
+in correctness assessment (kappa: 0.43, Agreement: 76.7%),
+substantially higher than cross-disciplinary pairs like d2–phd1
+(kappa: 0.04). Similarly, the PhD researchers (phd1–phd2) demon-
+strated
+strong
+consensus
+in
+the
+insightfulness
+evaluation
+(kappa: 0.63, agreement: 80.0%), while clinician–researcher pairs
+showed considerably lower agreement, with kappa values ranging
+from 0.21 to 0.29. This pattern suggests divergent evaluation
+priorities—clinicians may have prioritized therapeutic validity (e.g.,
+contraindications, treatment effects), while researchers placed
+greater emphasis on mechanistic explanations.
+• Time Cost of Evaluation: MDKG’s enriched contextual features
+signiﬁcantly reduced evaluation time by 62–77% compared to
+PrimeKG and GENA (Fig. 4b). Clinicians spent an average of
+31 ± 2.24 s per MDKG triplet, compared to 129 ± 11.51 s for Pri-
+meKG and 85.25 ± 4.66 s for GENA. This reduction in evaluation
+time was strongly correlated with metadata completeness, high-
+lighting MDKG’s efﬁciency in facilitating rapid and informed
+assessments.
+• Validation of Conﬁdence Metric: Our conﬁdence score exhibited a
+strong positive correlation with human insightfulness ratings
+(mean correlation: 0.78, std: 0.00), indicating that the factors
+used in its design closely align with the criteria humans consider
+when assessing the value of a triplet. This strong alignment further
+validates the robustness and reliability of our approach.
+Enhancing MDD prediction through knowledge graph
+embeddings
+We propose utilizing MDKG as an external knowledge source to
+enhance the prediction accuracy for mental disorders. Our study
+leverages Electronic Health Records (EHRs) from the UK Biobank,
+covering the period from 2006 to 2022 (application number: 98327).
+We source patients’ medical history from self-reports (verbal inter-
+views at assessment centers, UK Biobank Field ID: 20002) and
+healthcare records (primary care, mortality records, and hospital
+inpatient data) from the UK National Health Service. Additionally, we
+selected PheCodes to enhance clinical relevance and model robust-
+ness by consolidating granular ICD-10 classiﬁcations into clinically
+meaningful phenotypes, reducing dimensionality by ~75% while
+prioritizing core disease manifestations over administrative distinc-
+tions. This approach mitigates sparsity and diagnostic inconsistencies
+in mental health disorders, aligning with PheWAS objectives to capture
+broad phenotypic patterns in EHR data. By emphasizing symptom-
+driven categorizations, PheCodes improve model generalizability and
+interpretability, overcoming the transient severity variations inherent
+in ICD-10 classiﬁcations21,22.
+We constructed a case-control cohort focusing on three target
+conditions: MDD, anxiety, and bipolar disorder. For each case, we
+compiled the patient’s pre-diagnosis health proﬁles based on medical
+records from 1 to 7 years prior to their ﬁrst recorded diagnosis, aiming
+to capture early predictive signals. To reduce potential noise from
+misdiagnoses, individuals with only a single recorded diagnosis were
+excluded. The control group consisted of individuals with no psycho-
+logical diagnoses, excluding all those with PheCodes in the 295–306.99
+range (see Supplementary Table 7). A 1:2 case-to-control ratio was
+adopted to ensure a balanced and statistically robust comparison. The
+baseline characteristics of participants are provided in Table 1.
+To effectively model patients’ longitudinal medical history, we
+developed a KG embedding approach based on MDKG (see Fig. 5a and
+“Methods” subsection “Representing patients’ medical history using
+knowledge graph embeddings”). Traditional models often encode
+diseases as dummy variables, which can lead to the curse of dimen-
+sionality, particularly in studies with limited sample sizes. For instance,
+representing 1578 phenotypes typically requires an equally high-
+Table 1 | Baseline characteristics of study participants stratiﬁed by disease status
+Anxiety
+MDD
+Bipolar
+Characteristics
+Control
+Case
+Control
+Case
+Control
+Case
+Sample size
+2000
+1000
+2000
+983
+2000
+1211
+Age (years)
+56.46 (8.16)
+55.73 (8.46)
+56.12 (8.09)
+55.04 (8.43)
+56.27 (8.27)
+55.56 (8.34)
+Female (%)
+40.50
+31.60
+43.60
+38.86
+43.35
+41.87
+White (%)
+90.85
+91.10
+89.65
+88.20
+88.25
+88.11
+Townsend index
+−1.56 (2.99)
+−0.97 (3.21)
+−1.53 (3.00)
+−0.28 (3.50)
+−1.49 (3.09)
+−0.00 (3.53)
+Employed (%)
+60.50
+55.10
+61.35
+54.12
+60.25
+46.16
+BMI
+27.02 (4.85)
+27.58 (5.36)
+26.98 (4.82)
+27.98 (5.51)
+26.87 (4.74)
+28.30 (5.85)
+Income (%)
+≤18,000
+23.65
+34.30
+22.20
+38.05
+23.90
+44.59
+18,000–30,999
+25.90
+26.60
+24.70
+25.74
+26.30
+24.86
+31,000–51,999
+25.10
+21.40
+26.90
+22.08
+23.75
+17.92
+52,000–100,000
+20.35
+14.00
+21.35
+12.61
+20.45
+9.33
+≥100,000
+5.00
+3.70
+4.85
+1.53
+5.60
+3.30
+Continuous variables are reported as mean (SD).
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Nature Communications|  (2025) 16:7526 
+8
+
+
+--- PAGE 9 ---
+dimensional variable space, yet the available training samples may be
+insufﬁcient to support such complexity. To address this, our approach
+condenses a patient’s medical history into a 200-dimensional feature
+vector. This representation not only reduces the model’s dimensional
+burden but also integrates medical background knowledge from the
+KG, potentially improving diagnostic predictions and clinical insights.
+We evaluated the predictive utility of KG embeddings using ten-
+fold cross-validation across four classiﬁers: logistic regression (LR),
+random forest (RF), support vector machine (SVM), and XGBoost.
+Three experimental settings were compared: (1) KG embeddings only,
+(2) non-medical EHR factors only (e.g., environment, lifestyle, family),
+and (3) integrated models combining both. The results, summarized in
+Fig. 5c, are reported as mean ± standard deviation of AUC.
+• Major Depressive Disorder: When utilizing comprehensive non-
+medical EHR factors (see Supplementary for details), the
+integrated model (EHR + KG) achieved superior performance.
+XGBoost attained the highest AUC of 0.89 ± 0.02, improving by
+0.07 over the EHR-only model (0.82 ± 0.03) and by 0.18 over the
+KG-only model (0.71 ± 0.02). Similar trends emerged for LR (The
+integrated model: 0.88 ± 0.03 vs. EHR-only: 0.84 ± 0.04; KG-only:
+0.75 ± 0.02) and RF (The integrated model: 0.86 ± 0.02 vs. EHR-
+only: 0.82 ± 0.03). Notably, models relying solely on environ-
+mental EHR factors exhibited a signiﬁcant performance boost
+when enhanced with KG embeddings. XGBoost improved from
+0.63 ± 0.03 (EHR-only) to 0.75 ± 0.02, reﬂecting a gain of 0.12.
+Similarly, SVM’s EHR-only performance (0.57 ± 0.06) was rela-
+tively weak but improved signiﬁcantly to 0.78 ± 0.03 after
+incorporating KG embeddings.
+• Bipolar Disorder: XGBoost achieved an AUC of 0.88 ± 0.02, out-
+performing EHR-only (0.85 ± 0.02) and KG-only (0.66 ± 0.03)
+approaches. LR demonstrated the highest relative improvement
+(+0.17), increasing from 0.70 ± 0.03 (KG-only) to 0.87 ± 0.02
+Fig. 5 | Predictive modeling of mental disorders using EHR features and
+knowledge graph embeddings. a Workﬂow illustrating the integration of UK
+Biobank Electronic health records (EHRs) and the MDKG for mental disorder pre-
+diction. EHRs are ﬁrst cleaned and preprocessed to extract non-medical factors
+(e.g., lifestyle, environmental exposures, family history). ICD-10 diagnoses and
+Phecodes are mapped to knowledge graph entities, and RDF2Vec is used to gen-
+erate embeddings for the aligned medical entities. Each patient’s medical history
+embedding is computed by averaging these vectors. Predictive models are then
+trained under three input settings: (1) EHR factors only, (2) medical knowledge
+grpah (KG) embeddings only, and (3) a combination of both. b SHAP-based feature
+importance for predicting major depressive disorder (MDD) using environmental
+factors only (top) and using environmental factors combined with KG embeddings
+(bottom). Bars represent the average absolute SHAP value of each feature across all
+predictions. c Prediction performance (AUC) for MDD, anxiety, and bipolar dis-
+order across different models and input feature settings. Each box plot shows
+results from 10-fold cross-validation for four classiﬁers—logistic regression (LR),
+random forest (RF), support vector machine (SVM), and XGBoost—under three
+experimental conditions: KG Embeddings Only, EHR Factors Only, and EHR + KG
+Embeddings. Box plots show the median (center line), interquartile range (box:
+25th–75th percentile), and whiskers extending to 1.5 times the interquartile range
+(IQR). Each dot represents the AUC score from one cross-validation fold. Points
+beyond the whiskers are plotted as outliers. The source data are provided as a
+Source Data ﬁle.
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Nature Communications|  (2025) 16:7526 
+9
+
+
+--- PAGE 10 ---
+(the integrated model), highlighting the beneﬁts of multimodal
+integration.
+• Anxiety Disorders: The integrated model consistently improved
+AUC across all classiﬁers (range: 0.81–0.83), compared to KG-only
+(0.65–0.69) and EHR-only (0.78–0.79). LR performed best
+(0.83 ± 0.02 for integrated model vs. 0.79 ± 0.01 for EHR-only).
+The non-medical EHR-only model for anxiety performed the
+weakest among the three conditions, suggesting that lifestyle,
+environmental, and familial factors may contribute differently to
+anxiety disorders compared to MDD and bipolar disorder.
+SHapley Additive exPlanations (SHAP) feature attribution analysis,
+shown in Fig. 5b, further illustrates the signiﬁcant shifts in feature
+importance upon including medical history KG embeddings. In the
+environmental-only MDD scenario, PM2.5 was the most inﬂuential factor
+(SHAP value: 0.43), underscoring the role of air pollution in MDD risk—
+consistent with prior ﬁndings linking particulate exposure to altered
+brain function and depressive symptoms23,24. However, in the integrated
+model, PM2.5’s importance slightly declined to 0.40, while new medical
+history embeddings (e.g., Embedding 47, 162, 190) emerged as top
+contributors. Similarly, features like “distance to coast” also saw reduced
+SHAP values (0.20 →0.16), while demographic factors such as “sex” and
+“greenspace percentage” remained consistently important.
+Overall, these ﬁndings demonstrate the consistent advantage of
+integrating KG embeddings, particularly in feature-limited scenarios,
+effectively addressing limitations inherent to exclusive reliance on
+traditional EHR factors. By combining the depth of KG embeddings
+with the breadth of conventional EHR data, our integrated approach
+signiﬁcantly enhances predictive accuracy, representing a meaningful
+advancement in clinical diagnostic methodologies.
+Discussion
+This study presents MDKG, a comprehensive KG speciﬁcally designed
+for mental disorders. This multi-relational, attributed biomedical KG
+contains over 10 million interconnections sourced from various bio-
+medical literature and pre-existing databases. MDKG’s schema is
+meticulously designed to enrich relationships extracted from litera-
+ture with domain-speciﬁc information, such as conditional statements
+and contextual features, ensuring both semantic and biomedical
+validity. We have developed an automated data annotation process by
+integrating LLMs with active learning techniques, enabling us to
+annotate 500 abstracts related to mental disorders. We also demon-
+strate the practical applications of MDKG and its potential to advance
+mental health research and clinical practices.
+Despite these advancements, our MDKG has several potential
+limitations under the current construction framework.
+• Limited Scope and Techniques of Information Extraction: Our
+current triplet extraction process in MDKG is restricted to
+sentence-level information from abstracts, targeting speciﬁc
+predeﬁned entities and relationships. This limitation may result
+in missing unforeseen knowledge. Future developments should
+expand the analysis to full text, supplementary materials, tables,
+and images, and incorporate advanced methodologies like LLMs,
+document-answering technologies, and other AI tools to enhance
+the scope and effectiveness of information extraction.
+• Challenges in Data Quality and Integrity: Although we’ve assem-
+bled large-scale interactions from various databases and litera-
+ture, the quality and integrity of this metadata cannot be fully
+guaranteed. A signiﬁcant issue is the alignment of medical
+entities, which often have many synonyms and abbreviations.
+This complexity makes it difﬁcult to align entities from different
+sources, leading to lower connectivity in our KG and limiting the
+linking of entities.
+• Potential for LLMs and KG Integration in Question Answering (QA)
+Models:
+Advancements
+in
+LLM
+technology
+present
+an
+opportunity to integrate LLMs with KG in a QA model. Currently,
+our MDKG mainly serves medical researchers. To extend its utility
+to the general public, we can develop a user-friendly QA tool that
+combines LLMs’ comprehension capabilities with the extensive
+knowledge of MDKG. This would help make complex medical
+information accessible and understandable to those without a
+medical background, broadening the applicability and impact of
+our MDKG.
+Methods
+Ethics statement
+This study includes analyses based on both publicly available biome-
+dical resources and individual-level data from the UK Biobank. The use
+of UK Biobank data was approved under Application Number 98327.
+Ethical approval was granted by the North West Multi-centre Research
+Ethics Committee, acting as a Research Tissue Bank. All UK Biobank
+participants provided written informed consent for data collection,
+storage, and linkage. The UK Biobank study protocol is publicly
+available at https://www.ukbiobank.ac.uk. No ethical approval was
+required for the use of publicly available datasets retrieved from
+PubMed, biomedical literature repositories, or open-access biomedi-
+cal databases.
+Statistics and reproducibility
+No statistical method was used to predetermine sample size. No data
+were excluded from the analyses. The experiments were not rando-
+mized. The investigators were not blinded to allocation during anno-
+tation, model training, or outcome assessment.
+Entity and relation extraction models were trained and evaluated
+on ﬁxed training, validation, and test splits, using precision, recall,
+micro F1, and macro F1 as metrics. For downstream classiﬁcation tasks,
+repeated 10-fold cross-validation was used, and performance was
+assessed with AUC, reporting standard deviation across folds.
+Human evaluation of KG triplet quality was conducted on ran-
+domly selected triplets, sampled independently per graph. Evaluators
+scored correctness, insightfulness, and evaluation time. Evaluation
+consistency between raters was quantiﬁed using Cohen’s Kappa
+coefﬁcient and inter-rater agreement rates. Mean evaluation time per
+example and its standard error were also recorded. Pearson correla-
+tion was used to assess the alignment between model-derived con-
+ﬁdence scores and human-assigned insightfulness ratings.
+Data annotation
+Signiﬁcant effort was dedicated to annotating a dataset for knowledge
+extraction pertaining to mental disorders, resulting in the creation of
+the Mental Disorders-Related Information Extraction Corpus (MDIEC),
+which is publicly available at https://doi.org/10.5281/zenodo.10960357.
+The annotation process began by selecting keywords represent-
+ing mental disorders with signiﬁcant global disease burdens, as
+deﬁned in the Global Burden of Diseases 2019 report2,25. These key-
+words include depressive disorder, anxiety disorder, bipolar disorder,
+and schizophrenia, among others. Using these keywords, we retrieved
+234,087 articles from PubMed (https://pubmed.ncbi.nlm.nih.gov/) as
+of January 1, 2024. We then applied an automated annotation process
+(shown in Fig. 6a) for preliminary data annotation. Our team meticu-
+lously reviewed and reﬁned annotations for a subset of 500
+abstracts to ensure data quality and accuracy. The annotated corpus’s
+statistics are presented in Table 2.
+Entity annotation. We segmented the abstract annotation process into
+ten batches using an active learning strategy for sequential annotation.
+Initially, we employed BERN226 (Advanced Biomedical Entity Recog-
+nition and Normalization), a neural network-based tool, to pre-
+annotate the texts. BERN2 efﬁciently identiﬁes entities such as genes,
+chemicals, diseases, and cell types. However, BERN2’s proﬁciency in
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Nature Communications|  (2025) 16:7526 
+10
+
+
+--- PAGE 11 ---
+identifying methods and physiological activities is limited, necessitat-
+ing additional processing for comprehensive extraction.
+To address this, we ﬁrst created an entity-matching dictionary of
+annotated entities, which we omitted only in the initial annotation
+round. This dictionary was then used to perform exact matching on
+BERN2-processed texts. Since entities often appear as noun phrases,
+we focused on extracting these phrases. Traditional extraction meth-
+ods rely on established NLP tools27 or predeﬁned grammar28, some-
+times compromising accuracy. To improve this, we employed GPT-4.0,
+an LLM, to extract noun phrases from the abstracts in a question-and-
+LLM QA
+a.Abstracts download
+c. Relation annotation
+BERN2
+QuickUMLS
+……Depressed patients report
+the alleviation of major 
+depressive disorder symptoms
+within two hours of a single.
+low-dose intravenous infusion
+of ketamine
+……
+{
+“Entity”: Depressed
+“Entity code”: T5
+“Entity type”:
+Disease}
+……
+{
+“Entity”: ketamine
+“Entity code”: T7
+“Entity type”: Drug
+}
+b.Entity annotation
+e. Update labeled dataset
+d.Manual Check
+PMID:21677641
+……[Depressed. T5]
+patients report the
+alleviation of [major
+depressive disorder
+symptoms，T6] 
+withintwo hours of a [single,
+low-dose intravenous
+infusion, T42] of 
+[ketamine.T7] ……
+In this sentence:
+[Transformaed Sentence]
+I marked the entity with ‘[ ]' and attached an entity
+code starting with ’T’.  Please judge whether the
+sentence expresses treatment for relationships
+based on the content of the sentence. If so. please
+list the treatment for relationships using a JSON 
+format with keys "head entity","head entity code",
+"tail entity”,”tail entity code”
+Transformed Sentence
+Prompt for GPT4
+{
+"head entity": "ketamine",
+"head entity code": "T7",
+"tail entity": "major
+depressive disorder symptoms"
+"tail entity code": “T6”
+}
+GPT-4
+PDF download
+Locate tables
+Keywords
++
+Table detection
+{
+   "Sample Size": {
+      "IPTgroup": 115,
+      "EUCgroup": 119
+   },
+   "Average Age": {
+      "IPTgroup": 29.7,
+      "EUCgroup": 30.0
+   },
+   "Female Proportion": {
+      "IPTgroup": "unknown",
+      "EUCgroup": "unknown"
+   },
+   "Racial Distribution": {
+      "Asian": {
+         "IPTgroup": 6,
+         "EUCgroup": 4
+      },
+      "Black": {
+         "IPTgroup": 11,
+         "EUCgroup": 10
+        }, 
+......
+ }
+LLM QA
+I have accessed a table from a medical research study, and I need to confirm its content before
+proceeding with data extraction. Could you first verify if this table describes the demographics
+or characteristics of the study participants? If it does, I would then like you to extract and
+answers to the following queries based on the table. However, if the table does not describe
+baseline characteristics, please respond with the statement: 'This table does not detail the
+baseline characteristics of a study population.'If any information is not available in the table, 
+please respond with 'unknown'. In case the table details multiple study groups, kindly address
+each group separately.
+I need the following details, please with units included where applicable:
+1. Total sample size of the participants.
+2. Age range or average age of the participants.
+3. Gender distribution among the participants.
+4. Racial or ethnic distribution of the participants.
+5. Educational background of the participants.
+6. Employment status of the participants.
+Please present your findings in a JSON format, with the following keys: 'Sample Size', 'Age', 
+'Gender', 'Racial Distribution', 'Education', and 'Employment'. This will ensure clarity and
+ consistency in understanding the demographic composition of the study participants. 
+Here is the text from the table:
+[Table Text]
+"""
+"""
+Input
+No.(%)
+Characteristic IPTgroup EUCgroup
+Effectsize(95%CI)a
+No. 115 119 NA
+Maternalageatrecruitment,mean(SD) 29.7(5.9)
+30.0(5.9) 0.06(−0.20to.31)
+Gestationalageatrecruitment,mean(SD),wk 16.9(4.5)
+16.5(3.9) 0.05(−0.21to.30)
+Parity(nulliparous) 61(53.0) 47(39.5)
+1.73(1.03to2.91)
+Raceandethnicity
+Asian 6(5.2) 4(3.4) 1.58(0.44to5.76)
+Black 11(9.6) 10(8.4) 1.15(0.47to2.83)
+HispanicorLatine 19(16.5) 24(20.2)
+0.78(0.40to1.52)
+NativeHawaiian/PacificIslander 1(0.9) 0 
+1.00(0.99to1.03)
+Non-LatineWhite 49(42.6) 52(43.7)
+0.96(0.57to1.61)
+Multiracialormultiethnic 29(25.2) 29(24.4) 
+1.05(0.58to1.89) '
+Crop table area
+Table text extraction
+Q
+Prompt:
+Prompt:
+Table Text
+Table Text
+TABLE 2
+PAGE 2
+Page3
+Table3
+Table3
+Page3
+Table3
+Page3
+M
+Pub     ed
+®
+M
+Pub     ed
+®
+M
+Pub     ed
+®
+Page2
+Table2
+Page3
+Table3
+TABLE2
+TABLE3
+a
+Data Annotation Pipeline
+b
+Baseline Characteristics Extraction Pipeline
+Fig. 6 | LLM-powered workﬂows for data annotation and literature-based
+knowledge extraction. a Workﬂow for literature-based triplet annotation using
+large language models (LLMs). The process begins with downloading abstracts and
+applying biomedical named entity recognition (e.g., BERN2, QuickUMLS). Anno-
+tated entities are used to construct transformed sentences, which are then
+submitted to GPT-based prompts for relation extraction. Human annotators
+manually review and reﬁne the generated triplets to ensure accuracy. b Pipeline for
+extracting baseline characteristics from PDFs using LLM-powered question
+answering.
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Nature Communications|  (2025) 16:7526 
+11
+
+
+--- PAGE 12 ---
+answer format. We then compared each extracted phrase with the
+dictionary entries, deﬁning a match as successful if it met a speciﬁc
+threshold of text similarity, measured by edit distance.
+For noun phrases where the entity types were unclear, we used
+QuickUMLS29, a tool that matches noun phrases to terms in the UMLS30
+(Uniﬁed Medical Language System) based on string similarities. Two
+neurosurgery experts selected 108 relevant semantic types from the
+UMLS and mapped these to our nine predetermined entity categories.
+After annotating the relationships, we reviewed and corrected the
+annotated entities. Once manually veriﬁed, these entities were inte-
+grated into the entity-matching dictionary. This updated dictionary
+was then used for subsequent annotation processes, enabling auto-
+mated annotation of terms not typically covered by BERN2 or UMLS
+but signiﬁcant for mental disorders research.
+Relationship annotation. Annotating relationships presents two pri-
+mary challenges: it is labor-intensive and often subjective, leading to
+inconsistencies due to varied interpretations by different annotators.
+Although automatic relationship annotation methods like distant
+supervision31 exist, their accuracy is limited. These methods assume
+that “if two entities have a certain relationship in the knowledge base,
+then all sentences containing these two entities will express this rela-
+tionship.” However, the complexity and variability of the text often
+invalidate this assumption.
+To mitigate these challenges, we integrated GPT-4.0 into our
+relationship annotation workﬂow, leveraging its advanced text under-
+standing abilities and extensive biomedical knowledge (shown in
+Fig. 6a). We start with texts pre-annotated for entities. The primary goal
+at this stage is to identify potential relationships between entity pairs
+based on the sentence’s context. We enhance GPT-4.0’s efﬁciency
+using a two-step inquiry strategy32. Initially, GPT-4.0 determines whe-
+ther a sentence indicates a particular relationship type. If the answer is
+yes, GPT-4.0 then identiﬁes and outputs the entity pairs involved in this
+relationship. Finally, our annotators thoroughly review these identiﬁed
+pairs, checking their relationship type to ensure annotation accuracy
+and consistency. To further improve consistency between annotators,
+we provide relationship annotation guidelines (details in Supplemen-
+tary), summarizing common relational expression sentences.
+Actively candidate annotation abstract selection. Annotating ran-
+domly
+selected
+abstracts
+indiscriminately
+presents
+two
+major
+challenges:
+1.
+Data imbalance. Speciﬁc relationship types, such as risk relation-
+ships, are rarely found in abstracts. This scarcity leads to under-
+representation of these relationship types in our dataset, negatively
+impacting the model’s ability to classify them accurately.
+2.
+Inefﬁcient Utilization of Resources. Our analysis reveals that over
+half of the sentences in typical abstracts do not contain essential
+relationship information. As a result, many sentences are unin-
+formative for our information extraction model. Despite this,
+annotators expend equal effort on analyzing these uninformative
+sentences as on informative ones, leading to unnecessary cost
+increases.
+To mitigate the identiﬁed challenges, we implement an active
+learning framework for more effective, model-driven annotation of
+our training dataset. This method focuses on identifying samples with
+signiﬁcant uncertainty regarding certain types of relationships,
+employing a unique region-aware sampling strategy33 designed to
+balance uncertainty and diversity. By prioritizing the most informative
+samples, we enhance the model’s performance.
+1.
+Identifying
+Sentences
+with
+Target
+Relationships:
+In
+each
+annotation-training loop t, we identify sentences containing both
+the head and tail entities of a target relationship type, such as “risk
+factor of,” as our initial candidate annotation sentences {S(t)}. This
+identiﬁcation uses known triplets from the already labeled dataset
+or an existing database, ensuring that we concentrate on
+sentences relevant to the target relationship.
+2.
+Weighted K-means Clustering: Sentences sðtÞ
+i
+2 fSðtÞg are trans-
+formed into embeddings xðtÞ
+i
+2 fXðtÞg using the [CLS] token of our
+information extraction model’s encoder f ðθðt1ÞÞencoder. These
+embeddings are clustered using weighted K-means clustering,
+with the weight of each sentence determined by its uncertainty
+level, calculated based on the model’s estimated relationships’
+cross-entropy
+aðtÞ
+i = a sðtÞ
+i , θðt1Þ
+
+
+:
+ð1Þ
+3.
+Uncertainty and Diversity of Clusters: After obtaining K clusters
+CðtÞ
+k for k = 1, …, K with the corresponding sentence embeddings,
+we derive the uncertainty of each cluster from two metrics:
+uðtÞ
+k = UðCðtÞ
+k Þ + βIðCðtÞ
+k Þ
+ð2Þ
+where
+UðCðtÞ
+k Þ = ∣CðtÞ
+k ∣
+1 X
+sðtÞ
+i 2CðtÞ
+k
+a sðtÞ
+i , θðt1Þ
+
+
+ð3Þ
+is the average uncertainty of all sentences in cluster k, ∣CðtÞ
+k ∣is the
+size of the cluster,
+IðCðtÞ
+k Þ = 
+X
+j2L
+gðtÞ
+j, k log gðtÞ
+j, k
+ð4Þ
+is the inter-relationship type diversity, where L is the set of
+relationship categories, and β is a scaling parameter. Here,
+gðtÞ
+j, k =
+P
+sðtÞ
+i 2CðtÞ
+k 1
+~yðtÞ
+i = j
+n
+o
+∣CðtÞ
+k ∣
+ð5Þ
+is the frequency of relationship type j in cluster k, and ~yðtÞ
+i
+refers
+to the pseudo-relationship label of sentence sðtÞ
+i .
+4.
+Hierarchical Sampling: Clusters are ranked by their uncertainty
+uðtÞ
+k . The M most uncertain clusters are chosen, and from each, the
+top b sentences with the highest uncertainty are selected to
+construct a batch. This stratiﬁed approach ensures diverse and
+highly uncertain sentence querying.
+5.
+Annotation: Finally, the selected sentences are actively annotated
+and added to the training set, facilitating the next round of model
+training.
+Table 2 | Manually Annotated Mental Disorders-Related
+Information Extraction Corpus (MDIEC) Statistics
+Entity type
+# Unique entity
+Relation type
+#Relation
+Disease/Symptom
+1592
+Hierarchical
+1166
+Gene
+637
+Association
+2686
+Health Factors
+1449
+Characteristic
+700
+Method/Procedure
+2787
+Risk
+1199
+Anatomy
+566
+Therapeutic
+1239
+Drug/Chemical
+601
+Diagnostic
+589
+Phenotype
+287
+Abbreviation
+1112
+Physiology
+929
+Occurs_in
+1225
+Sign
+225
+Located_in
+524
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Nature Communications|  (2025) 16:7526 
+12
+
+
+--- PAGE 13 ---
+Information extraction in medical literature
+This study outlines a structured approach to extracting information
+from medical literature (see Fig. 1b), involving two main steps: 1.
+Extraction of Named Entities, Relationships, and Conditional State-
+ments: Our initial step involves extracting named entities, relation-
+ships, and conditional statements from medical literature abstracts. To
+reﬁne this process, we integrate active learning methods, aiming to
+enhance sample utilization efﬁciency, minimize annotation costs, and
+boost our model’s overall performance. 2. Extraction of Baseline
+Characteristics of the Study Population: A crucial part of our study is
+extracting the characteristics of the study population from medical
+literature, enriching the background of the extracted data. We focus
+on two main areas: extracting baseline characteristics from full-text
+tables
+and
+gleaning
+study-speciﬁc
+information
+from
+abstracts.
+ChatGPT plays a key role in analyzing these elements, especially in
+interpreting complex tables. This approach ensures a comprehensive
+understanding of the triples extracted from articles, signiﬁcantly
+enhancing the depth and quality of our data generation.
+Named entities, relationships, and conditional statements extrac-
+tion. For the Named Entity Recognition (NER) and Relationship
+Extraction (RE) process, we employed the SpERT.PL34 framework,
+which leverages the transformer network BERT35 as its core and inte-
+grates shallow classiﬁers for joint entity and relation classiﬁcation.
+Unlike previous methods based on BIO/BILOU labels36, SpERT.PL uti-
+lizes a span-based approach, where any token subsequence (or span)
+can constitute a potential entity, and a relationship can exist between
+any pair of spans. Our model training followed the SpERT.PL metho-
+dology with three key modiﬁcations to enhance performance: 1. Active
+Learning Workﬂow: The training process integrates an active learning
+approach, where the BERT-based NER/RE model identiﬁes and selects
+the most informative abstracts according to its current preferences.
+Experts then annotate these abstracts and incorporate them into the
+training dataset. 2. CODER++ Encoder Integration: We incorporated
+the CODER++37 encoder, a transformer-based pre-trained model
+trained on the UMLS corpus. CODER++ not only embeds biomedical
+information from the UMLS but also captures relationship structure
+information to align equivalent biological concepts more effectively. 3.
+NoisyTune Implementation: We implemented NoisyTune38, which
+adds uniform noise to parameter matrices to enhance ﬁne-tuning. The
+best-performing model on the validation set is then selected. With its
+optimal parameters, a ﬁnal model is trained using all annotated data to
+recognize entities and extract relationships in new, unannotated texts.
+After extracting entities and relationships with the BERT-based model,
+we reﬁned the extracted triplets using GPT-4o. The reﬁnement process
+includes verifying entity spans, conﬁrming entity types, validating
+relationships, and scoring each triplet (1-10) for overall accuracy. Tri-
+plets with a score below 5 are reprocessed. In cases of contradictory
+statements, we input the conﬂicting triplets along with the full abstract
+into GPT-4o to determine whether the contradictions stem from dif-
+fering conclusions in the articles. If the contradictions are due to dif-
+fering conclusions, they are retained; otherwise, the model selects the
+correct triplet, removing the incorrect one from the KG.
+The best-performing NER model achieved a micro F1 score of 0.89
+and amacroF1scoreof0.88,indicating reliable precision acrossdifferent
+entity types. The RE task presented more challenges, with initial micro
+and macro F1 scores of 0.68 and 0.67, respectively. When both tasks are
+performed jointly, the model achieved micro and macro F1 scores of 0.63
+and 0.63, highlighting the complexity of integrating these processes.
+After post-processing reﬁnement steps, the valid joint NER & RE evalua-
+tion achieved a micro F1 score of 0.79 and a macro F1 score of 0.76,
+demonstrating a marked enhancement in overall performance.
+Baseline characteristics of the study population extraction. In
+medical literature, abstracts often do not fully reﬂect the baseline
+characteristics of research populations. To address this, we designed a
+process to examine the baseline characteristics tables to gather the
+demographic information of interest. Extracting data from tables
+involves several stages, including locating the table, linking the cap-
+tion, identifying the structure, and extracting the data. The most
+challenging task is understanding the table’s structure, which is crucial
+for accurately interpreting each cell’s meaning. However, a study39
+shows that in over 70% of cases, in-depth consideration of table
+structure is unnecessary. In the remaining 30%, a simple under-
+standing of the structure, such as the alignment of rows and columns,
+sufﬁces without complex reasoning chains. Combined with ChatGPT’s
+excellent performance in question and answer tasks, we found that
+ChatGPT can provide fairly accurate answers based on the table text
+without the table structure. Therefore, we have developed a table
+question-answer pipeline that integrates Optical Character Recogni-
+tion (OCR) and ChatGPT. The speciﬁc steps are as follows:
+1.
+PDF/XML Acquisition: Based on the publication type of articles
+obtained from PubMed, we selectively downloaded PDFs or XMLs
+of articles from PubMed Central or other journal websites,
+excluding those classiﬁed as “Review” or “Meta.”
+2.
+Table Location and Extraction: After acquiring the PDF and XML
+ﬁles, we searched these documents for pages containing the
+terms “Characteristics” or “Demographics.” For PDFs, we utilized
+PaddleOCR’s40 table detection capability to identify the presence
+of tables on the relevant pages. When a table is detected, we
+isolated and extracted its contents using pdfplumber41. In the case
+of XML ﬁles, we employed Python scripts to parse the layout and
+search for tables speciﬁcally tagged or labeled with pertinent
+keywords. We collected ~73,000 XML and 95,637 PDF ﬁles for our
+research analysis.
+3.
+Ask ChatGPT for an Answer: After extracting the content of
+the target tables from XML or PDF ﬁles, we approached the task as
+a question-answering task, querying ChatGPT with questions
+related to the extracted table content (details in Fig. 6b).
+4.
+Post-processing: After retrieving answers from ChatGPT, we ﬁrst
+ensured that the answers conform to the JSON format. Any
+answers failing to meet this standard are discarded. For these
+tables, we initiated a second round of questioning. Additionally, if
+an answer is properly formatted in JSON but consistently
+responds with “Unknown” for all queries, we infer that the cor-
+responding table likely lacks information on study population
+characteristics, and these responses are also discarded.
+We have conducted a manual review of this procedure’s effec-
+tiveness on roughly 300 articles. This review involved assessing the
+accuracy of the process and identifying the causes of any errors
+encountered. The results of this evaluation, including a detailed
+breakdown of accuracy and error categorization, are presented in
+Supplementary Table 3.
+Entity and relationship alignment
+Integrating data from various sources necessitates meticulously
+aligning entities and relationships to maintain a uniﬁed framework for
+future research endeavors.
+Our method starts by aligning and integrating the types of
+entities and relationships from biomedical databases, as outlined
+in Table 3, with those predeﬁned in our MDKG. To achieve precise
+entity alignment, we computed the SapBert embedding for each
+entity and employed the FAISS42 library to identify the closest
+match. If the cosine similarity between two entities was above
+0.90, they were considered identical. Before this step, we dis-
+ambiguated abbreviations identiﬁed in the literature, using the
+“abbreviation for” relationship to expand abbreviations to their
+full forms based on the context within the same abstract, thereby
+enhancing entity alignment accuracy.
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Nature Communications|  (2025) 16:7526 
+13
+
+
+--- PAGE 14 ---
+For unique identiﬁer (ID) assignment, our strategy leveraged
+tools such as SciSpacy27 and QuickUMLS, as well as cosine simi-
+larity metrics computed from SapBERT embeddings. Entities in
+categories such as phenotype, method, signs, health factors, and
+drug were linked to the UMLS30. Disease entities were connected
+via the MONDO43 database or UMLS, anatomy entities through
+UBERON44, and genes and physiological functions via the Gene
+Ontology (GO45). More precisely, we computed the cosine simi-
+larity between an entity and every entity within the correspond-
+ing databases through SapBert embeddings. The entity that
+demonstrated the highest similarity, exceeding a threshold of
+0.9, was selected as the link target. Due to the extensive number
+of entities in UMLS, making an exhaustive comparison unfeasible,
+our
+method
+for
+UMLS
+was
+distinct.
+We
+employed
+Quick-
+UMLS or SciSpacy to generate a list of candidate entities for each
+term, then calculated the SapBert embeddings’ cosine similarity
+among these candidates and the original entity.
+For entities not linked to a speciﬁc database, we clustered them
+based on their SapBert embeddings and selected the most frequently
+occurring entity from each cluster as the standard entity. Subse-
+quently, we assigned a unique ID to each cluster of entities to ensure
+their distinct recognition within our MDKG.
+Representing patients’ medical history using knowledge graph
+embeddings
+After collecting a patient’s medical history, we generate their medical
+KG embeddings through the following steps:
+1.
+Our approach begins by mapping entities from MDKG to ICD-10
+codes by calculating the SapBERT embeddings for each entity and
+ICD-10 codes, then determining their similarity. Using the
+established mapping between ICD-10 codes and Phecodes, we
+further map the MDKG entities to their corresponding Phecodes.
+SapBERT is particularly well-suited for this task due to its pre-
+training on the UMLS, a comprehensive database that includes a
+wide array of biomedical and clinical terms. This pre-training
+enables SapBERT to effectively capture the semantic relationships
+between medical concepts, allowing for accurate mappings of
+MDKG entities to Phecodes.
+2.
+After mapping MDKG entities to Phecodes, we compute graph
+embeddings for those entities that successfully map to Phecodes
+using the RDF2vec46 model. RDF2vec is a highly efﬁcient techni-
+que that converts the structure of the KG into ﬁxed-dimensional
+vector representations. Compared to Graph Neural Networks,
+RDF2vec requires far fewer computational resources, making it a
+more feasible option for large-scale applications like ours.
+3.
+Next, we average the graph embeddings of the entities that map
+to the same Phecode to generate the ﬁnal Phecode embedding.
+4.
+To generate the ﬁnal patient embedding, we average the
+embeddings of all Phecodes recorded for the patient in the UK
+Biobank. This process results in a compact and informative 200-
+dimensional medical embedding that summarizes the patient’s
+medical history for diagnostic predictions.
+Reporting summary
+Further information on research design is available in the Nature
+Portfolio Reporting Summary linked to this article.
+Data availability
+The annotated dataset used in this study, the Disorders-Related
+Information Extraction Corpus (MDIEC), has been deposited in the
+Zenodo repository under accession code [10960357] (https://zenodo.
+org/records/10960357). The Mental Disorders Knowledge Graph
+(MDKG) generated in this study is available through the BiomedKG
+portal at https://biomedkg.com. The individual-level data from the UK
+Biobank (UKB) used in this study are available under restricted access
+to protect participant privacy, in accordance with UK Biobank’s data
+governance policy. Access can be obtained by submitting a research
+application via the UK Biobank Access Management System (https://
+www.ukbiobank.ac.uk/enable-your-research/apply-for-access).
+Approval is limited to qualiﬁed researchers at recognized institutions,
+and access is granted following review and approval of the research
+protocol. The review timeline varies depending on project complexity
+and compliance requirements. Once granted, data access is valid for
+the duration of the approved project in accordance with UKB pol-
+icy. Source data are provided with this paper.
+Code availability
+The code used in this study is publicly available on GitHub at https://
+github.com/MonsterTea/MDKG and is permanently archived with a
+DOI at Zenodo: https://doi.org/10.5281/zenodo.1569823747.
+References
+1.
+Scangos, K. W., State, M. W., Miller, A. H., Baker, J. T. & Williams, L.
+M. New and emerging approaches to treat psychiatric disorders.
+Nat. Med. 29, 317–333 (2023).
+2.
+Vigo, D., Jones, L., Atun, R. & Thornicroft, G. The true global disease
+burden of mental illness: still elusive. Lancet Psychiatry 9,
+98–100 (2022).
+3.
+Craske, M. G., Herzallah, M. M., Nusslock, R. & Patel, V. From neural
+circuits to communities: an integrative multidisciplinary roadmap
+for global mental health. Nat. Ment. Health 1, 12–24 (2023).
+4.
+Tozzi, L. et al. Personalized brain circuit scores identify clinically
+distinct biotypes in depression and anxiety. Nat. Med. 30,
+2076–2087 (2024).
+5.
+Derks, E. M., Thorp, J. G. & Gerring, Z. F. Ten challenges for clinical
+translation in psychiatric genetics. Nat. Genet. 54, 1457–1465 (2022).
+6.
+Andreassen, O. A., Hindley, G. F., Frei, O. & Smeland, O. B. New
+insights from the last decade of research in psychiatric genetics:
+discoveries, challenges and clinical implications. World Psychiatry
+22, 4–24 (2023).
+Table 3 | Summary of data source characteristics across bio-
+medical databases
+Database
+Source
+Generation
+Evidence
+Updated
+SIDER
+Drug labels,
+inserts
+Auto.
+References
+2015
+DrugBank
+Literature
+Manual
+References
+2025
+CTD
+Literature,
+Databases
+Manual,
+integrator
+Evidence
+2025
+Reactome
+Literature
+Manual
+References
+2025
+GO
+Literature
+Manual
+Evidence
+2025
+Bgee
+Databases
+Integrator
+References
+2023
+ClinVar
+Clinical submis-
+sions, Literature,
+Databases
+Manual
+Evidence
+2025
+HPO
+Literature,
+Databases
+Manual, auto.
+Evidence
+2024
+MONDO
+Databases
+Manual, auto.
+References
+2025
+DisGeNET
+Literature,
+Databases
+Auto.,
+integrator
+Evidence
+2025
+UBERON
+Databases
+Integrator
+References
+2025
+UMLS
+Databases
+Manual,
+integrator
+-
+2025
+“Source” refers to the origin of the data. “Generation” denotes the primary method of database
+construction: “Manual” indicates manual curation, “Auto.” refers to automated or algorithmic
+extraction, and “Integrator” refers to resources built by aggregating existing structured datasets.
+“Evidence” indicates whether the database provides data provenance or quality indicators:
+“References” denotes linked source publications; “Evidence” implies structured conﬁdence
+scores, assertion strength, or context-speciﬁc provenance. “Updated” indicates the most recent
+year of data release or update.
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Nature Communications|  (2025) 16:7526 
+14
+
+
+--- PAGE 15 ---
+7.
+Ji, S., Pan, S., Cambria, E., Marttinen, P. & Yu, P. S. A survey on
+knowledge graphs: representation, acquisition, and applications.
+IEEE Trans. Neural Netw. Learn. Syst. 33, 494–514 (2022).
+8.
+Freidel, S. & Schwarz, E. Knowledge graphs in psychiatric research:
+potential applications and future perspectives. Acta Psychiatr.
+Scand. 151, 180–191 (2025).
+9.
+Hogan, A. et al. Knowledge graphs. ACM Comput. Surv. 54,
+1–37 (2021).
+10.
+Shen, T. et al. Increased cognition connectivity network in major
+depression disorder: a FMRI study. Psychiatry Investig. 12,
+227–234 (2015).
+11.
+Sun, H. et al. MMiKG: a knowledge graph-based platform for path
+mining of microbiota-mental diseases interactions. Brief. Bioinform.
+24, 340 (2023).
+12.
+Fu, C., Huang, Z., Harmelen, F., He, T. & Jiang, X. Food
+recommendation for mental health by using knowledge graph
+approach. In Proc. Health Information Science: 11th Interna-
+tional Conference, HIS 2022, Virtual Event, October 28-30,
+2022 231–242. https://doi.org/10.1007/978-3-031-20627-6_22
+(Springer, 2022).
+13.
+Li, Z. Construction of Depression Knowledge Graph Based on Bio-
+medical Literature. In Proc. 2021 IEEE International Conference on
+Bioinformatics and Biomedicine (BIBM) 1849–1855. https://doi.org/
+10.1109/BIBM52615.2021.9669447; https://ieeexplore.ieee.org/
+document/9669447 (2021).
+14.
+Huang, Z., Yang, J., Harmelen, F. & Hu, Q. Constructing knowledge
+graphs of depression. in (eds Siuly, S., Huang, Z., Aickelin, U., Zhou,
+R., Wang, H., Zhang, Y. & Klimenko, S.) Health Information Science.
+Lecture Notes in Computer Science. 149–161. https://doi.org/10.
+1007/978-3-319-69182-4_16 (Springer, 2017).
+15.
+Wang, Y. & Yang, W. Research on the method of constructing
+knowledge graph of affective disorder based on multi-source
+data fusion. In Proc. 5th International Conference on Informa-
+tion Technologies and Electrical Engineering. ICITEE ’22 57–60.
+https://doi.org/10.1145/3582935.3582945 (Association for
+Computing Machinery, (2023).
+16.
+Dang, L. D., Phan, U. T. P. & Nguyen, N. T. H. GENA: A knowledge
+graph for nutrition and mental health. J. Biomed. Inform. 145,
+104460 (2023).
+17.
+Miller, D. L. The nature of scientiﬁc statements. Philos. Sci. 14,
+219–223 (1947).
+18.
+Vishne, T. et al. Fibromyalgia among major depression disorder
+females compared to males. Rheumatol. Int. 28, 831–836 (2008).
+19.
+Chandak, P., Huang, K. & Zitnik, M. Building a knowledge graph to
+enable precision medicine. Sci. Data 10, 67 (2023).
+20. Morris, J. H. & Soman, K. et al. The scalable precision medicine open
+knowledge engine (SPOKE): a massive knowledge graph of bio-
+medical information. Bioinformatics 39, 080 (2023).
+21.
+Wu, P. et al. Mapping ICD-10 and ICD-10-CM codes to Phecodes:
+workﬂow development and initial evaluation. JMIR Med. Inform. 7,
+e14325 (2019).
+22. Bastarache, L. Using phecodes for research with the electronic
+health record: from PheWAS to PheRS. Annu. Rev. Biomed. Data Sci.
+4, 1–19 (2021).
+23. Nobile, F., Forastiere, A., Michelozzi, P., Forastiere, F. & Stafoggia, M.
+Long-term exposure to air pollution and incidence of mental dis-
+orders. A large longitudinal cohort study of adults within an urban
+area. 181, 108302. https://doi.org/10.1016/j.envint.2023.108302.
+24. Li, Z. et al. Air pollution interacts with genetic risk to inﬂuence
+cortical networks implicated in depression. 118, 2109310118.
+https://doi.org/10.1073/pnas.2109310118.
+25. Global, regional, and national burden of 12 mental disorders in 204
+countries and territories, 1990-2019: a systematic analysis for the
+Global Burden of Disease Study 2019. Lancet Psychiatry 9, 137–150.
+https://doi.org/10.1016/S2215-0366(21)00395-3 (2022).
+26. Sung, M. et al. BERN2: an advanced neural biomedical named entity
+recognition and normalization tool. Bioinformatics 38,
+4837–4839 (2022).
+27.
+Neumann, M., King, D., Beltagy, I. & Ammar, W. ScispaCy: fast and
+robust models for biomedical natural language processing. In Proc.
+18th BioNLP Workshop and Shared Task 319–327. https://doi.org/10.
+18653/v1/W19-5034; https://www.aclweb.org/anthology/W19-5034
+(Association for Computational Linguistics, 2019).
+28. Eftimov, T., Koroušić Seljak, B. & Korošec, P. A rule-based named-
+entity recognition method for knowledge extraction of evidence-
+based dietary recommendations. PLoS ONE 12, 0179488 (2017).
+29. Soldaini, L. & Goharian, N. QuickUMLS: a fast, unsupervised
+approach for medical concept extraction. MedIR Workshop,
+SIGIR (2016).
+30. Bodenreider, O. The Uniﬁed Medical Language System (UMLS):
+integrating biomedical terminology. Nucleic Acids Res. 32,
+267–270 (2004).
+31.
+Mintz, M., Bills, S., Snow, R. & Jurafsky, D. Distant supervision for
+relation extraction without labeled data. In: Proc. Joint Conference
+of the 47th Annual Meeting of the ACL and the 4th International Joint
+Conference on Natural Language Processing of the AFNLP (eds Su,
+K.-Y., Su, J., Wiebe, J. & Li, H.) 1003–1011. https://aclanthology.org/
+P09-1113 (Association for Computational Linguistics, 2009).
+32. Wang, B. et al. Towards understanding chain-of-thought prompt-
+ing: an empirical study of what matters. In Proc. 61st Annual Meeting
+of the Association for Computational Linguistics (Volume 1: Long
+Papers) (eds Rogers, A., Boyd-Graber, J. & Okazaki, N.) 2717–2739.
+https://doi.org/10.18653/v1/2023.acl-long.153; https://
+aclanthology.org/2023.acl-long.153 (Association for Computa-
+tional Linguistics, 2023).
+33. Yu, Y., Kong, L., Zhang, J., Zhang, R. & Zhang, C. AcTune:
+uncertainty-based active self-training for active ﬁne-tuning of
+pretrained language models. In Proc. 2022 Conference of the
+North American Chapter of the Association for Computational
+Linguistics: Human Language Technologies (eds Carpuat, M.,
+Marneffe, M.-C., Meza Ruiz, I. V.) 1422–1436. https://doi.org/10.
+18653/v1/2022.naacl-main.102; https://aclanthology.org/2022.
+naacl-main.102 (Association for Computational Linguis-
+tics, 2022).
+34. Eberts, M. & Ulges, A. Span-based joint entity and relation extraction
+with transformer pre-training. Front. Artif. Intell. Appl. 325,
+2006–2013 (2020).
+35. Devlin, J., Chang, M.-W., Lee, K. & Toutanova, K. BERT: pre-training
+of deep bidirectional transformers for language understanding. In:
+Proc. Conf. North Am. Chapter Assoc. Comput. Linguist. Vol. 1,
+4171–4186 (NAACL-HLT, 2019).
+36. Bekoulis, G., Deleu, J., Demeester, T. & Develder, C. Joint entity
+recognition and relation extraction as a multi-head selection pro-
+blem. Expert Syst. Appl. 114, 34–45 (2018).
+37. Zeng, S., Yuan, Z. & Yu, S. Automatic biomedical term clustering by
+learning ﬁne-grained term representations. In Proc. 21st Workshop
+on Biomedical Language Processing 91–96. https://aclanthology.
+org/2022.bionlp-1.8 (Association for Computational Linguis-
+tics, 2022).
+38. Wu, C., Wu, F., Qi, T. & Huang, Y. NoisyTune: a little noise can help
+you ﬁnetune pretrained language models better. In: Proc. 60th
+Annu. Meet. Assoc. Comput. Linguist. (Vol. 2: Short Papers),
+680–685. (ACL, 2022).
+39. Wang, Z., Jiang, Z., Nyberg, E. & Neubig, G. Table retrieval may not
+necessitate table-speciﬁc model design. arXiv https://doi.org/10.
+48550/arXiv.2205.09843; http://arxiv.org/abs/2205.
+09843 (2022).
+40. PaddlePaddle/PaddleOCR. PaddlePaddle. original-date: 2020-05-
+08T10:38:16Z. Accessed 27 November 2023, https://github.com/
+PaddlePaddle/PaddleOCR (2023).
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Nature Communications|  (2025) 16:7526 
+15
+
+
+--- PAGE 16 ---
+41.
+Singer-Vine, J. The pdfplumber contributors pdfplumber. original-
+date: 2015-08-24T03:14:48Z. https://github.com/jsvine/pdfplumber
+(2023).
+42. Johnson, J., Douze, M. & Jégou, H. Billion-scale similarity search with
+GPUs. IEEE Trans. Big Data 7, 535–547 (2019).
+43. Vasilevsky, N. A. et al. Mondo: unifying diseases for the world, by the
+world. medRxiv https://doi.org/10.1101/2022.04.13.22273750 (2022).
+44. Mungall, C. J., Torniai, C., Gkoutos, G. V., Lewis, S. E. & Haendel, M.
+A. Uberon, an integrative multi-species anatomy ontology. Genome
+Biol. 13, 5 (2012).
+45. Ashburner, M. et al. Gene Ontology: tool for the uniﬁcation of
+biology. Nat. Genet. 25, 25–29 (2000).
+46. Paulheim, H., Ristoski, P. & Portisch, J. Embedding Knowledge
+Graphs with RDF2vec. Synthesis Lectures on Data, Semantics,
+and Knowledge. https://doi.org/10.1007/978-3-031-30387-6;
+https://link.springer.com/10.1007/978-3-031-30387-6
+(Springer, 2023).
+47. Gao, S. Collaborators MDKG: Mental Disorders Knowledge Graph
+Construction Code. https://github.com/MonsterTea/MDKG. Ver-
+sion used in this study. https://doi.org/10.5281/zenodo.
+15698237 (2025).
+48. Lopez, O.L., Becker, J.T., Sweet, R.A., Martin-Sanchez, F.J. &
+Hamilton, R.L. Lewy bodies in the amygdala increase risk for major
+depression in subjects with Alzheimer disease. 67, 660–665.
+https://doi.org/10.1212/01.wnl.0000230161.28299.3c.
+Acknowledgements
+We thank the UK Biobank for providing access to the dataset used in this
+study. This work was supported by the National Key R&D Program of
+China (No. 2022YFA1003701; N.T.) and the Gilling Innovative Lab on
+Generative AI (H.Z.).
+Author contributions
+S.G., K.Y., Y.Y., N.T., and H.Z. proposed the concept and designed the
+methodology. S.G., K.Y., Y.Y., and H.Z. supervised the project. S.G. and
+C.S. annotated the dataset. S.G. carried out the analysis and drafted the
+initial manuscript. S.G., K.Y., and Y.Y. developed the website. S.G., K.Y.,
+Y.Y., S.Y., X.W., and H.Z. suggested revision ideas and revised the
+manuscript.
+Competing interests
+The authors declare no competing interests.
+Additional information
+Supplementary information The online version contains
+supplementary material available at
+https://doi.org/10.1038/s41467-025-62781-z.
+Correspondence and requests for materials should be addressed to
+Niansheng Tang or Hongtu Zhu.
+Peer review information Nature Communications thanks Kexin Huang,
+Sebastian Olbrich, and the other, anonymous, reviewer(s) for
+their contribution to the peer review of this work. A peer review ﬁle
+is available.
+Reprints and permissions information is available at
+http://www.nature.com/reprints
+Publisher’s note Springer Nature remains neutral with regard to jur-
+isdictional claims in published maps and institutional afﬁliations.
+Open Access This article is licensed under a Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License,
+which permits any non-commercial use, sharing, distribution and
+reproduction in any medium or format, as long as you give appropriate
+credit to the original author(s) and the source, provide a link to the
+Creative Commons licence, and indicate if you modiﬁed the licensed
+material. You do not have permission under this licence toshare adapted
+material derived from this article or parts of it. The images or other third
+party material in this article are included in the article’s Creative
+Commons licence, unless indicated otherwise in a credit line to the
+material. If material is not included in the article’s Creative Commons
+licence and your intended use is not permitted by statutory regulation or
+exceeds the permitted use, you will need to obtain permission directly
+from the copyright holder. To view a copy of this licence, visit http://
+creativecommons.org/licenses/by-nc-nd/4.0/.
+© The Author(s) 2025
+Article
+https://doi.org/10.1038/s41467-025-62781-z
+Nature Communications|  (2025) 16:7526 
+16

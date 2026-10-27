@@ -1,0 +1,22 @@
+T4	disease 78 103	depression-like behaviors
+T5	disease 115 140	depression-like behaviors
+T6	disease 182 207	depression-like behaviors
+T7	disease 250 275	depression-like behaviors
+T8	gene 163 170	leucine
+T9	gene 327 334	leucine
+T10	Health_factors 221 238	exercise training
+T11	Health_factors 289 306	exercise training
+R1	treatment_for Arg1:T8 Arg2:T5	
+R2	treatment_for Arg1:T10 Arg2:T6	
+R3	treatment_for Arg1:T11 Arg2:T7	
+R4	treatment_for Arg1:T9 Arg2:T7	
+T1	method 29 33	mice
+T2	method 52 66	untreated mice
+T3	method 68 72	mice
+T12	method 105 109	mice
+T13	method 172 176	mice
+T14	method 240 244	mice
+R5	occurs_in Arg1:T3 Arg2:T4	
+R6	occurs_in Arg1:T12 Arg2:T5	
+R7	occurs_in Arg1:T13 Arg2:T6	
+R8	occurs_in Arg1:T14 Arg2:T7	

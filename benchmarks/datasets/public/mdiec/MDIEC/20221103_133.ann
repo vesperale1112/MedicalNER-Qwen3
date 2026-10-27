@@ -1,0 +1,6 @@
+T1	region 11 16	Serum
+T5	signs 140 157	ejection fraction
+T3	physiology 57 92	depression of myocyte contractility
+T4	disease 36 48	septic shock
+R1	associated_with Arg1:T3 Arg2:T5	
+R2	associated_with Arg1:T1 Arg2:T3	

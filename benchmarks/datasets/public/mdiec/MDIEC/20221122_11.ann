@@ -1,0 +1,29 @@
+T1	Health_factors 23 35	child gender
+T2	Health_factors 64 67	age
+T4	Health_factors 73 99	parent language preference
+T5	Health_factors 101 127	low parent health literacy
+T6	disease 188 205	parent depression
+T7	method 228 231	AOR
+T8	method 291 294	AOR
+T9	method 350 353	AOR
+T10	method 419 422	AOR
+T11	method 451 454	AOR
+T12	method 243 262	confidence interval
+T13	disease 444 449	burns
+T14	Health_factors 154 176	pediatric health risks
+T15	Health_factors 376 417	lack of first-aid knowledge about choking
+T16	Health_factors 37 51	race/ethnicity
+T17	Health_factors 53 62	insurance
+R1	associated_with Arg1:T5 Arg2:T14	
+R2	hyponym_of Arg1:T6 Arg2:T14	
+T3	method 207 226	adjusted odds ratio
+R3	abbreviation_for Arg1:T7 Arg2:T3	
+T18	Health_factors 275 289	firearm access
+R4	hyponym_of Arg1:T18 Arg2:T14	
+T19	Health_factors 313 348	not having a working smoke detector
+R5	hyponym_of Arg1:T19 Arg2:T14	
+R6	hyponym_of Arg1:T15 Arg2:T14	
+R7	associated_with Arg1:T5 Arg2:T6	
+R8	associated_with Arg1:T5 Arg2:T18	
+R9	associated_with Arg1:T5 Arg2:T19	
+R10	associated_with Arg1:T5 Arg2:T15	

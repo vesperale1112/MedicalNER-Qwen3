@@ -1,0 +1,4 @@
+T2	disease 24 34	depression
+T3	disease 39 48	mortality
+R1	associated_with Arg1:T2 Arg2:T3	
+T1	Health_factors 75 82	younger

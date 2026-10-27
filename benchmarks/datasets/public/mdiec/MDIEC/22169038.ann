@@ -1,0 +1,65 @@
+T0	gene 0 5	SIRT1
+T1	gene 16 21	MAO-A
+T2	disease 46 53	anxiety
+T3	region 29 34	brain
+T4	symptom 58 75	exploratory drive
+T6	gene 77 82	SIRT1
+T8	gene 88 116	NAD(+)-dependent deacetylase
+T9	region 209 214	cells
+T12	physiology 230 250	Behavioral responses
+T13	Health_factors 303 317	higher animals
+T14	gene 365 376	brain SIRT1
+T15	gene 395 402	sirtuin
+T17	gene 496 515	monoamine oxidase A
+T18	gene 517 522	MAO-A
+T19	drug 534 543	serotonin
+T20	method 332 336	mice
+T21	disease 413 420	anxiety
+T22	gene 478 482	gene
+T23	region 558 563	brain
+T24	symptom 425 442	exploratory drive
+T25	drug 595 611	MAO-A inhibitors
+T26	drug 615 654	selective serotonin reuptake inhibitors
+T27	drug 656 661	SSRIs
+T28	disease 674 681	anxiety
+T29	gene 732 737	SIRT1
+T30	gene 755 813	brain-specific helix-loop-helix transcription factor NHLH2
+T31	drug 817 826	lysine 49
+T32	gene 861 875	MAO-A promoter
+T33	gene 916 926	SIRT1 gene
+T34	disease 968 975	anxiety
+T36	gene 1039 1044	SIRT1
+T37	disease 1064 1071	anxiety
+T38	Health_factors 1123 1134	environment
+R1	associated_with Arg1:T0 Arg2:T1	
+R2	located_in Arg1:T1 Arg2:T3	
+R4	hyponym_of Arg1:T6 Arg2:T8	
+R5	associated_with Arg1:T12 Arg2:T13	
+R6	located_in Arg1:T19 Arg2:T23	
+T5	gene 142 158	genetic programs
+T7	region 219 228	organisms
+R8	associated_with Arg1:T6 Arg2:T5	
+R9	associated_with Arg1:T15 Arg2:T21	
+R10	associated_with Arg1:T15 Arg2:T24	
+T10	physiology 457 470	transcription
+R11	abbreviation_for Arg1:T18 Arg2:T17	
+R14	associated_with Arg1:T15 Arg2:T19	
+R15	abbreviation_for Arg1:T27 Arg2:T26	
+T11	Health_factors 702 730	wild-type and mutant animals
+R16	treatment_for Arg1:T25 Arg2:T28	
+R17	treatment_for Arg1:T26 Arg2:T28	
+R18	treatment_for Arg1:T27 Arg2:T28	
+R19	occurs_in Arg1:T28 Arg2:T11	
+T16	physiology 738 750	deacetylates
+R20	associated_with Arg1:T29 Arg2:T30	
+R21	located_in Arg1:T30 Arg2:T31	
+T35	gene 898 908	variations
+R22	risk_factor_of Arg1:T33 Arg2:T34	
+T41	Health_factors 979 995	human population
+R23	occurs_in Arg1:T34 Arg2:T41	
+R24	associated_with Arg1:T36 Arg2:T37	
+R3	associated_with Arg1:T1 Arg2:T2	
+R7	associated_with Arg1:T1 Arg2:T4	
+R12	associated_with Arg1:T15 Arg2:T17	
+R13	associated_with Arg1:T15 Arg2:T18	
+R25	associated_with Arg1:T29 Arg2:T32	

@@ -1,0 +1,62 @@
+T1	drug 9 17	Prazosin
+T2	disease 22 52	Post-Traumatic Stress Disorder
+T3	drug 108 116	prazosin
+T4	disease 184 194	nightmares
+T5	disease 211 241	post-traumatic stress disorder
+T6	disease 243 247	PTSD
+T7	disease 366 378	chronic PTSD
+T8	disease 401 411	nightmares
+T9	drug 460 468	prazosin
+T10	drug 690 698	prazosin
+T11	drug 1479 1487	prazosin
+T12	drug 1572 1580	prazosin
+T13	drug 2095 2103	prazosin
+T14	drug 2326 2334	prazosin
+T15	disease 2440 2452	chronic PTSD
+T16	drug 2454 2462	prazosin
+T17	method 89 106	randomized trials
+T21	drug 498 502	drug
+T24	Health_factors 617 620	men
+T25	Health_factors 634 639	women
+T30	method 1092 1122	Pittsburgh Sleep Quality Index
+T31	method 1124 1128	PSQI
+T32	Health_factors 1193 1206	sleep quality
+T35	method 1704 1723	confidence interval
+T36	method 1725 1727	CI
+T37	method 1774 1778	PSQI
+T38	method 1821 1823	CI
+T40	method 1902 1904	CI
+T43	signs 2163 2193	supine systolic blood pressure
+T46	disease 2261 2278	suicidal ideation
+T50	Health_factors 2511 2524	sleep quality
+T51	method 2606 2624	ClinicalTrials.gov
+T53	method 311 357	Department of Veterans Affairs medical centers
+T54	drug 121 148	1-adrenoreceptor antagonist
+R1	hyponym_of Arg1:T3 Arg2:T54	
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+R3	treatment_for Arg1:T3 Arg2:T4	
+R4	associated_with Arg1:T4 Arg2:T5	
+R5	associated_with Arg1:T4 Arg2:T6	
+T55	Health_factors 252 269	military veterans
+R6	occurs_in Arg1:T6 Arg2:T55	
+R7	occurs_in Arg1:T5 Arg2:T55	
+T56	Health_factors 56 73	Military Veterans
+T57	Health_factors 294 302	veterans
+T18	method 857 890	Clinician-Administered PTSD Scale
+T19	method 892 896	CAPS
+R8	abbreviation_for Arg1:T19 Arg2:T18	
+T20	method 1649 1653	CAPS
+R9	abbreviation_for Arg1:T31 Arg2:T30	
+R10	help_diagnose Arg1:T31 Arg2:T32	
+R11	help_diagnose Arg1:T30 Arg2:T32	
+T22	method 1217 1253	Clinical Global Impression of Change
+T23	method 1255 1259	CGIC
+R12	abbreviation_for Arg1:T23 Arg2:T22	
+R13	abbreviation_for Arg1:T36 Arg2:T35	
+T26	method 1857 1861	CGIC
+T27	Health_factors 2227 2240	adverse event
+T28	Health_factors 2414 2431	military veterans
+T29	Health_factors 2481 2499	distressing dreams
+T33	Health_factors 1018 1036	distressing dreams
+R14	help_diagnose Arg1:T19 Arg2:T33	
+R15	help_diagnose Arg1:T18 Arg2:T33	

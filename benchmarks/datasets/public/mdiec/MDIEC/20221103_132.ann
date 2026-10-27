@@ -1,0 +1,12 @@
+T1	disease 12 22	Depression
+T4	disease 44 53	mortality
+T6	disease 71 84	heart failure
+T7	disease 86 88	HF
+T9	disease 109 119	depression
+T10	method 125 147	antidepressant therapy
+R1	risk_factor_of Arg1:T1 Arg2:T4	
+R2	abbreviation_for Arg1:T7 Arg2:T6	
+R3	treatment_for Arg1:T10 Arg2:T9	
+R4	occurs_in Arg1:T4 Arg2:T6	
+R5	occurs_in Arg1:T4 Arg2:T7	
+T2	Health_factors 173 181	survival

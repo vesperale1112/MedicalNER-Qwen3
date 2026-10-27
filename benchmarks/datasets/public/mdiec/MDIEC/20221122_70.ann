@@ -1,0 +1,6 @@
+T1	method 3 31	logistic regression analysis
+T2	Health_factors 44 47	age
+T7	disease 64 93	left-sided neurological event
+T8	signs 135 156	ST segment depression
+R3	associated_with Arg1:T2 Arg2:T8	
+R4	associated_with Arg1:T7 Arg2:T8	

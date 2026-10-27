@@ -1,0 +1,71 @@
+T1	disease 21 31	depression
+T2	disease 106 126	Depressive disorders
+T3	disease 362 372	depression
+T4	disease 396 427	premenstrual dysphoric disorder
+T5	disease 429 433	PMDD
+T6	disease 436 466	postpartum depression disorder
+T7	disease 468 471	PPD
+T8	disease 477 511	perimenopausal depression disorder
+T9	disease 648 688	reproductive cycle-related mood disorder
+T10	disease 773 798	major depression disorder
+T11	disease 800 803	MDD
+T12	disease 928 931	MDD
+T13	disease 976 996	depressive disorders
+T14	disease 1046 1064	puberty depression
+T15	disease 1096 1099	MDD
+T16	disease 1111 1115	PMDD
+T17	disease 1173 1176	PPD
+T18	disease 1278 1298	depression disorders
+T19	disease 1412 1422	depression
+T20	disease 1515 1552	reproductive cycle-related depression
+T21	disease 1634 1647	mood disorder
+T22	disease 1720 1723	MDD
+T23	disease 1808 1836	cycle-related mood disorders
+T24	disease 1855 1858	MDD
+T25	disease 1937 1947	depression
+T26	disease 2047 2079	reproductive-related depressions
+#1	AnnotatorNotes T10	C1269683
+#2	AnnotatorNotes T11	C1269683
+R1	abbreviation_for Arg1:T11 Arg2:T10	
+R3	abbreviation_for Arg1:T5 Arg2:T4	
+R4	abbreviation_for Arg1:T7 Arg2:T6	
+T29	method 604 636	functional brain imaging studies
+T32	method 1318 1354	heterogeneous experimental protocols
+T33	physiology 232 260	internal endocrine possesses
+#3	AnnotatorNotes T4	C0520676
+#4	AnnotatorNotes T5	C0520676
+#5	AnnotatorNotes T6	C0221074
+#6	AnnotatorNotes T7	C0221074
+#7	AnnotatorNotes T8	C1963857
+T31	symptom 1190 1204	hypoactivation
+T34	physiology 1453 1474	hormonal fluctuations
+R9	associated_with Arg1:T34 Arg2:T20	
+T35	physiology 1578 1606	hormonal and neural patterns
+T36	region 273 306	emotion-associated brain circuits
+R11	associated_with Arg1:T33 Arg2:T36	
+T37	physiology 1892 1906	neuroendocrine
+R12	associated_with Arg1:T37 Arg2:T25	
+T38	method 555 561	Pubmed
+T39	method 566 575	PsychInfo
+T40	method 539 553	Web of science
+T42	method 79 90	fMRI review
+T27	method 2000 2035	prevention and treatment approaches
+T28	physiology 942 968	Neural activation patterns
+T30	physiology 1779 1797	neural functioning
+T46	Health_factors 52 73	reproductive lifespan
+T47	Health_factors 179 203	reproductive aging cycle
+T45	Health_factors 822 851	reproductive-sensitive phases
+T48	disease 866 884	affective symptoms
+T49	method 912 924	neurobiology
+T50	Health_factors 1382 1407	reproductive aging stages
+T41	Health_factors 130 135	women
+T43	Health_factors 35 40	women
+T44	Health_factors 1951 1956	women
+T51	Health_factors 1008 1033	female reproductive cycle
+T52	Health_factors 380 394	female puberty
+T53	Health_factors 2040 2045	women
+T54	physiology 1150 1169	activation patterns
+T55	Health_factors 1801 1807	female
+R13	occurs_in Arg1:T2 Arg2:T41	
+R15	occurs_in Arg1:T25 Arg2:T44	
+R2	risk_factor_of Arg1:T33 Arg2:T2	

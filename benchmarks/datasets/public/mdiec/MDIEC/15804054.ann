@@ -1,0 +1,86 @@
+T1	disease 96 112	major depression
+T2	disease 117 133	bipolar disorder
+T3	disease 160 180	depressive disorders
+T4	disease 305 330	major depression disorder
+T5	disease 332 335	MDD
+T6	disease 341 357	bipolar disorder
+T7	disease 359 361	BD
+T9	disease 736 739	MDD
+T10	disease 762 764	BD
+T11	drug 980 993	cresyl violet
+T12	disease 1230 1246	major depression
+T14	disease 1485 1495	depression
+#1	AnnotatorNotes T1	C1269683
+#2	AnnotatorNotes T4	C1269683
+R1	abbreviation_for Arg1:T5 Arg2:T4	
+R2	abbreviation_for Arg1:T7 Arg2:T6	
+T15	disease 0 21	Selective neuron loss
+#3	AnnotatorNotes T2	C0005586
+#4	AnnotatorNotes T3	C0011581
+T16	method 212 224	neuroimaging
+T18	region 267 286	anatomic substrates
+R5	associated_with Arg1:T18 Arg2:T4	
+R6	associated_with Arg1:T18 Arg2:T6	
+#5	AnnotatorNotes T16	C0679575
+T19	method 387 410	design-based stereology
+T20	disease 421 432	neuron loss
+T21	region 480 503	paraventricular nucleus
+T22	region 505 508	PVN
+R7	abbreviation_for Arg1:T22 Arg2:T21	
+T23	region 514 532	supraoptic nucleus
+T24	region 534 537	SON
+R8	abbreviation_for Arg1:T24 Arg2:T23	
+#6	AnnotatorNotes T21	C1289558
+#7	AnnotatorNotes T20	Loss of neuron(C0598940)
+R9	help_diagnose Arg1:T19 Arg2:T20	
+T8	disease 578 595	severe depression
+#8	AnnotatorNotes T8	C0588008
+#9	AnnotatorNotes T11	C0056484
+T26	disease 1356 1379	selective neuronal loss
+T17	region 451 474	hypothalamic structures
+T27	region 601 627	left or right diencephalon
+T28	region 866 869	PVN
+T29	region 874 877	SON
+T30	region 883 900	left hypothalamus
+T31	region 1107 1110	PVN
+T32	region 1115 1118	SON
+T33	region 1222 1225	PVN
+T34	region 1346 1349	SON
+T35	region 1387 1390	PVN
+R14	associated_with Arg1:T18 Arg2:T5	
+R15	associated_with Arg1:T18 Arg2:T7	
+T36	region 29 52	paraventricular nucleus
+T37	region 56 68	hypothalamus
+T39	method 666 673	autopsy
+T25	region 229 252	postmortem brain tissue
+T40	method 1047 1070	computerized stereology
+T41	region 648 654	brains
+T42	region 926 931	brain
+T48	signs 1089 1103	neuron numbers
+T49	signs 1201 1214	neuron number
+T50	signs 1324 1338	neuron numbers
+T13	Health_factors 703 707	male
+T38	Health_factors 710 716	female
+T43	Health_factors 743 747	male
+T44	Health_factors 750 756	female
+T45	Health_factors 768 772	male
+T46	Health_factors 775 781	female
+T47	disease 1251 1258	bipolar
+R18	characteristic_of Arg1:T26 Arg2:T14	
+T51	Health_factors 679 682	age
+T52	Health_factors 1279 1282	age
+R20	located_in Arg1:T15 Arg2:T36	
+R24	help_diagnose Arg1:T40 Arg2:T48	
+R25	located_in Arg1:T48 Arg2:T31	
+R26	located_in Arg1:T48 Arg2:T32	
+R3	located_in Arg1:T49 Arg2:T33	
+R27	located_in Arg1:T26 Arg2:T35	
+R19	located_in Arg1:T36 Arg2:T37	
+R17	located_in Arg1:T50 Arg2:T34	
+R4	characteristic_of Arg1:T49 Arg2:T12	
+R10	characteristic_of Arg1:T49 Arg2:T47	
+R11	hyponym_of Arg1:T21 Arg2:T17	
+R12	hyponym_of Arg1:T22 Arg2:T17	
+R13	hyponym_of Arg1:T23 Arg2:T17	
+R16	hyponym_of Arg1:T24 Arg2:T17	
+T53	physiology 1424 1447	neurobiologic substrate

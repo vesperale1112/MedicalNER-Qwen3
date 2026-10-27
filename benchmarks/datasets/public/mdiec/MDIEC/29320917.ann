@@ -1,0 +1,79 @@
+T1	disease 0 12	Hypoesthesia
+T2	disease 16 44	generalised anxiety disorder
+T3	disease 49 74	major depression disorder
+T4	disease 195 205	depression
+T5	disease 210 217	anxiety
+T6	disease 248 270	malleolar hypoesthesia
+T7	disease 316 344	generalised anxiety disorder
+T8	disease 346 349	GAD
+T9	disease 355 380	major depression disorder
+T10	disease 382 385	MDD
+T11	disease 433 455	malleolar hypoesthesia
+T12	disease 473 476	GAD
+T13	disease 512 515	MDD
+T14	disease 672 684	hypoesthesia
+T15	disease 745 748	MDD
+T16	disease 772 784	hypoesthesia
+T17	disease 790 793	GAD
+T18	disease 837 849	hypoesthesia
+T19	disease 873 883	depression
+T20	disease 917 929	hypoesthesia
+T21	disease 995 1007	hypoesthesia
+T22	disease 1030 1033	MDD
+T23	disease 1046 1049	GAD
+T24	disease 1118 1140	Malleolar hypoesthesia
+T25	disease 1155 1158	MDD
+T26	disease 1164 1167	GAD
+T27	disease 1186 1198	hypoesthesia
+T28	disease 1257 1260	MDD
+T29	disease 1265 1268	GAD
+T30	signs 108 118	soft signs
+T31	method 573 589	Wartenberg wheel
+R5	help_diagnose Arg1:T31 Arg2:T14	
+T32	method 954 979	logistic regression model
+R6	risk_factor_of Arg1:T21 Arg2:T22	
+R7	associated_with Arg1:T24 Arg2:T25	
+R12	help_diagnose Arg1:T27 Arg2:T28	
+R13	help_diagnose Arg1:T27 Arg2:T29	
+R14	abbreviation_for Arg1:T8 Arg2:T7	
+R15	abbreviation_for Arg1:T10 Arg2:T9	
+T33	method 593 607	medical device
+R20	hyponym_of Arg1:T31 Arg2:T33	
+#1	AnnotatorNotes T1	C0020580
+#2	AnnotatorNotes T14	C0020580
+#3	AnnotatorNotes T16	C0020580
+#4	AnnotatorNotes T18	C0020580
+#5	AnnotatorNotes T20	C0020580
+#6	AnnotatorNotes T21	C0020580
+#8	AnnotatorNotes T6	C0020580
+#9	AnnotatorNotes T11	C0020580
+#10	AnnotatorNotes T24	C0020580
+#11	AnnotatorNotes T3	C1269683
+#12	AnnotatorNotes T9	C1269683
+#13	AnnotatorNotes T10	C1269683
+#15	AnnotatorNotes T22	C1269683
+#16	AnnotatorNotes T25	C1269683
+#17	AnnotatorNotes T28	C1269683
+#18	AnnotatorNotes T2	C0270549
+#20	AnnotatorNotes T4	C0011581
+#21	AnnotatorNotes T5	C0003467
+#22	AnnotatorNotes T7	C0270549
+#23	AnnotatorNotes T8	C0270549
+#24	AnnotatorNotes T12	C0270549
+#25	AnnotatorNotes T17	C0270549
+#26	AnnotatorNotes T23	C0270549
+#27	AnnotatorNotes T26	C0270549
+#28	AnnotatorNotes T29	C0270549
+#29	AnnotatorNotes T13	C1269683
+#30	AnnotatorNotes T33	C0025080
+#31	AnnotatorNotes T19	C0338908
+#32	AnnotatorNotes T32	C0206031
+R1	characteristic_of Arg1:T16 Arg2:T15	
+T34	method 1061 1071	Odds Ratio
+T35	disease 861 868	anxiety
+R16	characteristic_of Arg1:T35 Arg2:T18	
+T40	region 706 712	ankles
+R11	characteristic_of Arg1:T1 Arg2:T2	
+R17	characteristic_of Arg1:T1 Arg2:T3	
+R2	characteristic_of Arg1:T19 Arg2:T18	
+R3	characteristic_of Arg1:T11 Arg2:T12	

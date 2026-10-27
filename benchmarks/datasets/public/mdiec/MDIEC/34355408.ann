@@ -1,0 +1,55 @@
+T1	disease 530 545	chronic illness
+T2	disease 1110 1117	anxiety
+T3	disease 1119 1129	depression
+T4	disease 1134 1141	fatigue
+T5	method 186 189	CBT
+T6	method 0 31	Tele-mental health intervention
+T7	method 82 106	randomized control trial
+T8	method 150 184	cognitive behavioural intervention
+R1	abbreviation_for Arg1:T5 Arg2:T8	
+T10	disease 241 248	anxiety
+T11	disease 250 260	depression
+T12	Health_factors 299 314	quality of life
+T13	Health_factors 316 319	QoL
+R2	abbreviation_for Arg1:T13 Arg2:T12	
+T14	Health_factors 655 671	social isolation
+T15	symptom 683 705	lower quaility of life
+T16	Health_factors 707 735	unhealthy family functioning
+T17	Health_factors 741 776	negative psychological consequences
+R3	risk_factor_of Arg1:T14 Arg2:T15	
+R4	risk_factor_of Arg1:T14 Arg2:T16	
+R5	risk_factor_of Arg1:T14 Arg2:T17	
+T18	method 806 825	Tele-P intervention
+T19	disease 860 867	anxiety
+T20	disease 869 879	depression
+T21	disease 884 891	fatigue
+R6	treatment_for Arg1:T18 Arg2:T19	
+R7	treatment_for Arg1:T18 Arg2:T20	
+R8	treatment_for Arg1:T18 Arg2:T21	
+T22	method 1075 1094	Tele-P intervention
+R9	treatment_for Arg1:T22 Arg2:T2	
+R10	treatment_for Arg1:T22 Arg2:T3	
+R11	treatment_for Arg1:T22 Arg2:T4	
+T23	Health_factors 1362 1396	mental health intervention systems
+T24	Health_factors 36 58	caregivers of children
+T9	physiology 206 227	emotional functioning
+T26	Health_factors 265 281	social isolation
+T27	Health_factors 986 1002	social isolation
+T28	Health_factors 1233 1249	social isolation
+T29	Health_factors 633 649	social isolation
+T30	Health_factors 324 346	caregivers of children
+T33	Health_factors 449 478	technology-dependent children
+T25	Health_factors 504 523	parents of children
+T34	method 554 573	assisted-technology
+T35	disease 597 613	emotional stress
+T36	Health_factors 848 858	caregivers
+T37	Health_factors 1165 1175	caregivers
+T38	method 1219 1232	self-reported
+T39	Health_factors 1406 1428	vulnerable populations
+T41	method 143 184	Tele-P cognitive behavioural intervention
+T43	method 933 942	follow-up
+T40	Health_factors 62 78	home ventilation
+T42	Health_factors 355 383	ventilator dependent at home
+T31	Health_factors 1300 1321	psychological support
+T32	method 1190 1202	intervention
+T44	Health_factors 436 443	parents

@@ -1,0 +1,10 @@
+T1	disease 0 7	Suicide
+T3	disease 105 125	late-life depression
+T4	disease 12 28	suicide attempts
+T5	disease 61 78	depressed elderly
+R1	associated_with Arg1:T4 Arg2:T5	
+R2	associated_with Arg1:T1 Arg2:T5	
+T6	method 91 100	screening
+T7	Health_factors 157 164	elderly
+T8	Health_factors 168 212	primary and residential health care settings
+R3	occurs_in Arg1:T7 Arg2:T8	

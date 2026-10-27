@@ -1,0 +1,22 @@
+T0	disease 30 50	anticipatory anxiety
+T4	physiology 217 231	normal emotion
+T5	physiology 131 154	local neuronal activity
+T6	signs 98 117	regional blood flow
+T7	method 317 331	electric shock
+T9	disease 525 539	panic disorder
+T10	disease 340 360	anticipatory anxiety
+T11	symptom 385 405	blood flow increases
+T12	disease 477 500	lactate-induced anxiety
+T13	region 409 433	bilateral temporal poles
+T15	disease 628 635	anxiety
+T17	region 551 565	temporal poles
+T18	method 0 26	Neuroanatomical correlates
+T19	method 52 94	Positron emission tomographic measurements
+T1	method 185 211	neuroanatomical correlates
+T2	Health_factors 233 251	Healthy volunteers
+R1	located_in Arg1:T11 Arg2:T13	
+R2	characteristic_of Arg1:T11 Arg2:T10	
+R3	associated_with Arg1:T13 Arg2:T12	
+R5	occurs_in Arg1:T12 Arg2:T9	
+T3	Health_factors 622 627	human
+R6	associated_with Arg1:T17 Arg2:T15	

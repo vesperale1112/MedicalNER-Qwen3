@@ -6,7 +6,7 @@
 
 它不是第二次完整筛选，也不负责重新抽取知识图谱、判断全部 relation/property、评价研究质量或裁决疗效证据。通过领域复筛的文章随后再进入完整抽取和证据校验。
 
-40 篇人工复查见[三位人工评审与原模型结果对照](../temp/treatment_review_analysis.md)。人工标签只读取三份文件各自的 `reviewer_decision`；随文件重复保存的 `model_decision` 不是人工意见。人工一致性和多数意见用于定位错误模式，不作为金标准。
+40 篇人工复查见[三位人工评审与原模型结果对照](../data/treatment_related_articles/screening_review_40/treatment_review_analysis.md)。人工标签只读取三份文件各自的 `reviewer_decision`；随文件重复保存的 `model_decision` 不是人工意见。人工一致性和多数意见用于定位错误模式，不作为金标准。
 
 ## 输入范围
 
@@ -73,7 +73,7 @@
 ```bash
 python data/treatment_related_articles/filtering/run_treatment_article_rescreening.py \
   --workers 3 \
-  --review-file temp/treatment_article_review_DHY.json \
+  --review-file data/treatment_related_articles/screening_review_40/treatment_article_review_DHY.json \
   --checkpoint data/treatment_related_articles/filtering/treatment_article_domain_rescreen_gpt6_luna_pilot21_checkpoint.jsonl \
   --output data/treatment_related_articles/filtering/treatment_article_domain_rescreen_gpt6_luna_pilot21.json \
   --preview

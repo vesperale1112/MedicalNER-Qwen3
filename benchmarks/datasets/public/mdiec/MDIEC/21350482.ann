@@ -1,0 +1,87 @@
+T0	disease 0 30	Post-traumatic stress disorder
+T1	gene 50 55	PACAP
+T2	gene 64 77	PAC1 receptor
+T3	gene 79 129	Pituitary adenylate cyclase-activating polypeptide
+T5	gene 131 136	PACAP
+T8	physiology 171 195	cellular stress response
+T10	physiology 231 258	PACAP-PAC1 receptor pathway
+T11	disease 319 349	post-traumatic stress disorder
+T12	disease 351 355	PTSD
+T14	physiology 273 309	human psychological stress responses
+T16	disease 476 480	PTSD
+T18	gene 435 440	PACAP
+T19	Health_factors 507 514	females
+T21	physiology 459 474	fear physiology
+T22	gene 583 588	PACAP
+T23	gene 601 608	ADCYAP1
+T24	gene 614 618	PAC1
+T25	gene 631 640	ADCYAP1R1
+T26	disease 695 699	PTSD
+T28	gene 531 562	single nucleotide polymorphisms
+T29	gene 564 568	SNPs
+T30	gene 642 647	genes
+T31	gene 728 754	oestrogen response element
+T32	gene 762 771	ADCYAP1R1
+T33	disease 793 797	PTSD
+T35	Health_factors 824 831	females
+T37	gene 703 713	single SNP
+T38	physiology 897 931	ADCYAP1R1 messenger RNA expression
+T39	gene 843 846	SNP
+T41	region 935 946	human brain
+T42	physiology 868 887	fear discrimination
+T44	region 976 992	peripheral blood
+T45	disease 1017 1021	PTSD
+T46	physiology 948 972	Methylation of ADCYAP1R1
+T47	gene 1055 1069	ADCYAP1R1 mRNA
+T48	physiology 1107 1128	oestrogen replacement
+T49	method 1132 1145	rodent models
+T50	disease 1086 1090	fear
+T52	gene 1192 1210	PACAP-PAC1 pathway
+T53	disease 1264 1268	PTSD
+T55	disease 1227 1252	abnormal stress responses
+T56	physiology 1311 1344	oestrogen regulation of ADCYAP1R1
+T59	Health_factors 1276 1279	sex
+T60	gene 1346 1351	PACAP
+T61	gene 1363 1377	ADCYAP1R1 SNPs
+T62	disease 1453 1457	PTSD
+T63	signs 1398 1408	biomarkers
+R1	associated_with Arg1:T0 Arg2:T1	
+R2	associated_with Arg1:T0 Arg2:T2	
+R3	abbreviation_for Arg1:T5 Arg2:T3	
+R4	associated_with Arg1:T3 Arg2:T8	
+R5	associated_with Arg1:T5 Arg2:T8	
+R6	abbreviation_for Arg1:T12 Arg2:T11	
+R7	hyponym_of Arg1:T11 Arg2:T14	
+R8	hyponym_of Arg1:T12 Arg2:T14	
+T4	Health_factors 375 403	heavily traumatized subjects
+R9	associated_with Arg1:T18 Arg2:T21	
+R10	associated_with Arg1:T18 Arg2:T16	
+R11	occurs_in Arg1:T16 Arg2:T19	
+R12	abbreviation_for Arg1:T29 Arg2:T28	
+R13	associated_with Arg1:T22 Arg2:T23	
+R14	associated_with Arg1:T24 Arg2:T25	
+R15	associated_with Arg1:T22 Arg2:T26	
+R16	associated_with Arg1:T24 Arg2:T26	
+R17	located_in Arg1:T31 Arg2:T32	
+R18	located_in Arg1:T37 Arg2:T31	
+T6	gene 773 782	rs2267735
+R19	associated_with Arg1:T6 Arg2:T33	
+R20	occurs_in Arg1:T33 Arg2:T35	
+R21	associated_with Arg1:T39 Arg2:T42	
+R22	associated_with Arg1:T39 Arg2:T38	
+R23	located_in Arg1:T38 Arg2:T41	
+R24	located_in Arg1:T46 Arg2:T44	
+R25	associated_with Arg1:T46 Arg2:T45	
+R26	associated_with Arg1:T47 Arg2:T50	
+R27	associated_with Arg1:T47 Arg2:T48	
+R28	occurs_in Arg1:T48 Arg2:T49	
+R29	occurs_in Arg1:T50 Arg2:T49	
+R30	associated_with Arg1:T52 Arg2:T55	
+R31	associated_with Arg1:T55 Arg2:T53	
+T7	Health_factors 665 668	sex
+T9	Health_factors 407 410	sex
+R33	characteristic_of Arg1:T60 Arg2:T62	
+R34	characteristic_of Arg1:T61 Arg2:T62	
+R35	hyponym_of Arg1:T60 Arg2:T63	
+R36	hyponym_of Arg1:T61 Arg2:T63	
+T13	Health_factors 1043 1048	human

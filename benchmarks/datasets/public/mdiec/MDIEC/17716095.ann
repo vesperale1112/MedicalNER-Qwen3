@@ -1,0 +1,31 @@
+T0	disease 27 43	eating disorders
+T1	method 0 23	Psychological treatment
+T2	disease 136 151	bulimia nervosa
+T3	method 58 84	cognitive behavior therapy
+T4	method 86 89	CBT
+T5	method 45 84	Manual-based cognitive behavior therapy
+T7	method 277 321	combining CBT with antidepressant medication
+T9	method 323 379	integrating CBT with alternative psychological therapies
+T12	method 424 440	manual-based CBT
+T14	method 235 251	manual-based CBT
+T16	method 442 445	CBT
+T19	method 485 526	Dissemination of evidence-based treatment
+T20	disease 554 570	anorexia nervosa
+T23	Health_factors 724 735	adolescents
+T24	method 643 676	Maudsley method of family therapy
+T25	disease 760 776	eating disorders
+T26	disease 823 862	eating disorder not otherwise specified
+T27	disease 887 908	binge eating disorder
+T28	disease 910 913	BED
+T29	method 780 797	clinical practice
+T30	disease 1042 1045	BED
+T31	method 974 997	psychological therapies
+T35	disease 1184 1196	binge eating
+T36	disease 1212 1243	eating disorder psychopathology
+T37	symptom 1278 1289	weight loss
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+R2	treatment_for Arg1:T5 Arg2:T2	
+T6	method 466 483	clinical practice
+R3	hyponym_of Arg1:T26 Arg2:T25	
+R4	abbreviation_for Arg1:T28 Arg2:T27	
+R5	treatment_for Arg1:T31 Arg2:T30	

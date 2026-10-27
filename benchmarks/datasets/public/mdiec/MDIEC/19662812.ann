@@ -1,0 +1,46 @@
+T2	disease 80 104	bipolar disorder type II
+T3	disease 122 147	major depression disorder
+T5	disease 219 243	bipolar disorder type II
+T6	disease 245 250	BD II
+T7	disease 694 719	major depression disorder
+T9	disease 1253 1276	bipolar disorder type I
+T10	disease 1286 1291	BD II
+T12	disease 1582 1606	bipolar disorder type II
+T1	method 42 69	Mood Disorder Questionnaire
+#1	AnnotatorNotes T2	C0236788
+#2	AnnotatorNotes T3	C1269683
+T4	method 154 181	Mood Disorder Questionnaire
+T14	method 183 186	MDQ
+R3	abbreviation_for Arg1:T14 Arg2:T4	
+R4	abbreviation_for Arg1:T6 Arg2:T5	
+#3	AnnotatorNotes T4	C4284651
+#4	AnnotatorNotes T1	C4284651
+R5	help_diagnose Arg1:T4 Arg2:T5	
+T15	method 426 429	MDQ
+T16	method 807 868	Structured Clinical Interview for DSM-IV for Axis I Disorders
+T17	method 921 924	MDQ
+#6	AnnotatorNotes T9	C4509113
+T11	disease 1472 1477	BD II
+T18	method 1509 1512	MDQ
+R7	help_diagnose Arg1:T18 Arg2:T12	
+T8	method 870 876	SCID-I
+R2	abbreviation_for Arg1:T8 Arg2:T16	
+T19	method 1329 1335	SCID-I
+T20	method 1344 1347	MDQ
+T21	method 1378 1380	CI
+T22	method 1425 1427	CI
+R6	help_diagnose Arg1:T14 Arg2:T5	
+R8	help_diagnose Arg1:T4 Arg2:T6	
+R9	help_diagnose Arg1:T14 Arg2:T6	
+T25	Health_factors 1173 1180	females
+T26	method 1141 1143	SD
+T27	method 1182 1184	SD
+T28	Health_factors 1093 1099	female
+T29	Health_factors 1134 1139	males
+R1	help_diagnose Arg1:T1 Arg2:T2	
+T24	disease 1621 1630	depressed
+T31	Health_factors 1110 1113	age
+T30	Health_factors 623 640	adult outpatients
+R10	occurs_in Arg1:T2 Arg2:T3	
+R11	occurs_in Arg1:T12 Arg2:T24	
+T13	disease 1218 1226	unipolar

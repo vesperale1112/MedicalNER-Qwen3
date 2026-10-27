@@ -1,0 +1,62 @@
+T0	region 0 26	Gut enterochromaffin cells
+T1	disease 33 46	visceral pain
+T2	disease 51 58	anxiety
+T3	disease 60 92	Gastrointestinal (GI) discomfort
+T4	disease 115 128	gut disorders
+T5	disease 170 191	chronic visceral pain
+T6	disease 236 260	irritable bowel syndrome
+T7	disease 262 281	GI hypersensitivity
+T8	disease 286 290	pain
+T10	disease 310 323	tissue injury
+T11	disease 341 365	Irritable bowel syndrome
+T12	Health_factors 389 397	sex bias
+T13	Health_factors 410 415	women
+T14	Health_factors 438 441	men
+T15	region 464 491	enterochromaffin (EC) cells
+T16	region 503 552	rare excitable, serotonergic neuroendocrine cells
+T17	region 560 574	gut epithelium
+T18	region 581 589	EC cells
+T19	disease 710 723	visceral pain
+T20	Health_factors 738 753	sex differences
+T22	physiology 688 706	signalling pathway
+T23	physiology 611 626	noxious stimuli
+T24	physiology 805 821	EC cell function
+T25	disease 881 915	hypersensitivity to gut distension
+T26	drug 976 1008	bacterial short-chain fatty acid
+T27	disease 1025 1040	GI inflammation
+T28	method 825 829	vivo
+T30	physiology 1059 1087	prolonged EC cell activation
+T31	disease 1097 1133	persistent visceral hypersensitivity
+T34	disease 1245 1268	anxiety-like behaviours
+T35	physiology 1292 1327	blockade of serotonergic signalling
+T36	physiology 1405 1437	EC cell-mucosal afferent circuit
+T37	Health_factors 1329 1344	Sex differences
+T39	Health_factors 1462 1469	females
+T40	physiology 1513 1548	EC cell-mucosal afferent signalling
+T41	disease 1573 1580	GI pain
+T42	disease 1638 1663	visceral hypersensitivity
+T43	disease 1684 1692	gut pain
+T46	Health_factors 1672 1680	sex bias
+T47	method 1610 1624	genetic models
+R1	associated_with Arg1:T0 Arg2:T1	
+R2	associated_with Arg1:T0 Arg2:T2	
+R3	characteristic_of Arg1:T3 Arg2:T4	
+R4	associated_with Arg1:T3 Arg2:T5	
+R5	characteristic_of Arg1:T12 Arg2:T11	
+R6	risk_factor_of Arg1:T13 Arg2:T11	
+R7	hyponym_of Arg1:T15 Arg2:T16	
+R8	located_in Arg1:T16 Arg2:T17	
+R9	associated_with Arg1:T18 Arg2:T23	
+T9	region 637 658	mucosal nerve endings
+R10	located_in Arg1:T24 Arg2:T28	
+R11	risk_factor_of Arg1:T24 Arg2:T25	
+T21	drug 961 972	isovalerate
+R12	associated_with Arg1:T24 Arg2:T21	
+R13	hyponym_of Arg1:T21 Arg2:T26	
+R14	associated_with Arg1:T26 Arg2:T27	
+R15	associated_with Arg1:T30 Arg2:T31	
+T29	disease 1173 1193	inflammatory episode
+T32	physiology 1208 1235	perturbing EC cell activity
+R16	risk_factor_of Arg1:T32 Arg2:T34	
+R17	treatment_for Arg1:T35 Arg2:T34	
+R18	associated_with Arg1:T40 Arg2:T41	

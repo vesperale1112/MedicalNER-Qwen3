@@ -1,0 +1,85 @@
+T1	disease 44 65	adolescent depression
+T2	disease 70 77	anxiety
+T3	disease 233 243	depression
+T4	disease 248 255	anxiety
+T5	disease 338 348	depression
+T6	disease 353 360	anxiety
+T7	disease 471 481	depression
+T8	disease 486 493	anxiety
+T9	disease 831 838	anxiety
+T10	disease 917 950	concurrent depression and anxiety
+T12	disease 1022 1032	depression
+T13	disease 1042 1049	anxiety
+T14	disease 1200 1233	concurrent depression and anxiety
+T16	disease 1353 1363	depression
+T17	disease 1462 1472	depression
+T18	disease 1521 1531	depression
+T21	method 94 128	prospective twin and sibling study
+T22	disease 13 18	shame
+T23	disease 142 147	Shame
+T24	disease 164 198	maladaptive self-conscious emotion
+R3	hyponym_of Arg1:T23 Arg2:T24	
+R4	associated_with Arg1:T23 Arg2:T3	
+R5	associated_with Arg1:T23 Arg2:T4	
+T25	disease 306 311	shame
+T26	disease 436 441	shame
+T28	method 761 785	validated questionnaires
+T29	disease 797 802	shame
+T30	disease 816 826	depression
+R10	help_diagnose Arg1:T28 Arg2:T29	
+R11	help_diagnose Arg1:T28 Arg2:T30	
+R12	help_diagnose Arg1:T28 Arg2:T9	
+T31	disease 868 873	Shame
+R13	associated_with Arg1:T31 Arg2:T10	
+T32	disease 967 972	shame
+R15	risk_factor_of Arg1:T12 Arg2:T32	
+T33	method 1051 1067	Genetic analyses
+T34	disease 1082 1087	shame
+T36	disease 1190 1195	shame
+R17	associated_with Arg1:T36 Arg2:T14	
+T37	disease 1337 1342	shame
+T38	disease 1505 1510	shame
+R19	associated_with Arg1:T38 Arg2:T18	
+T39	disease 1669 1674	shame
+T41	disease 1706 1711	shame
+T42	Health_factors 1748 1779	nonshared environmental factors
+R21	risk_factor_of Arg1:T42 Arg2:T41	
+T44	Health_factors 1781 1827	Genetic and nonshared environmental influences
+T45	disease 1846 1896	co-occurrence of shame with depression and anxiety
+R24	associated_with Arg1:T37 Arg2:T16	
+T40	Health_factors 605 610	males
+T48	Health_factors 680 685	males
+T27	method 633 635	SD
+T49	Health_factors 644 647	age
+T50	method 708 710	SD
+T51	Health_factors 719 722	age
+T47	Health_factors 1130 1163	nonshared environmental influence
+T53	Health_factors 1395 1441	genetic and nonshared environmental influences
+T54	Health_factors 1556 1597	common nonshared environmental influences
+R20	associated_with Arg1:T44 Arg2:T45	
+T46	Health_factors 396 432	genetic and environmental influences
+T57	gene 1278 1296	genetic influences
+T52	Health_factors 1715 1726	adolescents
+T56	Health_factors 497 508	adolescence
+R6	associated_with Arg1:T14 Arg2:T57	
+R7	associated_with Arg1:T36 Arg2:T57	
+R28	associated_with Arg1:T16 Arg2:T53	
+R30	associated_with Arg1:T37 Arg2:T53	
+R31	associated_with Arg1:T18 Arg2:T54	
+R32	associated_with Arg1:T38 Arg2:T54	
+R25	associated_with Arg1:T22 Arg2:T1	
+R27	associated_with Arg1:T22 Arg2:T2	
+R29	associated_with Arg1:T25 Arg2:T5	
+R34	associated_with Arg1:T25 Arg2:T6	
+R35	associated_with Arg1:T46 Arg2:T26	
+R23	occurs_in Arg1:T8 Arg2:T56	
+R38	occurs_in Arg1:T7 Arg2:T56	
+R33	occurs_in Arg1:T41 Arg2:T52	
+R1	associated_with Arg1:T26 Arg2:T7	
+R16	associated_with Arg1:T26 Arg2:T8	
+R36	associated_with Arg1:T34 Arg2:T47	
+R2	associated_with Arg1:T46 Arg2:T7	
+R8	associated_with Arg1:T46 Arg2:T8	
+T11	Health_factors 1103 1112	heritable
+R9	characteristic_of Arg1:T11 Arg2:T34	
+T15	Health_factors 1695 1704	heritable

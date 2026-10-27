@@ -1,0 +1,75 @@
+T0	drug 45 52	lithium
+T1	disease 66 82	bipolar disorder
+T2	gene 0 16	Genetic variants
+T3	method 86 115	genome-wide association study
+T4	drug 128 135	Lithium
+T5	disease 165 181	bipolar disorder
+T6	method 141 161	first-line treatment
+T8	symptom 257 273	lithium response
+T10	symptom 279 294	heritable trait
+T14	symptom 327 345	treatment response
+T15	signs 308 323	genetic markers
+T16	method 424 453	genome-wide association study
+T20	Health_factors 536 580	International Consortium on Lithium Genetics
+T21	symptom 457 473	lithium response
+T22	symptom 720 736	lithium response
+T23	gene 610 641	single nucleotide polymorphisms
+T24	gene 643 647	SNPs
+T27	symptom 738 754	Lithium response
+T28	method 800 810	Alda scale
+T31	method 891 926	standard genomic imputation methods
+T33	gene 813 827	Genotyped SNPs
+T34	symptom 928 934	Traits
+T35	method 1019 1032	meta-analysis
+T36	gene 1075 1079	SNPs
+T38	symptom 1156 1172	lithium response
+T40	disease 1083 1096	chromosome 21
+T42	gene 1047 1059	single locus
+T44	method 1298 1315	prospective study
+T45	method 1344 1363	lithium monotherapy
+T47	disease 1473 1480	relapse
+T48	gene 1512 1519	alleles
+T49	method 1531 1543	hazard ratio
+T50	method 1552 1554	CI
+T53	gene 1411 1438	response-associated alleles
+T57	gene 1625 1630	genes
+T58	gene 1658 1665	lncRNAs
+T59	gene 1635 1656	long, non-coding RNAs
+T62	gene 1695 1702	LncRNAs
+T63	physiology 1759 1774	gene expression
+T64	region 1796 1799	CNS
+T65	symptom 1825 1841	lithium response
+T66	disease 1915 1931	bipolar disorder
+T67	signs 1811 1821	biomarkers
+T68	method 1892 1911	clinical management
+R1	hyponym_of Arg1:T4 Arg2:T6	
+R2	treatment_for Arg1:T4 Arg2:T5	
+R3	hyponym_of Arg1:T8 Arg2:T10	
+R4	located_in Arg1:T42 Arg2:T36	
+R5	located_in Arg1:T36 Arg2:T40	
+R6	associated_with Arg1:T42 Arg2:T38	
+R7	abbreviation_for Arg1:T58 Arg2:T59	
+T7	gene 1668 1678	AL157359.3
+T9	gene 1683 1693	AL157359.4
+R8	associated_with Arg1:T62 Arg2:T63	
+R9	associated_with Arg1:T62 Arg2:T64	
+T11	Health_factors 582 590	ConLiGen
+R10	abbreviation_for Arg1:T11 Arg2:T20	
+R11	abbreviation_for Arg1:T24 Arg2:T23	
+R12	help_diagnose Arg1:T28 Arg2:T27	
+T12	method 1102 1134	enome-wide significance criteria
+T13	gene 1174 1184	rs79663003
+T17	gene 1199 1209	rs78015114
+T18	gene 1224 1234	rs74795342
+T19	gene 1253 1263	rs75222709
+R13	associated_with Arg1:T38 Arg2:T13	
+R14	associated_with Arg1:T38 Arg2:T17	
+R15	associated_with Arg1:T38 Arg2:T18	
+R16	associated_with Arg1:T38 Arg2:T19	
+R17	associated_with Arg1:T53 Arg2:T47	
+T25	region 1585 1611	response-associated region
+R18	associated_with Arg1:T25 Arg2:T7	
+R19	associated_with Arg1:T25 Arg2:T9	
+R20	associated_with Arg1:T2 Arg2:T0	
+R21	occurs_in Arg1:T0 Arg2:T1	
+T26	gene 958 966	genotype

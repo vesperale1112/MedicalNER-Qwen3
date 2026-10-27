@@ -1,0 +1,16 @@
+T1	drug 17 27	flavonoids
+T2	drug 44 53	flavonols
+T3	drug 55 63	flavones
+T4	drug 77 89	anthocyanins
+T5	drug 105 125	polymeric flavonoids
+T6	drug 131 148	proanthocyanidins
+T7	method 181 210	food-frequency questionnaires
+T9	disease 294 304	depression
+T10	drug 308 322	antidepressant
+T12	method 364 387	periodic questionnaires
+T13	drug 65 75	flavanones
+T14	drug 91 103	flavan-3-ols
+T8	disease 234 244	Depression
+T15	method 335 348	self-reported
+T11	Health_factors 260 269	physician
+R1	help_diagnose Arg1:T11 Arg2:T8	

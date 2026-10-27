@@ -1,0 +1,48 @@
+T1	disease 0 16	Bipolar disorder
+T2	disease 62 78	Bipolar disorder
+T3	disease 100 119	affective disorders
+T4	disease 226 249	bipolar disorder type I
+T5	disease 349 373	bipolar disorder type II
+T6	disease 411 431	cyclothymic disorder
+T7	disease 523 563	bipolar disorder not otherwise specified
+T8	disease 565 603	depressive and hypomanic-like symptoms
+T9	disease 687 711	Bipolar disorder type II
+T10	disease 826 855	recurrent unipolar depression
+T11	disease 857 886	recurrent depressive episodes
+T12	disease 1016 1032	bipolar disorder
+T13	disease 1037 1056	unipolar depression
+T14	disease 1073 1089	bipolar disorder
+T15	disease 1271 1287	bipolar disorder
+T16	disease 1293 1312	unipolar depression
+T17	disease 1439 1471	continuum of affective disorders
+T18	disease 1919 1938	affective disorders
+T24	disease 333 346	manic episode
+T26	disease 433 466	hypomanic and depressive symptoms
+T27	disease 497 516	depressive episodes
+T28	method 625 644	diagnostic criteria
+T29	disease 891 900	depressed
+T30	signs 943 953	biomarkers
+T31	method 1187 1207	Neuroimaging studies
+T32	signs 1241 1251	biomarkers
+T34	signs 1812 1822	biomarkers
+T35	method 1740 1763	biological measurements
+T36	physiology 1584 1613	neural structure and function
+T37	method 1162 1185	personalised treatments
+T38	physiology 969 995	pathophysiologic processes
+T40	disease 251 280	depressive and manic episodes
+R1	hyponym_of Arg1:T2 Arg2:T3	
+T21	disease 157 199	depressive and manic or hypomanic episodes
+R4	characteristic_of Arg1:T21 Arg2:T2	
+T23	disease 375 408	depressive and hypomanic episodes
+R2	help_diagnose Arg1:T30 Arg2:T12	
+R3	help_diagnose Arg1:T30 Arg2:T13	
+R5	help_diagnose Arg1:T30 Arg2:T14	
+R6	help_diagnose Arg1:T32 Arg2:T15	
+R9	help_diagnose Arg1:T32 Arg2:T16	
+T19	method 1500 1547	neuroimaging and pattern recognition approaches
+T20	method 1671 1688	behavioural scale
+T22	method 1705 1725	integrative approach
+R7	help_diagnose Arg1:T24 Arg2:T40	
+R8	occurs_in Arg1:T10 Arg2:T29	
+R10	occurs_in Arg1:T11 Arg2:T29	
+R11	help_diagnose Arg1:T19 Arg2:T36	

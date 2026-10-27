@@ -1,0 +1,38 @@
+T1	disease 0 16	Eating disorders
+T2	disease 18 34	Eating disorders
+T3	disease 69 85	mental disorders
+T4	disease 273 289	eating disorders
+T5	disease 291 307	Eating disorders
+T6	disease 535 563	feeding and eating disorders
+T7	disease 606 622	anorexia nervosa
+T8	disease 624 639	bulimia nervosa
+T9	disease 641 662	binge eating disorder
+T10	disease 664 705	avoidant-restrictive food intake disorder
+T11	disease 707 711	pica
+T12	disease 717 736	rumination disorder
+T13	disease 763 779	eating disorders
+T14	disease 829 845	eating disorders
+T15	Health_factors 111 126	physical health
+T16	Health_factors 165 199	Disturbed attitudes towards weight
+T17	signs 201 211	body shape
+T20	Health_factors 507 524	health assessment
+T21	Health_factors 795 798	men
+T22	Health_factors 806 811	women
+T23	method 917 932	pathophysiology
+T26	Health_factors 414 435	health-care providers
+T27	Health_factors 371 387	food environment
+T28	Health_factors 139 163	psychosocial functioning
+R1	hyponym_of Arg1:T2 Arg2:T3	
+R2	associated_with Arg1:T2 Arg2:T15	
+R3	associated_with Arg1:T2 Arg2:T28	
+T18	Health_factors 217 223	eating
+R4	associated_with Arg1:T16 Arg2:T4	
+R5	associated_with Arg1:T17 Arg2:T4	
+R6	associated_with Arg1:T18 Arg2:T4	
+T19	Health_factors 467 480	eating habits
+R7	hyponym_of Arg1:T7 Arg2:T6	
+R8	hyponym_of Arg1:T8 Arg2:T6	
+R9	hyponym_of Arg1:T9 Arg2:T6	
+R10	hyponym_of Arg1:T10 Arg2:T6	
+R11	hyponym_of Arg1:T11 Arg2:T6	
+R12	hyponym_of Arg1:T12 Arg2:T6	

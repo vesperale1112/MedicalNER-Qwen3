@@ -1,0 +1,74 @@
+T0	disease 82 89	anxiety
+T2	symptom 37 54	behavioural state
+T3	physiology 10 25	neural pathways
+T4	disease 134 147	anxious state
+T5	disease 324 331	anxiety
+T6	region 230 244	nervous system
+T7	symptom 361 375	risk-avoidance
+T9	signs 380 408	respiratory rate alterations
+T10	physiology 298 319	changes in physiology
+T11	symptom 267 294	behavioural choice patterns
+T13	disease 559 566	anxiety
+T15	method 520 524	mice
+T17	region 491 516	coordinating brain region
+T18	disease 807 814	anxiety
+T22	region 723 758	bed nucleus of the stria terminalis
+T23	method 600 638	in vivo and in vitro electrophysiology
+T25	physiology 1004 1041	anterodorsal BNST-associated activity
+T26	disease 972 985	anxious state
+T27	disease 909 922	anxious state
+T28	physiology 1291 1301	anxiolysis
+T30	symptom 1311 1325	risk-avoidance
+T32	symptom 1367 1383	positive valence
+T33	signs 1335 1351	respiratory rate
+T34	region 1225 1247	ventral tegmental area
+T35	region 1200 1220	parabrachial nucleus
+T36	region 1178 1198	lateral hypothalamus
+T37	region 1630 1655	anterodorsal BNST neurons
+T41	Health_factors 1676 1708	safe and anxiogenic environments
+T42	physiology 1603 1626	native spiking patterns
+T43	symptom 1581 1595	free behaviour
+T44	method 1555 1573	in vivo recordings
+T46	method 1470 1488	freely moving mice
+T47	physiology 1412 1432	selective inhibition
+T48	disease 1803 1810	anxiety
+T49	disease 1985 1998	anxious state
+T50	physiology 1909 1927	circuit mechanisms
+R1	associated_with Arg1:T3 Arg2:T2	
+T1	symptom 91 109	Behavioural states
+T19	Health_factors 113 120	mammals
+R2	occurs_in Arg1:T1 Arg2:T19	
+R3	hyponym_of Arg1:T4 Arg2:T1	
+R4	characteristic_of Arg1:T7 Arg2:T5	
+R5	characteristic_of Arg1:T9 Arg2:T5	
+T8	region 450 468	neural projections
+R6	occurs_in Arg1:T17 Arg2:T15	
+R7	associated_with Arg1:T8 Arg2:T13	
+T12	method 580 598	behavioural assays
+T14	physiology 640 662	respiratory physiology
+T16	method 667 679	optogenetics
+T20	region 760 764	BNST
+R8	abbreviation_for Arg1:T20 Arg2:T22	
+R9	associated_with Arg1:T22 Arg2:T18	
+R10	associated_with Arg1:T20 Arg2:T18	
+T21	region 836 851	BNST subregions
+R11	associated_with Arg1:T21 Arg2:T27	
+T24	physiology 924 942	oval BNST activity
+R12	associated_with Arg1:T24 Arg2:T26	
+T52	physiology 1050 1070	anxiolytic influence
+R13	associated_with Arg1:T25 Arg2:T52	
+T53	region 1132 1149	anterodorsal BNST
+R14	associated_with Arg1:T53 Arg2:T28	
+R15	associated_with Arg1:T36 Arg2:T30	
+R16	associated_with Arg1:T35 Arg2:T33	
+R17	associated_with Arg1:T34 Arg2:T32	
+T29	region 1450 1466	circuit elements
+R18	occurs_in Arg1:T29 Arg2:T46	
+T31	physiology 1539 1549	excitation
+R19	located_in Arg1:T42 Arg2:T37	
+R20	associated_with Arg1:T42 Arg2:T41	
+T38	region 1750 1765	BNST subregions
+R21	associated_with Arg1:T38 Arg2:T48	
+T39	physiology 1832 1842	anxiolytic
+T40	region 1863 1892	anterodorsal BNST projections
+R22	associated_with Arg1:T39 Arg2:T40	

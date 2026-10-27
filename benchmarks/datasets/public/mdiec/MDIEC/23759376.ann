@@ -1,0 +1,77 @@
+T0	disease 0 10	Depression
+T1	disease 15 22	anxiety
+T2	Health_factors 26 52	long-term cancer survivors
+T3	Health_factors 67 74	spouses
+T4	method 79 95	healthy controls
+T5	method 99 116	systematic review
+T6	method 121 134	meta-analysis
+T7	Health_factors 147 162	Cancer survival
+T8	disease 230 244	mood disorders
+T10	disease 266 276	depression
+T11	disease 281 288	anxiety
+T12	Health_factors 308 337	long-term survivors of cancer
+T13	Health_factors 358 365	spouses
+T14	method 375 391	healthy controls
+T15	method 430 437	Medline
+T16	method 439 447	PsycINFO
+T17	method 449 455	Embase
+T18	method 489 493	Ovid
+T19	disease 554 568	mood disorders
+T20	disease 596 602	cancer
+T21	method 668 705	International Psycho-oncology Society
+T23	disease 872 882	depression
+T24	disease 887 894	anxiety
+T25	disease 898 904	cancer
+T26	method 821 849	random-effects meta-analysis
+T27	Health_factors 928 935	spouses
+T28	method 940 956	healthy controls
+T29	method 1062 1078	healthy controls
+T30	disease 1092 1102	depression
+T31	disease 1120 1127	anxiety
+T32	Health_factors 1153 1160	spouses
+T33	disease 1174 1184	depression
+T34	disease 1203 1210	anxiety
+T35	method 1026 1039	main analysis
+T36	disease 1230 1240	depression
+T37	Health_factors 1296 1312	cancer survivors
+T38	method 1255 1257	CI
+T39	method 1341 1357	healthy controls
+T40	method 1366 1379	relative risk
+T41	method 1381 1383	RR
+T42	method 1394 1396	CI
+T43	method 1273 1286	pooled sample
+T44	disease 1432 1439	anxiety
+T45	Health_factors 1475 1491	cancer survivors
+T46	method 1454 1456	CI
+T47	method 1520 1536	healthy controls
+T48	method 1538 1540	RR
+T49	method 1550 1552	CI
+T50	disease 1598 1608	depression
+T51	disease 1762 1768	cancer
+T52	method 1624 1626	RR
+T53	method 1636 1638	CI
+T54	disease 1677 1684	anxiety
+T55	method 1700 1702	RR
+T56	method 1712 1714	CI
+T57	Health_factors 1788 1795	spouses
+T59	disease 1840 1847	anxiety
+T60	disease 1861 1871	depression
+T62	Health_factors 1938 1945	spouses
+T63	method 1960 1976	healthy controls
+T64	Health_factors 1907 1933	long-term cancer survivors
+T66	disease 2041 2048	anxiety
+T67	Health_factors 2052 2078	long-term cancer survivors
+T68	Health_factors 2089 2096	spouses
+R1	occurs_in Arg1:T1 Arg2:T2	
+R2	occurs_in Arg1:T0 Arg2:T2	
+R3	risk_factor_of Arg1:T7 Arg2:T8	
+T9	method 457 471	Science Direct
+T70	method 473 487	Ingenta Select
+T71	method 499 504	Wiley
+R4	occurs_in Arg1:T19 Arg2:T20	
+R5	occurs_in Arg1:T24 Arg2:T25	
+R6	occurs_in Arg1:T23 Arg2:T25	
+R7	abbreviation_for Arg1:T41 Arg2:T40	
+R8	associated_with Arg1:T59 Arg2:T64	
+R9	occurs_in Arg1:T66 Arg2:T67	
+R10	associated_with Arg1:T59 Arg2:T62	

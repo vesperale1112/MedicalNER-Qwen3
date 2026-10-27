@@ -1,0 +1,6 @@
+T1	drug 13 17	CORT
+T2	disease 28 52	depressive-like behavior
+T3	disease 105 129	depressive-like behavior
+T4	Health_factors 57 65	exercise
+R1	risk_factor_of Arg1:T1 Arg2:T2	
+R2	treatment_for Arg1:T4 Arg2:T3	

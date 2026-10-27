@@ -1,0 +1,26 @@
+T4	disease 0 30	Chronic, uncontrollable stress
+T5	disease 45 66	psychiatric syndromes
+T6	disease 78 85	anxiety
+T7	disease 90 115	major depressive disorder
+T9	disease 213 256	depression-associated behavioral alteration
+T11	gene 297 311	biogenic amine
+T13	method 349 372	chronic stress paradigm
+T14	method 477 493	food deprivation
+T15	disease 187 201	chronic stress
+R1	risk_factor_of Arg1:T4 Arg2:T5	
+R2	hyponym_of Arg1:T6 Arg2:T5	
+R3	hyponym_of Arg1:T7 Arg2:T5	
+R4	risk_factor_of Arg1:T4 Arg2:T6	
+R5	risk_factor_of Arg1:T4 Arg2:T7	
+R6	risk_factor_of Arg1:T15 Arg2:T9	
+T1	region 326 337	adult brain
+R7	associated_with Arg1:T15 Arg2:T11	
+T3	method 131 155	mammalian disease models
+R9	occurs_in Arg1:T7 Arg2:T3	
+R10	occurs_in Arg1:T6 Arg2:T3	
+R11	occurs_in Arg1:T5 Arg2:T3	
+R12	located_in Arg1:T11 Arg2:T1	
+T2	Health_factors 120 126	humans
+R8	occurs_in Arg1:T7 Arg2:T2	
+R13	occurs_in Arg1:T6 Arg2:T2	
+R14	occurs_in Arg1:T5 Arg2:T2	

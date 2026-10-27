@@ -1,0 +1,93 @@
+T1	disease 0 37	mGluR1-Dependent Long Term Depression
+T2	region 41 73	Rodent Midbrain Dopamine Neurons
+T5	physiology 90 117	Neuregulin 1/ErbB Signaling
+T6	gene 161 193	neurotrophic factor Neuregulin 1
+T7	gene 195 199	NRG1
+T8	gene 220 241	ErbB tyrosine kinases
+T10	drug 252 269	midbrain dopamine
+T13	physiology 322 341	NRG1/ErbB signaling
+T14	gene 366 400	metabotropic glutamate receptors 1
+T16	gene 402 408	mGluR1
+T17	region 425 444	midbrain DA neurons
+T18	gene 486 500	ErbB receptors
+T19	gene 505 511	mGluR1
+T21	physiology 546 573	in vivo striatal DA release
+T22	physiology 522 541	neuronal excitation
+T24	gene 610 616	mGluR1
+T25	gene 722 728	mGluR1
+T26	region 809 819	DA neurons
+T27	physiology 667 688	synaptic transmission
+T29	physiology 748 767	synaptic plasticity
+T30	region 771 801	substantia nigra pars compacta
+T31	region 700 711	brain areas
+T32	physiology 897 954	mGluR1-dependent glutamatergic long-term depression (LTD)
+T33	region 958 973	SNpc DA neurons
+T34	disease 928 948	long-term depression
+T35	disease 950 953	LTD
+T36	physiology 1013 1038	endogenous ErbB signaling
+T37	gene 1053 1059	mGluR1
+T38	region 1109 1117	DA cells
+T40	physiology 1072 1105	glutamatergic synaptic plasticity
+T42	physiology 1199 1233	LTD of AMPAR-mediated transmission
+T43	region 1237 1252	SNpc DA neurons
+T45	physiology 1299 1329	endogenous NRG1/ErbB signaling
+T48	method 1258 1262	mice
+T49	physiology 1140 1188	pharmacological or synaptic activation of mGluR1
+T50	drug 1364 1393	broad spectrum ErbB inhibitor
+T51	disease 1339 1342	LTD
+T53	drug 1436 1465	pan-ErbB- or ErbB2 inhibitors
+T54	region 1473 1483	DA neurons
+T57	gene 1543 1575	ErbB2/ErbB4-containing receptors
+T58	disease 1492 1512	mGluR1-dependent LTD
+T59	method 1409 1432	intracellular injection
+T60	gene 1592 1606	exogenous NRG1
+T61	physiology 1645 1662	mGluRI activation
+T64	physiology 1615 1629	LTD expression
+T65	gene 1704 1710	mGluR1
+T66	region 1790 1805	SNpc DA neurons
+T68	physiology 1825 1854	NRG1/ErbB-dependent mechanism
+T69	region 1893 1901	DA cells
+T71	physiology 1863 1889	glutamatergic transmission
+T72	physiology 1757 1786	long-term synaptic plasticity
+T74	disease 2011 2029	DA-linked diseases
+T77	physiology 1979 2004	learning/memory processes
+T78	physiology 1952 1974	DA-dependent behaviors
+R1	occurs_in Arg1:T1 Arg2:T2	
+R2	associated_with Arg1:T1 Arg2:T5	
+R3	abbreviation_for Arg1:T7 Arg2:T6	
+T3	drug 271 273	DA
+R4	abbreviation_for Arg1:T3 Arg2:T10	
+T4	physiology 252 287	midbrain dopamine (DA) transmission
+R5	associated_with Arg1:T6 Arg2:T4	
+R6	associated_with Arg1:T7 Arg2:T4	
+R7	associated_with Arg1:T8 Arg2:T4	
+R8	abbreviation_for Arg1:T16 Arg2:T14	
+R9	located_in Arg1:T16 Arg2:T17	
+R10	located_in Arg1:T14 Arg2:T17	
+R11	associated_with Arg1:T13 Arg2:T14	
+R12	associated_with Arg1:T13 Arg2:T16	
+R13	associated_with Arg1:T18 Arg2:T19	
+R14	associated_with Arg1:T18 Arg2:T22	
+R15	associated_with Arg1:T18 Arg2:T21	
+R16	associated_with Arg1:T19 Arg2:T22	
+R17	associated_with Arg1:T19 Arg2:T21	
+R18	associated_with Arg1:T24 Arg2:T27	
+R19	located_in Arg1:T27 Arg2:T31	
+T9	region 803 807	SNpc
+R20	abbreviation_for Arg1:T9 Arg2:T30	
+R21	located_in Arg1:T29 Arg2:T30	
+R22	located_in Arg1:T29 Arg2:T9	
+R23	abbreviation_for Arg1:T35 Arg2:T34	
+R24	located_in Arg1:T32 Arg2:T33	
+R25	located_in Arg1:T40 Arg2:T38	
+R28	located_in Arg1:T42 Arg2:T43	
+T11	method 1267 1277	rat slices
+R26	risk_factor_of Arg1:T49 Arg2:T42	
+R27	associated_with Arg1:T42 Arg2:T45	
+R29	treatment_for Arg1:T50 Arg2:T51	
+R30	treatment_for Arg1:T53 Arg2:T58	
+R31	associated_with Arg1:T58 Arg2:T57	
+R32	associated_with Arg1:T60 Arg2:T64	
+R33	located_in Arg1:T72 Arg2:T66	
+R34	located_in Arg1:T71 Arg2:T69	
+R35	associated_with Arg1:T65 Arg2:T72	

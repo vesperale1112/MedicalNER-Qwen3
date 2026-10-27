@@ -1,0 +1,50 @@
+T1	disease 39 73	negative symptoms of schizophrenia
+T2	disease 142 151	psychosis
+T3	disease 175 189	hallucinations
+T4	disease 161 170	delusions
+T5	method 193 214	statistical inference
+T7	disease 309 327	affective blunting
+T8	disease 329 338	avolition
+T9	disease 344 354	asociality
+T10	disease 265 299	negative symptoms of schizophrenia
+T13	Health_factors 482 502	affective behaviours
+T14	method 453 469	active inference
+T15	physiology 423 443	emotional expression
+T16	method 395 418	computational framework
+T17	disease 604 613	delusions
+T18	disease 618 632	hallucinations
+T20	disease 697 714	negative symptoms
+T22	Health_factors 751 777	social prediction circuits
+T23	region 679 695	sensory circuits
+T24	disease 875 891	apathy-anhedonia
+T25	disease 895 908	schizophrenia
+T26	method 805 829	computational principles
+T27	disease 978 996	paranoid delusions
+T28	Health_factors 914 943	phenomenological consequences
+T29	physiology 1149 1162	interoception
+T30	Health_factors 1097 1120	facial affect mirroring
+T33	disease 1312 1346	negative symptoms of schizophrenia
+T34	method 1284 1304	computational models
+T35	physiology 1221 1245	acoustic speech patterns
+T36	physiology 1198 1216	facial expressions
+T37	method 1176 1194	automated analysis
+T38	method 3 19	active inference
+T39	method 75 92	Predictive coding
+R1	characteristic_of Arg1:T7 Arg2:T10	
+R2	characteristic_of Arg1:T8 Arg2:T10	
+R3	characteristic_of Arg1:T9 Arg2:T10	
+T6	Health_factors 511 518	smiling
+T11	Health_factors 555 585	social consequences of smiling
+R4	hyponym_of Arg1:T6 Arg2:T13	
+R5	associated_with Arg1:T6 Arg2:T11	
+R6	associated_with Arg1:T17 Arg2:T23	
+R7	associated_with Arg1:T18 Arg2:T23	
+R8	associated_with Arg1:T20 Arg2:T22	
+T12	disease 841 870	blunted facial expressiveness
+R9	occurs_in Arg1:T12 Arg2:T25	
+R10	occurs_in Arg1:T24 Arg2:T25	
+T19	disease 1001 1040	indistinctness of self-other boundaries
+T21	Health_factors 1078 1095	social prediction
+R11	associated_with Arg1:T21 Arg2:T29	
+R12	associated_with Arg1:T30 Arg2:T29	
+R13	associated_with Arg1:T21 Arg2:T30	

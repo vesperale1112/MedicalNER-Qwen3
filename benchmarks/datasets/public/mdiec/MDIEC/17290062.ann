@@ -1,0 +1,48 @@
+T0	disease 59 66	anxiety
+T1	disease 71 81	depression
+T2	disease 99 105	cancer
+T4	method 109 148	multicenter randomized controlled trial
+T5	method 17 37	aromatherapy massage
+T6	disease 270 277	anxiety
+T7	disease 282 292	depression
+T8	disease 296 302	cancer
+T9	method 376 405	United Kingdom cancer centers
+T11	Health_factors 412 419	hospice
+T12	method 322 367	pragmatic two-arm randomized controlled trial
+T14	method 201 222	usual supportive care
+T15	disease 469 475	cancer
+T17	disease 534 550	clinical anxiety
+T18	disease 558 568	depression
+T19	method 633 654	usual supportive care
+T20	method 609 629	aromatherapy massage
+T22	method 498 528	complementary therapy services
+T23	disease 749 765	clinical anxiety
+T24	disease 773 783	depression
+T25	method 814 824	usual care
+T26	method 856 866	odds ratio
+T27	method 868 870	OR
+T28	method 882 884	CI
+T29	method 945 947	OR
+T30	method 958 960	CI
+T32	method 694 714	aromatherapy massage
+T33	disease 1076 1083	anxiety
+T35	method 1126 1128	OR
+T36	method 1139 1141	CI
+T37	method 1167 1169	OR
+T38	method 1180 1182	CI
+T39	method 1003 1023	aromatherapy massage
+T40	disease 1291 1297	cancer
+T41	disease 1308 1315	anxiety
+T42	disease 1323 1333	depression
+T43	method 1428 1440	intervention
+T45	method 1233 1253	Aromatherapy massage
+R1	occurs_in Arg1:T1 Arg2:T2	
+R2	occurs_in Arg1:T0 Arg2:T2	
+R3	treatment_for Arg1:T5 Arg2:T0	
+R4	treatment_for Arg1:T5 Arg2:T1	
+R5	occurs_in Arg1:T6 Arg2:T8	
+R6	occurs_in Arg1:T7 Arg2:T8	
+T3	method 228 248	aromatherapy massage
+R7	abbreviation_for Arg1:T27 Arg2:T26	
+R8	treatment_for Arg1:T39 Arg2:T33	
+T10	method 1062 1075	self-reported

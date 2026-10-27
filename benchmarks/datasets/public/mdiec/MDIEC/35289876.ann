@@ -1,0 +1,91 @@
+T0	disease 14 30	Eating Disorders
+T2	method 0 9	Screening
+T3	Health_factors 34 45	Adolescents
+T4	Health_factors 50 56	Adults
+T5	disease 130 146	Eating disorders
+T6	disease 152 173	binge eating disorder
+T7	disease 175 190	bulimia nervosa
+T8	disease 196 212	anorexia nervosa
+T9	disease 229 251	psychiatric conditions
+T15	Health_factors 327 363	physical or psychosocial functioning
+T16	disease 438 454	anorexia nervosa
+T17	disease 456 471	bulimia nervosa
+T18	disease 477 498	binge eating disorder
+T19	disease 585 601	anorexia nervosa
+T20	disease 610 625	bulimia nervosa
+T21	disease 634 655	binge eating disorder
+T24	method 387 401	cohort studies
+T25	signs 413 433	lifetime prevalences
+T26	Health_factors 502 513	adult women
+T27	Health_factors 574 583	adult men
+T29	disease 665 680	Eating disorder
+T32	Health_factors 720 738	adolescent females
+T33	Health_factors 759 775	adolescent males
+T34	disease 777 793	Eating disorders
+T35	Health_factors 839 862	adverse health outcomes
+T38	Health_factors 874 918	physical, psychological, and social problems
+T40	disease 1063 1079	eating disorders
+T41	method 935 968	US Preventive Services Task Force
+T42	Health_factors 970 976	USPSTF
+T43	method 993 1010	systematic review
+T44	disease 1040 1045	harms
+T45	method 1049 1058	screening
+T46	Health_factors 1083 1094	adolescents
+T47	Health_factors 1099 1105	adults
+T48	signs 1128 1143	body mass index
+T49	disease 1241 1257	eating disorders
+T50	disease 1185 1196	underweight
+T53	method 1282 1288	USPSTF
+T54	disease 1433 1449	eating disorders
+T55	disease 1535 1549	pubertal delay
+T56	disease 1551 1562	bradycardia
+T57	disease 1564 1578	oligomenorrhea
+T58	disease 1584 1594	amenorrhea
+T60	Health_factors 1373 1379	adults
+T61	Health_factors 1393 1398	older
+T63	symptom 1474 1485	weight gain
+T64	symptom 1455 1472	rapid weight loss
+T65	disease 1734 1750	eating disorders
+T66	method 1622 1628	USPSTF
+T67	disease 1711 1716	harms
+T68	method 1720 1729	screening
+T69	Health_factors 1754 1765	adolescents
+T70	Health_factors 1770 1776	adults
+R1	occurs_in Arg1:T0 Arg2:T3	
+R2	occurs_in Arg1:T0 Arg2:T4	
+R3	hyponym_of Arg1:T6 Arg2:T5	
+R4	hyponym_of Arg1:T7 Arg2:T5	
+R5	hyponym_of Arg1:T8 Arg2:T5	
+R6	hyponym_of Arg1:T5 Arg2:T9	
+R7	hyponym_of Arg1:T6 Arg2:T9	
+R8	hyponym_of Arg1:T7 Arg2:T9	
+R9	hyponym_of Arg1:T8 Arg2:T9	
+T1	symptom 265 314	disturbance in eating or eating-related behaviors
+R10	characteristic_of Arg1:T1 Arg2:T5	
+R11	characteristic_of Arg1:T1 Arg2:T6	
+R12	characteristic_of Arg1:T1 Arg2:T7	
+R13	characteristic_of Arg1:T1 Arg2:T8	
+R14	risk_factor_of Arg1:T5 Arg2:T15	
+R15	risk_factor_of Arg1:T6 Arg2:T15	
+R16	risk_factor_of Arg1:T7 Arg2:T15	
+R17	risk_factor_of Arg1:T8 Arg2:T15	
+R18	occurs_in Arg1:T18 Arg2:T26	
+R19	occurs_in Arg1:T17 Arg2:T26	
+R20	occurs_in Arg1:T16 Arg2:T26	
+R21	hyponym_of Arg1:T38 Arg2:T35	
+R22	associated_with Arg1:T34 Arg2:T35	
+R23	associated_with Arg1:T34 Arg2:T38	
+R24	abbreviation_for Arg1:T42 Arg2:T41	
+R25	occurs_in Arg1:T40 Arg2:T46	
+R26	occurs_in Arg1:T40 Arg2:T47	
+R27	occurs_in Arg1:T47 Arg2:T48	
+R28	occurs_in Arg1:T46 Arg2:T48	
+T10	Health_factors 1357 1368	Adolescents
+R29	characteristic_of Arg1:T64 Arg2:T54	
+R30	characteristic_of Arg1:T63 Arg2:T54	
+R31	characteristic_of Arg1:T55 Arg2:T54	
+R32	characteristic_of Arg1:T56 Arg2:T54	
+R33	characteristic_of Arg1:T57 Arg2:T54	
+R34	characteristic_of Arg1:T58 Arg2:T54	
+R35	occurs_in Arg1:T65 Arg2:T69	
+R36	occurs_in Arg1:T65 Arg2:T70	

@@ -1,0 +1,75 @@
+T1	disease 80 93	schizophrenia
+T2	disease 95 111	bipolar disorder
+T3	disease 117 142	major depression disorder
+T4	disease 214 233	psychiatric illness
+T5	disease 345 358	schizophrenia
+T6	disease 360 376	bipolar disorder
+T7	disease 381 406	major depression disorder
+T8	disease 878 891	schizophrenia
+T10	disease 1165 1181	major depression
+T11	disease 1416 1429	schizophrenia
+T12	disease 1537 1553	bipolar disorder
+T13	gene 1596 1623	muscarinic receptor density
+T14	disease 1638 1651	schizophrenia
+T17	gene 17 43	m1/m4 muscarinic receptors
+#1	AnnotatorNotes T17	C0034826
+#2	AnnotatorNotes T1	C0036341
+#3	AnnotatorNotes T2	C0005586
+#4	AnnotatorNotes T3	C1269683
+T18	disease 144 182	Abnormal cholinergic neurotransmission
+R1	associated_with Arg1:T18 Arg2:T4	
+#5	AnnotatorNotes T4	C1401970
+T19	region 310 335	anterior cingulate cortex
+T20	region 337 340	ACC
+R2	abbreviation_for Arg1:T20 Arg2:T19	
+T21	gene 270 302	cholinergic muscarinic receptors
+T22	method 433 461	quantitative autoradiography
+#6	AnnotatorNotes T22	C1510991
+T29	disease 1017 1044	bipolar or major depression
+T31	physiology 1264 1289	[(3)H]pirenzepine binding
+T32	disease 1253 1260	suicide
+#8	AnnotatorNotes T32	C0038661
+T28	disease 1811 1844	dysfunctional ACC neural circuits
+T33	disease 1718 1746	bipolar and major depression
+T23	physiology 473 498	[(3)H]pirenzepine binding
+T25	physiology 604 629	[(3)H]pirenzepine binding
+T26	drug 769 786	[(3)H]pirenzepine
+T34	physiology 958 983	[(3)H]pirenzepine binding
+T30	disease 1779 1792	schizophrenia
+T16	region 51 76	anterior cingulate cortex
+T37	region 708 711	ACC
+T38	region 1006 1009	ACC
+T39	region 1297 1300	ACC
+T40	disease 1337 1344	suicide
+T41	region 1631 1634	ACC
+T42	region 644 670	superficial laminae (I-II)
+T43	region 679 700	deep laminae (III-VI)
+T44	region 794 806	deep laminae
+T45	region 846 859	upper laminae
+T46	region 867 870	ACC
+T47	region 991 998	laminae
+T48	region 523 535	Brain tissue
+R5	associated_with Arg1:T32 Arg2:T31	
+T15	method 558 602	Stanley Foundation Neuropathology Consortium
+T27	physiology 1122 1147	[(3)H]pirenzepine binding
+R4	characteristic_of Arg1:T27 Arg2:T10	
+R16	located_in Arg1:T31 Arg2:T39	
+R7	located_in Arg1:T13 Arg2:T41	
+R18	help_diagnose Arg1:T22 Arg2:T23	
+R8	located_in Arg1:T17 Arg2:T16	
+R9	located_in Arg1:T26 Arg2:T44	
+R10	located_in Arg1:T26 Arg2:T45	
+R12	located_in Arg1:T45 Arg2:T46	
+R14	located_in Arg1:T21 Arg2:T19	
+R15	located_in Arg1:T21 Arg2:T20	
+R17	located_in Arg1:T43 Arg2:T37	
+R19	located_in Arg1:T47 Arg2:T38	
+R6	characteristic_of Arg1:T26 Arg2:T8	
+R11	located_in Arg1:T34 Arg2:T47	
+R30	located_in Arg1:T42 Arg2:T37	
+R31	located_in Arg1:T44 Arg2:T46	
+R33	characteristic_of Arg1:T13 Arg2:T14	
+R3	associated_with Arg1:T30 Arg2:T28	
+T9	gene 502 521	M1 and M4 receptors
+R13	associated_with Arg1:T25 Arg2:T42	
+T24	disease 1317 1321	died

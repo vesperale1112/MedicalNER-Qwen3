@@ -1,0 +1,39 @@
+T1	disease 0 30	Post-traumatic stress disorder
+T2	disease 35 41	cancer
+T3	disease 80 86	cancer
+T4	disease 218 263	cancer-related post-traumatic stress disorder
+T5	disease 233 263	post-traumatic stress disorder
+T6	disease 265 269	PTSD
+T8	disease 325 344	cancer-related PTSD
+T9	disease 487 506	Cancer-related PTSD
+T10	disease 558 564	cancer
+T11	disease 760 782	psychiatric conditions
+T13	disease 837 856	cancer-related PTSD
+T15	disease 891 910	cancer-related PTSD
+T17	disease 1073 1077	PTSD
+T18	disease 1105 1111	cancer
+T19	disease 1296 1302	cancer
+T20	disease 1340 1367	pre-cancer diagnosis trauma
+T21	disease 1464 1483	adjustment disorder
+T23	disease 1499 1518	cancer-related PTSD
+T24	disease 1611 1627	traumatic stress
+T25	Health_factors 659 674	quality of life
+T26	Health_factors 784 803	poor social support
+T27	method 920 949	DSM-IV-TR diagnostic criteria
+T29	method 955 982	revised DSM-5 PTSD criteria
+T32	disease 123 132	traumatic
+R1	abbreviation_for Arg1:T6 Arg2:T5	
+T33	method 303 321	qualitative review
+T7	method 382 396	methodological
+R2	associated_with Arg1:T9 Arg2:T25	
+T34	disease 638 646	distress
+R3	associated_with Arg1:T9 Arg2:T34	
+T31	Health_factors 725 745	prior trauma history
+T12	disease 1033 1056	cancer-related distress
+R4	help_diagnose Arg1:T29 Arg2:T12	
+T14	method 1255 1278	Psychosocial assessment
+T16	Health_factors 1372 1391	psychiatric history
+T28	disease 1437 1458	concurrent conditions
+R5	hyponym_of Arg1:T21 Arg2:T28	
+T30	method 1397 1420	diagnostic interviewing
+T22	method 1581 1606	evidence-based approaches

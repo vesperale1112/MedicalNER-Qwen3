@@ -1,0 +1,14 @@
+T1	disease 79 98	depressive symptoms
+T2	physiology 112 129	cognitive control
+T3	method 160 188	evidence-based psychotherapy
+T4	disease 193 203	depression
+T6	method 27 30	EVO
+T7	method 34 56	cognitive training app
+R1	hyponym_of Arg1:T6 Arg2:T7	
+T8	method 135 139	iPST
+T9	method 144 147	app
+R2	hyponym_of Arg1:T8 Arg2:T9	
+T5	method 4 8	apps
+R3	treatment_for Arg1:T6 Arg2:T1	
+R5	associated_with Arg1:T1 Arg2:T2	
+R4	treatment_for Arg1:T3 Arg2:T4	

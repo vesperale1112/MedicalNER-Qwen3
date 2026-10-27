@@ -1,0 +1,4 @@
+T2	disease 50 102	co-occurring psychiatric and substance use disorders
+T4	method 129 196	Diagnostic and Statistical Manual of Mental Disorders fifth edition
+T5	method 198 203	DSM-V
+R1	abbreviation_for Arg1:T5 Arg2:T4	

@@ -1,0 +1,7 @@
+T1	disease 0 14	Mood disorders
+T2	disease 23 39	major depression
+T4	disease 105 114	mortality
+R1	hyponym_of Arg1:T2 Arg2:T1	
+T5	disease 79 88	morbidity
+R3	characteristic_of Arg1:T5 Arg2:T1	
+R4	characteristic_of Arg1:T4 Arg2:T1	

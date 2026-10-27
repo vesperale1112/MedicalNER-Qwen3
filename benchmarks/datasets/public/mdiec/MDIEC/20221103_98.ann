@@ -1,0 +1,8 @@
+T1	Health_factors 12 27	sex differences
+T2	Health_factors 156 177	adult sex differences
+T4	disease 62 78	adult depression
+T7	disease 181 191	depression
+T3	disease 45 58	childhood SES
+T5	disease 127 140	childhood SES
+R1	associated_with Arg1:T5 Arg2:T2	
+R2	occurs_in Arg1:T2 Arg2:T7	

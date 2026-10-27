@@ -1,0 +1,13 @@
+T2	method 42 47	PHQ-8
+T3	disease 59 65	angina
+T4	disease 137 155	disease perception
+T13	Health_factors 235 259	clinical characteristics
+T14	drug 279 294	anti-depressant
+R1	associated_with Arg1:T2 Arg2:T3	
+T1	disease 95 114	physical limitation
+T5	method 77 83	SAQ-AF
+T6	disease 261 264	CAD
+T7	method 116 122	SAQ-PL
+T8	method 157 163	SAQ-DS
+R5	associated_with Arg1:T2 Arg2:T1	
+R6	associated_with Arg1:T2 Arg2:T4	

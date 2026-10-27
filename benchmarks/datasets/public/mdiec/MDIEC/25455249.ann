@@ -1,0 +1,26 @@
+T1	disease 0 16	Bipolar disorder
+T2	disease 18 37	affective psychosis
+T3	disease 43 56	schizophrenia
+T4	disease 269 290	severe mental illness
+T5	disease 330 346	bipolar disorder
+T6	disease 348 367	affective psychosis
+T7	disease 373 386	schizophrenia
+T8	disease 481 502	post-partum psychosis
+T9	disease 582 596	maternal death
+T10	physiology 60 69	pregnancy
+T11	disease 159 182	severe mental disorders
+T12	method 224 236	epidemiology
+T14	physiology 306 316	childbirth
+T15	Health_factors 399 404	women
+T16	disease 418 436	chronic conditions
+T17	disease 555 562	suicide
+T19	Health_factors 651 656	women
+T20	disease 662 685	severe mental disorders
+T21	physiology 689 698	pregnancy
+T22	Health_factors 852 857	woman
+T23	method 810 842	individual risk-benefit analysis
+T25	Health_factors 707 725	post-partum period
+T29	Health_factors 102 118	perinatal period
+T30	Health_factors 78 96	post-partum period
+R1	risk_factor_of Arg1:T29 Arg2:T11	
+R2	risk_factor_of Arg1:T17 Arg2:T9	

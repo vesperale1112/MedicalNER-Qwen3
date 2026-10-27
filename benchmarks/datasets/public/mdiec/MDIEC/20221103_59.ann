@@ -1,0 +1,12 @@
+T1	method 0 3	TMS
+T2	disease 32 64	abnormal functional connectivity
+T3	region 68 93	cortico-cortical circuits
+T4	disease 97 107	depression
+T5	physiology 121 144	functional connectivity
+R1	treatment_for Arg1:T1 Arg2:T2	
+T6	region 154 162	circuits
+T7	physiology 172 190	treatment response
+R2	associated_with Arg1:T5 Arg2:T7	
+R3	located_in Arg1:T2 Arg2:T3	
+R4	occurs_in Arg1:T2 Arg2:T4	
+R5	located_in Arg1:T5 Arg2:T6	

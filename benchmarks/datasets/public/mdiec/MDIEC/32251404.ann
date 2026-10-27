@@ -1,0 +1,50 @@
+T1	disease 29 49	striatal dysfunction
+T2	disease 53 66	schizophrenia
+T3	disease 158 171	schizophrenia
+T4	disease 245 258	schizophrenia
+T5	disease 308 341	functional striatal abnormalities
+T6	disease 343 346	FSA
+T7	disease 392 412	striatal dysfunction
+T8	disease 619 632	schizophrenia
+T9	disease 914 934	striatal dysfunction
+T10	disease 942 968	neuropsychiatric disorders
+T11	disease 1007 1020	schizophrenia
+T12	disease 1032 1048	bipolar disorder
+T13	disease 1100 1110	depression
+T14	disease 1112 1141	obsessive-compulsive disorder
+T15	disease 1146 1186	attention-deficit hyperactivity disorder
+T16	disease 1196 1218	striatal hyperactivity
+T17	disease 1333 1346	schizophrenia
+T18	disease 1406 1426	striatal dysfunction
+T19	disease 1543 1563	striatal dysfunction
+T20	disease 1567 1593	neuropsychiatric disorders
+T21	signs 2 24	neuroimaging biomarker
+T22	region 133 141	striatum
+T23	signs 218 240	neuroimaging biomarker
+T24	Health_factors 275 284	prognosis
+T25	method 638 654	healthy controls
+T26	method 735 755	longitudinal cohorts
+T28	physiology 1291 1310	expression profiles
+T29	gene 1314 1328	polygenic risk
+T30	signs 1387 1396	biomarker
+T32	method 1503 1526	clinical stratification
+T33	physiology 1469 1501	antipsychotic treatment response
+T34	physiology 1261 1282	dopaminergic function
+T35	physiology 841 873	antipsychotic treatment response
+T36	disease 796 799	FSA
+T37	method 495 531	functional magnetic resonance images
+T39	disease 349 352	FSA
+R1	associated_with Arg1:T22 Arg2:T3	
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+T38	disease 444 456	pathological
+T40	method 464 491	inter-site cross-validation
+T41	disease 584 587	FSA
+R3	help_diagnose Arg1:T41 Arg2:T8	
+T42	method 757 783	inter-individual variation
+R4	associated_with Arg1:T36 Arg2:T35	
+T27	disease 875 878	FSA
+R5	characteristic_of Arg1:T9 Arg2:T10	
+R6	characteristic_of Arg1:T9 Arg2:T11	
+R7	characteristic_of Arg1:T9 Arg2:T12	
+R8	characteristic_of Arg1:T19 Arg2:T20	
+R9	characteristic_of Arg1:T1 Arg2:T2	

@@ -1,0 +1,82 @@
+T2	disease 142 152	Depression
+T3	disease 158 184	major psychiatric disorder
+T4	disease 318 343	major depression disorder
+T5	disease 345 348	MDD
+T6	Health_factors 617 655	first-episode, drug naive MDD patients
+T7	disease 840 874	first-episode medication-naive MDD
+T8	disease 1495 1498	MDD
+T9	disease 1863 1866	MDD
+T10	disease 2074 2077	MDD
+T13	disease 0 18	Volumetric Deficit
+R1	hyponym_of Arg1:T2 Arg2:T3	
+T14	disease 210 220	disability
+R2	risk_factor_of Arg1:T2 Arg2:T14	
+R3	abbreviation_for Arg1:T5 Arg2:T4	
+T15	disease 435 479	impairment of fronto-limbic-striatal circuit
+T16	method 741 764	voxel-based morphometry
+T17	method 766 769	VBM
+R4	abbreviation_for Arg1:T17 Arg2:T16	
+T18	method 883 899	healthy controls
+T19	method 928 931	VBM
+T20	signs 974 992	gray matter volume
+T21	signs 994 997	GMV
+R5	abbreviation_for Arg1:T21 Arg2:T20	
+T22	region 1075 1080	brain
+T23	disease 1109 1126	clinical symptoms
+T24	method 1145 1170	Hamilton Depression Scale
+T25	method 1172 1176	HAMD
+R6	abbreviation_for Arg1:T25 Arg2:T24	
+T26	method 1207 1224	post-hoc analysis
+T27	disease 1277 1294	clinical symptoms
+T28	signs 1335 1359	brain gray matter volume
+T29	region 1367 1382	prefrontal lobe
+T30	region 1384 1397	limbic system
+T31	region 1399 1407	striatum
+T32	region 1409 1419	cerebellum
+T33	region 1421 1434	temporal lobe
+T34	region 1440 1462	bilateral lingual gyri
+T35	method 1522 1538	healthy controls
+T36	method 1553 1557	HAMD
+T37	signs 1597 1600	GMV
+R14	associated_with Arg1:T36 Arg2:T37	
+T38	region 1608 1620	right insula
+T39	region 1664 1683	right lingual gyrus
+T40	disease 1740 1776	gray matter structural abnormalities
+T41	region 1788 1821	prefronto-limbic-striatal circuit
+R15	associated_with Arg1:T40 Arg2:T9	
+T42	region 1972 1982	cerebellum
+T43	region 1984 1997	lingual gyrus
+T44	region 2003 2017	fusiform gyrus
+T45	method 2099 2130	individual neuroimaging studies
+T46	method 2140 2169	advanced statistical analysis
+T47	region 2197 2219	aforementioned regions
+T48	signs 680 702	neuroimaging biomarker
+T49	disease 1248 1273	GMV structural alteration
+T53	symptom 279 301	structural alterations
+R17	risk_factor_of Arg1:T4 Arg2:T53	
+R18	risk_factor_of Arg1:T5 Arg2:T53	
+T54	region 729 740	whole-brain
+T56	signs 1053 1056	GMV
+T57	symptom 2053 2070	brain alterations
+R21	help_diagnose Arg1:T24 Arg2:T23	
+R22	help_diagnose Arg1:T25 Arg2:T23	
+T55	Health_factors 386 410	clinical characteristics
+R30	associated_with Arg1:T53 Arg2:T15	
+T12	signs 706 722	illness severity
+T58	region 30 60	Fronto-Limbic-Striatal Circuit
+T11	method 2263 2275	neurobiology
+T51	method 1844 1859	pathophysiology
+T52	drug 1918 1928	medication
+T60	Health_factors 64 97	First-Episode Drug Naive Patients
+R29	located_in Arg1:T28 Arg2:T29	
+R31	located_in Arg1:T28 Arg2:T30	
+R32	located_in Arg1:T28 Arg2:T31	
+R33	located_in Arg1:T28 Arg2:T32	
+R34	located_in Arg1:T28 Arg2:T33	
+R35	located_in Arg1:T28 Arg2:T34	
+R36	characteristic_of Arg1:T28 Arg2:T8	
+R7	located_in Arg1:T37 Arg2:T38	
+R8	associated_with Arg1:T36 Arg2:T39	
+R9	located_in Arg1:T40 Arg2:T41	
+R20	characteristic_of Arg1:T57 Arg2:T10	
+T1	disease 103 128	Major Depression Disorder

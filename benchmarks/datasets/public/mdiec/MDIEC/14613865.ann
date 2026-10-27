@@ -1,0 +1,86 @@
+T1	disease 0 40	Peroxynitrite-induced cardiac depression
+T2	physiology 82 94	cGMP pathway
+T3	physiology 50 77	myofilament desensitization
+T4	drug 126 139	peroxynitrite
+T5	drug 165 177	nitric oxide
+T6	drug 179 182	NO.
+T7	drug 188 198	superoxide
+T9	region 268 273	heart
+T10	disease 231 260	pathophysiological conditions
+T12	disease 309 349	peroxynitrite-induced cardiac depression
+T13	drug 424 444	intracellular Ca(2+)
+T14	drug 447 453	Ca(2+)
+T15	drug 365 370	drugs
+T17	physiology 400 419	myocardial function
+T18	method 375 396	simultaneous analyses
+T20	physiology 557 579	[Ca(2+)](i) transients
+T21	method 628 659	aequorin bioluminescence method
+T22	method 537 551	balloon method
+T23	physiology 510 535	left ventricular function
+T24	region 472 478	hearts
+T25	drug 661 674	Peroxynitrite
+T26	physiology 782 802	irreversible effects
+T28	drug 848 861	peroxynitrite
+T29	drug 809 814	drugs
+T31	drug 883 896	Peroxynitrite
+T32	drug 997 1003	Ca(2+)
+T34	signs 986 995	diastolic
+T35	signs 973 981	systolic
+T36	drug 1054 1060	Ca(2+)
+T37	drug 1075 1090	Ca(2+) channels
+T38	physiology 1094 1125	Na(+)/Ca(2+) exchange transport
+T40	drug 1144 1155	nicardipine
+T41	drug 1175 1191	dichlorobenzamil
+T42	drug 1244 1249	Ca(2+
+T43	drug 1312 1325	peroxynitrite
+T44	physiology 1271 1296	negative inotropic action
+T45	drug 1327 1340	Peroxynitrite
+T46	physiology 1380 1402	[Ca(2+)](i) transients
+T47	drug 1453 1459	Ca(2+)
+T48	drug 1546 1552	Ca(2+)
+T49	drug 1586 1654	Rp-8-(4-chlorophenylthio)guanosine-3',5'-cyclic monophosphorothioate
+T50	drug 1656 1664	Rp-cGMPS
+T54	drug 1670 1712	inhibitor of cGMP-dependent protein kinase
+T55	drug 1724 1733	inhibitor
+T56	drug 1791 1804	Peroxynitrite
+T57	physiology 1816 1839	cardiac cGMP production
+T58	physiology 1844 1864	coronary cGMP efflux
+T59	drug 1883 1896	peroxynitrite
+T60	drug 1944 1957	Peroxynitrite
+T61	drug 2022 2028	Ca(2+)
+T63	physiology 2095 2137	cGMP/cGMP-dependent protein kinase pathway
+T64	physiology 1968 1992	myocardial contractility
+R1	abbreviation_for Arg1:T6 Arg2:T5	
+R3	associated_with Arg1:T4 Arg2:T9	
+T8	method 484 505	perfused retrogradely
+T11	method 599 617	beat-to-beat basis
+T16	signs 907 942	left ventricular developed pressure
+T19	signs 944 950	LVDevP
+R4	abbreviation_for Arg1:T19 Arg2:T16	
+R5	associated_with Arg1:T31 Arg2:T16	
+R6	associated_with Arg1:T31 Arg2:T19	
+R7	associated_with Arg1:T31 Arg2:T35	
+R8	associated_with Arg1:T31 Arg2:T34	
+R9	associated_with Arg1:T36 Arg2:T40	
+R10	associated_with Arg1:T36 Arg2:T41	
+T27	region 1224 1229	cells
+T30	physiology 1348 1375	left ventricular relaxation
+R13	associated_with Arg1:T45 Arg2:T30	
+R14	associated_with Arg1:T45 Arg2:T46	
+T33	gene 1516 1527	myofilament
+R15	abbreviation_for Arg1:T50 Arg2:T49	
+R16	hyponym_of Arg1:T50 Arg2:T54	
+R17	hyponym_of Arg1:T49 Arg2:T54	
+T39	physiology 1753 1783	left ventricular contractility
+R18	treatment_for Arg1:T55 Arg2:T39	
+R19	associated_with Arg1:T56 Arg2:T57	
+R20	associated_with Arg1:T56 Arg2:T58	
+R21	associated_with Arg1:T60 Arg2:T64	
+R22	associated_with Arg1:T64 Arg2:T61	
+T51	method 468 471	Rat
+T53	drug 110 117	oxidant
+T62	drug 1490 1497	oxidant
+R2	associated_with Arg1:T62 Arg2:T33	
+R11	associated_with Arg1:T33 Arg2:T49	
+R12	associated_with Arg1:T33 Arg2:T50	
+R23	associated_with Arg1:T64 Arg2:T63	

@@ -1,0 +1,58 @@
+T0	drug 0 11	Emraclidine
+T2	disease 101 114	schizophrenia
+T4	method 118 188	two-part, randomised, double-blind, placebo-controlled, phase 1b trial
+T5	drug 21 78	positive allosteric modulator of cholinergic M4 receptors
+T6	drug 202 213	Emraclidine
+T7	drug 219 301	novel, brain-penetrant, highly selective M4 receptor positive allosteric modulator
+T8	disease 338 351	schizophrenia
+T10	drug 433 444	emraclidine
+T11	disease 462 475	schizophrenia
+T12	method 501 537	two-part, randomised, phase 1b trial
+T13	disease 655 668	schizophrenia
+T15	Health_factors 577 581	aged
+T17	method 888 897	screening
+T18	method 764 809	Mini International Neuropsychiatric Interview
+T19	drug 947 958	emraclidine
+T20	disease 1003 1016	schizophrenia
+T21	drug 1054 1065	emraclidine
+T23	method 1040 1044	oral
+T26	disease 1242 1261	acute schizophrenia
+T27	drug 1339 1350	emraclidine
+T28	drug 1369 1380	emraclidine
+T30	Health_factors 1230 1236	adults
+T33	method 1165 1215	double-blind, randomised, placebo-controlled study
+T34	drug 1586 1597	emraclidine
+T38	method 1616 1621	trial
+T39	drug 1918 1929	emraclidine
+T40	method 1831 1838	cohorts
+T43	drug 2129 2140	emraclidine
+T44	drug 2166 2177	emraclidine
+T45	drug 2297 2308	emraclidine
+T46	drug 2355 2366	emraclidine
+T49	Health_factors 2246 2260	adverse events
+T51	Health_factors 2434 2454	clinical assessments
+T53	disease 2537 2545	headache
+T54	drug 2582 2593	emraclidine
+T56	Health_factors 2519 2532	adverse event
+T57	drug 2707 2718	emraclidine
+T59	signs 2693 2703	heart rate
+T61	signs 2674 2688	blood pressure
+T62	drug 2897 2908	emraclidine
+T63	disease 2939 2952	schizophrenia
+T64	physiology 3014 3025	side-effect
+T65	method 2970 2979	titration
+R1	treatment_for Arg1:T0 Arg2:T2	
+R2	hyponym_of Arg1:T0 Arg2:T5	
+R3	hyponym_of Arg1:T6 Arg2:T7	
+R4	treatment_for Arg1:T6 Arg2:T8	
+T1	method 677 742	Diagnostic and Statistical Manual of Mental Disorders 5th edition
+R5	help_diagnose Arg1:T1 Arg2:T13	
+R6	help_diagnose Arg1:T18 Arg2:T13	
+T3	disease 815 837	extrapyramidal symptom
+R7	occurs_in Arg1:T30 Arg2:T26	
+T9	method 967 974	cohorts
+T14	Health_factors 2460 2474	weight changes
+R8	risk_factor_of Arg1:T54 Arg2:T53	
+R9	associated_with Arg1:T61 Arg2:T57	
+R10	associated_with Arg1:T59 Arg2:T57	
+R11	treatment_for Arg1:T62 Arg2:T63	

@@ -1,0 +1,4 @@
+T1	disease 11 21	Depression
+T2	disease 31 37	stroke
+T3	method 48 61	meta-analyses
+R1	associated_with Arg1:T1 Arg2:T2	

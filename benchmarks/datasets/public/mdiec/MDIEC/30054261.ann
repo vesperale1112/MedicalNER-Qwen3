@@ -1,0 +1,34 @@
+T0	disease 20 60	attention deficit hyperactivity disorder
+T1	disease 65 71	asthma
+T2	method 75 92	systematic review
+T3	method 97 110	meta-analysis
+T4	method 117 147	Swedish population-based study
+T5	disease 223 263	attention deficit hyperactivity disorder
+T6	disease 265 269	ADHD
+T7	disease 275 281	asthma
+R1	abbreviation_for Arg1:T6 Arg2:T5	
+R2	associated_with Arg1:T5 Arg2:T7	
+R3	associated_with Arg1:T6 Arg2:T7	
+T8	method 423 443	pooled unadjusted OR
+T9	method 487 505	pooled adjusted OR
+T10	disease 580 586	asthma
+T11	disease 591 595	ADHD
+R4	associated_with Arg1:T10 Arg2:T11	
+T12	method 679 701	Newcastle-Ottawa Scale
+T13	method 731 753	population-based study
+T14	disease 857 863	asthma
+T15	disease 884 888	ADHD
+T16	disease 890 896	Asthma
+T17	disease 931 935	ADHD
+R5	associated_with Arg1:T16 Arg2:T17	
+T18	method 968 979	crude model
+T19	Health_factors 994 997	sex
+T20	physiology 1010 1015	birth
+T21	method 1169 1182	meta-analysis
+T22	method 1191 1213	population-based study
+T23	disease 1256 1262	asthma
+T24	disease 1267 1271	ADHD
+R6	associated_with Arg1:T23 Arg2:T24	
+T25	method 1366 1388	population-based study
+T26	disease 1472 1476	ADHD
+T27	disease 1481 1487	asthma

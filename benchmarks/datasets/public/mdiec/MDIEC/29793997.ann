@@ -1,0 +1,52 @@
+T1	disease 584 594	overweight
+T2	disease 1660 1670	overweight
+T3	disease 1674 1681	obesity
+T4	disease 1736 1746	overweight
+T5	disease 1790 1797	obesity
+T6	method 84 113	population based cohort study
+T7	method 224 253	Population based cohort study
+T8	signs 426 441	body mass index
+T9	signs 443 446	BMI
+R1	abbreviation_for Arg1:T9 Arg2:T8	
+T10	disease 598 605	obesity
+T12	method 650 663	Poisson model
+T13	disease 688 698	depression
+T14	disease 710 721	comorbidity
+T15	drug 740 754	antiepileptics
+T16	drug 758 772	antipsychotics
+T17	drug 959 974	antidepressants
+T18	drug 1100 1115	antidepressants
+T19	drug 1176 1191	antidepressants
+T21	method 1253 1272	confidence interval
+T22	drug 1452 1467	antidepressants
+T23	method 1540 1559	confidence interval
+T26	Health_factors 1955 1985	utilisation of antidepressants
+T27	symptom 2037 2048	weight gain
+R2	risk_factor_of Arg1:T26 Arg2:T27	
+T28	symptom 2088 2099	weight gain
+T29	method 2126 2150	antidepressant treatment
+T30	Health_factors 0 26	Antidepressant utilisation
+T31	drug 172 186	antidepressant
+T32	drug 495 509	antidepressant
+T33	method 928 930	SD
+T34	symptom 1057 1068	weight gain
+T35	symptom 1309 1320	weight gain
+T36	symptom 44 55	weight gain
+T37	symptom 1516 1527	weight gain
+T39	signs 203 214	body weight
+T40	Health_factors 373 376	men
+T41	Health_factors 389 394	women
+T42	signs 553 564	body weight
+T43	Health_factors 678 681	age
+T44	Health_factors 683 686	sex
+T45	disease 774 785	deprivation
+T46	Health_factors 787 794	smoking
+T47	Health_factors 868 871	men
+T48	Health_factors 891 896	women
+T49	Health_factors 909 912	age
+T38	method 73 82	follow-up
+T50	method 1009 1018	follow-up
+T51	method 1369 1378	follow-up
+T52	Health_factors 800 814	advice on diet
+T53	method 302 340	UK Clinical Practice Research Datalink
+T54	signs 1610 1616	weight

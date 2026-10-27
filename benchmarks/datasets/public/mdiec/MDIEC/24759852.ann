@@ -1,0 +1,80 @@
+T0	disease 26 71	early childhood obsessive-compulsive disorder
+T1	method 77 151	Pediatric Obsessive-Compulsive Disorder Treatment Study for Young Children
+T5	method 165 190	randomized clinical trial
+T6	method 0 22	Family-based treatment
+T7	disease 276 305	obsessive-compulsive disorder
+T8	disease 307 310	OCD
+T11	method 203 229	Cognitive behavior therapy
+T12	method 231 234	CBT
+T13	Health_factors 318 332	older children
+T14	Health_factors 337 348	adolescents
+T15	Health_factors 368 382	young children
+T17	method 486 492	FB-CBT
+T19	Health_factors 598 606	children
+T20	Health_factors 623 626	age
+T21	method 544 567	FB relaxation treatment
+T22	method 504 537	exposure plus response prevention
+T23	method 468 484	family-based CBT
+T25	method 674 699	randomized clinical trial
+T29	Health_factors 902 905	age
+T30	disease 942 945	OCD
+T31	method 952 1000	Children's Yale-Brown Obsessive Compulsive Scale
+T33	Health_factors 864 885	pediatric outpatients
+T36	method 1032 1045	INTERVENTIONS
+T37	method 1101 1107	FB-CBT
+T39	method 1119 1152	exposure plus response prevention
+T40	method 1407 1455	Children's Yale-Brown Obsessive Compulsive Scale
+T45	method 1477 1493	Family-based CBT
+T46	Health_factors 1569 1577	children
+T47	method 1717 1723	FB-CBT
+T48	method 1647 1691	Clinical Global Impression-Improvement scale
+T50	method 1778 1784	FB-CBT
+T51	method 1861 1863	CI
+T52	method 1802 1846	Clinical Global Impression-Improvement scale
+T54	method 1915 1921	FB-CBT
+T55	method 1957 1959	CI
+T56	method 2006 2012	FB-CBT
+T58	method 2104 2106	CI
+T59	method 2030 2078	Children's Yale-Brown Obsessive Compulsive Scale
+T64	disease 2267 2288	functional impairment
+T65	Health_factors 2292 2306	young children
+T66	Health_factors 2321 2324	age
+T67	disease 2331 2334	OCD
+T68	method 2197 2215	relaxation program
+T69	method 2357 2375	clinicaltrials.gov
+T2	method 153 160	POTS Jr
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+R2	abbreviation_for Arg1:T12 Arg2:T11	
+R3	treatment_for Arg1:T11 Arg2:T7	
+R4	abbreviation_for Arg1:T8 Arg2:T7	
+R5	occurs_in Arg1:T7 Arg2:T13	
+R6	occurs_in Arg1:T8 Arg2:T13	
+R7	occurs_in Arg1:T7 Arg2:T14	
+R8	occurs_in Arg1:T8 Arg2:T14	
+R9	treatment_for Arg1:T12 Arg2:T7	
+R10	treatment_for Arg1:T11 Arg2:T8	
+R11	treatment_for Arg1:T12 Arg2:T8	
+R12	abbreviation_for Arg1:T17 Arg2:T23	
+T3	method 569 574	FB-RT
+R13	abbreviation_for Arg1:T3 Arg2:T21	
+T4	method 701 775	Pediatric Obsessive-Compulsive Disorder Treatment Study for Young Children
+T9	method 777 784	POTS Jr
+R14	abbreviation_for Arg1:T9 Arg2:T4	
+R15	hyponym_of Arg1:T39 Arg2:T37	
+T10	method 1161 1166	FB-RT
+T16	method 1256 1300	Clinical Global Impression-Improvement scale
+T18	method 1736 1741	FB-RT
+T24	method 1789 1794	FB-RT
+T26	method 1881 1903	number needed to treat
+T27	method 1905 1908	NNT
+R16	abbreviation_for Arg1:T27 Arg2:T26	
+T28	method 1925 1930	FB-RT
+T32	method 2017 2022	FB-RT
+T34	method 2164 2170	FB-CBT
+T35	disease 2250 2262	OCD symptoms
+R17	treatment_for Arg1:T34 Arg2:T35	
+R18	treatment_for Arg1:T34 Arg2:T64	
+R19	occurs_in Arg1:T65 Arg2:T67	
+R20	occurs_in Arg1:T64 Arg2:T65	
+R21	occurs_in Arg1:T35 Arg2:T65	
+T38	method 1510 1515	FB-RT

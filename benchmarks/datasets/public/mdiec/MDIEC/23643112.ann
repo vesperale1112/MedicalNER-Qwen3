@@ -1,0 +1,77 @@
+T1	disease 13 23	depression
+T2	disease 111 121	Depression
+T3	disease 254 264	depression
+T4	disease 382 401	depressive symptoms
+T6	method 1228 1257	depression awareness training
+T7	disease 2607 2616	depressed
+T8	disease 2783 2802	depressive symptoms
+T9	method 62 97	cluster-randomised controlled trial
+T11	Health_factors 204 212	Exercise
+R2	treatment_for Arg1:T11 Arg2:T3	
+T12	method 448 483	cluster-randomised controlled trial
+T14	method 965 994	depression awareness training
+T16	Health_factors 1016 1066	45 min physiotherapist-led group exercise sessions
+T18	method 935 955	intervention package
+R3	hyponym_of Arg1:T14 Arg2:T18	
+R4	hyponym_of Arg1:T16 Arg2:T18	
+T19	method 1588 1617	geriatric depression scale-15
+T20	method 1619 1625	GDS-15
+R5	abbreviation_for Arg1:T20 Arg2:T19	
+T21	method 2053 2059	GDS-15
+T22	method 2177 2183	GDS-15
+T23	method 2204 2206	CI
+T24	method 2356 2362	GDS-15
+T25	method 2383 2385	CI
+T28	method 2265 2277	intervention
+T29	method 2499 2523	cross-sectional analysis
+T30	method 2632 2634	CI
+T33	disease 1561 1580	depressive symptoms
+T34	disease 2333 2342	depressed
+T17	disease 2089 2098	depressed
+T5	method 2434 2446	intervention
+T15	method 228 249	low-risk intervention
+T35	disease 2890 2912	psychological symptoms
+T36	Health_factors 0 8	Exercise
+T37	Health_factors 317 354	moderate intensity exercise programme
+T38	Health_factors 1938 1955	exercise sessions
+T39	Health_factors 2730 2767	moderately intense exercise programme
+T40	method 898 910	intervention
+T41	method 1860 1872	intervention
+R1	help_diagnose Arg1:T19 Arg2:T33	
+R7	help_diagnose Arg1:T20 Arg2:T33	
+T10	method 2147 2156	follow-up
+T42	Health_factors 1161 1178	physical activity
+T45	Health_factors 175 202	elderly care-home residents
+T47	Health_factors 405 428	residents of care homes
+T48	Health_factors 999 1014	care-home staff
+T52	Health_factors 1417 1433	physiotherapists
+T56	Health_factors 2806 2829	residents of care homes
+T51	Health_factors 2839 2855	frail population
+T26	method 1282 1291	follow-up
+T27	method 1628 1637	Follow-up
+R6	hyponym_of Arg1:T11 Arg2:T15	
+T32	Health_factors 27 58	elderly residents of care homes
+T31	Health_factors 155 168	poor outcomes
+R8	associated_with Arg1:T2 Arg2:T31	
+T49	Health_factors 574 583	Residents
+T50	Health_factors 584 588	aged
+T53	Health_factors 802 823	private and care home
+T54	Health_factors 825 849	private and nursing home
+T55	Health_factors 881 890	residents
+T57	Health_factors 1071 1080	residents
+T58	method 1737 1747	Care homes
+T59	method 1845 1855	care homes
+T60	Health_factors 2022 2031	residents
+T61	Health_factors 2036 2045	residents
+T62	Health_factors 2323 2332	residents
+T63	Health_factors 2550 2559	residents
+T64	method 2657 2669	intervention
+R9	occurs_in Arg1:T31 Arg2:T45	
+T13	method 487 497	care homes
+R12	help_diagnose Arg1:T21 Arg2:T17	
+T43	Health_factors 601 606	older
+T44	Health_factors 638 650	statistician
+T46	Health_factors 759 772	home provider
+R10	occurs_in Arg1:T1 Arg2:T32	
+R11	occurs_in Arg1:T4 Arg2:T47	
+R13	occurs_in Arg1:T8 Arg2:T56	

@@ -1,0 +1,45 @@
+T1	disease 120 145	major depression disorder
+T2	disease 287 322	recurrent major depressive disorder
+T3	disease 324 327	MDD
+T4	disease 397 416	current MDD episode
+T5	disease 554 563	depressed
+T6	disease 601 611	depressive
+T7	disease 815 826	current MDD
+T8	disease 958 968	depression
+T9	disease 970 977	anxiety
+T10	disease 1133 1136	MDD
+T11	disease 1191 1201	depressive
+T12	disease 1206 1222	anxiety symptoms
+T13	disease 1367 1378	current MDD
+T14	disease 1485 1488	MDD
+T15	method 159 194	Mindfulness-based cognitive therapy
+T16	method 196 200	MBCT
+R1	abbreviation_for Arg1:T16 Arg2:T15	
+T17	disease 616 632	anxiety symptoms
+T18	method 0 35	Mindfulness-based cognitive therapy
+R2	abbreviation_for Arg1:T3 Arg2:T2	
+T20	method 349 353	MBCT
+T21	method 546 550	MBCT
+T22	disease 740 763	frontal alpha asymmetry
+T23	disease 765 768	FAA
+R3	abbreviation_for Arg1:T23 Arg2:T22	
+T24	method 904 908	MBCT
+T25	method 1004 1024	electroencephalogram
+T26	method 1026 1029	EEG
+R4	abbreviation_for Arg1:T26 Arg2:T25	
+T27	method 1263 1267	MBCT
+T28	method 1359 1363	MBCT
+R5	treatment_for Arg1:T28 Arg2:T13	
+T29	disease 44 61	clinical symptoms
+R6	treatment_for Arg1:T18 Arg2:T29	
+R7	treatment_for Arg1:T15 Arg2:T2	
+R8	treatment_for Arg1:T15 Arg2:T3	
+R9	treatment_for Arg1:T16 Arg2:T2	
+R10	treatment_for Arg1:T16 Arg2:T3	
+T30	disease 81 104	frontal alpha asymmetry
+T33	method 983 986	FAA
+T34	method 1256 1259	FAA
+T35	symptom 1437 1459	alpha asymmetry change
+T31	physiology 1062 1089	withdrawal-related response
+T19	disease 256 263	relapse
+T32	physiology 438 468	psychophysiological mechanisms

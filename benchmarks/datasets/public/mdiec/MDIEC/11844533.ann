@@ -1,0 +1,59 @@
+T0	disease 0 13	Schizophrenia
+T1	disease 18 45	velo-cardio-facial syndrome
+T2	disease 47 74	Velo-cardio-facial syndrome
+T3	disease 76 80	VCFS
+T4	Health_factors 143 146	man
+T5	gene 201 226	q11 band of chromosome 22
+T6	disease 232 236	VCFS
+T7	disease 273 297	congenital abnormalities
+T8	region 367 385	neural crest cells
+T10	region 328 334	organs
+T12	disease 444 448	VCFS
+T13	disease 468 488	psychiatric disorder
+T14	disease 501 514	schizophrenia
+T16	disease 632 645	schizophrenia
+T18	disease 712 725	schizophrenia
+T21	disease 843 856	schizophrenia
+T22	disease 911 915	VCFS
+T23	disease 999 1012	schizophrenia
+T24	Health_factors 817 822	child
+T25	Health_factors 830 837	parents
+T27	gene 920 934	deletion 22q11
+T29	disease 1095 1099	VCFS
+T30	disease 1187 1200	schizophrenia
+T31	gene 1177 1182	genes
+T32	Health_factors 1208 1226	general population
+T35	gene 1043 1056	chromosome 22
+T36	disease 1281 1294	schizophrenia
+T37	disease 1299 1303	VCFS
+T38	method 1339 1358	clinical management
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T9	disease 107 128	interstitial deletion
+R2	hyponym_of Arg1:T2 Arg2:T9	
+R3	hyponym_of Arg1:T3 Arg2:T9	
+T19	gene 167 193	chromosomal microdeletions
+R4	located_in Arg1:T19 Arg2:T5	
+R5	associated_with Arg1:T2 Arg2:T19	
+R6	associated_with Arg1:T3 Arg2:T19	
+R7	characteristic_of Arg1:T7 Arg2:T6	
+T42	symptom 396 418	phenotypic variability
+R8	risk_factor_of Arg1:T12 Arg2:T13	
+R9	risk_factor_of Arg1:T12 Arg2:T14	
+T15	disease 557 583	chromosome 22q11 deletions
+R10	risk_factor_of Arg1:T16 Arg2:T15	
+T17	method 671 696	molecular genetic studies
+T20	gene 755 769	chromosome 22q
+T43	gene 741 746	locus
+T28	Health_factors 864 883	monozygotic co-twin
+R11	risk_factor_of Arg1:T22 Arg2:T23	
+R12	risk_factor_of Arg1:T27 Arg2:T23	
+R13	occurs_in Arg1:T30 Arg2:T32	
+R14	associated_with Arg1:T36 Arg2:T37	
+R15	occurs_in Arg1:T9 Arg2:T4	
+T11	region 316 323	tissues
+R16	associated_with Arg1:T6 Arg2:T11	
+R17	associated_with Arg1:T6 Arg2:T10	
+R18	associated_with Arg1:T6 Arg2:T8	
+R19	associated_with Arg1:T18 Arg2:T20	
+R20	occurs_in Arg1:T25 Arg2:T21	
+T26	Health_factors 890 909	affected individual

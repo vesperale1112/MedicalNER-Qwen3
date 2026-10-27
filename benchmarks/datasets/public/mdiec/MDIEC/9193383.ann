@@ -1,0 +1,52 @@
+T0	disease 0 14	Hypofrontality
+T1	disease 18 31	schizophrenia
+T2	Health_factors 71 96	neuroleptic-nave patients
+T4	disease 33 67	distributed dysfunctional circuits
+T5	disease 152 165	schizophrenia
+T6	region 203 220	prefrontal cortex
+T7	physiology 181 199	metabolic activity
+T8	disease 284 299	chronic illness
+T9	drug 264 274	medication
+T11	signs 387 406	cerebral blood flow
+T12	method 442 445	PET
+T13	method 412 440	positron emission tomography
+T15	disease 521 528	illness
+T16	region 617 622	gyral
+T17	method 560 579	statistical methods
+T18	method 541 555	image analysis
+T20	method 733 748	normal controls
+T21	method 672 694	randomisation analysis
+T23	region 925 940	parietal cortex
+T24	region 903 920	inferior temporal
+T25	physiology 833 852	decreased perfusion
+T26	region 810 828	prefrontal regions
+T27	region 1045 1053	thalamus
+T28	region 1055 1065	cerebellum
+T29	region 1136 1169	cortical and subcortical circuits
+T32	physiology 999 1018	increased perfusion
+T34	disease 1194 1228	distributed dysfunctional circuits
+T35	disease 1258 1271	schizophrenia
+T36	disease 1280 1300	cognitive impairment
+T37	region 1308 1313	brain
+T38	disease 1437 1451	hallucinations
+T39	disease 1453 1462	delusions
+R1	characteristic_of Arg1:T7 Arg2:T5	
+R2	located_in Arg1:T7 Arg2:T6	
+R3	occurs_in Arg1:T0 Arg2:T1	
+R4	occurs_in Arg1:T4 Arg2:T2	
+R5	abbreviation_for Arg1:T12 Arg2:T13	
+R6	help_diagnose Arg1:T13 Arg2:T11	
+R7	help_diagnose Arg1:T12 Arg2:T11	
+T3	Health_factors 472 497	neuroleptic-nave patients
+T10	region 1067 1090	retrosplenial cingulate
+T19	method 775 792	follow-up analysi
+T14	region 854 860	latera
+T22	region 863 870	orbital
+T30	region 872 878	medial
+R8	associated_with Arg1:T34 Arg2:T35	
+R9	associated_with Arg1:T35 Arg2:T36	
+R10	located_in Arg1:T36 Arg2:T37	
+T31	disease 1468 1484	loss of volition
+R11	risk_factor_of Arg1:T36 Arg2:T38	
+R12	risk_factor_of Arg1:T36 Arg2:T39	
+R13	risk_factor_of Arg1:T36 Arg2:T31	

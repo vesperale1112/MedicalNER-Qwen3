@@ -1,0 +1,71 @@
+T0	disease 100 116	bipolar disorder
+T1	method 41 67	pharmacological treatments
+T2	method 120 137	systematic review
+T3	method 142 163	network meta-analysis
+T4	method 75 96	maintenance treatment
+T5	drug 176 183	Lithium
+T6	disease 242 258	bipolar disorder
+T7	drug 276 281	drugs
+T9	method 219 238	long-term treatment
+T10	disease 464 480	bipolar disorder
+T12	method 331 352	network meta-analysis
+T13	method 519 525	Embase
+T14	method 527 534	Medline
+T15	method 548 556	PsycINFO
+T16	method 566 612	Cochrane Central Register of Controlled Trials
+T17	method 617 645	randomised controlled trials
+T18	disease 714 730	bipolar disorder
+T20	method 755 766	monotherapy
+T21	method 773 789	add-on treatment
+T22	method 692 709	active treatments
+T23	disease 890 902	mood episode
+T24	Health_factors 973 987	adverse events
+T25	method 956 961	trial
+T29	method 1057 1093	random-effects network meta-analysis
+T30	method 1197 1225	randomised controlled trials
+T31	disease 1292 1308	bipolar disorder
+T35	drug 1510 1522	aripiprazole
+T36	drug 1583 1596	carbamazepine
+T37	drug 1616 1626	imipramine
+T38	drug 1650 1662	paliperidone
+T39	method 1664 1666	RR
+T43	method 1524 1534	risk ratio
+T44	method 1536 1538	RR
+T45	method 1549 1566	credible interval
+T46	method 1598 1600	RR
+T47	method 1628 1630	RR
+T49	disease 1431 1457	mood relapse or recurrence
+T52	drug 1682 1693	Lamotrigine
+T53	drug 1747 1760	carbamazepine
+T54	drug 1762 1773	lamotrigine
+T55	drug 1821 1828	lithium
+T56	drug 1869 1891	lithium plus valproate
+T59	method 1775 1777	RR
+T61	method 1802 1804	RR
+T62	method 1830 1832	RR
+T63	method 1848 1850	RR
+T64	method 1893 1895	RR
+T65	method 1911 1913	RR
+T67	drug 1968 1973	drugs
+T69	Health_factors 2154 2164	clinicians
+T70	disease 2225 2238	manic episode
+T71	disease 2243 2283	depressive episode relapse or recurrence
+T72	drug 2335 2342	lithium
+T73	disease 2442 2458	bipolar disorder
+T76	method 2361 2381	first-line treatment
+T78	drug 2401 2424	relapse-prevention drug
+R1	treatment_for Arg1:T72 Arg2:T70	
+R2	treatment_for Arg1:T72 Arg2:T71	
+R5	treatment_for Arg1:T35 Arg2:T49	
+R6	treatment_for Arg1:T5 Arg2:T6	
+T8	method 423 459	pharmacological treatment strategies
+T11	method 536 546	PreMedline
+T19	method 1030 1048	bipolar treatments
+T26	method 1103 1121	Bayesian framework
+R7	abbreviation_for Arg1:T44 Arg2:T43	
+T27	method 1568 1571	CrI
+R8	abbreviation_for Arg1:T27 Arg2:T45	
+R9	treatment_for Arg1:T36 Arg2:T49	
+R10	treatment_for Arg1:T37 Arg2:T49	
+R11	treatment_for Arg1:T38 Arg2:T49	
+R3	treatment_for Arg1:T1 Arg2:T0	

@@ -1,0 +1,78 @@
+T1	Health_factors 33 64	Younger Breast Cancer Survivors
+T2	disease 254 267	breast cancer
+T3	Health_factors 407 438	younger breast cancer survivors
+T4	disease 444 472	elevated depressive symptoms
+T6	disease 1023 1042	depressive symptoms
+T7	disease 1180 1187	fatigue
+T8	disease 1189 1197	insomnia
+T9	disease 1401 1420	depressive symptoms
+T10	disease 1756 1763	fatigue
+T11	disease 1765 1773	insomnia
+T12	disease 1779 1797	vasomotor symptoms
+T13	disease 1895 1914	depressive symptoms
+T14	Health_factors 1918 1949	younger breast cancer survivors
+T15	disease 10 29	Depressive Symptoms
+T16	method 70 118	Pathways to Wellness Randomized Controlled Trial
+T17	method 122 144	Mindfulness Meditation
+T18	Health_factors 149 171	Survivorship Education
+T19	disease 212 222	depression
+T20	method 378 402	behavioral interventions
+T21	method 474 501	mindful awareness practices
+T22	method 503 507	MAPs
+R4	abbreviation_for Arg1:T22 Arg2:T21	
+T23	Health_factors 513 535	survivorship education
+T24	method 537 539	SE
+R5	abbreviation_for Arg1:T24 Arg2:T23	
+T25	disease 695 723	elevated depressive symptoms
+T26	method 761 765	MAPs
+T27	method 767 769	SE
+T28	method 774 791	wait-list control
+T29	method 793 796	WLC
+R10	abbreviation_for Arg1:T29 Arg2:T28	
+T31	method 958 961	WLC
+T32	method 968 987	linear mixed models
+T33	method 1091 1140	Center for Epidemiologic Studies-Depression Scale
+T34	disease 1203 1221	vasomotor symptoms
+T35	method 1312 1316	MAPs
+T36	method 1327 1329	SE
+T37	method 1343 1346	WLC
+T38	method 1357 1361	MAPs
+T39	method 1366 1368	SE
+R12	treatment_for Arg1:T39 Arg2:T9	
+R13	treatment_for Arg1:T38 Arg2:T9	
+T40	method 1474 1477	WLC
+T41	method 1503 1506	WLC
+T42	method 1512 1514	CI
+T43	method 1517 1521	MAPs
+T44	method 1544 1546	SE
+T45	method 1611 1615	MAPs
+T46	method 1641 1644	WLC
+T47	method 1655 1659	MAPs
+T48	method 1682 1684	SE
+T49	method 1707 1711	MAPs
+T50	method 1721 1723	SE
+R14	treatment_for Arg1:T49 Arg2:T10	
+R15	treatment_for Arg1:T49 Arg2:T11	
+R16	treatment_for Arg1:T49 Arg2:T12	
+T51	method 1857 1879	Mindfulness meditation
+T52	method 1884 1886	SE
+R17	treatment_for Arg1:T52 Arg2:T13	
+R18	treatment_for Arg1:T51 Arg2:T13	
+T55	Health_factors 182 195	Younger women
+R20	risk_factor_of Arg1:T55 Arg2:T19	
+T56	method 303 349	randomized, multi-institution, three-arm trial
+T54	method 273 299	Pathways to Wellness study
+T57	disease 616 629	breast cancer
+T58	Health_factors 1256 1261	women
+T59	Health_factors 1270 1273	age
+T60	Health_factors 2064 2079	quality of life
+T61	method 1597 1606	follow-up
+T62	method 1824 1833	follow-up
+T63	Health_factors 655 658	age
+T64	method 907 917	follow-ups
+T30	method 1957 1970	interventions
+R1	hyponym_of Arg1:T54 Arg2:T56	
+T53	method 942 954	intervention
+R2	help_diagnose Arg1:T33 Arg2:T6	
+R19	occurs_in Arg1:T13 Arg2:T14	
+T5	Health_factors 595 600	Women

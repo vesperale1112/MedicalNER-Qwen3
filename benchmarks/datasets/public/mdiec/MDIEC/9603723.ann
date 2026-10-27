@@ -1,0 +1,30 @@
+T0	disease 0 16	Eating disorders
+T1	disease 60 76	Anorexia Nervosa
+T2	disease 81 96	Bulimia Nervosa
+T3	disease 164 206	biological and psychological abnormalities
+T4	disease 229 245	eating disorders
+T6	disease 416 423	purging
+T7	Health_factors 247 272	Inherited vulnerabilities
+T8	Health_factors 274 292	cultural pressures
+T9	Health_factors 298 339	adverse individual and family experiences
+T10	Health_factors 381 396	extreme dieting
+T11	disease 398 410	binge eating
+T14	disease 549 556	illness
+T15	disease 625 640	Bulimia Nervosa
+T16	disease 707 723	eating disorders
+T18	disease 826 842	eating disorders
+T19	disease 867 888	Binge Eating Disorder
+R1	associated_with Arg1:T3 Arg2:T4	
+R2	risk_factor_of Arg1:T7 Arg2:T10	
+R3	risk_factor_of Arg1:T7 Arg2:T11	
+R4	risk_factor_of Arg1:T7 Arg2:T6	
+R5	risk_factor_of Arg1:T8 Arg2:T10	
+R6	risk_factor_of Arg1:T8 Arg2:T11	
+R7	risk_factor_of Arg1:T8 Arg2:T6	
+R8	risk_factor_of Arg1:T9 Arg2:T10	
+R9	risk_factor_of Arg1:T9 Arg2:T11	
+R10	risk_factor_of Arg1:T9 Arg2:T6	
+T5	symptom 479 505	physiological disturbances
+R11	associated_with Arg1:T5 Arg2:T14	
+T13	method 786 794	etiology
+R12	associated_with Arg1:T18 Arg2:T19	

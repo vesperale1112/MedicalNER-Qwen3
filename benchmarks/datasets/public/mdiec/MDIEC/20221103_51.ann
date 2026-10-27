@@ -1,0 +1,25 @@
+T1	method 36 61	beck depression inventory
+T2	method 63 66	BDI
+T4	disease 77 87	depression
+T5	method 93 116	dyadic adjustment scale
+T6	method 118 121	DAS
+T8	method 166 196	short sexual functioning scale
+T9	physiology 213 231	sexual functioning
+T10	Health_factors 269 274	women
+T11	method 279 299	laparoscopic surgery
+T12	method 381 388	surgery
+T14	method 344 365	fertility exploration
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+R2	help_diagnose Arg1:T2 Arg2:T4	
+R3	help_diagnose Arg1:T1 Arg2:T4	
+R4	abbreviation_for Arg1:T6 Arg2:T5	
+T3	method 198 202	SSFS
+R5	abbreviation_for Arg1:T3 Arg2:T8	
+T7	Health_factors 307 311	LUFC
+T13	Health_factors 315 339	tertiary referral centre
+R6	hyponym_of Arg1:T7 Arg2:T13	
+T15	Health_factors 132 157	relationship satisfaction
+R7	help_diagnose Arg1:T6 Arg2:T15	
+R8	help_diagnose Arg1:T5 Arg2:T15	
+R9	help_diagnose Arg1:T3 Arg2:T9	
+R10	help_diagnose Arg1:T8 Arg2:T9	

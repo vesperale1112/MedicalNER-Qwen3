@@ -1,0 +1,15 @@
+T1	Health_factors 25 47	intravenous drug users
+T3	disease 97 107	depression
+T4	Health_factors 113 140	substance-related behaviors
+T5	Health_factors 151 185	concurrent drug use and impairment
+T9	Health_factors 187 217	future drug use and impairment
+T10	Health_factors 219 245	alcohol use and impairment
+T11	Health_factors 247 261	needle sharing
+T12	Health_factors 266 303	substance use treatment participation
+T13	Health_factors 49 53	IDUs
+R1	abbreviation_for Arg1:T13 Arg2:T1	
+R2	hyponym_of Arg1:T5 Arg2:T4	
+R3	hyponym_of Arg1:T9 Arg2:T4	
+R4	hyponym_of Arg1:T10 Arg2:T4	
+R5	hyponym_of Arg1:T11 Arg2:T4	
+R6	hyponym_of Arg1:T12 Arg2:T4	

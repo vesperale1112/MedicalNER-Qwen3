@@ -1,0 +1,54 @@
+T0	disease 70 104	mental and substance use disorders
+T1	Health_factors 26 53	years lived with disability
+T3	method 108 135	register-based cohort study
+T4	method 0 22	Register-based metrics
+T5	disease 159 175	Mental disorders
+T7	Health_factors 220 247	years lived with disability
+T8	disease 462 496	mental and substance use disorders
+T9	Health_factors 390 394	YLDs
+T10	Health_factors 424 446	Health Loss Proportion
+R1	associated_with Arg1:T1 Arg2:T0	
+T2	Health_factors 249 253	YLDs
+R2	abbreviation_for Arg1:T2 Arg2:T7	
+R3	associated_with Arg1:T5 Arg2:T7	
+R4	associated_with Arg1:T5 Arg2:T2	
+T6	method 330 348	summary statistics
+T11	Health_factors 448 452	HeLP
+R5	abbreviation_for Arg1:T11 Arg2:T10	
+T12	disease 556 581	Major depressive disorder
+T13	disease 624 637	schizophrenia
+T14	Health_factors 663 667	YLDs
+T15	Health_factors 692 696	YLDs
+R6	risk_factor_of Arg1:T13 Arg2:T14	
+T16	disease 770 783	schizophrenia
+T17	disease 852 886	mental and substance use disorders
+T18	Health_factors 900 904	HeLP
+T19	disease 912 946	mental and substance use disorders
+T20	disease 963 997	mental and substance use disorders
+T21	Health_factors 1022 1027	HeLPs
+T22	disease 1050 1072	cannabis use disorders
+T23	disease 1080 1097	drug use disorder
+T24	disease 1102 1106	ADHD
+R7	associated_with Arg1:T20 Arg2:T21	
+R8	occurs_in Arg1:T21 Arg2:T22	
+R9	occurs_in Arg1:T21 Arg2:T23	
+R10	occurs_in Arg1:T21 Arg2:T24	
+T25	disease 1121 1132	comorbidity
+T26	Health_factors 1157 1162	HeLPs
+T27	disease 1178 1203	autism spectrum disorders
+T28	disease 1205 1221	conduct disorder
+T29	disease 1227 1240	schizophrenia
+R11	associated_with Arg1:T25 Arg2:T26	
+R12	occurs_in Arg1:T26 Arg2:T27	
+R13	occurs_in Arg1:T26 Arg2:T28	
+R14	occurs_in Arg1:T26 Arg2:T29	
+T30	disease 1284 1294	disability
+T31	Health_factors 1315 1318	age
+T32	Health_factors 1320 1323	sex
+T33	Health_factors 676 681	sexes
+T34	Health_factors 1348 1352	HeLP
+T35	disease 1406 1417	comorbidity
+T36	disease 1425 1435	disability
+T37	disease 1452 1486	mental and substance use disorders
+R17	associated_with Arg1:T35 Arg2:T36	
+R18	associated_with Arg1:T36 Arg2:T37	

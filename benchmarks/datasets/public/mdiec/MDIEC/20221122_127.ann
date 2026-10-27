@@ -1,0 +1,24 @@
+T1	Health_factors 3 20	older adolescents
+T2	Health_factors 25 40	emerging adults
+T3	disease 42 45	MDD
+T4	disease 50 53	GAD
+T5	signs 85 94	bone mass
+T6	signs 190 199	bone mass
+T7	signs 226 235	bone mass
+T8	region 116 128	lumbar spine
+T9	Health_factors 136 143	females
+T10	Health_factors 203 210	females
+T11	drug 153 158	SSRIs
+T14	Health_factors 239 244	males
+R1	associated_with Arg1:T4 Arg2:T5	
+R2	associated_with Arg1:T3 Arg2:T5		
+R5	associated_with Arg1:T11 Arg2:T6	
+R6	associated_with Arg1:T11 Arg2:T7	
+R7	located_in Arg1:T5 Arg2:T8	
+R8	occurs_in Arg1:T5 Arg2:T9	
+R3	occurs_in Arg1:T6 Arg2:T10	
+R4	occurs_in Arg1:T7 Arg2:T14	
+R9	occurs_in Arg1:T2 Arg2:T3	
+R10	occurs_in Arg1:T2 Arg2:T4	
+R11	occurs_in Arg1:T1 Arg2:T3	
+R12	occurs_in Arg1:T1 Arg2:T4	

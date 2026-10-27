@@ -1,0 +1,70 @@
+T0	disease 0 13	Schizophrenia
+T1	disease 15 30	substance abuse
+T2	Health_factors 36 49	violent crime
+T3	disease 72 85	schizophrenia
+T5	Health_factors 136 149	violent crime
+T8	disease 492 505	schizophrenia
+T10	method 425 449	violence risk assessment
+T12	Health_factors 544 557	violent crime
+T13	disease 593 606	schizophrenia
+T15	disease 623 638	substance abuse
+T18	Health_factors 780 799	hospital admissions
+T19	method 748 776	nationwide Swedish registers
+T20	method 699 719	Longitudinal designs
+T21	disease 892 905	schizophrenia
+T23	Health_factors 847 860	violent crime
+T25	disease 1078 1105	substance abuse comorbidity
+T26	Health_factors 1011 1014	age
+T27	Health_factors 1016 1019	sex
+T28	Health_factors 1021 1027	income
+T32	disease 1257 1270	schizophrenia
+T33	Health_factors 1194 1202	violence
+T37	Health_factors 1339 1352	Violent crime
+T38	Health_factors 1382 1390	homicide
+T39	Health_factors 1437 1452	illegal threats
+T40	Health_factors 1392 1399	assault
+T43	disease 1499 1512	schizophrenia
+T44	method 1616 1635	adjusted odds ratio
+T45	method 1637 1639	OR
+T46	method 1651 1670	confidence interval
+T47	method 1672 1674	CI
+T48	disease 1733 1760	substance abuse comorbidity
+T49	disease 1939 1952	schizophrenia
+T51	Health_factors 1829 1842	violent crime
+T52	method 1864 1875	adjusted OR
+T53	method 1886 1888	CI
+T55	method 2044 2055	adjusted OR
+T56	method 2066 2068	CI
+T57	disease 1970 1997	substance abuse comorbidity
+T58	disease 2269 2282	schizophrenia
+T59	disease 2519 2532	schizophrenia
+T61	method 2355 2366	adjusted OR
+T62	method 2377 2379	CI
+T63	gene 2448 2455	genetic
+T64	Health_factors 2537 2545	violence
+T66	disease 2139 2166	substance abuse comorbidity
+T67	disease 2561 2574	Schizophrenia
+T68	Health_factors 2616 2629	violent crime
+T69	method 2638 2656	longitudinal study
+T71	disease 2708 2723	substance abuse
+T74	disease 2831 2842	comorbidity
+R1	risk_factor_of Arg1:T3 Arg2:T5	
+T76	Health_factors 176 206	general population individuals
+T6	Health_factors 804 824	criminal convictions
+T7	Health_factors 946 973	general population controls
+T9	Health_factors 1033 1061	marital and immigrant status
+T11	Health_factors 1209 1228	unaffected siblings
+T14	Health_factors 1358 1377	criminal conviction
+T16	Health_factors 1401 1408	robbery
+T17	Health_factors 1587 1614	general population controls
+R2	risk_factor_of Arg1:T48 Arg2:T51	
+T24	Health_factors 2206 2225	unaffected siblings
+T29	Health_factors 2289 2304	violent offense
+T30	Health_factors 2334 2353	unaffected siblings
+R3	risk_factor_of Arg1:T67 Arg2:T68	
+T4	Health_factors 1410 1415	arson
+T22	Health_factors 1421 1435	sexual offense
+T31	Health_factors 1457 1469	intimidation
+T34	Health_factors 1542 1557	violent offense
+T35	Health_factors 2027 2042	violent offense
+R4	associated_with Arg1:T59 Arg2:T64	

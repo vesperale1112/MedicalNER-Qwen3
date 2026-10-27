@@ -1,0 +1,8 @@
+T1	signs 24 52	regional cerebral blood flow
+T2	signs 54 58	rCBF
+T3	disease 63 88	major depressive disorder
+T4	method 126 150	antidepressant treatment
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+T5	disease 12 52	Compromised regional cerebral blood flow
+R2	treatment_for Arg1:T4 Arg2:T5	
+R3	occurs_in Arg1:T5 Arg2:T3	

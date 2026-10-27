@@ -1,0 +1,68 @@
+T1	disease 61 71	depression
+T2	disease 185 195	depression
+T3	disease 337 347	depression
+T4	disease 452 462	depression
+T5	drug 627 643	nitrogen dioxide
+T6	drug 645 648	NO2
+T7	disease 725 735	Depression
+T8	disease 1012 1022	depression
+T9	disease 1208 1227	depressive symptoms
+T10	disease 1229 1242	cancer status
+T11	disease 1451 1461	depression
+T12	disease 1627 1637	depression
+T13	drug 1773 1776	NO2
+T14	disease 2058 2068	depression
+T15	disease 2159 2169	depression
+T16	method 75 104	population-based cohort study
+T17	Health_factors 0 43	Long-term exposure to ambient air pollution
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+T18	method 670 689	land-use regression
+T19	method 691 694	LUR
+R3	abbreviation_for Arg1:T19 Arg2:T18	
+T20	method 769 794	Health Information System
+T21	method 796 799	HIS
+R4	abbreviation_for Arg1:T21 Arg2:T20	
+R5	help_diagnose Arg1:T20 Arg2:T7	
+R6	help_diagnose Arg1:T21 Arg2:T7	
+T22	method 884 905	Cox regression models
+T23	method 950 963	hazard ratios
+T24	method 965 968	HRs
+R7	abbreviation_for Arg1:T24 Arg2:T23	
+T25	method 978 998	confidence intervals
+T26	method 1004 1007	CIs
+R8	abbreviation_for Arg1:T26 Arg2:T25	
+T27	disease 1148 1159	comorbidity
+T28	Health_factors 1244 1261	COVID-19 pandemic
+T29	method 1347 1367	sensitivity analyses
+T30	Health_factors 1572 1586	air pollutants
+R9	risk_factor_of Arg1:T30 Arg2:T12	
+T31	method 1661 1664	HRs
+T32	method 1679 1681	CI
+T33	method 1715 1717	CI
+T34	method 1753 1755	CI
+T35	method 1778 1795	Subgroup analyses
+T36	method 1943 1963	sensitivity analyses
+T37	Health_factors 1978 2021	Long-term exposure to ambient air pollution
+R10	risk_factor_of Arg1:T37 Arg2:T14	
+T39	Health_factors 301 333	long-term air pollution exposure
+T40	method 419 433	Yinzhou Cohort
+T41	Health_factors 437 443	adults
+T42	method 599 604	PM2.5
+T43	method 617 621	PM10
+T45	Health_factors 1103 1130	demographic characteristics
+T46	Health_factors 1132 1142	lifestyles
+T47	Health_factors 1170 1187	physical activity
+T48	Health_factors 1297 1319	air pollution exposure
+T49	Health_factors 1395 1401	adults
+T50	Health_factors 1414 1417	age
+T51	method 1699 1704	PM2.5
+T52	method 1735 1739	PM10
+T54	Health_factors 1871 1884	air pollution
+T55	Health_factors 2097 2110	air pollution
+T38	Health_factors 127 170	Long-term exposure to ambient air pollution
+R1	associated_with Arg1:T38 Arg2:T2	
+T53	method 480 491	followed up
+T44	Health_factors 1033 1042	pollutant
+R11	risk_factor_of Arg1:T51 Arg2:T12	
+R12	risk_factor_of Arg1:T52 Arg2:T12	
+R13	risk_factor_of Arg1:T13 Arg2:T12	

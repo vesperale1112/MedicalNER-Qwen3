@@ -1,0 +1,51 @@
+T0	disease 11 44	stress-induced persistent anxiety
+T3	region 51 91	extra-amygdala septohypothalamic circuit
+T4	disease 165 169	fear
+T5	disease 174 181	anxiety
+T7	region 145 161	neural circuitry
+T8	region 191 212	septohippocampal axis
+T9	region 97 114	extended amygdala
+T10	disease 290 294	fear
+T11	disease 299 306	anxiety
+T12	region 334 346	hypothalamus
+T13	region 247 261	lateral septum
+T15	gene 423 442	type 2 CRF receptor
+T16	gene 444 449	Crfr2
+T17	region 469 479	LS neurons
+T18	physiology 486 509	functional connectivity
+T19	region 551 565	Crfr2(+) cells
+T20	region 574 602	GABAergic projection neurons
+T22	region 625 646	anterior hypothalamus
+T23	disease 738 745	anxiety
+T27	disease 840 868	persistent anxious behaviors
+T29	physiology 760 780	transient activation
+T30	gene 870 881	LS Crfr2(+)
+T32	signs 915 948	circulating corticosteroid levels
+T33	region 982 1003	LS projection neurons
+T34	disease 1101 1126	persistent anxiety states
+T36	disease 1040 1065	stress-induced behavioral
+T37	region 1141 1149	cellular
+T38	region 1168 1180	LS circuitry
+T39	physiology 1070 1086	endocrinological
+R2	associated_with Arg1:T0 Arg2:T3	
+T2	region 263 265	LS
+R3	abbreviation_for Arg1:T2 Arg2:T13	
+R4	associated_with Arg1:T13 Arg2:T10	
+R5	associated_with Arg1:T13 Arg2:T11	
+R6	associated_with Arg1:T2 Arg2:T10	
+R7	associated_with Arg1:T2 Arg2:T11	
+R8	associated_with Arg1:T13 Arg2:T12	
+R9	associated_with Arg1:T2 Arg2:T12	
+R10	abbreviation_for Arg1:T16 Arg2:T15	
+R11	associated_with Arg1:T16 Arg2:T17	
+R12	associated_with Arg1:T15 Arg2:T17	
+R13	hyponym_of Arg1:T20 Arg2:T19	
+R14	associated_with Arg1:T20 Arg2:T22	
+T6	region 681 683	LS
+R15	associated_with Arg1:T6 Arg2:T23	
+T14	region 784 800	Crfr2(+) neurons
+R17	associated_with Arg1:T14 Arg2:T27	
+R18	associated_with Arg1:T30 Arg2:T32	
+R19	associated_with Arg1:T33 Arg2:T34	
+T1	method 537 549	optogenetics
+T21	symptom 700 734	stress-induced behavioral measures

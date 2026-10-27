@@ -1,0 +1,41 @@
+T1	disease 78 103	Major depression disorder
+T2	disease 105 108	MDD
+T3	disease 396 412	major depression
+T4	disease 526 545	depressive symptoms
+T5	disease 914 924	depression
+T6	disease 1118 1134	major depression
+T7	disease 1710 1724	mood disorders
+T8	disease 1851 1870	depressive episodes
+T9	method 51 76	antidepressants treatment
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+T10	Health_factors 235 260	World Health Organisation
+T11	method 262 265	WHO
+R2	abbreviation_for Arg1:T11 Arg2:T10	
+T12	drug 341 367	Antidepressant medications
+T13	drug 477 497	antidepressant drugs
+T14	physiology 557 572	drug resistance
+T15	disease 694 702	suicidal
+T16	disease 678 688	disability
+T17	physiology 714 740	Antidepressants resistance
+T19	method 989 1012	antidepressant research
+T20	physiology 1070 1095	antidepressant resistance
+T21	method 1182 1206	antidepressant treatment
+T22	physiology 1304 1329	antidepressant resistance
+T23	symptom 1438 1456	genetic variations
+T24	physiology 1496 1519	antidepressant response
+T25	physiology 1691 1706	drug resistance
+T26	method 1758 1780	therapeutic management
+T27	physiology 1906 1921	drug resistance
+T28	physiology 1994 2014	treatment resistance
+T29	method 2099 2131	clinical and preclinical studies
+T30	physiology 2135 2150	drug resistance
+T31	method 2154 2178	antidepressant therapies
+T32	physiology 2324 2349	antidepressant resistance
+T34	method 1230 1257	clinical and basic research
+T38	Health_factors 762 794	mental health care professionals
+T39	Health_factors 881 896	quality of life
+T40	Health_factors 1788 1801	psychiatrists
+T41	signs 2025 2043	genetic biomarkers
+T36	drug 838 849	medications
+R10	risk_factor_of Arg1:T13 Arg2:T14	
+R5	treatment_for Arg1:T12 Arg2:T3	

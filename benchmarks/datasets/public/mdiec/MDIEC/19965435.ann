@@ -1,0 +1,34 @@
+T1	gene 38 47	dysbindin
+T2	gene 4 37	schizophrenia susceptibility gene
+T3	physiology 57 77	synaptic homeostasis
+T4	physiology 83 103	molecular mechanisms
+T6	physiology 117 161	homeostatic stabilization of neural function
+T7	method 292 338	electrophysiology-based forward genetic screen
+T8	gene 382 408	neuronally expressed genes
+T11	physiology 211 226	neural function
+T12	gene 597 606	dysbindin
+T13	disease 625 638	schizophrenia
+T14	gene 610 614	gene
+T16	gene 531 557	numerous synaptic proteins
+T18	gene 664 673	dysbindin
+T19	physiology 839 853	calcium influx
+T20	physiology 710 765	retrograde, homeostatic modulation of neurotransmission
+T23	disease 965 993	complex neurological disease
+T24	physiology 888 914	adaptive neural plasticity
+R1	associated_with Arg1:T1 Arg2:T3	
+T25	physiology 427 474	homeostatic modulation of synaptic transmission
+T9	Health_factors 478 488	Drosophila
+R2	occurs_in Arg1:T25 Arg2:T9	
+R3	hyponym_of Arg1:T12 Arg2:T14	
+R4	associated_with Arg1:T12 Arg2:T13	
+T15	Health_factors 642 648	humans
+R5	occurs_in Arg1:T13 Arg2:T15	
+R6	associated_with Arg1:T18 Arg2:T20	
+T26	gene 861 870	dysbindin
+R7	associated_with Arg1:T26 Arg2:T24	
+T21	physiology 928 957	altered homeostatic signaling
+R8	associated_with Arg1:T21 Arg2:T23	
+R9	associated_with Arg1:T26 Arg2:T21	
+R10	associated_with Arg1:T26 Arg2:T23	
+T5	region 686 701	presynaptically
+R11	associated_with Arg1:T18 Arg2:T19	

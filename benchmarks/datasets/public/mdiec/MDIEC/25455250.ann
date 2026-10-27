@@ -1,0 +1,29 @@
+T1	disease 11 37	perinatal mental disorders
+T2	region 45 50	fetus
+T3	disease 62 88	Perinatal mental disorders
+T4	disease 127 171	psychological and developmental disturbances
+T5	disease 302 320	parental disorders
+T6	disease 842 859	parental disorder
+T7	disease 921 940	maternal depression
+T8	Health_factors 55 60	child
+T9	Health_factors 175 183	children
+T10	Health_factors 325 343	offspring outcomes
+T11	Health_factors 370 381	adolescence
+T14	Health_factors 385 437	high-income, middle-income, and low-income countries
+T15	Health_factors 598 616	offspring outcomes
+T16	method 883 896	interventions
+T17	Health_factors 1145 1152	parents
+T18	method 1179 1198	early interventions
+T19	method 1203 1222	prevention research
+T20	Health_factors 1286 1306	low-income countries
+T23	Health_factors 1068 1087	policy implications
+T24	Health_factors 1026 1049	caregiving difficulties
+T25	Health_factors 773 820	social (including partner) and material support
+T26	Health_factors 754 771	parenting quality
+T28	physiology 349 366	fetal development
+R1	risk_factor_of Arg1:T3 Arg2:T4	
+R2	occurs_in Arg1:T4 Arg2:T9	
+R3	associated_with Arg1:T5 Arg2:T10	
+T12	disease 571 593	parent psychopathology
+R4	associated_with Arg1:T12 Arg2:T15	
+T13	Health_factors 1238 1281	socioeconomically disadvantaged populations

@@ -1,0 +1,88 @@
+T0	drug 17 39	paliperidone palmitate
+T1	drug 43 64	haloperidol decanoate
+T2	disease 94 107	schizophrenia
+T3	method 111 136	randomized clinical trial
+T4	method 69 90	maintenance treatment
+T5	disease 245 277	schizophrenia-spectrum disorders
+T6	drug 149 186	Long-acting injectable antipsychotics
+T7	Health_factors 206 229	medication nonadherence
+T8	disease 234 241	relapse
+T12	drug 344 386	second-generation and older antipsychotics
+T14	drug 458 535	second-generation long-acting injectable antipsychotic paliperidone palmitate
+T20	drug 551 609	long-acting injectable antipsychotic haloperidol decanoate
+T21	method 647 697	Multisite, double-blind, randomized clinical trial
+T22	disease 826 839	schizophrenia
+T23	disease 843 867	schizoaffective disorder
+T25	Health_factors 804 810	adults
+T26	disease 914 921	relapse
+T27	drug 951 987	long-acting injectable antipsychotic
+T31	method 991 1004	INTERVENTIONS
+T36	drug 1348 1366	oral antipsychotic
+T37	drug 1427 1464	long-acting injectable antipsychotics
+T38	method 1520 1542	long-acting injectable
+T42	method 1240 1260	crisis stabilization
+T43	Health_factors 1200 1227	psychiatric hospitalization
+T46	drug 1636 1661	antipsychotic medications
+T47	Health_factors 1610 1632	common adverse effects
+T51	method 1819 1840	adjusted hazard ratio
+T52	method 1852 1854	CI
+T54	drug 1950 1972	paliperidone palmitate
+T55	drug 2001 2022	haloperidol decanoate
+T56	drug 2062 2084	paliperidone palmitate
+T57	drug 2122 2143	haloperidol decanoate
+T58	drug 2233 2255	paliperidone palmitate
+T59	drug 2336 2357	haloperidol decanoate
+T60	signs 2098 2104	weight
+T61	signs 2155 2161	weight
+T62	signs 2202 2208	weight
+T63	method 2286 2288	CI
+T64	method 2373 2375	CI
+T65	drug 2410 2432	paliperidone palmitate
+T66	gene 2481 2496	serum prolactin
+T67	Health_factors 2498 2501	men
+T68	method 2518 2520	CI
+T69	method 2553 2555	CI
+T70	Health_factors 2588 2593	women
+T71	method 2606 2608	CI
+T72	method 2637 2639	CI
+T73	drug 2680 2701	haloperidol decanoate
+T74	disease 2758 2767	akathisia
+T75	method 2779 2781	CI
+T76	method 2807 2809	CI
+T80	Health_factors 2863 2869	adults
+T81	disease 2875 2888	schizophrenia
+T82	disease 2892 2916	schizoaffective disorder
+T83	symptom 3080 3091	weight gain
+T85	disease 3189 3198	akathisia
+T86	gene 3117 3132	serum prolactin
+T87	drug 3291 3313	paliperidone palmitate
+T88	method 3213 3216	CIs
+R1	treatment_for Arg1:T0 Arg2:T2	
+R2	treatment_for Arg1:T1 Arg2:T2	
+R3	treatment_for Arg1:T6 Arg2:T7	
+R4	treatment_for Arg1:T6 Arg2:T8	
+R5	occurs_in Arg1:T8 Arg2:T5	
+R6	occurs_in Arg1:T7 Arg2:T5	
+T9	method 309 340	long-acting injectable versions
+T10	method 1005 1029	Intramuscular injections
+T11	drug 1033 1054	haloperidol decanoate
+T13	drug 1071 1093	paliperidone palmitate
+T15	Health_factors 1301 1318	outpatient visits
+T16	method 1686 1722	statistically significant difference
+T17	drug 1759 1781	paliperidone palmitate
+T18	drug 1796 1817	haloperidol decanoate
+R7	associated_with Arg1:T56 Arg2:T60	
+R8	associated_with Arg1:T57 Arg2:T61	
+T19	method 2183 2201	least-squares mean
+R9	associated_with Arg1:T62 Arg2:T58	
+R10	associated_with Arg1:T62 Arg2:T59	
+R11	associated_with Arg1:T65 Arg2:T66	
+R12	risk_factor_of Arg1:T73 Arg2:T74	
+R13	occurs_in Arg1:T80 Arg2:T81	
+R14	occurs_in Arg1:T80 Arg2:T82	
+T24	drug 2925 2947	paliperidone palmitate
+T28	drug 2951 2972	haloperidol decanoate
+R15	risk_factor_of Arg1:T24 Arg2:T83	
+R17	risk_factor_of Arg1:T24 Arg2:T86	
+T29	drug 3142 3163	haloperidol decanoate
+R16	risk_factor_of Arg1:T29 Arg2:T85	

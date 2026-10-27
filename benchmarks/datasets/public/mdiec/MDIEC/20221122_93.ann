@@ -1,0 +1,12 @@
+T2	physiology 57 82	spinal cord disinhibition
+T3	gene 93 124	altered GABAA receptor function
+T4	disease 159 171	RDD deficits
+T5	physiology 241 261	spinal disinhibition
+T7	disease 201 224	neuropathic pain states
+T1	gene 16 20	BDNF
+R1	associated_with Arg1:T1 Arg2:T2	
+R2	risk_factor_of Arg1:T3 Arg2:T2	
+T8	method 128 141	diabetic rats
+R3	characteristic_of Arg1:T4 Arg2:T7	
+R4	occurs_in Arg1:T3 Arg2:T8	
+R5	associated_with Arg1:T7 Arg2:T5	

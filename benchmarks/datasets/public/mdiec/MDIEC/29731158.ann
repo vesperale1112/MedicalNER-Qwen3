@@ -1,0 +1,101 @@
+T0	disease 14 44	post-traumatic stress disorder
+T2	Health_factors 78 102	children's mental health
+T3	method 106 118	cohort study
+T4	disease 235 258	psychological disorders
+T6	Health_factors 144 155	adolescents
+T8	Health_factors 185 201	world's refugees
+T9	disease 339 369	post-traumatic stress disorder
+T10	disease 371 375	PTSD
+T11	Health_factors 264 277	mental health
+T12	Health_factors 281 297	refugee children
+T13	Health_factors 386 396	caregivers
+T14	disease 444 448	PTSD
+T15	Health_factors 424 442	refugee caregivers
+T16	Health_factors 459 478	child mental health
+T19	Health_factors 593 611	refugee caregivers
+T20	disease 672 676	PTSD
+T21	disease 622 628	trauma
+T22	Health_factors 651 660	stressors
+T25	Health_factors 745 771	child psychological health
+T27	method 788 800	cohort study
+T29	Health_factors 920 928	refugees
+T30	method 875 916	population-based prospective cohort study
+T31	Health_factors 1033 1037	aged
+T32	Health_factors 1050 1055	older
+T33	disease 1245 1249	PTSD
+T34	disease 1330 1334	PTSD
+T35	Health_factors 1235 1244	caregiver
+T36	Health_factors 1254 1280	postmigration difficulties
+T37	Health_factors 1320 1329	caregiver
+T38	Health_factors 1425 1443	primary caregivers
+T39	disease 1518 1522	PTSD
+T41	Health_factors 1481 1507	postmigration difficulties
+T43	Health_factors 1629 1634	child
+T44	method 1578 1618	Strengths and Difficulties Questionnaire
+T45	Health_factors 1528 1558	harsh and warm parenting style
+T46	disease 1694 1698	PTSD
+T50	disease 1762 1799	children's psychological difficulties
+T51	Health_factors 1741 1756	parenting style
+T52	Health_factors 1716 1739	postmigration stressors
+T54	method 1644 1657	path analysis
+T56	Health_factors 1913 1918	child
+T57	Health_factors 1924 1932	children
+T58	Health_factors 1843 1861	primary caregivers
+T60	Health_factors 1939 1957	primary caregivers
+T61	Health_factors 1967 1975	children
+T63	disease 2174 2178	PTSD
+T64	symptom 2309 2322	hyperactivity
+T65	disease 2341 2359	emotional symptoms
+T66	method 2048 2061	Path analyses
+T67	Health_factors 2076 2102	caregivers' trauma history
+T68	Health_factors 2107 2133	postmigration difficulties
+T69	Health_factors 2222 2237	harsh parenting
+T70	Health_factors 2268 2290	child conduct problems
+T71	Health_factors 2382 2395	peer problems
+T72	disease 2465 2469	PTSD
+T73	Health_factors 2447 2464	primary caregiver
+T76	disease 2473 2502	children's emotional problems
+T77	disease 2538 2542	PTSD
+T78	Health_factors 2546 2554	refugees
+T79	Health_factors 2574 2596	harsh parenting styles
+T80	Health_factors 2609 2624	adverse effects
+T81	Health_factors 2634 2658	children's mental health
+T82	disease 2734 2738	PTSD
+T83	Health_factors 2682 2714	refugee children's mental health
+T84	Health_factors 2742 2749	parents
+T85	Health_factors 2754 2764	caregivers
+T86	Health_factors 2806 2814	children
+T89	Health_factors 2841 2885	National Health and Medical Research Council
+R1	occurs_in Arg1:T77 Arg2:T78	
+R2	associated_with Arg1:T77 Arg2:T79	
+R3	risk_factor_of Arg1:T79 Arg2:T81	
+R4	risk_factor_of Arg1:T67 Arg2:T63	
+R5	risk_factor_of Arg1:T68 Arg2:T63	
+R6	risk_factor_of Arg1:T63 Arg2:T69	
+T90	Health_factors 48 67	refugees' parenting
+R10	associated_with Arg1:T0 Arg2:T90	
+R11	associated_with Arg1:T0 Arg2:T2	
+T1	Health_factors 131 139	Children
+R12	risk_factor_of Arg1:T1 Arg2:T4	
+R13	risk_factor_of Arg1:T6 Arg2:T4	
+R14	abbreviation_for Arg1:T10 Arg2:T9	
+R15	occurs_in Arg1:T10 Arg2:T13	
+R16	occurs_in Arg1:T9 Arg2:T13	
+R17	occurs_in Arg1:T11 Arg2:T12	
+R18	associated_with Arg1:T11 Arg2:T9	
+R19	associated_with Arg1:T11 Arg2:T10	
+R20	associated_with Arg1:T14 Arg2:T16	
+T5	Health_factors 710 729	parenting behaviour
+T7	method 833 871	Building a New Life in Australia study
+T17	Health_factors 1106 1113	refugee
+T18	Health_factors 1133 1154	migrating family unit
+T23	Health_factors 1465 1479	trauma history
+T24	Health_factors 1700 1714	trauma history
+R21	associated_with Arg1:T72 Arg2:T76	
+R22	occurs_in Arg1:T82 Arg2:T84	
+R23	occurs_in Arg1:T82 Arg2:T85	
+T26	Health_factors 2774 2794	parenting behaviours
+R7	risk_factor_of Arg1:T69 Arg2:T70	
+R8	risk_factor_of Arg1:T69 Arg2:T64	
+R9	risk_factor_of Arg1:T69 Arg2:T65	
+R24	risk_factor_of Arg1:T69 Arg2:T71	

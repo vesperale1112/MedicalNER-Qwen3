@@ -1,0 +1,8 @@
+T2	method 14 27	questionnaire
+T4	method 32 47	threshold score
+T7	method 117 131	questionnaires
+T9	disease 170 177	anxiety
+T10	disease 182 192	depression
+T1	method 156 165	screening
+R1	help_diagnose Arg1:T7 Arg2:T9	
+R2	help_diagnose Arg1:T7 Arg2:T10	

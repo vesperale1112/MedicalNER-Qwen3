@@ -1,0 +1,6 @@
+T1	method 26 51	randomized clinical trial
+T5	method 344 386	primary care Internet depression treatment
+T6	Health_factors 420 442	Internet support group
+T7	Health_factors 444 447	ISG
+R1	abbreviation_for Arg1:T7 Arg2:T6	
+T2	Health_factors 240 249	physician

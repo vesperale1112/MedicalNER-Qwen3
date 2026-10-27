@@ -1,0 +1,45 @@
+T1	drug 0 10	Duloxetine
+T3	drug 214 224	duloxetine
+T5	drug 384 394	Duloxetine
+T6	drug 736 746	Duloxetine
+T7	drug 840 850	duloxetine
+T8	drug 1145 1155	duloxetine
+T2	disease 14 47	elderly major depression disorder
+#1	AnnotatorNotes T3	C0245561
+T4	disease 242 267	major depressive disorder
+#2	AnnotatorNotes T4	C1269683
+T9	method 1277 1302	Beck Depression Inventory
+#3	AnnotatorNotes T9	C0451022
+T10	method 1307 1341	Hamilton Rating Scales for Anxiety
+T11	method 492 537	21-item Hamilton Rating Scales for Depression
+T12	method 539 573	Hamilton Rating Scales for Anxiety
+T14	method 616 645	Mini Mental State Examination
+T15	method 647 678	Cumulative Illness Rating Scale
+T16	method 680 693	Barthel Index
+T17	method 698 725	Beck's Depression Inventory
+#4	AnnotatorNotes T16	C0451019
+#5	AnnotatorNotes T14	C0451306
+#6	AnnotatorNotes T1	C0245561
+T13	method 909 954	21-item Hamilton Rating Scales for Depression
+T18	method 1046 1080	Hamilton Rating Scales for Anxiety
+T20	method 124 153	open-label naturalistic study
+T21	Health_factors 275 282	elderly
+T24	method 579 614	Clinical Global Impression Severity
+T26	region 860 866	plasma
+T27	region 764 766	T2
+T28	region 971 973	T2
+T29	region 974 976	T3
+T30	region 978 980	T4
+T31	region 989 992	T12
+T32	region 1093 1095	T3
+T33	region 1099 1102	T12
+T34	region 1159 1165	plasma
+T22	disease 1421 1431	discomfort
+T23	method 298 329	naturalistic, open-label design
+T25	Health_factors 354 358	aged
+T38	region 982 984	T9
+R1	located_in Arg1:T8 Arg2:T34	
+T19	signs 67 84	drug plasma level
+R2	located_in Arg1:T6 Arg2:T27	
+R3	associated_with Arg1:T8 Arg2:T9	
+R4	associated_with Arg1:T8 Arg2:T10	

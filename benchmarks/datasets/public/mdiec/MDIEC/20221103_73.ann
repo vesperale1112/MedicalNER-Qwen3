@@ -1,0 +1,6 @@
+T1	drug 0 10	Sertraline
+T2	physiology 23 47	anticholinergic activity
+T3	physiology 74 96	cardiovascular effects
+T5	Health_factors 154 161	elderly
+T6	disease 196 220	cardiovascular disorders
+R1	treatment_for Arg1:T1 Arg2:T6	

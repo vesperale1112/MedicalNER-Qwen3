@@ -1,0 +1,8 @@
+T1	drug 104 111	25[OH]D
+T9	physiology 117 133	vitamin D intake
+T10	disease 170 180	depression
+T11	physiology 186 207	cognitive performance
+T12	drug 77 102	serum 25-hydroxyvitamin D
+T13	physiology 150 168	glucose metabolism
+R1	abbreviation_for Arg1:T1 Arg2:T12	
+T2	signs 139 146	markers

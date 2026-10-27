@@ -1,0 +1,36 @@
+T0	disease 14 21	anxiety
+T1	physiology 42 63	anandamide hydrolysis
+T2	drug 107 136	Delta(9)-tetrahydrocannabinol
+T3	gene 190 215	CB1 cannabinoid receptors
+T4	drug 233 256	endogenous cannabinoids
+T5	drug 327 356	Delta(9)-tetrahydrocannabinol
+T6	drug 97 105	cannabis
+T9	physiology 279 297	control of emotion
+T10	physiology 157 177	subjective responses
+T11	drug 545 568	endogenous cannabinoids
+T12	drug 511 516	drugs
+T14	gene 687 713	fatty acid amide hydrolase
+T17	drug 872 886	benzodiazepine
+T21	method 844 848	rats
+T22	method 919 933	zero-maze test
+T23	drug 821 839	anti-anxiety drugs
+T24	drug 1039 1049	anandamide
+T25	physiology 1071 1092	CB1 receptor blockade
+T26	region 1023 1028	brain
+T27	drug 1120 1130	anandamide
+T28	method 1195 1232	fatty acid amide hydrolase inhibition
+T31	method 1262 1282	anti-anxiety therapy
+T33	physiology 1165 1181	emotional states
+R1	associated_with Arg1:T0 Arg2:T1	
+T18	Health_factors 150 156	humans
+R2	associated_with Arg1:T2 Arg2:T10	
+R3	associated_with Arg1:T10 Arg2:T3	
+R4	associated_with Arg1:T4 Arg2:T9	
+T7	drug 447 467	cannabinoid agonists
+T8	gene 765 798	endogenous cannabinoid anandamide
+T13	physiology 746 757	degradation
+R5	associated_with Arg1:T14 Arg2:T8	
+T15	physiology 947 978	isolation-induced vocalizations
+R6	associated_with Arg1:T27 Arg2:T33	
+R7	hyponym_of Arg1:T28 Arg2:T31	
+T16	drug 673 713	inhibitors of fatty acid amide hydrolase

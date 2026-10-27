@@ -1,0 +1,89 @@
+T1	disease 103 128	Major Depression Disorder
+T2	disease 349 374	Major Depression Disorder
+T3	disease 376 379	MDD
+T5	disease 874 880	MDD-SA
+T6	method 1014 1044	Pain avoidance subscale scores
+T7	disease 1249 1255	MDD-SA
+T8	disease 1321 1327	MDD-SI
+T9	method 1436 1457	pain avoidance scores
+T10	physiology 1778 1807	psychological pain processing
+T11	disease 0 14	Pain Avoidance
+T12	disease 630 646	suicide attempts
+T13	Health_factors 269 296	history of suicide attempts
+T14	disease 204 218	pain avoidance
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T15	method 391 407	healthy controls
+T16	method 409 412	HCs
+R2	abbreviation_for Arg1:T16 Arg2:T15	
+T17	method 442 469	Beck Depression Inventory-I
+T18	method 471 476	BDI-I
+R3	abbreviation_for Arg1:T18 Arg2:T17	
+T4	method 483 525	Three-Dimensional Psychological Pain Scale
+T19	method 527 532	TDPPS
+R4	abbreviation_for Arg1:T19 Arg2:T4	
+T20	method 543 574	Beck Scale for Suicide Ideation
+T21	method 576 579	BSS
+R5	abbreviation_for Arg1:T21 Arg2:T20	
+R7	help_diagnose Arg1:T17 Arg2:T2	
+R9	help_diagnose Arg1:T18 Arg2:T2	
+R12	help_diagnose Arg1:T17 Arg2:T3	
+R13	help_diagnose Arg1:T18 Arg2:T3	
+T22	disease 648 654	MDD-SA
+T23	disease 666 683	suicidal ideation
+T24	disease 685 691	MDD-SI
+T25	method 778 802	Monetary Incentive Delay
+T26	method 804 807	MID
+R18	abbreviation_for Arg1:T26 Arg2:T25	
+T27	method 832 854	electroencephalography
+T28	method 908 913	BDI-I
+T29	method 921 926	TDPPS
+T30	method 928 951	pain avoidance subscale
+T31	method 957 962	BSS-W
+T32	disease 979 985	MDD-SI
+T33	method 990 1005	healthy control
+T34	disease 1079 1081	SA
+T35	method 1332 1334	HC
+T36	method 1426 1431	TDPPS
+T37	method 1573 1578	TDPPS
+T38	method 1583 1604	painful feeing scores
+T39	signs 1347 1349	P3
+R21	associated_with Arg1:T39 Arg2:T9	
+T40	signs 1467 1469	P3
+R22	associated_with Arg1:T40 Arg2:T37	
+R23	associated_with Arg1:T40 Arg2:T38	
+T41	disease 1606 1620	Pain avoidance
+T42	disease 1668 1686	suicide attempters
+T43	disease 1692 1708	suicide ideators
+R24	help_diagnose Arg1:T41 Arg2:T42	
+T44	disease 79 97	Suicide Attempters
+T45	disease 1828 1839	suicide act
+T46	method 1093 1109	inventory scores
+T47	signs 1714 1725	P3 patterns
+T48	signs 1633 1649	behavioral index
+T51	physiology 35 64	Neural Response to Punishment
+T52	physiology 130 157	Diminished neural responses
+T53	signs 226 236	biomarkers
+R30	hyponym_of Arg1:T52 Arg2:T53	
+T56	signs 1115 1117	P3
+R31	hyponym_of Arg1:T41 Arg2:T48	
+R27	help_diagnose Arg1:T52 Arg2:T13	
+R33	characteristic_of Arg1:T11 Arg2:T44	
+T55	method 778 813	Monetary Incentive Delay (MID) task
+T57	physiology 1130 1147	negative feedback
+T58	physiology 1482 1499	positive feedback
+R32	associated_with Arg1:T39 Arg2:T36	
+T59	physiology 1755 1763	feedback
+R14	associated_with Arg1:T6 Arg2:T34	
+R15	associated_with Arg1:T10 Arg2:T45	
+R16	occurs_in Arg1:T44 Arg2:T1	
+R6	help_diagnose Arg1:T4 Arg2:T2	
+R8	help_diagnose Arg1:T19 Arg2:T2	
+R10	help_diagnose Arg1:T20 Arg2:T2	
+R11	help_diagnose Arg1:T21 Arg2:T2	
+R17	help_diagnose Arg1:T4 Arg2:T3	
+R19	help_diagnose Arg1:T19 Arg2:T3	
+R20	help_diagnose Arg1:T20 Arg2:T3	
+R25	help_diagnose Arg1:T21 Arg2:T3	
+R26	associated_with Arg1:T11 Arg2:T51	
+R28	characteristic_of Arg1:T56 Arg2:T7	
+R29	hyponym_of Arg1:T14 Arg2:T53	

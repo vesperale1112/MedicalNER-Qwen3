@@ -1,0 +1,7 @@
+T2	disease 26 38	inflammation
+T3	physiology 51 72	cognitive functioning
+T4	disease 76 86	depression
+T1	method 0 13	Interventions
+R3	treatment_for Arg1:T1 Arg2:T2	
+R1	occurs_in Arg1:T3 Arg2:T4	
+R2	treatment_for Arg1:T1 Arg2:T3	

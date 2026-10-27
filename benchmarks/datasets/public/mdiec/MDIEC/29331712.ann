@@ -1,0 +1,79 @@
+T1	disease 49 74	major depressive disorder
+T2	disease 79 95	bipolar disorder
+T3	disease 170 191	depressive mood state
+T4	disease 195 211	bipolar disorder
+T5	disease 213 216	BPD
+T6	disease 222 247	major depression disorder
+T7	disease 249 252	MDD
+T8	disease 284 287	BPD
+T9	disease 319 322	MDD
+T10	disease 424 427	BPD
+T11	disease 432 435	MDD
+T12	disease 563 566	BPD
+T13	disease 571 574	MDD
+T14	disease 855 858	BPD
+T15	disease 874 877	MDD
+T16	disease 908 911	MDD
+T17	disease 917 920	BPD
+T18	disease 1001 1004	BPD
+T19	disease 1024 1027	MDD
+T20	physiology 1675 1695	BDNF gene expression
+T21	disease 1789 1792	BPD
+T22	disease 1797 1800	MDD
+T23	signs 0 18	Genetic biomarkers
+T24	disease 131 150	Depressive symptoms
+R1	abbreviation_for Arg1:T5 Arg2:T4	
+R6	abbreviation_for Arg1:T7 Arg2:T6	
+T25	signs 335 353	genetic biomarkers
+R8	help_diagnose Arg1:T25 Arg2:T10	
+R9	help_diagnose Arg1:T25 Arg2:T11	
+T27	method 612 627	PRISMA-P method
+T28	gene 1165 1170	miRNA
+T29	gene 1178 1184	lcnRNA
+T31	gene 1507 1512	genes
+T32	disease 1594 1606	brain ageing
+T33	physiology 1566 1578	neurogenesis
+T34	signs 1711 1729	genetic biomarkers
+R12	hyponym_of Arg1:T20 Arg2:T34	
+R13	help_diagnose Arg1:T20 Arg2:T21	
+R14	help_diagnose Arg1:T20 Arg2:T22	
+R17	associated_with Arg1:T31 Arg2:T33	
+R18	associated_with Arg1:T31 Arg2:T32	
+T35	physiology 1545 1564	synaptic plasticity
+T36	physiology 1580 1592	mood control
+T37	physiology 1608 1637	immune-inflammatory processes
+T38	region 1642 1673	mitochondrial respiratory chain
+R19	associated_with Arg1:T31 Arg2:T35	
+R20	associated_with Arg1:T31 Arg2:T36	
+R21	associated_with Arg1:T31 Arg2:T37	
+R22	associated_with Arg1:T31 Arg2:T38	
+#1	AnnotatorNotes T6	C1269683
+#2	AnnotatorNotes T7	C1269683
+#3	AnnotatorNotes T2	C0005586
+#4	AnnotatorNotes T5	C0005586
+T26	method 1304 1320	genetic analyses
+#5	AnnotatorNotes T26	C3267141
+#6	AnnotatorNotes T28	C1101610
+T39	method 654 660	PubMed
+T40	method 662 668	Scopus
+T41	method 670 678	PsycINFO
+T42	method 684 698	Web of Science
+T44	method 99 129	systematic and critical review
+T45	method 442 472	systematic and critical review
+T46	method 581 598	systematic review
+T43	method 1049 1064	healthy control
+T47	signs 510 528	genetic biomarkers
+T48	signs 840 850	biomarkers
+T49	physiology 1195 1214	protein expressions
+T50	physiology 1222 1233	methylation
+T51	signs 1339 1357	genetic biomarkers
+T52	physiology 1245 1258	polymorphisms
+T30	signs 1464 1482	genetic biomarkers
+R3	help_diagnose Arg1:T23 Arg2:T1	
+R4	help_diagnose Arg1:T23 Arg2:T2	
+T53	gene 1153 1157	gene
+R2	characteristic_of Arg1:T24 Arg2:T4	
+R5	characteristic_of Arg1:T24 Arg2:T5	
+R7	characteristic_of Arg1:T24 Arg2:T6	
+R10	characteristic_of Arg1:T24 Arg2:T7	
+T54	method 265 282	clinical practice

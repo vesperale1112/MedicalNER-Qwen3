@@ -1,0 +1,71 @@
+T3	physiology 0 62	Metabotropic glutamate receptor-dependent long-term depression
+T4	physiology 82 104	elevated ERK signaling
+T6	method 112 126	RG mouse model
+T7	disease 158 184	Tuberous sclerosis complex
+T8	disease 186 189	TSC
+T9	disease 195 213	fragile X syndrome
+T10	disease 215 218	FXS
+T11	method 283 297	FXS model mice
+T15	physiology 315 377	metabotropic glutamate receptor-dependent long-term depression
+T16	physiology 379 388	mGluR-LTD
+T18	symptom 484 502	enhanced mGluR-LTD
+T19	method 425 436	mouse model
+T22	method 445 463	RG transgenic mice
+T23	gene 530 548	TSC2-GAP mutations
+T30	method 657 675	RG transgenic mice
+T31	physiology 594 653	protein synthesis-dependent hippocampal synaptic plasticity
+T32	gene 698 720	dominant/negative TSC2
+T33	gene 735 739	TSC1
+T34	region 793 803	GAP-domain
+T36	disease 818 845	inactivation of the complex
+T37	physiology 751 785	deletion and substitution mutation
+T38	method 683 687	mice
+T40	physiology 943 961	S6 phosphorylation
+T41	method 906 920	TSC model mice
+T42	region 969 975	brains
+T44	method 979 986	RG mice
+T48	disease 1133 1136	TSC
+T49	disease 1141 1144	FXS
+T51	physiology 1038 1047	mGluR-LTD
+T52	method 1097 1115	RG transgenic mice
+T53	physiology 1160 1190	synaptic plasticity phenotypes
+T54	disease 1217 1220	TSC
+T56	method 1226 1244	RG transgenic mice
+T57	physiology 1262 1275	ERK signaling
+T62	drug 1369 1392	MEK-ERK inhibitor U0126
+T64	disease 1291 1311	mGluR-LTD impairment
+T65	method 1329 1347	RG transgenic mice
+T69	disease 1423 1443	mGluR-LTD impairment
+T71	physiology 1482 1502	TSC1/2-ERK signaling
+T72	method 1456 1463	RG mice
+R1	risk_factor_of Arg1:T4 Arg2:T3	
+R2	abbreviation_for Arg1:T8 Arg2:T7	
+R3	abbreviation_for Arg1:T10 Arg2:T9	
+T1	gene 247 281	negative regulators of translation
+R4	risk_factor_of Arg1:T1 Arg2:T10	
+R5	risk_factor_of Arg1:T1 Arg2:T9	
+R6	risk_factor_of Arg1:T1 Arg2:T8	
+R7	risk_factor_of Arg1:T1 Arg2:T7	
+R8	associated_with Arg1:T16 Arg2:T15	
+T2	symptom 306 377	enhanced metabotropic glutamate receptor-dependent long-term depression
+R9	characteristic_of Arg1:T2 Arg2:T11	
+T5	physiology 556 589	mTORC1 and ERK signaling pathways
+R10	located_in Arg1:T37 Arg2:T34	
+R11	risk_factor_of Arg1:T37 Arg2:T36	
+R12	located_in Arg1:T40 Arg2:T42	
+R14	characteristic_of Arg1:T51 Arg2:T52	
+R15	characteristic_of Arg1:T57 Arg2:T56	
+R16	characteristic_of Arg1:T57 Arg2:T54	
+R17	occurs_in Arg1:T64 Arg2:T65	
+R18	treatment_for Arg1:T62 Arg2:T64	
+R19	characteristic_of Arg1:T69 Arg2:T72	
+R20	associated_with Arg1:T69 Arg2:T71	
+R21	occurs_in Arg1:T4 Arg2:T6	
+T12	disease 130 156	tuberous sclerosis complex
+T13	gene 234 243	mutations
+T14	disease 440 443	TSC
+R22	located_in Arg1:T23 Arg2:T5	
+R23	occurs_in Arg1:T31 Arg2:T30	
+R24	associated_with Arg1:T32 Arg2:T33	
+R13	characteristic_of Arg1:T53 Arg2:T48	
+R25	characteristic_of Arg1:T53 Arg2:T49	

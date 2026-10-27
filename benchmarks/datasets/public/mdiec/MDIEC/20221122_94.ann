@@ -1,0 +1,12 @@
+T2	disease 24 45	Poststroke depression
+T3	disease 47 50	PSD
+T4	Health_factors 68 84	stroke survivors
+T5	Health_factors 118 137	functional outcomes
+T6	disease 152 172	poststroke mortality
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	associated_with Arg1:T3 Arg2:T4	
+R3	associated_with Arg1:T2 Arg2:T4	
+R4	risk_factor_of Arg1:T2 Arg2:T5	
+R5	risk_factor_of Arg1:T2 Arg2:T6	
+R6	risk_factor_of Arg1:T3 Arg2:T5	
+R7	risk_factor_of Arg1:T3 Arg2:T6	

@@ -1,0 +1,10 @@
+T1	disease 108 120	acute stress
+T2	disease 135 149	chronic stress
+T4	disease 167 177	depression
+T7	region 243 248	brain
+T9	method 79 96	treatment methods
+R1	treatment_for Arg1:T9 Arg2:T1	
+R2	treatment_for Arg1:T9 Arg2:T2	
+R3	occurs_in Arg1:T2 Arg2:T4	
+R4	occurs_in Arg1:T1 Arg2:T4	
+T3	disease 269 278	remission

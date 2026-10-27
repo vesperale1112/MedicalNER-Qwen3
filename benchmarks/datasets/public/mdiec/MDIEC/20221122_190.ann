@@ -1,0 +1,6 @@
+T1	gene 21 30	IFN-alpha
+T2	disease 146 158	inflammation
+T3	disease 87 103	major depression
+R1	associated_with Arg1:T1 Arg2:T3	
+R2	associated_with Arg1:T1 Arg2:T2	
+T4	disease 71 83	pathogenesis

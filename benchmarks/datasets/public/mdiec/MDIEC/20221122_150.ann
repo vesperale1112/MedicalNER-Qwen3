@@ -1,0 +1,7 @@
+T1	disease 10 20	depression
+T2	Health_factors 44 59	active programs
+T7	method 182 185	FHA
+T8	disease 253 259	stroke
+T9	disease 236 246	depression
+T3	Health_factors 109 146	outpatient rehabilitation and support
+R1	treatment_for Arg1:T3 Arg2:T9	

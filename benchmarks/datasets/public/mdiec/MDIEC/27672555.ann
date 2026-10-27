@@ -1,0 +1,74 @@
+T1	disease 37 97	borderline personality disorder with co-occurring depression
+T3	disease 122 138	major depression
+T4	disease 188 219	Borderline personality disorder
+T5	disease 221 224	BPD
+T6	disease 230 255	major depressive disorder
+T7	disease 257 260	MDD
+T8	disease 287 329	abnormalities in the regulation of emotion
+T9	disease 336 339	BPD
+T10	disease 367 370	MDD
+T11	disease 406 409	BPD
+T12	disease 564 567	MDD
+T13	disease 618 621	MDD
+T20	disease 1247 1250	MDD
+#1	AnnotatorNotes T1	C0006012
+#3	AnnotatorNotes T3	C1269683
+R2	abbreviation_for Arg1:T5 Arg2:T4	
+#4	AnnotatorNotes T4	C0006012
+R3	abbreviation_for Arg1:T7 Arg2:T6	
+R4	associated_with Arg1:T6 Arg2:T8	
+R5	associated_with Arg1:T4 Arg2:T8	
+R6	associated_with Arg1:T9 Arg2:T10	
+#5	AnnotatorNotes T6	C1269683
+T27	disease 372 402	Disorder-specific dysfunctions
+T28	disease 509 536	emotion processing deficits
+T29	method 702 716	functional MRI
+#6	AnnotatorNotes T29	C0376335
+T15	method 143 153	fMRI study
+#7	AnnotatorNotes T15	C0376335
+T18	disease 985 994	BPD + MDD
+T19	region 1137 1162	lateral prefrontal cortex
+T26	region 1164 1168	LPFC
+R10	abbreviation_for Arg1:T26 Arg2:T19	
+#8	AnnotatorNotes T19	C4019110
+T30	region 1288 1319	posterior medial frontal cortex
+T31	region 1321 1325	pMFC
+R11	abbreviation_for Arg1:T31 Arg2:T30	
+T32	region 1335 1359	inferior parietal lobule
+T33	region 1361 1364	IPL
+R12	abbreviation_for Arg1:T33 Arg2:T32	
+#9	AnnotatorNotes T32	C0152304
+T21	disease 1535 1544	BPD + MDD
+T16	disease 666 675	BPD + MDD
+T17	disease 1699 1708	BPD + MDD
+T22	disease 1659 1682	co-occurring depression
+T23	method 1239 1241	HC
+T24	physiology 1498 1531	enhanced visual cortex activation
+R15	associated_with Arg1:T5 Arg2:T8	
+R16	associated_with Arg1:T7 Arg2:T8	
+T25	method 759 786	emotional interference task
+T35	method 159 186	emotional interference task
+T36	disease 1766 1831	disturbed reactivity toward emotionally expressive facial stimuli
+T38	region 1064 1074	cerebellum
+T40	region 1043 1055	visual areas
+R7	associated_with Arg1:T18 Arg2:T40	
+T37	physiology 1083 1112	emotional conflict processing
+T41	region 1558 1571	visual system
+R13	associated_with Arg1:T18 Arg2:T38	
+T43	physiology 1448 1474	emotional conflict control
+T45	symptom 1739 1757	personality traits
+T42	disease 1391 1407	dysfunctionality
+R19	characteristic_of Arg1:T24 Arg2:T21	
+T49	Health_factors 0 33	Disorder-specific characteristics
+R14	hyponym_of Arg1:T36 Arg2:T45	
+T34	disease 644 664	comorbid BPD and MDD
+R1	associated_with Arg1:T42 Arg2:T43	
+R25	characteristic_of Arg1:T27 Arg2:T11	
+R8	characteristic_of Arg1:T30 Arg2:T20	
+R9	characteristic_of Arg1:T31 Arg2:T20	
+R17	characteristic_of Arg1:T32 Arg2:T20	
+R18	characteristic_of Arg1:T33 Arg2:T20	
+R20	characteristic_of Arg1:T45 Arg2:T17	
+R21	characteristic_of Arg1:T36 Arg2:T17	
+T2	region 1415 1431	neural circuitry
+R22	located_in Arg1:T42 Arg2:T2	

@@ -1,0 +1,47 @@
+T2	disease 55 69	Mental illness
+T3	disease 164 180	mental illnesses
+T4	disease 189 214	major depression disorder
+T5	disease 219 228	dysthymia
+T6	disease 230 247	anxiety disorders
+T7	disease 249 266	bipolar disorders
+T8	disease 271 284	schizophrenia
+T9	disease 300 321	severe mental illness
+T10	disease 604 620	mental illnesses
+T11	disease 629 654	physical chronic diseases
+T12	disease 687 701	mental illness
+T13	disease 826 840	mental illness
+T14	disease 989 1010	severe mental illness
+#1	AnnotatorNotes T4	C1269683
+#2	AnnotatorNotes T3	C0004936
+T1	Health_factors 127 147	general practitioner
+T15	Health_factors 149 151	GP
+R1	abbreviation_for Arg1:T15 Arg2:T1	
+R2	hyponym_of Arg1:T4 Arg2:T3	
+R3	hyponym_of Arg1:T5 Arg2:T3	
+#3	AnnotatorNotes T5	C0013415
+#4	AnnotatorNotes T8	C0036341
+R4	hyponym_of Arg1:T6 Arg2:T3	
+R5	hyponym_of Arg1:T7 Arg2:T3	
+R6	hyponym_of Arg1:T8 Arg2:T3	
+T16	Health_factors 329 363	10-20-year shorter life expectancy
+T17	disease 424 448	physical chronic disease
+#5	AnnotatorNotes T11	C0008679
+R7	characteristic_of Arg1:T16 Arg2:T9	
+T18	method 530 577	evidence-based clinical lifestyle interventions
+T19	method 743 766	lifestyle interventions
+T20	method 0 23	Lifestyle interventions
+T26	Health_factors 887 902	quality of life
+T27	Health_factors 1097 1099	GP
+T21	Health_factors 28 41	mental health
+T22	Health_factors 852 865	mental health
+T23	Health_factors 867 882	physical health
+T24	Health_factors 947 966	life expectancy gap
+R8	treatment_for Arg1:T19 Arg2:T22	
+R9	treatment_for Arg1:T19 Arg2:T23	
+R10	treatment_for Arg1:T19 Arg2:T26	
+R14	associated_with Arg1:T19 Arg2:T24	
+T25	Health_factors 1019 1037	general population
+T28	Health_factors 387 405	general population
+R11	treatment_for Arg1:T18 Arg2:T10	
+R12	treatment_for Arg1:T18 Arg2:T11	
+R13	treatment_for Arg1:T19 Arg2:T13	

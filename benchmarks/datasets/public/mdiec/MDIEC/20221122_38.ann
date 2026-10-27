@@ -1,0 +1,18 @@
+T2	Health_factors 55 71	disease duration
+T3	disease 78 99	severe motor symptoms
+T4	Health_factors 151 161	female sex
+T5	physiology 290 306	cognitive status
+T8	disease 358 368	depression
+T9	Health_factors 163 199	history of anxiety and/or depression
+T10	Health_factors 201 229	family history of depression
+T1	drug 112 120	levodopa
+T12	disease 22 24	PD
+T6	Health_factors 252 278	activities of daily living
+R1	associated_with Arg1:T2 Arg2:T8	
+R2	associated_with Arg1:T3 Arg2:T8	
+R3	associated_with Arg1:T1 Arg2:T8	
+R4	associated_with Arg1:T4 Arg2:T8	
+R5	associated_with Arg1:T9 Arg2:T8	
+R6	associated_with Arg1:T10 Arg2:T8	
+R7	associated_with Arg1:T6 Arg2:T8	
+R8	associated_with Arg1:T5 Arg2:T8	

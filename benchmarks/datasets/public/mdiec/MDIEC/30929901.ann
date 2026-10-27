@@ -1,0 +1,49 @@
+T2	disease 197 210	schizophrenia
+T3	disease 298 311	schizophrenia
+T5	gene 718 723	cnnm2
+T6	gene 756 762	gigyf2
+T7	gene 951 971	transcription factor
+T8	gene 972 978	znf536
+T9	region 1001 1018	forebrain neurons
+T12	gene 24 54	Schizophrenia-Associated Genes
+T13	method 102 117	Genomic studies
+T14	gene 156 161	genes
+T15	gene 323 328	genes
+T16	method 373 398	whole-brain activity maps
+T18	disease 446 470	behavioral abnormalities
+T20	region 849 861	hypothalamus
+T23	disease 1053 1059	stress
+T24	gene 1090 1120	schizophrenia-associated genes
+T27	physiology 1252 1272	biological mechanism
+T28	physiology 1228 1247	genetic association
+T29	Health_factors 1033 1048	social behavior
+T30	method 875 901	Single-cell RNA sequencing
+T31	region 867 873	tectum
+T32	region 840 847	pallium
+T33	region 784 800	anatomical sites
+T34	region 663 680	gene-rich regions
+T35	symptom 554 583	decreased prepulse inhibition
+T36	symptom 520 549	altered forebrain development
+T37	symptom 400 428	brain structural differences
+T38	method 0 20	Phenotypic Landscape
+T39	method 343 358	phenotype atlas
+T17	physiology 472 482	Phenotypes
+R1	hyponym_of Arg1:T36 Arg2:T17	
+R2	hyponym_of Arg1:T35 Arg2:T17	
+T4	gene 696 717	magnesium transporter
+T19	gene 732 755	translational repressor
+R3	hyponym_of Arg1:T5 Arg2:T34	
+R4	hyponym_of Arg1:T6 Arg2:T34	
+R5	hyponym_of Arg1:T32 Arg2:T33	
+R6	hyponym_of Arg1:T20 Arg2:T33	
+R7	hyponym_of Arg1:T31 Arg2:T33	
+R8	associated_with Arg1:T8 Arg2:T9	
+R9	associated_with Arg1:T9 Arg2:T29	
+R10	associated_with Arg1:T9 Arg2:T23	
+R11	associated_with Arg1:T8 Arg2:T29	
+R12	associated_with Arg1:T8 Arg2:T23	
+T21	method 1066 1086	phenotypic landscape
+R13	risk_factor_of Arg1:T14 Arg2:T2	
+R14	hyponym_of Arg1:T16 Arg2:T39	
+R15	hyponym_of Arg1:T37 Arg2:T39	
+R16	hyponym_of Arg1:T18 Arg2:T39	

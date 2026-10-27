@@ -1,0 +1,70 @@
+T1	disease 27 40	toxoplasmosis
+T2	disease 46 59	schizophrenia
+T3	disease 64 89	major depression disorder
+T4	disease 107 128	psychiatric disorders
+T5	disease 273 294	psychiatric disorders
+T6	disease 431 444	toxoplasmosis
+T7	disease 467 480	schizophrenia
+T8	disease 485 510	major depression disorder
+T9	disease 512 515	MDD
+T10	gene 687 690	IgM
+T11	disease 702 715	schizophrenia
+T12	disease 729 732	MDD
+T14	disease 889 903	schizophrenics
+T15	disease 916 919	MDD
+T16	gene 952 955	IgG
+T17	disease 992 1020	toxo-positive schizophrenics
+T18	disease 1041 1044	MDD
+T19	disease 1123 1136	schizophrenic
+T20	disease 1228 1241	toxoplasmosis
+T21	disease 1246 1267	psychiatric disorders
+T22	disease 1353 1373	Toxoplasma infection
+T23	disease 1377 1380	MDD
+T24	disease 1449 1462	schizophrenia
+R1	associated_with Arg1:T1 Arg2:T2	
+R2	associated_with Arg1:T1 Arg2:T3	
+T25	disease 232 242	Infections
+R3	risk_factor_of Arg1:T25 Arg2:T5	
+T26	Health_factors 306 323	Toxoplasma gondii
+R4	risk_factor_of Arg1:T26 Arg2:T5	
+T27	Health_factors 327 347	neurotropic parasite
+R5	hyponym_of Arg1:T26 Arg2:T27	
+R9	abbreviation_for Arg1:T9 Arg2:T8	
+T28	method 604 625	cross-sectional study
+T29	method 767 792	DSM-5 diagnostic criteria
+T30	gene 663 682	anti-Toxoplasma IgG
+T31	gene 1152 1166	IgM antibodies
+T32	Health_factors 1168 1171	Age
+R16	associated_with Arg1:T32 Arg2:T20	
+R18	associated_with Arg1:T32 Arg2:T21	
+R19	associated_with Arg1:T22 Arg2:T23	
+T34	disease 1431 1444	toxoplasmosis
+R20	associated_with Arg1:T34 Arg2:T24	
+#1	AnnotatorNotes T3	C1269683
+#2	AnnotatorNotes T8	C1269683
+#3	AnnotatorNotes T9	C1269683
+#4	AnnotatorNotes T1	C0040558
+#5	AnnotatorNotes T2	C0036341
+#6	AnnotatorNotes T4	C0004936
+#7	AnnotatorNotes T30	C0051979
+#8	AnnotatorNotes T10	C0020861
+#9	AnnotatorNotes T29	C0220952
+R13	characteristic_of Arg1:T16 Arg2:T17	
+R14	characteristic_of Arg1:T16 Arg2:T18	
+T13	Health_factors 1176 1187	male gender
+R10	associated_with Arg1:T13 Arg2:T20	
+R11	associated_with Arg1:T13 Arg2:T21	
+T36	Health_factors 159 180	environmental insults
+T37	physiology 194 210	neurodevelopment
+T38	region 377 382	brain
+T39	Health_factors 553 556	age
+T40	Health_factors 558 564	gender
+T41	region 694 698	sera
+T43	signs 840 861	Toxoplasma positivity
+T44	Health_factors 569 583	family history
+T42	Health_factors 1274 1288	family history
+R6	located_in Arg1:T10 Arg2:T41	
+R7	located_in Arg1:T30 Arg2:T41	
+R15	associated_with Arg1:T6 Arg2:T7	
+R21	associated_with Arg1:T6 Arg2:T8	
+R22	associated_with Arg1:T6 Arg2:T9	

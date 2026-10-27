@@ -1,0 +1,8 @@
+T1	disease 25 60	interferon-alpha-induced depression
+T3	disease 85 96	hepatitis C
+T4	drug 127 152	antidepressant fluoxetine
+T5	method 182 202	interferon treatment
+R1	treatment_for Arg1:T4 Arg2:T1	
+T2	Health_factors 76 79	man
+R2	occurs_in Arg1:T2 Arg2:T3	
+R3	occurs_in Arg1:T1 Arg2:T2	

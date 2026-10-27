@@ -1,0 +1,62 @@
+T1	physiology 0 36	Altered neuregulin 1-erbB4 signaling
+T3	physiology 52 78	NMDA receptor hypofunction
+T4	disease 82 95	schizophrenia
+T5	gene 141 153	neuregulin 1
+T6	gene 155 159	NRG1
+T7	gene 178 182	erbB
+T8	disease 209 222	schizophrenia
+T10	method 190 205	pathophysiology
+T11	gene 230 244	NRG1 receptors
+T12	gene 246 251	erbB4
+T13	gene 352 372	N-methyl-D-aspartate
+T14	drug 374 378	NMDA
+T15	physiology 310 326	neurodevelopment
+T18	physiology 487 519	NRG1-induced activation of erbB4
+T19	disease 548 561	schizophrenia
+T20	method 418 456	postmortem tissue-stimulation approach
+T21	region 527 544	prefrontal cortex
+T22	gene 573 577	NRG1
+T23	gene 582 587	erbB4
+T24	disease 621 634	schizophrenia
+T25	method 639 653	control groups
+T26	physiology 692 726	hyperactivation of erbB4 signaling
+T27	gene 759 764	erbB4
+T28	gene 770 776	PSD-95
+T29	gene 778 816	postsynaptic density protein of 95 kDa
+T30	gene 882 887	erbB4
+T34	disease 889 902	Schizophrenia
+T36	physiology 944 969	erbB4-PSD-95 interactions
+T37	physiology 985 1001	NRG1 stimulation
+T39	physiology 1013 1037	NMDA receptor activation
+T42	region 1100 1113	rodent cortex
+T43	region 1045 1068	human prefrontal cortex
+T46	physiology 1115 1167	NRG1-induced suppression of NMDA receptor activation
+T47	disease 1191 1204	schizophrenia
+T48	physiology 1248 1277	enhanced NRG1-erbB4 signaling
+T50	disease 1291 1298	illness
+T51	physiology 1339 1362	enhanced NRG1 signaling
+T52	physiology 1381 1398	NMDA hypofunction
+T54	disease 1402 1415	schizophrenia
+R1	occurs_in Arg1:T3 Arg2:T4	
+R2	associated_with Arg1:T1 Arg2:T3	
+T2	method 104 130	molecular genetics studies
+R3	abbreviation_for Arg1:T6 Arg2:T5	
+R4	associated_with Arg1:T5 Arg2:T8	
+R5	associated_with Arg1:T6 Arg2:T8	
+R6	associated_with Arg1:T7 Arg2:T8	
+R7	associated_with Arg1:T12 Arg2:T15	
+R8	abbreviation_for Arg1:T14 Arg2:T13	
+T9	physiology 352 398	N-methyl-D-aspartate (NMDA) receptor signaling
+R9	associated_with Arg1:T12 Arg2:T9	
+R10	located_in Arg1:T18 Arg2:T21	
+R13	abbreviation_for Arg1:T28 Arg2:T29	
+R14	characteristic_of Arg1:T36 Arg2:T34	
+R15	located_in Arg1:T39 Arg2:T43	
+R16	associated_with Arg1:T37 Arg2:T39	
+R18	characteristic_of Arg1:T48 Arg2:T47	
+R19	associated_with Arg1:T51 Arg2:T52	
+R20	occurs_in Arg1:T52 Arg2:T54	
+R12	characteristic_of Arg1:T18 Arg2:T19	
+R11	associated_with Arg1:T27 Arg2:T28	
+R21	associated_with Arg1:T27 Arg2:T29	
+R17	characteristic_of Arg1:T46 Arg2:T47	

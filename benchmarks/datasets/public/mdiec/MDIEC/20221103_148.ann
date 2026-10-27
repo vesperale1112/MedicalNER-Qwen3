@@ -1,0 +1,8 @@
+T1	drug 0 5	SSRIs
+T4	disease 68 94	severe depressive episodes
+R1	treatment_for Arg1:T1 Arg2:T4	
+T2	drug 191 202	venlafaxine
+R2	treatment_for Arg1:T2 Arg2:T4	
+T3	drug 30 41	medications
+R3	hyponym_of Arg1:T1 Arg2:T3	
+T5	method 156 176	first-line treatment

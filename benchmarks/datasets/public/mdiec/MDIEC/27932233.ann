@@ -1,0 +1,58 @@
+T2	gene 0 26	Schizophrenia risk alleles
+T3	Health_factors 62 71	childhood
+T4	method 75 104	population-based cohort study
+T5	disease 117 130	Schizophrenia
+T6	disease 198 238	childhood neurodevelopmental impairments
+T7	physiology 154 161	puberty
+T10	physiology 282 299	genetic liability
+T11	Health_factors 254 275	childhood antecedents
+T12	disease 424 437	schizophrenia
+T13	signs 320 341	polygenic risk scores
+T14	physiology 403 420	genetic liability
+T17	method 521 547	UK population-based cohort
+T18	method 584 631	Avon Longitudinal Study of Parents and Children
+T22	Health_factors 686 694	children
+T23	method 635 676	prospective population-based cohort study
+T24	method 730 755	regression-based analyses
+T27	method 810 871	Psychiatric Genomics Consortium genome-wide association study
+T30	Health_factors 887 896	childhood
+T31	Health_factors 898 901	age
+T32	physiology 1034 1061	emotion and mood regulation
+T34	Health_factors 1106 1109	age
+T35	signs 1121 1156	schizophrenia polygenic risk scores
+T36	symptom 1182 1221	lower performance intelligence quotient
+T37	method 1231 1233	OR
+T38	method 1243 1245	CI
+T39	symptom 1264 1284	social understanding
+T40	method 1294 1296	OR
+T41	symptom 1313 1355	worse language intelligibility and fluency
+T42	method 1365 1367	OR
+T43	symptom 1384 1401	more irritability
+T44	method 1410 1412	OR
+T45	symptom 1433 1458	more headstrong behaviour
+T46	method 1467 1469	OR
+T47	disease 1541 1575	social and behavioural impairments
+T48	signs 1490 1525	schizophrenia polygenic risk scores
+T49	Health_factors 1588 1591	age
+T52	disease 1716 1729	schizophrenia
+T53	physiology 1807 1824	genetic liability
+T56	symptom 31 58	neurodevelopmental outcomes
+T8	symptom 467 497	early childhood manifestations
+R1	hyponym_of Arg1:T18 Arg2:T23	
+T9	signs 757 777	Polygenic risk score
+T16	symptom 984 993	cognition
+T19	symptom 998 1006	learning
+T20	Health_factors 1008 1014	social
+T21	symptom 1019 1032	communication
+R2	associated_with Arg1:T35 Arg2:T36	
+R3	associated_with Arg1:T35 Arg2:T39	
+R4	associated_with Arg1:T35 Arg2:T41	
+R5	associated_with Arg1:T35 Arg2:T43	
+R6	associated_with Arg1:T35 Arg2:T45	
+R7	associated_with Arg1:T48 Arg2:T47	
+T33	disease 1618 1685	Childhood cognitive, social, behavioural, and emotional impairments
+R8	risk_factor_of Arg1:T33 Arg2:T52	
+R9	occurs_in Arg1:T56 Arg2:T3	
+R10	occurs_in Arg1:T14 Arg2:T12	
+R11	characteristic_of Arg1:T6 Arg2:T5	
+T1	symptom 1067 1076	behaviour

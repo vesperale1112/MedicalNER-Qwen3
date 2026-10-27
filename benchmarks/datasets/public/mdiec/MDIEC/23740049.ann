@@ -1,0 +1,79 @@
+T0	disease 43 72	obsessive-compulsive disorder
+T1	symptom 77 100	neurobiological changes
+T2	region 108 120	fear circuit
+T3	disease 133 162	Obsessive-compulsive disorder
+T4	disease 164 167	OCD
+T5	symptom 222 243	behavioral inhibition
+T6	symptom 193 217	impaired self-regulation
+T7	disease 263 270	anxiety
+T10	disease 245 258	Elevated fear
+T11	method 320 332	neurobiology
+T13	physiology 356 388	consolidation of safety memories
+T14	physiology 336 351	fear regulation
+T16	disease 566 569	OCD
+T19	disease 731 734	OCD
+T21	signs 824 867	blood oxygenation level-dependent responses
+T22	signs 793 819	Skin conductance responses
+T24	disease 1022 1025	OCD
+T26	signs 950 976	skin conductance responses
+T27	signs 921 948	psychophysiological measure
+T28	disease 1162 1165	OCD
+T31	region 1213 1243	ventromedial prefrontal cortex
+T32	disease 1318 1321	OCD
+T33	region 1339 1346	caudate
+T34	region 1351 1362	hippocampus
+T35	region 1407 1417	cerebellum
+T37	region 1451 1458	putamen
+T38	region 1419 1445	posterior cingulate cortex
+T39	disease 1370 1374	fear
+T40	disease 1513 1524	OCD symptom
+T42	physiology 1582 1606	extinction memory recall
+T48	region 1782 1814	dorsal anterior cingulate cortex
+T49	region 1669 1699	ventromedial prefrontal cortex
+T50	physiology 1951 1968	neural substrates
+T51	disease 1999 2002	OCD
+T52	physiology 1927 1942	fear extinction
+T53	physiology 2137 2154	neural substrates
+T57	disease 2298 2301	OCD
+T58	disease 2255 2280	deficient fear extinction
+T59	disease 2416 2419	OCD
+T60	disease 2546 2549	OCD
+T62	method 2527 2542	psychopathology
+T64	disease 2337 2361	fear extinction deficits
+T66	physiology 12 39	conditioned fear extinction
+R1	occurs_in Arg1:T66 Arg2:T0	
+R2	located_in Arg1:T1 Arg2:T2	
+R3	abbreviation_for Arg1:T4 Arg2:T3	
+R4	characteristic_of Arg1:T6 Arg2:T3	
+R5	characteristic_of Arg1:T6 Arg2:T4	
+R6	characteristic_of Arg1:T5 Arg2:T3	
+R7	characteristic_of Arg1:T5 Arg2:T4	
+T8	physiology 521 548	conditioned fear extinction
+R8	occurs_in Arg1:T8 Arg2:T16	
+T9	method 580 654	Cross-sectional, case-control, functional magnetic resonance imaging study
+T12	physiology 989 1006	extinction recall
+T15	disease 1033 1059	impaired extinction recall
+R9	characteristic_of Arg1:T15 Arg2:T24	
+T17	method 1104 1146	functional magnetic resonance imaging data
+R10	characteristic_of Arg1:T31 Arg2:T28	
+R11	characteristic_of Arg1:T33 Arg2:T32	
+R12	characteristic_of Arg1:T34 Arg2:T32	
+R13	characteristic_of Arg1:T35 Arg2:T32	
+T18	physiology 1466 1483	extinction recall
+R14	characteristic_of Arg1:T38 Arg2:T32	
+R15	characteristic_of Arg1:T37 Arg2:T32	
+R16	associated_with Arg1:T40 Arg2:T42	
+T20	physiology 1641 1661	functional responses
+R17	located_in Arg1:T20 Arg2:T49	
+T23	physiology 1754 1774	functional responses
+R18	located_in Arg1:T23 Arg2:T48	
+R19	characteristic_of Arg1:T52 Arg2:T51	
+R20	characteristic_of Arg1:T50 Arg2:T51	
+T25	physiology 2109 2127	extinction capacit
+R21	associated_with Arg1:T58 Arg2:T57	
+T29	method 2366 2403	Yale-Brown Obsessive-Compulsive Scale
+R22	associated_with Arg1:T64 Arg2:T29	
+R23	occurs_in Arg1:T29 Arg2:T59	
+T30	disease 2476 2502	fear extinction deficiency
+R24	associated_with Arg1:T30 Arg2:T60	
+T36	method 666 689	Academic medical center

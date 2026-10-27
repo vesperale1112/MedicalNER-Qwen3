@@ -1,0 +1,79 @@
+T0	disease 57 64	anxiety
+T3	method 93 110	systematic review
+T4	method 115 136	network meta-analysis
+T5	method 12 53	cognitive bias modification interventions
+T6	method 149 176	Cognitive bias modification
+T7	method 149 192	Cognitive bias modification (CBM) therapies
+T8	method 204 231	attention bias modification
+T9	method 270 301	approach and avoidance training
+T10	method 332 366	mechanistically derived treatments
+T11	disease 487 524	anxious and depressive symptomatology
+T13	method 465 482	CBM interventions
+T15	method 545 562	systematic review
+T16	method 567 588	network meta-analysis
+T17	method 602 608	PubMed
+T18	method 610 618	PsycINFO
+T19	method 620 626	Embase
+T20	disease 864 871	anxiety
+T21	disease 875 885	depression
+T22	method 716 744	randomised controlled trials
+T23	Health_factors 804 810	adults
+T24	Health_factors 811 815	aged
+T25	Health_factors 829 834	older
+T26	method 928 952	validated clinical scale
+T27	method 902 922	diagnostic interview
+T30	method 995 1022	non-CBM active intervention
+T32	disease 1165 1172	anxiety
+T33	disease 1177 1196	depressive symptoms
+T34	method 1211 1236	validated clinical scales
+T36	method 1250 1279	standardised mean differences
+T37	method 1281 1285	SMDs
+T38	method 1294 1344	restricted maximum likelihood random effects model
+T39	method 1446 1452	trials
+T40	disease 1469 1476	anxiety
+T41	disease 1496 1506	depression
+T43	disease 1539 1546	anxiety
+T44	method 1547 1553	trials
+T45	method 1611 1614	SMD
+T46	method 1625 1627	CI
+T47	method 1661 1664	SMD
+T49	method 1646 1659	sham training
+T50	method 1513 1535	well connected network
+T51	disease 1802 1832	post-traumatic stress disorder
+T52	method 1710 1737	Attention bias modification
+T54	method 1833 1839	trials
+T55	method 1762 1791	post-hoc sensitivity analyses
+T56	method 1904 1907	SMD
+T58	method 1841 1861	Prediction intervals
+T59	disease 1926 1936	depression
+T60	method 1937 1943	trials
+T61	method 1991 2019	randomised controlled trials
+T66	method 2087 2104	CBM interventions
+T67	disease 2294 2301	anxiety
+T68	disease 2374 2384	depression
+T69	method 2246 2252	trials
+T1	disease 69 89	depressive disorders
+T2	method 178 181	CBM
+R1	abbreviation_for Arg1:T2 Arg2:T6	
+T72	method 233 265	interpretation bias modification
+R2	hyponym_of Arg1:T8 Arg2:T7	
+R3	hyponym_of Arg1:T72 Arg2:T7	
+R4	hyponym_of Arg1:T9 Arg2:T7	
+R5	hyponym_of Arg1:T7 Arg2:T10	
+R6	hyponym_of Arg1:T8 Arg2:T10	
+R7	hyponym_of Arg1:T72 Arg2:T10	
+R8	hyponym_of Arg1:T9 Arg2:T10	
+T12	method 632 657	Cochrane Central Register
+T73	method 748 751	CBM
+T28	method 796 799	CBM
+R9	help_diagnose Arg1:T27 Arg2:T20	
+R10	help_diagnose Arg1:T26 Arg2:T20	
+R11	help_diagnose Arg1:T26 Arg2:T21	
+R12	help_diagnose Arg1:T27 Arg2:T21	
+T14	method 984 987	CBM
+T29	method 1107 1134	Cochrane Collaboration tool
+R13	help_diagnose Arg1:T34 Arg2:T32	
+R14	help_diagnose Arg1:T34 Arg2:T33	
+R15	abbreviation_for Arg1:T37 Arg2:T36	
+T31	method 1555 1587	interpretation bias modification
+T35	method 2257 2289	interpretation bias modification

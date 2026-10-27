@@ -1,0 +1,69 @@
+T0	drug 10 36	Sublingual Dexmedetomidine
+T1	disease 133 149	bipolar disorder
+T3	disease 192 200	distress
+T5	Health_factors 230 249	aggressive behavior
+T7	disease 90 105	Acute agitation
+T8	disease 51 66	Acute Agitation
+T9	drug 305 331	sublingual dexmedetomidine
+T10	gene 335 375	selective 2A-adrenergic receptor agonist
+T11	disease 424 440	bipolar disorder
+T12	method 288 303	orally absorbed
+T13	disease 391 406	acute agitation
+T14	method 477 536	Phase 3, randomized, double-blind, placebo-controlled trial
+T15	method 642 651	follow-up
+T16	disease 696 720	bipolar I or II disorder
+T17	Health_factors 684 690	adults
+T19	drug 823 849	sublingual dexmedetomidine
+T20	drug 865 891	sublingual dexmedetomidine
+T21	method 766 779	INTERVENTIONS
+T23	method 1039 1093	Positive and Negative Syndrome Scale-Excited Component
+T27	disease 1165 1174	agitation
+T29	drug 1327 1331	drug
+T33	drug 1435 1461	sublingual dexmedetomidine
+T37	Health_factors 1597 1600	age
+T38	Health_factors 1620 1625	women
+T39	drug 1697 1707	medication
+T43	disease 1742 1751	agitation
+T44	drug 1924 1950	sublingual dexmedetomidine
+T45	drug 1967 1993	sublingual dexmedetomidine
+T46	drug 1847 1857	medication
+T50	drug 2073 2099	sublingual dexmedetomidine
+T53	method 2135 2137	CI
+T54	method 2179 2181	CI
+T56	method 2023 2052	Least-square mean differences
+T57	drug 2327 2353	sublingual dexmedetomidine
+T58	drug 2294 2304	medication
+T59	method 2414 2416	CI
+T60	method 2464 2466	CI
+T61	method 2362 2390	least-square mean difference
+T62	drug 2553 2568	dexmedetomidine
+T63	Health_factors 2492 2506	Adverse events
+T64	Health_factors 2607 2614	placebo
+T65	disease 2708 2718	somnolence
+T66	disease 2746 2755	dry mouth
+T67	disease 2781 2792	hypotension
+T68	disease 2820 2829	dizziness
+T70	Health_factors 2632 2646	adverse events
+T72	disease 2919 2928	agitation
+T73	disease 2945 2961	bipolar disorder
+T74	drug 3011 3026	dexmedetomidine
+T76	method 3332 3343	effect size
+R1	associated_with Arg1:T7 Arg2:T1	
+R2	occurs_in Arg1:T13 Arg2:T11	
+R3	hyponym_of Arg1:T9 Arg2:T10	
+R4	occurs_in Arg1:T17 Arg2:T16	
+T2	method 1095 1098	PEC
+R5	abbreviation_for Arg1:T2 Arg2:T23	
+T4	method 1289 1292	PEC
+T6	method 1486 1512	2-sided significance level
+T18	Health_factors 1637 1642	Black
+T22	method 1669 1686	self-administered
+T24	method 1795 1798	PEC
+T25	method 1893 1896	PEC
+R6	hyponym_of Arg1:T65 Arg2:T70	
+R7	hyponym_of Arg1:T66 Arg2:T70	
+R8	hyponym_of Arg1:T67 Arg2:T70	
+R9	hyponym_of Arg1:T68 Arg2:T70	
+R10	associated_with Arg1:T72 Arg2:T73	
+T26	disease 3117 3126	agitation
+R11	treatment_for Arg1:T74 Arg2:T26	

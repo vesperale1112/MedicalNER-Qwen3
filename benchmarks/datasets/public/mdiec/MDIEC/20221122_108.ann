@@ -1,0 +1,9 @@
+T1	disease 66 73	anxiety
+T2	disease 78 88	depression
+T4	Health_factors 94 97	men
+T6	Health_factors 119 122	age
+T7	gene 146 166	sex-specific factors
+T3	Health_factors 9 34	women of reproductive age
+R1	risk_factor_of Arg1:T3 Arg2:T1	
+R2	risk_factor_of Arg1:T3 Arg2:T2	
+T5	method 218 233	psychopathology

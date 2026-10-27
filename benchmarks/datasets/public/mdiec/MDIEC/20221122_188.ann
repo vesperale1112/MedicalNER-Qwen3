@@ -1,0 +1,4 @@
+T2	Health_factors 15 32	gender difference
+T3	Health_factors 87 92	women
+T5	disease 73 83	depression
+R1	risk_factor_of Arg1:T3 Arg2:T5	

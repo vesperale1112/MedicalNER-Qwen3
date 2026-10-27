@@ -1,0 +1,7 @@
+T3	method 30 44	drug therapies
+T4	Health_factors 82 106	psychological therapists
+T6	method 166 190	psychological treatments
+T7	method 201 225	first-line interventions
+T8	disease 238 257	moderate depression
+R1	treatment_for Arg1:T6 Arg2:T8	
+R2	hyponym_of Arg1:T6 Arg2:T7	

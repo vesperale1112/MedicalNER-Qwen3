@@ -1,0 +1,23 @@
+T0	disease 10 26	eating disorders
+T1	disease 28 44	Anorexia nervosa
+T2	disease 49 64	bulimia nervosa
+T3	disease 97 113	eating disorders
+T5	symptom 337 352	low self-esteem
+T6	symptom 358 378	body dissatisfaction
+T7	symptom 320 335	negative affect
+T8	Health_factors 271 285	family factors
+T9	Health_factors 243 268	media and peer influences
+T10	Health_factors 214 235	sociocultural factors
+T11	disease 434 450	eating disorders
+T14	disease 523 539	eating disorders
+T16	disease 565 581	Eating disorders
+T18	symptom 629 658	identity and personal control
+R1	hyponym_of Arg1:T1 Arg2:T3	
+R2	hyponym_of Arg1:T2 Arg2:T3	
+R3	hyponym_of Arg1:T9 Arg2:T10	
+T4	Health_factors 293 303	enmeshment
+T19	Health_factors 308 317	criticism
+R4	hyponym_of Arg1:T4 Arg2:T8	
+R5	hyponym_of Arg1:T19 Arg2:T8	
+T20	method 412 422	biological
+R6	associated_with Arg1:T16 Arg2:T18	

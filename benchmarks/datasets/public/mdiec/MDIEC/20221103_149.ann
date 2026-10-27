@@ -1,0 +1,8 @@
+T1	drug 0 21	Antidepressant agents
+T3	Health_factors 47 52	sleep
+T4	Health_factors 102 107	sleep
+T5	drug 71 86	antidepressants
+T7	disease 125 135	depression
+R1	associated_with Arg1:T1 Arg2:T3	
+R2	associated_with Arg1:T5 Arg2:T4	
+R3	occurs_in Arg1:T4 Arg2:T7	

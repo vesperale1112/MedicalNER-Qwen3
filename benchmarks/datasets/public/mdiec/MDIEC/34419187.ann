@@ -1,0 +1,32 @@
+T1	disease 63 73	depression
+T2	disease 78 85	anxiety
+T3	disease 173 183	depression
+T4	disease 188 195	anxiety
+T5	drug 27 31	SSRI
+T6	Health_factors 45 57	young people
+T7	drug 146 151	SSRIs
+T8	Health_factors 199 211	young people
+T9	drug 251 256	SSRIs
+T10	Health_factors 260 271	adolescence
+T11	physiology 318 359	neural, cognitive, and social functioning
+T12	method 416 431	clinical trials
+T13	drug 464 469	SSRIs
+T14	Health_factors 473 485	young people
+T15	method 572 585	animal models
+T16	drug 647 652	SSRIs
+T17	Health_factors 656 661	youth
+T19	Health_factors 730 742	young people
+T20	drug 846 851	SSRIs
+T21	Health_factors 860 863	age
+T22	drug 947 952	SSRIs
+T23	Health_factors 956 961	youth
+R1	treatment_for Arg1:T5 Arg2:T1	
+R2	treatment_for Arg1:T5 Arg2:T2	
+R3	treatment_for Arg1:T7 Arg2:T3	
+R4	treatment_for Arg1:T7 Arg2:T4	
+R5	occurs_in Arg1:T6 Arg2:T1	
+R6	occurs_in Arg1:T6 Arg2:T2	
+R7	occurs_in Arg1:T4 Arg2:T8	
+R8	occurs_in Arg1:T3 Arg2:T8	
+R9	associated_with Arg1:T9 Arg2:T11	
+R10	occurs_in Arg1:T9 Arg2:T10	

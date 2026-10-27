@@ -1,0 +1,5 @@
+T3	gene 77 89	serum factor
+T4	disease 112 122	hemorrhage
+R2	associated_with Arg1:T3 Arg2:T4	
+T1	disease 5 52	depression in lymphocyte proliferative capacity
+R1	risk_factor_of Arg1:T3 Arg2:T1	

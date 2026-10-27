@@ -1,0 +1,11 @@
+T2	disease 31 51	substance dependence
+T3	disease 56 81	major depressive disorder
+T6	Health_factors 175 188	substance use
+T7	disease 202 212	depression
+T8	Health_factors 277 285	drinking
+R1	associated_with Arg1:T7 Arg2:T8	
+T1	Health_factors 97 113	12-Step meetings
+T4	Health_factors 246 262	12-Step meetings
+T5	Health_factors 133 155	mental health benefits
+R2	associated_with Arg1:T1 Arg2:T5	
+R3	treatment_for Arg1:T4 Arg2:T8	

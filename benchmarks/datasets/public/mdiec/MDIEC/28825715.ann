@@ -1,0 +1,56 @@
+T1	disease 49 59	depression
+T2	disease 61 86	Major depressive disorder
+T3	disease 88 91	MDD
+T4	disease 188 191	MDD
+T5	disease 499 502	MDD
+T6	disease 845 848	MDD
+T7	disease 921 930	depressed
+T8	disease 1025 1028	MDD
+T9	gene 1166 1171	Dusp6
+T10	physiology 1271 1284	ERK signaling
+T11	physiology 1289 1318	pyramidal neuron excitability
+T12	physiology 1325 1345	Dusp6 downregulation
+T13	disease 1537 1540	MDD
+T16	physiology 236 256	molecular mechanisms
+T17	Health_factors 273 290	sexual dimorphism
+T23	method 577 588	mouse model
+T27	Health_factors 756 761	males
+T28	Health_factors 766 773	females
+T29	Health_factors 879 884	males
+T30	Health_factors 889 896	females
+T34	Health_factors 1047 1050	sex
+T38	region 1181 1198	prefrontal cortex
+T40	Health_factors 1233 1240	females
+T41	Health_factors 1250 1255	males
+T42	region 1411 1428	prefrontal cortex
+T43	Health_factors 1432 1449	depressed females
+T44	Health_factors 1487 1504	sexual dimorphism
+T46	method 1582 1605	sex-specific treatments
+T47	physiology 1369 1395	transcriptional remodeling
+T48	physiology 1208 1229	stress susceptibility
+T49	physiology 1119 1165	downregulation of the female-specific hub gene
+T50	physiology 1083 1104	stress susceptibility
+T51	method 942 955	stressed mice
+T52	physiology 800 841	rearrangement of transcriptional patterns
+T53	physiology 731 752	stress susceptibility
+T54	physiology 663 701	molecular and physiological mechanisms
+T56	disease 590 613	chronic variable stress
+T57	region 514 519	brain
+T58	physiology 442 482	male and female transcriptional profiles
+T59	method 359 393	gene coexpression network analyses
+T61	Health_factors 215 230	sex differences
+T62	disease 115 129	disease burden
+T63	physiology 0 39	Sex-specific transcriptional signatures
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	risk_factor_of Arg1:T3 Arg2:T62	
+R3	risk_factor_of Arg1:T2 Arg2:T62	
+R4	associated_with Arg1:T58 Arg2:T5	
+T14	physiology 544 558	human profiles
+R5	characteristic_of Arg1:T52 Arg2:T6	
+T15	region 987 1013	sex-specific gene networks
+R6	associated_with Arg1:T15 Arg2:T8	
+R7	located_in Arg1:T9 Arg2:T38	
+R8	located_in Arg1:T47 Arg2:T42	
+R9	characteristic_of Arg1:T44 Arg2:T13	
+R10	characteristic_of Arg1:T63 Arg2:T1	
+T18	physiology 633 652	converging pathways

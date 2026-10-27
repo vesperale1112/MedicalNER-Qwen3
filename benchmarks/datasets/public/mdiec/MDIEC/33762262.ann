@@ -1,0 +1,81 @@
+T1	disease 63 73	depression
+T2	disease 89 97	dementia
+T3	disease 252 262	depression
+T4	disease 278 286	dementia
+T5	disease 302 312	depression
+T6	disease 346 354	dementia
+T7	disease 380 405	major depressive disorder
+T8	disease 747 757	depression
+T9	disease 773 781	dementia
+T11	disease 1244 1252	dementia
+T12	disease 1388 1396	dementia
+T13	disease 1422 1447	major depressive disorder
+T14	disease 1482 1492	depression
+T15	disease 1526 1534	dementia
+T16	disease 1642 1652	depression
+T19	disease 2516 2526	depression
+T20	disease 2542 2550	dementia
+T22	disease 2766 2776	depression
+T23	disease 2792 2800	dementia
+T25	disease 3008 3018	depression
+T26	disease 3034 3042	dementia
+T29	method 99 116	systematic review
+T30	method 121 142	network meta-analysis
+T31	method 195 226	drug and non-drug interventions
+T32	method 415 432	Systematic review
+T33	method 437 450	meta-analysis
+T34	method 466 473	Medline
+T35	method 475 481	Embase
+T36	method 487 503	Cochrane Library
+T37	method 505 511	CINAHL
+T38	method 513 521	PsycINFO
+T39	method 624 641	Randomised trials
+T40	method 652 682	drug or non-drug interventions
+T42	method 912 938	Cochrane risk of bias tool
+T43	method 1052 1065	Cornell scale
+T44	method 1099 1144	bayesian random effects network meta-analyses
+T45	method 1149 1171	pairwise meta-analyses
+T46	method 1333 1365	network meta-analysis of studies
+T48	method 1679 1700	cognitive stimulation
+T49	method 1729 1746	credible interval
+T50	method 1764 1826	cognitive stimulation combined with a cholinesterase inhibitor
+T17	method 1854 1879	massage and touch therapy
+T51	method 1906 1928	multidisciplinary care
+T52	method 1954 1973	occupational therap
+T53	method 2000 2067	exercise combined with social interaction and cognitive stimulation
+T54	method 2099 2119	reminiscence therapy
+R10	treatment_for Arg1:T48 Arg2:T16	
+R11	treatment_for Arg1:T50 Arg2:T16	
+R12	treatment_for Arg1:T17 Arg2:T16	
+R13	treatment_for Arg1:T51 Arg2:T16	
+R14	treatment_for Arg1:T52 Arg2:T16	
+R15	treatment_for Arg1:T53 Arg2:T16	
+R16	treatment_for Arg1:T54 Arg2:T16	
+T55	method 2156 2181	massage and touch therapy
+T56	method 2183 2245	cognitive stimulation combined with a cholinesterase inhibitor
+T18	method 2251 2318	cognitive stimulation combined with exercise and social interaction
+T57	method 2358 2376	drug interventions
+T58	method 2459 2490	drug and non-drug interventions
+T59	method 2655 2687	network meta-analysis of studies
+T61	method 2902 2924	non-drug interventions
+T62	method 2964 2982	drug interventions
+R17	treatment_for Arg1:T61 Arg2:T25	
+T63	method 688 698	usual care
+T64	method 1667 1677	usual care
+T65	disease 318 342	neuropsychiatric symptom
+T66	method 2883 2900	systematic review
+R1	hyponym_of Arg1:T5 Arg2:T65	
+R3	characteristic_of Arg1:T5 Arg2:T6	
+R4	treatment_for Arg1:T18 Arg2:T19	
+R6	treatment_for Arg1:T56 Arg2:T19	
+R7	treatment_for Arg1:T55 Arg2:T19	
+T10	method 24 37	interventions
+T41	method 2714 2727	interventions
+T47	method 712 724	intervention
+R27	occurs_in Arg1:T19 Arg2:T20	
+R30	occurs_in Arg1:T25 Arg2:T26	
+T60	disease 1070 1080	depression
+T67	disease 1084 1092	dementia
+T21	disease 2807 2832	major depressive disorder
+T24	disease 3053 3078	major depressive disorder
+T27	disease 2576 2601	major depressive disorder

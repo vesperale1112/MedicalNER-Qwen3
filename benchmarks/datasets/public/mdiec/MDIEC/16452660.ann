@@ -1,0 +1,63 @@
+T2	physiology 73 94	short-term depression
+T3	signs 0 26	Physiological temperatures
+T4	physiology 166 187	synaptic transmission
+T7	physiology 310 340	short-term synaptic plasticity
+T9	physiology 241 263	temperature dependence
+T10	physiology 417 439	temperature dependence
+T11	method 376 400	voltage-clamp recordings
+T13	physiology 724 739	EPSC depression
+T17	signs 534 559	physiological temperature
+T19	disease 927 937	depression
+T20	disease 1022 1032	depression
+T23	signs 878 904	physiological temperatures
+T24	method 1034 1062	Presynaptic calyx recordings
+T25	physiology 1189 1200	Ca2+ influx
+T27	physiology 1159 1174	depolarizations
+T28	signs 1077 1102	physiological temperature
+T29	physiology 1207 1217	Ca2+ entry
+T30	physiology 1318 1333	depolarizations
+T31	physiology 1285 1307	temperature dependence
+T32	signs 1243 1255	temperatures
+T33	physiology 1467 1477	Ca2+ entry
+T35	signs 1391 1402	temperature
+T36	physiology 1366 1381	depolarizations
+T37	physiology 1581 1618	presynaptic Ca2+ current inactivation
+T38	physiology 1648 1676	steady-state EPSC depression
+T40	signs 1541 1553	temperatures
+T43	physiology 1950 1971	high-frequency firing
+T44	disease 1911 1932	short-term depression
+T45	signs 1784 1809	physiological temperature
+T5	signs 215 226	temperature
+R1	associated_with Arg1:T4 Arg2:T5	
+T46	physiology 46 68	vesicle pool depletion
+T1	physiology 118 137	vesicle recruitment
+R2	associated_with Arg1:T3 Arg2:T46	
+R3	associated_with Arg1:T3 Arg2:T2	
+R4	associated_with Arg1:T2 Arg2:T1	
+R5	associated_with Arg1:T46 Arg2:T1	
+T6	physiology 443 453	exocytosis
+T8	region 461 482	calyx of Held synapse
+R6	located_in Arg1:T6 Arg2:T8	
+R7	occurs_in Arg1:T10 Arg2:T6	
+T47	physiology 484 488	EPSC
+T48	signs 493 518	miniature EPSC amplitudes
+T12	signs 788 799	temperature
+T14	signs 846 863	vesicle pool size
+T15	physiology 1113 1130	capacitance jumps
+R8	associated_with Arg1:T28 Arg2:T15	
+R9	associated_with Arg1:T15 Arg2:T27	
+R10	associated_with Arg1:T27 Arg2:T25	
+T18	physiology 1257 1267	exocytosis
+T21	physiology 1429 1439	exocytosis
+R11	associated_with Arg1:T35 Arg2:T21	
+T22	region 1524 1532	vesicles
+R12	associated_with Arg1:T40 Arg2:T37	
+R13	associated_with Arg1:T40 Arg2:T38	
+T26	physiology 1739 1757	steady-state EPSCs
+T34	physiology 1855 1890	refilling of synaptic vesicle pools
+T39	signs 1825 1843	quantal amplitudes
+R14	risk_factor_of Arg1:T39 Arg2:T44	
+R15	risk_factor_of Arg1:T34 Arg2:T44	
+R16	occurs_in Arg1:T44 Arg2:T43	
+T16	signs 643 654	temperature
+R17	associated_with Arg1:T23 Arg2:T19	

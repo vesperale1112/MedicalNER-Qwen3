@@ -1,0 +1,1 @@
+Within mothers with a psychiatric disorder (n=173), we estimated the association between antidepressant treatment in pregnancy and postnatal depressive symptom severity, as standardized EPDS mean scores, via the inverse probability of treatment weight (association analysis).

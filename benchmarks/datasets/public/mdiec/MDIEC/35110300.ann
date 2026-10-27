@@ -1,0 +1,47 @@
+T1	drug 0 8	Ketamine
+T2	disease 36 60	severe suicidal ideation
+T3	drug 177 185	ketamine
+T4	disease 493 518	current suicidal ideation
+T5	Health_factors 584 608	history of schizophrenia
+T6	disease 618 637	psychotic disorders
+T7	disease 639 659	substance dependence
+T8	drug 687 695	ketamine
+T9	drug 779 787	ketamine
+T10	disease 841 851	depressive
+T12	drug 1303 1311	ketamine
+T13	drug 1429 1437	ketamine
+T14	disease 1896 1907	mental pain
+T15	drug 1947 1955	ketamine
+T16	drug 2134 2142	ketamine
+T17	disease 2223 2231	suicidal
+T18	disease 2242 2267	Comorbid mental disorders
+T19	disease 2326 2337	mental pain
+T20	drug 2381 2389	ketamine
+T22	method 62 111	double blind, randomised placebo controlled trial
+T23	method 273 348	Prospective, double blind, superiority, randomised placebo controlled trial
+T27	method 901 922	intravenous infusions
+T28	drug 959 965	saline
+T29	method 1026 1041	usual treatment
+T30	disease 1119 1127	suicidal
+T31	method 1165 1204	scale for suicidal ideation total score
+T32	disease 1338 1352	suicidal ideas
+T33	method 1483 1493	odds ratio
+T34	method 1503 1522	confidence interval
+T36	method 1667 1686	confidence interval
+T37	disease 1711 1721	depressive
+T39	disease 1836 1853	psychotic symptom
+T40	disease 1827 1832	manic
+T41	method 2033 2043	odds ratio
+T42	method 2053 2072	confidence interval
+R4	treatment_for Arg1:T16 Arg2:T17	
+R7	help_diagnose Arg1:T31 Arg2:T30	
+R8	treatment_for Arg1:T12 Arg2:T32	
+T46	method 1646 1656	odds ratio
+T45	Health_factors 471 475	Aged
+T24	Health_factors 482 487	older
+T11	physiology 2306 2322	analgesic effect
+T25	physiology 2356 2377	anti-suicidal effects
+R1	treatment_for Arg1:T1 Arg2:T2	
+T35	disease 832 839	bipolar
+T21	drug 926 934	ketamine
+T38	disease 1637 1644	bipolar

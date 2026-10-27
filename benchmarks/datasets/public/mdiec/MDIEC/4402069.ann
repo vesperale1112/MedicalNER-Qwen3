@@ -1,0 +1,30 @@
+T1	gene 0 48	Cyclic adenosine monophosphate phosphodiesterase
+T3	disease 69 76	anxiety
+T4	region 52 57	brain
+T5	disease 96 103	anxiety
+T6	drug 123 153	cyclic adenosine monophosphate
+T8	physiology 239 271	brain phosphodiesterase activity
+T9	drug 278 318	dibutyryl cyclic adenosine monophosphate
+T10	disease 345 352	anxiety
+T11	drug 364 379	methylxanthines
+T12	disease 397 404	anxiety
+T13	drug 428 440	theophylline
+T14	drug 445 461	chlordiazepoxide
+T15	disease 479 486	anxiety
+T16	disease 561 568	anxiety
+T17	physiology 625 651	phosphodiesterase activity
+T18	drug 78 83	Drugs
+T19	region 161 166	brain
+T20	drug 179 208	potent anxiety-reducing drugs
+T21	drug 590 595	drugs
+T22	region 659 664	brain
+R1	located_in Arg1:T1 Arg2:T4	
+R2	associated_with Arg1:T1 Arg2:T3	
+R3	located_in Arg1:T6 Arg2:T19	
+R4	associated_with Arg1:T20 Arg2:T8	
+R5	treatment_for Arg1:T9 Arg2:T10	
+R6	associated_with Arg1:T16 Arg2:T17	
+R7	located_in Arg1:T17 Arg2:T22	
+R8	treatment_for Arg1:T11 Arg2:T12	
+R9	treatment_for Arg1:T13 Arg2:T15	
+R10	treatment_for Arg1:T14 Arg2:T15	

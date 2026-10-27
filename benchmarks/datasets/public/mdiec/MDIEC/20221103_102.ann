@@ -1,0 +1,8 @@
+T2	disease 22 42	psychiatric disorder
+T5	method 89 113	antidepressant treatment
+T6	physiology 117 126	pregnancy
+T7	disease 131 159	postnatal depressive symptom
+T8	method 186 190	EPDS
+T10	method 253 273	association analysis
+T1	Health_factors 7 14	mothers
+R1	occurs_in Arg1:T1 Arg2:T2	

@@ -1,0 +1,16 @@
+T3	method 51 66	hormone therapy
+T4	drug 87 105	oral contraceptive
+T6	drug 107 109	OC
+T8	method 120 147	hormone replacement therapy
+T9	method 149 152	HRT
+T10	physiology 160 169	menopause
+T12	disease 229 239	depression
+T13	disease 193 201	dementia
+R1	abbreviation_for Arg1:T6 Arg2:T4	
+R2	abbreviation_for Arg1:T9 Arg2:T8	
+T1	Health_factors 208 214	female
+T2	method 78 114	lifetime oral contraceptive (OC) use
+R3	hyponym_of Arg1:T2 Arg2:T3	
+R4	hyponym_of Arg1:T8 Arg2:T3	
+R5	occurs_in Arg1:T13 Arg2:T1	
+R6	occurs_in Arg1:T1 Arg2:T12	

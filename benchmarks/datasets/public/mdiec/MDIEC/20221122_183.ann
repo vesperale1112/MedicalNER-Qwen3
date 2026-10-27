@@ -1,0 +1,9 @@
+T5	disease 49 55	stroke
+T6	disease 250 256	stroke
+T7	disease 111 113	MI
+T8	disease 296 298	MI
+T9	disease 139 149	depression
+T10	method 170 179	follow-up
+T11	method 188 216	Kaplan-Meier cumulative risk
+T12	method 12 33	fully adjusted models
+R1	risk_factor_of Arg1:T5 Arg2:T9	

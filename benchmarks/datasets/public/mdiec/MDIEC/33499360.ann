@@ -1,0 +1,30 @@
+T1	disease 78 103	Major Depression Disorder
+T2	disease 117 133	Major depression
+T3	disease 139 159	psychiatric disorder
+T4	disease 406 422	major depression
+T5	disease 927 937	depression
+T6	disease 1016 1045	deficit in executive function
+T7	disease 1212 1222	depression
+T8	disease 1323 1325	MD
+T9	method 2 19	Systematic Review
+R1	hyponym_of Arg1:T2 Arg2:T3	
+T10	method 304 321	systematic review
+T11	method 453 471	explanatory models
+T12	method 703 720	Trail Making Test
+T13	method 729 751	Stroop Color-Word Test
+T14	disease 967 986	psychomotor slowing
+R2	characteristic_of Arg1:T5 Arg2:T6	
+R3	characteristic_of Arg1:T14 Arg2:T5	
+T15	physiology 23 41	Executive Function
+T17	physiology 198 233	poor performance in tasks of memory
+T18	physiology 235 244	attention
+T20	physiology 268 286	executive function
+T21	method 476 503	processing speed hypothesis
+T23	signs 893 909	processing speed
+T16	signs 46 74	Information Processing Speed
+T19	signs 246 262	processing speed
+T22	method 511 538	cognitive effort hypothesis
+R4	characteristic_of Arg1:T17 Arg2:T2	
+R5	characteristic_of Arg1:T18 Arg2:T2	
+R6	characteristic_of Arg1:T19 Arg2:T2	
+R7	characteristic_of Arg1:T20 Arg2:T2	

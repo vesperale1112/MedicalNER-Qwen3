@@ -1,0 +1,9 @@
+T2	disease 21 70	impairment of hypothalamic-pituitary-adrenal axis
+T3	disease 78 88	depression
+T4	disease 101 119	olfactory deficits
+T5	physiology 133 151	neurogenic effects
+T6	drug 155 209	selective serotonin reuptake inhibitor antidepressants
+T8	physiology 243 262	olfactory functions
+R1	risk_factor_of Arg1:T2 Arg2:T4	
+R3	treatment_for Arg1:T6 Arg2:T8	
+R2	treatment_for Arg1:T5 Arg2:T8	

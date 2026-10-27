@@ -1,0 +1,67 @@
+T2	disease 85 104	depressive symptoms
+T3	disease 335 354	affective disorders
+T4	disease 702 721	depressive symptoms
+T5	disease 812 831	depressive symptoms
+T6	disease 1050 1069	depressive symptoms
+T7	disease 1128 1147	depressive symptoms
+T8	disease 1344 1363	depressive symptoms
+T9	disease 1525 1535	depression
+T10	symptom 70 80	chronotype
+R1	associated_with Arg1:T10 Arg2:T2	
+T11	symptom 173 191	evening chronotype
+T13	symptom 282 310	Evening-oriented individuals
+R3	risk_factor_of Arg1:T13 Arg2:T3	
+T14	symptom 368 392	educational achievements
+T15	Health_factors 397 415	consume stimulants
+T16	method 739 747	Big Five
+T17	method 756 763	Big Two
+T18	method 927 929	SD
+T19	symptom 959 970	neuroticism
+T20	symptom 978 995	conscientiousness
+T21	physiology 1006 1021	alpha-stability
+R6	risk_factor_of Arg1:T21 Arg2:T6	
+R7	risk_factor_of Arg1:T20 Arg2:T6	
+R8	risk_factor_of Arg1:T19 Arg2:T6	
+T22	Health_factors 1112 1123	eveningness
+R9	associated_with Arg1:T22 Arg2:T7	
+T23	symptom 1170 1187	conscientiousness
+T24	symptom 1231 1242	neuroticism
+T25	symptom 1264 1275	neuroticism
+T26	symptom 1281 1298	conscientiousness
+T27	physiology 1307 1322	alpha-stability
+R12	risk_factor_of Arg1:T27 Arg2:T8	
+R13	risk_factor_of Arg1:T26 Arg2:T8	
+R14	risk_factor_of Arg1:T25 Arg2:T8	
+T28	symptom 1419 1430	chronotypes
+T29	symptom 1435 1453	personality traits
+T1	Health_factors 883 890	females
+T30	Health_factors 896 901	males
+T32	symptom 23 41	personality traits
+T34	symptom 432 460	morning-oriented individuals
+T35	symptom 643 661	personality traits
+T36	Health_factors 677 687	chronotype
+T37	symptom 764 782	personality traits
+T39	Health_factors 904 908	aged
+T40	symptom 939 950	Eveningness
+T41	Health_factors 1384 1403	evening chronotypes
+T42	symptom 784 807	morningness-eveningness
+T44	Health_factors 586 604	evening preference
+R2	risk_factor_of Arg1:T40 Arg2:T6	
+R4	associated_with Arg1:T7 Arg2:T23	
+R10	associated_with Arg1:T22 Arg2:T23	
+R11	associated_with Arg1:T22 Arg2:T24	
+R20	associated_with Arg1:T7 Arg2:T24	
+R5	associated_with Arg1:T32 Arg2:T10	
+R18	associated_with Arg1:T32 Arg2:T2	
+T31	Health_factors 215 236	negative consequences
+R21	associated_with Arg1:T11 Arg2:T31	
+T45	Health_factors 547 578	negative emotional consequences
+R15	occurs_in Arg1:T8 Arg2:T41	
+T38	Health_factors 859 877	Polish individuals
+T12	physiology 1192 1207	alpha-stability
+R16	associated_with Arg1:T22 Arg2:T12	
+R17	associated_with Arg1:T7 Arg2:T12	
+R19	associated_with Arg1:T28 Arg2:T9	
+R22	associated_with Arg1:T29 Arg2:T9	
+T33	symptom 250 280	affective and cognitive levels
+R23	occurs_in Arg1:T31 Arg2:T33	

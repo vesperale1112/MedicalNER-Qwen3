@@ -1,0 +1,29 @@
+T0	disease 0 28	Generalized Anxiety Disorder
+T1	disease 30 58	Generalized anxiety disorder
+T2	disease 60 63	GAD
+T3	disease 70 98	common and disabling illness
+T4	disease 160 163	GAD
+T5	disease 209 248	cardiovascular-related events and death
+T6	disease 190 197	suicide
+T10	Health_factors 296 319	primary care physicians
+T11	disease 338 374	chronic, pervasive anxiety and worry
+T13	disease 439 451	restlessness
+T14	disease 453 460	fatigue
+T15	disease 488 500	irritability
+T16	disease 502 516	muscle tension
+T18	disease 521 539	sleep disturbances
+T19	disease 390 437	nonspecific physical and psychological symptoms
+T22	method 571 584	psychotherapy
+T23	method 592 620	cognitive behavioral therapy
+T24	method 626 641	pharmacotherapy
+T25	drug 651 690	selective serotonin reuptake inhibitors
+T26	drug 695 739	serotonin-norepinephrine reuptake inhibitors
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+R2	hyponym_of Arg1:T1 Arg2:T3	
+R3	hyponym_of Arg1:T2 Arg2:T3	
+R4	risk_factor_of Arg1:T4 Arg2:T6	
+R5	risk_factor_of Arg1:T4 Arg2:T5	
+T7	disease 462 486	difficulty concentrating
+R6	hyponym_of Arg1:T25 Arg2:T24	
+R7	hyponym_of Arg1:T26 Arg2:T24	
+R8	hyponym_of Arg1:T23 Arg2:T22	

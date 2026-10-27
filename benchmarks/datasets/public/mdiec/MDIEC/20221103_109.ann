@@ -1,0 +1,8 @@
+T2	method 26 37	blended CBT
+T3	Health_factors 42 57	online sessions
+T4	Health_factors 80 101	face-to-face sessions
+T5	disease 107 117	depression
+T6	Health_factors 121 147	routine mental health care
+T1	Health_factors 9 15	Adults
+T7	method 185 227	European implementation project MasterMind
+R1	treatment_for Arg1:T2 Arg2:T5	

@@ -1,0 +1,8 @@
+T1	disease 32 55	parkinsonian depression
+T2	disease 174 197	parkinsonian depression
+T3	disease 133 151	sleep disturbances
+T4	disease 12 28	major depression
+T5	disease 105 128	loss of appetite/weight
+R1	characteristic_of Arg1:T5 Arg2:T2	
+R2	characteristic_of Arg1:T3 Arg2:T2	
+R3	characteristic_of Arg1:T4 Arg2:T1	

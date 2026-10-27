@@ -1,0 +1,5 @@
+T1	method 13 53	Self-guided internet-based interventions
+T2	method 76 95	first-step approach
+T4	disease 116 126	depression
+R1	treatment_for Arg1:T1 Arg2:T4	
+R2	hyponym_of Arg1:T1 Arg2:T2	

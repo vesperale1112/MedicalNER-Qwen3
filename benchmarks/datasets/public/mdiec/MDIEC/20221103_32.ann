@@ -1,0 +1,8 @@
+T3	disease 93 125	behavioral and neuronal deficits
+T4	disease 129 143	chronic stress
+T5	disease 148 158	depression
+T6	drug 207 215	ketamine
+R1	occurs_in Arg1:T3 Arg2:T4	
+R2	occurs_in Arg1:T3 Arg2:T5	
+T2	drug 56 75	rapid-acting agents
+T1	drug 172 206	glutamate NMDA receptor antagonist

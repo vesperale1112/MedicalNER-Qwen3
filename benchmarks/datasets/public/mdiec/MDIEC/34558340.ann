@@ -1,0 +1,55 @@
+T1	disease 40 50	depression
+T2	disease 66 74	dementia
+T3	disease 159 169	Depression
+T5	disease 315 335	recurrent depression
+T6	disease 353 363	depression
+T8	disease 473 483	depression
+T9	disease 488 496	dementia
+T10	disease 783 791	dementia
+T11	disease 796 806	depression
+T12	disease 1211 1218	anxiety
+T13	disease 1764 1774	depression
+T15	method 0 35	Mindfulness-based cognitive therapy
+T16	method 78 95	qualitative study
+T17	Health_factors 212 236	negative health outcomes
+R2	associated_with Arg1:T3 Arg2:T17	
+T18	method 238 273	Mindfulness-based cognitive therapy
+R3	treatment_for Arg1:T18 Arg2:T5	
+T19	method 521 569	mindfulness-based cognitive therapy intervention
+T20	method 628 645	qualitative study
+T21	method 666 705	randomised controlled feasibility study
+T22	method 707 733	Semi-structured interviews
+T23	method 850 867	Thematic analysis
+T24	method 938 973	mindfulness-based cognitive therapy
+T25	disease 1386 1408	cognitive difficulties
+T26	method 1521 1556	mindfulness-based cognitive therapy
+T27	method 1675 1710	mindfulness-based cognitive therapy
+R4	treatment_for Arg1:T27 Arg2:T13	
+T28	symptom 1098 1124	positive emotional changes
+T29	physiology 1144 1159	self-compassion
+R5	hyponym_of Arg1:T29 Arg2:T28	
+T31	Health_factors 112 117	carer
+T32	Health_factors 122 133	facilitator
+T33	Health_factors 589 595	carers
+T34	Health_factors 600 612	facilitators
+T35	Health_factors 812 818	carers
+T36	Health_factors 828 847	course facilitators
+T37	Health_factors 1178 1184	carers
+T38	Health_factors 1304 1331	facilitator characteristics
+T39	method 1344 1365	mindfulness practices
+T40	Health_factors 1367 1384	Carer involvement
+T41	Health_factors 1478 1490	Facilitators
+T42	Health_factors 1888 1907	clinical population
+T4	disease 173 181	dementia
+R1	occurs_in Arg1:T3 Arg2:T4	
+T7	disease 367 375	dementia
+T14	disease 1778 1786	dementia
+T30	method 1823 1835	intervention
+R8	occurs_in Arg1:T13 Arg2:T14	
+R6	treatment_for Arg1:T15 Arg2:T1	
+R9	occurs_in Arg1:T1 Arg2:T2	
+T43	physiology 1054 1088	present moment focus and awareness
+T44	method 1735 1747	intervention
+R7	hyponym_of Arg1:T27 Arg2:T44	
+R10	treatment_for Arg1:T18 Arg2:T6	
+R11	occurs_in Arg1:T6 Arg2:T7	

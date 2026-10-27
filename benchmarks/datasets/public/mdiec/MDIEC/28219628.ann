@@ -1,0 +1,60 @@
+T0	disease 58 98	attention deficit hyperactivity disorder
+T2	Health_factors 102 110	children
+T3	Health_factors 115 121	adults
+T4	signs 0 24	Subcortical brain volume
+T5	disease 275 315	attention deficit hyperactivity disorder
+T6	disease 317 321	ADHD
+T8	method 167 187	Neuroimaging studies
+T9	symptom 199 221	structural alterations
+T10	Health_factors 250 258	children
+T11	Health_factors 263 269	adults
+T12	method 353 392	international ENIGMA ADHD Working Group
+T14	method 457 470	meta-analyses
+T15	method 506 533	methodological heterogeneit
+T17	disease 629 633	ADHD
+T18	Health_factors 604 612	children
+T19	Health_factors 617 623	adults
+T23	method 753 801	international ENIGMA Working Group collaboration
+T25	disease 971 975	ADHD
+T30	method 930 950	harmonised protocols
+T31	method 886 924	structural T1-weighted MRI brain scans
+T33	method 1185 1192	cohorts
+T36	signs 1117 1136	intracranial volume
+T37	region 1090 1112	subcortical structures
+T42	disease 1376 1380	ADHD
+T43	Health_factors 1427 1430	age
+T47	disease 1653 1657	ADHD
+T48	region 1510 1518	amygdala
+T49	region 1529 1536	caudate
+T50	region 1547 1558	hippocampus
+T51	region 1569 1576	putamen
+T52	signs 1591 1610	intracranial volume
+T53	disease 1807 1811	ADHD
+T54	region 1770 1778	thalamus
+T55	region 1749 1757	pallidum
+R1	occurs_in Arg1:T4 Arg2:T0	
+R2	occurs_in Arg1:T0 Arg2:T2	
+R3	occurs_in Arg1:T0 Arg2:T3	
+T1	method 125 154	cross-sectional mega-analysis
+R5	occurs_in Arg1:T10 Arg2:T5	
+R6	occurs_in Arg1:T11 Arg2:T5	
+R7	abbreviation_for Arg1:T6 Arg2:T5	
+R8	occurs_in Arg1:T10 Arg2:T6	
+R9	occurs_in Arg1:T11 Arg2:T6	
+R10	characteristic_of Arg1:T9 Arg2:T5	
+R11	characteristic_of Arg1:T9 Arg2:T6	
+T7	method 437 452	imaging studies
+T13	method 490 501	sample size
+R12	occurs_in Arg1:T19 Arg2:T17	
+R13	occurs_in Arg1:T18 Arg2:T17	
+T16	method 696 725	cross-sectional mega-analysis
+T20	region 1482 1491	accumbens
+T21	method 1493 1502	Cohen's d
+R14	characteristic_of Arg1:T20 Arg2:T47	
+R15	characteristic_of Arg1:T48 Arg2:T47	
+R16	characteristic_of Arg1:T49 Arg2:T47	
+R17	characteristic_of Arg1:T50 Arg2:T47	
+R18	characteristic_of Arg1:T51 Arg2:T47	
+R19	characteristic_of Arg1:T52 Arg2:T47	
+T22	method 1688 1701	mega-analysis
+T24	method 1268 1288	false discovery rate

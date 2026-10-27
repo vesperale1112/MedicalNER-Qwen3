@@ -1,0 +1,63 @@
+T0	disease 39 52	schizophrenia
+T1	drug 104 123	antipsychotic drugs
+T3	disease 178 187	mortality
+T4	Health_factors 133 160	serious health consequences
+T5	physiology 78 100	Metabolic side effects
+T6	physiology 0 22	Metabolic side effects
+T7	disease 211 224	schizophrenia
+T8	drug 242 247	drugs
+T9	physiology 289 306	metabolic effects
+T11	disease 451 464	schizophrenia
+T12	drug 420 434	antipsychotics
+T14	method 479 524	random-effects Bayesian network meta-analysis
+T15	physiology 391 413	metabolic side effects
+T16	disease 551 564	Schizophrenia
+T17	method 542 550	Cochrane
+T18	method 578 608	Study-Based Register of Trials
+T19	method 636 642	PubMed
+T20	disease 923 936	schizophrenia
+T22	drug 805 818	antipsychotic
+T23	drug 862 875	antipsychotic
+T27	method 705 750	open and blinded randomized controlled trials
+T28	symptom 962 973	weight gain
+T30	drug 1078 1093	fasting glucose
+T31	drug 1101 1112	cholesterol
+T32	drug 1114 1149	low-density lipoprotein cholesterol
+T34	gene 1151 1187	high-density lipoprotein cholesterol
+T36	drug 1193 1206	triglycerides
+T37	symptom 1059 1070	weight gain
+T40	method 1235 1241	trials
+T41	drug 1275 1289	antipsychotics
+T42	method 1305 1314	follow-up
+T45	drug 1328 1342	Chlorpromazine
+T46	drug 1466 1475	clozapine
+T47	drug 1510 1520	olanzapine
+T48	drug 1559 1567	zotepine
+T49	symptom 1361 1372	weight gain
+T51	method 1415 1432	credible interval
+T52	method 1374 1389	mean difference
+T54	drug 1723 1727	drug
+T55	symptom 1845 1856	weight gain
+T56	method 1826 1841	mean difference
+T57	method 1647 1695	sensitivity and network meta-regression analyses
+T59	drug 1964 1979	fasting glucose
+T60	drug 1873 1887	Antipsychotics
+T61	symptom 1898 1909	weight gain
+T62	drug 1936 1941	drugs
+T63	drug 2077 2096	antipsychotic drugs
+T65	physiology 2134 2156	metabolic side effects
+T66	disease 2200 2213	schizophrenia
+T67	disease 2225 2241	chronic disorder
+T68	drug 2317 2321	drug
+R1	occurs_in Arg1:T6 Arg2:T0	
+R2	risk_factor_of Arg1:T5 Arg2:T3	
+R3	associated_with Arg1:T45 Arg2:T49	
+T2	method 1434 1437	CrI
+T10	method 1789 1812	intention-to-treat data
+R4	hyponym_of Arg1:T66 Arg2:T67	
+T13	method 834 848	administration
+R5	associated_with Arg1:T49 Arg2:T46	
+R6	associated_with Arg1:T49 Arg2:T47	
+R7	associated_with Arg1:T49 Arg2:T48	
+T21	drug 1984 1989	lipid
+R8	associated_with Arg1:T63 Arg2:T65	

@@ -1,0 +1,46 @@
+T1	disease 36 86	first-episode drug-naive major depression disorder
+T2	disease 142 167	depressive symptomatology
+T3	disease 469 494	major depressive disorder
+T4	disease 496 499	MDD
+T5	disease 542 570	first-episode drug-naive MDD
+T6	disease 1002 1005	MDD
+T7	disease 1088 1091	MDD
+T8	disease 1304 1307	MDD
+T9	disease 1401 1417	major depression
+T10	signs 0 32	Sub-regional hippocampal volumes
+T11	signs 88 116	Hippocampal volume reduction
+R1	associated_with Arg1:T11 Arg2:T2	
+T12	region 263 274	hippocampus
+T13	signs 280 299	hippocampal volumes
+T14	signs 408 440	hippocampal sub-regional volumes
+R2	abbreviation_for Arg1:T4 Arg2:T3	
+T15	method 602 618	healthy controls
+T16	method 620 622	HC
+R3	abbreviation_for Arg1:T16 Arg2:T15	
+T17	region 672 683	hippocampus
+T18	method 824 834	FreeSurfer
+T19	method 839 855	asymmetric index
+T20	method 857 859	AI
+R4	abbreviation_for Arg1:T20 Arg2:T19	
+T21	signs 961 998	volumes of bilateral hippocampal head
+T22	method 1018 1020	HC
+T23	method 1105 1121	higher AI values
+R6	characteristic_of Arg1:T23 Arg2:T7	
+T25	region 1129 1170	subfield of cornu ammonis 4/dentate gyrus
+T26	method 1176 1178	HC
+T27	signs 1194 1226	hippocampal sub-regional volumes
+T28	method 508 528	segmentation methods
+T29	Health_factors 578 581	age
+T30	Health_factors 587 593	gender
+T31	region 713 717	head
+T32	region 719 723	body
+T33	region 728 732	tail
+R5	characteristic_of Arg1:T21 Arg2:T6	
+T34	signs 1239 1256	imaging biomarker
+R7	hyponym_of Arg1:T27 Arg2:T34	
+T24	region 341 352	axial parts
+T36	region 767 787	transverse subfields
+R12	characteristic_of Arg1:T27 Arg2:T8	
+T40	Health_factors 1264 1298	first-episode, drug-naive patients
+R8	located_in Arg1:T23 Arg2:T25	
+T37	disease 444 494	first episode drug-naive major depressive disorder

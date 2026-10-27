@@ -1,0 +1,45 @@
+T0	disease 0 7	Anxiety
+T1	disease 9 26	Anxiety disorders
+T2	disease 28 55	separation anxiety disorder
+T3	disease 57 73	selective mutism
+T4	disease 93 116	social anxiety disorder
+T5	disease 118 132	panic disorder
+T6	disease 134 145	agoraphobia
+T7	disease 151 179	generalised anxiety disorder
+T8	disease 185 216	common and disabling conditions
+T10	Health_factors 242 251	childhood
+T11	Health_factors 253 264	adolescence
+T12	Health_factors 270 285	early adulthood
+T13	disease 75 91	specific phobias
+T17	disease 333 365	stress-induced transient anxiety
+T18	disease 492 509	anxiety disorders
+T19	Health_factors 538 543	women
+T20	Health_factors 547 550	men
+T21	disease 577 593	major depression
+T22	disease 595 636	alcohol and other substance-use disorders
+T24	disease 642 663	personality disorders
+T25	disease 723 766	thyroid, cardiac, and respiratory disorders
+T27	disease 772 809	substance intoxication and withdrawal
+T28	disease 693 712	physical conditions
+T30	disease 839 856	anxiety disorders
+T32	drug 1043 1086	serotonin-noradrenaline-reuptake inhibitors
+T33	method 884 908	Psychological treatments
+T34	method 923 952	cognitive behavioural therapy
+T35	method 958 984	pharmacological treatments
+T36	drug 999 1038	selective serotonin-reuptake inhibitors
+T37	method 1254 1277	personalised treatments
+R1	hyponym_of Arg1:T7 Arg2:T8	
+R2	hyponym_of Arg1:T6 Arg2:T8	
+R3	hyponym_of Arg1:T5 Arg2:T8	
+R4	hyponym_of Arg1:T4 Arg2:T8	
+R5	hyponym_of Arg1:T13 Arg2:T8	
+R6	hyponym_of Arg1:T3 Arg2:T8	
+R7	hyponym_of Arg1:T2 Arg2:T8	
+R8	hyponym_of Arg1:T1 Arg2:T8	
+T9	physiology 468 485	daily functioning
+R9	risk_factor_of Arg1:T19 Arg2:T18	
+R10	hyponym_of Arg1:T25 Arg2:T28	
+R11	hyponym_of Arg1:T27 Arg2:T28	
+R12	hyponym_of Arg1:T34 Arg2:T33	
+R13	hyponym_of Arg1:T36 Arg2:T35	
+R14	hyponym_of Arg1:T32 Arg2:T35	

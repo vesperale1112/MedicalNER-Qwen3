@@ -1,0 +1,35 @@
+T0	disease 66 73	anxiety
+T2	physiology 0 32	Molecular and neuronal substrate
+T3	drug 75 103	Benzodiazepine tranquilizers
+T4	disease 133 150	anxiety disorders
+T6	drug 233 248	benzodiazepines
+T9	drug 415 423	diazepam
+T10	physiology 212 229	anxiolytic action
+T11	drug 479 487	diazepam
+T12	gene 516 544	alpha2(H101R) point mutation
+T13	gene 574 602	alpha3(H126R) point mutation
+T14	method 502 506	mice
+T15	method 560 564	mice
+T16	physiology 458 475	anxiolytic action
+T17	drug 658 672	benzodiazepine
+T18	gene 694 716	alpha2 GABAA receptors
+T19	gene 779 801	alpha3 GABAA receptors
+T22	region 753 766	limbic system
+T23	region 828 855	reticular activating system
+T24	physiology 637 654	anxiolytic effect
+R1	treatment_for Arg1:T3 Arg2:T4	
+T5	physiology 168 197	molecular and neuronal target
+T25	method 280 291	mouse lines
+T7	gene 329 359	gamma-aminobutyric acid type A
+T26	gene 322 327	GABAA
+R2	abbreviation_for Arg1:T26 Arg2:T7	
+T27	method 429 452	knock-in point mutation
+R3	associated_with Arg1:T24 Arg2:T18	
+R4	associated_with Arg1:T18 Arg2:T22	
+R5	associated_with Arg1:T19 Arg2:T23	
+T8	gene 305 370	alpha2 or alpha3 GABAA (gamma-aminobutyric acid type A) receptors
+R6	treatment_for Arg1:T2 Arg2:T0	
+R7	associated_with Arg1:T16 Arg2:T12	
+R8	associated_with Arg1:T16 Arg2:T13	
+R9	occurs_in Arg1:T13 Arg2:T15	
+R10	occurs_in Arg1:T12 Arg2:T14	

@@ -1,0 +1,11 @@
+T2	method 60 96	Web-based cognitive behavior therapy
+T3	method 98 101	CBT
+T4	Health_factors 215 227	CBT literacy
+T6	disease 120 130	depression
+T7	Health_factors 190 209	depression literacy
+T8	Health_factors 142 163	hazardous alcohol use
+T9	Health_factors 182 188	stigma
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T1	Health_factors 165 180	quality of life
+R2	treatment_for Arg1:T3 Arg2:T6	
+R3	treatment_for Arg1:T2 Arg2:T6	

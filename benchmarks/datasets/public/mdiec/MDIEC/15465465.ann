@@ -1,0 +1,42 @@
+T1	disease 8 18	depression
+T2	disease 43 49	cancer
+T3	disease 117 123	cancer
+T4	disease 307 317	depression
+T5	disease 423 429	cancer
+T6	disease 558 568	depression
+T7	disease 661 667	cancer
+T8	disease 946 956	depression
+T9	physiology 991 1042	cytotoxic T-cell and natural-killer-cell activities
+T12	disease 0 6	Stress
+T13	physiology 276 299	chronic stress response
+T14	disease 539 553	chronic stress
+T17	Health_factors 795 813	stress experiences
+T18	Health_factors 902 905	sex
+T20	Health_factors 910 913	age
+T21	physiology 1284 1298	neuroendocrine
+T22	method 1342 1375	clinical and treatment strategies
+T23	region 1303 1317	immune systems
+T24	gene 1193 1212	genomic instability
+T25	physiology 1073 1103	immune surveillance of tumours
+T26	physiology 699 725	multistep immune reactions
+T27	gene 475 519	cellular and molecular immunological factors
+T28	region 24 37	immune system
+T29	method 171 192	psychoneuroimmunology
+T30	physiology 227 268	hypothalamic-pituitary-adrenal (HPA) axis
+T31	physiology 339 354	immune response
+R1	associated_with Arg1:T30 Arg2:T5	
+R4	associated_with Arg1:T30 Arg2:T31	
+R7	associated_with Arg1:T26 Arg2:T17	
+T15	Health_factors 858 866	stressor
+T16	Health_factors 932 941	stressors
+R11	associated_with Arg1:T16 Arg2:T9	
+R13	associated_with Arg1:T8 Arg2:T9	
+T19	physiology 1171 1188	somatic mutations
+R15	associated_with Arg1:T21 Arg2:T23	
+R20	associated_with Arg1:T27 Arg2:T14	
+R21	associated_with Arg1:T27 Arg2:T6	
+R5	occurs_in Arg1:T30 Arg2:T13	
+R6	occurs_in Arg1:T30 Arg2:T4	
+R2	associated_with Arg1:T9 Arg2:T25	
+R3	associated_with Arg1:T9 Arg2:T19	
+R8	associated_with Arg1:T9 Arg2:T24	

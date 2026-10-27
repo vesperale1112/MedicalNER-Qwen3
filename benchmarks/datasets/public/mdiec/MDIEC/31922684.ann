@@ -1,0 +1,39 @@
+T1	drug 0 8	Dopamine
+T2	drug 13 22	glutamate
+T3	disease 26 39	schizophrenia
+T5	disease 240 253	schizophrenia
+T6	symptom 592 649	elevated striatal dopamine synthesis and release capacity
+T7	disease 653 666	schizophrenia
+T8	physiology 683 699	glutamate system
+T9	disease 956 969	schizophrenia
+T10	disease 1090 1115	glutamatergic dysfunction
+T11	physiology 1199 1227	aberrant dopamine signalling
+T13	disease 1734 1747	schizophrenia
+T14	method 41 48	biology
+T15	physiology 74 104	Glutamate and dopamine systems
+T17	method 328 337	aetiology
+T19	method 381 455	post-mortem, preclinical, pharmacological and in vivo neuroimaging studies
+T20	method 457 496	Pharmacological and preclinical studies
+T21	physiology 548 563	dopamine system
+T22	physiology 737 752	dopamine system
+T23	method 812 826	methodological
+T25	gene 1049 1067	genetic influences
+T26	gene 1121 1133	genetic risk
+T27	physiology 1166 1181	dopamine system
+T28	disease 1386 1404	psychotic symptoms
+T29	Health_factors 1516 1529	opportunities
+T30	method 1559 1584	pharmacological therapies
+T32	physiology 1699 1730	glutamate and dopamine function
+T36	region 1295 1310	neural circuits
+T37	disease 979 1032	disruption of glutamatergic and dopaminergic function
+T38	Health_factors 913 951	genetic and environmental risk factors
+T40	physiology 137 156	neuronal signalling
+R1	associated_with Arg1:T15 Arg2:T40	
+R2	associated_with Arg1:T15 Arg2:T5	
+T4	method 221 236	pathophysiology
+T16	method 525 540	in vivo imaging
+T18	method 668 675	Imaging
+R3	characteristic_of Arg1:T6 Arg2:T7	
+R4	associated_with Arg1:T38 Arg2:T37	
+R5	associated_with Arg1:T9 Arg2:T37	
+R6	associated_with Arg1:T25 Arg2:T10	

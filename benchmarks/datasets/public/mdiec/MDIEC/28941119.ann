@@ -1,0 +1,105 @@
+T0	disease 63 76	schizophrenia
+T1	disease 78 94	bipolar disorder
+T2	disease 99 124	major depressive disorder
+T3	Health_factors 23 40	physical activity
+T4	method 128 152	global systematic review
+T5	method 157 170	meta-analysis
+T6	disease 207 220	schizophrenia
+T7	disease 222 238	bipolar disorder
+T8	disease 242 267	major depressive disorder
+T10	disease 184 205	severe mental illness
+T11	disease 269 272	die
+T12	disease 307 336	chronic somatic comorbidities
+T14	disease 431 453	cardiovascular disease
+T17	disease 468 477	mortality
+T21	Health_factors 361 382	low physical activity
+T22	Health_factors 338 356	Sedentary behavior
+T24	Health_factors 573 594	vulnerable population
+T26	method 497 524	comprehensive meta-analysis
+T27	disease 723 744	severe mental illness
+T28	method 611 624	meta-analysis
+T29	Health_factors 639 657	sedentary behavior
+T30	method 752 772	electronic databases
+T32	Health_factors 868 885	physical activity
+T33	method 893 918	self-report questionnaire
+T34	method 950 963	accelerometer
+T35	method 925 942	objective measure
+T36	Health_factors 842 860	sedentary behavior
+T39	method 999 1023	meta-regression analyses
+T40	method 966 994	Random effects meta-analyses
+T41	Health_factors 1090 1094	male
+T42	Health_factors 1101 1104	age
+T44	disease 1130 1151	severe mental illness
+T45	method 1192 1194	CI
+T49	method 1289 1329	age- and gender-matched healthy controls
+T50	Health_factors 1362 1400	moderate or vigorous physical activity
+T51	method 1427 1429	CI
+T52	method 1482 1498	healthy controls
+T55	disease 1575 1596	severe mental illness
+T56	method 1641 1657	healthy controls
+T58	method 1696 1706	odds ratio
+T59	method 1716 1718	CI
+T60	method 1738 1740	I2
+T61	method 1666 1694	physical activity guidelines
+T62	disease 2070 2083	schizophrenia
+T63	Health_factors 1755 1772	physical activity
+T65	Health_factors 1854 1865	male gender
+T66	Health_factors 1867 1879	being single
+T67	Health_factors 1881 1893	unemployment
+T69	Health_factors 1921 1943	higher body mass index
+T70	Health_factors 1945 1968	longer illness duration
+T71	Health_factors 1970 2013	antidepressant and antipsychotic medication
+T72	Health_factors 2019 2050	lower cardiorespiratory fitness
+T73	Health_factors 1895 1919	fewer years of education
+T74	Health_factors 1784 1832	non-compliance with physical activity guidelines
+T75	disease 2097 2113	bipolar disorder
+T76	Health_factors 2128 2145	physically active
+T77	Health_factors 2261 2272	outpatients
+T78	Health_factors 2184 2208	Geographical differences
+T80	Health_factors 2349 2366	physical activity
+T81	disease 2401 2422	severe mental illness
+T82	method 2431 2444	interventions
+T83	method 2472 2482	prevention
+T84	Health_factors 2486 2505	physical inactivity
+T87	Health_factors 2510 2528	sedentary behavior
+R1	occurs_in Arg1:T3 Arg2:T0	
+R2	occurs_in Arg1:T3 Arg2:T1	
+R3	occurs_in Arg1:T3 Arg2:T2	
+R4	risk_factor_of Arg1:T12 Arg2:T11	
+R5	occurs_in Arg1:T10 Arg2:T11	
+R6	occurs_in Arg1:T6 Arg2:T11	
+R7	occurs_in Arg1:T7 Arg2:T11	
+R8	occurs_in Arg1:T8 Arg2:T11	
+R9	risk_factor_of Arg1:T22 Arg2:T14	
+R10	risk_factor_of Arg1:T22 Arg2:T17	
+R11	risk_factor_of Arg1:T21 Arg2:T14	
+R12	risk_factor_of Arg1:T21 Arg2:T17	
+T9	Health_factors 662 679	physical activity
+T13	Health_factors 0 18	Sedentary behavior
+R13	occurs_in Arg1:T13 Arg2:T0	
+R14	occurs_in Arg1:T13 Arg2:T1	
+R15	occurs_in Arg1:T13 Arg2:T2	
+R16	hyponym_of Arg1:T34 Arg2:T35	
+T15	Health_factors 1215 1224	sedentary
+T16	Health_factors 1274 1283	sedentary
+T18	Health_factors 1512 1529	moderate activity
+T19	Health_factors 1543 1560	vigorous activity
+R17	associated_with Arg1:T63 Arg2:T65	
+R18	associated_with Arg1:T63 Arg2:T66	
+R19	associated_with Arg1:T63 Arg2:T67	
+R20	associated_with Arg1:T63 Arg2:T73	
+R21	associated_with Arg1:T63 Arg2:T69	
+R22	associated_with Arg1:T63 Arg2:T70	
+R23	associated_with Arg1:T63 Arg2:T71	
+R24	associated_with Arg1:T63 Arg2:T72	
+R25	associated_with Arg1:T63 Arg2:T62	
+R26	associated_with Arg1:T74 Arg2:T65	
+R27	associated_with Arg1:T74 Arg2:T66	
+R28	associated_with Arg1:T74 Arg2:T67	
+R29	associated_with Arg1:T74 Arg2:T73	
+R30	associated_with Arg1:T74 Arg2:T69	
+R31	associated_with Arg1:T74 Arg2:T70	
+R32	associated_with Arg1:T74 Arg2:T71	
+R33	associated_with Arg1:T74 Arg2:T72	
+R34	associated_with Arg1:T74 Arg2:T62	
+T20	Health_factors 2173 2182	sedentary

@@ -1,0 +1,105 @@
+T1	disease 44 69	major depression disorder
+T2	disease 138 159	cognitive dysfunction
+T3	disease 186 211	major depressive disorder
+T4	disease 213 216	MDD
+T5	disease 252 255	MDD
+T6	disease 334 337	MDD
+T7	disease 393 396	MDD
+T8	disease 1323 1332	depressed
+T9	disease 1438 1447	depressed
+T10	disease 1545 1548	MDD
+T11	disease 1750 1771	cognitive dysfunction
+T12	disease 1775 1778	MDD
+#1	AnnotatorNotes T1	C1269683
+#2	AnnotatorNotes T3	C1269683
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+T13	region 294 324	cognition connectivity network
+T14	method 466 503	functional magnetic resonance imaging
+T15	method 505 509	fMRI
+R2	abbreviation_for Arg1:T15 Arg2:T14	
+#4	AnnotatorNotes T14	C0376335
+T16	Health_factors 556 591	history of antidepressant treatment
+T17	disease 944 953	Depressed
+#5	AnnotatorNotes T16	C0003289
+T19	method 73 83	FMRI study
+T20	physiology 0 40	Increased cognition connectivity network
+T21	region 112 125	brain network
+T22	region 326 329	CCN
+R5	abbreviation_for Arg1:T22 Arg2:T13	
+T23	region 617 647	dorsolateral prefrontal cortex
+T24	region 649 654	DLPFC
+R6	abbreviation_for Arg1:T24 Arg2:T23	
+T25	region 698 701	CCN
+T26	method 709 741	seed-target correlation analysis
+T27	method 743 760	Two sample t test
+T28	region 812 815	CCN
+T29	region 874 877	CCN
+T31	region 1029 1039	left DLPFC
+T32	region 1068 1088	middle frontal gyrus
+T33	region 1090 1093	BA7
+T34	region 1095 1099	BA43
+T35	region 1101 1110	precuneus
+T36	region 1112 1115	BA6
+T37	region 1117 1121	BA40
+T38	region 1123 1146	superior temporal gyrus
+T39	region 1148 1152	BA22
+T40	region 1154 1178	inferior parietal lobule
+T41	region 1180 1196	precentral gyrus
+T42	region 1198 1201	BA4
+T43	region 1206 1221	cingulate gyrus
+T44	region 1225 1238	left cerebrum
+T45	region 1345 1363	left DLPFC network
+T46	region 1410 1429	right DLPFC network
+T47	region 1519 1522	CCN
+T48	region 1595 1608	frontal gyrus
+T49	region 1610 1625	parietal cortex
+T50	region 1627 1643	cingulate cortex
+T51	region 1649 1653	BA43
+T52	region 1655 1659	BA22
+T53	region 1661 1664	BA4
+T54	region 1670 1680	left DLPFC
+T55	symptom 987 1020	increased functional connectivity
+R7	characteristic_of Arg1:T55 Arg2:T17	
+T56	physiology 997 1020	functional connectivity
+T57	physiology 1022 1024	FC
+R8	abbreviation_for Arg1:T57 Arg2:T56	
+T58	physiology 1308 1310	FC
+T59	physiology 1404 1406	FC
+T61	region 1688 1693	brain
+R3	associated_with Arg1:T61 Arg2:T11	
+T30	region 897 917	bilateral seed DLPFC
+T18	physiology 1567 1580	increased FCs
+#3	AnnotatorNotes T11	Loss of neuron(C0598940)
+T60	region 355 360	brain
+T62	method 404 419	health controls
+T63	method 822 859	fisher z-transformed correlation maps
+T64	method 1240 1255	Health controls
+T65	method 1465 1480	health controls
+R4	characteristic_of Arg1:T18 Arg2:T10	
+T68	symptom 285 324	abnormal cognition connectivity network
+T69	region 602 647	left and right dorsolateral prefrontal cortex
+R10	occurs_in Arg1:T20 Arg2:T1	
+R9	located_in Arg1:T18 Arg2:T48	
+R12	located_in Arg1:T18 Arg2:T49	
+R13	located_in Arg1:T18 Arg2:T50	
+R14	located_in Arg1:T18 Arg2:T51	
+R15	located_in Arg1:T18 Arg2:T52	
+R16	located_in Arg1:T18 Arg2:T53	
+R17	located_in Arg1:T18 Arg2:T54	
+R18	occurs_in Arg1:T11 Arg2:T12	
+R20	located_in Arg1:T32 Arg2:T44	
+R21	located_in Arg1:T33 Arg2:T44	
+R22	located_in Arg1:T34 Arg2:T44	
+R23	located_in Arg1:T35 Arg2:T44	
+R24	located_in Arg1:T36 Arg2:T44	
+R25	located_in Arg1:T37 Arg2:T44	
+R26	located_in Arg1:T38 Arg2:T44	
+R27	located_in Arg1:T39 Arg2:T44	
+R28	located_in Arg1:T40 Arg2:T44	
+R29	located_in Arg1:T41 Arg2:T44	
+R30	located_in Arg1:T42 Arg2:T44	
+R31	located_in Arg1:T43 Arg2:T44	
+R11	located_in Arg1:T59 Arg2:T46	
+R34	located_in Arg1:T55 Arg2:T31	
+R35	characteristic_of Arg1:T47 Arg2:T10	
+R19	occurs_in Arg1:T68 Arg2:T6	

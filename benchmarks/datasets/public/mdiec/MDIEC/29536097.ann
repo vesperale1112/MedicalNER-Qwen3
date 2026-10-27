@@ -1,0 +1,76 @@
+T0	disease 62 85	Substance Use Disorders
+T1	disease 90 110	Intentional Injuries
+T2	disease 47 56	Mortality
+T3	Health_factors 23 43	Geographic Variation
+T5	disease 152 175	Substance use disorders
+T6	disease 187 208	alcohol use disorders
+T8	disease 213 231	drug use disorders
+T9	disease 347 357	disability
+T10	disease 269 278	self-harm
+T11	Health_factors 283 305	interpersonal violence
+T13	disease 331 342	early death
+R1	occurs_in Arg1:T3 Arg2:T2	
+R2	hyponym_of Arg1:T6 Arg2:T5	
+T4	disease 237 257	intentional injuries
+R3	hyponym_of Arg1:T10 Arg2:T4	
+R4	hyponym_of Arg1:T11 Arg2:T4	
+R5	hyponym_of Arg1:T8 Arg2:T5	
+R6	risk_factor_of Arg1:T5 Arg2:T13	
+R7	risk_factor_of Arg1:T6 Arg2:T13	
+R8	risk_factor_of Arg1:T8 Arg2:T13	
+R9	risk_factor_of Arg1:T4 Arg2:T13	
+R10	risk_factor_of Arg1:T10 Arg2:T13	
+R11	risk_factor_of Arg1:T11 Arg2:T13	
+R12	risk_factor_of Arg1:T5 Arg2:T9	
+R13	risk_factor_of Arg1:T6 Arg2:T9	
+R14	risk_factor_of Arg1:T8 Arg2:T9	
+R15	risk_factor_of Arg1:T4 Arg2:T9	
+R16	risk_factor_of Arg1:T10 Arg2:T9	
+R17	risk_factor_of Arg1:T11 Arg2:T9	
+T7	disease 429 435	deaths
+T12	disease 443 466	substance use disorders
+T14	disease 471 491	intentional injuries
+R18	risk_factor_of Arg1:T12 Arg2:T7	
+R19	risk_factor_of Arg1:T14 Arg2:T7	
+T15	disease 523 532	Mortality
+T16	disease 544 565	alcohol use disorders
+T17	disease 578 596	drug use disorders
+T18	disease 609 618	self-harm
+T19	Health_factors 636 658	interpersonal violence
+T20	disease 700 709	Mortality
+T21	disease 730 751	alcohol use disorders
+T22	disease 753 762	self-harm
+T23	Health_factors 768 790	interpersonal violence
+R20	risk_factor_of Arg1:T21 Arg2:T20	
+R21	risk_factor_of Arg1:T22 Arg2:T20	
+R22	risk_factor_of Arg1:T23 Arg2:T20	
+T24	disease 903 912	mortality
+T25	disease 960 981	alcohol use disorders
+T26	disease 993 1002	self-harm
+T27	Health_factors 1017 1039	interpersonal violence
+R23	risk_factor_of Arg1:T25 Arg2:T24	
+R24	risk_factor_of Arg1:T26 Arg2:T24	
+R25	risk_factor_of Arg1:T27 Arg2:T24	
+T28	disease 1041 1050	Mortality
+T29	disease 1062 1080	drug use disorders
+T30	Health_factors 1222 1245	geographic inequalities
+T31	disease 1249 1258	mortality
+R26	occurs_in Arg1:T30 Arg2:T31	
+T32	disease 1344 1365	alcohol use disorders
+T33	Health_factors 1370 1392	interpersonal violence
+T34	disease 1425 1443	drug use disorders
+T35	disease 1448 1457	self-harm
+T36	disease 1509 1518	Mortality
+T37	disease 1526 1547	alcohol use disorders
+T38	disease 1549 1567	drug use disorders
+T39	disease 1569 1578	self-harm
+T40	Health_factors 1584 1606	interpersonal violence
+T41	disease 1667 1676	mortality
+R27	associated_with Arg1:T30 Arg2:T34	
+R28	associated_with Arg1:T30 Arg2:T35	
+R29	associated_with Arg1:T30 Arg2:T32	
+R30	associated_with Arg1:T30 Arg2:T33	
+R31	risk_factor_of Arg1:T37 Arg2:T36	
+R32	risk_factor_of Arg1:T38 Arg2:T36	
+R33	risk_factor_of Arg1:T39 Arg2:T36	
+R34	risk_factor_of Arg1:T40 Arg2:T36	

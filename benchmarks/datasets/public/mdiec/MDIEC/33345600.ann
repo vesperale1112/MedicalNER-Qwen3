@@ -1,0 +1,43 @@
+T1	disease 21 40	depressive symptoms
+T2	disease 272 291	depressive symptoms
+T3	disease 391 410	depressive symptoms
+T4	disease 956 975	depressive symptoms
+T5	disease 1104 1123	depressive symptoms
+T6	disease 1220 1239	depressive symptoms
+T7	disease 1372 1391	depressive symptoms
+T8	Health_factors 1313 1336	Future time perspective
+R1	associated_with Arg1:T8 Arg2:T7	
+T9	disease 744 763	depressive symptoms
+T10	Health_factors 881 902	Perceived future time
+R3	associated_with Arg1:T10 Arg2:T4	
+T12	Health_factors 1050 1070	future opportunities
+R4	associated_with Arg1:T12 Arg2:T5	
+T13	Health_factors 1175 1188	opportunities
+R5	associated_with Arg1:T13 Arg2:T6	
+T14	Health_factors 46 67	perceived future time
+R6	associated_with Arg1:T1 Arg2:T14	
+T19	Health_factors 348 371	future time perspective
+T20	Health_factors 611 617	female
+T17	Health_factors 151 188	broadened perspective on one's future
+T18	Health_factors 221 241	affective well-being
+R10	associated_with Arg1:T17 Arg2:T18	
+T21	Health_factors 558 570	Swiss adults
+T22	Health_factors 655 678	future time perspective
+T23	Health_factors 686 712	perceptions of future time
+T25	Health_factors 799 802	age
+T26	Health_factors 804 807	sex
+T27	Health_factors 821 841	socioeconomic status
+T28	Health_factors 1017 1020	age
+T29	Health_factors 1246 1252	adults
+T31	Health_factors 1395 1404	adulthood
+T32	Health_factors 1459 1482	future time perspective
+T33	Health_factors 587 590	age
+T11	Health_factors 809 815	health
+T24	Health_factors 907 927	future opportunities
+R2	associated_with Arg1:T24 Arg2:T4	
+T34	Health_factors 717 737	future opportunities
+R9	occurs_in Arg1:T6 Arg2:T29	
+R12	occurs_in Arg1:T7 Arg2:T31	
+R7	associated_with Arg1:T17 Arg2:T2	
+T15	Health_factors 72 85	opportunities
+R8	associated_with Arg1:T1 Arg2:T15	

@@ -1,0 +1,81 @@
+T3	disease 51 67	major depression
+T4	method 18 46	cognitive behavior therapies
+T6	disease 238 254	major depression
+T7	disease 256 259	MDD
+T8	disease 262 290	generalized anxiety disorder
+T9	disease 292 295	GAD
+T10	disease 298 312	panic disorder
+T11	disease 314 317	PAD
+T12	disease 323 346	social anxiety disorder
+T13	disease 348 351	SAD
+T14	method 185 211	cognitive behavior therapy
+T15	method 213 216	CBT
+T17	method 436 463	waiting list control groups
+T20	disease 644 647	MDD
+T21	disease 649 652	GAD
+T22	disease 654 657	PAD
+T23	disease 661 664	SAD
+T24	method 488 501	meta-analyses
+T25	method 515 532	randomized trials
+T26	method 543 546	CBT
+T27	method 587 600	care-as-usual
+T30	method 694 714	structured interview
+T31	drug 604 616	pill placebo
+T33	disease 854 857	MDD
+T34	disease 872 875	GAD
+T35	disease 888 891	PAD
+T36	disease 908 911	SAD
+T37	method 770 776	trials
+T42	disease 969 972	GAD
+T43	disease 995 998	MDD
+T44	disease 1035 1038	PAD
+T45	disease 1043 1046	SAD
+T46	method 962 965	CBT
+T48	disease 1160 1163	PAD
+T49	method 1075 1081	trials
+T50	disease 1177 1180	SAD
+T51	disease 1218 1235	anxiety disorders
+T52	method 1208 1214	trials
+T54	method 1302 1316	control groups
+T55	method 1358 1361	CBT
+T56	method 1341 1353	effect sizes
+T59	method 1241 1268	waiting list control groups
+T60	disease 1426 1429	MDD
+T61	disease 1431 1434	GAD
+T62	disease 1436 1439	PAD
+T63	disease 1444 1447	SAD
+T64	method 1380 1383	CBT
+T65	method 1553 1566	care-as-usual
+T67	method 1638 1644	trials
+T69	drug 1570 1582	pill placebo
+T1	disease 72 89	anxiety disorders
+R1	abbreviation_for Arg1:T15 Arg2:T14	
+R2	abbreviation_for Arg1:T7 Arg2:T6	
+R3	abbreviation_for Arg1:T9 Arg2:T8	
+R4	abbreviation_for Arg1:T11 Arg2:T10	
+R5	abbreviation_for Arg1:T13 Arg2:T12	
+R6	treatment_for Arg1:T14 Arg2:T6	
+R7	treatment_for Arg1:T14 Arg2:T8	
+R8	treatment_for Arg1:T14 Arg2:T10	
+R9	treatment_for Arg1:T14 Arg2:T12	
+R10	treatment_for Arg1:T15 Arg2:T6	
+R11	treatment_for Arg1:T15 Arg2:T7	
+R12	treatment_for Arg1:T15 Arg2:T8	
+R13	treatment_for Arg1:T15 Arg2:T9	
+R14	treatment_for Arg1:T15 Arg2:T10	
+R15	treatment_for Arg1:T15 Arg2:T11	
+R16	treatment_for Arg1:T15 Arg2:T12	
+R17	treatment_for Arg1:T15 Arg2:T13	
+R18	treatment_for Arg1:T14 Arg2:T7	
+R19	treatment_for Arg1:T14 Arg2:T9	
+R20	treatment_for Arg1:T14 Arg2:T11	
+R21	treatment_for Arg1:T15 Arg2:T13	
+R22	help_diagnose Arg1:T30 Arg2:T20	
+R23	help_diagnose Arg1:T30 Arg2:T21	
+R24	help_diagnose Arg1:T30 Arg2:T22	
+R25	help_diagnose Arg1:T30 Arg2:T23	
+R26	treatment_for Arg1:T64 Arg2:T60	
+R27	treatment_for Arg1:T64 Arg2:T61	
+R28	treatment_for Arg1:T64 Arg2:T62	
+R29	treatment_for Arg1:T64 Arg2:T63	
+T2	method 1506 1518	waiting list

@@ -1,0 +1,9 @@
+T1	drug 57 78	neuroprotective agent
+T3	disease 128 153	depressive-like disorders
+T4	disease 165 179	chronic stress
+T5	drug 28 43	ginsenoside-Rg1
+R1	hyponym_of Arg1:T5 Arg2:T1	
+R2	treatment_for Arg1:T5 Arg2:T3	
+R3	risk_factor_of Arg1:T4 Arg2:T3	
+T2	method 183 187	rats
+R4	occurs_in Arg1:T4 Arg2:T2	

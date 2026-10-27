@@ -1,0 +1,37 @@
+T2	disease 161 186	major depression disorder
+T3	disease 188 191	MDD
+T4	disease 306 316	depression
+T5	disease 604 607	MDD
+T6	disease 802 805	MDD
+T7	disease 1014 1017	MDD
+T8	disease 1605 1615	depression
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T1	disease 16 42	major depression disorders
+#1	AnnotatorNotes T1	C1269683
+T9	symptom 989 1009	neuronal alterations
+T10	method 915 941	magnetic resonance imaging
+T11	method 943 946	MRI
+R3	abbreviation_for Arg1:T11 Arg2:T10	
+T12	signs 1339 1351	brain-volume
+T13	physiology 1377 1387	mood state
+R4	associated_with Arg1:T12 Arg2:T13	
+T14	disease 1483 1493	depressive
+T15	method 425 445	longitudinal studies
+T16	method 1397 1417	longitudinal studies
+T17	method 1533 1553	longitudinal studies
+T18	method 1755 1775	multi-center studies
+T19	symptom 114 157	Structural and functional brain alterations
+T20	method 568 600	prospective neuroimaging studies
+T21	method 46 63	systematic review
+T22	method 830 847	systematic review
+T23	method 213 236	cross-sectional designs
+T24	symptom 766 783	brain alterations
+T25	method 67 92	longitudinal neuroimaging
+#2	AnnotatorNotes T19	Loss of neuron(C0598940)
+T26	symptom 338 361	neurobiological changes
+T27	method 1233 1248	imaging methods
+T28	symptom 1466 1479	brain changes
+T29	symptom 1620 1643	neurobiological changes
+T30	method 904 955	structural magnetic resonance imaging (MRI) studies
+R2	characteristic_of Arg1:T19 Arg2:T2	
+R5	characteristic_of Arg1:T19 Arg2:T3	

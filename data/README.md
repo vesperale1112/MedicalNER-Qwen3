@@ -12,6 +12,9 @@ server without regenerating Gemini outputs.
 - `schema_v2/`: source manifest, deterministic migration, manual-review queue,
   and hierarchy-grouped train/validation/held-out splits.
 
+Treatment-article screening review: [treatment_related_articles/screening_review_40/](treatment_related_articles/screening_review_40/README.md).
+KG benchmark datasets and tools: [../benchmarks/](../benchmarks/README.md).
+
 Committed deployment files:
 
 - `raw/mental_disorders_20251125_165535.json`

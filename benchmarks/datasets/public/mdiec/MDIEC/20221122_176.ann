@@ -1,0 +1,6 @@
+T1	disease 67 77	depression
+T2	disease 116 126	depression
+T4	disease 35 58	stroke-specific process
+T5	disease 158 164	stroke
+R1	risk_factor_of Arg1:T4 Arg2:T1	
+T6	method 127 136	screening

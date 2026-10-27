@@ -1,0 +1,73 @@
+T0	disease 0 17	Anxiety disorders
+T1	disease 21 27	cancer
+T2	Health_factors 82 97	quality of life
+T3	disease 156 173	anxiety disorders
+T4	disease 222 228	cancer
+T6	method 250 265	screening tools
+T7	Health_factors 306 317	demographic
+T14	method 538 552	questionnaires
+T15	disease 603 625	psychological symptoms
+T16	Health_factors 627 642	quality of life
+T17	Health_factors 644 647	QOL
+T18	Health_factors 654 668	social support
+T19	Health_factors 672 707	standardized psychiatric interviews
+T21	Health_factors 712 729	cancer management
+T22	method 379 414	cross-sectional observational study
+T23	disease 793 800	anxiety
+T24	disease 805 821	anxiety disorder
+T25	disease 960 976	anxiety disorder
+T26	disease 1030 1037	anxiety
+T28	method 1041 1054	questionnaire
+T31	method 890 955	International Classification of Disorders, 10th Revision criteria
+T32	method 854 874	diagnostic interview
+T33	disease 1194 1210	anxiety disorder
+T34	disease 1079 1086	anxiety
+T35	method 1090 1103	questionnaire
+T37	disease 1108 1134	disruptive somatic anxiety
+T43	method 1334 1371	Hospital Anxiety and Depression scale
+T44	method 1296 1325	State-Trait Anxiety Inventory
+T45	method 1243 1267	screening questionnaires
+T46	disease 1444 1460	anxiety disorder
+T47	Health_factors 1373 1383	Female sex
+T48	Health_factors 1408 1422	social support
+T49	method 1464 1485	multivariate analyses
+T51	disease 1487 1503	Anxiety disorder
+T52	disease 1569 1577	insomnia
+T54	Health_factors 1540 1554	deficit in QOL
+T56	disease 1592 1608	Anxiety symptoms
+T58	method 1653 1666	questionnaire
+T59	disease 1683 1699	anxiety symptoms
+T60	disease 1729 1745	abnormal anxiety
+T61	disease 1870 1887	anxiety disorders
+T62	disease 1829 1836	anxiety
+T63	Health_factors 1891 1894	QOL
+T65	disease 1969 1986	anxiety disorders
+T66	method 1955 1964	screening
+R1	occurs_in Arg1:T0 Arg2:T1	
+T5	disease 436 444	lymphoma
+T8	disease 446 466	renal cell carcinoma
+T9	disease 468 486	malignant melanoma
+T10	disease 491 512	plasma cell dyscrasia
+R2	abbreviation_for Arg1:T17 Arg2:T16	
+R3	help_diagnose Arg1:T28 Arg2:T26	
+R4	help_diagnose Arg1:T35 Arg2:T34	
+R5	help_diagnose Arg1:T14 Arg2:T15	
+R6	help_diagnose Arg1:T14 Arg2:T16	
+R7	help_diagnose Arg1:T14 Arg2:T17	
+R8	help_diagnose Arg1:T14 Arg2:T18	
+R9	help_diagnose Arg1:T31 Arg2:T25	
+R10	risk_factor_of Arg1:T37 Arg2:T33	
+R11	hyponym_of Arg1:T44 Arg2:T45	
+R12	hyponym_of Arg1:T43 Arg2:T45	
+R13	associated_with Arg1:T47 Arg2:T46	
+R14	associated_with Arg1:T48 Arg2:T46	
+R15	associated_with Arg1:T51 Arg2:T54	
+R17	associated_with Arg1:T51 Arg2:T52	
+T11	disease 1623 1629	cancer
+R18	associated_with Arg1:T56 Arg2:T11	
+T12	method 1640 1649	Screening
+R19	help_diagnose Arg1:T58 Arg2:T59	
+R20	associated_with Arg1:T61 Arg2:T63	
+T13	Health_factors 334 346	psychosocial
+T20	method 319 328	oncologic
+T27	signs 1917 1936	oncologic variables

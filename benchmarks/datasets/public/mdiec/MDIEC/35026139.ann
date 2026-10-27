@@ -1,0 +1,115 @@
+T1	disease 44 60	mental disorders
+T2	disease 98 114	mental disorders
+T3	disease 207 227	depressive disorders
+T4	disease 229 246	anxiety disorders
+T5	disease 248 264	bipolar disorder
+T6	disease 266 279	schizophrenia
+T7	disease 281 306	autism spectrum disorders
+T8	disease 308 324	conduct disorder
+T10	disease 326 366	attention-deficit hyperactivity disorder
+T11	disease 368 384	eating disorders
+T13	disease 386 434	idiopathic developmental intellectual disability
+T14	disease 469 485	mental disorders
+T15	Health_factors 554 584	disability-adjusted life-years
+T16	disease 664 680	mental disorders
+T17	disease 789 805	mental disorders
+T18	disease 1159 1174	mental disorder
+T19	disease 1752 1768	anorexia nervosa
+T20	disease 1773 1788	bulimia nervosa
+T21	disease 1816 1832	mental disorders
+T22	disease 1954 1970	mental disorders
+T23	disease 2116 2132	mental disorders
+T24	disease 2386 2408	mental disorder burden
+T25	disease 2506 2522	mental disorders
+T26	disease 2524 2540	Eating disorders
+T27	disease 2636 2652	mental disorders
+T28	disease 2928 2944	mental disorders
+T29	disease 3094 3110	mental disorders
+T30	disease 3189 3205	mental disorders
+T31	disease 3253 3269	mental disorders
+T32	disease 3393 3409	mental disorders
+T33	Health_factors 586 591	DALYS
+T34	Health_factors 594 621	years lived with disability
+T35	Health_factors 807 812	males
+T36	Health_factors 817 824	females
+T37	Health_factors 829 832	age
+T38	Health_factors 895 900	DALYs
+T39	disease 957 966	mortality
+T40	method 995 1003	PsycINFO
+T41	method 1005 1011	Embase
+T42	method 1013 1019	PubMed
+T46	Health_factors 1268 1271	age
+T47	Health_factors 1273 1276	sex
+T48	disease 1341 1351	disability
+T50	disease 1393 1399	deaths
+T51	disease 1419 1428	mortality
+T52	method 1457 1499	Cause of Death Ensemble modelling strategy
+T53	disease 1521 1526	death
+T54	Health_factors 1535 1538	age
+T55	Health_factors 1540 1543	sex
+T56	disease 1569 1574	death
+T57	disease 1646 1651	death
+T58	disease 1707 1713	Deaths
+T59	disease 1868 1873	death
+T60	Health_factors 1941 1946	DALYs
+T61	method 2003 2023	uncertainty interval
+T62	Health_factors 2096 2101	DALYs
+T63	Health_factors 2183 2204	Age-standardised DALY
+T64	Health_factors 2259 2264	DALYs
+T65	Health_factors 2314 2319	DALYs
+T66	Health_factors 2605 2626	age-standardised DALY
+T67	Health_factors 2712 2717	males
+T68	Health_factors 2770 2777	females
+T69	Health_factors 2779 2800	Age-standardised DALY
+T70	Health_factors 2864 2889	high-income North America
+T71	disease 3159 3168	mortality
+T72	Health_factors 3286 3301	health outcomes
+T73	Health_factors 3504 3527	global health community
+T77	method 1198 1231	Bayesian meta-regression analysis
+T79	method 131 190	Global Burden of Diseases, Injuries, and Risk Factors Study
+T80	method 192 195	GBD
+R1	abbreviation_for Arg1:T80 Arg2:T79	
+R2	hyponym_of Arg1:T3 Arg2:T2	
+R3	hyponym_of Arg1:T4 Arg2:T2	
+R4	hyponym_of Arg1:T5 Arg2:T2	
+R5	hyponym_of Arg1:T6 Arg2:T2	
+R6	hyponym_of Arg1:T7 Arg2:T2	
+R7	hyponym_of Arg1:T8 Arg2:T2	
+R8	hyponym_of Arg1:T10 Arg2:T2	
+R9	hyponym_of Arg1:T11 Arg2:T2	
+R10	hyponym_of Arg1:T13 Arg2:T2	
+R11	abbreviation_for Arg1:T33 Arg2:T15	
+T9	Health_factors 623 627	YLDs
+R12	abbreviation_for Arg1:T9 Arg2:T34	
+T12	Health_factors 634 652	years of life lost
+T81	Health_factors 654 658	YLLs
+R13	abbreviation_for Arg1:T81 Arg2:T12	
+T82	Health_factors 773 776	GBD
+T83	Health_factors 930 934	YLDs
+T84	Health_factors 939 943	YLLs
+T43	method 1029 1056	Global Health Data Exchange
+T44	disease 1140 1149	mortality
+T45	Health_factors 1372 1376	YLDs
+T49	Health_factors 1701 1705	YLLs
+T76	Health_factors 1718 1722	YLLs
+R14	hyponym_of Arg1:T19 Arg2:T21	
+R15	hyponym_of Arg1:T20 Arg2:T21	
+R16	risk_factor_of Arg1:T20 Arg2:T59	
+R17	risk_factor_of Arg1:T19 Arg2:T59	
+T78	method 1877 1880	GBD
+R18	risk_factor_of Arg1:T22 Arg2:T60	
+T85	method 2025 2027	UI
+R19	abbreviation_for Arg1:T85 Arg2:T61	
+R20	risk_factor_of Arg1:T23 Arg2:T62	
+T86	Health_factors 2354 2358	YLDs
+R21	risk_factor_of Arg1:T86 Arg2:T24	
+T87	Health_factors 2428 2432	YLDs
+T88	method 2438 2440	UI
+T89	Health_factors 2476 2480	YLDs
+T90	Health_factors 2562 2566	YLLs
+R23	associated_with Arg1:T26 Arg2:T90	
+T91	method 2572 2574	UI
+T92	method 2668 2670	UI
+T93	method 2907 2910	GBD
+T94	Health_factors 3085 3089	YLLs
+R22	risk_factor_of Arg1:T25 Arg2:T87	

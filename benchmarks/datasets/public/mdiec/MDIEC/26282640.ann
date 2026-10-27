@@ -1,0 +1,70 @@
+T0	disease 114 120	Cancer
+T2	disease 56 63	Anxiety
+T3	Health_factors 67 72	Women
+T6	method 148 175	Randomized Controlled Trial
+T8	method 84 109	Ambulatory Breast Surgery
+T9	method 11 24	Music Therapy
+T10	disease 404 417	breast cancer
+T13	Health_factors 347 352	women
+T14	method 366 373	surgery
+T16	Health_factors 323 343	patient satisfaction
+T17	method 214 259	live and recorded perioperative music therapy
+T19	method 496 503	surgery
+T20	disease 527 540	breast cancer
+T21	method 813 823	usual care
+T24	disease 1024 1041	moderate sedation
+T25	Health_factors 923 925	RM
+T29	Health_factors 1091 1093	RM
+T30	method 1461 1463	CI
+T33	Health_factors 1417 1419	RM
+T34	Health_factors 1275 1277	RM
+T35	Health_factors 1515 1517	LM
+T36	method 1487 1506	Satisfaction scores
+T39	method 1645 1659	cancer surgery
+T40	disease 1689 1696	anxiety
+T42	method 1617 1639	complementary modality
+T43	method 1598 1611	music therapy
+R1	occurs_in Arg1:T2 Arg2:T3	
+T1	method 28 51	Anesthesia Requirements
+T4	method 263 286	anesthesia requirements
+T5	disease 288 295	anxiety
+T7	Health_factors 304 317	recovery time
+R2	occurs_in Arg1:T4 Arg2:T13	
+R3	occurs_in Arg1:T5 Arg2:T13	
+R4	occurs_in Arg1:T7 Arg2:T13	
+R5	occurs_in Arg1:T16 Arg2:T13	
+T11	Health_factors 469 475	female
+T12	Health_factors 599 609	live music
+T15	Health_factors 611 613	LM
+R6	abbreviation_for Arg1:T15 Arg2:T12	
+T18	Health_factors 635 644	therapist
+T22	Health_factors 654 668	recorded music
+T23	Health_factors 711 725	recorded music
+T26	Health_factors 727 729	RM
+R7	abbreviation_for Arg1:T26 Arg2:T23	
+T27	Health_factors 751 760	therapist
+T37	Health_factors 770 784	recorded music
+T44	Health_factors 825 827	UC
+R8	abbreviation_for Arg1:T44 Arg2:T21	
+T45	Health_factors 912 914	LM
+T46	Health_factors 971 973	UC
+T47	drug 997 1005	propofol
+T48	Health_factors 1061 1063	UC
+T49	Health_factors 1080 1082	LM
+T50	disease 1136 1143	anxiety
+R9	treatment_for Arg1:T49 Arg2:T50	
+R10	treatment_for Arg1:T29 Arg2:T50	
+T28	method 1185 1203	standard deviation
+T51	Health_factors 1268 1270	LM
+T52	Health_factors 1309 1311	UC
+T53	Health_factors 1334 1347	recovery time
+T54	Health_factors 1385 1398	recovery time
+T55	Health_factors 1362 1364	LM
+R11	associated_with Arg1:T55 Arg2:T54	
+T31	Health_factors 1522 1524	RM
+T32	Health_factors 1565 1567	UC
+R12	hyponym_of Arg1:T43 Arg2:T42	
+R13	treatment_for Arg1:T43 Arg2:T40	
+R14	associated_with Arg1:T9 Arg2:T1	
+R15	associated_with Arg1:T9 Arg2:T2	
+R16	occurs_in Arg1:T1 Arg2:T3	

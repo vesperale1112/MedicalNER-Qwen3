@@ -1,0 +1,86 @@
+T0	disease 0 8	COVID-19
+T1	disease 95 108	schizophrenia
+T2	Health_factors 9 24	hospitalisation
+T3	disease 26 35	mortality
+T5	method 122 147	longitudinal cohort study
+T6	Health_factors 54 76	postvaccination trends
+T7	method 37 48	vaccination
+T8	disease 177 190	schizophrenia
+T10	Health_factors 333 355	postvaccination trends
+T13	disease 472 485	schizophrenia
+T14	method 544 564	COVID-19 vaccination
+T15	Health_factors 415 439	COVID-19 hospitalisation
+T16	disease 444 453	mortality
+T17	Health_factors 515 523	pandemic
+T19	disease 620 629	mortality
+T20	Health_factors 593 614	admission to hospital
+T21	disease 566 591	postvaccination infection
+T25	disease 688 701	schizophrenia
+T26	method 788 799	vaccination
+T28	method 649 674	longitudinal cohort study
+T30	method 823 864	Cox proportional hazard regression models
+T32	method 1000 1024	health-care organisation
+T34	method 964 986	Clalit Health Services
+T35	Health_factors 1109 1113	male
+T36	Health_factors 1131 1137	female
+T37	Health_factors 1164 1167	age
+T38	method 1183 1185	SD
+T41	Health_factors 1386 1398	hospitalised
+T42	disease 1414 1418	died
+T43	disease 1481 1494	schizophrenia
+T45	Health_factors 1520 1544	COVID-19 hospitalisation
+T46	method 1546 1548	HR
+T47	method 1558 1560	CI
+T48	disease 1583 1592	mortality
+T49	method 1594 1596	HR
+T50	method 1606 1608	CI
+T51	method 1693 1706	control group
+T52	disease 1810 1818	diabetes
+T53	disease 1820 1832	hypertension
+T54	disease 1834 1841	obesity
+T55	disease 1846 1869	ischaemic heart disease
+T56	disease 1935 1948	schizophrenia
+T57	disease 1787 1806	Medical comorbidity
+T58	method 1985 1998	control group
+T59	Health_factors 1910 1921	vaccination
+T60	disease 2076 2089	schizophrenia
+T61	Health_factors 2000 2015	Hospitalisation
+T62	disease 2020 2029	mortality
+T63	method 2254 2279	incidence rate difference
+T64	method 2235 2252	vaccinated groups
+T65	method 2145 2170	incidence rate difference
+T67	disease 2339 2352	schizophrenia
+T68	Health_factors 2365 2380	hospitalisation
+T69	Health_factors 2449 2467	general population
+T70	method 2425 2436	vaccination
+T72	disease 2484 2508	COVID-19 severe outcomes
+T73	disease 2614 2627	schizophrenia
+T74	disease 217 241	severe COVID-19 outcomes
+R1	risk_factor_of Arg1:T8 Arg2:T74	
+R2	occurs_in Arg1:T0 Arg2:T1	
+R3	occurs_in Arg1:T2 Arg2:T1	
+R4	occurs_in Arg1:T3 Arg2:T1	
+R5	occurs_in Arg1:T7 Arg2:T1	
+R6	occurs_in Arg1:T6 Arg2:T1	
+R7	occurs_in Arg1:T15 Arg2:T13	
+R8	occurs_in Arg1:T16 Arg2:T13	
+T4	disease 753 770	COVID-19 outcomes
+T11	method 869 890	Kaplan-Meier analyses
+T12	method 1457 1467	vaccinated
+R9	risk_factor_of Arg1:T43 Arg2:T45	
+R10	risk_factor_of Arg1:T43 Arg2:T48	
+T18	method 1750 1759	vaccinate
+R11	occurs_in Arg1:T59 Arg2:T56	
+R12	associated_with Arg1:T57 Arg2:T59	
+R13	associated_with Arg1:T52 Arg2:T59	
+R14	associated_with Arg1:T53 Arg2:T59	
+R15	associated_with Arg1:T54 Arg2:T59	
+R16	associated_with Arg1:T55 Arg2:T59	
+R17	risk_factor_of Arg1:T60 Arg2:T61	
+R18	risk_factor_of Arg1:T60 Arg2:T62	
+T22	method 2107 2117	vaccinated
+T9	disease 2385 2394	mortality
+R19	risk_factor_of Arg1:T67 Arg2:T68	
+R20	risk_factor_of Arg1:T67 Arg2:T9	
+T23	method 2541 2567	national vaccination plans
+R21	treatment_for Arg1:T23 Arg2:T72	

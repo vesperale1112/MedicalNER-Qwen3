@@ -1,0 +1,17 @@
+T2	Health_factors 64 67	men
+T4	disease 137 163	autonomous thyroid nodules
+T6	drug 219 222	TSH
+T7	physiology 243 255	TSH response
+T8	method 289 291	IV
+T9	drug 270 273	TRH
+T10	drug 348 351	TRH
+T11	drug 357 372	thyroid hormone
+T12	Health_factors 7 11	male
+T1	disease 12 21	depressed
+T13	Health_factors 32 36	aged
+T14	Health_factors 69 73	aged
+T15	disease 99 125	subclinical thyrotoxicosis
+R1	risk_factor_of Arg1:T4 Arg2:T15	
+T3	drug 294 297	TSH
+T5	method 274 287	intravenously
+R2	abbreviation_for Arg1:T8 Arg2:T5	

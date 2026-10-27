@@ -1,0 +1,78 @@
+T0	disease 0 40	Attention-deficit/hyperactivity disorder
+T1	disease 62 85	cardiovascular diseases
+T3	method 89 129	nationwide population-based cohort study
+T5	disease 180 203	cardiovascular diseases
+T6	disease 227 243	mental disorders
+T7	disease 359 399	attention-deficit/hyperactivity disorder
+T8	disease 401 405	ADHD
+T9	disease 320 343	cardiovascular diseases
+T12	disease 489 493	ADHD
+T13	disease 514 537	cardiovascular diseases
+T14	Health_factors 541 547	adults
+T18	disease 676 699	cardiovascular diseases
+T20	Health_factors 620 626	adults
+T21	Health_factors 706 723	Swedish registers
+T22	method 554 594	nationwide population-based cohort study
+T25	disease 789 827	Incident cardiovascular disease events
+T26	disease 992 996	ADHD
+T27	method 868 881	Hazard ratios
+T28	method 883 885	HR
+T29	method 896 916	confidence intervals
+T30	method 918 920	CI
+T32	method 944 985	Cox proportional hazards regression model
+T34	disease 1095 1099	ADHD
+T35	disease 1131 1135	ADHD
+T36	disease 1166 1188	cardiovascular disease
+T37	method 1057 1066	follow-up
+T39	disease 1204 1208	ADHD
+T40	disease 1265 1287	cardiovascular disease
+T41	method 1289 1291	HR
+T42	method 1302 1304	CI
+T43	Health_factors 1337 1340	sex
+T44	physiology 1353 1358	birth
+T46	disease 1416 1440	type 2 diabetes mellitus
+T47	disease 1442 1449	obesity
+T48	disease 1451 1463	dyslipidemia
+T49	disease 1465 1479	sleep problems
+T51	Health_factors 1384 1393	education
+T52	Health_factors 1401 1414	birth country
+T54	method 1562 1564	HR
+T55	method 1575 1577	CI
+T57	Health_factors 1484 1497	heavy smoking
+T59	disease 1614 1639	psychiatric comorbidities
+T60	method 1696 1698	HR
+T61	method 1709 1711	CI
+T63	disease 1767 1781	cardiac arrest
+T64	disease 1812 1830	hemorrhagic stroke
+T65	disease 1865 1892	peripheral vascular disease
+T66	disease 1893 1909	arteriosclerosis
+T67	method 1783 1785	HR
+T68	method 1796 1798	CI
+T69	method 1832 1834	HR
+T70	method 1845 1847	CI
+T71	method 1911 1913	HR
+T72	method 1924 1926	CI
+T75	Health_factors 1979 1984	males
+T76	Health_factors 1997 2003	adults
+T77	drug 2080 2104	psychotropic medications
+T78	Health_factors 2109 2150	family history of cardiovascular diseases
+T81	disease 2176 2180	ADHD
+T82	disease 2231 2254	cardiovascular diseases
+T84	disease 2447 2451	ADHD
+T86	Health_factors 2310 2331	cardiovascular health
+T88	Health_factors 2407 2426	cardiovascular risk
+T90	method 2347 2392	age-appropriate and individualized strategies
+R1	risk_factor_of Arg1:T6 Arg2:T5	
+R2	abbreviation_for Arg1:T8 Arg2:T7	
+R3	occurs_in Arg1:T9 Arg2:T7	
+R4	occurs_in Arg1:T9 Arg2:T8	
+R5	occurs_in Arg1:T13 Arg2:T14	
+T2	method 857 866	ICD codes
+R6	help_diagnose Arg1:T2 Arg2:T25	
+R7	abbreviation_for Arg1:T28 Arg2:T27	
+R8	abbreviation_for Arg1:T30 Arg2:T29	
+R9	risk_factor_of Arg1:T39 Arg2:T40	
+R10	risk_factor_of Arg1:T81 Arg2:T82	
+R11	risk_factor_of Arg1:T0 Arg2:T1	
+R12	treatment_for Arg1:T90 Arg2:T88	
+R13	occurs_in Arg1:T88 Arg2:T84	

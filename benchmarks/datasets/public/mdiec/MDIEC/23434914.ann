@@ -1,0 +1,23 @@
+T0	disease 67 96	obsessive-compulsive disorder
+T1	method 0 22	Deep brain stimulation
+T2	physiology 32 63	frontostriatal network activity
+T3	method 155 177	deep brain stimulation
+T4	method 179 182	DBS
+T5	physiology 135 151	neural mechanism
+T6	disease 431 460	obsessive-compulsive disorder
+T7	method 199 202	DBS
+T10	physiology 352 386	frontal low-frequency oscillations
+T11	region 219 236	nucleus accumbens
+T12	method 488 491	DBS
+T14	physiology 510 547	maladaptive activity and connectivity
+R1	treatment_for Arg1:T12 Arg2:T14	
+R3	treatment_for Arg1:T1 Arg2:T2	
+R4	occurs_in Arg1:T2 Arg2:T0	
+R5	abbreviation_for Arg1:T4 Arg2:T3	
+T15	region 238 241	NAc
+R6	abbreviation_for Arg1:T15 Arg2:T11	
+T16	physiology 286 336	connectivity between the NAc and prefrontal cortex
+T17	physiology 254 266	NAc activity
+R7	treatment_for Arg1:T7 Arg2:T17	
+R8	associated_with Arg1:T7 Arg2:T16	
+R11	associated_with Arg1:T7 Arg2:T10	

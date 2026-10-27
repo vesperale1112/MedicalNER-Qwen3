@@ -1,0 +1,12 @@
+T1	Health_factors 54 71	isolation rearing
+T2	disease 85 109	depressive-like behavior
+T3	drug 195 203	RU-43044
+T4	physiology 213 239	antidepressant-like effect
+T5	method 331 343	mouse models
+T6	physiology 280 320	prefrontal dopaminergic neurotransmissio
+T7	drug 27 49	chronic corticosterone
+R1	risk_factor_of Arg1:T1 Arg2:T2	
+R2	risk_factor_of Arg1:T7 Arg2:T2	
+R3	associated_with Arg1:T3 Arg2:T6	
+T8	gene 113 136	glucocorticoid receptor
+R4	occurs_in Arg1:T6 Arg2:T5	

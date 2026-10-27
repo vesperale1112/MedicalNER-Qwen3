@@ -1,0 +1,11 @@
+T2	drug 77 95	plasma cholesterol
+T4	Health_factors 139 147	homicide
+T5	disease 153 163	depression
+T1	Health_factors 99 103	diet
+T3	disease 130 137	suicide
+T6	drug 108 119	medications
+R1	risk_factor_of Arg1:T2 Arg2:T3	
+R2	risk_factor_of Arg1:T2 Arg2:T4	
+R3	risk_factor_of Arg1:T2 Arg2:T5	
+R4	associated_with Arg1:T2 Arg2:T1	
+R5	associated_with Arg1:T2 Arg2:T6	

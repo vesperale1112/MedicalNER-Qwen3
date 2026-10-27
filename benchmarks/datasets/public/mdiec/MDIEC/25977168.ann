@@ -1,0 +1,46 @@
+T1	disease 54 79	major depression disorder
+T2	disease 156 181	major depressive disorder
+T3	disease 183 186	MDD
+T5	disease 464 467	MDD
+T6	disease 550 553	MDD
+T12	disease 1297 1307	depression
+#1	AnnotatorNotes T1	C1269683
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T14	symptom 221 249	decreased olfactory function
+R3	characteristic_of Arg1:T14 Arg2:T2	
+T4	symptom 404 421	reduced OB volume
+T15	signs 0 21	Olfactory bulb volume
+T7	method 641 655	structural MRI
+T8	signs 1062 1071	OB volume
+T9	signs 1106 1125	depression severity
+R5	associated_with Arg1:T8 Arg2:T9	
+T10	signs 1205 1214	OB volume
+R6	characteristic_of Arg1:T10 Arg2:T12	
+T13	region 99 113	olfactory bulb
+T16	region 115 117	OB
+R4	abbreviation_for Arg1:T16 Arg2:T13	
+T17	region 334 354	limbic neurocircuits
+T18	method 541 543	SD
+T19	method 627 629	SD
+T20	signs 657 666	OB volume
+T21	method 739 752	psychotherapy
+T22	signs 764 773	OB volume
+T23	signs 911 920	OB volume
+T24	signs 968 977	OB volume
+T25	signs 1147 1163	Volume of the OB
+R2	characteristic_of Arg1:T14 Arg2:T3	
+T26	method 561 577	healthy controls
+T27	method 933 949	healthy controls
+T28	Health_factors 497 502	women
+T29	Health_factors 583 588	women
+T33	Health_factors 1321 1326	women
+T31	Health_factors 504 507	age
+T32	Health_factors 590 593	age
+T11	signs 1224 1255	biological vulnerability factor
+R12	hyponym_of Arg1:T10 Arg2:T11	
+T30	Health_factors 31 50	therapeutic outcome
+T34	signs 85 113	volume of the olfactory bulb
+R8	characteristic_of Arg1:T34 Arg2:T2	
+R9	characteristic_of Arg1:T34 Arg2:T3	
+R10	occurs_in Arg1:T12 Arg2:T33	
+R7	associated_with Arg1:T15 Arg2:T30	

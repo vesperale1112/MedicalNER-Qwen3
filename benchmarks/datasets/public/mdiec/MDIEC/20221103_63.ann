@@ -1,0 +1,9 @@
+T1	method 5 46	enhanced [(18)F]FLT-PET imaging technique
+T2	drug 52 62	probenecid
+T3	physiology 111 130	neurogenic activity
+T5	region 138 159	adult mammalian brain
+T7	disease 216 226	depression
+T10	method 271 295	antidepressant treatment
+R1	help_diagnose Arg1:T1 Arg2:T3	
+R2	located_in Arg1:T3 Arg2:T5	
+R3	help_diagnose Arg1:T1 Arg2:T7	

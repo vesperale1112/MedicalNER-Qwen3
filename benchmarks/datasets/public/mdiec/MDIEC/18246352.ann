@@ -1,0 +1,126 @@
+T1	disease 0 12	Fibromyalgia
+T2	disease 19 44	major depression disorder
+T3	disease 76 97	Fibromyalgia syndrome
+T4	disease 99 102	FMS
+T5	disease 226 229	FMS
+T7	disease 329 332	MDD
+T8	disease 430 440	depression
+T9	disease 453 456	FMS
+T12	disease 851 861	depression
+T13	disease 1249 1252	FMS
+T17	signs 1918 1937	depression severity
+T19	disease 2123 2126	FMS
+T20	disease 2130 2139	depressed
+T21	disease 2152 2162	Depression
+T22	disease 2182 2185	FMS
+T23	disease 2232 2242	depression
+T24	disease 2283 2286	FMS
+T25	disease 2297 2300	FMS
+T26	disease 2361 2370	depressed
+#1	AnnotatorNotes T2	C1269683
+#2	AnnotatorNotes T1	C0016053
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+#3	AnnotatorNotes T3	C0016053
+T27	disease 124 139	widespread pain
+T28	disease 144 162	diffuse tenderness
+R2	characteristic_of Arg1:T27 Arg2:T3	
+R3	characteristic_of Arg1:T28 Arg2:T3	
+T6	disease 302 327	major depression disorder
+R4	abbreviation_for Arg1:T7 Arg2:T6	
+#4	AnnotatorNotes T8	C0011581
+T11	method 758 782	Sheehan disability scale
+T32	method 784 787	SDS
+R8	abbreviation_for Arg1:T32 Arg2:T11	
+T33	method 895 928	Hamilton depression rating scales
+T34	method 930 934	HDRS
+R9	abbreviation_for Arg1:T34 Arg2:T33	
+T35	method 977 1012	Clinical Global Impression-Severity
+T36	method 1014 1019	CGI-S
+R10	abbreviation_for Arg1:T36 Arg2:T35	
+R11	help_diagnose Arg1:T33 Arg2:T12	
+T39	disease 1582 1591	depressed
+T15	Health_factors 1872 1878	gender
+R18	associated_with Arg1:T21 Arg2:T22	
+R19	associated_with Arg1:T23 Arg2:T24	
+T40	Health_factors 2318 2331	sleep quality
+T41	Health_factors 2339 2354	quality of life
+R21	associated_with Arg1:T25 Arg2:T40	
+R22	associated_with Arg1:T25 Arg2:T41	
+T10	disease 596 599	FMS
+T29	method 549 565	healthy controls
+T37	method 610 642	American College of Rheumatology
+T38	method 644 647	ACR
+R5	abbreviation_for Arg1:T38 Arg2:T37	
+T42	method 793 804	SF-36 scale
+R6	help_diagnose Arg1:T37 Arg2:T10	
+R7	help_diagnose Arg1:T38 Arg2:T10	
+R12	help_diagnose Arg1:T34 Arg2:T12	
+T30	method 1082 1087	CGI-S
+T43	method 1171 1175	HDRS
+T14	method 1375 1388	tender points
+T44	method 1390 1392	TP
+R13	abbreviation_for Arg1:T44 Arg2:T14	
+T45	method 1450 1455	SF-36
+T46	method 1457 1460	SDS
+T47	method 1528 1556	one-way analysis of variance
+T48	method 1717 1719	TP
+T49	method 1786 1816	one-way analysis of covariance
+T50	method 1821 1823	TP
+T51	method 1829 1834	CGI-S
+T52	method 1839 1843	HDRS
+T53	method 1963 1968	CGI-S
+T54	method 1973 1988	Hamilton scores
+T55	method 2005 2007	TP
+T18	method 940 957	Global assessment
+R25	characteristic_of Arg1:T27 Arg2:T4	
+R26	characteristic_of Arg1:T28 Arg2:T4	
+T57	method 1465 1485	sleep quality scores
+T58	method 699 712	questionnaire
+#5	AnnotatorNotes T27	Loss of neuron(C0598940)
+#6	AnnotatorNotes T28	Loss of neuron(C0598940)
+T59	Health_factors 251 258	females
+R17	risk_factor_of Arg1:T59 Arg2:T5	
+T61	Health_factors 271 276	males
+T63	Health_factors 1278 1295	depressed females
+T68	Health_factors 2088 2101	Female gender
+R20	risk_factor_of Arg1:T68 Arg2:T19	
+T74	method 1109 1127	standard deviation
+R16	risk_factor_of Arg1:T63 Arg2:T13	
+T56	method 1313 1317	chi2
+T75	disease 1600 1609	depressed
+T78	Health_factors 442 448	gender
+T79	Health_factors 1562 1568	gender
+T80	Health_factors 1630 1636	gender
+T81	Health_factors 820 835	quality of life
+T16	Health_factors 749 754	sleep
+T31	Health_factors 1075 1080	women
+T60	Health_factors 2192 2197	women
+T62	Health_factors 1056 1059	men
+T64	Health_factors 2212 2215	men
+T65	Health_factors 489 492	age
+T66	Health_factors 521 524	age
+T67	Health_factors 501 508	females
+T69	Health_factors 1517 1524	females
+T70	Health_factors 45 52	females
+T71	Health_factors 2017 2024	females
+T72	Health_factors 2223 2230	females
+T73	Health_factors 542 548	female
+T76	Health_factors 468 472	male
+T77	Health_factors 533 537	male
+T82	Health_factors 65 70	males
+T83	Health_factors 1507 1512	males
+T84	Health_factors 2081 2086	males
+R14	associated_with Arg1:T54 Arg2:T55	
+R23	associated_with Arg1:T53 Arg2:T55	
+R29	help_diagnose Arg1:T11 Arg2:T81	
+R30	help_diagnose Arg1:T32 Arg2:T81	
+R31	help_diagnose Arg1:T42 Arg2:T81	
+R33	occurs_in Arg1:T19 Arg2:T20	
+R34	occurs_in Arg1:T22 Arg2:T60	
+R15	occurs_in Arg1:T41 Arg2:T26	
+R35	occurs_in Arg1:T40 Arg2:T26	
+R36	occurs_in Arg1:T23 Arg2:T72	
+R24	occurs_in Arg1:T59 Arg2:T6	
+R27	occurs_in Arg1:T59 Arg2:T7	
+R28	occurs_in Arg1:T55 Arg2:T71	
+R32	occurs_in Arg1:T1 Arg2:T2	

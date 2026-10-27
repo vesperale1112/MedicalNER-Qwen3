@@ -1,0 +1,9 @@
+T2	Health_factors 9 33	Earlier ages at menarche
+T3	disease 76 95	depressive symptoms
+T4	Health_factors 100 120	antisocial behaviors
+T5	Health_factors 124 146	early-middle adulthood
+T7	Health_factors 192 203	adolescence
+R1	risk_factor_of Arg1:T2 Arg2:T3	
+R2	risk_factor_of Arg1:T2 Arg2:T4	
+R3	occurs_in Arg1:T4 Arg2:T5	
+R4	occurs_in Arg1:T3 Arg2:T5	

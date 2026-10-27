@@ -1,0 +1,7 @@
+T1	region 37 57	innate immune system
+T3	disease 107 136	chronic, low-grade infections
+T4	disease 160 185	depressive-like behaviors
+T5	disease 0 21	Systemic inflammation
+R1	associated_with Arg1:T5 Arg2:T1	
+T2	Health_factors 61 84	aged animals and humans
+R2	occurs_in Arg1:T1 Arg2:T2	

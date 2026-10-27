@@ -1,0 +1,10 @@
+T1	drug 28 42	prostaglandins
+T2	gene 51 60	cachectin
+T4	disease 123 133	hemorrhage
+T5	physiology 187 217	depressed macrophage functions
+T6	physiology 235 254	cachectin synthesis
+T7	physiology 96 112	pM phi functions
+T8	physiology 154 177	prostaglandin synthesis
+R1	associated_with Arg1:T1 Arg2:T7	
+R2	treatment_for Arg1:T8 Arg2:T5	
+R3	associated_with Arg1:T8 Arg2:T6	

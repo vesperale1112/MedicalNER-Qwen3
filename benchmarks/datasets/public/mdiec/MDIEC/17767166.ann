@@ -1,0 +1,67 @@
+T0	physiology 0 31	Activation of mGlu2/3 receptors
+T1	disease 59 72	schizophrenia
+T2	method 76 109	randomized Phase 2 clinical trial
+T4	disease 111 124	Schizophrenia
+T5	disease 165 180	mental disorder
+T7	physiology 248 258	plasticity
+T9	physiology 212 243	disrupted neuronal excitability
+T11	disease 380 394	hallucinations
+T12	disease 396 405	delusions
+T13	disease 410 426	thought disorder
+T14	disease 456 473	social withdrawal
+T15	disease 475 481	apathy
+T16	disease 486 504	emotional blunting
+T17	disease 553 576	psychomotor retardation
+T18	symptom 578 593	lack of insight
+T19	disease 595 629	poor attention and impulse control
+T22	disease 429 446	negative symptoms
+T23	disease 516 543	psychopathological symptoms
+T24	disease 351 368	positive symptoms
+T26	disease 699 712	schizophrenia
+T28	gene 764 782	dopamine receptors
+T29	physiology 640 667	glutamate neurotransmission
+T31	drug 731 756	prescribed antipsychotics
+T32	drug 784 792	LY404039
+T33	gene 820 866	metabotropic glutamate 2/3 (mGlu2/3) receptors
+T36	method 908 922	animal studies
+T37	drug 798 815	selective agonist
+T38	drug 977 1002	mGlu2/3 receptor agonists
+T39	drug 1055 1065	olanzapine
+T42	drug 1121 1129	LY404039
+T43	drug 1131 1140	LY2140023
+T44	disease 1159 1172	schizophrenic
+T45	drug 1187 1197	olanzapine
+T46	method 1105 1109	oral
+T48	method 1224 1287	randomized, three-armed, double-blind, placebo-controlled study
+T50	drug 1304 1313	LY2140023
+T51	drug 1335 1345	olanzapine
+T52	disease 1447 1494	positive and negative symptoms of schizophrenia
+T57	drug 1569 1578	LY2140023
+T58	gene 1640 1649	prolactin
+T59	disease 1661 1684	extrapyramidal symptoms
+T61	symptom 1688 1699	weight gain
+T62	drug 1725 1750	mGlu2/3 receptor agonists
+T63	disease 1836 1849	schizophrenia
+R1	treatment_for Arg1:T0 Arg2:T1	
+R2	hyponym_of Arg1:T4 Arg2:T5	
+R3	characteristic_of Arg1:T9 Arg2:T4	
+R4	characteristic_of Arg1:T7 Arg2:T4	
+T3	region 266 296	limbic structures of the brain
+R5	located_in Arg1:T7 Arg2:T3	
+R6	hyponym_of Arg1:T11 Arg2:T24	
+R7	hyponym_of Arg1:T12 Arg2:T24	
+R8	hyponym_of Arg1:T13 Arg2:T24	
+R9	hyponym_of Arg1:T14 Arg2:T22	
+R10	hyponym_of Arg1:T15 Arg2:T22	
+R11	hyponym_of Arg1:T16 Arg2:T22	
+R12	hyponym_of Arg1:T17 Arg2:T23	
+R13	hyponym_of Arg1:T18 Arg2:T23	
+R14	hyponym_of Arg1:T19 Arg2:T23	
+R15	associated_with Arg1:T29 Arg2:T26	
+R16	associated_with Arg1:T31 Arg2:T28	
+R17	hyponym_of Arg1:T32 Arg2:T37	
+R18	associated_with Arg1:T32 Arg2:T33	
+T6	method 939 946	rodents
+R19	treatment_for Arg1:T50 Arg2:T52	
+R20	treatment_for Arg1:T51 Arg2:T52	
+R21	treatment_for Arg1:T62 Arg2:T63	

@@ -1,0 +1,43 @@
+T0	disease 29 58	Obsessive-Compulsive Disorder
+T1	disease 0 9	Mortality
+T2	disease 90 106	mental disorders
+T3	disease 276 279	OCD
+T4	disease 245 274	obsessive-compulsive disorder
+T5	Health_factors 158 183	decreased life expectancy
+T6	disease 350 353	OCD
+T7	disease 379 384	death
+R1	occurs_in Arg1:T1 Arg2:T0	
+R2	associated_with Arg1:T2 Arg2:T5	
+R3	abbreviation_for Arg1:T3 Arg2:T4	
+T8	disease 417 420	OCD
+T9	Health_factors 427 432	women
+T10	Health_factors 442 445	men
+T11	method 459 461	SD
+T12	Health_factors 463 466	age
+T13	disease 563 567	died
+T14	method 587 596	follow-up
+T15	disease 623 628	death
+T16	disease 704 707	OCD
+R4	risk_factor_of Arg1:T16 Arg2:T15	
+T17	method 709 712	MRR
+T18	method 724 726	CI
+T19	method 759 762	MRR
+T20	Health_factors 826 844	general population
+T21	disease 882 908	comorbid anxiety disorders
+T22	disease 910 920	depression
+T23	disease 925 948	substance use disorders
+T24	disease 950 953	OCD
+T25	disease 990 999	mortality
+R5	risk_factor_of Arg1:T24 Arg2:T25	
+T26	method 1006 1009	MRR
+T27	method 1021 1023	CI
+T28	disease 1082 1085	OCD
+T29	disease 1132 1141	mortality
+R6	risk_factor_of Arg1:T28 Arg2:T29	
+T30	disease 1148 1174	Comorbid anxiety disorders
+T31	disease 1176 1186	depression
+T32	disease 1191 1214	substance use disorders
+T33	disease 1282 1303	somatic comorbidities
+T34	disease 1323 1332	mortality
+T35	disease 1390 1393	OCD
+R7	risk_factor_of Arg1:T35 Arg2:T34	

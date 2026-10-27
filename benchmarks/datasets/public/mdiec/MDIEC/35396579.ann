@@ -1,0 +1,63 @@
+T0	disease 62 75	schizophrenia
+T1	gene 28 33	genes
+T3	gene 0 20	Rare coding variants
+T6	physiology 179 199	disease pathogenesis
+T7	gene 77 98	Rare coding variation
+T8	disease 246 259	schizophrenia
+T9	disease 381 394	schizophrenia
+T10	gene 340 345	genes
+T11	method 396 407	odds ratios
+T12	gene 441 446	genes
+T13	method 452 472	false discovery rate
+T15	gene 300 326	ultra-rare coding variants
+T16	region 528 558	central nervous system neurons
+T17	gene 490 495	genes
+T19	physiology 613 661	formation, structure and function of the synapse
+T20	physiology 576 595	molecular functions
+T22	drug 687 691	NMDA
+T23	gene 687 731	NMDA (N-methyl-D-aspartate) receptor subunit
+T24	gene 693 713	N-methyl-D-aspartate
+T26	drug 743 747	AMPA
+T27	drug 749 802	-amino-3-hydroxy-5-methyl-4-isoxazole propionic acid)
+T28	gene 820 825	GRIA3
+T29	disease 937 950	schizophrenia
+T30	disease 921 933	pathogenesis
+T32	disease 846 885	dysfunction of the glutamatergic system
+T33	disease 1001 1014	schizophrenia
+T34	disease 1016 1041	autism spectrum disorders
+T35	disease 1046 1054	epilepsy
+T36	disease 1059 1094	severe neurodevelopmental disorders
+T37	gene 1163 1168	genes
+T40	gene 1175 1180	genes
+T41	physiology 1228 1244	neurodevelopment
+T43	disease 1316 1329	schizophrenia
+T44	gene 1266 1271	genes
+T45	gene 1400 1420	genetic risk factors
+T46	physiology 1472 1503	pathogenic biological processes
+T49	method 1289 1312	common variant analyses
+T50	disease 1558 1571	schizophrenia
+T51	gene 1551 1556	genes
+T52	gene 1651 1656	genes
+R1	located_in Arg1:T3 Arg2:T1	
+R2	risk_factor_of Arg1:T3 Arg2:T0	
+T2	physiology 161 174	gene function
+R3	associated_with Arg1:T7 Arg2:T2	
+R4	associated_with Arg1:T7 Arg2:T6	
+T5	method 204 218	meta-analysing
+T54	gene 223 235	whole exomes
+T55	gene 328 332	URVs
+R5	abbreviation_for Arg1:T55 Arg2:T15	
+R6	located_in Arg1:T55 Arg2:T10	
+R7	located_in Arg1:T15 Arg2:T10	
+R8	risk_factor_of Arg1:T15 Arg2:T9	
+R9	risk_factor_of Arg1:T55 Arg2:T9	
+R10	associated_with Arg1:T17 Arg2:T16	
+R11	hyponym_of Arg1:T19 Arg2:T20	
+R12	abbreviation_for Arg1:T22 Arg2:T24	
+R13	abbreviation_for Arg1:T26 Arg2:T27	
+T4	gene 743 819	AMPA (-amino-3-hydroxy-5-methyl-4-isoxazole propionic acid) receptor subunit
+T14	gene 732 738	GRIN2A
+R14	associated_with Arg1:T32 Arg2:T29	
+R15	associated_with Arg1:T45 Arg2:T46	
+T18	gene 1614 1618	URVs
+R16	associated_with Arg1:T50 Arg2:T18	

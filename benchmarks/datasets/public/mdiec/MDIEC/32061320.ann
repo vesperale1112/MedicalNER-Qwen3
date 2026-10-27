@@ -1,0 +1,35 @@
+T1	physiology 4 31	ubiquitin proteasome system
+T2	disease 36 49	schizophrenia
+T3	physiology 55 82	ubiquitin-proteasome system
+T4	physiology 371 409	ubiquitin-proteasome system signalling
+T5	region 443 450	neurons
+T6	disease 594 610	brain conditions
+T7	physiology 635 674	ubiquitin-proteasome system dysfunction
+T8	disease 679 706	neurodegenerative disorders
+T9	disease 783 811	neurodevelopmental disorders
+T10	disease 821 834	schizophrenia
+T11	physiology 874 901	ubiquitin-proteasome system
+T12	disease 942 955	schizophrenia
+T13	disease 1072 1087	mental disorder
+T15	physiology 194 206	neurogenesis
+T16	physiology 208 222	synaptogenesis
+T17	symptom 978 995	molecular changes
+T18	gene 308 359	scaffolding, presynaptic, and postsynaptic proteins
+T20	physiology 108 126	neural development
+R1	associated_with Arg1:T3 Arg2:T20	
+T21	physiology 150 178	brain structure and function
+T22	physiology 228 245	neurotransmission
+R2	associated_with Arg1:T15 Arg2:T18	
+R3	associated_with Arg1:T16 Arg2:T18	
+R4	associated_with Arg1:T22 Arg2:T18	
+T19	symptom 421 439	epigenetic changes
+T23	physiology 468 487	protein degradation
+R5	associated_with Arg1:T4 Arg2:T19	
+R6	located_in Arg1:T19 Arg2:T5	
+R7	associated_with Arg1:T4 Arg2:T6	
+R8	associated_with Arg1:T7 Arg2:T8	
+R9	associated_with Arg1:T7 Arg2:T9	
+R10	hyponym_of Arg1:T10 Arg2:T9	
+R11	associated_with Arg1:T7 Arg2:T10	
+R12	associated_with Arg1:T11 Arg2:T12	
+R13	associated_with Arg1:T3 Arg2:T21	

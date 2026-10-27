@@ -1,0 +1,82 @@
+T2	disease 203 228	major depression disorder
+T3	disease 230 233	MDD
+T4	disease 310 324	adolescent MDD
+T5	disease 446 486	drug-naive, first-episode adolescent MDD
+T7	disease 577 591	adolescent MDD
+T9	disease 1401 1415	adolescent MDD
+T10	disease 1517 1520	MDD
+T11	disease 1550 1559	depressed
+T12	disease 1788 1797	depressed
+T13	disease 2223 2263	drug-naive, first-episode adolescent MDD
+T14	symptom 0 39	Altered Whole-Brain Functional Networks
+T15	method 125 145	Neuroimaging studies
+T16	disease 164 199	disrupted brain functional networks
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	characteristic_of Arg1:T16 Arg2:T2	
+T17	region 260 280	whole-brain networks
+T18	region 407 442	intrinsic brain functional networks
+T19	method 502 528	graph theoretical analysis
+T6	method 608 623	healthy control
+T20	method 666 708	gradient-echo echo-planar imaging sequence
+T21	region 748 779	whole-brain functional networks
+T22	method 783 824	thresholding partial correlation matrices
+T23	region 831 836	brain
+T24	method 945 971	graph theoretical analysis
+T25	method 973 990	STATISTICAL TESTS
+T26	method 994 1010	chi-squared test
+T27	method 1066 1083	two-sample t-test
+T29	method 1177 1208	nonparametric permutation tests
+T30	method 1210 1250	Exploratory partial correlation analyses
+T8	region 1463 1488	brain functional networks
+T31	symptom 1582 1614	lower characteristic path length
+T32	method 1616 1653	normalized characteristic path length
+R4	characteristic_of Arg1:T31 Arg2:T11	
+R5	characteristic_of Arg1:T32 Arg2:T11	
+T33	signs 1686 1710	higher global efficiency
+R6	characteristic_of Arg1:T33 Arg2:T11	
+T34	method 1726 1746	false discovery rate
+T35	method 1748 1751	FDR
+R7	abbreviation_for Arg1:T35 Arg2:T34	
+T37	region 1892 1916	right anterior cingulate
+T38	region 1921 1939	paracingulate gyri
+T39	region 1941 1971	left posterior cingulate gyrus
+T40	region 1973 2001	right superior frontal gyrus
+T41	region 2017 2038	bilateral hippocampus
+T42	region 2044 2075	bilateral parahippocampal gyrus
+T43	region 1856 1876	default mode regions
+R9	hyponym_of Arg1:T37 Arg2:T43	
+R10	hyponym_of Arg1:T38 Arg2:T43	
+R11	hyponym_of Arg1:T39 Arg2:T43	
+R12	hyponym_of Arg1:T40 Arg2:T43	
+R13	hyponym_of Arg1:T41 Arg2:T43	
+R14	hyponym_of Arg1:T42 Arg2:T43	
+T44	region 2117 2163	orbitofrontal, temporal, and occipital regions
+T46	method 2165 2168	FDR
+T47	disease 2281 2327	disruptions in whole-brain functional networks
+R8	characteristic_of Arg1:T47 Arg2:T13	
+T48	method 1304 1323	topological metrics
+T49	method 1435 1459	Small-world architecture
+R15	characteristic_of Arg1:T49 Arg2:T10	
+T50	method 1525 1539	control groups
+T28	symptom 1820 1848	increased nodal centralities
+R16	characteristic_of Arg1:T28 Arg2:T12	
+T51	signs 2081 2109	decreased nodal centralities
+R17	characteristic_of Arg1:T51 Arg2:T12	
+T52	disease 86 111	Major Depression Disorder
+T53	Health_factors 1035 1058	gender-ratio difference
+T54	Health_factors 1114 1117	age
+T36	method 921 937	nodal centrality
+T45	method 892 903	small-world
+R18	located_in Arg1:T28 Arg2:T43	
+R31	located_in Arg1:T28 Arg2:T37	
+R19	located_in Arg1:T28 Arg2:T38	
+R20	located_in Arg1:T28 Arg2:T39	
+R21	located_in Arg1:T28 Arg2:T40	
+R22	located_in Arg1:T28 Arg2:T41	
+R23	located_in Arg1:T28 Arg2:T42	
+R24	located_in Arg1:T51 Arg2:T44	
+R29	characteristic_of Arg1:T14 Arg2:T52	
+R3	characteristic_of Arg1:T16 Arg2:T3	
+R25	located_in Arg1:T49 Arg2:T8	
+R26	associated_with Arg1:T17 Arg2:T4	
+T1	Health_factors 43 80	Drug-Naive, First-Episode Adolescents

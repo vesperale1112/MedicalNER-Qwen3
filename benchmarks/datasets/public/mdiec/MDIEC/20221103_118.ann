@@ -1,0 +1,32 @@
+T1	disease 44 64	depressive disorders
+T2	Health_factors 68 93	community-dwelling adults
+T3	disease 99 140	advanced age-related macular degeneration
+T4	disease 142 145	AMD
+T6	disease 199 209	depression
+T7	signs 211 224	visual acuity
+T8	disease 240 267	comorbid medical conditions
+T9	disease 269 279	disability
+T10	disease 444 454	disability
+T11	disease 290 301	vision loss
+T12	method 321 373	National Eye Institute-Vision Function Questionnaire
+T13	method 392 431	vision-specific Sickness Impact Profile
+T14	Health_factors 465 486	overall health status
+T15	method 433 437	SIPV
+T16	method 534 537	SIP
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+R2	risk_factor_of Arg1:T11 Arg2:T9	
+T5	method 375 382	NEI-VFQ
+R3	help_diagnose Arg1:T12 Arg2:T11	
+R4	help_diagnose Arg1:T5 Arg2:T11	
+R5	abbreviation_for Arg1:T5 Arg2:T12	
+R6	abbreviation_for Arg1:T15 Arg2:T13	
+R7	help_diagnose Arg1:T13 Arg2:T11	
+R8	help_diagnose Arg1:T15 Arg2:T11	
+T17	method 506 532	Sickness Impact Profile-68
+R9	abbreviation_for Arg1:T16 Arg2:T17	
+R10	risk_factor_of Arg1:T14 Arg2:T10	
+R11	help_diagnose Arg1:T17 Arg2:T14	
+R12	help_diagnose Arg1:T16 Arg2:T14	
+R13	occurs_in Arg1:T1 Arg2:T2	
+R14	occurs_in Arg1:T2 Arg2:T3	
+R15	occurs_in Arg1:T2 Arg2:T4	

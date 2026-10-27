@@ -1,0 +1,8 @@
+T1	disease 0 32	Short-term neonatal irritability
+T2	symptom 37 60	neurobehavioral changes
+T3	disease 82 101	maternal depression
+T4	method 106 130	antidepressant treatment
+R1	associated_with Arg1:T2 Arg2:T3	
+R2	associated_with Arg1:T1 Arg2:T3	
+R3	associated_with Arg1:T1 Arg2:T4	
+R4	associated_with Arg1:T2 Arg2:T4	

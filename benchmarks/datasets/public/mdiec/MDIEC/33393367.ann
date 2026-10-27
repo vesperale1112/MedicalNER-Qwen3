@@ -1,0 +1,49 @@
+T1	disease 62 72	depression
+T2	disease 198 218	late life depression
+T3	disease 345 365	Depressive disorders
+T5	method 947 973	Geriatric Depression Scale
+T6	disease 1072 1082	depression
+T7	disease 1168 1178	depression
+T9	method 23 39	screening method
+T10	method 167 181	screening tool
+T11	disease 220 223	LLD
+R3	abbreviation_for Arg1:T11 Arg2:T2	
+T12	Health_factors 307 325	sub-Saharan Africa
+T13	Health_factors 327 330	SSA
+R4	abbreviation_for Arg1:T13 Arg2:T12	
+T14	disease 421 424	LLD
+T15	Health_factors 496 528	low- and middle-income countries
+T16	Health_factors 530 535	LMICs
+R5	abbreviation_for Arg1:T16 Arg2:T15	
+T4	Health_factors 475 478	age
+R6	risk_factor_of Arg1:T4 Arg2:T14	
+T18	method 622 660	culturally adapted LLD screening tools
+T19	method 1676 1709	culturally-appropriate LLD screen
+T8	method 854 879	30-item LLD questionnaire
+T20	method 903 928	Delphi consensus analysis
+T21	method 975 1005	Patient Health Questionnaire-2
+T22	method 1149 1154	DSM 5
+T23	method 1201 1225	Factor and item analysis
+T24	method 1255 1268	questionnaire
+T25	method 1283 1340	12-item Maddison Old-age Scale for Identifying Depression
+T26	method 1342 1349	MOSHI-D
+R8	abbreviation_for Arg1:T26 Arg2:T25	
+T27	method 1464 1469	AUROC
+T28	method 1520 1527	MOSHI-D
+T29	method 1872 1884	WHO strategy
+T30	Health_factors 76 88	older adults
+T31	Health_factors 237 262	non-specialist clinicians
+T33	Health_factors 555 558	SSA
+R9	hyponym_of Arg1:T33 Arg2:T16	
+R10	hyponym_of Arg1:T33 Arg2:T15	
+T34	Health_factors 562 602	chronic mental health workforce shortage
+T35	Health_factors 668 693	non-specialist clinicians
+T36	Health_factors 782 794	older people
+T37	Health_factors 1184 1199	research doctor
+T38	method 1400 1416	Cronbach's alpha
+T39	Health_factors 1581 1596	non-specialists
+T40	Health_factors 1794 1797	SSA
+R2	help_diagnose Arg1:T22 Arg2:T7	
+T44	Health_factors 1722 1740	mental health care
+T17	method 266 303	primary and out-patient care settings
+T32	Health_factors 805 828	general medical clinics

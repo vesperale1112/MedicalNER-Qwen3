@@ -1,0 +1,12 @@
+T1	method 28 41	animal models
+T2	physiology 50 69	cognitive functions
+T3	disease 82 92	depression
+T4	disease 151 161	depression
+T6	physiology 135 143	ablation
+T7	disease 165 172	anxiety
+T8	physiology 0 24	Ablation of neurogenesis
+R1	associated_with Arg1:T8 Arg2:T2	
+R3	risk_factor_of Arg1:T6 Arg2:T4	
+R4	risk_factor_of Arg1:T6 Arg2:T7	
+R5	occurs_in Arg1:T8 Arg2:T1	
+R2	associated_with Arg1:T2 Arg2:T3	

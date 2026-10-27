@@ -1,0 +1,8 @@
+T2	disease 41 60	depressive symptoms
+T3	Health_factors 81 105	psychiatric help-seeking
+T4	method 127 155	evidence-based interventions
+T5	Health_factors 160 166	youths
+T6	disease 172 180	epilepsy
+T9	disease 197 207	depression
+R1	occurs_in Arg1:T5 Arg2:T6	
+R2	occurs_in Arg1:T5 Arg2:T9	

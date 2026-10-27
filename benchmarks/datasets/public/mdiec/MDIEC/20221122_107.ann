@@ -1,0 +1,10 @@
+T1	disease 40 48	diabetes
+T2	disease 72 90	cognitive deficits
+T3	method 108 134	observational cohort study
+T4	Health_factors 144 147	age
+T5	Health_factors 174 177	men
+T9	method 219 253	standardised diagnostic instrument
+T10	method 255 323	Cambridge Examination for Mental Disorders of the Elderly -- Revised
+T13	disease 200 210	depression
+R1	help_diagnose Arg1:T9 Arg2:T13	
+R3	help_diagnose Arg1:T10 Arg2:T13	

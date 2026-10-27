@@ -1,0 +1,76 @@
+T1	disease 182 192	depression
+T2	disease 197 214	suicidal ideation
+T3	disease 332 342	depression
+T4	disease 344 363	depressive symptoms
+T5	disease 369 386	suicidal ideation
+T6	disease 575 585	depression
+T7	disease 587 606	depressive symptoms
+T8	disease 611 628	suicidal ideation
+T9	disease 882 892	depression
+T10	disease 896 915	depressive symptoms
+T11	disease 920 937	suicidal ideation
+T12	disease 986 996	depression
+T13	disease 1288 1298	depression
+T14	disease 1300 1319	depressive symptoms
+T15	disease 1324 1341	suicidal ideation
+T16	disease 1429 1447	depressive symptom
+T17	disease 1669 1679	depression
+T18	disease 1683 1702	depressive symptoms
+T19	disease 1864 1882	Depressive symptom
+T20	disease 2089 2108	depressive symptoms
+T21	disease 2497 2507	depression
+T22	disease 2610 2627	Suicidal ideation
+T23	disease 2808 2825	suicidal ideation
+T24	disease 3079 3089	depression
+T25	disease 3093 3112	depressive symptoms
+T26	disease 3158 3175	suicidal ideation
+T27	disease 14 24	Depression
+T28	disease 26 45	Depressive Symptoms
+T29	method 117 130	Meta-Analysis
+T30	method 95 112	Systematic Review
+T31	disease 51 68	Suicidal Ideation
+T32	method 463 469	EMBASE
+T33	method 471 475	ERIC
+T34	method 477 484	MEDLINE
+T35	method 486 498	psycARTICLES
+T36	method 504 512	psycINFO
+T37	method 755 783	validated assessment methods
+T38	method 1090 1118	random-effects meta-analysis
+T39	method 1184 1208	stratified meta-analysis
+T40	method 1213 1228	meta-regression
+T41	method 1357 1380	validated questionnaire
+T42	method 1384 1404	structured interview
+R1	help_diagnose Arg1:T41 Arg2:T13	
+R2	help_diagnose Arg1:T41 Arg2:T14	
+R3	help_diagnose Arg1:T41 Arg2:T15	
+R4	help_diagnose Arg1:T42 Arg2:T13	
+R5	help_diagnose Arg1:T42 Arg2:T14	
+R6	help_diagnose Arg1:T42 Arg2:T15	
+T43	disease 1415 1425	Depression
+T44	method 1488 1511	cross-sectional studies
+T45	method 1533 1553	longitudinal studies
+T46	method 1746 1748	CI
+T47	method 2024 2026	CI
+T48	method 2054 2074	longitudinal studies
+T49	method 2374 2376	CI
+T50	method 2408 2410	CI
+T51	method 2519 2540	psychiatric treatment
+T52	method 2577 2579	CI
+T53	method 2667 2690	cross-sectional studies
+T54	method 2866 2868	CI
+T55	Health_factors 144 160	Medical students
+R7	risk_factor_of Arg1:T55 Arg2:T1	
+R8	risk_factor_of Arg1:T55 Arg2:T2	
+T56	method 3018 3035	systematic review
+T59	method 2474 2483	screening
+T60	Health_factors 75 91	Medical Students
+T61	Health_factors 390 406	medical students
+T62	Health_factors 632 648	medical students
+T63	Health_factors 951 959	students
+T64	Health_factors 2303 2323	preclinical students
+T65	Health_factors 2344 2361	clinical students
+T66	Health_factors 2457 2473	medical students
+T67	Health_factors 3119 3135	medical students
+T68	method 1605 1628	self-report instruments
+T69	method 2744 2767	self-report instruments
+T57	Health_factors 2127 2141	medical school

@@ -1,0 +1,18 @@
+T1	disease 0 27	Subclinical hyperthyroidism
+T2	method 64 66	OR
+T3	method 124 126	OR
+T4	method 185 187	OR
+T6	method 77 96	confidence interval
+T7	method 98 100	CI
+T8	method 136 138	CI
+T9	method 197 199	CI
+T10	physiology 162 171	gestation
+T11	physiology 222 231	gestation
+T12	disease 262 278	major depression
+T13	gene 43 49	TPO-Ab
+T14	method 51 62	odds ration
+R1	abbreviation_for Arg1:T2 Arg2:T14	
+R2	abbreviation_for Arg1:T7 Arg2:T6	
+T5	gene 116 122	TPO-Ab
+T15	gene 177 183	TPO-Ab
+R3	associated_with Arg1:T15 Arg2:T12	

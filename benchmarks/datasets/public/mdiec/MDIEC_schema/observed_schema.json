@@ -1,0 +1,1789 @@
+{
+  "status": "Derived from local annotations; not an official machine-readable schema or an exhaustive constraint specification",
+  "source": "https://zenodo.org/records/10960357",
+  "document_count": 946,
+  "relation_argument_order": "Arg1=head, Arg2=tail per official_ann2json_updated.py; does not establish symmetry constraints",
+  "entities": [
+    {
+      "label": "Health_factors",
+      "count": 4498,
+      "example": {
+        "document": "10023948",
+        "text": "first-degree or second-degree relatives"
+      }
+    },
+    {
+      "label": "disease",
+      "count": 8951,
+      "example": {
+        "document": "10023948",
+        "text": "schizophrenia"
+      }
+    },
+    {
+      "label": "drug",
+      "count": 2145,
+      "example": {
+        "document": "10481908",
+        "text": "haloperidol"
+      }
+    },
+    {
+      "label": "gene",
+      "count": 1298,
+      "example": {
+        "document": "10481908",
+        "text": "N-methyl-D-aspartate receptors"
+      }
+    },
+    {
+      "label": "method",
+      "count": 7972,
+      "example": {
+        "document": "10023948",
+        "text": "Magnetic resonance imaging"
+      }
+    },
+    {
+      "label": "physiology",
+      "count": 1615,
+      "example": {
+        "document": "10029644",
+        "text": "births"
+      }
+    },
+    {
+      "label": "region",
+      "count": 1161,
+      "example": {
+        "document": "10023948",
+        "text": "brain"
+      }
+    },
+    {
+      "label": "signs",
+      "count": 557,
+      "example": {
+        "document": "10023948",
+        "text": "Mean whole-brain volume"
+      }
+    },
+    {
+      "label": "symptom",
+      "count": 463,
+      "example": {
+        "document": "10481908",
+        "text": "stereotypy"
+      }
+    }
+  ],
+  "relations": [
+    {
+      "label": "abbreviation_for",
+      "count": 1114,
+      "example": {
+        "document": "10023948",
+        "annotation_id": "R4",
+        "Arg1": {
+          "type": "region",
+          "text": "AHC"
+        },
+        "Arg2": {
+          "type": "region",
+          "text": "amygdala-hippocampal complex"
+        }
+      },
+      "observed_type_pairs": [
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "method",
+          "count": 459
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "disease",
+          "count": 294
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "gene",
+          "count": 125
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "drug",
+          "count": 81
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "region",
+          "count": 52
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "Health_factors",
+          "count": 45
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "signs",
+          "count": 27
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "physiology",
+          "count": 19
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "gene",
+          "count": 3
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "Health_factors",
+          "count": 3
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "method",
+          "count": 3
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "symptom",
+          "count": 2
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "disease",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "associated_with",
+      "count": 2704,
+      "example": {
+        "document": "10023948",
+        "annotation_id": "R2",
+        "Arg1": {
+          "type": "disease",
+          "text": "Schizophrenia"
+        },
+        "Arg2": {
+          "type": "disease",
+          "text": "disturbed cerebral development"
+        }
+      },
+      "observed_type_pairs": [
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "disease",
+          "count": 365
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "Health_factors",
+          "count": 219
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "disease",
+          "count": 202
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "disease",
+          "count": 185
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "physiology",
+          "count": 148
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "disease",
+          "count": 130
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "physiology",
+          "count": 110
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "physiology",
+          "count": 87
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "physiology",
+          "count": 80
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "Health_factors",
+          "count": 75
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "disease",
+          "count": 65
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "gene",
+          "count": 59
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "disease",
+          "count": 48
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "disease",
+          "count": 48
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "gene",
+          "count": 46
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "region",
+          "count": 40
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "gene",
+          "count": 39
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "physiology",
+          "count": 35
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "physiology",
+          "count": 33
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "region",
+          "count": 32
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "disease",
+          "count": 30
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "drug",
+          "count": 29
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "signs",
+          "count": 25
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "gene",
+          "count": 24
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "region",
+          "count": 24
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "disease",
+          "count": 23
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "drug",
+          "count": 22
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "drug",
+          "count": 21
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "Health_factors",
+          "count": 21
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "symptom",
+          "count": 20
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "region",
+          "count": 19
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "physiology",
+          "count": 18
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "Health_factors",
+          "count": 16
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "Health_factors",
+          "count": 16
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "region",
+          "count": 15
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "method",
+          "count": 15
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "method",
+          "count": 15
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "drug",
+          "count": 15
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "symptom",
+          "count": 15
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "signs",
+          "count": 14
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "Health_factors",
+          "count": 14
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "physiology",
+          "count": 13
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "signs",
+          "count": 13
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "symptom",
+          "count": 12
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "region",
+          "count": 12
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "symptom",
+          "count": 11
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "symptom",
+          "count": 11
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "symptom",
+          "count": 10
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "method",
+          "count": 9
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "drug",
+          "count": 9
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "drug",
+          "count": 9
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "symptom",
+          "count": 8
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "signs",
+          "count": 7
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "gene",
+          "count": 7
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "method",
+          "count": 7
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "method",
+          "count": 7
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "region",
+          "count": 7
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "drug",
+          "count": 7
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "method",
+          "count": 6
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "gene",
+          "count": 6
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "drug",
+          "count": 6
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "signs",
+          "count": 6
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "gene",
+          "count": 6
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "Health_factors",
+          "count": 6
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "signs",
+          "count": 5
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "signs",
+          "count": 5
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "Health_factors",
+          "count": 5
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "method",
+          "count": 5
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "physiology",
+          "count": 5
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "Health_factors",
+          "count": 4
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "method",
+          "count": 4
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "method",
+          "count": 4
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "drug",
+          "count": 4
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "symptom",
+          "count": 3
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "gene",
+          "count": 2
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "region",
+          "count": 2
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "symptom",
+          "count": 2
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "signs",
+          "count": 1
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "gene",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "characteristic_of",
+      "count": 719,
+      "example": {
+        "document": "10023948",
+        "annotation_id": "R3",
+        "Arg1": {
+          "type": "region",
+          "text": "mesial temporal lobes"
+        },
+        "Arg2": {
+          "type": "disease",
+          "text": "schizophrenia"
+        }
+      },
+      "observed_type_pairs": [
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "disease",
+          "count": 227
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "disease",
+          "count": 103
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "disease",
+          "count": 102
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "disease",
+          "count": 87
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "disease",
+          "count": 58
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "disease",
+          "count": 51
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "disease",
+          "count": 35
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "disease",
+          "count": 15
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "disease",
+          "count": 13
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "method",
+          "count": 4
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "region",
+          "count": 4
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "region",
+          "count": 3
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "Health_factors",
+          "count": 3
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "region",
+          "count": 3
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "gene",
+          "count": 2
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "gene",
+          "count": 2
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "physiology",
+          "count": 1
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "Health_factors",
+          "count": 1
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "region",
+          "count": 1
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "region",
+          "count": 1
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "method",
+          "count": 1
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "method",
+          "count": 1
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "Health_factors",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "help_diagnose",
+      "count": 592,
+      "example": {
+        "document": "10636368",
+        "annotation_id": "R3",
+        "Arg1": {
+          "type": "method",
+          "text": "Spielberger state anxiety inventory (STAI) questionnaire"
+        },
+        "Arg2": {
+          "type": "disease",
+          "text": "anxiety"
+        }
+      },
+      "observed_type_pairs": [
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "disease",
+          "count": 416
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "Health_factors",
+          "count": 37
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "physiology",
+          "count": 25
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "signs",
+          "count": 24
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "symptom",
+          "count": 21
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "gene",
+          "count": 15
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "disease",
+          "count": 11
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "disease",
+          "count": 11
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "method",
+          "count": 7
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "disease",
+          "count": 6
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "disease",
+          "count": 6
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "disease",
+          "count": 5
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "disease",
+          "count": 2
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "region",
+          "count": 1
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "drug",
+          "count": 1
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "disease",
+          "count": 1
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "Health_factors",
+          "count": 1
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "physiology",
+          "count": 1
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "Health_factors",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "hyponym_of",
+      "count": 1183,
+      "example": {
+        "document": "10023948",
+        "annotation_id": "R1",
+        "Arg1": {
+          "type": "disease",
+          "text": "Schizophrenia"
+        },
+        "Arg2": {
+          "type": "disease",
+          "text": "multifactorial disorder"
+        }
+      },
+      "observed_type_pairs": [
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "disease",
+          "count": 398
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "drug",
+          "count": 183
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "method",
+          "count": 170
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "Health_factors",
+          "count": 82
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "gene",
+          "count": 64
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "region",
+          "count": 50
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "Health_factors",
+          "count": 42
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "method",
+          "count": 39
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "method",
+          "count": 22
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "physiology",
+          "count": 20
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "signs",
+          "count": 13
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "disease",
+          "count": 10
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "physiology",
+          "count": 10
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "symptom",
+          "count": 9
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "physiology",
+          "count": 5
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "disease",
+          "count": 5
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "Health_factors",
+          "count": 5
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "symptom",
+          "count": 4
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "symptom",
+          "count": 4
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "region",
+          "count": 4
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "signs",
+          "count": 3
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "gene",
+          "count": 3
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "physiology",
+          "count": 3
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "signs",
+          "count": 3
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "disease",
+          "count": 3
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "Health_factors",
+          "count": 3
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "gene",
+          "count": 3
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "disease",
+          "count": 2
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "method",
+          "count": 2
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "signs",
+          "count": 2
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "method",
+          "count": 2
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "signs",
+          "count": 2
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "method",
+          "count": 2
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "Health_factors",
+          "count": 2
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "signs",
+          "count": 1
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "drug",
+          "count": 1
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "disease",
+          "count": 1
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "physiology",
+          "count": 1
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "Health_factors",
+          "count": 1
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "method",
+          "count": 1
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "signs",
+          "count": 1
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "signs",
+          "count": 1
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "region",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "located_in",
+      "count": 523,
+      "example": {
+        "document": "10742158",
+        "annotation_id": "R1",
+        "Arg1": {
+          "type": "disease",
+          "text": "Functional deficits"
+        },
+        "Arg2": {
+          "type": "region",
+          "text": "basal ganglia"
+        }
+      },
+      "observed_type_pairs": [
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "region",
+          "count": 123
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "region",
+          "count": 84
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "region",
+          "count": 68
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "region",
+          "count": 63
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "gene",
+          "count": 50
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "region",
+          "count": 49
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "region",
+          "count": 38
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "region",
+          "count": 13
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "physiology",
+          "count": 8
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "gene",
+          "count": 8
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "region",
+          "count": 7
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "physiology",
+          "count": 3
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "signs",
+          "count": 3
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "signs",
+          "count": 2
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "drug",
+          "count": 1
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "disease",
+          "count": 1
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "symptom",
+          "count": 1
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "method",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "occurs_in",
+      "count": 1260,
+      "example": {
+        "document": "10029644",
+        "annotation_id": "R4",
+        "Arg1": {
+          "type": "Health_factors",
+          "text": "history of schizophrenia"
+        },
+        "Arg2": {
+          "type": "Health_factors",
+          "text": "parent"
+        }
+      },
+      "observed_type_pairs": [
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "Health_factors",
+          "count": 342
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "disease",
+          "count": 306
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "disease",
+          "count": 232
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "disease",
+          "count": 62
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "Health_factors",
+          "count": 54
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "method",
+          "count": 47
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "disease",
+          "count": 17
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "disease",
+          "count": 16
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "method",
+          "count": 15
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "disease",
+          "count": 14
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "Health_factors",
+          "count": 12
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "physiology",
+          "count": 11
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "Health_factors",
+          "count": 11
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "region",
+          "count": 10
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "disease",
+          "count": 9
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "method",
+          "count": 9
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "method",
+          "count": 8
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "Health_factors",
+          "count": 6
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "Health_factors",
+          "count": 6
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "disease",
+          "count": 6
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "Health_factors",
+          "count": 6
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "method",
+          "count": 5
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "symptom",
+          "count": 5
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "region",
+          "count": 4
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "gene",
+          "count": 4
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "physiology",
+          "count": 3
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "method",
+          "count": 3
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "physiology",
+          "count": 3
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "symptom",
+          "count": 3
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "symptom",
+          "count": 3
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "signs",
+          "count": 3
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "disease",
+          "count": 2
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "region",
+          "count": 2
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "Health_factors",
+          "count": 2
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "region",
+          "count": 2
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "gene",
+          "count": 2
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "method",
+          "count": 2
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "method",
+          "count": 1
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "method",
+          "count": 1
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "physiology",
+          "count": 1
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "Health_factors",
+          "count": 1
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "gene",
+          "count": 1
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "region",
+          "count": 1
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "signs",
+          "count": 1
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "signs",
+          "count": 1
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "region",
+          "count": 1
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "gene",
+          "count": 1
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "gene",
+          "count": 1
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "drug",
+          "count": 1
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "physiology",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "risk_factor_of",
+      "count": 1205,
+      "example": {
+        "document": "10023948",
+        "annotation_id": "R6",
+        "Arg1": {
+          "type": "region",
+          "text": "AHC"
+        },
+        "Arg2": {
+          "type": "disease",
+          "text": "schizophrenia"
+        }
+      },
+      "observed_type_pairs": [
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "disease",
+          "count": 412
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "disease",
+          "count": 250
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "disease",
+          "count": 173
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "Health_factors",
+          "count": 75
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "disease",
+          "count": 74
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "disease",
+          "count": 33
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "disease",
+          "count": 19
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "Health_factors",
+          "count": 19
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "physiology",
+          "count": 17
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "physiology",
+          "count": 13
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "symptom",
+          "count": 12
+        },
+        {
+          "Arg1_type": "symptom",
+          "Arg2_type": "disease",
+          "count": 12
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "disease",
+          "count": 10
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "physiology",
+          "count": 9
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "physiology",
+          "count": 9
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "symptom",
+          "count": 9
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "method",
+          "count": 8
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "Health_factors",
+          "count": 7
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "symptom",
+          "count": 6
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "disease",
+          "count": 5
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "signs",
+          "count": 5
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "signs",
+          "count": 5
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "physiology",
+          "count": 3
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "physiology",
+          "count": 3
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "physiology",
+          "count": 2
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "gene",
+          "count": 2
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "Health_factors",
+          "count": 2
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "physiology",
+          "count": 1
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "Health_factors",
+          "count": 1
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "signs",
+          "count": 1
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "symptom",
+          "count": 1
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "gene",
+          "count": 1
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "signs",
+          "count": 1
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "drug",
+          "count": 1
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "gene",
+          "count": 1
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "symptom",
+          "count": 1
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "drug",
+          "count": 1
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "signs",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "label": "treatment_for",
+      "count": 1260,
+      "example": {
+        "document": "10481908",
+        "annotation_id": "R14",
+        "Arg1": {
+          "type": "drug",
+          "text": "haloperidol"
+        },
+        "Arg2": {
+          "type": "symptom",
+          "text": "behavioral alterations"
+        }
+      },
+      "observed_type_pairs": [
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "disease",
+          "count": 568
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "disease",
+          "count": 464
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "Health_factors",
+          "count": 52
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "disease",
+          "count": 36
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "Health_factors",
+          "count": 20
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "physiology",
+          "count": 18
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "symptom",
+          "count": 17
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "disease",
+          "count": 14
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "physiology",
+          "count": 12
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "disease",
+          "count": 10
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "symptom",
+          "count": 10
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "Health_factors",
+          "count": 7
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "physiology",
+          "count": 5
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "method",
+          "count": 4
+        },
+        {
+          "Arg1_type": "physiology",
+          "Arg2_type": "physiology",
+          "count": 4
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "method",
+          "count": 4
+        },
+        {
+          "Arg1_type": "drug",
+          "Arg2_type": "signs",
+          "count": 2
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "signs",
+          "count": 2
+        },
+        {
+          "Arg1_type": "region",
+          "Arg2_type": "disease",
+          "count": 2
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "Health_factors",
+          "count": 2
+        },
+        {
+          "Arg1_type": "signs",
+          "Arg2_type": "disease",
+          "count": 2
+        },
+        {
+          "Arg1_type": "gene",
+          "Arg2_type": "symptom",
+          "count": 1
+        },
+        {
+          "Arg1_type": "method",
+          "Arg2_type": "region",
+          "count": 1
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "physiology",
+          "count": 1
+        },
+        {
+          "Arg1_type": "Health_factors",
+          "Arg2_type": "physiology",
+          "count": 1
+        },
+        {
+          "Arg1_type": "disease",
+          "Arg2_type": "disease",
+          "count": 1
+        }
+      ]
+    }
+  ]
+}

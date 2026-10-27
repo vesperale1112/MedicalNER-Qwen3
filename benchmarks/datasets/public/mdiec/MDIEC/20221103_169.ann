@@ -1,0 +1,5 @@
+T1	disease 22 32	depression
+T4	disease 96 104	diabetes
+T5	method 13 17	iCBT
+R1	treatment_for Arg1:T5 Arg2:T1	
+R2	occurs_in Arg1:T1 Arg2:T4	

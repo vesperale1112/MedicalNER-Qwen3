@@ -1,0 +1,49 @@
+T0	disease 78 88	depression
+T2	method 48 73	primary care intervention
+T3	disease 93 110	suicidal ideation
+T4	disease 164 174	depression
+T5	disease 179 186	suicide
+T6	disease 270 280	depression
+T7	method 304 316	primary care
+T9	disease 498 518	late-life depression
+T10	disease 607 623	major depression
+T11	disease 650 666	minor depression
+T13	method 376 386	Prevention
+T14	disease 390 397	Suicide
+T15	Health_factors 414 421	Elderly
+T18	disease 523 540	suicidal ideation
+T19	method 446 493	primary-care-based randomized, controlled trial
+T20	method 339 368	differential-effects analyses
+T21	disease 722 741	depressive symptoms
+T24	method 925 944	confidence interval
+T27	Health_factors 794 810	financial strain
+T31	method 1114 1119	trial
+T32	Health_factors 1016 1036	neighborhood poverty
+T33	disease 1284 1294	depression
+T34	method 1246 1258	intervention
+T35	disease 1262 1279	suicidal ideation
+T37	disease 1427 1447	late-life depression
+T39	method 1394 1422	primary-care-based treatment
+T40	Health_factors 1343 1362	Economic conditions
+T41	method 1506 1518	intervention
+T42	method 1557 1595	enhanced treatment management protocol
+T43	method 1751 1763	intervention
+T44	Health_factors 1820 1849	depression treatment outcomes
+T47	Health_factors 123 144	Economic disadvantage
+T48	Health_factors 0 21	Economic inequalities
+R1	associated_with Arg1:T47 Arg2:T4	
+R2	associated_with Arg1:T47 Arg2:T5	
+T49	Health_factors 219 240	economic disadvantage
+T8	method 401 413	Primary Care
+T50	method 423 442	Collaborative Trial
+T16	method 856 888	Hamilton Depression Rating Scale
+T17	Health_factors 1149 1167	poor neighborhoods
+T25	Health_factors 1308 1329	economic disadvantage
+R3	associated_with Arg1:T40 Arg2:T39	
+R4	treatment_for Arg1:T39 Arg2:T37	
+T26	Health_factors 1449 1481	Financially strained individuals
+T28	Health_factors 1688 1706	poor neighborhoods
+T30	Health_factors 1791 1812	economic disadvantage
+R5	associated_with Arg1:T30 Arg2:T44	
+T1	method 1051 1063	intervention
+R6	associated_with Arg1:T40 Arg2:T37	

@@ -1,0 +1,100 @@
+T1	disease 145 152	Obesity
+T2	disease 157 167	Depression
+T5	disease 450 457	obesity
+T6	disease 462 472	depression
+T7	disease 1214 1221	obesity
+T8	disease 1226 1236	depression
+T9	disease 2594 2618	musculoskeletal injuries
+T12	disease 2936 2955	depressive symptoms
+T13	method 10 52	Integrated Behavioral Weight Loss Treatmen
+T14	method 58 81	Problem-Solving Therapy
+T15	signs 85 100	Body Mass Index
+T16	disease 105 124	Depressive Symptoms
+T17	method 173 206	RAINBOW Randomized Clinical Trial
+T18	disease 265 274	morbidity
+T19	disease 279 289	disability
+T4	method 374 416	integrated collaborative care intervention
+T20	method 551 599	Research Aimed at Improving Both Mood and Weight
+T21	method 601 608	RAINBOW
+R3	abbreviation_for Arg1:T21 Arg2:T20	
+T22	method 610 635	randomized clinical trial
+T23	signs 661 678	body mass indices
+T24	signs 680 684	BMIs
+R4	abbreviation_for Arg1:T24 Arg2:T23	
+T25	method 731 766	9-item Patient Health Questionnaire
+T26	method 768 773	PHQ-9
+R5	abbreviation_for Arg1:T26 Arg2:T25	
+T27	method 800 812	Primary care
+T31	method 1115 1127	medical care
+T34	method 1386 1452	Diabetes Prevention Program-based behavioral weight loss treatment
+T35	method 1458 1481	problem-solving therapy
+T37	drug 1516 1542	antidepressant medications
+T38	signs 1609 1612	BMI
+T39	method 1617 1653	20-item Depression Symptom Checklist
+T40	method 1655 1661	SCL-20
+R9	abbreviation_for Arg1:T40 Arg2:T39	
+T41	method 1783 1785	SD
+T42	signs 1821 1824	BMI
+T43	method 1834 1836	SD
+T44	method 1849 1854	PHQ-9
+T45	method 1870 1872	SD
+T46	method 1889 1895	SCL-20
+T47	method 1910 1912	SD
+T48	signs 1982 1985	BMI
+T49	method 2006 2008	SD
+T50	method 2024 2026	SD
+T52	signs 2096 2099	BMI
+T53	method 2111 2113	SD
+T54	method 2129 2131	SD
+T55	method 2210 2212	CI
+T56	method 2244 2250	SCL-20
+T57	method 2276 2278	SD
+T58	method 2293 2295	SD
+T60	method 2378 2384	SCL-20
+T61	method 2401 2403	SD
+T62	method 2418 2420	SD
+T63	method 2499 2501	CI
+T65	method 2663 2673	usual care
+T66	method 2753 2784	collaborative care intervention
+T67	method 2797 2829	behavioral weight loss treatment
+T68	method 2831 2854	problem-solving therapy
+T69	drug 2870 2896	antidepressant medications
+R10	treatment_for Arg1:T66 Arg2:T12	
+R11	treatment_for Arg1:T67 Arg2:T12	
+R12	treatment_for Arg1:T68 Arg2:T12	
+R13	treatment_for Arg1:T69 Arg2:T12	
+T70	method 500 510	usual care
+T71	method 1071 1081	usual care
+T74	method 2983 2993	usual care
+T75	Health_factors 2920 2931	weight loss
+R17	treatment_for Arg1:T66 Arg2:T75	
+R20	treatment_for Arg1:T67 Arg2:T75	
+R21	treatment_for Arg1:T68 Arg2:T75	
+R22	treatment_for Arg1:T69 Arg2:T75	
+T78	Health_factors 649 655	adults
+T79	Health_factors 713 725	Asian adults
+T30	Health_factors 1139 1158	personal physicians
+T81	method 1267 1302	wireless physical activity trackers
+T84	Health_factors 1764 1767	age
+T85	Health_factors 1809 1814	women
+T89	method 2433 2443	usual care
+T91	Health_factors 2557 2579	serious adverse events
+T92	Health_factors 2715 2721	adults
+T32	method 2144 2154	usual care
+T51	method 952 961	follow-up
+T59	method 1952 1961	follow-up
+T28	Health_factors 2539 2553	adverse events
+T29	method 984 997	Interventions
+T33	disease 220 253	Coexisting obesity and depression
+R8	associated_with Arg1:T33 Arg2:T18	
+R14	associated_with Arg1:T33 Arg2:T19	
+T64	method 1041 1053	intervention
+T72	method 1304 1316	Intervention
+T73	method 1355 1367	intervention
+T36	method 2039 2051	intervention
+T76	method 2321 2333	intervention
+T80	method 2630 2642	intervention
+T82	disease 1486 1496	depression
+R1	treatment_for Arg1:T35 Arg2:T82	
+T3	disease 2727 2734	obesity
+T10	disease 2739 2749	depression

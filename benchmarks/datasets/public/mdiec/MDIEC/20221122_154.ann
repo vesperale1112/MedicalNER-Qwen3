@@ -1,0 +1,6 @@
+T1	method 9 42	Age- and gender-adjusted analyses
+T2	gene 97 115	C-reactive protein
+T3	disease 121 141	depressive disorders
+T6	gene 69 92	alpha1-antichymotrypsin
+R1	associated_with Arg1:T2 Arg2:T3	
+R2	associated_with Arg1:T6 Arg2:T3	

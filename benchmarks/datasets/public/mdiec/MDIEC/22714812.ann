@@ -1,0 +1,68 @@
+T1	disease 37 55	bipolar I disorder
+T2	disease 60 85	major depression disorder
+T3	disease 288 306	bipolar I disorder
+T4	disease 308 310	BD
+T5	disease 316 341	major depression disorder
+T6	disease 343 346	MDD
+T7	disease 408 410	BD
+T8	disease 415 418	MDD
+T10	disease 783 785	BD
+T11	disease 857 860	MDD
+T12	disease 968 971	MDD
+T13	disease 1117 1119	BD
+T14	disease 1271 1273	BD
+T15	disease 1324 1327	MDD
+T16	disease 1357 1360	MDD
+T17	disease 1385 1402	memory impairment
+T18	disease 1408 1410	BD
+T19	disease 1425 1427	BD
+T20	disease 1449 1466	memory impairment
+#1	AnnotatorNotes T2	C1269683
+#2	AnnotatorNotes T1	C0853193
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+T22	method 629 663	Young Mania Rating Scale for mania
+T23	method 668 715	Hamilton Depression Rating Scale for depression
+#4	AnnotatorNotes T23	C0451203
+#5	AnnotatorNotes T22	C4087288
+#6	AnnotatorNotes T17	Loss of neuron(C0598940)
+R6	characteristic_of Arg1:T17 Arg2:T16	
+R7	characteristic_of Arg1:T20 Arg2:T19	
+T24	method 1025 1047	Mini-Mental State Exam
+T25	method 1049 1068	logical memory test
+T26	method 614 627	rating scales
+T27	disease 568 588	Psychiatric symptoms
+R5	help_diagnose Arg1:T26 Arg2:T27	
+T9	method 427 443	healthy controls
+T21	method 874 890	healthy controls
+#3	AnnotatorNotes T20	Loss of neuron(C0598940)
+T28	physiology 0 33	Memory mood congruency phenomenon
+T30	physiology 147 165	memory performance
+T31	method 495 506	memory task
+T32	method 1159 1182	visual recognition test
+T33	method 1070 1093	visual recognition span
+T34	method 1099 1109	digit span
+T35	method 1187 1197	digit span
+T40	physiology 1199 1221	Mood congruency effect
+T41	method 1236 1264	word span with positive tone
+T42	physiology 226 252	mood congruency phenomenon
+T36	method 823 832	word span
+R10	occurs_in Arg1:T28 Arg2:T1	
+R11	occurs_in Arg1:T28 Arg2:T2	
+T29	Health_factors 257 282	acutely admitted patients
+R3	help_diagnose Arg1:T22 Arg2:T27	
+R4	help_diagnose Arg1:T23 Arg2:T27	
+R8	occurs_in Arg1:T42 Arg2:T29	
+R9	occurs_in Arg1:T29 Arg2:T3	
+R12	occurs_in Arg1:T29 Arg2:T4	
+R13	occurs_in Arg1:T29 Arg2:T5	
+R14	occurs_in Arg1:T29 Arg2:T6	
+T37	Health_factors 766 781	hospitalization
+R15	characteristic_of Arg1:T36 Arg2:T10	
+R16	characteristic_of Arg1:T24 Arg2:T12	
+R17	characteristic_of Arg1:T25 Arg2:T12	
+R18	characteristic_of Arg1:T33 Arg2:T12	
+R19	characteristic_of Arg1:T34 Arg2:T12	
+R20	characteristic_of Arg1:T32 Arg2:T13	
+R21	characteristic_of Arg1:T35 Arg2:T13	
+R22	characteristic_of Arg1:T40 Arg2:T14	

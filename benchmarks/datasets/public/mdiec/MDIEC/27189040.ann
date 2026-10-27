@@ -1,0 +1,52 @@
+T1	disease 0 30	Post-traumatic stress disorder
+T2	disease 32 62	Post-traumatic stress disorder
+T3	disease 64 68	PTSD
+T4	disease 203 207	PTSD
+T5	disease 342 346	PTSD
+T6	disease 626 630	PTSD
+T7	disease 1124 1128	PTSD
+T8	disease 1423 1438	brain disorders
+T9	Health_factors 130 135	women
+T10	Health_factors 142 145	men
+T12	drug 530 541	medications
+T13	method 546 559	psychotherapy
+T14	method 566 579	psychotherapy
+T15	method 631 646	pathophysiology
+T16	method 693 705	neurobiology
+T17	physiology 709 725	stress responses
+T18	Health_factors 948 974	genetic and social factors
+T19	physiology 976 1005	brain developmental processes
+T20	Health_factors 1064 1073	childhood
+T21	method 1172 1191	diagnostic criteria
+T22	method 1221 1236	epidemiological
+T23	gene 1250 1279	genetic and treatment studies
+T28	physiology 464 482	metabolic function
+T29	region 392 407	brain circuitry
+T30	Health_factors 156 171	trauma exposure
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	risk_factor_of Arg1:T30 Arg2:T4	
+T31	physiology 364 382	biological systems
+T11	method 412 426	neurochemistry
+T32	region 432 440	cellular
+T33	physiology 442 448	immune
+T34	physiology 450 459	endocrine
+R3	hyponym_of Arg1:T29 Arg2:T31	
+R4	hyponym_of Arg1:T11 Arg2:T31	
+R5	hyponym_of Arg1:T32 Arg2:T31	
+R6	hyponym_of Arg1:T33 Arg2:T31	
+R7	hyponym_of Arg1:T34 Arg2:T31	
+R8	hyponym_of Arg1:T28 Arg2:T31	
+R9	associated_with Arg1:T5 Arg2:T31	
+R10	associated_with Arg1:T5 Arg2:T29	
+R11	associated_with Arg1:T5 Arg2:T11	
+R12	associated_with Arg1:T5 Arg2:T32	
+R13	associated_with Arg1:T5 Arg2:T33	
+R14	associated_with Arg1:T5 Arg2:T34	
+R15	associated_with Arg1:T5 Arg2:T28	
+T35	method 672 688	psychophysiology
+T36	physiology 769 782	fear memories
+T27	disease 904 910	trauma
+T26	Health_factors 1084 1109	stressful lifetime events
+T37	method 1238 1248	biological
+T38	method 1308 1332	biological methodologies
+T39	method 1467 1492	individualized approaches

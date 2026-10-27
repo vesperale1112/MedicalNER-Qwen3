@@ -1,0 +1,1 @@
+Summary statistics for instrument-outcome associations were retrieved from three separate databases for both depression [Psychiatric Genomics Consortium, FinnGen and UK Biobank] and IBD [the largest GWAS meta-analysis, FinnGen and UK Biobank], respectively.

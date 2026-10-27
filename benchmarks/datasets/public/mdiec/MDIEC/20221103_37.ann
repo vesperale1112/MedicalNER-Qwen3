@@ -1,0 +1,7 @@
+T1	method 0 18	Infrared radiation
+T3	physiology 33 70	antidepressant and anxiolytic effects
+T4	method 74 86	animal model
+T5	disease 90 100	depression
+T6	disease 105 112	anxiety
+R1	treatment_for Arg1:T1 Arg2:T5	
+R2	treatment_for Arg1:T1 Arg2:T6	

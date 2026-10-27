@@ -1,0 +1,8 @@
+T1	disease 0 6	Stress
+T4	disease 51 79	repeated or traumatic stress
+T7	disease 114 123	illnesses
+T8	region 166 190	peripheral organ systems
+R1	risk_factor_of Arg1:T4 Arg2:T7	
+T2	region 131 153	central nervous system
+R2	located_in Arg1:T7 Arg2:T2	
+R3	located_in Arg1:T7 Arg2:T8	

@@ -1,0 +1,4 @@
+T1	method 0 21	Primary care settings
+T2	disease 71 81	depression
+T3	method 139 165	primary care interventions
+R1	help_diagnose Arg1:T1 Arg2:T2	

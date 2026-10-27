@@ -1,0 +1,9 @@
+T2	disease 53 63	depression
+T4	disease 219 229	disability
+T5	physiology 234 252	cognitive function
+T6	disease 42 48	stroke
+R1	associated_with Arg1:T6 Arg2:T2	
+T1	gene 122 133	met alleles
+R2	associated_with Arg1:T6 Arg2:T1	
+R3	associated_with Arg1:T2 Arg2:T1	
+T3	gene 181 197	met/met genotype

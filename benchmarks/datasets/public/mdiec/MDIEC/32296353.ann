@@ -1,0 +1,86 @@
+T1	drug 29 39	Psilocybin
+T2	drug 102 112	Psilocybin
+T3	disease 133 143	Depression
+T4	disease 155 165	Depression
+T5	drug 483 493	psilocybin
+T6	disease 824 834	depression
+T7	drug 882 892	psilocybin
+T8	disease 1102 1127	major depression disorder
+T9	drug 1615 1625	psilocybin
+T10	method 1845 1847	MM
+T11	drug 2033 2043	psilocybin
+T12	drug 2271 2281	psilocybin
+T13	physiology 2412 2447	psilocybin-induced peak experiences
+T15	disease 2684 2694	depression
+T16	disease 2698 2723	depressive symptomatology
+T17	disease 0 10	Depression
+T18	method 12 23	Mindfulness
+T19	method 75 97	Mindfulness Meditation
+T20	method 263 293	conventional pharmacotherapies
+T21	method 298 313	psychotherapies
+T22	method 451 473	Mindfulness meditation
+T23	method 475 477	MM
+R3	abbreviation_for Arg1:T23 Arg2:T22	
+T24	method 875 877	MM
+T26	method 1335 1341	PubMed
+T27	method 1346 1360	Google Scholar
+T28	method 1608 1610	MM
+T30	region 2004 2031	prefrontal and limbic areas
+T31	method 2384 2386	MM
+T32	method 2456 2505	placebo-controlled double-blind randomized trials
+T33	method 2518 2563	psilocybin-assisted mindfulness-based therapy
+T14	physiology 1940 1957	stress reactivity
+T34	disease 2178 2214	global neural network disintegration
+T35	method 2264 2266	MM
+T25	method 1399 1408	screening
+T36	region 1748 1768	neural core networks
+T40	physiology 996 1034	psychological and biological processes
+T41	physiology 1137 1141	mood
+T42	physiology 1143 1164	executive functioning
+T43	Health_factors 1166 1179	social skills
+T44	physiology 1181 1196	neuroplasticity
+T45	region 1198 1218	core neural networks
+T46	signs 1224 1268	neuroendocrine and neuroimmunological levels
+T47	physiology 1651 1655	mood
+T48	Health_factors 1657 1670	social skills
+T49	physiology 1676 1691	neuroplasticity
+T50	physiology 1725 1746	executive functioning
+T51	signs 1774 1819	neuroendocrine and neuroimmune system markers
+T52	physiology 1871 1896	affective self-regulation
+T53	disease 2149 2172	cognitive disinhibition
+T54	method 2629 2638	therapies
+T55	disease 1063 1074	impairments
+T56	Health_factors 177 198	public health problem
+R1	hyponym_of Arg1:T4 Arg2:T56	
+R9	associated_with Arg1:T10 Arg2:T52	
+R10	associated_with Arg1:T10 Arg2:T14	
+R12	associated_with Arg1:T10 Arg2:T30	
+T39	physiology 2094 2116	cognitive associations
+R13	associated_with Arg1:T11 Arg2:T39	
+R11	treatment_for Arg1:T19 Arg2:T3	
+R16	treatment_for Arg1:T2 Arg2:T3	
+R26	associated_with Arg1:T28 Arg2:T47	
+R27	associated_with Arg1:T28 Arg2:T48	
+R28	associated_with Arg1:T28 Arg2:T49	
+R29	associated_with Arg1:T9 Arg2:T47	
+R30	associated_with Arg1:T9 Arg2:T48	
+R31	associated_with Arg1:T9 Arg2:T49	
+R32	associated_with Arg1:T28 Arg2:T50	
+R33	associated_with Arg1:T28 Arg2:T36	
+R34	associated_with Arg1:T28 Arg2:T51	
+R35	associated_with Arg1:T9 Arg2:T50	
+R36	associated_with Arg1:T9 Arg2:T36	
+R37	associated_with Arg1:T9 Arg2:T51	
+T29	Health_factors 1905 1922	mental strategies
+T57	Health_factors 2125 2147	deep personal insights
+R14	associated_with Arg1:T10 Arg2:T29	
+R15	associated_with Arg1:T11 Arg2:T57	
+R20	associated_with Arg1:T11 Arg2:T53	
+R21	associated_with Arg1:T11 Arg2:T34	
+R2	associated_with Arg1:T40 Arg2:T8	
+R4	associated_with Arg1:T8 Arg2:T41	
+R5	associated_with Arg1:T8 Arg2:T42	
+R6	associated_with Arg1:T8 Arg2:T43	
+R7	associated_with Arg1:T8 Arg2:T44	
+R8	associated_with Arg1:T8 Arg2:T45	
+R17	associated_with Arg1:T8 Arg2:T46	

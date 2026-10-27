@@ -1,0 +1,56 @@
+T0	disease 0 11	Alexithymia
+T1	disease 15 44	obsessive-compulsive disorder
+T2	method 62 74	family study
+T3	disease 142 153	alexithymia
+T4	disease 158 187	obsessive-compulsive disorder
+T5	disease 189 192	OCD
+T8	disease 256 259	OCD
+T9	disease 234 252	alexithymic traits
+T10	Health_factors 379 401	first-degree relatives
+T11	physiology 298 320	cognitively processing
+T12	disease 277 294	familial deficits
+T13	disease 466 477	alexithymia
+T14	disease 495 498	OCD
+T15	Health_factors 509 531	first-degree relatives
+T16	Health_factors 563 585	first-degree relatives
+T17	disease 611 614	OCD
+T18	Health_factors 623 645	first-degree relatives
+T19	Health_factors 683 705	first-degree relatives
+T21	method 713 739	German family study on OCD
+T28	disease 980 997	anxiety disorders
+T30	method 999 1005	DSM-IV
+T31	method 820 857	Direct or family informant interviews
+T33	disease 1018 1021	OCD
+T36	disease 1121 1124	OCD
+T37	Health_factors 1095 1117	first-degree relatives
+T38	disease 1347 1350	OCD
+T40	method 1183 1209	linear regression analyses
+T42	disease 1371 1374	OCD
+T43	disease 1380 1402	severe mental disorder
+T44	disease 1486 1533	deficits in identifying and expressing feelings
+T45	disease 1544 1555	alexithymia
+T46	disease 1602 1605	OCD
+R1	occurs_in Arg1:T0 Arg2:T1	
+R2	associated_with Arg1:T3 Arg2:T4	
+R3	associated_with Arg1:T3 Arg2:T5	
+R4	occurs_in Arg1:T9 Arg2:T8	
+R5	occurs_in Arg1:T12 Arg2:T11	
+T6	physiology 325 347	communicating feelings
+R6	occurs_in Arg1:T12 Arg2:T6	
+R7	occurs_in Arg1:T13 Arg2:T14	
+T7	method 741 746	GENOS
+R8	abbreviation_for Arg1:T7 Arg2:T21	
+T20	method 776 809	20-item Toronto Alexithymia Scale
+T22	method 811 817	TAS-20
+R9	abbreviation_for Arg1:T22 Arg2:T20	
+T23	method 884 956	German version of the Schedule for Affective Disorders and Schizophrenia
+T24	disease 1073 1084	alexithymia
+R10	risk_factor_of Arg1:T33 Arg2:T24	
+R11	occurs_in Arg1:T37 Arg2:T36	
+T25	method 1165 1171	TAS-20
+T26	method 1215 1221	TAS-20
+R12	hyponym_of Arg1:T42 Arg2:T43	
+T27	disease 1455 1480	comorbid axis I disorders
+R13	associated_with Arg1:T42 Arg2:T44	
+R14	help_diagnose Arg1:T23 Arg2:T28	
+R15	abbreviation_for Arg1:T5 Arg2:T4	

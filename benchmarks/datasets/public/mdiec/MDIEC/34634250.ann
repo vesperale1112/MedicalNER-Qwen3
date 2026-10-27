@@ -1,0 +1,107 @@
+T1	disease 47 64	anxiety disorders
+T2	disease 161 177	mental disorders
+T3	disease 240 250	depressive
+T4	symptom 409 427	poor mental health
+T6	disease 687 712	major depressive disorder
+T7	disease 717 734	anxiety disorders
+T8	disease 831 856	major depressive disorder
+T9	disease 861 878	anxiety disorders
+T10	disease 1103 1113	depressive
+T11	disease 1336 1361	major depressive disorder
+T12	disease 1366 1383	anxiety disorders
+T13	disease 1915 1940	major depressive disorder
+T14	disease 1945 1962	anxiety disorders
+T15	disease 2078 2103	major depressive disorder
+T16	disease 2115 2132	anxiety disorders
+T17	disease 2186 2206	SARS-CoV-2 infection
+T19	disease 2482 2499	anxiety disorders
+T20	disease 2650 2675	major depressive disorder
+T21	disease 2708 2725	anxiety disorders
+T22	disease 2832 2857	major depressive disorder
+T23	disease 2899 2916	anxiety disorders
+T24	disease 3040 3060	SARS-CoV-2 infection
+T25	disease 3111 3136	major depressive disorder
+T26	disease 3141 3158	anxiety disorders
+T27	disease 3224 3249	major depressive disorder
+T28	disease 3487 3504	anxiety disorders
+T29	disease 3656 3681	major depressive disorder
+T30	disease 3727 3744	anxiety disorders
+T32	symptom 4022 4040	poor mental health
+T33	disease 4081 4096	mental disorder
+T34	disease 4140 4165	major depressive disorder
+T35	disease 4170 4187	anxiety disorders
+T36	Health_factors 117 134	COVID-19 pandemic
+T37	disease 32 42	depressive
+T38	disease 255 272	anxiety disorders
+T39	Health_factors 337 354	COVID-19 pandemic
+T5	disease 513 521	COVID-19
+T40	Health_factors 637 654	COVID-19 pandemic
+T41	method 777 794	systematic review
+T42	Health_factors 890 907	COVID-19 pandemic
+T43	method 973 979	PubMed
+T44	method 981 995	Google Scholar
+T45	method 997 1013	preprint servers
+T47	disease 1117 1134	anxiety disorders
+T48	Health_factors 1197 1214	COVID-19 pandemic
+T49	method 1280 1295	meta-regression
+T50	Health_factors 1467 1493	COVID-19 impact indicators
+T51	disease 1517 1537	SARS-CoV-2 infection
+T52	disease 1561 1570	mortality
+T53	method 1671 1716	Disease Modelling Meta-Regression version 2.1
+T54	method 1727 1740	DisMod-MR 2.1
+R3	hyponym_of Arg1:T53 Arg2:T54	
+T55	Health_factors 1872 1902	disability-adjusted life-years
+T56	Health_factors 1904 1909	DALYs
+R4	abbreviation_for Arg1:T56 Arg2:T55	
+T57	Health_factors 2139 2165	COVID-19 impact indicators
+T58	disease 2292 2317	major depressive disorder
+R5	risk_factor_of Arg1:T57 Arg2:T58	
+R6	risk_factor_of Arg1:T17 Arg2:T58	
+T59	Health_factors 2231 2245	human mobility
+R7	risk_factor_of Arg1:T59 Arg2:T58	
+T60	method 2319 2341	regression coefficient
+T61	method 2355 2375	uncertainty interval
+T64	Health_factors 3308 3325	COVID-19 pandemic
+R12	risk_factor_of Arg1:T64 Arg2:T27	
+T65	Health_factors 3717 3722	DALYs
+T66	Health_factors 3780 3785	DALYs
+T46	Health_factors 2562 2569	Females
+T62	Health_factors 2610 2615	males
+T63	method 1015 1038	grey literature sources
+T69	Health_factors 1746 1749	age
+T70	Health_factors 1751 1754	sex
+T72	disease 1809 1819	disability
+T73	disease 1857 1867	disability
+T18	disease 2456 2476	SARS-CoV-2 infection
+T74	Health_factors 2731 2742	younger age
+T75	Health_factors 2774 2783	older age
+T76	Health_factors 2941 2978	locations hit hardest by the pandemic
+R16	risk_factor_of Arg1:T76 Arg2:T25	
+R17	risk_factor_of Arg1:T76 Arg2:T26	
+T77	Health_factors 3825 3833	pandemic
+T78	Health_factors 1225 1237	pre-pandemic
+T79	Health_factors 1392 1404	pre-pandemic
+T80	Health_factors 1409 1421	mid-pandemic
+T81	Health_factors 1495 1509	human mobility
+T82	Health_factors 1630 1642	pre-pandemic
+T71	Health_factors 2596 2604	pandemic
+T83	symptom 3005 3029	decreased human mobility
+T84	method 3922 3943	Mitigation strategies
+T85	Health_factors 488 501	mental health
+T68	Health_factors 2401 2415	human mobility
+T87	Health_factors 3881 3902	mental health systems
+T31	Health_factors 3978 3994	mental wellbeing
+T88	method 4045 4058	interventions
+T89	Health_factors 205 233	global health-related burden
+R1	risk_factor_of Arg1:T2 Arg2:T89	
+R2	risk_factor_of Arg1:T3 Arg2:T89	
+R13	risk_factor_of Arg1:T38 Arg2:T89	
+R21	risk_factor_of Arg1:T39 Arg2:T4	
+R22	risk_factor_of Arg1:T29 Arg2:T65	
+R23	risk_factor_of Arg1:T30 Arg2:T66	
+R8	risk_factor_of Arg1:T59 Arg2:T19	
+R9	risk_factor_of Arg1:T57 Arg2:T19	
+R14	risk_factor_of Arg1:T17 Arg2:T19	
+T67	Health_factors 1167 1185	general population
+R10	associated_with Arg1:T84 Arg2:T31	
+T86	method 2030 2048	inclusion criteria

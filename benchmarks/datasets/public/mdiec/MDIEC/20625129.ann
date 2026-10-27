@@ -1,0 +1,79 @@
+T0	disease 91 121	post-traumatic stress disorder
+T1	method 150 189	hematopoietic stem-cell transplantation
+T3	method 0 25	Randomized clinical trial
+T6	method 29 80	telephone-administered cognitive-behavioral therapy
+T7	disease 355 385	post-traumatic stress disorder
+T8	disease 387 391	PTSD
+T9	Health_factors 299 314	adverse effects
+T12	disease 406 422	general distress
+T13	method 236 275	hematopoietic stem-cell transplantation
+T14	disease 588 592	PTSD
+T15	disease 594 604	depression
+T17	method 447 472	randomized clinical trial
+T19	method 537 565	cognitive-behavioral therapy
+T20	method 567 570	CBT
+T21	method 572 584	intervention
+T22	method 514 565	telephone-administered cognitive-behavioral therapy
+T24	disease 925 935	depression
+T26	disease 885 898	PTSD symptoms
+T28	disease 940 956	general distress
+T29	method 838 856	clinical interview
+T30	method 802 821	baseline assessment
+T32	method 1020 1023	CBT
+T33	disease 1195 1205	depression
+T36	method 1108 1136	telephone-based CBT sessions
+T37	method 1138 1143	T-CBT
+T38	disease 1180 1193	PTSD symptoms
+T40	disease 1211 1227	general distress
+T41	method 1229 1250	Follow-up assessments
+T42	method 1293 1312	baseline assessment
+T43	method 1454 1459	T-CBT
+T46	disease 1521 1530	avoidance
+T48	disease 1624 1643	depressive symptoms
+T49	Health_factors 1691 1702	demographic
+T51	disease 1597 1613	general distress
+T52	disease 1552 1570	intrusive thoughts
+T53	disease 1475 1504	illness-related PTSD symptoms
+T54	Health_factors 1381 1395	HSCT survivors
+T55	method 1324 1351	Linear mixed-model analyses
+T56	method 1774 1795	follow-up assessments
+T60	method 1819 1858	telephone-administered CBT intervention
+T65	disease 1963 1979	general distress
+T66	disease 1929 1958	illness-related PTSD symptoms
+R1	treatment_for Arg1:T6 Arg2:T0	
+T2	disease 126 143	distress symptoms
+R2	treatment_for Arg1:T6 Arg2:T2	
+T4	method 277 281	HSCT
+R3	abbreviation_for Arg1:T4 Arg2:T13	
+R4	abbreviation_for Arg1:T8 Arg2:T7	
+R7	risk_factor_of Arg1:T13 Arg2:T12	
+R8	risk_factor_of Arg1:T4 Arg2:T12	
+R9	abbreviation_for Arg1:T20 Arg2:T19	
+T5	disease 610 627	distress symptoms
+T11	method 667 671	HSCT
+T16	method 861 881	self-report measures
+R10	help_diagnose Arg1:T29 Arg2:T26	
+R11	help_diagnose Arg1:T16 Arg2:T26	
+R12	help_diagnose Arg1:T29 Arg2:T24	
+R13	help_diagnose Arg1:T29 Arg2:T28	
+R14	help_diagnose Arg1:T16 Arg2:T24	
+R15	help_diagnose Arg1:T16 Arg2:T28	
+T18	method 1074 1077	CBT
+R16	abbreviation_for Arg1:T37 Arg2:T36	
+R17	treatment_for Arg1:T36 Arg2:T38	
+R18	treatment_for Arg1:T37 Arg2:T38	
+R19	treatment_for Arg1:T36 Arg2:T33	
+R20	treatment_for Arg1:T37 Arg2:T33	
+R21	treatment_for Arg1:T36 Arg2:T40	
+R22	treatment_for Arg1:T37 Arg2:T40	
+R23	treatment_for Arg1:T43 Arg2:T53	
+R24	treatment_for Arg1:T43 Arg2:T46	
+R25	treatment_for Arg1:T43 Arg2:T52	
+R26	treatment_for Arg1:T43 Arg2:T51	
+R27	treatment_for Arg1:T43 Arg2:T48	
+T23	Health_factors 1873 1887	HSCT survivors
+R28	treatment_for Arg1:T60 Arg2:T66	
+R29	treatment_for Arg1:T60 Arg2:T65	
+T10	disease 339 401	illness-related post-traumatic stress disorder (PTSD) symptoms
+R5	risk_factor_of Arg1:T4 Arg2:T10	
+R6	risk_factor_of Arg1:T13 Arg2:T10	

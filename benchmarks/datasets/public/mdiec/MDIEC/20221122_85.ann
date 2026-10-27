@@ -1,0 +1,15 @@
+T1	method 21 44	nationwide cohort study
+T2	Health_factors 46 61	lifetime OC use
+T3	method 110 113	HRT
+T4	physiology 120 129	menopause
+T5	disease 177 179	VD
+T6	Health_factors 186 192	female
+T7	disease 207 217	depression
+T8	disease 102 104	AD
+R1	treatment_for Arg1:T2 Arg2:T8	
+T9	disease 170 172	AD
+R2	treatment_for Arg1:T3 Arg2:T9	
+R3	treatment_for Arg1:T3 Arg2:T5	
+R4	occurs_in Arg1:T5 Arg2:T6	
+R6	occurs_in Arg1:T9 Arg2:T6	
+R5	occurs_in Arg1:T6 Arg2:T7	

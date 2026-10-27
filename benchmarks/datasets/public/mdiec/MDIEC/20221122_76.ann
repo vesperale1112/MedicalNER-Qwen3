@@ -1,0 +1,10 @@
+T1	method 0 18	Bivariate analyses
+T2	disease 69 79	depression
+T3	disease 103 122	psychologic symptom
+T24	Health_factors 203 214	younger age
+T25	Health_factors 338 365	primary care-oriented visit
+T4	Health_factors 285 295	postpartum
+R1	associated_with Arg1:T2 Arg2:T3	
+R2	associated_with Arg1:T2 Arg2:T24	
+R3	associated_with Arg1:T2 Arg2:T4	
+R4	associated_with Arg1:T2 Arg2:T25	

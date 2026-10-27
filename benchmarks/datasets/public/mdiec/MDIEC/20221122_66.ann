@@ -1,0 +1,5 @@
+T1	drug 14 17	FLX
+T2	drug 27 31	CORT
+T3	disease 43 64	anxiety-like behavior
+T4	Health_factors 93 112	concurrent exercise
+R1	risk_factor_of Arg1:T1 Arg2:T3	

@@ -1,0 +1,15 @@
+T2	disease 51 61	depression
+T3	disease 248 258	depression
+T4	disease 82 109	seasonal affective disorder
+T5	disease 111 114	SAD
+T6	disease 135 148	clinical pain
+T8	disease 264 268	pain
+T1	Health_factors 66 72	season
+R1	associated_with Arg1:T2 Arg2:T1	
+R2	abbreviation_for Arg1:T5 Arg2:T4	
+T7	Health_factors 173 179	season
+R3	associated_with Arg1:T6 Arg2:T7	
+T10	method 205 219	neurochemistry
+R4	associated_with Arg1:T3 Arg2:T8	
+R5	occurs_in Arg1:T1 Arg2:T4	
+R6	occurs_in Arg1:T1 Arg2:T5	

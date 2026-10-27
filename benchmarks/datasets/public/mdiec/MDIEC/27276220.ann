@@ -1,0 +1,111 @@
+T0	disease 0 45	Structural and Functional Brain Abnormalities
+T1	disease 49 89	Attention-Deficit/Hyperactivity Disorder
+T2	disease 94 123	Obsessive-Compulsive Disorder
+T3	method 127 152	Comparative Meta-analysis
+T4	disease 179 219	attention-deficit/hyperactivity disorder
+T5	disease 221 225	ADHD
+T6	disease 231 260	obsessive-compulsive disorder
+T7	disease 262 265	OCD
+T8	disease 273 299	impaired inhibitory contro
+T9	disease 361 438	shared or disorder-specific neurostructural and neurofunctional abnormalities
+T11	disease 465 558	shared and disorder-specific structural, functional, and overlapping multimodal abnormalities
+T13	method 590 625	voxel-based meta-analytic compariso
+T15	signs 662 665	GMV
+T16	method 671 708	functional magnetic resonance imaging
+T17	disease 755 759	ADHD
+T18	disease 764 767	OCD
+T19	signs 630 660	whole-brain gray matter volume
+T20	method 808 814	PubMed
+T21	method 831 847	Web of Knowledge
+T22	method 853 859	Scopus
+T25	method 916 939	voxel-based morphometry
+T26	method 941 944	VBM
+T27	Health_factors 998 1006	children
+T28	Health_factors 1011 1017	adults
+T29	disease 1023 1027	ADHD
+T30	disease 1031 1034	OCD
+T31	physiology 969 987	inhibitory control
+T32	method 904 939	Whole-brain voxel-based morphometry
+T35	signs 1110 1113	GMV
+T36	method 1082 1106	Voxel-wise meta-analyses
+T38	disease 1360 1364	ADHD
+T39	disease 1369 1372	OCD
+T41	disease 1315 1328	abnormalities
+T43	disease 1177 1222	Regional structure and function abnormalities
+T45	method 1403 1416	Meta-analytic
+T47	signs 1463 1466	GMV
+T49	method 1495 1540	multimodal functional and structural measures
+T51	method 1471 1486	inhibitory fMRI
+T52	disease 1417 1459	disorder-specific and shared abnormalities
+T60	signs 1580 1583	VBM
+T61	disease 1649 1652	OCD
+T62	signs 1653 1656	VBM
+T63	method 1716 1720	fMRI
+T64	disease 1780 1783	OCD
+T65	method 1784 1788	fMRI
+T66	disease 1854 1858	ADHD
+T67	disease 2123 2127	ADHD
+T68	disease 2151 2154	OCD
+T71	signs 2089 2092	GMV
+T72	disease 2174 2177	OCD
+T73	disease 2243 2246	OCD
+T74	disease 2436 2440	ADHD
+T76	method 2370 2374	fMRI
+T77	signs 2392 2395	VBM
+T79	region 2503 2540	right ventrolateral prefrontal cortex
+T80	region 2306 2368	rostral and dorsal anterior cingulate/medial prefrontal cortex
+T84	method 2560 2597	Ventromedial prefrontal GMV reduction
+T85	disease 2684 2717	impairments in inhibitory control
+T87	disease 2779 2783	ADHD
+T88	disease 2788 2791	OCD
+T89	disease 2814 2875	disorder-differential functional and structural abnormalities
+T92	signs 2746 2775	transdiagnostic endophenotype
+T95	disease 2891 2895	ADHD
+T96	disease 3004 3007	OCD
+T97	symptom 2903 2981	smaller and underfunctioning ventrolateral prefrontal/insular-striatal regions
+R1	occurs_in Arg1:T0 Arg2:T1	
+R2	occurs_in Arg1:T0 Arg2:T2	
+R3	abbreviation_for Arg1:T5 Arg2:T4	
+R4	abbreviation_for Arg1:T7 Arg2:T6	
+R5	associated_with Arg1:T4 Arg2:T8	
+R6	associated_with Arg1:T5 Arg2:T8	
+R7	associated_with Arg1:T6 Arg2:T8	
+R8	associated_with Arg1:T7 Arg2:T8	
+R9	abbreviation_for Arg1:T15 Arg2:T19	
+T10	method 710 714	fMRI
+T12	method 816 829	ScienceDirect
+T14	disease 333 344	impairments
+R10	abbreviation_for Arg1:T26 Arg2:T25	
+T23	method 949 961	fMRI studies
+R11	occurs_in Arg1:T28 Arg2:T29	
+R12	occurs_in Arg1:T27 Arg2:T29	
+R13	occurs_in Arg1:T27 Arg2:T30	
+R14	occurs_in Arg1:T28 Arg2:T30	
+T24	method 1117 1121	fMRI
+T33	method 1155 1175	Seed-based d-Mapping
+R15	occurs_in Arg1:T52 Arg2:T47	
+T34	disease 1575 1579	ADHD
+T37	disease 1623 1630	ADHDand
+T40	disease 1686 1692	OCDand
+T42	disease 1711 1715	ADHD
+T44	disease 1750 1757	ADHDand
+T46	disease 1818 1824	OCDand
+T48	region 2033 2063	bilateral basal ganglia/insula
+R19	occurs_in Arg1:T85 Arg2:T87	
+R21	occurs_in Arg1:T85 Arg2:T88	
+R22	associated_with Arg1:T85 Arg2:T89	
+R23	characteristic_of Arg1:T97 Arg2:T95	
+T50	symptom 3015 3067	larger and hyperfunctioning insular-striatal regions
+T53	symptom 3101 3169	smaller and underfunctioning rostro/dorsal medial prefrontal regions
+R24	characteristic_of Arg1:T50 Arg2:T96	
+R17	characteristic_of Arg1:T71 Arg2:T67	
+T54	symptom 2254 2302	disorder-specific reduced function and structure
+R25	located_in Arg1:T54 Arg2:T80	
+R20	characteristic_of Arg1:T54 Arg2:T73	
+T55	symptom 1866 1908	disorder-contrasting multimodal structural
+R16	characteristic_of Arg1:T55 Arg2:T66	
+R26	located_in Arg1:T55 Arg2:T48	
+T56	symptom 2448 2495	disorder-specific underactivation predominantly
+R18	characteristic_of Arg1:T56 Arg2:T74	
+R27	located_in Arg1:T56 Arg2:T79	
+R28	associated_with Arg1:T50 Arg2:T53	

@@ -1,0 +1,40 @@
+T1	disease 20 36	major depression
+T2	disease 97 122	Major depression disorder
+T3	disease 124 127	MDD
+T4	disease 342 345	MDD
+T5	disease 351 367	bipolar disorder
+T6	disease 369 371	BD
+T7	disease 380 404	early depressive episode
+T8	disease 455 469	mood disorders
+T9	disease 796 799	MDD
+T10	disease 871 875	MDDs
+T11	disease 899 913	mood disorders
+T12	disease 1064 1067	MDD
+T13	disease 1253 1263	depression
+#1	AnnotatorNotes T2	C1269683
+#2	AnnotatorNotes T3	C1269683
+#3	AnnotatorNotes T1	C1269683
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T14	disease 161 171	disability
+T15	disease 176 185	morbidity
+R2	risk_factor_of Arg1:T2 Arg2:T15	
+R3	risk_factor_of Arg1:T3 Arg2:T15	
+R4	risk_factor_of Arg1:T2 Arg2:T14	
+R5	risk_factor_of Arg1:T3 Arg2:T14	
+R6	abbreviation_for Arg1:T6 Arg2:T5	
+T16	method 0 16	Machine learning
+T17	method 479 495	machine learning
+T18	method 663 687	machine-learning methods
+T19	method 816 842	magnetic resonance imaging
+#4	AnnotatorNotes T11	C0525045
+#5	AnnotatorNotes T16	C0376284
+#6	AnnotatorNotes T14	C0231170
+#7	AnnotatorNotes T8	C0525045
+R7	help_diagnose Arg1:T19 Arg2:T10	
+T20	method 1225 1249	neuroimaging data mining
+T23	signs 291 301	biomarkers
+T24	signs 441 451	biomarkers
+T25	method 697 741	brain imaging classification and predictions
+T26	method 1383 1417	personalized optimal clinical care
+T21	signs 1068 1077	biomarker
+R10	help_diagnose Arg1:T19 Arg2:T11	

@@ -1,0 +1,86 @@
+T0	disease 0 10	Depression
+T1	disease 12 42	post-traumatic stress disorder
+T2	disease 48 69	functional disability
+T3	Health_factors 73 102	survivors of critical illness
+T7	method 129 154	longitudinal cohort study
+T8	method 110 125	BRAIN-ICU study
+T9	disease 167 183	Critical illness
+T10	disease 203 223	cognitive impairment
+T11	Health_factors 229 242	mental health
+T12	Health_factors 274 301	survivors of intensive care
+T13	disease 247 270	functional disabilities
+T14	disease 389 397	delirium
+T15	Health_factors 369 372	age
+T16	Health_factors 403 416	mental health
+T18	disease 421 444	functional disabilities
+T24	Health_factors 605 629	medical or surgical ICUs
+T25	disease 789 799	depression
+T26	disease 832 862	post-traumatic stress disorder
+T27	disease 864 868	PTSD
+T28	method 870 933	Post-Traumatic Stress Disorder Checklist-Event Specific Version
+T29	disease 940 961	functional disability
+T32	method 801 829	Beck Depression Inventory II
+T35	method 1047 1084	Katz Activities of Daily Living Scale
+T36	method 998 1041	Pfeffer Functional Activities Questionnaire
+T37	Health_factors 674 695	baseline demographics
+T38	disease 1211 1219	delirium
+T41	Health_factors 1191 1194	age
+T42	Health_factors 1225 1238	mental health
+T43	disease 1243 1266	functional disabilities
+T45	method 1095 1143	linear and proportional odds logistic regression
+T46	method 1298 1316	ClinicalTrials.gov
+T47	Health_factors 1388 1391	age
+T48	method 1405 1408	IQR
+T52	disease 1645 1655	depression
+T54	disease 1694 1722	cognitive-affective symptoms
+T55	disease 1674 1681	somatic
+T56	disease 1576 1591	mild depression
+T58	disease 1724 1743	Depressive symptoms
+T59	Health_factors 1779 1810	without a history of depression
+T61	disease 2043 2075	post-traumatic distress disorder
+T63	Health_factors 2099 2125	activities of daily living
+T65	Health_factors 2340 2353	Mental health
+T66	Health_factors 2416 2420	ages
+T67	disease 2358 2381	functional difficulties
+T68	disease 2470 2492	mental health problems
+T69	disease 2497 2520	functional disabilities
+T70	disease 2584 2592	delirium
+T74	symptom 2630 2648	Poor mental health
+T76	Health_factors 2708 2728	intensive-care units
+T77	disease 2653 2674	functional disability
+T78	disease 2730 2740	Depression
+T79	disease 2775 2807	post-traumatic distress disorder
+T80	disease 2814 2830	critical illness
+T83	method 2967 2980	critical care
+T89	method 3098 3143	Department of Veterans Affairs Medical Center
+T90	Health_factors 3039 3088	Geriatric Research, Education and Clinical Center	
+R3	risk_factor_of Arg1:T80 Arg2:T78	
+R4	occurs_in Arg1:T2 Arg2:T3	
+R1	occurs_in Arg1:T1 Arg2:T3	
+R2	occurs_in Arg1:T0 Arg2:T3	
+R5	associated_with Arg1:T9 Arg2:T10	
+R6	occurs_in Arg1:T13 Arg2:T12	
+R7	occurs_in Arg1:T11 Arg2:T12	
+T4	method 478 515	prospective, multicentre cohort study
+T5	disease 543 562	respiratory failure
+T6	disease 566 571	shock
+R8	help_diagnose Arg1:T32 Arg2:T25	
+R9	abbreviation_for Arg1:T27 Arg2:T26	
+R10	help_diagnose Arg1:T28 Arg2:T26	
+R11	help_diagnose Arg1:T28 Arg2:T27	
+T17	method 963 996	activities of daily living scales
+R12	help_diagnose Arg1:T17 Arg2:T29	
+R13	help_diagnose Arg1:T36 Arg2:T29	
+R14	help_diagnose Arg1:T35 Arg2:T29	
+R15	associated_with Arg1:T58 Arg2:T59	
+T19	method 2127 2130	ADL
+R16	abbreviation_for Arg1:T19 Arg2:T63	
+T20	method 2245 2261	instrumental ADL
+R17	risk_factor_of Arg1:T55 Arg2:T52	
+T21	Health_factors 2431 2438	old age
+R20	associated_with Arg1:T21 Arg2:T68	
+R21	associated_with Arg1:T21 Arg2:T69	
+R22	associated_with Arg1:T74 Arg2:T76	
+R23	associated_with Arg1:T77 Arg2:T76	
+T22	disease 2848 2864	somatic symptoms
+R18	risk_factor_of Arg1:T22 Arg2:T78	

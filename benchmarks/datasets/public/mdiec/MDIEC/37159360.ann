@@ -1,0 +1,86 @@
+T0	disease 0 23	Substance use disorders
+T1	method 67 79	epidemiology
+T2	method 81 93	neurobiology
+T6	disease 139 162	Substance use disorders
+T7	disease 164 168	SUDs
+T8	Health_factors 235 241	health
+T9	Health_factors 259 277	social functioning
+T10	disease 519 528	addiction
+T11	disease 549 552	SUD
+T12	region 303 317	brain networks
+T13	physiology 338 356	executive function
+T14	physiology 358 375	stress reactivity
+T15	physiology 377 381	mood
+T16	symptom 432 450	consume substances
+T18	physiology 387 401	self-awareness
+T19	physiology 330 336	reward
+T21	disease 788 791	SUD
+T22	method 555 565	Biological
+T25	Health_factors 686 692	health
+T27	Health_factors 639 668	adverse childhood experiences
+T28	gene 577 585	genetics
+T29	method 807 828	prevention strategies
+T30	Health_factors 904 913	childhood
+T31	Health_factors 918 929	adolescence
+T33	Health_factors 841 860	social risk factors
+T34	disease 974 978	SUDs
+T35	disease 1068 1110	opioid, nicotine and alcohol use disorders
+T39	disease 1142 1146	SUDs
+T40	disease 1173 1194	nicotine use disorder
+T42	drug 1052 1063	medications
+T44	method 1153 1168	neuromodulation
+T45	method 1113 1133	behavioral therapies
+T46	disease 1210 1214	SUDs
+T47	disease 1394 1438	comorbid psychiatric and physical conditions
+T48	method 1302 1314	intervention
+T52	method 1260 1278	Chronic Care Model
+T53	Health_factors 1455 1476	health care providers
+T54	disease 1508 1512	SUDs
+T55	Health_factors 1649 1659	telehealth
+T56	method 1589 1603	models of care
+T57	method 1552 1568	specialized care
+T58	disease 1717 1721	SUDs
+T59	method 1965 1975	prevention
+R1	abbreviation_for Arg1:T7 Arg2:T6	
+T3	Health_factors 243 253	well-being
+R2	associated_with Arg1:T6 Arg2:T8	
+R3	associated_with Arg1:T7 Arg2:T8	
+R4	associated_with Arg1:T6 Arg2:T3	
+R5	associated_with Arg1:T7 Arg2:T3	
+R6	associated_with Arg1:T6 Arg2:T9	
+R7	associated_with Arg1:T7 Arg2:T9	
+R8	associated_with Arg1:T12 Arg2:T16	
+R9	associated_with Arg1:T19 Arg2:T16	
+R10	associated_with Arg1:T13 Arg2:T16	
+R11	associated_with Arg1:T14 Arg2:T16	
+R12	associated_with Arg1:T15 Arg2:T16	
+R13	associated_with Arg1:T18 Arg2:T16	
+R14	associated_with Arg1:T12 Arg2:T10	
+R15	associated_with Arg1:T19 Arg2:T10	
+R16	associated_with Arg1:T13 Arg2:T10	
+R17	associated_with Arg1:T14 Arg2:T10	
+R18	associated_with Arg1:T15 Arg2:T10	
+R19	associated_with Arg1:T18 Arg2:T10	
+R20	associated_with Arg1:T12 Arg2:T11	
+R21	associated_with Arg1:T19 Arg2:T11	
+R22	associated_with Arg1:T13 Arg2:T11	
+R23	associated_with Arg1:T14 Arg2:T11	
+R24	associated_with Arg1:T15 Arg2:T11	
+R25	associated_with Arg1:T18 Arg2:T11	
+T4	Health_factors 621 627	social
+T5	Health_factors 590 615	developmental life stages
+R26	hyponym_of Arg1:T28 Arg2:T22	
+R27	hyponym_of Arg1:T27 Arg2:T4	
+R28	hyponym_of Arg1:T5 Arg2:T22	
+R29	associated_with Arg1:T22 Arg2:T21	
+R30	associated_with Arg1:T28 Arg2:T21	
+R31	associated_with Arg1:T5 Arg2:T21	
+R32	associated_with Arg1:T4 Arg2:T21	
+R33	associated_with Arg1:T27 Arg2:T21	
+R34	treatment_for Arg1:T42 Arg2:T34	
+R35	treatment_for Arg1:T45 Arg2:T34	
+R36	treatment_for Arg1:T44 Arg2:T34	
+R37	treatment_for Arg1:T42 Arg2:T35	
+R38	treatment_for Arg1:T45 Arg2:T39	
+R39	treatment_for Arg1:T44 Arg2:T40	
+R40	help_diagnose Arg1:T53 Arg2:T54	

@@ -1,0 +1,9 @@
+T1	physiology 14 39	glucocorticoid resistance
+T2	method 52 67	CS-exposed mice
+T3	gene 119 133	hippocampal GR
+T4	disease 208 243	COPD-induced depression comorbidity
+T5	drug 83 103	serum corticosterone
+R1	associated_with Arg1:T1 Arg2:T5	
+R2	associated_with Arg1:T1 Arg2:T3	
+R3	occurs_in Arg1:T1 Arg2:T2	
+R4	associated_with Arg1:T1 Arg2:T4	

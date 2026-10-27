@@ -1,0 +1,6 @@
+T1	physiology 33 55	antidepressant effects
+T2	drug 59 84	NMDA-receptor antagonists
+T3	disease 109 138	impaired astroglial functions
+T5	disease 173 192	affective disorders
+T4	disease 157 169	pathogenesis
+R1	associated_with Arg1:T3 Arg2:T5	

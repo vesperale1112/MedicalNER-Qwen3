@@ -1,0 +1,8 @@
+T1	disease 19 36	chronic back pain
+T2	disease 135 139	pain
+T3	disease 41 57	major depression
+T4	disease 86 96	disability
+T5	disease 200 210	disability
+R1	risk_factor_of Arg1:T1 Arg2:T4	
+R2	risk_factor_of Arg1:T3 Arg2:T4	
+R3	associated_with Arg1:T2 Arg2:T5	

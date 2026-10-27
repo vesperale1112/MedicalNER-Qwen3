@@ -1,0 +1,41 @@
+T1	disease 76 101	Major Depressive Disorder
+T2	disease 404 429	Major Depressive Disorder
+T3	disease 431 434	MDD
+T4	disease 501 504	MDD
+T5	method 678 697	16S rRNA sequencing
+T6	disease 1637 1640	MDD
+T8	Health_factors 0 23	Gut Microbiome Patterns
+T9	Health_factors 173 187	gut microbiome
+T10	region 195 200	brain
+T11	drug 326 352	antidepressant medications
+T12	Health_factors 360 374	gut microbiota
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T13	signs 404 449	Major Depressive Disorder (MDD) gut phenotype
+T16	method 805 830	Beck Depression Inventory
+T17	method 832 855	Alpha diversity metrics
+T19	method 1302 1316	Mann-Whitney U
+T20	method 1350 1377	Operational Taxonomic Units
+T21	method 1379 1383	OTUs
+R3	abbreviation_for Arg1:T21 Arg2:T20	
+T23	drug 1568 1594	antidepressant medications
+T24	Health_factors 1605 1619	gut microbiota
+T25	signs 1733 1753	microbiota phenotype
+T26	physiology 1769 1787	treatment response
+R5	associated_with Arg1:T25 Arg2:T26	
+T7	Health_factors 735 758	gut microbial community
+T14	physiology 40 58	Treatment Response
+T28	Health_factors 256 275	clinical population
+T30	Health_factors 1118 1128	microbiota
+T31	physiology 1179 1197	treatment response
+T32	Health_factors 1250 1280	greater phylogenetic diversity
+T34	method 1449 1453	OTUs
+R8	associated_with Arg1:T23 Arg2:T24	
+T35	disease 1791 1794	MDD
+T15	signs 768 784	Symptom severity
+R2	help_diagnose Arg1:T16 Arg2:T15	
+T18	Health_factors 1136 1154	treatment duration
+R9	occurs_in Arg1:T24 Arg2:T6	
+R7	occurs_in Arg1:T26 Arg2:T35	
+R6	occurs_in Arg1:T14 Arg2:T1	
+R10	associated_with Arg1:T8 Arg2:T14	
+R11	associated_with Arg1:T9 Arg2:T10	

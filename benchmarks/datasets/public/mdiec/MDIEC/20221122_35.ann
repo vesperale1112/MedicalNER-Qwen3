@@ -1,0 +1,13 @@
+T1	disease 0 10	Depression
+T2	disease 16 36	multicausal disorder
+T3	disease 86 92	cancer
+T4	disease 94 102	dementia
+T5	disease 114 122	epilepsy
+T6	disease 127 133	stroke
+R1	hyponym_of Arg1:T1 Arg2:T2	
+R2	risk_factor_of Arg1:T1 Arg2:T3	
+R3	risk_factor_of Arg1:T1 Arg2:T4	
+T7	disease 104 112	diabetes
+R4	risk_factor_of Arg1:T1 Arg2:T7	
+R5	risk_factor_of Arg1:T1 Arg2:T5	
+R6	risk_factor_of Arg1:T1 Arg2:T6	

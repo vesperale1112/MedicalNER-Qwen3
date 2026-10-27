@@ -1,0 +1,75 @@
+T0	gene 17 30	AS3MT isoform
+T1	gene 35 41	BORCS7
+T2	gene 76 115	10q24.32 schizophrenia-associated locus
+T4	disease 231 252	psychiatric disorders
+T5	method 117 148	Genome-wide association studies
+T6	method 150 155	GWASs
+T7	gene 176 207	single nucleotide polymorphisms
+T8	gene 209 213	SNPs
+T9	physiology 289 309	molecular mechanisms
+T10	gene 377 413	10q24.32 schizophrenia-related locus
+T11	gene 503 535	BLOC-1 related complex subunit 7
+T12	gene 537 543	BORCS7
+T13	gene 594 636	arsenite methyltransferase (AS3MT) isoform
+T15	gene 638 649	AS3MT(d2d3)
+T17	physiology 664 699	arsenite methyltransferase activity
+T18	disease 741 754	schizophrenia
+T19	gene 329 341	risk alleles
+T20	gene 360 365	genes
+T23	region 436 447	human brain
+T25	gene 819 825	BORCS7
+T26	gene 830 841	AS3MT(d2d3)
+T28	method 773 804	Conditional-expression analysis
+T29	gene 984 1003	first exon of AS3MT
+T30	physiology 1032 1057	expression of AS3MT(d2d3)
+T32	gene 875 889	GWAS risk SNPs
+T34	Health_factors 1094 1111	African Americans
+T35	method 1161 1178	luciferase assays
+T36	gene 1218 1228	AS3MT gene
+T38	physiology 1191 1206	DNA methylation
+T39	gene 1117 1130	VNTR genotype
+T40	gene 1235 1246	AS3MT(d2d3)
+T41	gene 1251 1257	BORCS7
+T42	region 1275 1294	adult human neurons
+T43	region 1299 1309	astrocytes
+T44	physiology 1343 1374	human stem cell differentiation
+T45	disease 1605 1624	psychiatric illness
+T46	physiology 1560 1583	early brain development
+T48	gene 1460 1474	10q24.32 locus
+T3	Health_factors 2 7	human
+R1	risk_factor_of Arg1:T0 Arg2:T2	
+R2	risk_factor_of Arg1:T1 Arg2:T2	
+R3	abbreviation_for Arg1:T6 Arg2:T5	
+R4	abbreviation_for Arg1:T8 Arg2:T7	
+R5	associated_with Arg1:T7 Arg2:T4	
+R6	associated_with Arg1:T8 Arg2:T4	
+R7	abbreviation_for Arg1:T12 Arg2:T11	
+R8	abbreviation_for Arg1:T15 Arg2:T13	
+R9	characteristic_of Arg1:T13 Arg2:T18	
+R10	characteristic_of Arg1:T15 Arg2:T18	
+R11	located_in Arg1:T10 Arg2:T23	
+R12	associated_with Arg1:T10 Arg2:T11	
+R13	associated_with Arg1:T10 Arg2:T12	
+R14	associated_with Arg1:T10 Arg2:T13	
+R15	associated_with Arg1:T10 Arg2:T15	
+T14	physiology 927 976	variable number tandem repeat (VNTR) polymorphism
+T16	gene 927 956	variable number tandem repeat
+T21	gene 958 962	VNTR
+R16	abbreviation_for Arg1:T21 Arg2:T16	
+R17	associated_with Arg1:T32 Arg2:T14	
+R18	located_in Arg1:T14 Arg2:T29	
+R19	associated_with Arg1:T14 Arg2:T30	
+T22	Health_factors 1079 1089	Caucasians
+R20	occurs_in Arg1:T30 Arg2:T22	
+R21	occurs_in Arg1:T30 Arg2:T34	
+R22	associated_with Arg1:T41 Arg2:T42	
+T24	physiology 1140 1157	promoter activity
+R23	associated_with Arg1:T39 Arg2:T24	
+R24	located_in Arg1:T38 Arg2:T36	
+R25	associated_with Arg1:T39 Arg2:T38	
+R26	associated_with Arg1:T40 Arg2:T42	
+R27	associated_with Arg1:T40 Arg2:T43	
+R28	associated_with Arg1:T41 Arg2:T43	
+T27	physiology 1382 1396	neuronal fates
+R29	associated_with Arg1:T40 Arg2:T44	
+R30	associated_with Arg1:T41 Arg2:T44	

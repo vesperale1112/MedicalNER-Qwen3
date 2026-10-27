@@ -1,0 +1,1 @@
+FINDINGS: Both cannabis use [h2  = 0.614, P = 1.00 x 10-6 , standard error (SE) = 0.151] and major depression (h2  = 0.349, P = 1.06 x 10-5 , SE = 0.100) are heritable traits, and there is significant genetic correlation between the two (rhog  = 0.424, P = 0.0364, SE = 0.195).

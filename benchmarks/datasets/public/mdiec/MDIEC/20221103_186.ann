@@ -1,0 +1,4 @@
+T3	method 76 104	randomized controlled trials
+T4	method 108 131	workplace interventions
+T6	disease 165 175	depression
+R1	treatment_for Arg1:T4 Arg2:T6	

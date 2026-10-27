@@ -1,0 +1,16 @@
+T0	disease 45 67	familial schizophrenia
+T3	disease 92 105	Schizophrenia
+T5	disease 111 127	complex disorder
+T6	gene 235 254	susceptibility loci
+T8	gene 327 360	schizophrenia susceptibility loci
+T9	disease 404 417	schizophrenia
+T10	gene 469 492	chromosome 1 (1q21-q22)
+T11	method 306 322	genome-wide scan
+T12	gene 685 704	susceptibility gene
+T1	gene 71 90	chromosome 1q21-q22
+R1	associated_with Arg1:T0 Arg2:T1	
+R2	hyponym_of Arg1:T3 Arg2:T5	
+T2	method 176 192	genetic etiology
+R3	associated_with Arg1:T9 Arg2:T10	
+T7	method 501 532	maximum heterogeneity logarithm
+T4	gene 20 40	susceptibility locus

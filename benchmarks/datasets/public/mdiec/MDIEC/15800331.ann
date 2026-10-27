@@ -1,0 +1,78 @@
+T0	disease 9 25	anxiety disorder
+T1	disease 30 40	depression
+T3	Health_factors 44 84	long-term survivors of testicular cancer
+T4	disease 141 157	anxiety disorder
+T5	disease 162 172	depression
+T6	Health_factors 176 213	long-term testicular cancer survivors
+T7	Health_factors 215 219	TCSs
+T10	method 463 476	questionnaire
+T12	method 502 539	Hospital Anxiety and Depression Scale
+T13	disease 548 564	Anxiety disorder
+T14	disease 569 579	depression
+T17	method 673 695	age-adjusted norm data
+T22	disease 720 736	anxiety disorder
+T23	method 776 778	CI
+T24	method 832 834	CI
+T25	disease 902 912	depression
+T26	method 959 961	CI
+T27	method 996 998	CI
+T29	disease 1045 1061	anxiety disorder
+T30	disease 1102 1112	depression
+T31	method 1027 1040	relative risk
+T32	method 1076 1078	CI
+T33	method 1117 1130	relative risk
+T34	method 1145 1147	CI
+T35	disease 1230 1246	anxiety disorder
+T36	Health_factors 1250 1254	TCSs
+T37	disease 1286 1307	peripheral neuropathy
+T38	Health_factors 1328 1344	alcohol problems
+T39	disease 1363 1378	relapse anxiety
+T40	disease 1408 1423	mental problems
+T42	method 1217 1221	HADS
+T43	Health_factors 1275 1284	young age
+T45	method 1194 1215	multivariate analyses
+T47	disease 1492 1508	anxiety disorder
+T50	disease 1689 1705	anxiety disorder
+T53	method 1644 1648	HADS
+R2	occurs_in Arg1:T4 Arg2:T6	
+R3	occurs_in Arg1:T5 Arg2:T6	
+T8	Health_factors 326 330	TCSs
+T9	method 541 545	HADS
+R6	abbreviation_for Arg1:T9 Arg2:T12	
+T11	method 617 631	HADS subscales
+R7	help_diagnose Arg1:T11 Arg2:T13	
+R8	help_diagnose Arg1:T11 Arg2:T14	
+T15	method 707 711	HADS
+R9	help_diagnose Arg1:T15 Arg2:T22	
+T16	Health_factors 759 763	TCSs
+R10	risk_factor_of Arg1:T16 Arg2:T22	
+T19	method 889 893	HADS
+R11	help_diagnose Arg1:T19 Arg2:T25	
+T20	Health_factors 943 947	TCSs
+T21	Health_factors 1166 1170	TCSs
+R12	help_diagnose Arg1:T42 Arg2:T35	
+R13	occurs_in Arg1:T35 Arg2:T36	
+R14	associated_with Arg1:T35 Arg2:T43	
+T28	Health_factors 1309 1326	economic problems
+T41	Health_factors 1346 1361	sexual problems
+R15	associated_with Arg1:T35 Arg2:T37	
+R16	associated_with Arg1:T35 Arg2:T28	
+R17	associated_with Arg1:T35 Arg2:T38	
+R18	associated_with Arg1:T35 Arg2:T41	
+R19	associated_with Arg1:T35 Arg2:T39	
+R20	associated_with Arg1:T35 Arg2:T40	
+T2	Health_factors 1438 1452	Long-term TCSs
+T44	method 1479 1483	HADS
+R21	help_diagnose Arg1:T44 Arg2:T47	
+R22	risk_factor_of Arg1:T2 Arg2:T47	
+T46	disease 1585 1587	TC
+T48	method 1621 1635	screening test
+R23	hyponym_of Arg1:T53 Arg2:T48	
+T49	Health_factors 1679 1683	TCSs
+R24	occurs_in Arg1:T49 Arg2:T50	
+R25	help_diagnose Arg1:T48 Arg2:T50	
+R26	help_diagnose Arg1:T53 Arg2:T50	
+T51	Health_factors 186 213	testicular cancer survivors
+R1	abbreviation_for Arg1:T7 Arg2:T51	
+R4	occurs_in Arg1:T0 Arg2:T3	
+R5	occurs_in Arg1:T1 Arg2:T3	

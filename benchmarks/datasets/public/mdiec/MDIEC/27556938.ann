@@ -1,0 +1,79 @@
+T0	drug 0 9	Serotonin
+T1	region 21 55	anxiety and fear-promoting circuit
+T3	region 63 80	extended amygdala
+T4	drug 82 91	Serotonin
+T5	drug 107 126	5-hydroxytryptamine
+T6	drug 128 132	5-HT
+T8	physiology 191 212	regulation of emotion
+T9	drug 320 324	5-HT
+T10	region 235 243	circuits
+T12	drug 344 378	5-HT from the dorsal raphe nucleus
+T13	drug 380 387	5-HTDRN
+T14	disease 398 402	fear
+T15	disease 407 414	anxiety
+T16	gene 448 478	corticotropin-releasing factor
+T17	gene 480 483	CRF
+T18	region 537 544	CRFBNST
+T20	method 549 553	mice
+T21	region 448 535	corticotropin-releasing factor (CRF) neurons in the bed nucleus of the stria terminalis
+T22	drug 569 576	5-HTDRN
+T23	gene 617 633	5-HT2C receptors
+T24	gene 635 643	5-HT2CRs
+T25	region 655 686	CRFBNST inhibitory microcircuit
+T27	region 759 779	lateral hypothalamus
+T28	region 732 754	ventral tegmental area
+T29	region 819 845	CRFBNST inhibitory circuit
+T30	drug 903 942	selective serotonin reuptake inhibitors
+T31	drug 944 949	SSRIs
+T32	method 885 899	acute exposure
+T33	gene 999 1046	corticotrophin-releasing factor type 1 receptor
+T34	gene 1048 1053	CRF1R
+T35	gene 1069 1074	CRHR1
+T36	physiology 1088 1104	CRF1R antagonism
+T39	physiology 1218 1240	5-HTDRNCRFBNST circuit
+T40	disease 1260 1267	anxiety
+T41	disease 1410 1427	anxiety disorders
+T43	method 1373 1387	SSRI treatment
+T44	Health_factors 1349 1369	early adverse events
+T46	disease 1251 1255	fear
+R1	associated_with Arg1:T0 Arg2:T1	
+R2	located_in Arg1:T1 Arg2:T3	
+R3	abbreviation_for Arg1:T6 Arg2:T5	
+R4	hyponym_of Arg1:T4 Arg2:T5	
+R5	hyponym_of Arg1:T4 Arg2:T6	
+T2	drug 140 156	neurotransmitter
+R6	hyponym_of Arg1:T4 Arg2:T2	
+R7	associated_with Arg1:T4 Arg2:T8	
+R8	abbreviation_for Arg1:T13 Arg2:T12	
+R9	abbreviation_for Arg1:T17 Arg2:T16	
+R10	associated_with Arg1:T12 Arg2:T14	
+R11	associated_with Arg1:T12 Arg2:T15	
+R12	associated_with Arg1:T13 Arg2:T14	
+R13	associated_with Arg1:T13 Arg2:T15	
+R16	associated_with Arg1:T12 Arg2:T21	
+R17	associated_with Arg1:T12 Arg2:T21	
+R18	abbreviation_for Arg1:T18 Arg2:T21	
+R14	associated_with Arg1:T12 Arg2:T18	
+R15	associated_with Arg1:T13 Arg2:T18	
+R19	occurs_in Arg1:T21 Arg2:T20	
+R20	occurs_in Arg1:T18 Arg2:T20	
+T7	region 596 600	BNST
+R21	abbreviation_for Arg1:T24 Arg2:T23	
+R22	associated_with Arg1:T22 Arg2:T25	
+T11	region 712 716	BNST
+R23	associated_with Arg1:T25 Arg2:T11	
+T19	physiology 856 874	aversive behaviour
+R24	associated_with Arg1:T29 Arg2:T19	
+R25	abbreviation_for Arg1:T31 Arg2:T30	
+R26	associated_with Arg1:T34 Arg2:T33	
+T26	physiology 957 978	early aversive effect
+T37	physiology 284 299	aversive states
+R27	associated_with Arg1:T26 Arg2:T33	
+R28	associated_with Arg1:T26 Arg2:T34	
+R29	hyponym_of Arg1:T34 Arg2:T35	
+R30	associated_with Arg1:T26 Arg2:T35	
+T47	physiology 1130 1182	acute SSRI-induced enhancements in aversive learning
+R31	treatment_for Arg1:T36 Arg2:T47	
+R32	associated_with Arg1:T39 Arg2:T46	
+R33	associated_with Arg1:T39 Arg2:T40	
+R34	occurs_in Arg1:T43 Arg2:T41	

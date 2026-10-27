@@ -1,0 +1,20 @@
+T1	disease 56 75	depressive symptoms
+T2	disease 80 97	suicidal thoughts
+T3	Health_factors 101 107	adults
+T4	disease 180 183	NT1
+T6	disease 219 243	major depressive episode
+T7	disease 245 248	MDE
+T8	Health_factors 254 266	suicide risk
+T9	Health_factors 268 270	SR
+T10	disease 113 130	narcolepsy type 1
+T11	disease 132 135	NT1
+R1	abbreviation_for Arg1:T11 Arg2:T10	
+R2	abbreviation_for Arg1:T7 Arg2:T6	
+R3	abbreviation_for Arg1:T9 Arg2:T8	
+T5	disease 275 278	NT1
+R4	occurs_in Arg1:T1 Arg2:T3	
+R5	occurs_in Arg1:T2 Arg2:T3	
+R6	occurs_in Arg1:T3 Arg2:T10	
+R7	occurs_in Arg1:T3 Arg2:T11	
+R8	occurs_in Arg1:T8 Arg2:T5	
+R9	occurs_in Arg1:T9 Arg2:T5	

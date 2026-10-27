@@ -1,0 +1,72 @@
+T1	drug 0 39	Selective serotonin reuptake inhibitors
+T2	disease 43 68	major depression disorder
+T3	disease 134 159	Major depressive disorder
+T4	disease 161 164	MDD
+T5	disease 178 192	mental problem
+T6	drug 329 368	Selective Serotonin Reuptake Inhibitors
+T7	disease 419 422	MDD
+T8	drug 649 659	fluoxetine
+T9	drug 661 671	citalopram
+T10	drug 673 685	escitalopram
+T11	drug 687 697	sertraline
+T12	drug 699 709	paroxetine
+T13	drug 715 726	fluvoxamine
+T14	disease 788 791	MDD
+T15	drug 1332 1344	escitalopram
+T16	drug 1453 1465	escitalopram
+T17	drug 1986 1998	escitalopram
+T18	method 83 98	umbrella review
+R2	abbreviation_for Arg1:T4 Arg2:T3	
+T20	disease 226 236	disability
+R3	risk_factor_of Arg1:T3 Arg2:T20	
+R4	risk_factor_of Arg1:T4 Arg2:T20	
+T21	drug 248 253	SSRIs
+T22	drug 296 311	antidepressants
+R5	hyponym_of Arg1:T21 Arg2:T22	
+T23	method 383 415	primary therapeutic intervention
+T24	method 429 444	umbrella review
+T25	drug 503 508	SSRIs
+T26	method 542 560	systematic reviews
+T28	method 570 583	meta-analysis
+T29	drug 632 647	antidepressants
+T30	method 731 742	monotherapy
+T32	method 981 987	PubMed
+T33	method 989 995	Embase
+T34	method 997 1003	Scopus
+T35	method 1005 1013	Cochrane
+T36	method 1015 1029	Web of Science
+T37	method 1035 1043	ProQuest
+T38	method 1112 1150	meta-analysis based systematic reviews
+T39	method 1384 1404	descriptive analysis
+T40	drug 1504 1509	SSRIs
+T41	method 1617 1639	multiple meta-analyses
+T42	drug 1729 1734	SSRIs
+T43	drug 1810 1825	antidepressants
+T44	method 1903 1911	AMSTAR-2
+T45	method 1917 1937	descriptive analysis
+T46	drug 2037 2042	SSRIs
+R14	hyponym_of Arg1:T4 Arg2:T5	
+R15	hyponym_of Arg1:T3 Arg2:T5	
+R16	treatment_for Arg1:T21 Arg2:T7	
+T48	method 949 969	electronic databases
+R1	hyponym_of Arg1:T32 Arg2:T48	
+R17	hyponym_of Arg1:T33 Arg2:T48	
+R18	hyponym_of Arg1:T34 Arg2:T48	
+R19	hyponym_of Arg1:T35 Arg2:T48	
+R20	hyponym_of Arg1:T36 Arg2:T48	
+R21	hyponym_of Arg1:T37 Arg2:T48	
+R6	hyponym_of Arg1:T21 Arg2:T6	
+R23	hyponym_of Arg1:T21 Arg2:T23	
+R7	treatment_for Arg1:T29 Arg2:T14	
+R24	treatment_for Arg1:T8 Arg2:T14	
+R25	treatment_for Arg1:T9 Arg2:T14	
+R26	treatment_for Arg1:T10 Arg2:T14	
+R27	treatment_for Arg1:T11 Arg2:T14	
+R28	treatment_for Arg1:T12 Arg2:T14	
+R29	treatment_for Arg1:T13 Arg2:T14	
+T19	method 521 538	systematic review
+T27	method 1649 1667	systematic reviews
+T31	method 102 120	systematic reviews
+T47	Health_factors 776 782	adults
+R8	occurs_in Arg1:T47 Arg2:T14	
+T49	method 1171 1189	inclusion criteria

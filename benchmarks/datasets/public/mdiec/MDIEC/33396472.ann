@@ -1,0 +1,48 @@
+T1	gene 12 30	Estrogen Receptors
+T2	disease 58 79	Psychiatric Disorders
+T5	disease 170 191	psychiatric disorders
+T6	drug 193 202	Estrogens
+T7	disease 551 572	psychiatric disorders
+T8	gene 628 646	estrogen receptors
+T9	disease 651 672	psychiatric disorders
+T10	gene 766 783	estrogen receptor
+T11	physiology 788 806	estrogen signaling
+T12	disease 1034 1055	psychiatric disorders
+T13	drug 1121 1129	estrogen
+T14	physiology 1134 1152	estrogen signaling
+T15	disease 1242 1263	psychiatric disorders
+T16	physiology 310 325	brain functions
+T17	physiology 227 244	sexual maturation
+T18	physiology 249 261	reproduction
+R1	associated_with Arg1:T6 Arg2:T17	
+R2	associated_with Arg1:T6 Arg2:T18	
+R3	associated_with Arg1:T6 Arg2:T16	
+T21	symptom 335 344	cognition
+T22	physiology 346 352	memory
+T23	physiology 354 370	neurodevelopment
+T24	physiology 376 391	neuroplasticity
+R4	hyponym_of Arg1:T21 Arg2:T16	
+R5	hyponym_of Arg1:T22 Arg2:T16	
+R6	hyponym_of Arg1:T23 Arg2:T16	
+R7	hyponym_of Arg1:T24 Arg2:T16	
+T25	method 676 719	cellular, preclinical, and clinical studies
+T26	region 863 877	neural systems
+T27	region 887 940	dopaminergic, serotonergic, and glutamatergic systems
+T4	disease 110 162	estrogen and estrogen signaling pathway disturbances
+T20	physiology 433 478	neuroprotective and anti-inflammatory effects
+T28	symptom 810 819	cognition
+T29	physiology 824 839	neuroprotection
+R8	associated_with Arg1:T6 Arg2:T21	
+R9	associated_with Arg1:T6 Arg2:T22	
+R10	associated_with Arg1:T6 Arg2:T23	
+R11	associated_with Arg1:T6 Arg2:T24	
+R16	hyponym_of Arg1:T27 Arg2:T26	
+R18	characteristic_of Arg1:T4 Arg2:T5	
+R13	associated_with Arg1:T10 Arg2:T28	
+R14	associated_with Arg1:T10 Arg2:T29	
+R15	associated_with Arg1:T11 Arg2:T28	
+R19	associated_with Arg1:T11 Arg2:T29	
+R20	associated_with Arg1:T10 Arg2:T26	
+R21	associated_with Arg1:T10 Arg2:T27	
+R22	associated_with Arg1:T11 Arg2:T26	
+R23	associated_with Arg1:T11 Arg2:T27	

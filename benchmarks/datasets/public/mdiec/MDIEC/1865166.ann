@@ -1,0 +1,61 @@
+T1	disease 39 42	men
+T3	method 92 115	long-term ECG recording
+T4	disease 24 35	arrhythmias
+T5	disease 138 161	ischaemic heart disease
+T6	Health_factors 210 213	Men
+T7	method 180 208	prospective population study
+T8	disease 430 449	cardiac arrhythmias
+T9	disease 499 502	IHD
+T11	Health_factors 311 314	men
+T12	Health_factors 344 362	general population
+T13	disease 470 479	morbidity
+T14	disease 484 493	mortality
+T15	method 265 291	long-term ECG (LTER) study
+T16	disease 558 580	ventricular arrhythmia
+T17	disease 582 584	VA
+T18	Health_factors 549 552	men
+T19	method 517 536	Lown classification
+T20	disease 597 627	Serious ventricular arrhythmia
+T21	disease 724 727	STD
+T23	disease 701 722	ST-segment depression
+T24	disease 673 722	asymptomatic ischaemic type ST-segment depression
+T26	disease 900 902	VA
+T28	disease 972 982	serious VA
+T29	method 807 816	follow-up
+T30	disease 856 866	IHD deaths
+T31	disease 923 933	IHD deaths
+T34	disease 1029 1035	deaths
+T35	disease 1127 1148	fatal or non-fatal MI
+T36	disease 1166 1177	chronic IHD
+T37	disease 1197 1227	serious ventricular arrhythmia
+T38	Health_factors 1245 1259	history of IHD
+T39	disease 1290 1293	STD
+T40	disease 1152 1158	deaths
+T42	disease 1107 1120	cardiac event
+T43	disease 1386 1408	ventricular arrhythmia
+T44	disease 1426 1446	myocardial ischaemia
+T45	disease 1478 1481	IHD
+T46	disease 1494 1497	STD
+T47	disease 1464 1470	deaths
+T49	disease 1689 1712	ventricular arrhythmias
+T50	disease 1681 1684	STD
+T51	method 1658 1677	combined monitoring
+T52	Health_factors 1598 1620	prognostic information
+R1	abbreviation_for Arg1:T21 Arg2:T23	
+R4	abbreviation_for Arg1:T17 Arg2:T16	
+R2	risk_factor_of Arg1:T24 Arg2:T20	
+T2	method 1301 1305	LTER
+T10	method 1634 1638	LTER
+R5	occurs_in Arg1:T30 Arg2:T26	
+R6	risk_factor_of Arg1:T36 Arg2:T40	
+R7	risk_factor_of Arg1:T36 Arg2:T35	
+R11	risk_factor_of Arg1:T45 Arg2:T47	
+T22	Health_factors 1485 1488	men
+R13	occurs_in Arg1:T22 Arg2:T46	
+R12	occurs_in Arg1:T45 Arg2:T22	
+T25	disease 48 84	ischaemic type ST-segment depression
+R3	occurs_in Arg1:T1 Arg2:T25	
+R8	risk_factor_of Arg1:T25 Arg2:T4	
+T27	Health_factors 664 667	men
+R9	occurs_in Arg1:T27 Arg2:T24	
+R10	occurs_in Arg1:T4 Arg2:T1	

@@ -1,0 +1,72 @@
+T0	gene 15 21	orexin
+T1	disease 25 38	panic anxiety
+T2	disease 40 54	Panic disorder
+T3	disease 60 83	severe anxiety disorder
+T4	disease 89 126	recurrent, debilitating panic attacks
+T5	disease 148 162	panic disorder
+T6	drug 202 225	gamma-aminobutyric acid
+T7	drug 227 231	GABA
+T8	drug 340 365	hypertonic sodium lactate
+T10	method 315 336	intravenous infusions
+T11	disease 385 399	panic disorder
+T13	disease 500 519	anxiety-like states
+T14	physiology 551 600	sodium lactate-induced cardioexcitatory responses
+T15	method 372 381	rat model
+T17	method 486 490	rats
+T18	region 445 482	dorsomedial-perifornical hypothalamus
+T19	physiology 401 437	chronic inhibition of GABA synthesis
+T21	gene 686 689	ORX
+T22	gene 705 715	hypocretin
+T23	disease 837 842	panic
+T25	region 659 684	neurons containing orexin
+T26	physiology 770 800	central autonomic mobilization
+T27	physiology 756 765	vigilance
+T28	physiology 747 754	arousal
+T29	region 606 643	dorsomedial-perifornical hypothalamus
+T30	physiology 862 900	activation of ORX-synthesizing neurons
+T32	physiology 984 1031	silencing of the hypothalamic gene encoding ORX
+T33	gene 1033 1037	Hcrt
+T39	drug 1052 1087	systemic ORX-1 receptor antagonists
+T40	method 956 971	rat panic model
+T41	disease 1159 1172	panic anxiety
+T42	gene 1197 1200	ORX
+T43	disease 1257 1270	panic anxiety
+T44	region 1208 1227	cerebrospinal fluid
+T45	physiology 1317 1327	ORX system
+T46	disease 1370 1383	panic anxiety
+T47	drug 1393 1408	ORX antagonists
+T48	disease 1459 1473	panic disorder
+T49	method 1351 1366	pathophysiology
+R1	associated_with Arg1:T0 Arg2:T1	
+R2	hyponym_of Arg1:T2 Arg2:T3	
+R3	characteristic_of Arg1:T4 Arg2:T2	
+R4	abbreviation_for Arg1:T7 Arg2:T6	
+T34	physiology 273 308	autonomic and respiratory responses
+R6	characteristic_of Arg1:T34 Arg2:T5	
+R7	located_in Arg1:T19 Arg2:T18	
+R8	occurs_in Arg1:T18 Arg2:T17	
+R9	associated_with Arg1:T19 Arg2:T13	
+R10	occurs_in Arg1:T11 Arg2:T19	
+R11	associated_with Arg1:T19 Arg2:T14	
+R12	hyponym_of Arg1:T22 Arg2:T21	
+R13	associated_with Arg1:T25 Arg2:T28	
+R14	associated_with Arg1:T25 Arg2:T27	
+R15	associated_with Arg1:T25 Arg2:T26	
+R16	associated_with Arg1:T28 Arg2:T23	
+R17	associated_with Arg1:T27 Arg2:T23	
+R18	associated_with Arg1:T26 Arg2:T23	
+T12	disease 931 948	panic-prone state
+R19	associated_with Arg1:T30 Arg2:T12	
+R20	occurs_in Arg1:T12 Arg2:T40	
+T16	gene 1044 1048	RNAi
+T20	disease 1099 1114	panic responses
+R21	associated_with Arg1:T32 Arg2:T20	
+R22	associated_with Arg1:T39 Arg2:T20	
+T24	Health_factors 1139 1153	human subjects
+R23	located_in Arg1:T42 Arg2:T44	
+R24	characteristic_of Arg1:T42 Arg2:T41	
+R25	occurs_in Arg1:T24 Arg2:T41	
+R26	associated_with Arg1:T45 Arg2:T46	
+R27	treatment_for Arg1:T47 Arg2:T48	
+T9	physiology 194 241	central gamma-aminobutyric acid (GABA) activity
+R5	characteristic_of Arg1:T9 Arg2:T5	

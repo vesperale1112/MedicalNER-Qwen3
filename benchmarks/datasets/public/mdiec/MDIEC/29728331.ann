@@ -1,0 +1,75 @@
+T1	drug 0 33	3,4-methylenedioxymethamphetamine
+T2	drug 35 39	MDMA
+T3	disease 68 98	post-traumatic stress disorder
+T4	Health_factors 121 133	firefighters
+T5	Health_factors 139 154	police officers
+T6	disease 234 264	Post-traumatic stress disorder
+T7	disease 266 270	PTSD
+T8	Health_factors 311 327	first responders
+T9	drug 446 479	3,4-methylenedioxymethamphetamine
+T10	drug 481 485	MDMA
+T11	disease 741 753	chronic PTSD
+T13	drug 1159 1163	MDMA
+T15	method 1582 1586	MDMA
+T18	drug 2433 2437	MDMA
+T20	disease 2715 2728	PTSD symptoms
+T21	drug 2836 2840	MDMA
+T23	disease 3243 3256	PTSD symptoms
+T24	method 0 63	3,4-methylenedioxymethamphetamine (MDMA)-assisted psychotherapy
+T25	Health_factors 102 119	military veterans
+T26	method 446 509	3,4-methylenedioxymethamphetamine (MDMA)-assisted psychotherapy
+T27	disease 523 535	chronic PTSD
+T29	Health_factors 729 734	older
+T30	method 798 831	Clinician-Administered PTSD Scale
+T31	method 833 840	CAPS-IV
+T32	method 988 1011	MDMA plus psychotherapy
+T33	method 1225 1249	manualised psychotherapy
+T34	method 1290 1297	CAPS-IV
+T36	Health_factors 1625 1639	adverse events
+T37	disease 1701 1732	suicidal ideation and behaviour
+T38	method 1764 1782	ClinicalTrials.gov
+T39	Health_factors 1858 1866	veterans
+T40	method 1997 2020	MDMA plus psychotherapy
+T41	signs 2114 2135	PTSD symptom severity
+T42	method 2149 2156	CAPS-IV
+T43	method 2179 2181	SD
+T44	method 2319 2321	CI
+T45	signs 2452 2473	PTSD symptom severity
+T46	method 2772 2781	follow-up
+T47	method 2847 2854	CAPS-IV
+T48	method 2875 2877	SD
+T49	Health_factors 2910 2924	adverse events
+T50	Health_factors 2968 2982	adverse events
+T51	method 3070 3084	drug treatment
+T52	method 3138 3172	MDMA with adjunctive psychotherapy
+T53	Health_factors 3260 3268	veterans
+T54	method 1457 1493	MDMA-assisted psychotherapy sessions
+T55	method 880 910	web-based randomisation system
+T56	Health_factors 636 665	outpatient psychiatric clinic
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+T57	method 158 221	randomised, double-blind, dose-response, phase 2 clinical trial
+R2	abbreviation_for Arg1:T7 Arg2:T6	
+T58	Health_factors 288 306	military personnel
+R3	associated_with Arg1:T6 Arg2:T58	
+R4	associated_with Arg1:T6 Arg2:T8	
+R5	associated_with Arg1:T7 Arg2:T58	
+R6	associated_with Arg1:T7 Arg2:T8	
+R7	abbreviation_for Arg1:T10 Arg2:T9	
+T59	method 575 629	randomised, double-blind, dose-response, phase 2 trial
+T28	Health_factors 690 707	service personnel
+R8	abbreviation_for Arg1:T31 Arg2:T30	
+T60	method 1181 1187	orally
+T14	method 1500 1520	open-label crossover
+T61	signs 1684 1695	vital signs
+T62	Health_factors 1871 1887	first responders
+T17	method 2276 2298	Cohen's d effect sizes
+T63	method 2397 2417	open-label crossover
+R9	treatment_for Arg1:T21 Arg2:T20	
+T19	Health_factors 3273 3289	first responders
+R10	treatment_for Arg1:T52 Arg2:T23	
+R11	occurs_in Arg1:T23 Arg2:T53	
+R12	occurs_in Arg1:T23 Arg2:T19	
+R14	treatment_for Arg1:T24 Arg2:T3	
+R15	occurs_in Arg1:T3 Arg2:T25	
+R16	occurs_in Arg1:T3 Arg2:T4	
+R17	occurs_in Arg1:T3 Arg2:T5	

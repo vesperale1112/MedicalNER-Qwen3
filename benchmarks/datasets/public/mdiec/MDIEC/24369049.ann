@@ -1,0 +1,66 @@
+T0	gene 8 13	GADL1
+T1	drug 30 37	lithium
+T2	disease 49 67	bipolar I disorder
+T4	drug 80 87	Lithium
+T5	disease 146 163	bipolar disorders
+T7	disease 175 206	relapse of mania and depression
+T8	drug 252 259	lithium
+T10	method 121 142	maintenance treatment
+T11	disease 362 380	bipolar I disorder
+T13	method 407 432	Taiwan Bipolar Consortium
+T16	disease 598 616	bipolar I disorder
+T17	drug 636 643	lithium
+T20	method 519 547	genomewide association study
+T21	method 492 502	Alda scale
+T22	drug 770 777	lithium
+T25	gene 707 711	SNPs
+T26	gene 674 705	single-nucleotide polymorphisms
+T27	gene 976 989	gene encoding
+T29	gene 990 1028	glutamate decarboxylase-like protein 1
+T30	gene 1030 1035	GADL1
+T31	drug 1074 1081	lithium
+T35	gene 1181 1185	SNPs
+T37	gene 1474 1477	SNP
+T38	method 1327 1355	genomewide association study
+T41	drug 1549 1556	lithium
+T42	gene 1490 1494	SNPs
+T44	method 1652 1668	follow-up cohort
+T45	gene 1686 1691	GADL1
+T46	gene 1761 1765	gene
+T47	physiology 1848 1856	splicing
+T48	region 1745 1753	intron 8
+T51	gene 1872 1899	Genetic variations in GADL1
+T53	disease 1970 1988	bipolar I disorder
+R1	treatment_for Arg1:T4 Arg2:T5	
+R2	treatment_for Arg1:T4 Arg2:T7	
+T6	Health_factors 337 356	Han Chinese descent
+R3	occurs_in Arg1:T6 Arg2:T11	
+T9	drug 464 471	lithium
+R4	treatment_for Arg1:T17 Arg2:T16	
+R5	abbreviation_for Arg1:T25 Arg2:T26	
+R6	associated_with Arg1:T26 Arg2:T22	
+R7	associated_with Arg1:T25 Arg2:T22	
+T12	method 863 879	follow-up sample
+R8	abbreviation_for Arg1:T30 Arg2:T29	
+T14	method 1136 1165	genomewide association sample
+T15	gene 1194 1216	linkage disequilibrium
+T18	gene 1218 1228	rs17026688
+T19	gene 1233 1243	rs17026651
+R9	hyponym_of Arg1:T18 Arg2:T35	
+R10	hyponym_of Arg1:T19 Arg2:T35	
+T24	region 1269 1285	introns of GADL1
+R11	located_in Arg1:T18 Arg2:T24	
+R12	located_in Arg1:T19 Arg2:T24	
+R13	associated_with Arg1:T42 Arg2:T41	
+T28	gene 1718 1729	IVS8+48delG
+T36	gene 1782 1804	linkage disequilibrium
+R14	located_in Arg1:T28 Arg2:T48	
+T39	gene 1810 1820	rs17026688
+R15	associated_with Arg1:T28 Arg2:T39	
+R16	associated_with Arg1:T28 Arg2:T47	
+T23	drug 1936 1943	lithium
+T32	method 1944 1965	maintenance treatment
+R17	treatment_for Arg1:T23 Arg2:T53	
+R18	associated_with Arg1:T51 Arg2:T23	
+T33	Health_factors 2004 2023	Han Chinese descent
+R19	occurs_in Arg1:T53 Arg2:T33	

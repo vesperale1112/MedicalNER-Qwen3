@@ -1,0 +1,64 @@
+T0	physiology 0 29	Impaired Amino Acid Transport
+T1	disease 71 95	Autism Spectrum Disorder
+T4	region 37 56	Blood Brain Barrier
+T5	disease 97 122	Autism spectrum disorders
+T6	disease 124 127	ASD
+T7	disease 144 161	genetic disorders
+T8	disease 191 214	neurological conditions
+T10	drug 261 286	branched-chain amino acid
+T11	drug 288 292	BCAA
+T12	disease 326 329	ASD
+T14	physiology 261 311	branched-chain amino acid (BCAA) catabolic pathway
+T15	gene 354 384	solute carrier transporter 7a5
+T16	gene 386 392	SLC7A5
+T17	gene 397 433	large neutral amino acid transporter
+T19	region 451 470	blood brain barrier
+T20	region 472 475	BBB
+T21	drug 532 543	brain BCAAs
+T22	gene 566 572	Slc7a5
+T23	region 582 599	endothelial cells
+T24	physiology 620 653	atypical brain amino acid profile
+T25	disease 686 719	severe neurological abnormalities
+T26	method 548 552	mice
+T28	region 607 610	BBB
+T29	disease 770 785	autistic traits
+T30	disease 790 801	motor delay
+T31	gene 851 862	SLC7A5 gene
+T32	gene 811 843	deleterious homozygous mutations
+T33	drug 893 897	BCAA
+T37	method 971 988	adult mutant mice
+T38	Health_factors 949 967	abnormal behaviors
+T39	disease 1011 1032	neurological syndrome
+T40	gene 1044 1060	SLC7A5 mutations
+T42	physiology 1107 1127	human brain function
+T34	method 898 936	intracerebroventricular administration
+R1	treatment_for Arg1:T33 Arg2:T38	
+R2	occurs_in Arg1:T38 Arg2:T37	
+R3	help_diagnose Arg1:T40 Arg2:T39	
+T35	drug 1099 1103	BCAA
+R4	associated_with Arg1:T35 Arg2:T42	
+R5	located_in Arg1:T0 Arg2:T4	
+R6	risk_factor_of Arg1:T0 Arg2:T1	
+R7	abbreviation_for Arg1:T6 Arg2:T5	
+R8	hyponym_of Arg1:T5 Arg2:T7	
+R9	hyponym_of Arg1:T6 Arg2:T7	
+R10	associated_with Arg1:T5 Arg2:T8	
+R11	associated_with Arg1:T6 Arg2:T8	
+R12	abbreviation_for Arg1:T11 Arg2:T10	
+R13	risk_factor_of Arg1:T14 Arg2:T12	
+R14	abbreviation_for Arg1:T16 Arg2:T15	
+R15	hyponym_of Arg1:T16 Arg2:T17	
+R16	hyponym_of Arg1:T15 Arg2:T17	
+R17	located_in Arg1:T17 Arg2:T19	
+R18	abbreviation_for Arg1:T20 Arg2:T19	
+R19	associated_with Arg1:T15 Arg2:T21	
+R20	associated_with Arg1:T16 Arg2:T21	
+R21	located_in Arg1:T23 Arg2:T28	
+T2	physiology 655 680	abnormal mRNA translation
+R22	risk_factor_of Arg1:T22 Arg2:T24	
+R23	occurs_in Arg1:T26 Arg2:T22	
+R24	risk_factor_of Arg1:T22 Arg2:T2	
+R25	risk_factor_of Arg1:T22 Arg2:T25	
+R26	located_in Arg1:T32 Arg2:T31	
+R27	associated_with Arg1:T29 Arg2:T32	
+R28	associated_with Arg1:T30 Arg2:T32	

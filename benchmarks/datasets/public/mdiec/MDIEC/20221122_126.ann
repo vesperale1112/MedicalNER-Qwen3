@@ -1,0 +1,13 @@
+T1	disease 12 19	Anxiety
+T2	disease 24 34	depression
+T3	physiology 61 79	cognitive function
+T4	disease 83 85	MS
+T8	disease 157 160	IBD
+T9	disease 165 167	RA
+R1	associated_with Arg1:T2 Arg2:T3	
+R2	associated_with Arg1:T1 Arg2:T3	
+T5	disease 192 196	IMID
+T6	disease 141 145	IMID
+R3	hyponym_of Arg1:T8 Arg2:T6	
+R4	hyponym_of Arg1:T9 Arg2:T6	
+R5	occurs_in Arg1:T3 Arg2:T4	

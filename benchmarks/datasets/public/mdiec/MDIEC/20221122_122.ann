@@ -1,0 +1,5 @@
+T2	Health_factors 0 34	Alzheimer's disease genetic burden
+T3	disease 54 73	mid-life depression
+T5	physiology 93 109	normal cognition
+R1	associated_with Arg1:T2 Arg2:T3	
+R2	occurs_in Arg1:T3 Arg2:T5	

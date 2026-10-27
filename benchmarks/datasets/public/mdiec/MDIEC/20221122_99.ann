@@ -1,0 +1,7 @@
+T1	method 9 37	Random-effects meta-analysis
+T2	method 44 63	prospective studies
+T5	disease 166 176	depression
+T6	method 208 228	pooled relative risk
+T7	method 240 259	confidence interval
+T3	disease 200 206	stroke
+R1	risk_factor_of Arg1:T5 Arg2:T3	

@@ -1,0 +1,5 @@
+T4	method 75 109	technology-supported interventions
+T7	disease 131 141	depression
+T8	disease 236 246	depression
+T2	method 190 214	technology-mediated MHIS
+R1	treatment_for Arg1:T2 Arg2:T8	

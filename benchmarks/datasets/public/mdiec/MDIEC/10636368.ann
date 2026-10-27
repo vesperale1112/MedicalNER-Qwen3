@@ -1,0 +1,45 @@
+T1	method 72 88	randomised trial
+T2	disease 32 54	precolonoscopy anxiety
+T3	disease 203 210	anxiety
+T4	method 221 238	pending procedure
+T5	method 137 167	medical or surgical procedures
+T6	Health_factors 105 129	provision of information
+T7	method 245 250	trial
+T8	method 410 419	procedure
+T9	method 358 369	colonoscopy
+T11	method 503 559	Spielberger state anxiety inventory (STAI) questionnaire
+T12	disease 579 586	anxiety
+T14	method 503 538	Spielberger state anxiety inventory
+T15	method 474 485	colonoscopy
+T20	method 766 789	knowledge questionnaire
+T21	method 693 704	colonoscopy
+T22	disease 1060 1067	anxiety
+T23	Health_factors 1014 1017	age
+T24	Health_factors 1019 1022	sex
+T25	Health_factors 1024 1046	educational attainment
+T29	method 1159 1161	CI
+T31	disease 1111 1118	anxiety
+T32	disease 1300 1307	anxiety
+T35	method 1268 1279	colonoscopy
+T36	method 1516 1527	colonoscopy
+T38	disease 1713 1726	complications
+T39	method 1730 1741	colonoscopy
+T41	method 1594 1617	knowledge questionnaire
+T42	disease 1815 1822	anxiety
+T43	method 1849 1860	colonoscopy
+T44	Health_factors 11 28	video information
+T45	Health_factors 283 300	information video
+R1	treatment_for Arg1:T6 Arg2:T3	
+T10	method 540 544	STAI
+R2	abbreviation_for Arg1:T10 Arg2:T14	
+R3	help_diagnose Arg1:T11 Arg2:T12	
+T13	method 731 759	second anxiety questionnaire
+T16	Health_factors 1075 1081	Female
+T17	Health_factors 1124 1128	male
+R4	risk_factor_of Arg1:T16 Arg2:T31	
+T18	method 1144 1148	STAI
+T19	Health_factors 1763 1780	information video
+R5	treatment_for Arg1:T19 Arg2:T42	
+T27	Health_factors 655 672	information video
+R6	risk_factor_of Arg1:T35 Arg2:T32	
+T26	disease 1501 1508	anxious

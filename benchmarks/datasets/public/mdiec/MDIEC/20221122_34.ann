@@ -1,0 +1,9 @@
+T1	Health_factors 39 49	female sex
+T2	Health_factors 51 70	nicotine dependence
+T3	gene 86 93	sTNFR60
+T4	disease 12 22	depression
+R1	associated_with Arg1:T4 Arg2:T1	
+R2	associated_with Arg1:T4 Arg2:T2	
+R3	associated_with Arg1:T4 Arg2:T3	
+T5	gene 98 105	sTNFR80
+R4	associated_with Arg1:T4 Arg2:T5	

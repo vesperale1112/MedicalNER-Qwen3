@@ -1,0 +1,6 @@
+T2	disease 49 58	depressed
+T4	drug 110 151	classical monoamine-based antidepressants
+T9	method 232 247	pathophysiology
+T10	disease 259 273	mood disorders
+R1	treatment_for Arg1:T4 Arg2:T2	
+T1	disease 82 91	remission

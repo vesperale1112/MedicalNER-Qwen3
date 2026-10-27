@@ -1,0 +1,106 @@
+T0	disease 76 93	physical diseases
+T1	disease 109 122	schizophrenia
+T2	disease 124 134	depression
+T3	disease 139 155	bipolar disorder
+T4	drug 11 25	antipsychotics
+T5	drug 27 42	antidepressants
+T6	drug 47 63	mood stabilizers
+T8	disease 169 190	severe mental illness
+T9	Health_factors 237 255	general population
+T10	Health_factors 211 227	shorter lifespan
+T11	disease 296 312	physical illness
+T13	disease 262 278	excess mortality
+T16	Health_factors 379 428	disparities in health care access and utilization
+T17	drug 430 454	psychotropic medications
+T19	disease 508 517	mortality
+T20	disease 485 503	physical morbidity
+T21	Health_factors 354 373	unhealthy lifestyle
+T22	symptom 322 352	mental illness-related factors
+T23	disease 657 670	schizophrenia
+T24	disease 672 682	depression
+T25	disease 687 703	bipolar disorder
+T26	drug 561 575	antipsychotics
+T27	drug 577 592	antidepressants
+T28	drug 597 613	mood stabilizers
+T30	Health_factors 617 641	physical health outcomes
+T31	disease 954 967	schizophrenia
+T32	disease 969 994	major depressive disorder
+T33	disease 999 1015	bipolar disorder
+T36	method 795 802	MEDLINE
+T38	drug 1120 1134	antipsychotics
+T39	drug 1136 1151	antidepressants
+T40	drug 1156 1172	mood stabilizers
+T42	method 732 755	prior systematic review
+T43	method 1234 1247	meta-analyses
+T44	disease 1403 1420	physical diseases
+T45	disease 1432 1439	obesity
+T46	disease 1441 1453	dyslipidemia
+T47	disease 1455 1472	diabetes mellitus
+T48	disease 1474 1491	thyroid disorders
+T49	disease 1493 1505	hyponatremia
+T50	disease 1507 1610	cardiovascular, respiratory tract, gastrointestinal, haematological, musculoskeletal and renal diseases
+T51	disease 1623 1653	movement and seizure disorders
+T52	drug 1267 1281	Antipsychotics
+T53	drug 1315 1330	antidepressants
+T54	drug 1335 1351	mood stabilizers
+T55	disease 1837 1854	physical diseases
+T58	Health_factors 1784 1791	elderly
+T59	Health_factors 1807 1812	youth
+T61	method 1671 1683	polypharmacy
+T63	Health_factors 1943 1959	adverse outcomes
+T64	drug 2034 2045	medications
+T65	physiology 2074 2083	attention
+R1	occurs_in Arg1:T0 Arg2:T1	
+R2	occurs_in Arg1:T0 Arg2:T2	
+R3	occurs_in Arg1:T0 Arg2:T3	
+R4	characteristic_of Arg1:T10 Arg2:T8	
+R5	risk_factor_of Arg1:T11 Arg2:T13	
+R6	risk_factor_of Arg1:T22 Arg2:T20	
+R7	risk_factor_of Arg1:T21 Arg2:T20	
+R8	risk_factor_of Arg1:T16 Arg2:T20	
+R9	risk_factor_of Arg1:T17 Arg2:T20	
+R10	risk_factor_of Arg1:T22 Arg2:T19	
+R11	risk_factor_of Arg1:T21 Arg2:T19	
+R12	risk_factor_of Arg1:T16 Arg2:T19	
+R13	risk_factor_of Arg1:T17 Arg2:T19	
+R14	occurs_in Arg1:T30 Arg2:T23	
+R15	occurs_in Arg1:T30 Arg2:T24	
+R16	occurs_in Arg1:T30 Arg2:T25	
+T7	method 850 854	MeSH
+T12	method 864 897	major physical disease categories
+R17	risk_factor_of Arg1:T52 Arg2:T44	
+R18	risk_factor_of Arg1:T53 Arg2:T44	
+R19	risk_factor_of Arg1:T54 Arg2:T44	
+R20	hyponym_of Arg1:T45 Arg2:T44	
+R21	hyponym_of Arg1:T46 Arg2:T44	
+R22	hyponym_of Arg1:T47 Arg2:T44	
+R23	hyponym_of Arg1:T48 Arg2:T44	
+R24	hyponym_of Arg1:T49 Arg2:T44	
+R25	risk_factor_of Arg1:T52 Arg2:T45	
+R26	risk_factor_of Arg1:T52 Arg2:T46	
+R27	risk_factor_of Arg1:T52 Arg2:T47	
+R28	risk_factor_of Arg1:T52 Arg2:T48	
+R29	risk_factor_of Arg1:T52 Arg2:T49	
+R30	risk_factor_of Arg1:T53 Arg2:T45	
+R31	risk_factor_of Arg1:T53 Arg2:T46	
+R32	risk_factor_of Arg1:T53 Arg2:T47	
+R33	risk_factor_of Arg1:T53 Arg2:T48	
+R34	risk_factor_of Arg1:T53 Arg2:T49	
+R35	risk_factor_of Arg1:T54 Arg2:T45	
+R36	risk_factor_of Arg1:T54 Arg2:T46	
+R37	risk_factor_of Arg1:T54 Arg2:T47	
+R38	risk_factor_of Arg1:T54 Arg2:T48	
+R39	risk_factor_of Arg1:T54 Arg2:T49	
+R40	hyponym_of Arg1:T50 Arg2:T44	
+R41	hyponym_of Arg1:T51 Arg2:T44	
+R42	risk_factor_of Arg1:T52 Arg2:T50	
+R43	risk_factor_of Arg1:T53 Arg2:T50	
+R44	risk_factor_of Arg1:T54 Arg2:T50	
+R45	risk_factor_of Arg1:T52 Arg2:T51	
+R46	risk_factor_of Arg1:T53 Arg2:T51	
+R47	risk_factor_of Arg1:T54 Arg2:T51	
+T14	Health_factors 1655 1669	Higher dosages
+R48	risk_factor_of Arg1:T14 Arg2:T55	
+R49	risk_factor_of Arg1:T61 Arg2:T55	
+T15	Health_factors 1689 1745	treatment of vulnerable (e.g., old or young) individuals
+R50	risk_factor_of Arg1:T15 Arg2:T55	

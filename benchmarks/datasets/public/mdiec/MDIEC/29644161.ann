@@ -1,0 +1,29 @@
+T1	disease 87 103	Major Depression
+T2	method 169 171	SD
+T3	method 225 245	psychiatric research
+T4	disease 365 390	major depression disorder
+T5	disease 392 395	MDD
+T6	disease 481 484	MDD
+T7	method 573 575	SD
+T8	method 769 771	SD
+T9	method 0 25	Sleep Deprivation Therapy
+T10	method 105 138	Transcranial magnetic stimulation
+T11	method 140 144	rTMS
+R2	abbreviation_for Arg1:T11 Arg2:T10	
+T12	method 150 167	sleep deprivation
+R3	abbreviation_for Arg1:T2 Arg2:T12	
+R4	abbreviation_for Arg1:T5 Arg2:T4	
+T13	method 461 468	rTMS-SD
+T14	method 564 568	rTMS
+T15	method 760 764	rTMS
+T16	method 865 872	rTMS-SD
+#1	AnnotatorNotes T4	C1269683
+#2	AnnotatorNotes T5	C1269683
+#3	AnnotatorNotes T10	C0436548
+#4	AnnotatorNotes T11	C0436548
+T17	method 39 83	Repetitive Transcranial Magnetic Stimulation
+#5	AnnotatorNotes T17	C0872259
+#6	AnnotatorNotes T12	C0037316
+#7	AnnotatorNotes T2	C0037316
+#8	AnnotatorNotes T9	C0037316
+R1	treatment_for Arg1:T13 Arg2:T6	

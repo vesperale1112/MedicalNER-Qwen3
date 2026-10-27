@@ -1,0 +1,51 @@
+T0	drug 31 41	alprazolam
+T1	disease 82 88	cancer
+T2	disease 103 134	anxiety and depressive symptoms
+T3	method 2 27	randomized clinical trial
+T4	method 49 78	progressive muscle relaxation
+T5	disease 189 195	cancer
+T6	drug 255 277	triazolobenzodiazepine
+T7	drug 279 289	alprazolam
+T10	method 388 417	progressive muscle relaxation
+T11	method 333 353	behavioral technique
+T13	method 138 165	randomized nonblinded study
+T14	disease 561 567	cancer
+T15	disease 601 609	distress
+T16	drug 697 701	drug
+T17	disease 660 673	disease stage
+T18	disease 738 745	anxiety
+T19	disease 750 760	depression
+T20	method 786 801	Affects Balance
+T21	disease 964 999	anxious and depressed mood symptoms
+T22	drug 1069 1073	drug
+T23	disease 1115 1122	anxiety
+T24	disease 1148 1167	depressive symptoms
+T25	drug 1209 1219	alprazolam
+T28	disease 1245 1282	cancer-related anxiety and depression
+T30	disease 1375 1381	cancer
+T32	disease 1404 1435	anxiety and depressive symptoms
+T33	method 1320 1333	interventions
+T34	Health_factors 1335 1345	physicians
+R1	occurs_in Arg1:T1 Arg2:T2	
+T9	Health_factors 447 470	behavioral psychologist
+T8	method 709 719	relaxation
+R2	treatment_for Arg1:T22 Arg2:T23	
+R3	treatment_for Arg1:T22 Arg2:T24	
+T12	method 1224 1234	relaxation
+R4	treatment_for Arg1:T25 Arg2:T28	
+R5	treatment_for Arg1:T12 Arg2:T28	
+T26	method 772 776	Covi
+T27	method 778 784	Raskin
+T29	method 807 828	Symptoms Checklist-90
+T35	method 830 836	SCL-90
+R6	help_diagnose Arg1:T26 Arg2:T18	
+R7	help_diagnose Arg1:T27 Arg2:T18	
+R8	help_diagnose Arg1:T20 Arg2:T18	
+R9	help_diagnose Arg1:T29 Arg2:T18	
+R10	abbreviation_for Arg1:T35 Arg2:T29	
+R11	treatment_for Arg1:T29 Arg2:T19	
+R12	help_diagnose Arg1:T35 Arg2:T18	
+R13	help_diagnose Arg1:T35 Arg2:T19	
+R14	help_diagnose Arg1:T26 Arg2:T19	
+R15	help_diagnose Arg1:T27 Arg2:T19	
+R16	help_diagnose Arg1:T20 Arg2:T19	

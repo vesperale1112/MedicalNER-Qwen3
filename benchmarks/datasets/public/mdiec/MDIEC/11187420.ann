@@ -1,0 +1,25 @@
+T0	disease 45 55	depression
+T1	disease 57 73	bipolar disorder
+T2	disease 79 92	schizophrenia
+T3	method 0 40	Psychopharmacologic treatment strategies
+T4	disease 108 137	serious psychiatric disorders
+T6	Health_factors 164 187	primary care physicians
+T7	method 248 258	psychiatry
+T9	disease 316 337	psychiatric illnesses
+T10	disease 339 355	major depression
+T11	disease 357 373	bipolar disorder
+T12	disease 379 392	schizophrenia
+T13	method 423 442	diagnostic criteria
+T14	Health_factors 534 543	clinician
+T15	disease 576 585	illnesses
+T19	method 444 501	short- and long-term treatment strategies with algorithms
+T22	disease 608 615	illness
+T23	Health_factors 751 760	adherence
+T25	method 855 911	combination of psychosocial and pharmacologic treatments
+T27	method 806 833	combinations of medications
+T28	method 689 709	Treatment strategies
+T29	method 649 669	treatment principles
+R4	treatment_for Arg1:T6 Arg2:T4	
+R5	hyponym_of Arg1:T10 Arg2:T9	
+R6	hyponym_of Arg1:T11 Arg2:T9	
+R7	hyponym_of Arg1:T12 Arg2:T9	

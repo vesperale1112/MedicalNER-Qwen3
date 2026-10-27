@@ -1,0 +1,7 @@
+T1	physiology 0 35	Priming of microglia with IFN-gamma
+T3	physiology 44 74	adult hippocampal neurogenesis
+T4	disease 88 113	depression-like behaviors
+R1	associated_with Arg1:T1 Arg2:T3	
+R2	risk_factor_of Arg1:T1 Arg2:T4	
+T6	disease 118 135	cognitive defects
+R3	risk_factor_of Arg1:T1 Arg2:T6	

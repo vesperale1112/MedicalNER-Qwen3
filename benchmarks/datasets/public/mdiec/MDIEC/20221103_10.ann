@@ -1,0 +1,16 @@
+T1	gene 19 40	transcription factors
+T2	gene 50 57	Freud-1
+T3	physiology 70 93	transcriptional balance
+T5	gene 192 211	5-HT1A autoreceptor
+T6	disease 241 248	anxiety
+T7	disease 250 266	major depression
+T8	disease 268 275	suicide
+T9	physiology 281 310	resistance to antidepressants
+R1	hyponym_of Arg1:T2 Arg2:T1	
+R3	associated_with Arg1:T1 Arg2:T3	
+T4	method 118 142	antidepressant treatment
+R4	associated_with Arg1:T5 Arg2:T6	
+R5	associated_with Arg1:T5 Arg2:T7	
+R6	associated_with Arg1:T5 Arg2:T8	
+R7	associated_with Arg1:T9 Arg2:T5	
+R2	associated_with Arg1:T2 Arg2:T3	

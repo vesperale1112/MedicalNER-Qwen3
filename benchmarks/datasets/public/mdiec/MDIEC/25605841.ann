@@ -1,0 +1,67 @@
+T0	disease 0 7	Anxiety
+T1	disease 80 100	non-Hodgkin lymphoma
+T2	drug 136 145	rituximab
+T3	Health_factors 12 42	health-related quality of life
+T4	method 302 350	Rituximab Extended Schedule or Retreatment Trial
+T5	drug 381 402	maintenance rituximab
+T6	method 415 437	rituximab re-treatment
+T9	drug 404 406	MR
+T10	method 439 441	RR
+T11	disease 252 275	illness-related anxiety
+T12	disease 524 531	anxiety
+T13	drug 508 510	MR
+T14	method 518 520	RR
+T19	method 696 698	RR
+T21	disease 896 911	general anxiety
+T22	disease 963 973	depression
+T25	disease 913 918	worry
+T26	Health_factors 979 1009	health-related quality of life
+T27	Health_factors 1011 1016	HRQoL
+T28	Health_factors 923 961	interference with emotional well-being
+T30	disease 819 842	illness-related anxiety
+T31	method 797 809	PRO measures
+T32	Health_factors 1056 1103	active or avoidant illness-related coping style
+T33	Health_factors 1255 1267	coping style
+T34	method 1186 1211	treatment arm differences
+T35	method 1136 1163	linear mixed-effects models
+T36	method 1105 1131	Independent sample t tests
+T40	Health_factors 1385 1397	coping style
+T41	disease 1279 1302	Illness-related anxiety
+T45	disease 1448 1463	general anxiety
+T46	disease 1420 1443	Illness-related anxiety
+T50	disease 1676 1683	anxiety
+T51	Health_factors 1780 1785	HRQoL
+T52	method 1907 1909	RR
+T53	disease 1959 1966	anxiety
+T54	drug 1981 1983	MR
+T55	Health_factors 1999 2011	coping style
+T58	disease 2056 2063	anxiety
+T60	Health_factors 2075 2080	HRQoL
+T61	Health_factors 2013 2028	Avoidant coping
+T7	method 352 358	RESORT
+R1	abbreviation_for Arg1:T7 Arg2:T4	
+R2	abbreviation_for Arg1:T9 Arg2:T5	
+R3	abbreviation_for Arg1:T10 Arg2:T6	
+T8	method 626 650	patient-reported outcome
+T15	method 652 655	PRO
+R4	abbreviation_for Arg1:T15 Arg2:T8	
+T16	drug 690 692	MR
+T18	drug 778 787	rituximab
+R5	help_diagnose Arg1:T31 Arg2:T30	
+R7	abbreviation_for Arg1:T27 Arg2:T26	
+R6	help_diagnose Arg1:T31 Arg2:T21	
+R8	help_diagnose Arg1:T31 Arg2:T25	
+R9	help_diagnose Arg1:T31 Arg2:T28	
+R10	help_diagnose Arg1:T31 Arg2:T22	
+R11	help_diagnose Arg1:T31 Arg2:T26	
+R12	help_diagnose Arg1:T31 Arg2:T27	
+T20	Health_factors 544 572	illness-related coping style
+T23	method 1215 1218	PRO
+T24	method 1326 1340	treatment arms
+T29	method 1512 1524	HRQoL scores
+T37	Health_factors 1613 1634	avoidant coping style
+R13	risk_factor_of Arg1:T37 Arg2:T50	
+R14	risk_factor_of Arg1:T37 Arg2:T51	
+T38	Health_factors 1803 1822	active coping style
+R15	risk_factor_of Arg1:T61 Arg2:T58	
+R16	risk_factor_of Arg1:T61 Arg2:T60	

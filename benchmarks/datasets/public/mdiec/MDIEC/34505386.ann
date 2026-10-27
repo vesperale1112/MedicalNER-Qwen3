@@ -1,0 +1,93 @@
+T1	disease 32 48	mental disorders
+T2	disease 151 167	mental disorders
+T3	disease 548 564	mental disorders
+T4	disease 1173 1189	mental disorders
+T5	disease 1370 1378	dementia
+T6	disease 1394 1418	type 2 diabetes mellitus
+T7	disease 1455 1465	depression
+T8	disease 1541 1561	opioid use disorders
+T9	disease 1638 1669	non-organic psychotic disorders
+T10	disease 1705 1743	clinical high risk state for psychosis
+T11	disease 1820 1840	depressive disorders
+T12	disease 1873 1891	sexual dysfunction
+T13	disease 2040 2047	obesity
+T14	disease 2063 2081	sleep disturbances
+T15	disease 2097 2121	autism spectrum disorder
+T16	disease 2155 2174	maternal overweight
+T17	disease 2211 2251	attention-deficit/hyperactivity disorder
+T18	disease 2253 2257	ADHD
+T19	disease 2270 2300	maternal pre-pregnancy obesity
+T20	disease 2361 2380	maternal overweight
+T21	disease 2512 2531	Alzheimer's disease
+T22	disease 2982 2998	mental disorders
+T23	gene 56 64	genetics
+T25	gene 175 183	genetics
+T26	method 295 311	umbrella reviews
+T27	method 323 341	systematic reviews
+T28	method 345 358	meta-analyses
+T29	method 466 482	umbrella reviews
+T30	gene 497 509	genetic risk
+T32	method 734 754	Sensitivity analyses
+T33	method 910 957	A Measurement Tool to Assess Systematic Reviews
+T34	method 1006 1019	meta-analyses
+T35	method 1039 1055	umbrella reviews
+T36	method 1088 1101	meta-analyses
+T40	method 1432 1434	RR
+T41	method 1467 1469	RR
+T42	method 1527 1529	RR
+T44	method 1612 1622	odds ratio
+T45	method 1624 1626	OR
+T47	method 1745 1747	OR
+T48	drug 1755 1763	cannabis
+T49	method 1769 1771	OR
+T50	Health_factors 1783 1804	childhood adversities
+T51	method 1806 1808	OR
+T52	method 1863 1865	RR
+T53	method 1893 1895	OR
+T54	method 1910 1912	OR
+T56	method 1933 1935	OR
+T57	Health_factors 1961 1979	childhood physical
+T58	method 1981 1983	OR
+T59	method 2002 2004	OR
+T60	method 2030 2032	OR
+T61	method 2049 2051	OR
+T62	method 2083 2085	RR
+T64	method 2197 2199	RR
+T65	method 2302 2304	OR
+T66	Health_factors 2312 2328	maternal smoking
+T68	physiology 2336 2345	pregnancy
+T69	method 2347 2349	OR
+T70	physiology 2392 2401	pregnancy
+T71	method 2403 2405	OR
+T72	Health_factors 2466 2483	physical activity
+T73	method 2485 2497	hazard ratio
+T74	method 2499 2501	HR
+T75	physiology 2720 2751	early neurodevelopmental period
+T76	method 2933 2951	early intervention
+T80	Health_factors 2018 2028	job strain
+T81	drug 1942 1959	metabolic factors
+T82	Health_factors 1595 1610	tobacco smoking
+T85	method 838 853	TRANSD criteria
+T86	method 773 792	prospective studies
+T88	method 395 418	international databases
+T89	method 69 89	evidence-based atlas
+T24	method 255 291	"meta-umbrella" systematic synthesis
+T90	method 362 380	individual studies
+T31	method 540 547	ICD/DSM
+T87	method 959 965	AMSTAR
+R1	abbreviation_for Arg1:T87 Arg2:T33	
+T37	Health_factors 1493 1525	low frequency of social contacts
+T38	method 1420 1430	risk ratio
+R2	abbreviation_for Arg1:T40 Arg2:T38	
+R3	risk_factor_of Arg1:T82 Arg2:T8	
+R4	risk_factor_of Arg1:T10 Arg2:T9	
+R5	risk_factor_of Arg1:T48 Arg2:T9	
+R6	risk_factor_of Arg1:T50 Arg2:T9	
+T39	Health_factors 1852 1861	widowhood
+T43	Health_factors 1994 2000	sexual
+R7	risk_factor_of Arg1:T16 Arg2:T15	
+R8	abbreviation_for Arg1:T18 Arg2:T17	
+T46	physiology 2186 2195	pregnancy
+R9	associated_with Arg1:T72 Arg2:T21	
+T55	method 2757 2777	evidence-based atlas
+T63	method 2875 2913	clinical characterization and research

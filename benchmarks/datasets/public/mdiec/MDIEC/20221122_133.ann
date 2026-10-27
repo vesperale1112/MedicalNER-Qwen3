@@ -1,0 +1,6 @@
+T1	disease 0 25	Major depressive disorder
+T2	disease 27 30	MDD
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+T4	Health_factors 61 82	moderate heritability
+R4	characteristic_of Arg1:T4 Arg2:T2	
+R5	characteristic_of Arg1:T4 Arg2:T1	

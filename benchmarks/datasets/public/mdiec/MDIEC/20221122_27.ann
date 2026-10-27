@@ -1,0 +1,11 @@
+T1	gene 44 48	ApoE
+T3	disease 84 103	Alzheimer's disease
+T5	disease 109 128	depressive symptoms
+T6	disease 167 187	cognitive impairment
+T8	gene 27 42	ApolipoproteinE
+R1	abbreviation_for Arg1:T1 Arg2:T8	
+T9	gene 4 42	epsilon4 allele of the ApolipoproteinE
+R2	risk_factor_of Arg1:T9 Arg2:T3	
+T2	Health_factors 191 204	older persons
+R3	associated_with Arg1:T5 Arg2:T6	
+R4	occurs_in Arg1:T6 Arg2:T2	

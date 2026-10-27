@@ -1,0 +1,15 @@
+T1	disease 12 22	Depression
+T2	disease 45 62	diabetes mellitus
+T4	disease 64 66	DM
+T6	Health_factors 117 140	adverse health outcomes
+T7	method 156 180	evidence-based therapies
+T8	method 189 217	cognitive behavioral therapy
+T9	method 219 222	CBT
+T10	method 238 259	routine diabetes care
+R1	abbreviation_for Arg1:T4 Arg2:T2	
+R2	associated_with Arg1:T1 Arg2:T2	
+R3	associated_with Arg1:T1 Arg2:T4	
+R4	abbreviation_for Arg1:T9 Arg2:T8	
+R5	associated_with Arg1:T1 Arg2:T6	
+R6	hyponym_of Arg1:T8 Arg2:T7	
+R7	hyponym_of Arg1:T9 Arg2:T7	

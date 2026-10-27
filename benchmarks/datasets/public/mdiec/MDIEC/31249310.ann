@@ -1,0 +1,72 @@
+T0	disease 0 16	Conduct disorder
+T1	disease 18 34	Conduct disorder
+T2	disease 36 38	CD
+T3	disease 73 93	psychiatric disorder
+T4	Health_factors 118 127	childhood
+T5	Health_factors 131 142	adolescence
+T6	disease 240 280	attention-deficit/hyperactivity disorder
+T7	disease 282 286	ADHD
+T8	disease 307 338	antisocial personality disorder
+T9	Health_factors 342 351	adulthood
+T10	disease 353 355	CD
+T13	Health_factors 421 426	males
+T14	Health_factors 435 442	females
+T15	Health_factors 371 391	school-aged children
+T20	symptom 601 630	deficits in empathy and guilt
+T23	disease 650 652	CD
+T24	method 637 646	aetiology
+T25	Health_factors 692 730	genetic and environmental risk factors
+T27	Health_factors 779 823	gene-environment interaction and correlation
+T28	disease 839 841	CD
+T29	disease 861 887	neurocognitive impairments
+T31	region 946 954	amygdala
+T33	disease 993 1017	functional abnormalities
+T35	physiology 1084 1102	emotion regulation
+T36	physiology 1107 1142	reinforcement-based decision-making
+T37	region 1021 1047	overlapping brain circuits
+T38	region 967 987	orbitofrontal cortex
+T39	region 956 962	insula
+T40	region 919 933	limbic regions
+T41	signs 897 915	grey matter volume
+T43	disease 1233 1239	stress
+T44	physiology 1209 1229	autonomic reactivity
+T45	physiology 1169 1204	hypothalamic-pituitary-adrenal axis
+T46	disease 1278 1280	CD
+T47	disease 1456 1469	comorbid ADHD
+T49	drug 1381 1404	atypical antipsychotics
+T50	drug 1366 1376	stimulants
+T51	method 1300 1355	parent-based or family-based psychosocial interventions
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+R2	hyponym_of Arg1:T1 Arg2:T3	
+R3	hyponym_of Arg1:T2 Arg2:T3	
+R4	associated_with Arg1:T1 Arg2:T4	
+R5	associated_with Arg1:T2 Arg2:T4	
+R6	associated_with Arg1:T1 Arg2:T5	
+R7	associated_with Arg1:T2 Arg2:T5	
+T16	symptom 167 209	severe antisocial and aggressive behaviour
+R8	characteristic_of Arg1:T16 Arg2:T1	
+R9	characteristic_of Arg1:T16 Arg2:T2	
+R10	abbreviation_for Arg1:T7 Arg2:T6	
+R11	occurs_in Arg1:T8 Arg2:T9	
+R12	associated_with Arg1:T10 Arg2:T15	
+R13	risk_factor_of Arg1:T13 Arg2:T10	
+T11	Health_factors 487 490	age
+T12	Health_factors 501 510	childhood
+T17	Health_factors 524 534	adolescent
+T18	symptom 573 599	callous-unemotional traits
+R14	associated_with Arg1:T23 Arg2:T25	
+R15	associated_with Arg1:T23 Arg2:T27	
+R16	associated_with Arg1:T28 Arg2:T29	
+R17	associated_with Arg1:T28 Arg2:T41	
+R18	occurs_in Arg1:T41 Arg2:T40	
+R19	hyponym_of Arg1:T31 Arg2:T40	
+R20	hyponym_of Arg1:T39 Arg2:T40	
+R21	occurs_in Arg1:T41 Arg2:T31	
+R22	occurs_in Arg1:T41 Arg2:T39	
+R23	occurs_in Arg1:T41 Arg2:T38	
+R24	occurs_in Arg1:T33 Arg2:T37	
+T19	physiology 1064 1082	emotion processing
+R25	associated_with Arg1:T28 Arg2:T33	
+R26	treatment_for Arg1:T51 Arg2:T46	
+R27	treatment_for Arg1:T50 Arg2:T46	
+R28	treatment_for Arg1:T49 Arg2:T46	

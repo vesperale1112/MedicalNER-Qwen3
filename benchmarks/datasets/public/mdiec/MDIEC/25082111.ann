@@ -1,0 +1,48 @@
+T1	disease 0 16	Major depression
+T4	disease 281 297	major depression
+T6	disease 580 583	MDD
+T8	disease 673 686	life time MDD
+T9	disease 814 817	MDD
+T10	disease 1261 1287	life time major depression
+#1	AnnotatorNotes T1	C1269683
+T12	method 440 486	Collaborative Psychiatric Epidemiology Surveys
+T13	method 488 492	CPES
+R1	abbreviation_for Arg1:T13 Arg2:T12	
+T5	disease 553 578	major depression disorder
+#3	AnnotatorNotes T5	C1269683
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+T7	disease 589 613	major depressive episode
+T14	disease 615 618	MDE
+R3	abbreviation_for Arg1:T14 Arg2:T7	
+#4	AnnotatorNotes T7	C0154409
+T15	disease 915 918	MDE
+T16	disease 1026 1029	MDE
+T11	disease 1578 1594	major depression
+T17	signs 1156 1159	BMI
+T18	method 100 155	culture-gene co-evolutionary theory of mental disorders
+T19	method 188 243	culture-gene co-evolutionary theory of mental disorders
+T20	Health_factors 20 42	China-to-US immigrants
+T21	Health_factors 47 72	US-born Chinese Americans
+T22	Health_factors 320 342	China-to-US immigrants
+T23	Health_factors 384 415	US-born adult Chinese Americans
+T24	method 513 536	secondary data analyses
+T25	Health_factors 702 723	China-to-US immigrant
+T26	Health_factors 728 743	US-born Chinese
+T27	Health_factors 767 770	men
+T28	Health_factors 794 799	women
+T29	Health_factors 866 869	men
+T30	Health_factors 894 899	women
+T31	Health_factors 967 970	men
+T32	Health_factors 976 981	women
+T33	Health_factors 1064 1067	men
+T34	Health_factors 1103 1108	women
+T35	Health_factors 1204 1231	China-to-US immigrant women
+T36	Health_factors 1293 1323	US-born Chinese American women
+T37	Health_factors 1602 1617	immigrant group
+T38	Health_factors 369 375	adults
+T39	Health_factors 1126 1129	age
+T40	Health_factors 1131 1140	education
+T41	Health_factors 1148 1154	income
+T42	Health_factors 1161 1175	marital status
+T43	Health_factors 1181 1202	income-to-needs ratio
+T44	Health_factors 1537 1557	collectivist culture

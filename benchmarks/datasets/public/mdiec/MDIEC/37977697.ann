@@ -1,0 +1,91 @@
+T0	disease 74 84	depression
+T1	disease 89 96	anxiety
+T5	Health_factors 100 115	autistic adults
+T8	method 184 212	national health-care records
+T9	method 130 180	retrospective, matched, observational cohort study
+T10	method 17 60	primary care psychological therapy services
+T12	disease 272 279	anxiety
+T13	disease 284 294	depression
+T14	disease 326 332	autism
+T15	Health_factors 226 241	Autistic adults
+T16	Health_factors 300 306	adults
+T17	Health_factors 371 389	mental health care
+T18	Health_factors 474 489	autistic adults
+T19	disease 580 588	autistic
+T23	method 610 622	routine care
+T24	method 391 429	Evidence-based psychological therapies
+T25	Health_factors 673 688	autistic adults
+T33	method 947 968	psychological therapy
+T34	method 972 984	primary care
+T35	method 988 1031	Improving Access to Psychological Therapies
+T36	method 854 891	linked electronic health-care records
+T37	method 787 815	national health-care records
+T38	disease 1284 1290	autism
+T39	Health_factors 1110 1116	adults
+T40	Health_factors 1117 1121	aged
+T41	Health_factors 1134 1139	older
+T42	method 1170 1174	IAPT
+T46	Health_factors 1347 1371	sociodemographic factors
+T47	method 1292 1306	Exact matching
+T50	Health_factors 1514 1522	recovery
+T51	method 1395 1410	routine metrics
+T53	method 1660 1701	Generalised Anxiety Disorder Assessment-7
+T54	method 1628 1658	Patient Health Questionnaire-9
+T57	method 1750 1767	Subgroup analyses
+T58	Health_factors 1820 1844	sociodemographic factors
+T60	disease 1942 1948	autism
+T61	Health_factors 1867 1873	adults
+T62	method 1913 1917	IAPT
+T63	Health_factors 1972 1976	male
+T64	Health_factors 1993 1999	female
+T65	Health_factors 2036 2040	male
+T66	Health_factors 2060 2066	female
+T68	disease 2107 2115	autistic
+T69	method 2075 2100	propensity score matching
+T71	disease 2220 2230	depression
+T72	disease 2235 2263	generalised anxiety disorder
+T73	Health_factors 2283 2298	autistic adults
+T74	disease 2348 2354	autism
+T75	Health_factors 2411 2426	autistic adults
+T79	Health_factors 2475 2481	adults
+T80	method 2504 2523	adjusted odds ratio
+T81	method 2525 2532	OR(adj)
+T82	method 2543 2545	CI
+T83	method 2637 2639	OR
+T89	Health_factors 2839 2854	autistic adults
+T92	disease 2913 2923	depression
+T93	disease 2927 2934	anxiety
+T95	disease 3021 3027	autism
+T97	Health_factors 2958 2973	autistic adults
+T98	Health_factors 2995 3001	adults
+T99	method 2872 2908	Evidence-based psychological therapy
+T100	disease 3071 3079	autistic
+T101	method 3140 3170	targeted and personalised care
+T102	disease 3181 3190	Alzheimer
+R1	treatment_for Arg1:T10 Arg2:T0	
+R2	treatment_for Arg1:T10 Arg2:T1	
+R3	occurs_in Arg1:T1 Arg2:T5	
+R4	occurs_in Arg1:T0 Arg2:T5	
+R5	risk_factor_of Arg1:T15 Arg2:T12	
+R6	risk_factor_of Arg1:T15 Arg2:T13	
+R7	treatment_for Arg1:T24 Arg2:T18	
+T2	method 694 714	primary care service
+T3	method 733 783	retrospective, matched, observational cohort study
+T4	method 829 843	MODIFY dataset
+T6	method 1033 1037	IAPT
+R8	abbreviation_for Arg1:T6 Arg2:T35	
+T7	method 1210 1234	propensity score matched
+T11	method 1466 1470	IAPT
+T21	method 1707 1739	Work and Social Adjustment Scale
+T22	method 2192 2196	IAPT
+R9	treatment_for Arg1:T22 Arg2:T71	
+R10	treatment_for Arg1:T22 Arg2:T72	
+R11	occurs_in Arg1:T71 Arg2:T73	
+R12	occurs_in Arg1:T72 Arg2:T73	
+R13	abbreviation_for Arg1:T81 Arg2:T80	
+T20	Health_factors 2736 2746	employment
+T26	Health_factors 2766 2807	higher socioeconomic deprivation category
+R14	treatment_for Arg1:T99 Arg2:T92	
+R15	treatment_for Arg1:T99 Arg2:T93	
+R16	occurs_in Arg1:T92 Arg2:T97	
+R17	occurs_in Arg1:T93 Arg2:T97	

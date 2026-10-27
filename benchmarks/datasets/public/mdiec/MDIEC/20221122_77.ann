@@ -1,0 +1,13 @@
+T1	Health_factors 0 11	Adolescents
+T2	disease 17 27	depression
+T12	disease 216 244	subjective sleep disturbance
+T5	physiology 59 70	wakefulness
+R1	risk_factor_of Arg1:T2 Arg2:T5	
+T3	Health_factors 79 98	sleep onset latency
+T4	Health_factors 100 122	wake after sleep onset
+T6	Health_factors 134 144	awakenings
+T7	Health_factors 149 165	sleep efficiency
+T8	Health_factors 168 181	lighter sleep
+R2	risk_factor_of Arg1:T2 Arg2:T8	
+R3	risk_factor_of Arg1:T2 Arg2:T12	
+R4	occurs_in Arg1:T1 Arg2:T2	

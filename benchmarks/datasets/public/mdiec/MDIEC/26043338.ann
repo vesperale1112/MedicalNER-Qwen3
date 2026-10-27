@@ -1,0 +1,80 @@
+T0	gene 0 17	5-HTTLPR genotype
+T1	disease 84 88	PTSD
+T2	disease 90 121	depressive and anxiety symptoms
+T3	Health_factors 45 63	war zone stressors
+T4	Health_factors 164 182	war zone stressors
+T5	disease 259 296	disturbance in psychological function
+T7	signs 316 326	biomarkers
+T8	Health_factors 357 375	war zone stressors
+T9	method 432 453	prevention strategies
+T10	disease 516 522	trauma
+T14	gene 556 603	serotonin transporter linked polymorphic region
+T15	gene 605 613	5-HTTLPR
+T16	disease 655 685	post-traumatic stress disorder
+T17	disease 687 691	PTSD
+T18	disease 694 725	depressive and anxiety symptoms
+T19	Health_factors 743 761	war zone stressors
+T22	method 765 783	prospective cohort
+T23	gene 989 1006	5-HTTLPR genotype
+T24	disease 1062 1066	PTSD
+T25	disease 1068 1078	depression
+T26	disease 1083 1090	anxiety
+T27	Health_factors 1017 1035	war zone stressors
+T30	method 914 942	Multilevel regression models
+T31	disease 1175 1179	PTSD
+T32	disease 1181 1191	depression
+T33	disease 1196 1203	anxiety
+T34	Health_factors 1124 1142	war zone stressors
+T35	gene 1259 1276	5-HTTLPR genotype
+T36	disease 1356 1377	emotional disturbance
+T37	physiology 1236 1257	stress responsiveness
+T38	Health_factors 1321 1339	war zone stressors
+T39	Health_factors 1393 1401	soldiers
+T40	disease 1489 1493	PTSD
+T41	disease 1495 1505	depression
+T42	disease 1510 1517	anxiety
+T43	Health_factors 1597 1605	soldiers
+T45	Health_factors 1565 1583	war zone stressors
+T46	gene 1625 1654	high functioning allele (LA )
+T48	gene 1422 1456	low functioning alleles (S or LG )
+T49	gene 1680 1697	5-HTTLPR genotype
+T50	disease 1775 1796	emotional disturbance
+T51	Health_factors 1734 1752	war zone stressors
+T53	disease 1807 1820	PTSD symptoms
+T56	signs 1946 1956	biomarkers
+T57	disease 2015 2021	stress
+R1	associated_with Arg1:T3 Arg2:T1	
+R2	associated_with Arg1:T3 Arg2:T2	
+T61	Health_factors 125 133	soldiers
+R3	occurs_in Arg1:T1 Arg2:T61	
+R4	occurs_in Arg1:T2 Arg2:T61	
+R5	associated_with Arg1:T0 Arg2:T1	
+R6	associated_with Arg1:T0 Arg2:T2	
+T6	Health_factors 217 225	soldiers
+R7	associated_with Arg1:T4 Arg2:T5	
+T11	Health_factors 466 474	soldiers
+T12	Health_factors 487 496	civilians
+R8	abbreviation_for Arg1:T15 Arg2:T14	
+T13	gene 556 623	serotonin transporter linked polymorphic region (5-HTTLPR) genotype
+R9	abbreviation_for Arg1:T17 Arg2:T16	
+T20	Health_factors 796 809	Army soldiers
+T21	Health_factors 851 859	war zone
+R10	associated_with Arg1:T34 Arg2:T31	
+R11	associated_with Arg1:T34 Arg2:T32	
+R12	associated_with Arg1:T34 Arg2:T33	
+R13	associated_with Arg1:T38 Arg2:T36	
+R14	associated_with Arg1:T35 Arg2:T36	
+R15	associated_with Arg1:T35 Arg2:T38	
+R16	associated_with Arg1:T0 Arg2:T3	
+R17	risk_factor_of Arg1:T48 Arg2:T40	
+R18	risk_factor_of Arg1:T48 Arg2:T41	
+R19	risk_factor_of Arg1:T48 Arg2:T42	
+R20	associated_with Arg1:T40 Arg2:T45	
+R21	associated_with Arg1:T41 Arg2:T45	
+R22	associated_with Arg1:T42 Arg2:T45	
+R23	associated_with Arg1:T49 Arg2:T51	
+R24	associated_with Arg1:T49 Arg2:T50	
+R25	associated_with Arg1:T49 Arg2:T53	
+R26	risk_factor_of Arg1:T13 Arg2:T16	
+R27	risk_factor_of Arg1:T13 Arg2:T17	
+R28	risk_factor_of Arg1:T13 Arg2:T18	

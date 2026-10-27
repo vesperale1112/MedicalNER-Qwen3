@@ -1,0 +1,54 @@
+T0	disease 0 23	Substance use disorders
+T1	disease 25 46	psychiatric disorders
+T2	disease 52 61	mortality
+T4	method 91 127	nationwide longitudinal cohort study
+T6	Health_factors 229 247	general population
+T10	disease 430 451	psychiatric disorders
+T11	disease 456 465	mortality
+T13	disease 677 684	suicide
+T14	Health_factors 686 694	homicide
+T15	disease 696 705	mortality
+T16	Health_factors 712 726	prison release
+T17	Health_factors 666 675	accidents
+T18	disease 749 772	substance use disorders
+T19	disease 783 804	psychiatric disorders
+T20	method 859 885	population-based registers
+T21	Health_factors 810 853	criminological and sociodemographic factors
+T22	method 901 914	hazard ratios
+T23	method 916 919	HRs
+T24	method 924 938	Cox regression
+T26	disease 1010 1032	post-release mortality
+T5	disease 145 154	mortality
+T7	Health_factors 183 210	people released from prison
+R1	associated_with Arg1:T5 Arg2:T7	
+T8	Health_factors 356 380	psychiatric determinants
+T9	Health_factors 469 496	people released from prison
+R2	occurs_in Arg1:T11 Arg2:T9	
+R3	abbreviation_for Arg1:T23 Arg2:T22	
+T3	disease 1034 1057	Substance use disorders
+T12	disease 1094 1113	all-cause mortality
+T25	Health_factors 1115 1126	alcohol use
+T27	method 1128 1139	adjusted HR
+T28	method 1149 1151	CI
+T29	Health_factors 1161 1169	drug use
+T30	Health_factors 1225 1279	sociodemographic, criminological, and familial factors
+R4	risk_factor_of Arg1:T3 Arg2:T12	
+T31	disease 1325 1346	psychiatric disorders
+T32	disease 1357 1366	mortality
+T33	Health_factors 1417 1444	people released from prison
+T34	disease 1459 1475	all-cause deaths
+T35	Health_factors 1479 1482	men
+T36	Health_factors 1499 1504	women
+T37	disease 1538 1561	substance use disorders
+R5	occurs_in Arg1:T34 Arg2:T35	
+R6	occurs_in Arg1:T34 Arg2:T36	
+R7	risk_factor_of Arg1:T37 Arg2:T34	
+T38	disease 1563 1586	Substance use disorders
+T39	disease 1627 1651	external-cause mortality
+R8	risk_factor_of Arg1:T38 Arg2:T39	
+T40	Health_factors 1711 1714	men
+T41	Health_factors 1726 1731	women
+T42	disease 1733 1756	Substance use disorders
+T43	disease 1798 1822	external-cause mortality
+R9	risk_factor_of Arg1:T42 Arg2:T43	
+T44	Health_factors 1839 1882	sociodemographic and criminological factors

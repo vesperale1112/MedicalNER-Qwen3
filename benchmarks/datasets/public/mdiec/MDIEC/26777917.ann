@@ -1,0 +1,22 @@
+T1	disease 0 13	Schizophrenia
+T2	disease 15 28	Schizophrenia
+T3	disease 121 152	disruption of brain development
+T4	disease 282 300	psychotic symptoms
+T5	disease 452 490	abnormalities of neuronal connectivity
+T6	region 514 526	interneurons
+T7	disease 57 91	behavioural and cognitive syndrome
+T11	disease 206 251	Dysfunction of dopaminergic neurotransmission
+T12	region 377 401	brain areas and circuits
+T14	method 679 702	psychological therapies
+T15	Health_factors 704 718	social support
+T18	method 845 857	epidemiology
+T20	drug 645 664	antipsychotic drugs
+T22	disease 403 436	Disturbances of synaptic function
+R1	hyponym_of Arg1:T2 Arg2:T7	
+T8	Health_factors 163 195	genetic or environmental factors
+R2	risk_factor_of Arg1:T8 Arg2:T3	
+R3	associated_with Arg1:T11 Arg2:T4	
+R4	associated_with Arg1:T22 Arg2:T5	
+R5	associated_with Arg1:T5 Arg2:T6	
+T9	method 835 843	genomics
+T10	method 863 875	neuroscience

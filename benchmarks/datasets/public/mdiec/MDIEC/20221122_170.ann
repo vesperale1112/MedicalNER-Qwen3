@@ -1,0 +1,8 @@
+T1	disease 12 15	GDM
+T2	Health_factors 70 75	women
+T3	physiology 96 105	pregnancy
+T4	disease 56 66	depression
+T5	disease 142 152	depression
+T6	method 165 189	supportive interventions
+R1	risk_factor_of Arg1:T1 Arg2:T4	
+R2	occurs_in Arg1:T4 Arg2:T2	

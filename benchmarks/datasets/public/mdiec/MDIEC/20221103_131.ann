@@ -1,0 +1,5 @@
+T1	Health_factors 0 26	Spouse psychosocial status
+T2	disease 64 74	depression
+T4	Health_factors 84 90	spouse
+T5	method 112 125	interventions
+R1	associated_with Arg1:T1 Arg2:T2	

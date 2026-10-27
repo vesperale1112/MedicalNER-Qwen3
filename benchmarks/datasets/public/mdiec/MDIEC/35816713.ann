@@ -1,0 +1,26 @@
+T1	disease 0 16	Bipolar Disorder
+T2	disease 18 34	Bipolar disorder
+T3	disease 36 38	BD
+T4	disease 103 126	mental health condition
+T5	disease 172 174	BD
+T6	disease 207 217	depression
+T7	disease 219 236	anxiety disorders
+T8	disease 242 265	substance use disorders
+T11	Health_factors 73 79	adults
+T12	Health_factors 296 319	primary care clinicians
+T13	drug 334 349	antidepressants
+T17	method 449 458	screening
+T20	disease 366 393	manic or hypomanic symptoms
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	hyponym_of Arg1:T2 Arg2:T4	
+R3	hyponym_of Arg1:T3 Arg2:T4	
+R4	risk_factor_of Arg1:T6 Arg2:T5	
+R5	risk_factor_of Arg1:T7 Arg2:T5	
+R6	risk_factor_of Arg1:T8 Arg2:T5	
+R7	risk_factor_of Arg1:T13 Arg2:T20	
+T14	disease 397 410	rapid cycling
+R8	risk_factor_of Arg1:T13 Arg2:T14	
+T9	disease 427 441	undiagnosed BD
+R9	occurs_in Arg1:T20 Arg2:T9	
+R10	occurs_in Arg1:T14 Arg2:T9	
+T15	Health_factors 582 605	primary care clinicians

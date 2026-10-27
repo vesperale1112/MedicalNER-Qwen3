@@ -1,0 +1,9 @@
+T1	gene 85 90	CRTC1
+T3	physiology 142 165	antidepressant response
+T4	drug 173 222	selective serotonin reuptake inhibitor fluoxetine
+T5	gene 41 83	CREB-regulated transcription coactivator 1
+R1	abbreviation_for Arg1:T1 Arg2:T5	
+T6	disease 102 127	depressive-like phenotype
+T2	method 28 32	mice
+R2	associated_with Arg1:T5 Arg2:T6	
+R3	associated_with Arg1:T1 Arg2:T6	

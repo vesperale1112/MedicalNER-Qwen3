@@ -1,0 +1,72 @@
+T0	disease 0 7	Anxiety
+T1	disease 9 19	depression
+T2	Health_factors 44 54	caregivers
+T3	disease 72 78	cancer
+T4	Health_factors 25 40	quality of life
+T5	Health_factors 208 226	primary caregivers
+T6	Health_factors 228 231	PCs
+T7	disease 266 281	advanced cancer
+T8	Health_factors 150 163	mental health
+T9	Health_factors 183 198	quality of life
+T10	Health_factors 200 203	QOL
+T12	disease 303 310	anxiety
+T13	disease 312 322	depression
+T14	disease 356 362	cancer
+T15	Health_factors 328 331	QOL
+T19	Health_factors 450 455	women
+T20	disease 461 474	breast cancer
+T21	Health_factors 489 492	men
+T24	Health_factors 515 518	QOL
+T25	method 572 577	SF-36
+T26	Health_factors 584 597	mental health
+T27	method 607 644	Hospital Anxiety and Depression Scale
+T28	method 646 650	HADS
+T31	Health_factors 726 738	Physical QOL
+T32	Health_factors 782 789	genders
+T35	Health_factors 797 807	mental QOL
+T37	disease 858 865	anxiety
+T38	Health_factors 909 916	genders
+T40	disease 1027 1037	depression
+T42	disease 957 967	depression
+T43	Health_factors 988 994	gender
+T44	method 1014 1018	HADS
+T49	Health_factors 1130 1137	genders
+T50	disease 1161 1168	anxiety
+T52	Health_factors 1226 1229	PCs
+T54	method 1246 1255	screening
+T55	Health_factors 1285 1288	QOL
+T56	Health_factors 1346 1353	doctors
+T58	disease 1265 1280	mental symptoms
+T59	Health_factors 1188 1209	Health care personnel
+T11	Health_factors 82 103	late palliative phase
+R1	abbreviation_for Arg1:T10 Arg2:T9	
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+T16	Health_factors 335 338	PCs
+T17	Health_factors 370 391	late palliative phase
+T18	Health_factors 443 446	PCs
+T22	Health_factors 482 485	PCs
+T23	disease 498 513	prostate cancer
+T60	method 538 570	Medical Outcome Study Short Form
+R3	abbreviation_for Arg1:T25 Arg2:T60	
+R4	help_diagnose Arg1:T60 Arg2:T24	
+R5	help_diagnose Arg1:T25 Arg2:T24	
+R6	abbreviation_for Arg1:T28 Arg2:T27	
+R7	help_diagnose Arg1:T27 Arg2:T26	
+R8	help_diagnose Arg1:T28 Arg2:T26	
+T29	method 685 707	age-adjusted norm data
+T30	Health_factors 835 843	male PCs
+R9	help_diagnose Arg1:T44 Arg2:T40	
+T33	Health_factors 1074 1084	female PCs
+R10	risk_factor_of Arg1:T33 Arg2:T40	
+T34	Health_factors 1118 1121	PCs
+R11	risk_factor_of Arg1:T34 Arg2:T50	
+R12	occurs_in Arg1:T0 Arg2:T2	
+R13	occurs_in Arg1:T1 Arg2:T2	
+R14	occurs_in Arg1:T4 Arg2:T2	
+R15	occurs_in Arg1:T12 Arg2:T16	
+R16	occurs_in Arg1:T13 Arg2:T16	
+R17	occurs_in Arg1:T15 Arg2:T16	
+R18	occurs_in Arg1:T3 Arg2:T11	
+R19	occurs_in Arg1:T14 Arg2:T17	
+R20	occurs_in Arg1:T19 Arg2:T20	
+R21	occurs_in Arg1:T21 Arg2:T23	

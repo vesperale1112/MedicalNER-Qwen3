@@ -1,0 +1,6 @@
+T2	physiology 15 50	cerebral metabolic activity changes
+T3	physiology 80 103	antidepressant response
+T4	disease 107 137	treatment-resistant depression
+T1	method 56 79	vagus nerve stimulation
+R1	associated_with Arg1:T2 Arg2:T3	
+R2	occurs_in Arg1:T3 Arg2:T4	

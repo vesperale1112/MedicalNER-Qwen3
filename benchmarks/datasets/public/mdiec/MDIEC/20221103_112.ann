@@ -1,0 +1,8 @@
+T1	method 0 27	Depression screening scores
+T2	method 29 59	Patient Health Questionnaire-9
+T3	disease 62 72	depression
+T4	Health_factors 84 112	individual counseling visits
+T5	Health_factors 114 141	demographic characteristics
+T6	method 190 215	electronic health records
+T7	method 220 238	pharmacy databases
+T8	drug 147 157	medication

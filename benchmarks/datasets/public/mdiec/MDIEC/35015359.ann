@@ -1,0 +1,69 @@
+T1	disease 58 74	mental disorders
+T2	disease 78 94	Mental disorders
+T3	disease 565 581	mental disorders
+T4	disease 1239 1259	depressive disorders
+T5	disease 1261 1278	anxiety disorders
+T6	disease 1312 1341	obsessive-compulsive disorder
+T7	disease 1343 1363	somatoform disorders
+T8	disease 1365 1381	eating disorders
+T9	disease 1383 1423	attention-deficit/hyperactivity disorder
+T10	disease 1425 1448	substance use disorders
+T11	disease 1450 1458	insomnia
+T12	disease 1460 1492	schizophrenia spectrum disorders
+T13	disease 1498 1514	bipolar disorder
+T14	disease 2291 2307	mental disorders
+T16	method 16 31	psychotherapies
+T17	method 36 53	pharmacotherapies
+T18	method 140 155	Psychotherapies
+T19	method 160 177	pharmacotherapies
+T20	method 328 343	clinical trials
+T21	method 432 447	umbrella review
+T22	method 458 471	meta-analyses
+T23	method 475 503	randomized controlled trials
+T24	method 505 509	RCTs
+T25	method 514 529	psychotherapies
+T26	method 534 551	pharmacotherapies
+T27	Health_factors 585 591	adults
+T28	method 605 618	meta-analyses
+T29	method 779 785	PubMed
+T30	method 790 798	PsycINFO
+T31	method 829 845	Cochrane Library
+T32	method 850 863	meta-analyses
+T33	method 920 935	psychotherapies
+T34	method 939 956	pharmacotherapies
+T36	method 1002 1017	psychotherapies
+T37	method 1022 1039	pharmacotherapies
+T41	method 1061 1110	combination of psychotherapy with pharmacotherapy
+T42	method 1121 1132	monotherapy
+T43	method 1154 1167	meta-analyses
+T44	method 1188 1192	RCTs
+T45	disease 1280 1310	post-traumatic stress disorder
+T46	method 1695 1708	meta-analyses
+T47	method 1732 1760	standardized mean difference
+T48	method 1762 1765	SMD
+T49	method 1780 1782	CI
+T50	method 1799 1814	psychotherapies
+T51	method 1829 1831	CI
+T52	method 1848 1865	pharmacotherapies
+T54	method 1900 1903	SMD
+T57	method 1936 1951	psychotherapies
+T58	method 1956 1973	pharmacotherapies
+T59	method 1988 1990	CI
+T60	method 2012 2015	SMD
+T61	method 2064 2075	monotherapy
+T62	method 2090 2092	CI
+T63	method 2192 2196	RCTs
+T64	method 2249 2264	psychotherapies
+T65	method 2269 2286	pharmacotherapies
+T66	method 2353 2371	treatment research
+T68	method 2024 2042	combined treatment
+T73	method 197 218	first line treatments
+R1	hyponym_of Arg1:T18 Arg2:T73	
+R2	hyponym_of Arg1:T19 Arg2:T73	
+R3	abbreviation_for Arg1:T24 Arg2:T23	
+T35	method 973 991	treatment-as-usual
+T70	method 993 996	TAU
+R4	abbreviation_for Arg1:T70 Arg2:T35	
+T38	method 1612 1650	random effect meta-analytic evaluation
+R5	abbreviation_for Arg1:T48 Arg2:T47	
+T39	method 1891 1894	TAU

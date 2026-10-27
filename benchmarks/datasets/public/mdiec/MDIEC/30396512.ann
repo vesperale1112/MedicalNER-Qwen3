@@ -1,0 +1,12 @@
+T1	disease 0 10	Depression
+T2	disease 12 28	Major depression
+T3	disease 147 163	major depression
+T4	disease 41 48	illness
+T5	Health_factors 110 125	quality of life
+T6	method 136 139	WHO
+T7	Health_factors 351 361	clinicians
+T9	Health_factors 186 203	burden of disease
+T10	Health_factors 70 94	psychosocial functioning
+R1	hyponym_of Arg1:T2 Arg2:T4	
+R2	associated_with Arg1:T2 Arg2:T10	
+R3	associated_with Arg1:T2 Arg2:T5	

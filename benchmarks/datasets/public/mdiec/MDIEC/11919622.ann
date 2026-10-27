@@ -1,0 +1,40 @@
+T1	gene 0 20	Serotonin1A receptor
+T3	Health_factors 95 100	adult
+T5	drug 102 111	Serotonin
+T6	disease 217 224	anxiety
+T7	disease 229 239	depression
+T8	physiology 129 144	mood regulation
+T9	drug 150 155	drugs
+T10	region 171 190	serotonergic system
+T12	gene 271 291	serotonin1A receptor
+T13	disease 375 397	anxiety-like behaviour
+T14	physiology 297 318	anxiolytic properties
+T17	method 324 337	knockout mice
+T21	gene 489 509	serotonin1A receptor
+T22	region 527 538	hippocampus
+T23	region 543 549	cortex
+T25	method 637 650	knockout mice
+T26	symptom 608 629	behavioural phenotype
+T27	region 566 578	raphe nuclei
+T28	method 413 457	tissue-specific, conditional rescue strategy
+T32	Health_factors 806 811	adult
+T33	Health_factors 767 789	early postnatal period
+T34	physiology 736 755	receptor expression
+T35	method 703 718	transgenic mice
+T40	gene 998 1018	serotonin1A receptor
+T41	method 1108 1132	therapeutic intervention
+T42	Health_factors 1136 1145	adulthood
+T4	disease 65 87	anxiety-like behaviour
+R1	treatment_for Arg1:T1 Arg2:T4	
+R2	occurs_in Arg1:T4 Arg2:T3	
+R3	associated_with Arg1:T5 Arg2:T8	
+R4	treatment_for Arg1:T9 Arg2:T6	
+R5	treatment_for Arg1:T9 Arg2:T7	
+R6	associated_with Arg1:T12 Arg2:T13	
+R7	located_in Arg1:T21 Arg2:T22	
+R8	located_in Arg1:T21 Arg2:T23	
+R9	treatment_for Arg1:T21 Arg2:T26	
+R10	occurs_in Arg1:T26 Arg2:T25	
+T2	physiology 880 913	postnatal developmental processes
+T11	disease 932 960	adult anxiety-like behaviour
+R11	associated_with Arg1:T2 Arg2:T11	

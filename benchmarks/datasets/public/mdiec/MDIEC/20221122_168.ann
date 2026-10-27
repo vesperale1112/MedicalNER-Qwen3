@@ -1,0 +1,9 @@
+T2	method 37 80	Internet-based cognitive behavioral therapy
+T3	method 82 86	iCBT
+T5	disease 118 128	depression
+T6	disease 203 229	comorbid depression and DM
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	treatment_for Arg1:T3 Arg2:T5	
+R3	treatment_for Arg1:T2 Arg2:T5	
+T1	Health_factors 136 154	general population
+R5	occurs_in Arg1:T5 Arg2:T1	

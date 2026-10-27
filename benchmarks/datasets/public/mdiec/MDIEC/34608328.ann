@@ -1,0 +1,20 @@
+T1	disease 134 161	neuropsychiatric conditions
+T2	disease 170 186	major depression
+T3	disease 689 699	depression
+T4	disease 770 780	depression
+T5	disease 50 80	treatment-resistant depression
+T6	method 82 104	Deep brain stimulation
+T9	signs 281 297	symptom severity
+T15	method 701 720	Closed-loop therapy
+T16	method 855 867	n-of-1 study
+T17	method 630 666	biomarker-driven closed-loop therapy
+T18	method 562 611	chronic deep brain sensing and stimulation device
+T20	signs 440 479	personalized symptom-specific biomarker
+T21	method 397 425	focal electrical stimulation
+T22	method 352 392	multi-day intracranial electrophysiology
+T23	signs 225 242	neural biomarkers
+R1	treatment_for Arg1:T6 Arg2:T1	
+R2	hyponym_of Arg1:T2 Arg2:T1	
+R3	treatment_for Arg1:T6 Arg2:T2	
+R4	treatment_for Arg1:T15 Arg2:T4	
+T7	method 0 27	Closed-loop neuromodulation

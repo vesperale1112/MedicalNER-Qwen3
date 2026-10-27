@@ -1,0 +1,16 @@
+T5	method 68 77	follow-up
+T7	disease 33 43	depression
+T8	disease 54 64	depression
+T9	disease 160 170	depression
+T10	disease 218 228	depression
+T11	Health_factors 357 378	history of depression
+T12	Health_factors 263 276	low education
+T13	disease 278 313	non-cardiovascular chronic diseases
+T14	Health_factors 315 336	stressful life events
+T1	Health_factors 255 261	female
+R1	associated_with Arg1:T10 Arg2:T1	
+R2	associated_with Arg1:T10 Arg2:T12	
+R3	associated_with Arg1:T10 Arg2:T13	
+R4	associated_with Arg1:T10 Arg2:T14	
+R5	associated_with Arg1:T10 Arg2:T11	
+T2	method 343 356	self-reported

@@ -1,0 +1,4 @@
+T1	disease 24 34	depression
+T2	disease 39 79	impairment in activities of daily living
+R1	associated_with Arg1:T1 Arg2:T2	
+T3	disease 161 171	poststroke

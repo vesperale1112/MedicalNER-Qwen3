@@ -1,0 +1,73 @@
+T0	disease 35 48	schizophrenia
+T1	gene 0 15	Common variants
+T2	disease 50 63	Schizophrenia
+T5	Health_factors 102 135	genetic and environmental factors
+T6	disease 69 85	complex disorder
+T7	drug 282 290	dopamine
+T8	disease 172 184	pathogenesis
+T9	region 246 251	brain
+T10	region 214 238	neurotransmitter systems
+T12	disease 292 305	Schizophrenia
+T13	signs 393 411	biological markers
+T19	method 510 541	genome-wide association studies
+T21	gene 545 567	copy number variations
+T22	disease 754 767	schizophrenia
+T23	disease 786 807	psychiatric disorders
+T24	method 737 750	relative risk
+T26	disease 851 864	schizophrenia
+T27	disease 929 946	genomic disorders
+T28	gene 885 890	genes
+T30	disease 899 919	phenotypic syndromes
+T32	gene 813 834	structural variations
+T33	gene 982 1012	Single nucleotide polymorphism
+T34	gene 1014 1017	SNP
+T35	method 1025 1056	genome-wide association studies
+T36	gene 1100 1105	genes
+T38	physiology 1148 1167	biological pathways
+T39	disease 1109 1125	complex diseases
+T42	method 1236 1247	followed up
+T43	method 1208 1231	large genome-wide scans
+T44	gene 1357 1389	major histocompatibility complex
+T45	gene 1391 1394	MHC
+T46	gene 1463 1479	neurogranin gene
+T47	gene 1481 1485	NRGN
+T48	gene 1529 1551	transcription factor 4
+T49	gene 1553 1557	TCF4
+T52	gene 1600 1610	MHC region
+T53	disease 1654 1667	schizophrenia
+T54	gene 1703 1707	NRGN
+T55	gene 1712 1716	TCF4
+T57	physiology 1764 1781	brain development
+T58	physiology 1783 1789	memory
+T59	physiology 1794 1803	cognition
+R1	risk_factor_of Arg1:T1 Arg2:T0	
+R2	hyponym_of Arg1:T2 Arg2:T6	
+R3	risk_factor_of Arg1:T5 Arg2:T2	
+R4	located_in Arg1:T10 Arg2:T9	
+T3	gene 569 573	CNVs
+R5	abbreviation_for Arg1:T3 Arg2:T21	
+T4	gene 711 715	CNVs
+R6	risk_factor_of Arg1:T4 Arg2:T22	
+R7	risk_factor_of Arg1:T4 Arg2:T23	
+R8	abbreviation_for Arg1:T34 Arg2:T33	
+T11	gene 1186 1189	SNP
+T14	gene 1406 1428	chromosome 6p21.3-22.1
+R10	abbreviation_for Arg1:T47 Arg2:T46	
+T15	gene 1490 1497	11q24.2
+R11	abbreviation_for Arg1:T49 Arg2:T48	
+T16	gene 1562 1569	18q21.2
+R12	associated_with Arg1:T32 Arg2:T26	
+R16	abbreviation_for Arg1:T45 Arg2:T44	
+R17	located_in Arg1:T45 Arg2:T14	
+R18	located_in Arg1:T44 Arg2:T14	
+R19	located_in Arg1:T47 Arg2:T15	
+R20	located_in Arg1:T46 Arg2:T15	
+R21	located_in Arg1:T49 Arg2:T16	
+R22	located_in Arg1:T48 Arg2:T16	
+R23	risk_factor_of Arg1:T52 Arg2:T53	
+R24	associated_with Arg1:T54 Arg2:T57	
+R25	associated_with Arg1:T54 Arg2:T58	
+R26	associated_with Arg1:T54 Arg2:T59	
+R27	associated_with Arg1:T55 Arg2:T57	
+R28	associated_with Arg1:T55 Arg2:T58	
+R29	associated_with Arg1:T55 Arg2:T59	

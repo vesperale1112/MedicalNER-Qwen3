@@ -1,0 +1,108 @@
+T1	disease 53 76	Cardiovascular Diseases
+T2	disease 114 133	depressive symptoms
+T3	disease 187 210	cardiovascular diseases
+T4	disease 270 289	depressive symptoms
+T5	disease 294 297	CVD
+T6	disease 732 751	depressive symptoms
+T7	Health_factors 759 770	CVD history
+T8	disease 1032 1051	depressive disorder
+T9	disease 1163 1182	depressive disorder
+T10	disease 1262 1284	coronary heart disease
+T11	disease 1286 1289	CHD
+T12	disease 1292 1298	stroke
+T13	disease 1304 1307	CVD
+T14	disease 1421 1429	diabetes
+T15	disease 1560 1563	CHD
+T16	disease 1573 1579	stroke
+T17	disease 1650 1653	CHD
+T18	disease 1655 1661	stroke
+T19	disease 1667 1670	CVD
+T20	disease 1732 1735	CHD
+T21	disease 1766 1772	stroke
+T22	disease 1804 1807	CVD
+T23	disease 2019 2022	CHD
+T24	disease 2048 2054	stroke
+T25	disease 2084 2087	CVD
+T26	disease 2212 2215	CHD
+T27	disease 2225 2231	stroke
+T28	disease 2328 2331	CHD
+T29	disease 2362 2368	stroke
+T30	disease 2400 2403	CVD
+T31	disease 2580 2583	CHD
+T32	disease 2609 2615	stroke
+T33	disease 2645 2648	CVD
+T34	disease 2881 2900	depressive symptoms
+T35	disease 2922 2925	CVD
+T36	disease 3006 3025	depressive disorder
+T37	disease 795 814	Depressive symptoms
+T38	disease 20 39	Depressive Symptoms
+T39	disease 212 216	CVDs
+R1	abbreviation_for Arg1:T39 Arg2:T3	
+T40	method 380 395	pooled analysis
+T41	method 436 471	Emerging Risk Factors Collaboration
+T42	method 473 477	ERFC
+R2	abbreviation_for Arg1:T42 Arg2:T41	
+T43	method 504 511	cohorts
+T45	method 580 590	UK Biobank
+T47	method 513 529	baseline surveys
+T48	method 614 630	baseline surveys
+T49	method 858 862	ERFC
+T50	method 934 979	Center for Epidemiological Studies Depression
+T51	method 981 986	CES-D
+R3	abbreviation_for Arg1:T51 Arg2:T50	
+R4	help_diagnose Arg1:T50 Arg2:T8	
+R5	help_diagnose Arg1:T51 Arg2:T8	
+T52	method 1058 1068	UK Biobank
+T53	method 1082 1119	2-item Patient Health Questionnaire 2
+T54	method 1121 1126	PHQ-2
+R6	abbreviation_for Arg1:T54 Arg2:T53	
+R7	help_diagnose Arg1:T53 Arg2:T9	
+R8	help_diagnose Arg1:T54 Arg2:T9	
+R9	abbreviation_for Arg1:T11 Arg2:T10	
+T55	method 1330 1343	Hazard ratios
+T56	method 1345 1348	HRs
+R10	abbreviation_for Arg1:T56 Arg2:T55	
+T57	method 1356 1358	SD
+T58	method 1370 1375	CES-D
+T59	method 1379 1384	PHQ-2
+T60	method 1490 1494	ERFC
+T61	method 1540 1542	SD
+R12	associated_with Arg1:T17 Arg2:T18	
+T62	method 1692 1694	HR
+T63	method 1701 1703	SD
+T64	disease 1711 1721	depression
+T65	method 1750 1752	CI
+T66	method 1784 1786	CI
+T67	method 1819 1821	CI
+T69	method 1947 1952	CES-D
+T70	method 1975 1980	CES-D
+T71	method 2132 2142	UK Biobank
+T72	method 2192 2194	SD
+T74	method 2288 2290	HR
+T75	method 2297 2299	SD
+T76	disease 2307 2317	depression
+T77	method 2346 2348	CI
+T78	method 2380 2382	CI
+T79	method 2415 2417	CI
+T81	method 2525 2530	PHQ-2
+T82	method 2707 2710	HRs
+T83	method 2817 2832	pooled analysis
+T84	method 2863 2870	cohorts
+R14	associated_with Arg1:T34 Arg2:T35	
+R15	associated_with Arg1:T38 Arg2:T1	
+T44	symptom 331 341	lower mood
+T86	method 718 731	self-reported
+T87	Health_factors 1398 1401	age
+T88	Health_factors 1403 1406	sex
+T89	Health_factors 1408 1415	smoking
+T91	Health_factors 1501 1506	women
+T92	Health_factors 1513 1516	age
+T94	Health_factors 2153 2158	women
+T95	Health_factors 2165 2168	age
+T46	method 549 558	follow-up
+T73	method 650 659	follow-up
+T80	method 1609 1618	follow-up
+T85	method 1896 1905	follow-up
+T90	method 2261 2270	follow-up
+T93	method 2492 2501	follow-up
+R13	associated_with Arg1:T17 Arg2:T19	

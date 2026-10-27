@@ -1,0 +1,34 @@
+T1	disease 24 34	depression
+T2	disease 95 105	Depression
+T3	disease 411 425	mood disorders
+T4	disease 503 513	depression
+T5	disease 615 625	depression
+T6	drug 872 901	serotonin-reuptake inhibitors
+T7	physiology 0 19	Synaptic plasticity
+T8	disease 54 60	stress
+T9	drug 65 93	rapid-acting antidepressants
+T10	disease 131 138	illness
+T12	method 279 303	antidepressant therapies
+T13	method 378 390	neurobiology
+T14	disease 394 400	stress
+T15	drug 540 555	antidepressants
+T17	disease 739 767	dysfunction of the circuitry
+T19	physiology 810 828	cognitive function
+T20	drug 847 862	antidepressants
+T22	method 1050 1062	mood ratings
+T24	drug 1124 1139	antidepressants
+T25	disease 1251 1257	stress
+T26	physiology 790 805	mood regulation
+T27	physiology 692 724	neuronal function and morphology
+T28	Health_factors 557 577	Environmental events
+T29	method 148 165	pharmacotherapies
+R1	hyponym_of Arg1:T2 Arg2:T10	
+R2	risk_factor_of Arg1:T28 Arg2:T5	
+T11	physiology 645 678	molecular and cellular mechanisms
+R3	associated_with Arg1:T11 Arg2:T27	
+R4	risk_factor_of Arg1:T28 Arg2:T17	
+R5	hyponym_of Arg1:T6 Arg2:T20	
+T16	disease 1223 1240	synaptic deficits
+R6	risk_factor_of Arg1:T25 Arg2:T16	
+T18	drug 1180 1186	agents
+R7	treatment_for Arg1:T18 Arg2:T16	

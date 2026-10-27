@@ -1,0 +1,17 @@
+T0	disease 0 7	Anxiety
+T1	disease 12 26	muscle tension
+T3	physiology 46 65	caffeine withdrawal
+T4	drug 88 96	caffeine
+T5	drug 172 180	caffeine
+T7	drug 256 272	caffeine citrate
+T9	method 225 252	double-blind administration
+T11	method 325 343	caffeine treatment
+T12	method 290 323	discriminative reaction time test
+T13	disease 400 407	anxiety
+T14	Health_factors 441 453	caffeine use
+T15	disease 507 514	anxiety
+R1	risk_factor_of Arg1:T3 Arg2:T1	
+R2	risk_factor_of Arg1:T3 Arg2:T0	
+T2	disease 108 122	muscle tension
+R3	risk_factor_of Arg1:T4 Arg2:T2	
+R4	associated_with Arg1:T13 Arg2:T14	

@@ -16,6 +16,8 @@ models/adapters/      Local LoRA adapters, not committed
 outputs/              Evaluation outputs, not committed
 ```
 
+KG benchmark materials, annotation tools and offline pages are indexed in [benchmarks/README.md](benchmarks/README.md). Article-screening review materials are in [screening_review_40/](data/treatment_related_articles/screening_review_40/README.md).
+
 ## 1. Setup
 
 For ModelArts jobs, use the setup helper. It creates or repairs the conda env,

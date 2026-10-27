@@ -1,0 +1,5 @@
+T2	disease 44 63	maternal depression
+T3	Health_factors 71 74	age
+T5	Health_factors 89 93	ages
+T1	physiology 137 164	developmental vulnerability
+R1	associated_with Arg1:T2 Arg2:T1	

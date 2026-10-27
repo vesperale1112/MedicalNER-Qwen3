@@ -1,0 +1,63 @@
+T0	disease 0 13	Schizophrenia
+T1	gene 37 55	neuregulin 1-ErbB4
+T3	gene 67 70	Src
+T5	gene 87 101	NMDA receptors
+T7	physiology 103 173	Hypofunction of the N-methyl D-aspartate subtype of glutamate receptor
+T9	gene 123 173	N-methyl D-aspartate subtype of glutamate receptor
+T10	gene 175 180	NMDAR
+T11	disease 227 248	cognitive dysfunction
+T12	disease 269 282	schizophrenia
+T13	disease 292 305	schizophrenia
+T14	gene 319 323	NRG1
+T15	gene 328 333	ERBB4
+T16	physiology 335 353	NMDAR hypofunction
+T18	physiology 410 440	excessive NRG1-ErbB4 signaling
+T19	disease 462 475	schizophrenia
+T20	gene 313 318	genes
+T22	gene 517 522	ErbB4
+T24	gene 524 528	NRG1
+T25	gene 529 534	ErbB4
+T26	physiology 569 591	hypofunction of NMDARs
+T27	physiology 657 677	NRG1-ErbB4 signaling
+T29	physiology 708 731	synaptic NMDAR currents
+T30	gene 739 770	nonreceptor tyrosine kinase Src
+T32	region 622 633	hippocampus
+T33	region 638 655	prefrontal cortex
+T35	physiology 772 792	NRG1-ErbB4 signaling
+T36	gene 902 905	Src
+T37	physiology 931 946	NMDAR responses
+T38	physiology 816 838	long-term potentiation
+T40	method 954 977	theta-burst stimulation
+T41	region 842 886	hippocampal Schaffer collateral-CA1 synapses
+T44	physiology 989 1009	NRG1-ErbB4 signaling
+T45	physiology 1020 1065	theta burst-induced phosphorylation of GluN2B
+T46	physiology 1080 1099	Src kinase activity
+T48	physiology 1117 1137	NRG1-ErbB4 signaling
+T50	disease 1154 1175	cognitive dysfunction
+T51	disease 1179 1192	schizophrenia
+T52	gene 1219 1222	Src
+T53	physiology 1247 1270	synaptic NMDAR function
+R1	associated_with Arg1:T3 Arg2:T5	
+R2	associated_with Arg1:T1 Arg2:T3	
+R3	associated_with Arg1:T1 Arg2:T5	
+R4	abbreviation_for Arg1:T10 Arg2:T9	
+R5	occurs_in Arg1:T11 Arg2:T12	
+R6	associated_with Arg1:T7 Arg2:T11	
+R7	associated_with Arg1:T13 Arg2:T14	
+R8	associated_with Arg1:T13 Arg2:T15	
+R9	risk_factor_of Arg1:T18 Arg2:T16	
+R10	characteristic_of Arg1:T18 Arg2:T19	
+T2	gene 504 516	neuregulin 1
+T4	physiology 504 545	neuregulin 1-ErbB4 (NRG1-ErbB4) signaling
+R11	associated_with Arg1:T27 Arg2:T29	
+R12	located_in Arg1:T27 Arg2:T32	
+R13	located_in Arg1:T27 Arg2:T33	
+R14	associated_with Arg1:T29 Arg2:T30	
+R15	associated_with Arg1:T35 Arg2:T38	
+R16	located_in Arg1:T38 Arg2:T41	
+R17	associated_with Arg1:T35 Arg2:T37	
+R19	associated_with Arg1:T44 Arg2:T45	
+R20	associated_with Arg1:T45 Arg2:T46	
+R21	associated_with Arg1:T48 Arg2:T50	
+R22	occurs_in Arg1:T50 Arg2:T51	
+R24	associated_with Arg1:T50 Arg2:T53	

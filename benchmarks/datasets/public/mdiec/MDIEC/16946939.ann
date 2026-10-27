@@ -1,0 +1,44 @@
+T0	disease 31 44	schizophrenia
+T2	disease 114 127	schizophrenia
+T4	disease 283 296	schizophrenia
+T6	physiology 140 149	attention
+T7	physiology 339 367	cognitive and brain evolutio
+T12	disease 184 203	autistic alienation
+T16	method 655 667	neurobiology
+T17	region 675 687	social brain
+T20	Health_factors 734 773	adaptive social behaviour and cognition
+T21	region 694 729	anatomical and functional substrate
+T24	region 915 929	mirror neurons
+T26	method 775 793	Functional imaging
+T27	region 877 889	social brain
+T29	physiology 960 976	social cognition
+T30	region 805 858	fronto-temporal and fronto-parietal cortical networks
+T31	disease 1012 1025	schizophrenia
+T34	physiology 1067 1083	social cognition
+T37	disease 1208 1221	schizophrenia
+T40	disease 1227 1302	disorder of functional and structural connectivity of social brain networks
+T43	disease 1350 1363	schizophrenia
+T46	disease 1551 1559	stresses
+T48	Health_factors 1569 1596	complex social environments
+T50	disease 1683 1696	schizophrenia
+T53	physiology 1632 1656	interpersonal alienation
+T54	method 4 27	social brain hypothesis
+T55	method 50 73	social brain hypothesis
+T11	disease 255 279	social brain dysfunction
+R1	occurs_in Arg1:T11 Arg2:T4	
+R2	help_diagnose Arg1:T26 Arg2:T30	
+R3	associated_with Arg1:T24 Arg2:T29	
+T8	physiology 1098 1117	emotion recognition
+T9	symptom 1138 1162	affective responsiveness
+R4	characteristic_of Arg1:T34 Arg2:T31	
+R5	characteristic_of Arg1:T8 Arg2:T31	
+R6	characteristic_of Arg1:T9 Arg2:T31	
+R7	hyponym_of Arg1:T8 Arg2:T34	
+R8	hyponym_of Arg1:T9 Arg2:T34	
+R10	hyponym_of Arg1:T37 Arg2:T40	
+T1	physiology 1398 1420	social brain evolution
+T3	Health_factors 1516 1528	social arena
+T5	physiology 1613 1626	disembodiment
+R12	characteristic_of Arg1:T5 Arg2:T50	
+R13	characteristic_of Arg1:T53 Arg2:T50	
+R14	associated_with Arg1:T30 Arg2:T27	

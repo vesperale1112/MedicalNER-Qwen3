@@ -1,0 +1,88 @@
+T0	disease 14 30	Eating Disorders
+T1	method 0 9	Screening
+T2	Health_factors 34 45	Adolescents
+T3	Health_factors 50 56	Adults
+T4	method 58 73	Evidence Report
+T5	method 78 95	Systematic Review
+T6	method 104 137	US Preventive Services Task Force
+T7	disease 151 167	Eating disorders
+T10	Health_factors 188 222	adverse health and social outcomes
+T11	disease 275 291	eating disorders
+T12	method 261 270	screening
+T13	Health_factors 295 306	adolescents
+T14	Health_factors 311 317	adults
+R1	occurs_in Arg1:T0 Arg2:T2	
+R2	occurs_in Arg1:T0 Arg2:T3	
+R3	associated_with Arg1:T7 Arg2:T10	
+R4	occurs_in Arg1:T11 Arg2:T13	
+R5	occurs_in Arg1:T11 Arg2:T14	
+T8	method 332 365	US Preventive Services Task Force
+T9	drug 367 383	Lisdexamfetamine
+T15	disease 388 409	binge eating disorder
+T16	method 413 417	RCTs
+T17	disease 467 490	eating disorder symptom
+T18	method 507 570	Yale-Brown Obsessive Compulsive Scale modified for binge eating
+T19	method 572 580	YBOCS-BE
+R6	abbreviation_for Arg1:T19 Arg2:T18	
+R7	treatment_for Arg1:T9 Arg2:T17	
+R8	help_diagnose Arg1:T18 Arg2:T17	
+R9	help_diagnose Arg1:T19 Arg2:T17	
+T20	method 596 618	pooled mean difference
+T21	method 631 633	CI
+T22	method 657 661	RCTs
+T23	drug 673 683	topiramate
+T24	disease 688 709	binge eating disorder
+T25	method 737 745	YBOCS-BE
+T26	drug 769 779	topiramate
+T27	method 810 812	CI
+T28	method 844 846	CI
+R11	treatment_for Arg1:T9 Arg2:T15	
+T29	method 870 892	pharmacotherapy trials
+T30	disease 914 919	harms
+T31	drug 944 960	lisdexamfetamine
+T32	disease 997 1006	dry mouth
+T33	disease 1008 1016	headache
+T34	disease 1022 1030	insomnia
+R12	risk_factor_of Arg1:T31 Arg2:T32	
+R13	risk_factor_of Arg1:T31 Arg2:T33	
+R14	risk_factor_of Arg1:T31 Arg2:T34	
+T35	drug 1036 1046	topiramate
+T36	disease 1083 1094	paresthesia
+T37	symptom 1096 1112	taste perversion
+T38	symptom 1114 1123	confusion
+T39	symptom 1129 1153	concentration difficulty
+R15	treatment_for Arg1:T35 Arg2:T36	
+R16	treatment_for Arg1:T35 Arg2:T37	
+R17	treatment_for Arg1:T35 Arg2:T38	
+R18	treatment_for Arg1:T35 Arg2:T39	
+T40	method 1167 1173	trials
+T41	method 1192 1219	psychological interventions
+T42	method 1221 1237	Guided self-help
+T43	disease 1242 1263	binge eating disorder
+T44	disease 1273 1296	eating disorder symptom
+R19	treatment_for Arg1:T42 Arg2:T43	
+R20	treatment_for Arg1:T42 Arg2:T44	
+T45	method 1325 1360	pooled standardized mean difference
+T46	method 1373 1375	CI
+T47	method 1432 1445	interventions
+T48	disease 1532 1537	harms
+T49	method 1541 1550	screening
+T50	method 1556 1575	SCOFF questionnaire
+T51	disease 1612 1628	eating disorders
+T52	Health_factors 1635 1641	adults
+R21	occurs_in Arg1:T51 Arg2:T52	
+R22	help_diagnose Arg1:T50 Arg2:T51	
+T53	method 1646 1662	treatment trials
+T54	method 1701 1717	guided self-help
+T55	drug 1719 1735	lisdexamfetamine
+T56	drug 1741 1751	topiramate
+T57	disease 1780 1803	eating disorder symptom
+T58	disease 1845 1866	binge eating disorder
+T59	method 1872 1889	pharmacotherapies
+T60	disease 1916 1921	harms
+R23	associated_with Arg1:T59 Arg2:T60	
+R24	occurs_in Arg1:T57 Arg2:T58	
+R25	treatment_for Arg1:T54 Arg2:T57	
+R26	treatment_for Arg1:T55 Arg2:T57	
+R27	treatment_for Arg1:T56 Arg2:T57	
+R10	treatment_for Arg1:T26 Arg2:T25	

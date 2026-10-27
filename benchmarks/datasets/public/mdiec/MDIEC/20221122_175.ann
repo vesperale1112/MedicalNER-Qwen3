@@ -1,0 +1,8 @@
+T1	method 21 63	Hamilton depression scale factor structure
+T3	gene 91 107	interferon-alpha
+T2	disease 122 133	hepatitis-C
+T4	disease 166 184	depressive episode
+T5	method 188 194	DSM IV
+T6	disease 203 219	major depression
+R1	help_diagnose Arg1:T5 Arg2:T6	
+R2	treatment_for Arg1:T3 Arg2:T2	

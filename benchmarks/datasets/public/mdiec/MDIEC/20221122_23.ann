@@ -1,0 +1,10 @@
+T1	disease 0 18	Migraine with aura
+T4	disease 156 163	CADASIL
+T6	gene 187 208	NOTCH3 gene mutations
+T7	region 236 258	vascular smooth muscle
+T2	disease 55 154	cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy syndrome
+R1	characteristic_of Arg1:T1 Arg2:T2	
+R2	abbreviation_for Arg1:T4 Arg2:T2	
+R3	risk_factor_of Arg1:T6 Arg2:T4	
+R4	risk_factor_of Arg1:T6 Arg2:T2	
+R5	located_in Arg1:T6 Arg2:T7	

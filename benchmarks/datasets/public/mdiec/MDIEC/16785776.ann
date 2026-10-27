@@ -1,0 +1,36 @@
+T0	disease 66 105	pediatric obsessive-compulsive disorder
+T3	method 29 61	exposure and response prevention
+T4	method 0 21	Metacognitive therapy
+T6	disease 247 286	pediatric obsessive-compulsive disorder
+T7	disease 288 291	OCD
+T9	method 205 232	psychotherapeutic treatment
+T10	method 160 191	Exposure with ritual prevention
+T13	Health_factors 376 384	children
+T14	method 344 365	metacognitive therapy
+T16	Health_factors 430 438	children
+T17	Health_factors 443 454	adolescents
+T18	disease 460 463	OCD
+T20	method 504 515	ERP therapy
+T21	method 497 500	MCT
+T26	method 607 616	follow-up
+T28	disease 658 677	Depressive symptoms
+T32	method 901 910	follow-up
+T36	disease 1152 1165	pediatric OCD
+T37	method 1128 1131	ERP
+T38	method 1045 1048	MCT
+T39	disease 1301 1304	OCD
+T42	method 1211 1214	MCT
+T1	method 193 196	ERP
+R1	abbreviation_for Arg1:T1 Arg2:T10	
+R2	hyponym_of Arg1:T10 Arg2:T9	
+R3	hyponym_of Arg1:T1 Arg2:T9	
+T2	disease 257 286	obsessive-compulsive disorder
+R4	abbreviation_for Arg1:T7 Arg2:T2	
+R5	treatment_for Arg1:T10 Arg2:T6	
+R6	treatment_for Arg1:T1 Arg2:T6	
+T5	method 367 370	MCT
+R7	abbreviation_for Arg1:T5 Arg2:T14	
+R8	occurs_in Arg1:T16 Arg2:T18	
+R9	occurs_in Arg1:T17 Arg2:T18	
+R10	treatment_for Arg1:T38 Arg2:T36	
+R11	treatment_for Arg1:T37 Arg2:T36	

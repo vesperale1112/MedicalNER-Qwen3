@@ -1,0 +1,68 @@
+T1	physiology 36 67	dynamic functional connectivity
+T2	disease 136 161	Major depressive disorder
+T3	disease 163 166	MDD
+T4	disease 198 219	psychiatric disorders
+T5	disease 484 487	MDD
+T6	disease 551 554	MDD
+T8	disease 942 945	MDD
+T9	disease 1183 1186	MDD
+T10	disease 1621 1624	MDD
+T11	disease 1765 1768	MDD
+T12	disease 1951 1961	depression
+T13	symptom 0 18	Personality traits
+R1	associated_with Arg1:T13 Arg2:T1	
+T14	method 100 122	resting-state analysis
+R2	abbreviation_for Arg1:T3 Arg2:T2	
+R3	hyponym_of Arg1:T2 Arg2:T4	
+R4	hyponym_of Arg1:T3 Arg2:T4	
+T15	symptom 323 334	Personality
+R5	associated_with Arg1:T15 Arg2:T5	
+#1	AnnotatorNotes T13	C0233849
+T16	region 792 831	dynamic functional network connectivity
+T17	region 833 837	DFNC
+R6	abbreviation_for Arg1:T17 Arg2:T16	
+T18	method 858 876	resting-state fMRI
+#2	AnnotatorNotes T18	C4288291
+T19	method 1095 1128	Eysenck Personality Questionnaire
+T20	method 1130 1133	EPQ
+R7	abbreviation_for Arg1:T20 Arg2:T19	
+T21	symptom 1321 1333	extraversion
+T22	symptom 1371 1382	neuroticism
+T23	physiology 1655 1685	activity and positive emotions
+R10	characteristic_of Arg1:T23 Arg2:T10	
+T24	Health_factors 1850 1855	trait
+T25	physiology 1873 1903	brain's dynamic characteristic
+R13	associated_with Arg1:T24 Arg2:T25	
+#3	AnnotatorNotes T22	C0564509
+#4	AnnotatorNotes T21	C0564508
+#5	AnnotatorNotes T19	C0582625
+#6	AnnotatorNotes T20	C0582625
+#7	AnnotatorNotes T24	C0233849
+#8	AnnotatorNotes T15	C0233849
+T27	method 965 993	state-based dynamic measures
+T32	physiology 1712 1753	dynamic functional connectivity mechanism
+T33	method 1219 1233	health control
+T34	disease 71 96	major depression disorder
+T31	physiology 681 707	brain connectivity pattern
+T35	symptom 559 577	personality traits
+T36	symptom 1043 1061	personality traits
+T37	symptom 1063 1075	extraversion
+T38	symptom 1080 1091	neuroticism
+T40	symptom 1479 1502	sensory-related regions
+T29	region 1541 1547	cortex
+T41	physiology 280 321	cognitive, emotional and social functions
+T42	physiology 380 388	thinking
+T43	Health_factors 393 407	behavior style
+T26	region 1507 1510	DMN
+T28	region 1552 1569	subcortical areas
+T30	method 792 845	dynamic functional network connectivity (DFNC) method
+R8	occurs_in Arg1:T1 Arg2:T34	
+T39	symptom 1516 1532	weak connections
+R9	associated_with Arg1:T9 Arg2:T21	
+R12	associated_with Arg1:T9 Arg2:T22	
+T44	symptom 1456 1475	hyper-connectedness
+R15	located_in Arg1:T44 Arg2:T40	
+R16	located_in Arg1:T44 Arg2:T26	
+R17	located_in Arg1:T39 Arg2:T29	
+R18	located_in Arg1:T39 Arg2:T28	
+R19	associated_with Arg1:T32 Arg2:T11	

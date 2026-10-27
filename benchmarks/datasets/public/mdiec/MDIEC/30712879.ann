@@ -1,0 +1,72 @@
+T0	disease 31 59	generalised anxiety disorder
+T1	method 0 26	Pharmacological treatments
+T2	method 63 80	systematic review
+T3	method 85 106	network meta-analysis
+T4	disease 119 147	Generalised anxiety disorder
+T5	disease 189 212	substantial dysfunction
+T7	Health_factors 270 280	clinicians
+T8	drug 434 438	drug
+T12	method 460 477	systematic review
+T13	method 482 503	network meta-analysis
+T14	method 521 538	randomised trials
+T17	disease 565 593	generalised anxiety disorder
+T18	method 610 617	MEDLINE
+T19	method 619 633	Web of Science
+T20	method 635 651	Cochrane Library
+T21	method 653 671	ClinicalTrials.gov
+T24	method 737 746	Drugs@FDA
+T25	Health_factors 542 559	adult outpatients
+T28	method 801 822	active control trials
+T30	method 941 943	MD
+T33	method 924 939	mean difference
+T35	method 1098 1109	odds ratios
+T36	method 1116 1157	network meta-analyses with random effects
+T38	method 1059 1093	summary mean treatment differences
+T40	method 1383 1389	trials
+T43	drug 1455 1467	active drugs
+T45	drug 1480 1490	Duloxetine
+T46	drug 1544 1554	pregabalin
+T47	drug 1588 1599	venlafaxine
+T48	drug 1637 1649	escitalopram
+T49	method 1492 1494	MD
+T50	method 1505 1522	credible interval
+T51	method 1556 1558	MD
+T52	method 1601 1603	MD
+T53	method 1651 1653	MD
+T55	drug 1753 1764	Mirtazapine
+T56	drug 1766 1776	sertraline
+T57	drug 1778 1788	fluoxetine
+T58	drug 1790 1799	buspirone
+T59	drug 1805 1816	agomelatine
+T60	method 1911 1923	sample sizes
+T62	drug 1925 1935	Quetiapine
+T63	method 1937 1939	MD
+T64	method 2028 2038	odds ratio
+T66	drug 2099 2109	paroxetine
+T67	drug 2114 2129	benzodiazepines
+T70	drug 2401 2423	pharmacological agents
+T71	disease 2445 2473	generalised anxiety disorder
+T72	method 2484 2500	network analysis
+T73	method 2378 2397	contemporary review
+T74	disease 2552 2580	generalised anxiety disorder
+T75	drug 2599 2609	medication
+T79	method 2634 2657	pharmacological therapy
+T80	method 2693 2727	pharmacological treatment strategy
+R1	associated_with Arg1:T4 Arg2:T5	
+T82	method 214 239	Pharmacological treatment
+T9	method 673 714	Chinese National Knowledge Infrastructure
+T15	method 716 720	CNKI
+R2	abbreviation_for Arg1:T15 Arg2:T9	
+T16	method 723 735	Wanfang data
+T22	method 751 787	commercial pharmaceutical registries
+R3	abbreviation_for Arg1:T30 Arg2:T33	
+T6	method 958 986	Hamilton Anxiety Scale Score
+T10	method 1524 1527	CrI
+R4	abbreviation_for Arg1:T10 Arg2:T50	
+T11	method 1569 1572	CrI
+T23	method 1614 1617	CrI
+T26	method 1664 1667	CrI
+T27	method 1949 1952	CrI
+T29	method 1993 1998	HAM-A
+T31	method 2048 2051	CrI
+R5	treatment_for Arg1:T70 Arg2:T71	

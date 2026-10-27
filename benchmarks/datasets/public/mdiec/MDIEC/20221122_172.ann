@@ -1,0 +1,7 @@
+T1	disease 47 72	neuropsychiatric symptoms
+T2	method 108 129	cross-sectional study
+T3	Health_factors 133 138	obese
+T4	Health_factors 0 27	History of major depression
+R1	associated_with Arg1:T4 Arg2:T1	
+T5	disease 81 102	systemic inflammation
+R2	occurs_in Arg1:T1 Arg2:T3	

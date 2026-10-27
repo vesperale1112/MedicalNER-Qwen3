@@ -1,0 +1,70 @@
+T1	disease 32 51	depressive symptoms
+T2	disease 69 90	chronic heart failure
+T3	disease 171 186	cardiac disease
+T4	disease 216 229	heart failure
+T5	disease 353 372	depressive symptoms
+T6	disease 422 432	depression
+T7	disease 450 463	heart failure
+T8	disease 578 597	depressive symptoms
+T9	disease 643 656	heart failure
+T10	disease 777 790	heart failure
+T11	disease 980 993	heart failure
+T13	disease 2436 2455	depressive symptoms
+T14	method 96 122	HF-ACTION randomized trial
+T15	disease 133 143	Depression
+T16	Health_factors 272 295	adverse health outcomes
+R3	risk_factor_of Arg1:T15 Arg2:T16	
+T17	Health_factors 325 341	aerobic exercise
+R4	treatment_for Arg1:T17 Arg2:T5	
+T18	method 693 733	Multicenter, randomized controlled trial
+T20	method 1017 1045	Beck Depression Inventory II
+T21	method 1047 1053	BDI-II
+R5	abbreviation_for Arg1:T21 Arg2:T20	
+T22	disease 1121 1131	Depressive
+T23	method 1429 1469	usual guideline-based heart failure care
+T24	method 1567 1573	BDI-II
+T25	method 1840 1846	BDI-II
+T26	method 1905 1911	BDI-II
+T27	Health_factors 2384 2401	exercise training
+R6	treatment_for Arg1:T27 Arg2:T13	
+T19	method 2002 2008	BDI-II
+T28	method 2057 2059	CI
+T29	method 2099 2101	CI
+T30	method 2141 2143	CI
+T31	method 2216 2218	CI
+T32	method 2258 2260	CI
+T33	method 2299 2301	CI
+T34	method 1772 1784	hazard ratio
+T35	method 1786 1788	HR
+T36	method 1801 1803	CI
+T12	method 2356 2382	guideline-based usual care
+T37	Health_factors 11 28	exercise training
+T38	Health_factors 521 538	exercise training
+T39	Health_factors 410 418	exercise
+T40	method 612 622	usual care
+T41	Health_factors 1287 1303	aerobic exercise
+T42	Health_factors 1350 1363	home exercise
+T43	method 1700 1710	usual care
+T44	Health_factors 1748 1764	aerobic exercise
+T45	method 1950 1960	usual care
+T46	Health_factors 1962 1978	aerobic exercise
+T47	Health_factors 2029 2045	aerobic exercise
+T48	method 2077 2087	usual care
+T49	Health_factors 2188 2204	aerobic exercise
+T50	method 2236 2246	usual care
+R1	associated_with Arg1:T15 Arg2:T3	
+T52	Health_factors 1415 1424	education
+R7	abbreviation_for Arg1:T35 Arg2:T34	
+T61	disease 1507 1512	death
+T62	method 1617 1626	follow-up
+T56	signs 883 917	left ventricular ejection fraction
+T51	method 1222 1235	INTERVENTIONS
+T53	method 939 971	New York Heart Association class
+T54	disease 1667 1671	died
+R2	associated_with Arg1:T15 Arg2:T4	
+T55	method 797 821	medical clinical centers
+T57	Health_factors 1516 1531	hospitalization
+T58	Health_factors 1680 1692	hospitalized
+R8	occurs_in Arg1:T1 Arg2:T2	
+R9	occurs_in Arg1:T6 Arg2:T7	
+R10	associated_with Arg1:T46 Arg2:T19	

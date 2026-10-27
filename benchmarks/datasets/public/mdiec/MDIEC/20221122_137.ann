@@ -1,0 +1,5 @@
+T1	disease 12 31	Vascular depression
+T3	disease 155 177	cerebrovascular damage
+T4	disease 60 80	late-life depression
+R1	hyponym_of Arg1:T1 Arg2:T4	
+R2	associated_with Arg1:T1 Arg2:T3	

@@ -1,0 +1,60 @@
+T1	disease 70 86	Major Depression
+T3	disease 198 223	major depressive disorder
+T4	disease 225 228	MDD
+T5	disease 360 363	MDD
+T6	disease 473 476	MDD
+T8	disease 922 933	current MDD
+T10	disease 1435 1438	MDD
+T12	disease 1936 1939	MDD
+T13	signs 2047 2074	depressive symptom severity
+T14	disease 2210 2213	MDD
+T16	disease 2426 2429	MDD
+T17	Health_factors 2627 2641	online trainer
+T18	disease 2563 2584	depression recurrence
+T19	method 129 154	Randomized Clinical Trial
+T20	method 12 51	Web-Based Guided Self-help Intervention
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+T22	method 411 450	web-based guided self-help intervention
+T23	method 513 548	Two-group randomized clinical trial
+T25	disease 832 855	subthreshold depression
+T26	method 857 912	Centre for Epidemiologic Studies Depression Scale score
+T27	method 1185 1224	web-based guided self-help intervention
+T28	method 1226 1274	cognitive-behavioral and problem-solving therapy
+T29	method 1321 1354	web-based psychoeducation program
+T32	method 1602 1657	Structured Clinical Interview for DSM-IV Axis Disorders
+T35	method 1998 2021	Cox regression analyses
+T36	method 2086 2098	hazard ratio
+T37	method 2112 2114	CI
+T38	method 2227 2229	CI
+T39	disease 2289 2312	subthreshold depression
+T40	method 2327 2366	web-based guided self-help intervention
+R2	treatment_for Arg1:T40 Arg2:T16	
+T41	method 947 1000	Diagnostic and Statistical Manual of Mental Disorders
+T42	method 168 193	Evidence-based treatments
+T2	Health_factors 1129 1151	primary care clinician
+T7	method 1103 1113	usual care
+T9	method 2381 2400	enhanced usual care
+R7	help_diagnose Arg1:T26 Arg2:T25	
+R8	help_diagnose Arg1:T41 Arg2:T8	
+T11	Health_factors 1802 1807	women
+T15	Health_factors 90 96	Adults
+T31	Health_factors 1781 1784	age
+T44	method 1511 1520	follow-up
+T45	method 1677 1686	follow-up
+T46	method 1844 1853	follow-up
+T47	method 2149 2158	follow-up
+T30	method 1044 1057	INTERVENTIONS
+T33	Health_factors 746 754	employer
+T34	method 1905 1917	intervention
+R3	treatment_for Arg1:T20 Arg2:T1	
+R4	occurs_in Arg1:T1 Arg2:T15	
+T43	Health_factors 755 763	employee
+T48	Health_factors 649 667	general population
+T24	Health_factors 267 297	functional and health outcomes
+T21	method 1446 1458	intervention
+T49	method 1543 1568	blinded diagnostic raters
+T50	disease 2533 2558	first onset of depression
+T51	disease 102 125	Subthreshold Depression
+R6	occurs_in Arg1:T1 Arg2:T51	
+T52	Health_factors 820 826	adults
+R5	occurs_in Arg1:T39 Arg2:T40	

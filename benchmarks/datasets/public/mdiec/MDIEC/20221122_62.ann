@@ -1,0 +1,8 @@
+T3	disease 81 91	depression
+T4	disease 96 123	neurodegenerative disorders
+T5	gene 6 19	NF-alpha1/CPE
+R1	treatment_for Arg1:T5 Arg2:T3	
+R2	treatment_for Arg1:T5 Arg2:T4	
+T1	drug 35 52	therapeutic agent
+R3	hyponym_of Arg1:T5 Arg2:T1	
+T2	drug 56 60	drug

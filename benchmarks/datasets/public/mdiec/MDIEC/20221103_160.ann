@@ -1,0 +1,8 @@
+T1	method 42 69	early dietary interventions
+T3	Health_factors 103 121	Mediterranean diet
+T4	Health_factors 123 125	MD
+T5	disease 159 169	depression
+T6	Health_factors 0 15	Young adulthood
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+R2	treatment_for Arg1:T4 Arg2:T5	
+R3	treatment_for Arg1:T3 Arg2:T5	

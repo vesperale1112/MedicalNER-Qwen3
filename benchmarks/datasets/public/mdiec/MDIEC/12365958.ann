@@ -1,0 +1,94 @@
+T0	disease 30 56	brain volume abnormalities
+T1	disease 90 130	attention-deficit/hyperactivity disorder
+T3	Health_factors 73 84	adolescents
+T4	disease 148 176	anatomic brain abnormalities
+T5	disease 200 240	attention-deficit/hyperactivity disorder
+T6	disease 242 246	ADHD
+T7	method 286 309	cross-sectional designs
+T8	drug 338 352	stimulant drug
+T9	signs 386 408	regional brain volumes
+T10	Health_factors 480 507	unmedicated male and female
+T12	disease 522 526	ADHD
+T13	method 531 547	healthy controls
+T20	method 585 603	Case-control study
+T22	Health_factors 707 718	adolescents
+T23	disease 724 728	ADHD
+T24	Health_factors 761 764	age
+T26	method 873 907	anatomic magnetic resonance images
+T28	method 770 790	sex-matched controls
+T29	method 636 671	National Institute of Mental Health
+T32	region 1040 1050	cerebellum
+T33	region 1052 1073	gray and white matter
+T34	region 1124 1129	brain
+T35	region 1090 1095	lobes
+T36	region 1030 1038	cerebrum
+T40	disease 1211 1215	ADHD
+T43	signs 1242 1255	brain volumes
+T46	signs 1370 1392	total cerebral volumes
+T47	disease 1590 1594	ADHD
+T49	Health_factors 1564 1584	unmedicated children
+T50	signs 1630 1652	total cerebral volumes
+T51	disease 1826 1830	ADHD
+T52	disease 1984 1988	ADHD
+T53	Health_factors 1800 1820	Unmedicated children
+T55	Health_factors 1960 1978	medicated children
+T56	signs 1865 1891	total white matter volumes
+T58	Health_factors 2046 2049	age
+T59	region 2111 2121	cerebellum
+T60	disease 2006 2030	Volumetric abnormalities
+T61	disease 2199 2203	ADHD
+T63	signs 2256 2271	caudate volumes
+T64	Health_factors 2315 2326	adolescence
+T67	Health_factors 2365 2371	female
+T68	disease 2551 2555	ADHD
+T71	region 2432 2439	caudate
+T73	method 2564 2584	Pearson coefficients
+T75	region 2398 2430	Frontal and temporal gray matter
+T76	region 2703 2710	caudate
+T77	Health_factors 2769 2778	childhood
+T78	Health_factors 2783 2794	adolescence
+T81	physiology 2861 2878	brain development
+T82	disease 2882 2886	ADHD
+T83	method 2931 2950	stimulant treatment
+T84	Health_factors 2812 2857	genetic and/or early environmental influences
+T85	Health_factors 60 68	children
+R1	occurs_in Arg1:T3 Arg2:T1	
+T86	physiology 0 26	Developmental trajectories
+R5	characteristic_of Arg1:T4 Arg2:T5	
+R6	abbreviation_for Arg1:T6 Arg2:T5	
+R7	characteristic_of Arg1:T4 Arg2:T6	
+R8	occurs_in Arg1:T10 Arg2:T12	
+T2	Health_factors 694 702	children
+R9	occurs_in Arg1:T22 Arg2:T23	
+R10	occurs_in Arg1:T2 Arg2:T23	
+T11	Health_factors 730 733	age
+T14	Health_factors 792 795	age
+R11	located_in Arg1:T33 Arg2:T35	
+T15	region 1101 1116	caudate nucleus
+R12	located_in Arg1:T15 Arg2:T34	
+R13	characteristic_of Arg1:T43 Arg2:T40	
+T16	signs 1465 1483	cerebellar volumes
+R14	occurs_in Arg1:T49 Arg2:T47	
+R15	characteristic_of Arg1:T50 Arg2:T47	
+T17	signs 1746 1764	cerebellar volumes
+R16	characteristic_of Arg1:T17 Arg2:T47	
+T18	method 1704 1724	Bonferroni corrected
+R17	occurs_in Arg1:T53 Arg2:T51	
+R18	characteristic_of Arg1:T56 Arg2:T51	
+R19	occurs_in Arg1:T55 Arg2:T52	
+T19	signs 2072 2089	cerebral measures
+T21	signs 2133 2156	Caudate nucleus volumes
+R20	characteristic_of Arg1:T21 Arg2:T61	
+T25	Health_factors 2356 2360	male
+T27	signs 2445 2463	cerebellar volumes
+R21	associated_with Arg1:T75 Arg2:T68	
+R22	associated_with Arg1:T71 Arg2:T68	
+R23	associated_with Arg1:T27 Arg2:T68	
+T30	physiology 2649 2675	Developmental trajectories
+R24	occurs_in Arg1:T81 Arg2:T82	
+R25	associated_with Arg1:T84 Arg2:T81	
+R26	occurs_in Arg1:T0 Arg2:T85	
+R27	occurs_in Arg1:T0 Arg2:T3	
+R2	occurs_in Arg1:T85 Arg2:T1	
+T31	Health_factors 1001 1004	age
+T37	method 2495 2539	arent- and clinician-rated severity measures

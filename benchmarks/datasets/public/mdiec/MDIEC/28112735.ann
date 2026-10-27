@@ -1,0 +1,106 @@
+T0	drug 0 8	Nicotine
+T1	disease 18 32	hypofrontality
+T2	disease 67 80	schizophrenia
+T3	method 36 49	animal models
+T4	disease 53 62	addiction
+T5	gene 169 201	nicotinic acetylcholine receptor
+T7	gene 203 208	nAChR
+T8	region 86 103	prefrontal cortex
+T10	physiology 120 146	higher cognitive processes
+T11	disease 291 317	neuropsychiatric disorders
+T12	disease 329 342	schizophrenia
+T14	Health_factors 381 394	heavy smoking
+T16	physiology 244 276	PFC spontaneous default activity
+T17	gene 502 519	human CHRNA5 gene
+T18	gene 534 549	5 nAChR subunit
+T19	disease 596 609	schizophrenia
+T20	method 406 437	genome-wide association studies
+T21	method 439 443	GWAS
+T23	gene 489 493	SNPs
+T24	Health_factors 584 591	smoking
+T25	gene 456 487	single-nucleotide polymorphisms
+T26	physiology 629 648	nAChR gene function
+T27	method 611 615	Mice
+T30	Health_factors 805 813	behavior
+T31	physiology 762 793	cellular and circuit mechanisms
+T32	physiology 732 751	human polymorphisms
+T33	disease 657 690	PFC-dependent behavioral deficits
+T34	method 833 837	mice
+T36	Health_factors 909 927	social interaction
+T37	physiology 932 957	sensorimotor gating tasks
+T38	disease 871 905	neurocognitive behavioral deficits
+T39	gene 851 862	human 5 SNP
+T41	drug 1020 1028	nicotine
+T42	physiology 1058 1085	PFC pyramidal cell activity
+T43	physiology 1089 1105	nAChR modulation
+T44	method 959 985	Two-photon calcium imaging
+T46	physiology 1109 1154	layer II/III hierarchical inhibitory circuits
+T47	method 989 1007	awake mouse models
+T49	region 1215 1267	vasoactive intestinal polypeptide (VIP) interneurons
+T50	gene 1215 1248	vasoactive intestinal polypeptide
+T52	gene 1293 1305	somatostatin
+T53	gene 1307 1310	SOM
+T54	region 1346 1376	layer II/III pyramidal neurons
+T55	method 1159 1195	5-SNP-expressing and 5-knockout mice
+T59	disease 1449 1463	hypofrontality
+T60	disease 1490 1511	psychiatric disorders
+T61	disease 1523 1536	schizophrenia
+T62	disease 1541 1550	addiction
+T63	method 1413 1434	5-SNP-expressing mice
+T65	drug 1560 1568	nicotine
+T66	disease 1598 1612	hypofrontality
+T67	drug 1648 1656	nicotine
+T68	disease 1715 1728	schizophrenia
+T69	disease 1790 1803	schizophrenia
+R1	occurs_in Arg1:T3 Arg2:T4	
+R2	occurs_in Arg1:T3 Arg2:T2	
+T73	region 105 108	PFC
+R3	treatment_for Arg1:T0 Arg2:T1	
+R4	occurs_in Arg1:T1 Arg2:T3	
+R5	abbreviation_for Arg1:T73 Arg2:T8	
+R6	associated_with Arg1:T8 Arg2:T10	
+R7	associated_with Arg1:T73 Arg2:T10	
+T9	physiology 224 242	cholinergic inputs
+R8	associated_with Arg1:T10 Arg2:T5	
+R9	abbreviation_for Arg1:T7 Arg2:T5	
+R10	associated_with Arg1:T5 Arg2:T9	
+R11	associated_with Arg1:T7 Arg2:T9	
+R12	characteristic_of Arg1:T16 Arg2:T11	
+R13	characteristic_of Arg1:T14 Arg2:T12	
+R14	hyponym_of Arg1:T12 Arg2:T11	
+R15	characteristic_of Arg1:T16 Arg2:T12	
+R16	abbreviation_for Arg1:T21 Arg2:T20	
+R17	abbreviation_for Arg1:T23 Arg2:T25	
+R18	located_in Arg1:T23 Arg2:T17	
+R19	located_in Arg1:T25 Arg2:T17	
+R20	associated_with Arg1:T25 Arg2:T18	
+R21	associated_with Arg1:T23 Arg2:T18	
+R22	risk_factor_of Arg1:T25 Arg2:T24	
+R23	risk_factor_of Arg1:T25 Arg2:T19	
+R24	risk_factor_of Arg1:T23 Arg2:T24	
+R25	risk_factor_of Arg1:T23 Arg2:T19	
+R26	occurs_in Arg1:T38 Arg2:T36	
+R27	occurs_in Arg1:T38 Arg2:T37	
+R28	occurs_in Arg1:T27 Arg2:T26	
+R29	associated_with Arg1:T26 Arg2:T33	
+R30	occurs_in Arg1:T34 Arg2:T39	
+R31	associated_with Arg1:T39 Arg2:T38	
+R32	associated_with Arg1:T41 Arg2:T42	
+R33	located_in Arg1:T43 Arg2:T46	
+R34	associated_with Arg1:T42 Arg2:T43	
+T6	gene 1250 1253	VIP
+R35	abbreviation_for Arg1:T6 Arg2:T50	
+R36	occurs_in Arg1:T55 Arg2:T49	
+R37	abbreviation_for Arg1:T53 Arg2:T52	
+T13	region 1293 1323	somatostatin (SOM) interneuron
+R38	associated_with Arg1:T49 Arg2:T13	
+R39	associated_with Arg1:T13 Arg2:T54	
+R40	associated_with Arg1:T49 Arg2:T54	
+R41	characteristic_of Arg1:T59 Arg2:T60	
+R42	hyponym_of Arg1:T61 Arg2:T60	
+R43	hyponym_of Arg1:T62 Arg2:T60	
+R44	characteristic_of Arg1:T59 Arg2:T61	
+R45	characteristic_of Arg1:T59 Arg2:T62	
+R46	treatment_for Arg1:T65 Arg2:T66	
+R47	treatment_for Arg1:T67 Arg2:T68	
+T15	Health_factors 1824 1831	smoking

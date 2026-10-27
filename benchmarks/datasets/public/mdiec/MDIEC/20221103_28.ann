@@ -1,0 +1,13 @@
+T2	method 57 74	ALE meta-analyses
+T3	method 96 128	antidepressant treatment studies
+T5	region 163 179	anterior insular
+T6	physiology 230 237	emotion
+T8	disease 255 258	MDD
+R3	associated_with Arg1:T5 Arg2:T6	
+R1	occurs_in Arg1:T6 Arg2:T8	
+T4	physiology 242 251	cognition
+R2	associated_with Arg1:T5 Arg2:T4	
+R4	occurs_in Arg1:T4 Arg2:T8	
+T1	region 184 217	rostral anterior cingulate cortex
+R5	associated_with Arg1:T1 Arg2:T6	
+R6	associated_with Arg1:T1 Arg2:T4	

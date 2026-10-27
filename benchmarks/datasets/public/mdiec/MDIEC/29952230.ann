@@ -1,0 +1,21 @@
+T1	disease 41 57	Bipolar Disorder
+T2	disease 71 96	Major Depression Disorder
+T3	disease 180 196	bipolar disorder
+T4	disease 350 366	bipolar disorder
+T5	disease 728 744	bipolar disorder
+T6	disease 847 863	bipolar disorder
+T7	disease 228 253	major depression disorder
+T8	method 827 842	screening tools
+T9	method 445 454	screening
+#1	AnnotatorNotes T2	C1269683
+#2	AnnotatorNotes T7	C1269683
+T10	method 404 434	psychiatric diagnostic workups
+#3	AnnotatorNotes T10	C0846574
+R1	hyponym_of Arg1:T9 Arg2:T10	
+#4	AnnotatorNotes T9	C0220908
+T11	method 994 1003	screening
+T12	method 101 119	Integrative Review
+T13	method 467 485	integrative review
+T15	Health_factors 1007 1028	health care providers
+T18	Health_factors 655 675	health care provider
+T14	method 965 989	comprehensive assessment

@@ -1,0 +1,56 @@
+T1	disease 45 61	major depression
+T2	disease 216 232	major depression
+T3	disease 234 259	major depressive disorder
+T4	disease 261 264	MDD
+T5	disease 469 472	MDD
+T6	disease 701 704	MDD
+T7	disease 1249 1270	cognitive dysfunction
+T8	disease 1281 1297	major depression
+T9	disease 1388 1391	MDD
+T10	disease 1559 1562	MDD
+T12	disease 1849 1870	cognitive dysfunction
+T13	disease 1888 1891	MDD
+T14	disease 2006 2009	MDD
+T15	disease 2115 2136	cognitive dysfunction
+T16	method 79 102	web-based questionnaire
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+T17	method 518 541	web-based questionnaire
+R3	risk_factor_of Arg1:T8 Arg2:T7	
+T18	method 1490 1515	cognition evaluation test
+R4	help_diagnose Arg1:T18 Arg2:T10	
+T19	method 1610 1641	Hasegawa Dementia Scale-Revised
+R6	help_diagnose Arg1:T19 Arg2:T10	
+#1	AnnotatorNotes T7	C0338656
+T11	method 2075 2083	THINC-it
+T20	method 2056 2069	digital tools
+R9	help_diagnose Arg1:T20 Arg2:T15	
+T21	method 575 588	questionnaire
+T22	method 2102 2111	screening
+#2	AnnotatorNotes T12	C0338656
+#3	AnnotatorNotes T15	C0338656
+T23	method 1456 1481	psychological assessments
+T24	Health_factors 1031 1035	male
+T32	Health_factors 161 180	Japanese physicians
+T33	Health_factors 290 309	Japanese physicians
+T34	Health_factors 637 646	physician
+T35	method 712 742	physician-patient consultation
+T36	method 781 811	physician-patient consultation
+T37	Health_factors 921 931	physicians
+T38	method 970 984	questionnaires
+T39	Health_factors 1136 1180	Japanese Society of Psychiatry and Neurology
+T40	Health_factors 1204 1214	physicians
+T41	Health_factors 1435 1445	physicians
+T42	Health_factors 1648 1673	hospital-based physicians
+T43	Health_factors 1678 1699	general practitioners
+T44	method 1728 1741	consultations
+T45	Health_factors 1775 1785	Physicians
+T46	Health_factors 1907 1917	physicians
+T47	method 1946 1958	consultation
+R2	help_diagnose Arg1:T47 Arg2:T14	
+T48	method 326 336	psychiatry
+T49	method 340 362	psychosomatic medicine
+T50	method 1099 1109	Psychiatry
+R5	hyponym_of Arg1:T11 Arg2:T20	
+R7	help_diagnose Arg1:T21 Arg2:T6	
+R8	characteristic_of Arg1:T12 Arg2:T13	
+T25	method 140 157	clinical practice

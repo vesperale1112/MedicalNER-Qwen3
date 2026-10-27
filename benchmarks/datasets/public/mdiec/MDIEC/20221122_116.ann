@@ -1,0 +1,5 @@
+T1	region 33 54	gray and white matter
+T3	disease 99 115	major depression
+T4	method 196 214	clinical treatment
+T5	signs 167 185	biological markers
+R1	help_diagnose Arg1:T1 Arg2:T3	

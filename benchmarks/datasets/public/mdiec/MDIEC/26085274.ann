@@ -1,0 +1,65 @@
+T1	disease 46 71	depression-like behaviour
+T2	disease 138 163	behavioural abnormalities
+T3	disease 175 182	anxiety
+T4	disease 254 277	behavioural impairments
+T5	disease 319 341	deficits in motivation
+T6	disease 393 402	anhedonia
+T7	disease 531 557	stress-induced impairments
+T10	disease 1430 1456	depression-like behaviours
+T11	method 0 34	Activating positive memory engrams
+R1	treatment_for Arg1:T11 Arg2:T1	
+T12	disease 73 79	Stress
+R2	risk_factor_of Arg1:T12 Arg2:T2	
+T13	disease 187 201	mood disorders
+R3	risk_factor_of Arg1:T12 Arg2:T3	
+R4	risk_factor_of Arg1:T12 Arg2:T13	
+R5	hyponym_of Arg1:T3 Arg2:T2	
+R6	hyponym_of Arg1:T13 Arg2:T2	
+T14	method 203 216	Animal models
+T15	disease 293 307	chronic stress
+R7	risk_factor_of Arg1:T15 Arg2:T4	
+T16	disease 343 387	abnormal responses to behavioural challenges
+R8	hyponym_of Arg1:T5 Arg2:T4	
+R9	hyponym_of Arg1:T16 Arg2:T4	
+R10	hyponym_of Arg1:T6 Arg2:T4	
+T17	region 408 419	hippocampus
+R11	associated_with Arg1:T17 Arg2:T7	
+T18	disease 686 730	stress-induced depression-related behaviours
+T19	method 742 790	optogenetically reactivating dentate gyrus cells
+T20	method 851 888	brain-wide histological investigation
+T21	method 903 975	pharmacological and projection-specific optogenetic blockade experiments
+T22	physiology 1018 1064	hippocampus-amygdala-nucleus-accumbens pathway
+T23	method 1126 1168	chronically reactivating hippocampal cells
+T24	disease 1229 1284	stress-induced behavioural impairments and neurogenesis
+T26	method 1362 1390	activating positive memories
+R13	treatment_for Arg1:T26 Arg2:T10	
+T27	region 1470 1496	dentate gyrus engram cells
+T28	disease 1549 1579	maladaptive behavioural states
+R14	associated_with Arg1:T27 Arg2:T28	
+T29	physiology 458 473	stress response
+T30	physiology 1187 1202	positive memory
+T8	method 1311 1328	light stimulation
+R17	associated_with Arg1:T17 Arg2:T29	
+#1	AnnotatorNotes T12	Loss of neuron(C0598940)
+#2	AnnotatorNotes T1	Loss of neuron(C0598940)
+#3	AnnotatorNotes T2	Loss of neuron(C0598940)
+#4	AnnotatorNotes T4	Loss of neuron(C0598940)
+#5	AnnotatorNotes T15	Loss of neuron(C0598940)
+#6	AnnotatorNotes T5	Loss of neuron(C0598940)
+#8	AnnotatorNotes T6	Loss of neuron(C0598940)
+#10	AnnotatorNotes T7	Loss of neuron(C0598940)
+#11	AnnotatorNotes T18	Loss of neuron(C0598940)
+#12	AnnotatorNotes T24	Loss of neuron(C0598940)
+#13	AnnotatorNotes T10	Loss of neuron(C0598940)
+#14	AnnotatorNotes T28	Loss of neuron(C0598940)
+T9	physiology 988 1010	glutamatergic activity
+R18	treatment_for Arg1:T23 Arg2:T24	
+T25	region 771 790	dentate gyrus cells
+R16	treatment_for Arg1:T19 Arg2:T18	
+R19	risk_factor_of Arg1:T15 Arg2:T5	
+R20	risk_factor_of Arg1:T15 Arg2:T16	
+R21	risk_factor_of Arg1:T15 Arg2:T6	
+T32	method 734 738	mice
+R22	occurs_in Arg1:T18 Arg2:T32	
+R15	located_in Arg1:T9 Arg2:T22	
+R12	associated_with Arg1:T23 Arg2:T30	

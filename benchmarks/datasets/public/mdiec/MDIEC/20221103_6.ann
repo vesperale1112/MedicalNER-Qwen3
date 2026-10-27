@@ -1,0 +1,13 @@
+T1	gene 16 21	APPL2
+T4	disease 72 113	depressant-related olfactory dysfunctions
+T5	drug 118 126	baicalin
+T6	physiology 141 172	APPL2-mediated GR hyperactivity
+T7	physiology 185 203	adult neurogenesis
+T8	disease 228 259	depressive and anxiety symptoms
+T9	physiology 274 293	olfactory functions
+T10	method 298 320	antidepressant therapy
+R1	associated_with Arg1:T1 Arg2:T4	
+R2	associated_with Arg1:T5 Arg2:T6	
+R3	associated_with Arg1:T5 Arg2:T7	
+R4	treatment_for Arg1:T5 Arg2:T8	
+R5	treatment_for Arg1:T5 Arg2:T9	

@@ -1,0 +1,5 @@
+T6	gene 158 162	IL-8
+T8	disease 51 61	depression
+T9	disease 106 116	depression
+T10	disease 226 236	depression
+R1	help_diagnose Arg1:T6 Arg2:T10	

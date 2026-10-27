@@ -1,0 +1,55 @@
+T1	disease 14 30	mental disorders
+T2	disease 245 261	mental disorders
+T3	disease 485 501	mental disorders
+T4	disease 503 517	mood disorders
+T5	disease 519 536	anxiety disorders
+T7	disease 538 572	alcohol-use and drug-use disorders
+T8	disease 574 587	schizophrenia
+T9	disease 598 617	psychotic disorders
+T10	disease 619 634	eating disorder
+T11	disease 636 660	impulse-control disorder
+T12	disease 666 674	dementia
+T14	disease 1131 1139	dementia
+T15	Health_factors 1377 1390	psychiatrists
+T16	disease 1711 1719	dementia
+T17	disease 1869 1886	Anxiety disorders
+T18	disease 2060 2068	dementia
+T19	disease 2159 2175	mental disorders
+T21	Health_factors 97 123	China Mental Health Survey
+T23	method 425 463	cross-sectional epidemiological survey
+T24	Health_factors 729 735	adults
+T25	Health_factors 936 949	psychiatrists
+T26	method 959 1003	Composite International Diagnostic Interview
+T28	method 1072 1115	Community Screening Instrument for Dementia
+T30	method 1734 1736	CI
+T31	Health_factors 2079 2083	aged
+T33	Health_factors 2096 2101	older
+T34	signs 2242 2261	lifetime prevalence
+T35	signs 2299 2318	lifetime prevalence
+T36	signs 2363 2382	lifetime prevalence
+T38	Health_factors 2607 2632	health-care professionals
+T39	Health_factors 2680 2693	mental health
+T43	signs 2335 2354	12-month prevalence
+T44	signs 2274 2290	point prevalence
+T46	method 1168 1202	Geriatric Mental State Examination
+T47	method 1009 1066	Structured Clinical Interview for DSM-IV Axis I disorders
+T48	Health_factors 300 337	social and psychological risk factors
+T51	method 43 80	cross-sectional epidemiological study
+T20	method 151 183	nationally representative survey
+T6	method 681 718	multistage clustered-area probability
+T22	method 846 869	Face-to-face interviews
+T49	method 887 903	two-stage design
+T50	Health_factors 907 931	trained lay interviewers
+T13	signs 2217 2233	point prevalence
+T27	Health_factors 2571 2584	opportunities
+T29	Health_factors 2589 2602	policy makers
+T32	method 1204 1235	Data-quality control procedures
+T37	method 1245 1256	logic check
+T40	method 1271 1297	sequential recording check
+T41	method 1303 1319	phone-call check
+T42	Health_factors 1327 1346	quality controllers
+T45	method 1352 1369	reinterview check
+R1	hyponym_of Arg1:T37 Arg2:T32	
+R2	hyponym_of Arg1:T40 Arg2:T32	
+R3	hyponym_of Arg1:T41 Arg2:T32	
+R4	hyponym_of Arg1:T45 Arg2:T32	

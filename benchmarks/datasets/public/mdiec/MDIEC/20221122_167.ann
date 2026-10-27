@@ -1,0 +1,9 @@
+T1	disease 43 47	pain
+T4	disease 86 120	depressive and behavioral symptoms
+T5	disease 124 132	dementia
+T6	Health_factors 199 212	LTC residents
+T7	disease 165 169	pain
+R1	risk_factor_of Arg1:T1 Arg2:T4	
+T2	disease 218 222	ADRD
+R2	occurs_in Arg1:T4 Arg2:T5	
+R3	occurs_in Arg1:T6 Arg2:T2	

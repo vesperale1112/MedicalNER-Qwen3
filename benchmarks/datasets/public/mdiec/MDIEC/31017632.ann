@@ -1,0 +1,103 @@
+T0	disease 64 80	Eating Disorders
+T2	disease 27 37	Infections
+T3	Health_factors 41 50	Childhood
+T4	Health_factors 84 99	Adolescent Girl
+T5	disease 181 202	psychiatric disorders
+T6	disease 274 290	eating disorders
+T7	disease 113 123	Infections
+T8	disease 207 224	suicidal behavior
+T13	drug 385 406	anti-infective agents
+T15	Health_factors 335 350	hospitalization
+T16	method 492 546	nationwide, population-based, prospective cohort study
+T17	Health_factors 557 562	girls
+T18	method 616 627	followed up
+T19	method 706 735	Danish longitudinal registers
+T21	Health_factors 838 841	age
+T22	Health_factors 843 858	calendar period
+T25	Health_factors 892 931	parental history of psychiatric illness
+T26	Health_factors 860 880	parental educational
+T27	method 796 820	survival analysis models
+T29	disease 968 978	infections
+T31	disease 1020 1030	infections
+T32	drug 994 1015	anti-infective agents
+T35	disease 1110 1125	eating disorder
+T36	disease 1127 1143	anorexia nervosa
+T37	disease 1145 1160	bulimia nervosa
+T39	Health_factors 1221 1238	outpatient clinic
+T43	method 1338 1351	hazard ratios
+T44	method 1353 1356	HRs
+T45	method 1379 1382	CIs
+T46	method 1273 1315	Cox proportional hazards regression models
+T48	Health_factors 1435 1451	adolescent girls
+T49	disease 1482 1498	anorexia nervosa
+T50	Health_factors 1515 1518	age
+T51	disease 1572 1587	bulimia nervosa
+T52	Health_factors 1604 1607	age
+T53	disease 1670 1709	eating disorder not otherwise specified
+T54	Health_factors 1726 1729	age
+T60	Health_factors 1773 1789	adolescent girls
+T61	method 1795 1806	followed up
+T62	Health_factors 1847 1850	age
+T64	disease 2007 2023	anorexia nervosa
+T65	disease 2062 2077	bulimia nervosa
+T66	disease 2120 2159	eating disorder not otherwise specified
+T69	Health_factors 1923 1938	hospitalization
+T70	method 2032 2034	HR
+T71	method 2046 2048	CI
+T72	method 2086 2088	HR
+T73	method 2100 2102	CI
+T74	method 2168 2170	HR
+T75	method 2182 2184	CI
+T76	Health_factors 2211 2227	adolescent girls
+T77	Health_factors 2236 2252	hospitalizations
+T78	disease 2257 2267	infections
+T80	disease 1891 1908	Severe infections
+T81	disease 2383 2399	anorexia nervosa
+T82	disease 2438 2453	bulimia nervosa
+T83	disease 2496 2535	eating disorder not otherwise specified
+T85	disease 2269 2279	Infections
+T87	method 2408 2410	HR
+T88	method 2422 2424	CI
+T89	method 2462 2464	HR
+T90	method 2476 2478	CI
+T91	method 2544 2546	HR
+T92	method 2558 2560	CI
+T93	Health_factors 2587 2603	adolescent girls
+T94	disease 2612 2622	infections
+T96	drug 2636 2657	anti-infective agents
+T98	drug 2293 2314	anti-infective agents
+T103	disease 2852 2868	anorexia nervosa
+T104	disease 2870 2885	bulimia nervosa
+T105	disease 2891 2931	eating disorders not otherwise specified
+T106	disease 3055 3065	infections
+T107	disease 3109 3125	eating disorders
+T113	drug 2781 2802	anti-infective agents
+T114	disease 2745 2767	less severe infections
+T115	disease 2713 2740	hospital-treated infections
+R1	occurs_in Arg1:T2 Arg2:T3	
+R2	occurs_in Arg1:T0 Arg2:T4	
+R3	risk_factor_of Arg1:T7 Arg2:T5	
+R4	risk_factor_of Arg1:T7 Arg2:T8	
+T1	disease 355 365	infections
+T9	disease 427 442	eating disorder
+T10	disease 1165 1204	eating disorder not otherwise specified
+T11	Health_factors 1211 1219	hospital
+T12	Health_factors 1243 1271	emergency department setting
+R5	abbreviation_for Arg1:T44 Arg2:T43	
+R6	risk_factor_of Arg1:T80 Arg2:T64	
+R7	risk_factor_of Arg1:T80 Arg2:T65	
+R8	risk_factor_of Arg1:T80 Arg2:T66	
+R9	treatment_for Arg1:T98 Arg2:T85	
+R10	risk_factor_of Arg1:T85 Arg2:T81	
+R11	risk_factor_of Arg1:T85 Arg2:T82	
+R12	risk_factor_of Arg1:T85 Arg2:T83	
+R13	treatment_for Arg1:T96 Arg2:T94	
+R14	treatment_for Arg1:T113 Arg2:T114	
+R15	risk_factor_of Arg1:T115 Arg2:T103	
+R16	risk_factor_of Arg1:T115 Arg2:T104	
+R17	risk_factor_of Arg1:T115 Arg2:T105	
+R18	risk_factor_of Arg1:T114 Arg2:T103	
+R19	risk_factor_of Arg1:T114 Arg2:T104	
+R20	risk_factor_of Arg1:T114 Arg2:T105	
+T14	physiology 3081 3103	inflammatory processes
+R21	occurs_in Arg1:T14 Arg2:T107	

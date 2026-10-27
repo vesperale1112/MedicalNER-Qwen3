@@ -1,0 +1,93 @@
+T0	disease 14 24	depression
+T1	disease 26 33	anxiety
+T2	disease 39 58	adjustment disorder
+T3	method 123 136	meta-analysis
+T4	method 143 166	interview-based studies
+T6	disease 230 244	mood disorders
+T7	disease 262 268	cancer
+T8	method 289 346	oncological, haematological, and palliative-care settings
+T9	disease 403 413	depression
+T10	disease 415 422	anxiety
+T11	disease 428 449	adjustments disorders
+T13	method 491 498	Medline
+T14	method 500 508	PsycINFO
+T15	method 510 516	Embase
+T16	method 522 538	Web of Knowledge
+T17	disease 578 588	depression
+T18	disease 590 597	anxiety
+T19	disease 603 622	adjustment disorder
+T20	Health_factors 626 632	adults
+T21	disease 638 644	cancer
+T24	method 744 766	psychiatric interviews
+T26	method 833 857	proportion meta-analysis
+T27	method 952 976	palliative-care settings
+T30	disease 1015 1025	depression
+T31	disease 1218 1234	major depression
+T32	disease 1269 1285	minor depression
+T33	method 1041 1094	Diagnostic and Statistical Manual of Mental Disorders
+T34	method 1174 1176	CI
+T35	method 978 993	Meta-analytical
+T36	disease 1301 1320	adjustment disorder
+T37	disease 1353 1370	anxiety disorders
+T38	disease 1412 1422	depression
+T39	disease 1455 1465	depression
+T40	disease 1469 1488	adjustment disorder
+T41	disease 1522 1535	mood disorder
+T44	disease 1679 1689	depression
+T45	disease 1749 1765	major depression
+T46	disease 1808 1824	minor depression
+T47	method 1700 1703	ICD
+T48	disease 1854 1873	adjustment disorder
+T49	disease 1894 1901	anxiety
+T50	disease 1921 1930	dysthymia
+T51	disease 1992 2002	depression
+T52	disease 2043 2053	depression
+T53	disease 2057 2076	adjustment disorder
+T54	disease 2104 2117	mood disorder
+T56	disease 2177 2187	depression
+T57	disease 2273 2279	cancer
+T58	Health_factors 2212 2215	age
+T59	Health_factors 2217 2220	sex
+T60	Health_factors 2289 2305	illness duration
+T62	disease 2342 2352	depression
+T63	disease 2357 2364	anxiety
+T64	disease 2397 2403	cancer
+T66	method 2564 2612	palliative-care and non-palliative-care settings
+T68	method 2505 2522	hospital settings
+T69	disease 2458 2472	mood disorders
+T71	disease 2681 2691	depression
+T72	Health_factors 2614 2624	Clinicians
+T75	disease 2652 2670	mood complications
+R1	occurs_in Arg1:T6 Arg2:T7	
+R2	occurs_in Arg1:T19 Arg2:T20	
+R4	occurs_in Arg1:T18 Arg2:T20	
+R6	occurs_in Arg1:T17 Arg2:T20	
+T5	method 809 826	PRISMA guidelines
+T12	method 1096 1099	DSM
+R8	abbreviation_for Arg1:T12 Arg2:T33	
+R9	help_diagnose Arg1:T33 Arg2:T30	
+R10	help_diagnose Arg1:T12 Arg2:T30	
+T22	method 1104 1144	International Classification of Diseases
+T25	method 1146 1149	ICD
+R11	abbreviation_for Arg1:T25 Arg2:T22	
+R12	help_diagnose Arg1:T22 Arg2:T30	
+R13	help_diagnose Arg1:T25 Arg2:T30	
+T28	method 1206 1209	DSM
+R14	help_diagnose Arg1:T28 Arg2:T31	
+T29	method 1257 1260	DSM
+R15	help_diagnose Arg1:T29 Arg2:T32	
+T42	method 1693 1696	DSM
+R16	help_diagnose Arg1:T42 Arg2:T44	
+R17	help_diagnose Arg1:T47 Arg2:T44	
+T43	method 1737 1740	DSM
+R18	help_diagnose Arg1:T43 Arg2:T45	
+T76	method 1796 1799	DSM
+R19	help_diagnose Arg1:T76 Arg2:T46	
+T55	method 2225 2241	clinical setting
+T23	method 62 119	oncological, haematological, and palliative-care settings
+T61	method 648 705	oncological, haematological, and palliative-care settings
+T65	method 1624 1663	oncological and haematological settings
+T67	method 2324 2333	Interview
+R20	help_diagnose Arg1:T67 Arg2:T62	
+R21	help_diagnose Arg1:T67 Arg2:T63	
+R3	occurs_in Arg1:T20 Arg2:T21	

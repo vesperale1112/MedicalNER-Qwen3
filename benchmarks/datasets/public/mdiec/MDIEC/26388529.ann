@@ -1,0 +1,38 @@
+T1	disease 0 16	Bipolar disorder
+T2	disease 18 34	Bipolar disorder
+T3	disease 242 258	Bipolar disorder
+T4	disease 288 298	disability
+T5	disease 536 552	bipolar disorder
+T6	disease 620 638	depressive episode
+T7	disease 660 679	unipolar depression
+T8	disease 893 909	bipolar disorder
+T9	disease 1015 1031	bipolar disorder
+T10	physiology 100 110	mood state
+T12	Health_factors 220 240	socioeconomic status
+T13	Health_factors 305 317	young people
+T14	disease 330 365	cognitive and functional impairment
+T15	disease 377 386	mortality
+T18	disease 440 477	psychiatric and medical comorbidities
+T19	signs 720 730	biomarkers
+T20	method 967 1011	pharmacological and psychological strategies
+T21	Health_factors 772 791	clinical assessment
+T24	method 514 532	Accurate diagnosis
+T25	disease 401 417	death by suicide
+T26	disease 40 66	recurrent chronic disorder
+R1	hyponym_of Arg1:T2 Arg2:T26	
+R2	characteristic_of Arg1:T10 Arg2:T2	
+T27	physiology 115 121	energy
+R3	characteristic_of Arg1:T27 Arg2:T2	
+T28	Health_factors 189 200	nationality
+T29	Health_factors 202 215	ethnic origin
+R4	risk_factor_of Arg1:T3 Arg2:T4	
+R5	occurs_in Arg1:T4 Arg2:T13	
+R6	risk_factor_of Arg1:T3 Arg2:T14	
+R7	risk_factor_of Arg1:T3 Arg2:T15	
+R8	risk_factor_of Arg1:T3 Arg2:T25	
+R9	characteristic_of Arg1:T6 Arg2:T5	
+T11	disease 818 835	hypomanic periods
+T16	method 840 863	longitudinal assessment
+T17	method 569 586	clinical practice
+T22	Health_factors 492 512	affected individuals
+R10	risk_factor_of Arg1:T22 Arg2:T18	

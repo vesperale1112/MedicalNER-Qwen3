@@ -1,0 +1,8 @@
+T1	disease 0 18	Poststroke anxiety
+T2	method 72 76	MoCA
+T3	method 91 93	SE
+T4	method 147 149	SE
+T6	disease 236 270	co-occurring poststroke depression
+R1	associated_with Arg1:T1 Arg2:T2	
+T7	physiology 115 132	spatial attention
+R2	associated_with Arg1:T1 Arg2:T7	

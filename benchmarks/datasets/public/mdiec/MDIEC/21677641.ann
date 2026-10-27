@@ -1,0 +1,62 @@
+T1	physiology 0 22	NMDA receptor blockade
+T2	drug 166 174	ketamine
+T3	gene 211 240	N-methyl-D-aspartate receptor
+T4	disease 327 352	major depressive disorder
+T5	disease 400 409	Depressed
+T6	disease 445 479	major depressive disorder symptoms
+T7	drug 543 551	ketamine
+T8	drug 627 657	serotonin re-uptake inhibitors
+T9	drug 879 887	ketamine
+T10	disease 956 965	depressed
+T12	physiology 1221 1273	rapid synthesis of brain-derived neurotrophic factor
+T13	drug 1292 1300	ketamine
+T14	physiology 1429 1457	reduced eEF2 phosphorylation
+T16	drug 1556 1581	inhibitors of eEF2 kinase
+T17	drug 179 252	ionotropic glutamatergic NMDAR (N-methyl-D-aspartate receptor) antagonist
+T18	gene 204 209	NMDAR
+R2	abbreviation_for Arg1:T3 Arg2:T18	
+R4	treatment_for Arg1:T7 Arg2:T6	
+T19	drug 610 625	antidepressants
+T20	disease 752 777	major depressive disorder
+T21	drug 782 811	faster-acting antidepressants
+T22	drug 1089 1106	NMDAR antagonists
+T23	method 1170 1182	mouse models
+T25	gene 1322 1327	NMDAR
+T26	gene 1348 1378	eukaryotic elongation factor 2
+T27	gene 1380 1384	eEF2
+R9	abbreviation_for Arg1:T27 Arg2:T26	
+T29	gene 1406 1413	CaMKIII
+T31	drug 1802 1829	fast-acting antidepressants
+R1	hyponym_of Arg1:T2 Arg2:T17	
+T33	physiology 1589 1640	fast-acting behavioural antidepressant-like effects
+R10	associated_with Arg1:T16 Arg2:T33	
+T34	physiology 40 82	rapid behavioural antidepressant responses
+T35	method 84 100	Clinical studies
+T36	physiology 263 299	fast-acting antidepressant responses
+T30	physiology 899 952	rapidly acting, long-lasting antidepressant responses
+T24	physiology 1115 1166	fast-acting behavioural antidepressant-like effects
+T32	physiology 1673 1704	regulation of protein synthesis
+T37	physiology 1708 1737	spontaneous neurotransmission
+T28	gene 1348 1392	eukaryotic elongation factor 2 (eEF2) kinase
+R13	associated_with Arg1:T25 Arg2:T28	
+R16	associated_with Arg1:T24 Arg2:T12	
+R18	associated_with Arg1:T13 Arg2:T25	
+R3	risk_factor_of Arg1:T28 Arg2:T14	
+R8	risk_factor_of Arg1:T28 Arg2:T39	
+T38	disease 841 848	suicide
+R15	associated_with Arg1:T1 Arg2:T34	
+R17	associated_with Arg1:T2 Arg2:T36	
+R21	associated_with Arg1:T9 Arg2:T30	
+R23	associated_with Arg1:T22 Arg2:T24	
+R24	occurs_in Arg1:T24 Arg2:T23	
+R25	occurs_in Arg1:T36 Arg2:T4	
+R26	occurs_in Arg1:T30 Arg2:T10	
+T39	physiology 1462 1528	de-suppression of translation of brain-derived neurotrophic factor
+T42	method 519 539	intravenous infusion
+T11	gene 179 209	ionotropic glutamatergic NMDAR
+T15	physiology 1031 1050	cellular mechanisms
+R5	hyponym_of Arg1:T28 Arg2:T29	
+T40	drug 1070 1078	ketamine
+R6	associated_with Arg1:T40 Arg2:T24	
+R7	associated_with Arg1:T32 Arg2:T37	
+R11	associated_with Arg1:T32 Arg2:T31	

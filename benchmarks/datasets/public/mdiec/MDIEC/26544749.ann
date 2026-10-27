@@ -1,0 +1,107 @@
+T0	disease 24 54	post-traumatic stress disorder
+T1	signs 0 20	Inflammatory markers
+T2	method 58 75	systematic review
+T3	method 77 90	meta-analysis
+T4	method 96 111	meta-regression
+T5	disease 170 200	post-traumatic stress disorder
+T6	disease 202 206	PTSD
+T7	signs 146 166	inflammatory markers
+T8	disease 328 332	PTSD
+T9	signs 272 310	concentrations of inflammatory markers
+T10	method 347 363	healthy controls
+T12	method 384 397	meta-analysis
+T13	method 402 417	meta-regression
+T14	signs 439 459	inflammatory markers
+T15	disease 482 486	PTSD
+T16	method 491 507	healthy controls
+T17	method 521 527	PubMed
+T18	method 529 535	Embase
+T19	method 537 543	Scopus
+T20	method 545 559	Web of Science
+T21	method 565 573	PsycINFO
+T23	disease 801 805	PTSD
+T24	disease 993 1027	comorbid major depressive disorder
+T25	disease 1035 1039	PTSD
+T26	method 664 687	cross-sectional studies
+T27	method 710 730	longitudinal studies
+T29	Health_factors 789 795	adults
+T30	method 811 827	healthy controls
+T31	method 882 884	SD
+T33	gene 888 914	peripheral blood cytokines
+T34	region 932 937	blood
+T35	drug 1069 1079	medication
+T36	disease 1102 1115	PTSD symptoms
+T40	signs 734 774	peripheral blood cytokine concentrations
+T42	method 1130 1143	meta-analyses
+T43	signs 1163 1183	inflammatory markers
+T45	method 1225 1290	random-effects model with restricted maximum-likelihood estimator
+T46	method 1343 1371	standardised mean difference
+T47	method 1373 1376	SMD
+T48	method 1318 1329	effect size
+T49	gene 1467 1480	Interleukin 6
+T50	gene 1503 1516	interleukin 1
+T51	gene 1542 1552	interferon
+T52	disease 1600 1604	PTSD
+T53	method 1482 1485	SMD
+T54	method 1518 1521	SMD
+T55	method 1555 1558	SMD
+T56	method 1619 1635	healthy controls
+T57	gene 1716 1738	tumour necrosis factor
+T58	gene 1741 1744	TNF
+T59	disease 1791 1795	PTSD
+T60	method 1637 1659	Subgroup meta-analysis
+T61	drug 1691 1701	medication
+T62	method 1746 1749	SMD
+T63	method 1760 1762	CI
+T64	gene 1844 1868	aforementioned cytokines
+T65	method 1811 1824	control group
+T66	gene 1870 1873	TNF
+T67	gene 1906 1919	interleukin 1
+T68	gene 1956 1969	interleukin 6
+T69	disease 2035 2039	PTSD
+T70	disease 2099 2133	comorbid major depressive disorder
+T71	method 1875 1878	SMD
+T72	method 1921 1924	SMD
+T73	method 1971 1974	SMD
+T74	method 2051 2073	subgroup meta-analysis
+T75	gene 2183 2196	interleukin 1
+T76	gene 2241 2254	interleukin 6
+T77	Health_factors 2135 2151	Illness duration
+T78	disease 2324 2358	comorbid major depressive disorder
+T79	gene 2493 2506	interleukin 1
+T80	gene 2508 2521	interleukin 6
+T81	gene 2527 2545	C-reactive protein
+T82	drug 2367 2391	psychotropic medications
+T83	region 2421 2426	blood
+T85	gene 2628 2641	interleukin 1
+T86	signs 2666 2686	inflammatory markers
+T90	disease 2761 2765	PTSD
+T91	gene 2825 2828	TNF
+T92	disease 2977 2981	PTSD
+T93	disease 2908 2938	chronic low-grade inflammation
+T94	signs 2964 2973	biomarker
+R1	occurs_in Arg1:T1 Arg2:T0	
+R2	associated_with Arg1:T93 Arg2:T92	
+R3	occurs_in Arg1:T7 Arg2:T5	
+R4	occurs_in Arg1:T7 Arg2:T6	
+R5	abbreviation_for Arg1:T6 Arg2:T5	
+R6	occurs_in Arg1:T9 Arg2:T8	
+R7	abbreviation_for Arg1:T47 Arg2:T46	
+R8	characteristic_of Arg1:T49 Arg2:T52	
+R9	characteristic_of Arg1:T50 Arg2:T52	
+R10	characteristic_of Arg1:T51 Arg2:T52	
+R11	abbreviation_for Arg1:T58 Arg2:T57	
+R12	characteristic_of Arg1:T57 Arg2:T59	
+R13	characteristic_of Arg1:T66 Arg2:T69	
+R14	characteristic_of Arg1:T67 Arg2:T69	
+R15	characteristic_of Arg1:T68 Arg2:T69	
+R16	associated_with Arg1:T77 Arg2:T75	
+T11	method 2393 2398	assay
+T22	method 2555 2585	Egger's linear regression test
+T28	gene 2795 2808	interleukin 6
+T32	gene 2810 2823	interleukin 1
+T37	gene 2834 2844	interferon
+R17	associated_with Arg1:T90 Arg2:T28	
+R18	associated_with Arg1:T90 Arg2:T32	
+R19	associated_with Arg1:T90 Arg2:T91	
+R20	associated_with Arg1:T90 Arg2:T37	

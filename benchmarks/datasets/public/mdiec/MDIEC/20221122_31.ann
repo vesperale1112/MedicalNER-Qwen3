@@ -1,0 +1,16 @@
+T1	disease 0 23	CUMS-induced depression
+T3	disease 78 98	cognitive impairment
+T5	disease 103 128	damage to neural function
+T6	physiology 153 177	novel object recognition
+T7	physiology 179 208	learning and memory abilities
+T8	physiology 238 259	synaptic transmission
+T9	gene 261 265	cAMP
+T10	symptom 311 329	behavioral changes
+T11	disease 344 354	depression
+R1	risk_factor_of Arg1:T1 Arg2:T3	
+R2	risk_factor_of Arg1:T1 Arg2:T5	
+T2	signs 210 236	population spike amplitude
+T4	physiology 274 295	neuronal regeneration
+T12	method 132 136	mice
+R3	occurs_in Arg1:T5 Arg2:T12	
+R4	occurs_in Arg1:T3 Arg2:T12	

@@ -1,0 +1,49 @@
+T0	disease 33 49	eating disorders
+T1	signs 0 11	QT interval
+T2	disease 62 78	Eating disorders
+T3	disease 114 134	cardiac sudden death
+T4	disease 148 158	arrhythmia
+T6	disease 233 249	fatal arrhythmia
+T8	signs 191 202	QT interval
+T11	Health_factors 368 371	old
+T12	method 403 418	DSM-IV criteria
+T14	Health_factors 466 479	healthy women
+T16	drug 534 545	medications
+T17	method 571 588	electrocardiogram
+T18	signs 495 523	abnormal plasma electrolytes
+R1	occurs_in Arg1:T1 Arg2:T0	
+R3	risk_factor_of Arg1:T2 Arg2:T3	
+R4	risk_factor_of Arg1:T4 Arg2:T3	
+T5	signs 207 220	QT dispersion
+R5	characteristic_of Arg1:T8 Arg2:T6	
+R6	characteristic_of Arg1:T5 Arg2:T6	
+T7	Health_factors 315 321	female
+T9	disease 322 337	eating disorder
+R7	help_diagnose Arg1:T12 Arg2:T9	
+T10	method 590 593	ECG
+R8	abbreviation_for Arg1:T10 Arg2:T17	
+T13	signs 16 29	QT dispersion
+R2	occurs_in Arg1:T13 Arg2:T0	
+T15	signs 624 635	QT interval
+T19	signs 640 653	QT dispersion
+T20	disease 687 711	eating disorder subtypes
+R9	characteristic_of Arg1:T15 Arg2:T20	
+R10	characteristic_of Arg1:T19 Arg2:T20	
+T21	signs 739 750	QT interval
+T22	signs 755 768	QT dispersion
+T23	symptom 816 832	body weight loss
+T24	disease 836 851	bulimia nervosa
+R11	occurs_in Arg1:T23 Arg2:T24	
+R12	associated_with Arg1:T21 Arg2:T23	
+R13	associated_with Arg1:T22 Arg2:T23	
+T25	signs 867 878	QT interval
+T26	signs 883 896	QT dispersion
+T27	disease 920 936	anorexia nervosa
+T28	disease 941 956	bulimia nervosa
+R14	characteristic_of Arg1:T25 Arg2:T27	
+R15	characteristic_of Arg1:T26 Arg2:T27	
+R16	characteristic_of Arg1:T25 Arg2:T28	
+R17	characteristic_of Arg1:T26 Arg2:T28	
+T29	method 973 976	ECG
+T30	disease 980 995	eating disorder
+T31	signs 1027 1038	body weight

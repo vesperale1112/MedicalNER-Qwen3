@@ -1,0 +1,9 @@
+T1	region 6 11	serum
+T2	region 74 79	serum
+T3	gene 18 27	IFN-alpha
+T4	physiology 38 50	neurogenesis
+T5	physiology 101 113	neurogenesis
+T7	disease 158 168	depression
+R2	associated_with Arg1:T5 Arg2:T7	
+T6	method 170 180	odds ratio
+R1	associated_with Arg1:T1 Arg2:T4	

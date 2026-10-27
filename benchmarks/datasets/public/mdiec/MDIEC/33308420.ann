@@ -1,0 +1,80 @@
+T0	disease 16 23	anxiety
+T1	disease 28 47	depressive symptoms
+T2	disease 81 89	COVID-19
+T5	method 104 136	longitudinal observational study
+T6	Health_factors 55 73	enforced isolation
+T7	Health_factors 196 220	global COVID-19 outbreak
+T8	Health_factors 224 237	mental health
+T9	Health_factors 268 281	mental health
+T11	Health_factors 393 406	mental health
+T12	Health_factors 455 472	COVID-19 pandemic
+T13	Health_factors 331 349	enforced isolation
+T16	disease 522 529	anxiety
+T17	disease 534 544	depression
+T18	Health_factors 643 669	individual characteristics
+T22	disease 868 875	anxiety
+T23	disease 932 951	depressive symptoms
+T26	method 963 991	Patient Health Questionnaire
+T27	method 790 801	panel study
+T28	method 689 733	prospective longitudinal observational study
+T29	Health_factors 1054 1060	adults
+T30	method 1234 1272	sociodemographic and health covariates
+T31	method 1179 1199	latent growth models
+T33	Health_factors 1335 1341	adults
+T37	method 1494 1509	analytic sample
+T38	disease 1555 1565	depression
+T39	disease 1615 1622	anxiety
+T40	method 1580 1582	SD
+T41	method 1633 1635	SD
+T44	disease 1663 1670	Anxiety
+T45	disease 1675 1685	depression
+T46	disease 1812 1819	anxiety
+T47	method 1792 1794	SE
+T48	method 1829 1831	SE
+T49	disease 1849 1868	depressive symptoms
+T51	Health_factors 1914 1936	strict lockdown period
+T52	disease 2159 2183	mental health conditions
+T53	disease 2262 2269	anxiety
+T54	disease 2274 2284	depression
+T55	Health_factors 2074 2079	woman
+T56	Health_factors 2083 2090	younger
+T57	Health_factors 2099 2127	lower educational attainment
+T58	Health_factors 2129 2141	lower income
+T59	Health_factors 2189 2218	living alone or with children
+T60	Health_factors 2301 2309	lockdown
+T64	disease 2525 2535	depression
+T65	disease 2540 2547	anxiety
+T66	Health_factors 2580 2588	lockdown
+T68	disease 2789 2797	distress
+T69	symptom 2845 2863	poor mental health
+T70	Health_factors 2875 2883	pandemic
+T3	Health_factors 355 363	lockdown
+R1	hyponym_of Arg1:T3 Arg2:T13	
+T4	Health_factors 569 577	lockdown
+T10	method 761 786	UCL COVID-19 Social Study
+R2	hyponym_of Arg1:T10 Arg2:T27	
+T14	method 887 926	Generalised Anxiety Disorder assessment
+R3	help_diagnose Arg1:T14 Arg2:T22	
+R4	help_diagnose Arg1:T26 Arg2:T23	
+T15	method 1364 1389	UCL COVID-19 Social Study
+T19	method 1448 1466	follow-up measures
+T20	Health_factors 1763 1771	lockdown
+T21	method 1998 2022	lockdown easing measures
+R5	risk_factor_of Arg1:T55 Arg2:T53	
+R6	risk_factor_of Arg1:T56 Arg2:T53	
+R7	risk_factor_of Arg1:T57 Arg2:T53	
+R8	risk_factor_of Arg1:T58 Arg2:T53	
+R9	risk_factor_of Arg1:T52 Arg2:T53	
+R10	risk_factor_of Arg1:T59 Arg2:T53	
+R11	risk_factor_of Arg1:T55 Arg2:T54	
+R12	risk_factor_of Arg1:T56 Arg2:T54	
+R13	risk_factor_of Arg1:T57 Arg2:T54	
+R14	risk_factor_of Arg1:T58 Arg2:T54	
+R15	risk_factor_of Arg1:T52 Arg2:T54	
+R16	risk_factor_of Arg1:T59 Arg2:T54	
+T24	Health_factors 2369 2377	lockdown
+T25	Health_factors 2452 2460	lockdown
+T32	Health_factors 2762 2771	lockdowns
+T34	Health_factors 2917 2925	lockdown
+R17	risk_factor_of Arg1:T2 Arg2:T1	
+R18	risk_factor_of Arg1:T2 Arg2:T0	

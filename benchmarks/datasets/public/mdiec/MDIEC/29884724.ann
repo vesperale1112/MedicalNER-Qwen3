@@ -1,0 +1,74 @@
+T1	disease 220 233	malformations
+T2	disease 235 259	autism spectrum disorder
+T3	disease 265 288	intellectual disability
+T4	disease 1157 1181	autism spectrum disorder
+T5	disease 1200 1223	intellectual disability
+T6	disease 1574 1580	autism
+T7	disease 1824 1847	intellectual disability
+T8	disease 2146 2152	autism
+T9	disease 2176 2199	intellectual disability
+T10	disease 2424 2436	malformation
+T11	disease 2438 2444	autism
+T12	disease 2449 2472	intellectual disability
+T13	Health_factors 0 31	Paternal use of antidepressants
+T14	method 66 101	nationwide prospective cohort study
+T15	Health_factors 149 176	paternal antidepressant use
+T16	method 298 336	Observational prospective cohort study
+T17	method 342 360	regression methods
+T18	method 366 382	negative control
+T21	Health_factors 1234 1261	Paternal antidepressant use
+T23	drug 891 906	antidepressants
+T24	method 946 970	antidepressant treatment
+T25	disease 1111 1123	malformation
+T27	method 1319 1338	adjusted odds ratio
+T28	method 1349 1368	confidence interval
+T29	disease 1387 1400	malformations
+T30	method 1429 1448	logistic regression
+T31	drug 1533 1547	antidepressant
+T32	method 1582 1603	adjusted hazard ratio
+T33	disease 1628 1651	intellectual disability
+T34	method 1680 1694	Cox regression
+T35	method 1732 1756	antidepressant treatment
+T36	method 1872 1893	adjusted hazard ratio
+T37	method 1973 1997	antidepressant treatment
+T38	Health_factors 2045 2076	paternal use of antidepressants
+T39	disease 2128 2140	malformation
+T40	method 2201 2222	adjusted hazard ratio
+T41	Health_factors 2257 2291	Paternal intake of antidepressants
+T42	method 546 552	cohort
+T43	disease 195 218	offspring preterm birth
+T44	Health_factors 445 453	children
+T45	Health_factors 526 529	age
+T46	Health_factors 567 591	children born to fathers
+T48	Health_factors 749 757	children
+T49	Health_factors 850 874	children born to fathers
+T51	physiology 1051 1061	childbirth
+T52	physiology 1037 1047	conception
+T53	physiology 180 190	conception
+T54	Health_factors 638 655	conception period
+T55	physiology 689 699	conception
+T56	Health_factors 918 935	conception period
+T57	physiology 1269 1279	conception
+T58	physiology 1559 1569	conception
+T59	physiology 2080 2090	conception
+T60	physiology 2317 2327	conception
+T61	disease 1086 1109	Offspring preterm birth
+T62	disease 1304 1317	preterm birth
+T63	Health_factors 1699 1707	children
+T64	Health_factors 1714 1721	fathers
+T65	physiology 1764 1773	pregnancy
+T66	Health_factors 1940 1948	children
+T67	Health_factors 1955 1962	fathers
+T68	physiology 2005 2014	pregnancy
+T69	Health_factors 2025 2033	children
+T70	disease 2113 2126	preterm birth
+T71	disease 2399 2422	offspring-preterm birth
+T72	Health_factors 988 1004	pregnancy period
+T22	method 808 824	negative control
+T73	method 503 514	followed up
+T19	Health_factors 1492 1499	fathers
+T74	method 602 626	antidepressant treatment
+R1	associated_with Arg1:T38 Arg2:T9	
+T75	Health_factors 2373 2395	major adverse outcomes
+T76	Health_factors 36 54	offspring outcomes
+T20	Health_factors 773 800	paternal antidepressant use

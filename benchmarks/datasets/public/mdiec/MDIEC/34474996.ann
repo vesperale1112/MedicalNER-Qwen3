@@ -1,0 +1,57 @@
+T1	disease 0 19	Depressive Symptoms
+T2	disease 36 56	Musculoskeletal Pain
+T3	disease 116 126	Depression
+T4	disease 164 184	musculoskeletal pain
+T5	disease 372 382	depression
+T6	disease 387 407	musculoskeletal pain
+T7	disease 677 696	Depressive symptoms
+T8	disease 778 798	Musculoskeletal pain
+T9	disease 1130 1149	depressive symptoms
+T10	disease 1154 1174	musculoskeletal pain
+T11	disease 1243 1262	Depressive symptoms
+T12	disease 1411 1430	depressive symptoms
+T13	disease 1604 1623	depressive symptoms
+T14	disease 1649 1653	pain
+T15	disease 1697 1707	depression
+T16	disease 1728 1748	musculoskeletal pain
+R1	associated_with Arg1:T1 Arg2:T2	
+T17	Health_factors 83 102	COVID-19 Quarantine
+R2	associated_with Arg1:T3 Arg2:T4	
+T18	Health_factors 328 345	COVID-19 pandemic
+T19	method 459 480	Cross-sectional study
+T20	method 644 675	structured online questionnaire
+T21	disease 748 758	depression
+T22	method 825 845	Nordic questionnaire
+R4	help_diagnose Arg1:T22 Arg2:T8	
+T23	disease 872 876	pain
+T24	disease 1055 1063	COVID-19
+T25	method 1069 1095	logistic binary regression
+T26	disease 1284 1288	pain
+R6	associated_with Arg1:T11 Arg2:T26	
+T27	method 1441 1443	CI
+T28	method 1471 1473	CI
+T29	disease 1513 1517	pain
+T30	Health_factors 1678 1695	COVID-19 pandemic
+R7	associated_with Arg1:T15 Arg2:T16	
+R8	risk_factor_of Arg1:T12 Arg2:T29	
+T31	method 719 730	self-report
+T32	Health_factors 60 75	Inactive Adults
+T33	Health_factors 274 291	physical activity
+T34	Health_factors 425 442	physical activity
+T35	Health_factors 591 596	women
+T37	Health_factors 619 631	social media
+R9	help_diagnose Arg1:T31 Arg2:T7	
+T38	Health_factors 766 776	quarantine
+T39	region 891 895	body
+T40	Health_factors 897 914	Physical activity
+T41	Health_factors 1002 1019	physical activity
+T44	Health_factors 1215 1232	physical activity
+T45	Health_factors 1329 1361	physically inactive participants
+T46	Health_factors 1366 1398	physically inactive participants
+T47	region 1552 1556	body
+T49	Health_factors 1752 1784	physically inactive participants
+R10	occurs_in Arg1:T2 Arg2:T32	
+T36	region 1321 1325	body
+R14	occurs_in Arg1:T16 Arg2:T49	
+R16	occurs_in Arg1:T46 Arg2:T12	
+R3	occurs_in Arg1:T26 Arg2:T45	

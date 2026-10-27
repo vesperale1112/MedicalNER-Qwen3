@@ -1,0 +1,9 @@
+T2	method 83 120	bedding and nesting material paradigm
+T3	Health_factors 136 151	sex differences
+T4	disease 155 165	depression
+T6	disease 273 298	depression-like behaviors
+T7	method 302 313	female mice
+T8	physiology 222 249	monoamine neurotransmission
+R1	associated_with Arg1:T8 Arg2:T6	
+R2	occurs_in Arg1:T6 Arg2:T7	
+R3	occurs_in Arg1:T3 Arg2:T4	

@@ -1,0 +1,6 @@
+T1	drug 41 57	D2/D4 antagonist
+T2	drug 83 96	D1 antagonist
+T3	physiology 114 172	ketamine-induced depression of nucleus accumbens responses
+T5	drug 58 69	haloperidol
+T6	drug 97 105	SCH23390
+R1	associated_with Arg1:T5 Arg2:T3	

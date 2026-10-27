@@ -1,0 +1,22 @@
+T3	method 87 117	Epworth Sleepiness Scale score
+T29	method 187 218	Beck Depression Inventory score
+T33	Health_factors 439 444	sleep
+T36	disease 67 85	daytime sleepiness
+T37	Health_factors 266 288	use of antidepressants
+T38	signs 408 425	oxygen saturation
+T1	disease 14 31	refractory angina
+T2	disease 160 178	depression symptom
+T4	signs 303 323	apnea-hypopnea index
+T5	signs 325 328	AHI
+R3	abbreviation_for Arg1:T5 Arg2:T4	
+T6	signs 331 334	AHI
+T7	disease 511 514	OSA
+T8	disease 584 587	CAD
+R4	characteristic_of Arg1:T1 Arg2:T36	
+R6	risk_factor_of Arg1:T1 Arg2:T37	
+R9	risk_factor_of Arg1:T1 Arg2:T7	
+R5	risk_factor_of Arg1:T1 Arg2:T2	
+R1	risk_factor_of Arg1:T1 Arg2:T4	
+R2	risk_factor_of Arg1:T1 Arg2:T5	
+R7	risk_factor_of Arg1:T1 Arg2:T38	
+T9	signs 516 519	AHI

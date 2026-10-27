@@ -1,0 +1,10 @@
+T1	gene 56 60	NMDA
+T3	Health_factors 87 102	neonatal period
+T6	physiology 135 165	brain and behavior development
+T7	disease 211 237	neuropsychiatric disorders
+T9	gene 34 54	N-methyl-D-aspartate
+R1	abbreviation_for Arg1:T1 Arg2:T9	
+R2	associated_with Arg1:T9 Arg2:T6	
+R3	associated_with Arg1:T1 Arg2:T6	
+R4	risk_factor_of Arg1:T9 Arg2:T7	
+R5	risk_factor_of Arg1:T1 Arg2:T7	

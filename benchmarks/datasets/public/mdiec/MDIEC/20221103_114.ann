@@ -1,0 +1,12 @@
+T1	disease 50 72	post-stroke depression
+T2	disease 74 77	PSD
+T5	method 130 170	fastigial nucleus electrical stimulation
+T7	signs 198 226	regional cerebral blood flow
+T8	signs 228 232	rCBF
+T9	method 239 252	PSD rat model
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+R2	abbreviation_for Arg1:T8 Arg2:T7	
+T3	method 172 175	FNS
+R3	abbreviation_for Arg1:T3 Arg2:T5	
+T4	region 119 129	cerebellar
+T6	physiology 27 46	molecular mechanism

@@ -1,0 +1,12 @@
+T1	region 9 29	3xTg-AD mouse brains
+T3	gene 63 66	RyR
+T5	physiology 111 130	synaptic depression
+T7	physiology 203 232	postsynaptic outward currents
+T8	gene 241 299	small-conductance calcium-activated potassium SK2 channels
+T4	physiology 162 188	presynaptic vesicle stores
+T6	gene 43 61	ryanodine receptor
+R2	associated_with Arg1:T6 Arg2:T5	
+R4	associated_with Arg1:T6 Arg2:T4	
+R5	associated_with Arg1:T6 Arg2:T7	
+R1	abbreviation_for Arg1:T3 Arg2:T6	
+R6	occurs_in Arg1:T1 Arg2:T6	

@@ -1,0 +1,4 @@
+T1	signs 45 48	GMV
+T2	disease 74 99	major depression disorder
+T3	method 126 142	healthy controls
+R1	characteristic_of Arg1:T1 Arg2:T2	

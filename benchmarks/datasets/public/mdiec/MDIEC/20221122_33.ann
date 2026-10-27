@@ -1,0 +1,21 @@
+T1	disease 20 42	CES-D-based depression
+T2	Health_factors 106 118	lower income
+T3	method 126 134	QOLIE-89
+T4	disease 148 162	SDS disability
+T5	Health_factors 191 210	adverse drug events
+T6	disease 6 9	EPI
+T7	Health_factors 83 89	female
+T8	Health_factors 97 104	younger
+T9	Health_factors 169 184	social concerns
+T10	Health_factors 228 238	employment
+T11	Health_factors 250 262	working days
+R1	associated_with Arg1:T1 Arg2:T7	
+R2	associated_with Arg1:T1 Arg2:T8	
+R3	associated_with Arg1:T1 Arg2:T2	
+R4	associated_with Arg1:T1 Arg2:T3	
+R5	associated_with Arg1:T1 Arg2:T4	
+R6	associated_with Arg1:T1 Arg2:T9	
+R7	associated_with Arg1:T1 Arg2:T5	
+R8	associated_with Arg1:T1 Arg2:T10	
+R9	associated_with Arg1:T1 Arg2:T11	
+R10	occurs_in Arg1:T6 Arg2:T1	

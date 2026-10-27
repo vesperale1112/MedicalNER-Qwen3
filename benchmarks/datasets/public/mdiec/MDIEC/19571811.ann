@@ -1,0 +1,31 @@
+T0	disease 50 63	schizophrenia
+T1	disease 68 84	bipolar disorder
+T3	disease 86 99	Schizophrenia
+T4	disease 179 193	hallucinations
+T5	disease 195 204	delusions
+T6	disease 209 227	cognitive deficits
+T7	disease 105 127	severe mental disorder
+T9	Health_factors 234 246	heritability
+T10	disease 351 364	schizophrenia
+T12	method 286 315	genome-wide association study
+T13	disease 497 510	schizophrenia
+T14	physiology 450 474	common genetic variation
+T17	disease 669 682	schizophrenia
+T20	gene 713 720	alleles
+T23	disease 803 819	bipolar disorder
+T25	disease 832 864	several non-psychiatric diseases
+T26	physiology 0 26	Common polygenic variation
+R1	risk_factor_of Arg1:T26 Arg2:T0	
+R2	risk_factor_of Arg1:T26 Arg2:T1	
+R3	hyponym_of Arg1:T3 Arg2:T7	
+R4	characteristic_of Arg1:T4 Arg2:T3	
+R5	characteristic_of Arg1:T5 Arg2:T3	
+R6	characteristic_of Arg1:T6 Arg2:T3	
+T2	Health_factors 325 345	European individuals
+R7	occurs_in Arg1:T2 Arg2:T10	
+R8	risk_factor_of Arg1:T14 Arg2:T13	
+T8	gene 536 568	major histocompatibility complex
+T11	method 589 615	molecular genetic evidence
+T15	gene 634 653	polygenic component
+R9	risk_factor_of Arg1:T15 Arg2:T17	
+R10	characteristic_of Arg1:T9 Arg2:T3	

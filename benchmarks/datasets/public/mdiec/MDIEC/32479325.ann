@@ -1,0 +1,73 @@
+T1	disease 0 16	Major depression
+T2	method 143 176	LPS-induced depressive mice model
+T3	disease 271 296	major depressive disorder
+T4	disease 298 301	MDD
+T5	disease 358 377	depressive symptoms
+T6	disease 441 460	emotional disorders
+T7	disease 586 589	MDD
+T8	disease 603 612	depressed
+T9	disease 714 717	MDD
+T10	disease 763 766	MDD
+T11	disease 789 798	depressed
+T12	region 1109 1135	depression-related regions
+T13	disease 1186 1189	MDD
+T14	gene 1487 1491	IL-6
+T15	gene 1493 1497	IL-8
+T16	gene 1499 1504	MCP-1
+T17	gene 1506 1510	VEGF
+T18	disease 1559 1562	MDD
+T19	disease 1779 1789	depression
+T20	gene 1799 1803	IL-6
+T21	gene 1808 1812	VEGF
+T22	disease 1889 1899	depression
+T24	disease 34 46	inflammation
+T25	symptom 60 81	cytokines alterations
+R1	characteristic_of Arg1:T24 Arg2:T1	
+R2	characteristic_of Arg1:T25 Arg2:T1	
+T26	disease 190 202	Inflammation
+R3	associated_with Arg1:T26 Arg2:T3	
+R4	abbreviation_for Arg1:T4 Arg2:T3	
+R5	associated_with Arg1:T26 Arg2:T4	
+T27	disease 341 353	inflammation
+T28	gene 547 568	serum multi-cytokines
+T29	method 644 660	LPS-treated mice
+T30	gene 728 749	Serum multi-cytokines
+T31	method 910 934	Bio-Plex cytokines panel
+T32	gene 955 970	serum cytokines
+T33	method 974 990	LPS-treated mice
+T34	method 1009 1014	ELISA
+T35	method 1139 1155	LPS-treated mice
+T36	physiology 1035 1064	cytokines protein expressions
+T37	method 1083 1099	western blotting
+T39	symptom 1308 1326	decreased cytokine
+T41	disease 1363 1393	naturally occurring depression
+T42	disease 1395 1398	NOD
+R6	abbreviation_for Arg1:T42 Arg2:T41	
+T43	gene 1465 1485	peripheral cytokines
+T46	method 1617 1633	LPS-treated mice
+T47	symptom 1655 1676	cytokines alterations
+T48	gene 1744 1753	cytokines
+R11	associated_with Arg1:T48 Arg2:T19	
+R14	help_diagnose Arg1:T20 Arg2:T22	
+R15	help_diagnose Arg1:T21 Arg2:T22	
+T49	region 1905 1917	hypothalamus
+T50	disease 1959 2005	inflammatory related depressive-like behaviors
+R16	associated_with Arg1:T49 Arg2:T50	
+T23	region 1931 1936	brain
+T52	signs 699 709	biomarkers
+R19	characteristic_of Arg1:T39 Arg2:T13	
+T55	signs 1831 1841	biomarkers
+R21	hyponym_of Arg1:T21 Arg2:T55	
+R22	hyponym_of Arg1:T20 Arg2:T55	
+R23	hyponym_of Arg1:T49 Arg2:T23	
+T38	region 1330 1346	peripheral serum
+T40	gene 1239 1286	proinflammatory and anti-inflammatory cytokines
+T51	method 252 267	pathophysiology
+R24	located_in Arg1:T39 Arg2:T38	
+R9	characteristic_of Arg1:T40 Arg2:T13	
+R10	help_diagnose Arg1:T31 Arg2:T30	
+R12	help_diagnose Arg1:T34 Arg2:T32	
+R13	characteristic_of Arg1:T43 Arg2:T42	
+R17	characteristic_of Arg1:T43 Arg2:T41	
+T44	region 1590 1595	serum
+T45	region 1600 1605	brain

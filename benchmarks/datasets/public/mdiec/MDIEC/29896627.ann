@@ -1,0 +1,74 @@
+T1	disease 251 261	depression
+T2	disease 328 338	depression
+T3	disease 418 439	concurrent depression
+T4	disease 700 710	depression
+T5	disease 835 856	concurrent depression
+T6	disease 991 1003	hypertension
+T7	disease 1046 1056	depression
+T8	disease 1221 1231	depression
+T9	disease 1250 1260	depression
+T10	disease 1418 1428	depression
+T11	disease 1490 1500	depression
+T12	disease 1787 1797	depression
+T13	disease 2016 2026	depression
+T14	disease 2099 2120	concurrent depression
+T15	disease 2150 2160	depression
+T16	disease 2223 2233	depression
+T17	Health_factors 2436 2455	hypertensive adults
+T18	disease 2622 2632	depression
+T19	disease 2745 2766	concurrent depression
+T20	disease 44 54	Depression
+T21	drug 14 38	Prescription Medications
+T22	drug 132 156	Prescription medications
+R1	risk_factor_of Arg1:T22 Arg2:T1	
+T23	drug 298 322	prescription medications
+T24	method 532 580	National Health and Nutrition Examination Survey
+T25	method 582 620	representative cross-sectional surveys
+T26	drug 683 694	medications
+T27	method 742 775	Multivariable logistic regression
+T28	drug 819 830	medications
+T29	Health_factors 914 934	antidepressant users
+T30	drug 966 981	antidepressants
+T31	drug 1473 1484	medications
+T32	drug 1183 1194	medications
+T33	method 1262 1267	PHQ-9
+T34	method 1350 1352	CI
+T35	method 1394 1396	CI
+T37	method 1560 1562	CI
+T38	method 1624 1626	CI
+T39	method 1702 1704	CI
+T40	drug 1743 1765	concurrent medications
+T41	method 1850 1852	CI
+T42	method 1926 1943	adjusted analyses
+T43	drug 1963 1978	antidepressants
+T44	method 2324 2326	CI
+T45	method 2550 2578	cross-sectional survey study
+T46	drug 2587 2611	prescription medications
+T47	Health_factors 2675 2702	Use of multiple medications
+R6	risk_factor_of Arg1:T47 Arg2:T19	
+T48	Health_factors 1980 2010	the number of medications used
+R7	risk_factor_of Arg1:T48 Arg2:T14	
+T51	drug 2413 2428	antidepressants
+T52	drug 2490 2513	psychotropic medication
+R5	help_diagnose Arg1:T33 Arg2:T9	
+T54	Health_factors 91 97	Adults
+T55	Health_factors 185 191	adults
+T56	Health_factors 624 633	US adults
+T57	Health_factors 634 638	aged
+T58	Health_factors 946 952	adults
+T53	Health_factors 1316 1322	adults
+T59	Health_factors 1329 1332	age
+T60	Health_factors 1366 1371	women
+T61	Health_factors 2393 2399	adults
+T64	Health_factors 888 894	adults
+T49	drug 2206 2217	medications
+T50	drug 2288 2299	medications
+T62	Health_factors 70 84	Adverse Effect
+T63	Health_factors 354 368	adverse effect
+T65	Health_factors 1072 1086	adverse effect
+T66	Health_factors 1507 1521	adverse effect
+T67	Health_factors 1804 1818	adverse effect
+T68	Health_factors 2039 2054	adverse effects
+T69	Health_factors 2240 2254	adverse effect
+T70	Health_factors 2648 2662	adverse effect
+T71	Health_factors 651 656	older

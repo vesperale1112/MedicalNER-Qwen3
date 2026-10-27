@@ -1,0 +1,38 @@
+T0	disease 33 62	obsessive-compulsive disorder
+T2	symptom 0 12	Sudden gains
+T3	disease 136 165	obsessive-compulsive disorder
+T4	disease 167 170	OCD
+T6	symptom 102 114	sudden gains
+T9	Health_factors 262 265	age
+T10	drug 357 368	fluvoxamine
+T11	disease 373 376	OCD
+T12	method 311 329	exposure treatment
+T13	disease 392 421	obsessive-compulsive symptoms
+T15	disease 487 531	obsessive-compulsive and depressive symptoms
+T19	symptom 643 655	Sudden gains
+T20	disease 901 913	OCD symptoms
+T21	method 961 970	follow-up
+T23	symptom 863 875	sudden gains
+T24	symptom 821 833	sudden gains
+T25	disease 1028 1031	OCD
+T26	method 1076 1085	follow-up
+T27	Health_factors 1054 1071	treatment outcome
+T29	symptom 986 998	Sudden gains
+T30	disease 1156 1159	OCD
+T31	symptom 1087 1099	Sudden gains
+T32	method 1256 1265	follow-up
+T34	symptom 1420 1432	sudden gains
+R2	abbreviation_for Arg1:T4 Arg2:T3	
+T1	method 290 309	cognitive treatment
+T5	disease 743 772	obsessive-compulsive symptoms
+R5	associated_with Arg1:T19 Arg2:T5	
+R6	associated_with Arg1:T23 Arg2:T20	
+R7	associated_with Arg1:T29 Arg2:T25	
+R8	associated_with Arg1:T29 Arg2:T27	
+R9	associated_with Arg1:T29 Arg2:T26	
+R10	associated_with Arg1:T31 Arg2:T30	
+T7	symptom 1178 1190	sudden gains
+T8	symptom 1295 1307	sudden gains
+R1	treatment_for Arg1:T1 Arg2:T11	
+R3	treatment_for Arg1:T12 Arg2:T11	
+R4	treatment_for Arg1:T10 Arg2:T11	

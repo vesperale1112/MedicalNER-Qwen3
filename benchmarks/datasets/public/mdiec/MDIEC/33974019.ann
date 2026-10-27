@@ -1,0 +1,65 @@
+T1	disease 36 55	Depressive Symptoms
+T2	disease 73 94	Comorbid Hypertension
+T3	disease 98 106	Diabetes
+T4	disease 171 181	Depression
+T5	method 235 270	Digital mental health interventions
+T6	disease 473 492	depressive symptoms
+T7	disease 511 519	diabetes
+T8	disease 527 539	hypertension
+T9	disease 617 636	depressive symptoms
+T10	disease 716 728	hypertension
+T11	disease 736 744	diabetes
+T12	disease 1580 1597	severe depression
+T13	disease 2848 2860	hypertension
+T14	disease 2864 2872	diabetes
+T15	disease 2877 2896	depressive symptoms
+T16	disease 2994 3013	depressive symptoms
+T17	method 12 32	Digital Intervention
+T18	method 131 157	Randomized Clinical Trials
+T19	method 440 460	digital intervention
+T20	method 638 668	Patient Health Questionnaire-9
+T21	method 670 675	PHQ-9
+R3	abbreviation_for Arg1:T21 Arg2:T20	
+T22	method 772 797	randomized clinical trial
+T23	method 799 802	RCT
+R4	abbreviation_for Arg1:T23 Arg2:T22	
+T25	method 941 944	RCT
+T27	method 1063 1110	18-session, low-intensity, digital intervention
+T28	method 1174 1206	behavioral activation principles
+T29	Health_factors 1225 1241	nurse assistants
+T30	method 1326 1345	enhanced usual care
+T31	method 1525 1530	PHQ-9
+R5	help_diagnose Arg1:T31 Arg2:T12	
+T32	method 1682 1687	PHQ-9
+T33	method 1966 1986	follow-up assessment
+T34	method 2052 2057	PHQ-9
+T35	method 2141 2161	digital intervention
+T36	method 2207 2226	enhanced usual care
+T37	method 2274 2276	CI
+T38	method 2301 2311	odds ratio
+T39	method 2313 2315	OR
+R6	abbreviation_for Arg1:T39 Arg2:T38	
+T41	method 2415 2420	PHQ-9
+T43	method 2504 2524	digital intervention
+T44	method 2569 2588	enhanced usual care
+T45	method 2636 2638	CI
+T46	method 2663 2665	OR
+T47	method 2676 2678	CI
+T48	method 2826 2830	RCTs
+T49	method 2919 2939	digital intervention
+T50	method 3045 3064	enhanced usual care
+R7	treatment_for Arg1:T49 Arg2:T16	
+R10	help_diagnose Arg1:T20 Arg2:T9	
+R11	help_diagnose Arg1:T21 Arg2:T9	
+T59	Health_factors 1771 1774	age
+T60	Health_factors 1800 1805	women
+T61	Health_factors 1862 1865	age
+T62	Health_factors 1891 1896	women
+T53	method 890 899	follow-up
+T54	method 1021 1030	follow-up
+T55	method 2091 2100	follow-up
+T56	method 2454 2463	follow-up
+T57	method 2715 2724	follow-up
+T64	Health_factors 304 336	low- and middle-income countries
+T51	method 1045 1058	Interventions
+T24	method 2327 2329	CI

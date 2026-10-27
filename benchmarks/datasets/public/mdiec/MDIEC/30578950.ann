@@ -1,0 +1,75 @@
+T1	disease 186 214	generalized anxiety disorder
+T2	disease 216 219	GAD
+T3	disease 225 250	major depression disorder
+T4	disease 252 255	MDD
+T5	disease 650 653	MDD
+T6	disease 658 661	GAD
+T7	disease 891 894	MDD
+T8	disease 898 901	GAD
+T9	disease 1060 1063	MDD
+T10	disease 1067 1070	GAD
+T11	Health_factors 1122 1157	deterioration of social integration
+T12	disease 1286 1289	MDD
+T13	disease 1293 1296	GAD
+#1	AnnotatorNotes T3	C1269683
+#2	AnnotatorNotes T4	C1269683
+T16	disease 0 7	Anxiety
+T17	disease 9 19	depression
+T18	method 98 136	The Irish Longitudinal Study on Ageing
+T19	method 138 143	TILDA
+R1	abbreviation_for Arg1:T19 Arg2:T18	
+R2	abbreviation_for Arg1:T2 Arg2:T1	
+R3	abbreviation_for Arg1:T4 Arg2:T3	
+T20	disease 174 184	loneliness
+T21	Health_factors 158 172	Social network
+R4	associated_with Arg1:T21 Arg2:T20	
+R5	associated_with Arg1:T21 Arg2:T1	
+R6	associated_with Arg1:T21 Arg2:T2	
+R7	associated_with Arg1:T21 Arg2:T3	
+R8	associated_with Arg1:T21 Arg2:T4	
+T22	method 452 490	The Irish Longitudinal Study on Ageing
+T23	method 492 497	TILDA
+R15	abbreviation_for Arg1:T23 Arg2:T22	
+T24	method 550 571	UCLA loneliness scale
+T25	disease 514 524	Loneliness
+R16	help_diagnose Arg1:T24 Arg2:T25	
+T26	method 615 648	Berkman-Syme Social Network Index
+T27	method 685 729	Composite International Diagnostic Interview
+T28	method 731 735	CIDI
+R17	help_diagnose Arg1:T27 Arg2:T6	
+R18	help_diagnose Arg1:T28 Arg2:T6	
+R19	help_diagnose Arg1:T27 Arg2:T5	
+R20	help_diagnose Arg1:T28 Arg2:T5	
+T29	method 738 764	Logistic regression models
+T30	disease 840 850	loneliness
+T31	disease 953 963	loneliness
+T32	Health_factors 1007 1023	social isolation
+T33	disease 1096 1106	loneliness
+R23	risk_factor_of Arg1:T33 Arg2:T11	
+R24	risk_factor_of Arg1:T32 Arg2:T9	
+R25	risk_factor_of Arg1:T32 Arg2:T10	
+T34	Health_factors 1214 1230	social isolation
+R26	risk_factor_of Arg1:T34 Arg2:T12	
+R27	risk_factor_of Arg1:T34 Arg2:T13	
+T35	disease 1305 1315	loneliness
+T36	disease 1440 1450	loneliness
+T15	disease 21 31	loneliness
+#4	AnnotatorNotes T24	C4285296
+#5	AnnotatorNotes T27	C0451085
+#6	AnnotatorNotes T28	C0451085
+R29	risk_factor_of Arg1:T30 Arg2:T7	
+R30	risk_factor_of Arg1:T30 Arg2:T8	
+#7	AnnotatorNotes T32	C0037421
+T39	Health_factors 1483 1497	social network
+R33	abbreviation_for Arg1:T28 Arg2:T27	
+T14	Health_factors 58 65	elderly
+T40	Health_factors 36 50	social network
+T41	Health_factors 1341 1369	deterioration of social life
+T42	Health_factors 1507 1523	social isolation
+T43	Health_factors 1592 1614	older adult population
+T44	Health_factors 573 591	Social integration
+R28	risk_factor_of Arg1:T35 Arg2:T41	
+T45	Health_factors 1571 1584	mental health
+T46	Health_factors 424 430	adults
+T47	Health_factors 431 435	aged
+R36	help_diagnose Arg1:T26 Arg2:T44	

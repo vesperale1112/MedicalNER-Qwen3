@@ -1,0 +1,87 @@
+T1	disease 102 134	Severe Major Depression Disorder
+T2	disease 147 172	Major depression disorder
+T3	disease 174 177	MDD
+T4	disease 198 221	psychiatric comorbidity
+T5	disease 283 286	MDD
+T6	disease 429 452	severe major depression
+T7	disease 556 566	severe MDD
+T8	disease 590 600	severe MDD
+T9	gene 602 605	CD4
+T10	disease 699 709	severe MDD
+T11	gene 796 824	cluster of differentiation 4
+T12	gene 826 829	CD4
+T13	method 880 946	Diagnostic and Statistical Manual of Mental Disorders, 5th Edition
+T14	disease 986 996	severe MDD
+T15	disease 1400 1423	severe major depression
+T16	disease 1577 1584	anxiety
+T17	disease 1586 1596	depression
+T18	disease 1602 1622	cognitive impairment
+T19	disease 1658 1675	severe depression
+T20	method 2 24	Retrospective Analysis
+T21	Health_factors 73 97	Patients Living With HIV
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	hyponym_of Arg1:T3 Arg2:T4	
+R3	hyponym_of Arg1:T2 Arg2:T4	
+T22	Health_factors 225 249	patients living with HIV
+T23	Health_factors 251 257	PLWHIV
+R4	abbreviation_for Arg1:T23 Arg2:T22	
+T24	method 466 484	Health Care Agency
+T25	method 486 489	HCA
+R5	abbreviation_for Arg1:T25 Arg2:T24	
+T26	method 522 541	retrospective study
+T27	disease 585 588	HIV
+R6	abbreviation_for Arg1:T12 Arg2:T11	
+T29	method 948 953	DSM-5
+R7	abbreviation_for Arg1:T29 Arg2:T13	
+R8	help_diagnose Arg1:T29 Arg2:T14	
+R9	help_diagnose Arg1:T13 Arg2:T14	
+T30	method 1011 1033	antiretroviral therapy
+T31	method 1035 1038	ART
+R10	abbreviation_for Arg1:T31 Arg2:T30	
+T32	method 1185 1213	Logistic regression analysis
+T33	Health_factors 1368 1385	ART non-adherence
+T34	disease 1532 1540	HIV/AIDS
+R11	associated_with Arg1:T34 Arg2:T16	
+R12	associated_with Arg1:T34 Arg2:T17	
+R13	associated_with Arg1:T34 Arg2:T18	
+T35	disease 1559 1568	illnesses
+R14	associated_with Arg1:T34 Arg2:T35	
+R15	hyponym_of Arg1:T16 Arg2:T35	
+R16	hyponym_of Arg1:T17 Arg2:T35	
+R17	hyponym_of Arg1:T18 Arg2:T35	
+T37	Health_factors 300 306	PLWHIV
+T38	Health_factors 418 424	PLWHIV
+T39	Health_factors 545 551	PLWHIV
+T40	Health_factors 688 694	PLWHIV
+T41	Health_factors 1000 1006	PLWHIV
+T42	Health_factors 1249 1255	PLWHIV
+T44	Health_factors 1679 1685	PLWHIV
+R18	risk_factor_of Arg1:T37 Arg2:T5	
+T46	Health_factors 737 740	age
+T47	Health_factors 742 745	sex
+T48	Health_factors 747 753	gender
+T49	Health_factors 1286 1295	older age
+T50	Health_factors 1312 1332	Caucasian population
+T51	signs 607 617	viral load
+T52	signs 836 846	viral load
+T53	Health_factors 755 794	adherence to antiretroviral medications
+T28	Health_factors 1346 1357	rural areas
+T43	Health_factors 1726 1741	hospitalization
+T45	disease 1743 1762	morbidity/mortality
+R19	associated_with Arg1:T19 Arg2:T43	
+R20	associated_with Arg1:T19 Arg2:T45	
+T54	drug 1040 1050	medication
+R22	occurs_in Arg1:T4 Arg2:T22	
+R23	occurs_in Arg1:T4 Arg2:T23	
+R24	occurs_in Arg1:T14 Arg2:T41	
+R25	occurs_in Arg1:T19 Arg2:T44	
+T55	Health_factors 328 346	general population
+T36	Health_factors 1772 1788	financial burden
+R21	associated_with Arg1:T19 Arg2:T36	
+T56	method 45 69	30-day Readmission Rates
+T57	method 391 414	30-day readmission rate
+T58	method 650 673	30-day readmission rate
+T59	Health_factors 1112 1133	Geographical location
+T60	method 1222 1245	30-day readmission rate
+R26	occurs_in Arg1:T56 Arg2:T21	
+R27	occurs_in Arg1:T56 Arg2:T1	

@@ -1,0 +1,16 @@
+T1	gene 49 53	BDNF
+T2	disease 73 108	age-related hippocampal dysfunction
+T3	disease 110 127	memory impairment
+T4	disease 152 162	depression
+T5	disease 287 297	depression
+T7	gene 183 187	BDNF
+T8	Health_factors 191 207	aerobic exercise
+T9	disease 230 249	hippocampal atrophy
+T10	physiology 259 274	memory function
+R1	associated_with Arg1:T1 Arg2:T2	
+R2	associated_with Arg1:T1 Arg2:T3	
+R3	risk_factor_of Arg1:T1 Arg2:T4	
+R5	treatment_for Arg1:T7 Arg2:T9	
+R6	treatment_for Arg1:T7 Arg2:T10	
+R7	treatment_for Arg1:T7 Arg2:T5	
+R4	associated_with Arg1:T7 Arg2:T8	

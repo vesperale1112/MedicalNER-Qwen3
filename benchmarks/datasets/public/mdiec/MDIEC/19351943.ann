@@ -1,0 +1,95 @@
+T0	disease 31 59	generalized anxiety disorder
+T1	method 0 26	Cognitive behavior therapy
+T2	Health_factors 66 78	older adults
+T3	method 82 94	primary care
+T4	method 98 123	randomized clinical trial
+T5	disease 197 225	generalized anxiety disorder
+T6	disease 227 230	GAD
+T7	method 133 159	Cognitive behavior therapy
+T8	method 161 164	CBT
+T9	method 279 291	primary care
+T10	Health_factors 299 311	older adults
+T12	method 242 255	pilot studies
+T13	method 373 376	CBT
+T14	method 389 408	enhanced usual care
+T15	Health_factors 418 430	older adults
+T16	disease 436 439	GAD
+T17	method 443 455	primary care
+T20	method 493 518	Randomized clinical trial
+T21	Health_factors 534 546	older adults
+T22	Health_factors 553 556	age
+T23	method 754 763	follow-up
+T28	method 812 824	INTERVENTION
+T29	method 825 851	Cognitive behavior therapy
+T30	method 878 898	primary care clinics
+T32	method 992 1009	cognitive therapy
+T34	Health_factors 1058 1085	behavioral sleep management
+T35	Health_factors 1021 1052	problem-solving skills training
+T37	method 971 990	relaxation training
+T38	method 944 969	motivational interviewing
+T46	method 1283 1313	Penn State Worry Questionnaire
+T49	disease 1382 1389	anxiety
+T50	disease 1466 1485	depressive symptoms
+T54	method 1487 1515	Beck Depression Inventory II
+T57	method 1562 1594	12-Item Short Form Health Survey
+T58	Health_factors 1522 1560	physical/mental health quality of life
+T59	method 1430 1452	Beck Anxiety Inventory
+T62	method 1607 1633	Cognitive behavior therapy
+T63	method 1701 1720	confidence interval
+T64	method 1722 1724	CI
+T65	method 1751 1753	CI
+T66	disease 1792 1811	depressive symptoms
+T67	method 1823 1825	CI
+T68	method 1850 1852	CI
+T70	method 1913 1915	CI
+T71	method 1941 1943	CI
+T72	Health_factors 1880 1901	general mental health
+T73	disease 1995 1998	GAD
+T74	method 2030 2033	CBT
+T75	method 2067 2069	CI
+T76	method 2092 2094	CI
+T80	method 2120 2147	intention-to-treat analyses
+T84	disease 2387 2406	depressive symptoms
+T86	disease 2458 2461	GAD
+T87	method 2465 2477	primary care
+T88	Health_factors 2412 2433	general mental health
+T89	disease 2501 2504	GAD
+T90	method 2556 2559	CBT
+R1	occurs_in Arg1:T0 Arg2:T2	
+R3	abbreviation_for Arg1:T8 Arg2:T7	
+R4	abbreviation_for Arg1:T6 Arg2:T5	
+R5	treatment_for Arg1:T8 Arg2:T5	
+R6	treatment_for Arg1:T7 Arg2:T5	
+R7	treatment_for Arg1:T8 Arg2:T6	
+R8	treatment_for Arg1:T7 Arg2:T6	
+T11	method 410 413	EUC
+R9	abbreviation_for Arg1:T11 Arg2:T14	
+R10	occurs_in Arg1:T15 Arg2:T16	
+T18	method 606 627	primary care settings
+T19	Health_factors 919 928	education
+T25	method 1116 1119	EUC
+T26	disease 1267 1272	worry
+T27	disease 1319 1322	GAD
+T31	method 1333 1351	GAD Severity Scale
+T33	method 1399 1428	Hamilton Anxiety Rating Scale
+T36	method 1648 1651	EUC
+T39	disease 1675 1680	worry
+R12	treatment_for Arg1:T62 Arg2:T39	
+R13	abbreviation_for Arg1:T64 Arg2:T63	
+R14	treatment_for Arg1:T62 Arg2:T66	
+R15	treatment_for Arg1:T62 Arg2:T72	
+T40	method 2053 2056	EUC
+T41	disease 2185 2190	worry
+T42	method 2222 2225	CBT
+T43	method 2240 2243	EUC
+T44	method 2327 2330	EUC
+T45	method 2332 2335	CBT
+T47	disease 2371 2376	worry
+T48	Health_factors 2438 2452	older patients
+R17	occurs_in Arg1:T47 Arg2:T48	
+R21	occurs_in Arg1:T84 Arg2:T48	
+R23	occurs_in Arg1:T88 Arg2:T48	
+R26	treatment_for Arg1:T45 Arg2:T47	
+R27	treatment_for Arg1:T45 Arg2:T84	
+R28	treatment_for Arg1:T45 Arg2:T88	
+R2	occurs_in Arg1:T48 Arg2:T86	

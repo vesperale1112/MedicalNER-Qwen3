@@ -1,0 +1,142 @@
+T1	disease 0 17	Anxiety Disorders
+T2	disease 41 58	Anxiety disorders
+T3	disease 209 226	Anxiety disorders
+T4	disease 335 348	panic attacks
+T5	disease 350 370	anticipatory anxiety
+T6	disease 397 425	Generalized anxiety disorder
+T7	disease 454 477	social anxiety disorder
+T8	disease 509 523	panic disorder
+T9	disease 567 578	agoraphobia
+T10	disease 590 607	anxiety disorders
+T11	disease 630 647	Anxiety disorders
+T12	disease 695 707	palpitations
+T13	disease 709 728	shortness of breath
+T14	disease 734 743	dizziness
+T15	method 807 837	Generalized Anxiety Disorder-7
+T16	disease 863 880	anxiety disorders
+T17	disease 1057 1064	anxiety
+T18	drug 1131 1170	Selective serotonin reuptake inhibitors
+T20	drug 1183 1193	sertraline
+T23	drug 1199 1243	serotonin-norepinephrine reuptake inhibitors
+T24	drug 1256 1284	venlafaxine extended release
+T25	disease 1324 1352	generalized anxiety disorder
+T26	disease 1354 1377	social anxiety disorder
+T27	disease 1383 1397	panic disorder
+T28	disease 1518 1546	generalized anxiety disorder
+T29	disease 1616 1639	social anxiety disorder
+T30	disease 1678 1692	panic disorder
+T31	disease 1821 1838	anxiety disorders
+T32	disease 1888 1916	generalized anxiety disorder
+T33	disease 1976 1999	social anxiety disorder
+T34	disease 2064 2078	panic disorder
+T35	disease 2274 2316	medical and psychiatric comorbid illnesses
+T36	disease 2418 2435	Anxiety disorders
+T37	disease 2590 2607	anxiety disorders
+T38	drug 2660 2670	sertraline
+T39	drug 2690 2718	venlafaxine extended release
+T40	signs 66 85	lifetime prevalence
+T41	Health_factors 162 177	quality of life
+T43	signs 432 451	lifetime prevalence
+T44	signs 483 502	lifetime prevalence
+T45	signs 530 549	lifetime prevalence
+T47	method 616 628	primary care
+T48	method 751 769	screening measures
+T49	method 781 793	primary care
+T50	method 990 1015	evidence-based treatments
+T51	method 1116 1129	psychotherapy
+T52	drug 1172 1177	SSRIs
+T53	drug 1245 1250	SNRIs
+T54	method 1399 1412	Meta-analyses
+T55	drug 1426 1431	SSRIs
+T56	drug 1436 1441	SNRIs
+T58	method 1595 1597	CI
+T59	method 1657 1659	CI
+T60	method 1710 1712	CI
+T61	method 1732 1760	Cognitive behavioral therapy
+T62	method 1768 1781	psychotherapy
+T65	method 1957 1959	CI
+T66	method 2045 2047	CI
+T67	method 2124 2126	CI
+T68	method 2157 2169	primary care
+T69	Health_factors 2197 2207	clinicians
+T70	Health_factors 2318 2321	age
+T71	Health_factors 2323 2326	sex
+T72	Health_factors 2464 2470	adults
+T73	method 2616 2644	cognitive behavioral therapy
+T74	drug 2646 2651	SSRIs
+T75	drug 2676 2681	SNRIs
+T76	Health_factors 2224 2242	patient preference
+T77	disease 668 685	physical symptoms
+T78	disease 376 395	avoidance behaviors
+R1	associated_with Arg1:T2 Arg2:T41	
+T79	disease 270 275	worry
+T80	disease 277 305	social and performance fears
+R2	characteristic_of Arg1:T79 Arg2:T3	
+R3	characteristic_of Arg1:T80 Arg2:T3	
+R4	characteristic_of Arg1:T4 Arg2:T3	
+R5	characteristic_of Arg1:T5 Arg2:T3	
+R6	characteristic_of Arg1:T78 Arg2:T3	
+R7	hyponym_of Arg1:T6 Arg2:T10	
+R8	hyponym_of Arg1:T7 Arg2:T10	
+R9	hyponym_of Arg1:T8 Arg2:T10	
+R10	hyponym_of Arg1:T9 Arg2:T10	
+R11	associated_with Arg1:T11 Arg2:T77	
+R12	hyponym_of Arg1:T12 Arg2:T77	
+R13	hyponym_of Arg1:T13 Arg2:T77	
+R14	hyponym_of Arg1:T14 Arg2:T77	
+R15	associated_with Arg1:T11 Arg2:T12	
+R16	associated_with Arg1:T11 Arg2:T13	
+R17	associated_with Arg1:T11 Arg2:T14	
+R18	hyponym_of Arg1:T15 Arg2:T48	
+R19	help_diagnose Arg1:T15 Arg2:T16	
+R20	help_diagnose Arg1:T48 Arg2:T16	
+T42	method 1096 1111	pharmacotherapy
+T46	method 1066 1087	First-line treatments
+R21	hyponym_of Arg1:T42 Arg2:T46	
+R22	hyponym_of Arg1:T51 Arg2:T46	
+R23	abbreviation_for Arg1:T52 Arg2:T18	
+R24	hyponym_of Arg1:T20 Arg2:T52	
+R25	hyponym_of Arg1:T20 Arg2:T18	
+R26	abbreviation_for Arg1:T53 Arg2:T23	
+R27	hyponym_of Arg1:T24 Arg2:T53	
+R28	hyponym_of Arg1:T24 Arg2:T23	
+T19	method 1293 1319	first-line pharmacotherapy
+R29	treatment_for Arg1:T18 Arg2:T25	
+R30	treatment_for Arg1:T52 Arg2:T25	
+R31	treatment_for Arg1:T20 Arg2:T25	
+R32	treatment_for Arg1:T18 Arg2:T26	
+R33	treatment_for Arg1:T52 Arg2:T26	
+R34	treatment_for Arg1:T20 Arg2:T26	
+R35	treatment_for Arg1:T18 Arg2:T27	
+R36	treatment_for Arg1:T52 Arg2:T27	
+R37	treatment_for Arg1:T20 Arg2:T27	
+R38	treatment_for Arg1:T23 Arg2:T25	
+R39	treatment_for Arg1:T23 Arg2:T26	
+R40	treatment_for Arg1:T23 Arg2:T27	
+R41	treatment_for Arg1:T53 Arg2:T25	
+R42	treatment_for Arg1:T53 Arg2:T26	
+R43	treatment_for Arg1:T53 Arg2:T27	
+R44	treatment_for Arg1:T24 Arg2:T25	
+R45	treatment_for Arg1:T24 Arg2:T26	
+R46	treatment_for Arg1:T24 Arg2:T27	
+T21	method 1548 1576	standardized mean difference
+T22	method 1578 1581	SMD
+R47	abbreviation_for Arg1:T22 Arg2:T21	
+T57	method 1641 1644	SMD
+R48	treatment_for Arg1:T61 Arg2:T31	
+R49	hyponym_of Arg1:T61 Arg2:T62	
+T63	Health_factors 2332 2353	reproductive planning
+T64	disease 2539 2547	distress
+T81	disease 2552 2562	impairment
+T82	method 2564 2585	First-line treatments
+R50	hyponym_of Arg1:T73 Arg2:T82	
+R51	hyponym_of Arg1:T74 Arg2:T82	
+R52	hyponym_of Arg1:T38 Arg2:T74	
+R53	hyponym_of Arg1:T75 Arg2:T82	
+R54	hyponym_of Arg1:T39 Arg2:T75	
+R55	treatment_for Arg1:T73 Arg2:T37	
+R56	treatment_for Arg1:T74 Arg2:T37	
+R57	treatment_for Arg1:T38 Arg2:T37	
+R58	treatment_for Arg1:T75 Arg2:T37	
+R59	treatment_for Arg1:T39 Arg2:T37	
+R60	treatment_for Arg1:T50 Arg2:T17	

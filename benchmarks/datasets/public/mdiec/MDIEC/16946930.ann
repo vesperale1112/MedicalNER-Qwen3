@@ -1,0 +1,64 @@
+T0	disease 38 51	schizophrenia
+T1	gene 62 74	D1 receptors
+T2	disease 84 97	Schizophrenia
+T3	disease 159 179	cognitive impairment
+T4	physiology 8 34	cortical dopamine function
+T5	disease 137 154	negative symptoms
+T6	disease 118 135	positive symptoms
+T8	physiology 217 249	excessive dopamine (DA) function
+T9	drug 309 334	antipsychotic medications
+T10	disease 373 390	positive symptoms
+T11	physiology 278 305	antidopaminergic properties
+T12	disease 181 198	Positive symptoms
+T14	disease 486 535	dysfunction of the dorsolateral prefrontal cortex
+T15	gene 594 606	D1 receptors
+T16	disease 392 409	Negative symptoms
+T18	region 537 542	DLPFC
+T20	disease 414 454	impairment in higher cognitive functions
+T21	disease 729 754	cortical dopamine deficit
+T23	physiology 659 693	excess subcortical DA transmission
+T24	disease 794 807	schizophrenia
+T25	drug 917 931	[(11)C]NNC 112
+T26	gene 976 987	D1 receptor
+T31	physiology 1020 1034	working memory
+T32	method 957 968	PET imaging
+T33	drug 941 952	radiotracer
+T34	method 908 911	PET
+T35	method 878 906	positron emission tomography
+T36	Health_factors 770 788	drug free patients
+T37	physiology 1078 1088	D1 binding
+T38	disease 1119 1132	schizophrenia
+T39	region 1096 1101	DLPFC
+T40	drug 1189 1193	drug
+T41	physiology 1307 1323	poor performance
+T42	gene 1386 1398	D1 receptors
+T43	disease 1554 1567	schizophrenia
+T44	method 1471 1489	postmortem studies
+T45	region 1533 1550	prefrontal cortex
+T46	region 1499 1525	deficits in DA innervation
+T47	physiology 1423 1466	sustained deficit in prefrontal DA function
+R1	occurs_in Arg1:T4 Arg2:T0	
+R2	characteristic_of Arg1:T6 Arg2:T2	
+R3	characteristic_of Arg1:T5 Arg2:T2	
+R4	characteristic_of Arg1:T3 Arg2:T2	
+R5	associated_with Arg1:T12 Arg2:T8	
+T7	drug 227 235	dopamine
+T48	drug 237 239	DA
+R6	abbreviation_for Arg1:T48 Arg2:T7	
+R7	treatment_for Arg1:T9 Arg2:T10	
+T13	region 505 535	dorsolateral prefrontal cortex
+R8	abbreviation_for Arg1:T18 Arg2:T13	
+R9	associated_with Arg1:T16 Arg2:T14	
+R10	associated_with Arg1:T20 Arg2:T14	
+R11	associated_with Arg1:T14 Arg2:T15	
+R12	associated_with Arg1:T23 Arg2:T21	
+R13	abbreviation_for Arg1:T34 Arg2:T35	
+R14	hyponym_of Arg1:T25 Arg2:T33	
+T17	method 997 1008	n-back task
+R15	located_in Arg1:T37 Arg2:T39	
+R16	characteristic_of Arg1:T37 Arg2:T38	
+T19	method 1331 1342	n-back task
+R17	located_in Arg1:T46 Arg2:T45	
+R18	occurs_in Arg1:T45 Arg2:T43	
+R19	associated_with Arg1:T42 Arg2:T47	
+R20	occurs_in Arg1:T36 Arg2:T24	

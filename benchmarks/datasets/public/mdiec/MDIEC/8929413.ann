@@ -1,0 +1,46 @@
+T0	symptom 15 37	anxiety-related traits
+T2	gene 65 91	serotonin transporter gene
+T4	drug 145 154	serotonin
+T5	drug 156 175	5-hydroxytryptamine
+T6	drug 179 183	5-HT
+T7	disease 208 215	anxiety
+T8	method 230 243	animal models
+T11	drug 322 339	antianxiety drugs
+T12	drug 285 317	uptake-inhibiting antidepressant
+T15	gene 347 363	5-HT transporter
+T17	gene 365 370	5-HTT
+T18	physiology 347 390	5-HT transporter (5-HTT) gene transcription
+T19	region 436 462	upstream regulatory region
+T20	gene 416 428	polymorphism
+T21	gene 548 567	5-HTT gene promoter
+T23	region 628 640	lymphoblasts
+T24	physiology 592 608	5-HTT expression
+T25	physiology 613 624	5-HT uptake
+T26	gene 468 501	short variant of the polymorphism
+T27	gene 732 750	5-HTT polymorphism
+T29	symptom 842 876	anxiety-related personality traits
+T31	method 642 661	Association studies
+T32	gene 45 57	polymorphism
+R1	associated_with Arg1:T0 Arg2:T32	
+R2	located_in Arg1:T32 Arg2:T2	
+T1	Health_factors 219 225	humans
+R3	occurs_in Arg1:T7 Arg2:T1	
+R4	occurs_in Arg1:T7 Arg2:T8	
+R5	associated_with Arg1:T4 Arg2:T7	
+R6	associated_with Arg1:T5 Arg2:T7	
+R7	associated_with Arg1:T6 Arg2:T7	
+R8	associated_with Arg1:T4 Arg2:T12	
+R9	associated_with Arg1:T5 Arg2:T12	
+R10	associated_with Arg1:T6 Arg2:T12	
+R11	associated_with Arg1:T4 Arg2:T11	
+R12	associated_with Arg1:T5 Arg2:T11	
+R13	associated_with Arg1:T6 Arg2:T11	
+T3	Health_factors 341 346	Human
+R14	abbreviation_for Arg1:T17 Arg2:T15	
+R15	associated_with Arg1:T18 Arg2:T20	
+R16	located_in Arg1:T20 Arg2:T19	
+R17	associated_with Arg1:T26 Arg2:T21	
+R18	located_in Arg1:T25 Arg2:T23	
+R19	associated_with Arg1:T21 Arg2:T24	
+R20	associated_with Arg1:T21 Arg2:T25	
+R21	associated_with Arg1:T27 Arg2:T29	

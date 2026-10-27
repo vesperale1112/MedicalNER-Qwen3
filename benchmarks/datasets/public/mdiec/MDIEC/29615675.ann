@@ -1,0 +1,85 @@
+T1	disease 102 127	major depression disorder
+T2	disease 205 230	major depression disorder
+T3	disease 232 235	MDD
+T4	disease 659 669	severe MDD
+T5	disease 1083 1102	depressive symptoms
+T6	disease 1479 1482	MDD
+T7	method 39 64	electroconvulsive therapy
+T8	method 129 154	Electroconvulsive therapy
+T9	method 156 159	ECT
+R2	abbreviation_for Arg1:T9 Arg2:T8	
+R3	treatment_for Arg1:T8 Arg2:T2	
+R4	abbreviation_for Arg1:T3 Arg2:T2	
+R5	treatment_for Arg1:T8 Arg2:T3	
+R6	treatment_for Arg1:T9 Arg2:T2	
+R7	treatment_for Arg1:T9 Arg2:T3	
+T10	method 238 241	ECT
+T11	region 288 299	hippocampus
+T12	region 346 359	cornu ammonis
+T13	region 361 363	CA
+R8	abbreviation_for Arg1:T13 Arg2:T12	
+T15	region 378 396	granule cell layer
+T16	region 398 401	GCL
+R10	abbreviation_for Arg1:T16 Arg2:T15	
+R11	hyponym_of Arg1:T15 Arg2:T11	
+T17	region 406 421	molecular layer
+T18	region 423 425	ML
+R12	abbreviation_for Arg1:T18 Arg2:T17	
+R13	hyponym_of Arg1:T17 Arg2:T11	
+R15	hyponym_of Arg1:T16 Arg2:T11	
+R16	hyponym_of Arg1:T18 Arg2:T11	
+T19	region 436 445	subiculum
+R17	hyponym_of Arg1:T19 Arg2:T11	
+T20	method 493 496	ECT
+T21	method 553 556	ECT
+T22	method 808 842	hippocampal segmentation algorithm
+T23	method 683 686	ECT
+T24	method 697 720	structural brain images
+T25	method 740 766	magnetic resonance imaging
+T26	method 784 787	ECT
+T27	method 848 862	Freesurfer 6.0
+T28	method 887 890	ECT
+T29	method 969 995	machine learning algorithm
+T31	method 1143 1185	Receiver operating characteristic analysis
+T30	signs 1003 1031	hippocampal subfield volumes
+T32	method 1375 1378	ECT
+T33	region 1312 1333	hippocampal subfields
+T34	method 1472 1475	ECT
+#1	AnnotatorNotes T1	C1269683
+#2	AnnotatorNotes T2	C1269683
+#3	AnnotatorNotes T3	C1269683
+#4	AnnotatorNotes T7	C0013806
+#5	AnnotatorNotes T9	C0013806
+#6	AnnotatorNotes T11	C0019564
+#7	AnnotatorNotes T12	C3498443
+#8	AnnotatorNotes T13	C3498443
+#10	AnnotatorNotes T15	C2334667
+#11	AnnotatorNotes T16	C2334667
+#12	AnnotatorNotes T17	C3495986
+#13	AnnotatorNotes T18	C3495986
+#14	AnnotatorNotes T19	C2950582
+#15	AnnotatorNotes T25	C0024485
+#16	AnnotatorNotes T22	C0002045
+#17	AnnotatorNotes T29	C0376284
+#18	AnnotatorNotes T8	C0013806
+T35	signs 70 98	hippocampal subfield volumes
+T36	region 592 613	hippocampal subfields
+T38	region 933 936	GCL
+T39	region 938 940	ML
+T40	region 945 954	subiculum
+R21	associated_with Arg1:T33 Arg2:T32	
+T42	physiology 253 265	neurogenesis
+T43	physiology 270 284	synaptogenesis
+R9	hyponym_of Arg1:T12 Arg2:T11	
+R14	hyponym_of Arg1:T13 Arg2:T11	
+R19	associated_with Arg1:T10 Arg2:T42	
+R20	associated_with Arg1:T10 Arg2:T43	
+T44	physiology 531 549	treatment response
+R1	associated_with Arg1:T10 Arg2:T11	
+R26	located_in Arg1:T43 Arg2:T11	
+R28	located_in Arg1:T42 Arg2:T11	
+T37	region 899 931	volume increases in CA subfields
+R29	associated_with Arg1:T28 Arg2:T37	
+R18	associated_with Arg1:T28 Arg2:T38	
+R22	associated_with Arg1:T28 Arg2:T39	
+R23	associated_with Arg1:T28 Arg2:T40	

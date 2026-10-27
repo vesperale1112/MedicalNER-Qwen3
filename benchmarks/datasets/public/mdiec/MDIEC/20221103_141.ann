@@ -1,0 +1,5 @@
+T1	drug 0 10	Reboxetine
+T2	drug 22 56	selective norepinephrine inhibitor
+T5	disease 115 125	depression
+R1	hyponym_of Arg1:T1 Arg2:T2	
+R2	treatment_for Arg1:T1 Arg2:T5	

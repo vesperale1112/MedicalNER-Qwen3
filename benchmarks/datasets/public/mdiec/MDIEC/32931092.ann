@@ -1,0 +1,64 @@
+T1	disease 122 138	mental disorders
+T2	disease 469 483	mental illness
+T3	disease 586 602	mental disorders
+T4	disease 815 831	mental disorders
+T5	disease 1145 1155	depression
+T6	disease 1157 1164	anxiety
+T7	disease 1195 1208	schizophrenia
+T8	disease 1210 1226	bipolar disorder
+T9	disease 1232 1272	attention-deficit/hyperactivity disorder
+T10	disease 1430 1446	mental disorders
+T11	disease 1654 1668	mental illness
+T12	disease 1774 1788	mental illness
+T14	method 18 38	lifestyle psychiatry
+T15	Health_factors 53 61	exercise
+T16	Health_factors 63 70	smoking
+T17	Health_factors 81 86	sleep
+T19	Health_factors 199 216	lifestyle factors
+T20	Health_factors 248 263	physical health
+T21	Health_factors 283 296	mental health
+T23	Health_factors 417 433	health behaviors
+T26	Health_factors 538 555	lifestyle factors
+T27	Health_factors 573 582	prognosis
+T28	Health_factors 692 709	physical activity
+T29	Health_factors 711 716	sleep
+T30	Health_factors 739 754	tobacco smoking
+T31	Health_factors 778 796	treatment outcomes
+T32	method 849 862	meta-analyses
+T34	method 956 969	meta-analyses
+T35	method 973 1001	randomized controlled trials
+T36	Health_factors 1092 1109	lifestyle factors
+T39	Health_factors 1346 1363	physical activity
+T41	method 1390 1408	clinical treatment
+T42	Health_factors 1481 1496	tobacco smoking
+T43	disease 1544 1565	severe mental illness
+T44	Health_factors 1715 1733	mental health care
+T45	Health_factors 1742 1752	poor sleep
+T48	method 1901 1948	non-pharmacological sleep-focused interventions
+T51	Health_factors 2037 2050	mental health
+T52	Health_factors 2173 2186	public health
+T55	physiology 1973 1997	neurobiological pathways
+T56	Health_factors 1678 1682	diet
+T57	Health_factors 1625 1641	dietary patterns
+T58	disease 1169 1193	stress-related disorders
+T60	method 897 928	Mendelian randomization studies
+T61	method 866 892	prospective/cohort studies
+T62	Health_factors 718 734	dietary patterns
+T64	Health_factors 301 325	psychological well-being
+T66	Health_factors 72 76	diet
+T67	method 2 13	meta-review
+T18	method 630 652	systematic meta-review
+T22	method 934 946	meta-reviews
+R4	associated_with Arg1:T28 Arg2:T4	
+R5	associated_with Arg1:T29 Arg2:T4	
+R6	associated_with Arg1:T62 Arg2:T4	
+R7	associated_with Arg1:T30 Arg2:T4	
+R12	treatment_for Arg1:T39 Arg2:T10	
+R13	risk_factor_of Arg1:T42 Arg2:T43	
+R14	associated_with Arg1:T57 Arg2:T11	
+R15	risk_factor_of Arg1:T45 Arg2:T12	
+T24	Health_factors 2015 2032	lifestyle factors
+T25	Health_factors 340 380	international and national health bodies
+R1	associated_with Arg1:T19 Arg2:T20	
+R2	associated_with Arg1:T19 Arg2:T21	
+R3	associated_with Arg1:T19 Arg2:T64	

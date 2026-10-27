@@ -1,0 +1,41 @@
+T1	disease 45 55	depression
+T2	disease 190 210	depressive disorders
+T3	disease 483 503	depressive disorders
+T4	disease 562 575	unstable mood
+T5	disease 913 950	adolescent-onset depressive syndromes
+T6	disease 1030 1050	depressive disorders
+T7	disease 1191 1218	circadian-linked depression
+T9	Health_factors 59 71	young people
+T10	method 105 123	early intervention
+T11	method 168 186	early intervention
+T12	Health_factors 214 226	young people
+T14	Health_factors 463 469	adults
+T18	method 772 785	animal models
+T19	Health_factors 863 874	adolescence
+T22	method 1056 1071	clinical trials
+T23	method 1148 1186	personalised, early intervention model
+T24	Health_factors 1222 1234	young people
+T25	method 1075 1101	circadian-based treatments
+T26	disease 991 1025	24 h sleep-wake cycle disturbances
+T27	method 952 982	community and clinical studies
+T29	symptom 663 689	appetite and weight change
+T30	disease 641 657	somatic symptoms
+T31	symptom 617 639	reduced motor activity
+T32	Health_factors 594 615	non-restorative sleep
+T33	disease 577 592	daytime fatigue
+T34	region 387 403	circadian system
+T35	disease 327 367	disturbance in the 24 h sleep-wake cycle
+T39	disease 0 40	Circadian rhythm sleep-wake disturbances
+T8	disease 405 439	Abnormalities in circadian rhythms
+R1	characteristic_of Arg1:T8 Arg2:T3	
+R2	occurs_in Arg1:T14 Arg2:T3	
+R3	characteristic_of Arg1:T4 Arg2:T3	
+R4	characteristic_of Arg1:T33 Arg2:T3	
+R5	characteristic_of Arg1:T32 Arg2:T3	
+R6	characteristic_of Arg1:T31 Arg2:T3	
+R7	characteristic_of Arg1:T30 Arg2:T3	
+R8	characteristic_of Arg1:T29 Arg2:T3	
+T13	method 750 767	circadian biology
+T15	disease 789 811	circadian disturbances
+T16	physiology 838 855	circadian rhythms
+T17	method 297 315	pathophysiological

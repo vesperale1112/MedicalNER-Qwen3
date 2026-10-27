@@ -1,0 +1,6 @@
+T4	disease 136 159	mild-to-moderate stress
+T5	disease 161 168	anxiety
+T6	disease 174 184	depression
+T1	method 62 70	Pacifica
+T2	method 82 108	commercially available app
+R1	hyponym_of Arg1:T1 Arg2:T2	

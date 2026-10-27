@@ -1,0 +1,16 @@
+T1	method 0 36	Imaging and postmortem brain studies
+T2	disease 40 49	depressed
+T3	method 86 110	animal behavioral models
+T4	disease 114 124	depression
+T6	physiology 181 213	intracellular signaling pathways
+T9	disease 264 270	stress
+T11	physiology 310 331	antidepressant action
+T5	disease 164 179	cellular events
+R1	associated_with Arg1:T5 Arg2:T9	
+R2	associated_with Arg1:T6 Arg2:T9	
+R3	associated_with Arg1:T5 Arg2:T11	
+R4	associated_with Arg1:T6 Arg2:T11	
+T7	gene 236 241	genes
+R5	associated_with Arg1:T7 Arg2:T9	
+R6	associated_with Arg1:T7 Arg2:T11	
+T8	Health_factors 50 55	human

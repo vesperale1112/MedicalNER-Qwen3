@@ -1,0 +1,20 @@
+T1	disease 50 75	Major Depression Disorder
+#1	AnnotatorNotes T1	C1269683
+T3	method 2 33	CCA and ICA-Based Mixture Model
+T4	method 81 85	fMRI
+#2	AnnotatorNotes T4	C0376335
+T6	method 265 268	ICA
+T7	method 273 276	CCA
+T8	method 312 315	ICA
+T9	method 484 487	CCA
+T10	method 752 763	mixed model
+T2	disease 1231 1248	major depressions
+#3	AnnotatorNotes T2	C1269683
+T12	method 924 927	ICA
+R1	help_diagnose Arg1:T3 Arg2:T1	
+T11	signs 1047 1072	low frequency fluctuation
+T13	method 306 310	fMRI
+T14	method 773 776	ICA
+T15	method 781 784	CCA
+T16	method 932 935	CCA
+T17	signs 238 263	low frequency fluctuation

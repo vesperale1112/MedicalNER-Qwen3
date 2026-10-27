@@ -1,0 +1,13 @@
+T1	disease 0 16	Eating Disorders
+T2	disease 18 34	Eating disorders
+T3	disease 46 66	behavioral disorders
+T4	disease 160 176	eating disorders
+T5	disease 378 394	eating disorders
+T7	disease 136 145	mortality
+T10	method 325 343	medical assessment
+T11	method 261 287	general medical management
+T12	Health_factors 199 221	primary care providers
+T13	disease 95 131	psychological and physical morbidity
+R1	hyponym_of Arg1:T2 Arg2:T3	
+R2	associated_with Arg1:T2 Arg2:T13	
+R3	associated_with Arg1:T2 Arg2:T7	

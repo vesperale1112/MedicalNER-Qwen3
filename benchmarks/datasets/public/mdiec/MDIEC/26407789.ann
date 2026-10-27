@@ -1,0 +1,73 @@
+T0	disease 28 57	obsessive-compulsive disorder
+T1	disease 62 78	anorexia nervosa
+T3	method 82 141	longitudinal cohort, multigenerational family and twin stud
+T5	disease 144 173	Obsessive-compulsive disorder
+T6	disease 175 178	OCD
+T7	disease 201 217	anorexia nervosa
+T8	disease 219 221	AN
+T9	method 264 283	clinical management
+T12	disease 451 454	OCD
+T13	disease 459 461	AN
+T14	disease 361 372	comorbidity
+T18	gene 420 442	shared genetic factors
+T19	Health_factors 394 415	shared familial risks
+T20	Health_factors 374 392	longitudinal risks
+T22	method 309 331	population-based study
+T23	disease 537 540	OCD
+T24	disease 555 557	AN
+T25	Health_factors 655 697	first-, second- and third-degree relatives
+T26	method 575 608	Swedish National Patient Register
+T29	Health_factors 829 850	Swedish Twin Register
+T30	Health_factors 790 802	Female twins
+T31	disease 894 897	OCD
+T32	disease 961 963	AN
+T33	disease 984 987	OCD
+T34	Health_factors 881 888	Females
+T35	Health_factors 973 978	males
+T39	disease 1085 1088	OCD
+T40	disease 1136 1138	AN
+T41	disease 1202 1204	AN
+T42	disease 1255 1258	OCD
+T43	method 1140 1150	risk ratio
+T44	method 1152 1154	RR
+T45	method 1260 1262	RR
+T50	method 1018 1039	Longitudinal analyses
+T51	Health_factors 1323 1328	males
+T52	Health_factors 1338 1345	females
+T53	Health_factors 1275 1293	longitudinal risks
+T54	disease 1399 1402	OCD
+T55	disease 1429 1431	AN
+T56	gene 1502 1509	genetic
+T58	Health_factors 1347 1381	First- and second-degree relatives
+T59	disease 1629 1632	OCD
+T60	disease 1637 1639	AN
+T62	method 1615 1628	self-reported
+T63	method 1665 1667	CI
+T64	gene 1697 1713	genetic variance
+T66	method 1523 1544	Bivariate twin models
+T67	gene 1757 1764	genetic
+T69	gene 1900 1925	disorder-specific factors
+T70	gene 1869 1891	shared genetic factors
+T71	gene 1990 1994	gene
+T72	method 2021 2038	clinical practice
+T75	method 0 11	Etiological
+R1	associated_with Arg1:T0 Arg2:T1	
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+R3	abbreviation_for Arg1:T8 Arg2:T7	
+R4	associated_with Arg1:T5 Arg2:T7	
+R5	associated_with Arg1:T5 Arg2:T8	
+R6	associated_with Arg1:T6 Arg2:T7	
+R7	associated_with Arg1:T6 Arg2:T8	
+R8	occurs_in Arg1:T34 Arg2:T31	
+R9	risk_factor_of Arg1:T31 Arg2:T32	
+R10	occurs_in Arg1:T35 Arg2:T33	
+R11	risk_factor_of Arg1:T33 Arg2:T32	
+R12	risk_factor_of Arg1:T39 Arg2:T40	
+R13	abbreviation_for Arg1:T44 Arg2:T43	
+R14	risk_factor_of Arg1:T41 Arg2:T42	
+R15	occurs_in Arg1:T58 Arg2:T54	
+R16	risk_factor_of Arg1:T54 Arg2:T55	
+T2	gene 1591 1598	genetic
+R17	associated_with Arg1:T59 Arg2:T60	
+T4	method 1651 1653	ra
+T10	disease 1825 1833	comorbid

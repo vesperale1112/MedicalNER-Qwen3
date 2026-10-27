@@ -1,0 +1,16 @@
+T4	disease 92 102	depression
+T5	disease 194 204	depression
+T10	method 141 144	ECT
+T11	method 405 408	ECT
+T12	gene 46 57	plasma BDNF
+T13	gene 148 159	plasma BDNF
+T14	gene 242 253	plasma BDNF
+T15	gene 346 357	plasma BDNF
+T16	gene 287 304	BDNF polymorphism
+T1	gene 269 277	Val66Met
+T2	gene 279 285	rs6265
+T3	disease 369 386	clinical symptoms
+T6	Health_factors 68 86	medicated patients
+R1	occurs_in Arg1:T6 Arg2:T4	
+T7	Health_factors 170 188	medicated patients
+R2	occurs_in Arg1:T7 Arg2:T5	

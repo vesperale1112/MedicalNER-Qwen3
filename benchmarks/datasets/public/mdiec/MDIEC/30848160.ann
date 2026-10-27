@@ -1,0 +1,76 @@
+T1	disease 58 83	Major Depression Disorder
+T2	disease 147 172	major depressive disorder
+T3	disease 174 177	MDD
+T4	disease 213 223	depression
+T5	disease 357 360	MDD
+T7	disease 811 814	MDD
+T8	disease 861 864	MDD
+T9	disease 1054 1057	MDD
+T10	disease 1446 1449	MDD
+T12	disease 1806 1809	MDD
+#1	AnnotatorNotes T1	C1269683
+#2	AnnotatorNotes T2	C1269683
+#3	AnnotatorNotes T3	C1269683
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+#4	AnnotatorNotes T4	C3825320
+T13	physiology 0 39	Intrinsic Functional Brain Connectivity
+T14	physiology 285 322	resting-state functional connectivity
+T15	physiology 324 328	RSFC
+R3	abbreviation_for Arg1:T15 Arg2:T14	
+T17	method 537 546	MRI study
+T18	physiology 685 689	RSFC
+T19	physiology 955 959	RSFC
+T20	region 1152 1187	subgenual anterior cingulate cortex
+T21	region 1189 1194	sgACC
+R5	abbreviation_for Arg1:T21 Arg2:T20	
+T22	region 1200 1224	inferior parietal lobule
+T23	region 1226 1229	IPL
+R6	abbreviation_for Arg1:T23 Arg2:T22	
+T24	physiology 1531 1535	RSFC
+T25	method 1652 1683	baseline clinical rating scales
+T26	physiology 1685 1713	Intrinsic brain connectivity
+#6	AnnotatorNotes T20	C5450290
+#7	AnnotatorNotes T21	C5450290
+#8	AnnotatorNotes T22	C0152304
+#9	AnnotatorNotes T23	C0152304
+T27	method 619 640	diagnostic interviews
+T28	method 920 936	prediction model
+R2	help_diagnose Arg1:T26 Arg2:T12	
+R8	associated_with Arg1:T13 Arg2:T1	
+T32	symptom 1325 1354	higher sgACC-IPL connectivity
+T29	signs 1840 1851	neuromarker
+T34	method 1892 1912	preventive treatment
+T36	region 1243 1290	left and right dorsolateral prefrontal cortices
+T30	method 370 381	pilot study
+T31	method 102 113	Pilot Study
+T33	Health_factors 129 172	familial risk for major depressive disorder
+T37	Health_factors 422 430	children
+T38	Health_factors 473 476	age
+T41	Health_factors 564 567	age
+T43	physiology 710 728	emotion regulation
+T44	physiology 730 747	cognitive control
+T45	Health_factors 782 790	children
+T46	Health_factors 832 840	children
+T48	Health_factors 1734 1742	children
+T49	Health_factors 1879 1887	children
+R4	risk_factor_of Arg1:T33 Arg2:T4	
+T35	Health_factors 502 515	familial risk
+T6	Health_factors 87 98	Adolescence
+T40	region 753 774	default mode networks
+R9	occurs_in Arg1:T1 Arg2:T6	
+T42	Health_factors 227 238	adolescents
+R10	occurs_in Arg1:T4 Arg2:T42	
+T47	symptom 1127 1143	hypoconnectivity
+R16	located_in Arg1:T47 Arg2:T20	
+R17	located_in Arg1:T47 Arg2:T21	
+R18	located_in Arg1:T47 Arg2:T22	
+R19	located_in Arg1:T47 Arg2:T23	
+R20	located_in Arg1:T47 Arg2:T36	
+R11	help_diagnose Arg1:T19 Arg2:T9	
+R12	occurs_in Arg1:T26 Arg2:T48	
+R7	characteristic_of Arg1:T18 Arg2:T7	
+T11	Health_factors 1748 1776	familial risk for depression
+T16	disease 412 421	depressed
+T39	Health_factors 436 457	familial risk for MDD
+T50	Health_factors 115 123	Children
+R13	occurs_in Arg1:T48 Arg2:T11	

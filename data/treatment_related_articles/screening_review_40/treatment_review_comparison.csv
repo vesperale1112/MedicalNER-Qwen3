@@ -1,0 +1,72 @@
+﻿sample_number,article_index,source,title,model,model_schema_version,model_decision,DHY_decision,尤雅_decision,评审3_decision,majority_decision,unanimous,provisional_prompt_review,mental_health_scope,review_comment,DHY_note,尤雅_note,评审3_note
+1,120582,Embase,Premonitory urge in tic disorders – a scoping review,gemini-3.7-flash,3.0.0-draft.2,KEEP,KEEP,KEEP,KEEP,KEEP,True,KEEP,相关,先兆冲动 precedes tics；症状描述明确。,,,文本明确定义 premonitory urges 先于 tics 发生，支持 Symptom precedes Symptom 及 Symptom description。
+2,89263,Embase,Testing reciprocal associations between child anxiety and parenting across early interventions for inhibited preschoolers,gemini-3.7-flash,3.0.0-draft.2,DROP,DROP,REVIEW,DROP,DROP,False,KEEP,相关,背景明确行为抑制气质与儿童焦虑风险；不要只看干预机制。,,,仅探讨早期干预中焦虑与养育方式的交互机制
+3,39665,Embase,Patient versus general population health state valuations: a case study of non-specific low back pain,gpt-5.6-luna,2.0.0-draft.2,DROP,DROP,DROP,DROP,DROP,True,DROP,边界,健康效用估值方法研究；未明确给出量表与具体疾病/症状的测量关系。,,,探讨腰痛患者与大众健康效用值评估差异，属于量表方法学研究，不符合 Schema 的临床关系或属性。
+4,183003,pubmed,Genome-wide analyses identify 30 loci associated with obsessive-compulsive disorder,gemini-3.7-flash,3.0.0-draft.2,KEEP,KEEP,KEEP,KEEP,KEEP,True,KEEP,相关,OCD 流行病学及遗传病因明确。,,,明确断言强迫症患病率及遗传病因，支持 Disease.epidemiology 与 Etiology causes Disease。
+5,127848,Embase,"Listening Effort, An Overview of App Validation and Testing by the Audiology 4 all Project",gemini-3.7-flash,3.0.0-draft.2,DROP,DROP,DROP,DROP,DROP,True,REVIEW,边界,有听力测试阈值及临床转诊解释；工具归类及领域范围需确认。,,,听力测试移动应用程序的验证研究，未包含受支持的标准化临床评估工具或疾病属性。
+6,189219,pubmed,Prevalence of Neisseria gonorrhoeae infection among women of reproductive age in sub-Saharan Africa: a systematic review and meta-analysis,gemini-3.7-flash,3.0.0-draft.2,KEEP,DROP,DROP,DROP,DROP,True,KEEP,通常范围外,通用 schema 下有疾病分类及流行病学；精神领域范围未写入 prompt。,不属于精神疾病,与精神心理临床诊疗无关,淋球菌感染为细菌性性传播疾病，无关
+7,182705,pubmed,"Genome-wide association study of 23,500 individuals identifies 7 loci associated with brain ventricular volume",gemini-3.7-flash,3.0.0-draft.2,DROP,DROP,DROP,DROP,DROP,True,DROP,未见明确目标事实,未指明具体精神疾病；脑室体积遗传关联不能直接改成疾病病因。,,与精神心理临床诊疗无关,针对健康人群脑室体积的 GWAS 研究，未给出具体临床疾病的直接因果/关联或治疗事实。
+8,38789,Embase,Reductions in Distress Intolerance via Intervention: A Review,gpt-5.6-luna,2.0.0-draft.2,DROP,DROP,REVIEW,DROP,DROP,False,REVIEW,相关,跨诊断 distress intolerance 疗效概括；症状归类和治疗模态归属需确认。,,需确定其与精神心理临床诊疗的相关性,综述痛苦不耐受的变化，缺乏具体疾病、标准化治疗方案
+9,102860,Embase,Risk factors for non-puerperal mastitis: a meta-analysis,gemini-3.7-flash,3.0.0-draft.2,KEEP,DROP,DROP,DROP,DROP,True,KEEP,药物安全边界,明确风险因素和病程；含 psychotropic drug use，范围需确认，不能改成具体药物副作用。,不属于精神疾病,与精神心理临床诊疗无关,非产褥期乳腺炎与精神疾病无关
+10,42272,Embase,SMILE body project: protocol for a randomized controlled trial of an online eating disorder prevention program in young women with psychiatric disorders,gpt-5.6-luna,2.0.0-draft.2,DROP,DROP,DROP,DROP,DROP,True,REVIEW,相关,背景有精神疾病女性的进食障碍风险及既往干预结果；不能仅凭 protocol DROP。,,,纯试验方案，结果为预期假设
+11,43760,Embase,Preventative interventions for postoperative delirium after intraabdominal surgery – A systematic review and meta-analysis of randomized trials,gpt-5.6-luna,2.0.0-draft.2,KEEP,KEEP,KEEP,KEEP,KEEP,True,KEEP,相关,POD prognosis 可支持；DHY relieved_by 方向/端点不符。,"关系候选
+源实体：Preventive interventions (Treatment)
+关系：relieved_by
+目标实体：Postoperative delirium (POD) (Disease)
+值：reduces the incidence of postoperative delirium
+证据：Preventive interventions are effective in reducing the incidence of POD after intraabdominal surgery.",,背景陈述术后谵妄与住院时间延长、发病率及死亡率升高密切相关，支持 prognosis 属性。
+12,113345,Embase,"Efficacy of Dexamethasone as an Adjuvant for Scalp Nerve Blocks to Prolong Analgesia: A Prospective, Double-Blind, Randomized Controlled Study",gemini-3.7-flash,3.0.0-draft.2,DROP,DROP,DROP,DROP,DROP,True,KEEP,通常范围外,通用 schema 下有 SNB 缓解 post-craniotomy pain 的背景句；没有推荐不等于没有症状疗效。,,与精神心理临床诊疗无关,结论为潜在疗效，未确立常规适应证或指南推荐。
+13,189177,pubmed,Consequences of polypharmacy among the people living with dementia: a systematic review and meta-analysis,gemini-3.7-flash,3.0.0-draft.2,DROP,KEEP,KEEP,DROP,KEEP,False,KEEP,相关,多重用药与不良药物反应等风险相关；不是多重用药 contributes_to Dementia。,"关系候选
+实体源：Polypharmacy (Etiology)
+关系：contributes_to
+目标实体：Dementia (Disease)
+值：increased risk of potentially inappropriate medication, hospitalisation, adverse drug reactions, mortality
+证据：This review of 19 studies found that polypharmacy is significantly associated with potentially inappropriate medication (PIM), hospitalisation, adverse drug reactions, and mortality.",,探讨多重用药观察性后果；提及的 NOS 属于文献质量评估工具
+14,46062,Embase,Randomized trial of a digital single-session intervention for body image and mood concerns among LGBTQ+ adolescents,gpt-5.6-luna,2.0.0-draft.2,DROP,DROP,DROP,DROP,DROP,True,KEEP,相关,Body dissatisfaction 是 EDs 和 depression 的共同风险因素，独立于阴性主要结局。,,,青少年单次干预试验，主要结局无显著差异，仅具探索性分析，未产生可复用的临床实体属性。
+15,5647,Embase,Behavioral and Pharmacologic Treatment of Binge Eating and Obesity,gpt-5.6-luna,2.0.0-draft.2,REVIEW,DROP,REVIEW,REVIEW,REVIEW,False,KEEP,相关,BED 最常见正式进食障碍支持流行病学；无需依赖计划中的疗效。,,摘要中没有明显结果来描述治疗效果,背景指出 BED 是最常见进食障碍且与肥胖强相关，潜在支持 Disease.co_occurs_with 或流行病学属性，但处于试验注册简述中。
+16,14888,Embase,Imagery Based Interventions for the Treatment of Anxiety Related Disorders: Mechanisms and Optimizing Outcomes,gpt-5.6-luna,2.0.0-draft.2,DROP,DROP,REVIEW,DROP,DROP,False,KEEP,相关,Social phobia inventory 明确测量 social anxiety 症状；入组测量也可合格。,,摘要中没有明显结果来描述治疗效果,只含有临床试验方案介绍
+17,55886,Embase,Evidenced-Based Review and Evaluation of Clinical Significance: Nonpharmacological and Pharmacological Treatment of Insomnia in the Elderly,gpt-5.6-luna,3.0.0-draft.1,KEEP,KEEP,KEEP,KEEP,KEEP,True,KEEP,相关,CBT-I 的一线使用与证据强度；DHY relieved_by 方向/端点不符。,"关系候选
+源实体：Cognitive Behavioral Therapy for Insomnia (CBT‑I) (Treatment)
+关系：relieved_by
+目标实体：Insomnia (Disease)
+值：first‑line option, longer‑lasting therapeutic effects compared with pharmacologic agents alone
+证据：The authors found the most rigorous evidence supporting Cognitive Behavioral Therapy for Insomnia as a first‑line treatment option, with longer lasting therapeutic effects than treatment with pharmacologic agents alone.",,明确断言 CBT-I 是一线治疗选择，支持 Treatment.indication 及 evidence_level 属性。
+18,31647,Embase,Fear of Cancer Recurrence and Coping in Young Breast Cancer Survivors: A Secondary Analysis,gpt-5.6-luna,2.0.0-draft.2,KEEP,DROP,KEEP,DROP,DROP,False,KEEP,心理症状范围待定,癌症复发恐惧有症状描述；当前 prompt 不限 DSM-5 疾病。,不属于精神疾病,,癌症复发恐惧并非DSM-5范畴，属于癌症心理学而非精神障碍
+19,94540,Embase,A Brief Body-Mind-Spirit Group Therapy for Chinese Medicine Stagnation Syndrome: A Randomized Controlled Trial,gemini-3.7-flash,3.0.0-draft.2,KEEP,KEEP,KEEP,REVIEW,KEEP,False,KEEP,中医/心理症状范围待定,郁证特征及 depression 等改善；DHY relieved_by 方向需反转。,"关系候选
+源实体：Body‑Mind‑Spirit (BMS) group therapy (Treatment)
+关系：relieved_by
+目标实体：Depression (Symptom)
+值：significant symptom improvement
+证据：The intervention group also showed significant improvements in depression, physical distress, everyday functioning, and negative affect (eta‑squared = 0.06 to 0.13).",,明确陈述郁证的核心特征（mind-body obstruction-like symptoms），支持 Symptom is_core_symptom_of Disease，但中医是否可以纳入文献库存疑
+20,103504,Embase,Neurofeedback for opioid dependent patients in an outpatient setting: a pilot feasibility study,gemini-3.7-flash,3.0.0-draft.2,DROP,DROP,DROP,DROP,DROP,True,REVIEW,相关,背景 probably efficacious 的 evidence_level / 结合使用描述需确认。,,,神经反馈治疗阿片依赖的可行性先导试验，侧重招募与实施障碍分析，无关系。
+21,137256,pubmed,Music therapy and weight gain in preterm infants: Secondary analysis of the randomized controlled LongSTEP trial,gemini-3.7-flash,3.0.0-draft.2,KEEP,DROP,DROP,DROP,DROP,True,KEEP,通常范围外,早产程度与 EUGR 风险关联符合通用 schema；音乐治疗阴性不否定该事实。,不属于精神疾病,与精神心理临床诊疗无关,与精神障碍无关
+22,149363,pubmed,Prospective randomized double-blind study to evaluate the superiority of Vasopressin versus Norepinephrine in the management of the patient at renal risk undergoing cardiac surgery with cardiopulmonary bypass (NOVACC trial),gemini-3.7-flash,3.0.0-draft.2,KEEP,DROP,DROP,DROP,DROP,True,KEEP,通常范围外,CS-AKI 流行病学明确。,不属于精神疾病,与精神心理临床诊疗无关,心脏手术相关急性肾损伤与精神疾病无关
+23,40271,Embase,A BROKEN HEART CAUSED BY A POTENTIALLY AGGRESSIVE PHEOCHROMOCYTOMA,gpt-5.6-luna,2.0.0-draft.2,KEEP,DROP,DROP,DROP,DROP,True,KEEP,通常范围外,嗜铬细胞瘤造成应激性心肌病等事实；标题的 stress 不能自动构成精神领域事实。,不属于精神疾病,与精神心理临床诊疗无关,应激性心肌病不符合要求
+24,118350,Embase,"Protocol for a randomized, placebo-controlled, double-blind phase IIa study of the safety, tolerability, and symptomatic efficacy of the ROCK-inhibitor Fasudil in patients with Parkinson’s disease (ROCK-PD)",gemini-3.7-flash,3.0.0-draft.2,KEEP,DROP,DROP,DROP,DROP,True,KEEP,神经疾病范围待定,Fasudil 机制及日本批准的蛛网膜下腔出血适应证明确；不能当成已批准 PD 适应证。,不属于精神疾病,与精神心理临床诊疗无关,帕金森不符合精神疾病
+25,52890,Embase,24-month outcomes of an eHealth universal program for students and parents to prevent adolescent alcohol use: A cluster randomized controlled trial in schools,gpt-5.6-luna,3.0.0-draft.1,DROP,DROP,DROP,DROP,DROP,True,DROP,相关,预防饮酒的主要结局不显著；未明确支持症状缓解，知识增加不足以 KEEP。,,,RCT 评估青少年饮酒预防项目，主要结局未达显著差异
+26,186309,pubmed,Methylphenidate-mediated motor control network enhancement in patients with traumatic brain injury,gemini-3.7-flash,3.0.0-draft.2,DROP,DROP,DROP,DROP,DROP,True,DROP,神经功能范围待定,反应时及影像改善未直接对应明确临床症状缓解。,,,非精神疾病（脑创伤神经机制探索）
+27,19162,Embase,Perinatal Cannabis Use Unrelated to Illicit Opioid Use When Prescribed OUD Medications,gpt-5.6-luna,2.0.0-draft.2,KEEP,KEEP,KEEP,KEEP,KEEP,True,KEEP,相关,孕期接受 OUD 治疗者的心境/焦虑障碍共病陈述；保留人群限制。,,,明确阿片依赖孕妇伴高发生率的焦虑心境障碍共病
+28,36625,Embase,What uro-gynecologists should know about sacral neuromodulation (SNM) for the treatment of refractory overactive bladder,gpt-5.6-luna,2.0.0-draft.2,DROP,DROP,DROP,DROP,DROP,True,KEEP,通常范围外,SNM 被明确推荐用于 OAB，支持 Treatment.indication；不能输出不存在的 Treatment second_line_for。,不属于精神疾病,与精神心理临床诊疗无关,非精神疾病
+29,7168,Embase,Comparative Effectiveness of Repetitive Versus Deep Transcranial Magnetic Stimulation for Major Depression: A Randomized Controlled Trial,gpt-5.6-luna,2.0.0-draft.2,DROP,DROP,KEEP,DROP,DROP,False,REVIEW,相关,dTMS 作用特点、TRD 慢性致残描述及既往结果值得复核；不能直接声称 dTMS 显著优效。,,,未报告确证的结局或适应证。
+30,104887,Embase,Trauma-informed intervention to reduce substance use and to support community transition [TRUST]: Study protocol for a type 1 effectiveness-implementation hybrid trial to reduce overdose risk among justice-involved women,gemini-3.7-flash,3.0.0-draft.2,DROP,DROP,DROP,DROP,DROP,True,REVIEW,相关,背景 trauma-informed intervention 减少 overdose risk 的一般性表述与方案预期并存，需确认属性/断言。,,,protocol无实质性临床结局。
+31,25275,Embase,The Efficacy OF Oral DexmedetomidineVersus Oral Midazolam/Ketamine ON Parental Separation AND Face Mask Acceptance IN Pediatrics Undergoing Adenotonsillectomy,gpt-5.6-luna,2.0.0-draft.2,KEEP,DROP,DROP,DROP,DROP,True,KEEP,围术期评估范围待定,通用 schema 下有临床疼痛量表测量及解释；药物分组剂量不能当一般推荐剂量。,不属于精神疾病,,非精神疾病
+32,14442,Embase,GRIPP: Gabapentin for Relief of Immediate Postoperative Pain,gpt-5.6-luna,2.0.0-draft.2,KEEP,DROP,DROP,DROP,DROP,True,KEEP,围术期抑郁筛查范围待定,VAS 明确测量 postoperative pain；另有 Depression Screening，旧 Interview Tool 需映射。,不属于精神疾病,与精神心理临床诊疗无关,术后疼痛并非精神疾病
+33,63617,Embase,Identifying the genetic risk factors for treatment response to lurasidone by genome-wide association study: A meta-analysis of samples from three independent clinical trials,gemini-3.7-flash,3.0.0-draft.2,KEEP,KEEP,DROP,KEEP,KEEP,False,KEEP,相关,CTNNA2 被明确称为 SCZ risk gene。,,,明确将 CTNNA2 定性为精神分裂症风险基因，支持 Etiology contributes_to Disease 关系。
+34,47193,Embase,SUCCESSFUL USE OF EXTRACORPOREAL MEMBRANE OXYGENATION IN MURINE TYPHUS COMPLICATED BY ARDS,gpt-5.6-luna,2.0.0-draft.2,KEEP,DROP,DROP,DROP,DROP,True,KEEP,通常范围外,感染病因、流行病学等明确；个案提及 delirium 是否相关需看具体事实，不能仅据该词放行。,不属于精神疾病,,地方性斑疹伤寒并非精神疾病
+35,178723,pubmed,"Mindfulness-based cognitive therapy v. treatment as usual in people with bipolar disorder: A multicentre, randomised controlled trial",gemini-3.7-flash,3.0.0-draft.2,DROP,KEEP,KEEP,DROP,KEEP,False,REVIEW,相关,总体阴性与探索性亚组获益并存；获益句未明确结局，不能补写显著抑郁改善。,"关系候选
+源实体：Mindfulness‑based cognitive therapy (MBCT) (Treatment) / TAU (Treatment)
+关系：relieved_by
+目标实体：Depressive symptoms (Symptom)
+值：significant symptom improvement in patients with higher baseline depressive symptoms and functional impairment
+证据：Exploratory analysis revealed that participants with higher depressive symptoms and functional impairment at baseline benefitted more from MBCT + TAU than TAU.",,RCT主要结局为阴性结果
+36,77998,Embase,IS PLATELET-RICH PLASMA EFFECTIVE AND SAFE FOR MANAGING ERECTILE DYSFUNCTION? A META-ANALYSIS OF BEFORE-AFTER DATA FROM CLINICAL STUDIES,gemini-3.7-flash,3.0.0-draft.2,KEEP,DROP,DROP,DROP,DROP,True,KEEP,性功能范围待定,ED 的年龄相关流行病学及男性群体明确；摘要未区分心理/器质性。,"不属于精神疾病
+Erectile dysfunction，ICD‑11：MF40.2（属于泌尿生殖系统疾病，不区分心理/器质性）；ICD‑10：N48.4（器质性）/F52.2（非器质性）",,非精神疾病
+37,39405,Embase,Cognitive Behavioral Digital Interventions are Effective in Reducing Anxiety in Children and Adolescents: A Systematic Review and Meta-analysis,gpt-5.6-luna,2.0.0-draft.2,DROP,KEEP,DROP,KEEP,KEEP,False,KEEP,相关,首句儿童焦虑障碍流行病学明确，另有显著效应量；不能说没有结果。,"关系候选
+源实体：Cognitive‑Behavioral Digital Interventions (Treatment)
+关系：relieved_by
+目标实体：Anxiety disorders (Disease)
+值：significant anxiety symptom improvement with low‑to‑medium effect sizes across self‑report, clinician‑rated and parent‑reported outcomes
+证据：Pooled effect sizes using a random‑effects model yielded low overall effect for self‑ratings (g = 0.28, k = 18, p < 0.001, 95% CI [0.14; 0.41]), and medium effect for ratings of clinicians (g = 0.66, k = 13, p < 0.001, 95% CI [0.50; 0.80]) as well as for parental report (g = 0.49, k = 16, p < 0.001, 95% CI [0.29; 0.69]).",无明确结果,明确焦虑障碍是儿童期患病率最高的精神问题，支持 Disease.epidemiology
+38,139560,pubmed,The Relationship Between Levator Ani Integrity and Postpartum Sexual Dysfunction: A Systematic Review,gemini-3.7-flash,3.0.0-draft.2,DROP,DROP,DROP,DROP,DROP,True,REVIEW,性功能范围待定,具体问卷与 sexual function 的归属关系需复核；不一致病因结果不能写成确定关联。,不属于精神疾病,,非精神疾病
+39,22797,Embase,Stroke and Coated-Platelets - A Translational Research Initiative,gpt-5.6-luna,2.0.0-draft.2,KEEP,DROP,DROP,DROP,DROP,True,KEEP,认知范围待定,除非精神适应证外还有 MoCA 筛查认知障碍及转诊；不能只看 stroke 主疾病。,不属于精神疾病,,非精神疾病
+40,53744,Embase,ORGANIZATIONAL SKILLS AND EXECUTIVE FUNCTION TREATMENT FOR CHILDREN AND TEENS WITH ADHD: UPDATE AND TRAINING IN TWO EMPIRICALLY SUPPORTED INTERVENTIONS,gpt-5.6-luna,3.0.0-draft.1,KEEP,KEEP,KEEP,KEEP,KEEP,True,KEEP,相关,OST 是 ADHD 的实证治疗，evidence_level / indication 可支持。,,,明确将OST与 STAND 确立为 ADHD 干预方法，支持 Treatment.indication 及 evidence_level。

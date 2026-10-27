@@ -1,0 +1,43 @@
+T0	disease 0 7	Anxiety
+T1	disease 12 22	depression
+T2	disease 40 50	chest pain
+T4	disease 94 104	depression
+T5	disease 174 184	chest pain
+T6	disease 82 89	Anxiety
+T7	Health_factors 150 155	males
+T8	Health_factors 160 167	females
+T10	method 192 229	diagnostic exercise treadmill testing
+T11	disease 231 241	Chest pain
+T12	disease 281 287	angina
+T14	disease 477 484	anxiety
+T15	disease 496 506	depression
+T16	signs 530 544	positive tests
+T18	signs 426 440	negative tests
+T19	Health_factors 587 592	women
+T20	signs 616 630	negative tests
+T22	signs 715 729	positive tests
+T23	disease 674 687	atypical pain
+T24	signs 655 669	negative tests
+T25	disease 731 740	Depressed
+T26	disease 846 853	anxiety
+T27	disease 857 867	depression
+T28	disease 986 993	anxious
+T29	disease 1016 1029	atypical pain
+T31	Health_factors 899 904	males
+T32	Health_factors 916 923	females
+T33	disease 998 1007	depressed
+T34	Health_factors 1041 1046	males
+T35	Health_factors 1058 1065	females
+T36	signs 946 959	negative test
+T37	disease 876 888	typical pain
+T38	signs 812 825	negative test
+T39	disease 1140 1159	atypical chest pain
+T41	disease 1117 1135	affective symptoms
+T42	method 1067 1094	Diagnostic exercise testing
+T43	method 64 80	exercise testing
+R1	occurs_in Arg1:T0 Arg2:T2	
+R2	occurs_in Arg1:T1 Arg2:T2	
+T9	method 322 336	exercise tests
+R3	risk_factor_of Arg1:T18 Arg2:T14	
+R4	risk_factor_of Arg1:T18 Arg2:T15	
+T17	signs 567 581	positive tests

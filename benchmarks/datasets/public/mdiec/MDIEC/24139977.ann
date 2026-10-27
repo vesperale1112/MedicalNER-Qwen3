@@ -1,0 +1,65 @@
+T3	disease 67 81	health anxiety
+T5	method 105 144	multicentre randomised controlled trial
+T6	Health_factors 85 101	medical patients
+T8	method 35 62	cognitive behaviour therapy
+T9	disease 157 171	Health anxiety
+T12	Health_factors 297 319	psychological services
+T14	method 213 240	cognitive behaviour therapy
+T15	method 330 343	hospital care
+T17	Health_factors 460 484	hospital medical clinics
+T18	method 440 456	randomised study
+T19	method 391 402	pilot trial
+T24	method 578 665	cardiac, endocrine, gastroenterological, neurological, and respiratory medicine clinics
+T25	method 669 683	secondary care
+T26	method 511 540	multicentre, randomised trial
+T27	disease 762 776	health anxiety
+T28	Health_factors 703 707	aged
+T33	method 1172 1179	clinics
+T35	Health_factors 1119 1144	hospital-based therapists
+T36	method 1055 1090	adapted cognitive behaviour therapy
+T45	method 1255 1279	Health Anxiety Inventory
+T46	disease 1215 1238	health anxiety symptoms
+T54	method 1787 1800	standard care
+T55	method 1703 1716	standard care
+T56	method 1616 1651	adapted cognitive behaviour therapy
+T59	disease 1884 1898	health anxiety
+T60	method 2004 2006	CI
+T64	disease 2117 2131	health anxiety
+T65	method 2187 2197	odds ratio
+T66	method 2207 2209	CI
+T67	method 2159 2172	control group
+T69	method 2063 2090	cognitive behaviour therapy
+T70	method 1979 1992	standard care
+T72	disease 2374 2384	depression
+T74	disease 2329 2348	generalised anxiety
+T76	disease 2394 2400	deaths
+T77	disease 2462 2469	illness
+T79	method 2418 2431	control group
+T80	Health_factors 2471 2489	Social functioning
+T81	Health_factors 2493 2523	health-related quality of life
+T82	method 2661 2685	adjusted mean difference
+T83	method 2695 2697	CI
+T90	method 2752 2787	adapted cognitive behaviour therapy
+T91	method 2934 2946	medical care
+T1	Health_factors 192 209	therapists expert
+T2	disease 2792 2806	health anxiety
+R1	treatment_for Arg1:T90 Arg2:T2	
+T4	method 1922 1928	CBT-HA
+R2	treatment_for Arg1:T4 Arg2:T59	
+T7	method 1092 1098	CBT-HA
+R3	abbreviation_for Arg1:T7 Arg2:T36	
+T10	method 1151 1164	standard care
+R4	help_diagnose Arg1:T45 Arg2:T46	
+T11	method 1653 1659	CBT-HA
+R5	abbreviation_for Arg1:T11 Arg2:T56	
+T13	method 1688 1701	standard care
+T16	method 1759 1765	CBT-HA
+R6	occurs_in Arg1:T3 Arg2:T6	
+R8	treatment_for Arg1:T14 Arg2:T9	
+T20	Health_factors 982 998	medical patients
+T21	method 1349 1371	health and social care
+R9	treatment_for Arg1:T69 Arg2:T64	
+R7	treatment_for Arg1:T8 Arg2:T3	
+T22	Health_factors 544 567	health anxious patients
+T23	method 823 831	hospital
+R10	risk_factor_of Arg1:T77 Arg2:T76	

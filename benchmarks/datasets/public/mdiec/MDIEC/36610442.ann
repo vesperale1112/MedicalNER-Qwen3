@@ -1,0 +1,109 @@
+T0	Health_factors 44 79	familial high risk of schizophrenia
+T1	disease 92 111	Motor abnormalities
+T2	disease 154 171	psychotic illness
+T3	Health_factors 259 273	psychotic risk
+T4	Health_factors 30 38	children
+T5	physiology 202 226	altered neurodevelopment
+T7	disease 0 26	Impaired motor development
+T8	disease 404 417	schizophrenia
+T9	disease 421 437	bipolar disorder
+T11	Health_factors 362 370	children
+T12	Health_factors 376 394	familial high risk
+T13	physiology 294 311	motor development
+T14	method 543 555	cohort study
+T15	Health_factors 600 616	Danish registers
+T16	method 518 555	prospective longitudinal cohort study
+T17	method 475 512	Danish High Risk and Resilience Study
+T18	disease 733 746	schizophrenia
+T19	disease 750 766	bipolar disorder
+T20	Health_factors 618 626	Children
+T21	Health_factors 704 711	parents
+T22	method 789 798	the study
+T24	disease 884 915	schizophrenia spectrum disorder
+T25	disease 919 935	bipolar disorder
+T26	disease 973 986	schizophrenia
+T27	disease 1012 1043	schizophrenia spectrum disorder
+T28	Health_factors 834 842	Children
+T29	method 851 861	biological
+T30	Health_factors 952 960	children
+T31	Health_factors 999 1006	parents
+T32	Health_factors 1061 1064	sex
+T33	Health_factors 1066 1069	age
+T34	disease 1110 1126	bipolar disorder
+T35	disease 1152 1168	bipolar disorder
+T36	Health_factors 1089 1097	Children
+T37	Health_factors 1139 1146	parents
+T38	method 1189 1206	non-matched group
+T39	disease 1259 1272	schizophrenia
+T40	disease 1295 1311	bipolar disorder
+T41	Health_factors 1238 1246	children
+T42	Health_factors 1274 1282	children
+T43	Health_factors 1317 1325	children
+T44	Health_factors 1364 1367	age
+T45	Health_factors 1400 1403	age
+T46	method 1414 1423	follow-up
+T47	Health_factors 1476 1484	Children
+T48	drug 1377 1385	baseline
+T49	method 1333 1346	control group
+T50	physiology 1220 1234	motor function
+T51	disease 1564 1573	psychosis
+T52	disease 1609 1628	Affective Disorders
+T53	disease 1633 1646	Schizophrenia
+T55	Health_factors 1658 1661	Age
+T56	Health_factors 1662 1670	Children
+T58	method 1787 1796	follow-up
+T59	method 1849 1860	mixed model
+T60	method 1842 1860	linear mixed model
+T61	Health_factors 1804 1820	different groups
+T62	drug 1775 1783	baseline
+T63	physiology 1752 1769	Motor development
+T64	disease 1979 1988	psychotic
+T65	method 1862 1881	Logistic regression
+T66	Health_factors 2069 2077	children
+T67	Health_factors 2105 2110	girls
+T68	Health_factors 2117 2120	age
+T69	method 2133 2135	SD
+T70	drug 2141 2146	range
+T71	method 2112 2120	mean age
+T72	disease 2181 2194	schizophrenia
+T73	disease 2209 2237	motor developmental deficits
+T74	Health_factors 2160 2168	Children
+T75	method 2293 2295	CI
+T76	disease 2513 2532	aiming and catching
+T77	method 2373 2380	balance
+T78	disease 2680 2696	bipolar disorder
+T79	Health_factors 2659 2667	Children
+T80	disease 2802 2815	schizophrenia
+T81	disease 2946 2962	bipolar disorder
+T82	Health_factors 2781 2789	children
+T83	method 2866 2876	odds ratio
+T84	method 2878 2880	OR
+T85	method 2891 2893	CI
+T86	Health_factors 2925 2933	children
+T87	method 2964 2966	OR
+T89	Health_factors 2995 3003	Children
+T90	method 3069 3071	OR
+T91	Health_factors 3136 3144	children
+T92	disease 3226 3242	motor impairment
+T93	disease 3304 3313	psychosis
+T95	Health_factors 3194 3204	Clinicians
+T96	Health_factors 3246 3255	childhood
+T97	signs 3375 3382	markers
+T98	disease 3387 3408	severe mental illness
+T99	Health_factors 3426 3436	clinicians
+T100	method 3496 3508	intervention
+T101	Health_factors 3524 3539	premorbid phase
+T102	method 3470 3516	future primary preventive intervention studies
+T103	signs 3364 3382	early risk markers
+T104	physiology 3346 3360	identification
+T105	Health_factors 3319 3327	findings
+T107	Health_factors 3593 3615	Mental Health Services
+T108	method 3723 3729	iPSYCH
+T109	method 3791 3806	Tryg Foundation
+R1	occurs_in Arg1:T4 Arg2:T0	
+R2	occurs_in Arg1:T7 Arg2:T4	
+R3	associated_with Arg1:T1 Arg2:T2	
+R4	hyponym_of Arg1:T1 Arg2:T5	
+R5	associated_with Arg1:T1 Arg2:T3	
+T6	Health_factors 337 358	psychotic experiences
+R6	occurs_in Arg1:T6 Arg2:T11	

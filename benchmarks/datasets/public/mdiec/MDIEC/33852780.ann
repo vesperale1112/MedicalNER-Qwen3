@@ -1,0 +1,56 @@
+T1	drug 9 19	Psilocybin
+T2	drug 27 39	Escitalopram
+T3	disease 44 54	Depression
+T4	drug 67 77	Psilocybin
+T5	drug 145 155	psilocybin
+T6	disease 187 197	depression
+T7	disease 336 361	major depressive disorder
+T8	drug 375 385	psilocybin
+T9	drug 391 403	escitalopram
+T10	drug 407 445	selective serotonin-reuptake inhibitor
+T11	drug 549 559	psilocybin
+T12	drug 605 615	psilocybin
+T13	drug 656 666	psilocybin
+T14	drug 708 720	escitalopram
+T15	drug 722 734	escitalopram
+T16	disease 1004 1014	depression
+T17	drug 1267 1277	psilocybin
+T18	drug 1298 1310	escitalopram
+T19	drug 1381 1391	psilocybin
+T20	drug 1414 1426	escitalopram
+T21	drug 1521 1531	psilocybin
+T22	drug 1557 1569	escitalopram
+T23	drug 1737 1747	psilocybin
+T24	drug 1781 1793	escitalopram
+T25	drug 2053 2063	psilocybin
+T26	drug 2069 2081	escitalopram
+T27	disease 2254 2264	depression
+T28	drug 2384 2394	psilocybin
+T29	drug 2399 2411	escitalopram
+T30	drug 2482 2492	psilocybin
+T31	drug 2498 2510	escitalopram
+T32	drug 2640 2650	psilocybin
+T33	physiology 87 112	antidepressant properties
+T36	Health_factors 769 790	psychological support
+T38	method 861 925	16-item Quick Inventory of Depressive Symptomatology-Self-Report
+T39	method 1444 1446	SE
+T40	method 1627 1646	confidence interval
+T41	method 1648 1650	CI
+T42	method 1861 1863	CI
+T43	method 1996 1998	CI
+T44	Health_factors 2162 2176	adverse events
+T45	physiology 2353 2375	antidepressant effects
+T46	drug 2668 2683	antidepressants
+T50	method 226 277	phase 2, double-blind, randomized, controlled trial
+R1	hyponym_of Arg1:T9 Arg2:T10	
+T34	method 927 937	QIDS-SR-16
+R2	abbreviation_for Arg1:T34 Arg2:T38	
+R3	help_diagnose Arg1:T34 Arg2:T16	
+R4	help_diagnose Arg1:T38 Arg2:T16	
+T35	method 1071 1081	QIDS-SR-16
+T37	method 1137 1147	QIDS-SR-16
+T49	method 1341 1351	QIDS-SR-16
+R5	abbreviation_for Arg1:T41 Arg2:T40	
+T51	method 1678 1688	QIDS-SR-16
+T52	method 1876 1886	QIDS-SR-16
+T48	method 2279 2289	QIDS-SR-16

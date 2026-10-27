@@ -1,0 +1,53 @@
+T3	drug 210 220	psilocybin
+T4	disease 265 275	depression
+T5	drug 334 344	psilocybin
+T6	disease 531 541	depression
+T9	disease 737 762	major depressive disorder
+T10	drug 790 800	psilocybin
+T11	drug 854 864	psilocybin
+T12	drug 889 899	psilocybin
+T13	drug 938 950	escitalopram
+T14	drug 968 980	escitalopram
+T15	drug 1052 1062	psilocybin
+T16	drug 1132 1142	psilocybin
+T17	drug 1242 1252	psilocybin
+T18	region 1388 1441	5-HT2A receptor-rich higher-order functional networks
+T19	drug 1501 1511	psilocybin
+T20	drug 1554 1566	escitalopram
+T23	region 36 41	brain
+T26	physiology 224 238	brain function
+T27	method 246 261	clinical trials
+T28	disease 388 418	treatment-resistant depression
+T29	method 420 457	Functional magnetic resonance imaging
+T30	method 459 463	fMRI
+T32	drug 685 695	psilocybin
+T35	method 993 997	fMRI
+T36	physiology 1105 1128	antidepressant response
+T37	method 1197 1201	fMRI
+T38	region 1202 1226	brain network modularity
+T39	drug 1260 1274	antidepressant
+T40	physiology 1317 1342	brain network integration
+T41	physiology 1527 1550	antidepressant response
+T42	region 1596 1622	brain network organization
+T43	symptom 1666 1679	brain changes
+T44	physiology 1705 1727	antidepressant effects
+T45	physiology 1759 1783	antidepressant mechanism
+T46	drug 1788 1798	psilocybin
+T47	physiology 1828 1853	brain network integration
+T48	method 625 674	double-blind phase II randomized controlled trial
+T2	drug 96 110	antidepressant
+T24	method 294 310	open-label trial
+R1	abbreviation_for Arg1:T30 Arg2:T29	
+R2	associated_with Arg1:T16 Arg2:T38	
+R3	associated_with Arg1:T17 Arg2:T40	
+T7	method 1344 1372	Network cartography analyses
+R4	associated_with Arg1:T18 Arg2:T19	
+R5	associated_with Arg1:T43 Arg2:T44	
+R6	associated_with Arg1:T46 Arg2:T47	
+T21	drug 48 58	psilocybin
+T31	drug 71 81	Psilocybin
+T33	method 785 789	oral
+T34	method 884 888	oral
+T49	drug 709 721	escitalopram
+T50	symptom 0 28	Increased global integration
+R7	located_in Arg1:T50 Arg2:T23	

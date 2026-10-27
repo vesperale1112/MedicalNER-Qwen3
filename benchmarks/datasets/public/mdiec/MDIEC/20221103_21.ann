@@ -1,0 +1,11 @@
+T1	signs 31 35	rCBF
+T2	signs 138 142	rCBF
+T3	region 75 94	posterior cingulate
+T10	physiology 207 235	posterior cingulate function
+T13	disease 279 289	depression
+T15	Health_factors 326 358	antidepressive treatment outcome
+R1	associated_with Arg1:T10 Arg2:T13	
+R2	associated_with Arg1:T10 Arg2:T15	
+T4	region 98 100	t1
+T5	method 260 275	pathophysiology
+R3	located_in Arg1:T3 Arg2:T4	

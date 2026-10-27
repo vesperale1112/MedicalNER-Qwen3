@@ -1,0 +1,73 @@
+T3	gene 63 80	5-HT(1a) receptor
+T4	disease 98 123	major depression disorder
+T5	disease 195 211	major depression
+T8	disease 400 416	major depression
+T9	disease 549 565	major depression
+T12	disease 695 711	major depression
+T16	drug 878 882	5-HT
+T17	gene 942 947	Foxp3
+T18	gene 952 969	5-HT(1a) receptor
+T23	disease 1386 1402	major depression
+T29	disease 1573 1589	major depression
+T32	disease 1709 1725	major depression
+#1	AnnotatorNotes T3	C037990
+#2	AnnotatorNotes T4	C1269683
+T1	region 22 54	CD4(+)CD25(+) regulatory T cells
+T2	disease 166 182	immune imbalance
+#4	AnnotatorNotes T2	C0542042
+T6	region 279 318	CD4(+)CD25(+) regulatory T (Treg) cells
+T7	physiology 358 375	immune regulation
+R3	associated_with Arg1:T6 Arg2:T7	
+#5	AnnotatorNotes T5	C1269683
+T34	disease 487 510	immune imbalance status
+T11	disease 772 788	immune imbalance
+T13	gene 821 838	Th cell cytokines
+T14	region 843 866	CD4(+)CD25(+) Treg cell
+T15	method 921 925	HPLC
+#6	AnnotatorNotes T15	C0008562
+T35	method 987 993	RT-PCR
+T36	method 998 1023	double-immunofluorescence
+#7	AnnotatorNotes T17	C1416467
+#8	AnnotatorNotes T35	C0599161
+T22	region 1428 1452	CD4(+)CD25(+) Treg cells
+T24	region 1465 1486	CD4(+)CD25(-) T cells
+T25	gene 1536 1554	5-HT(1a) receptors
+T26	region 1628 1652	CD4(+)CD25(+) Treg cells
+T27	disease 1675 1691	immune imbalance
+R14	associated_with Arg1:T26 Arg2:T27	
+T19	signs 1258 1262	5-HT
+T20	gene 1320 1337	5-HT(1a) receptor
+T21	region 1768 1779	5-HT system
+T30	region 606 615	Treg cell
+T10	region 886 902	peripheral serum
+T28	region 1280 1296	peripheral serum
+T31	region 1360 1382	peripheral lymphocytes
+T33	region 1559 1569	Treg cells
+T37	region 1203 1219	peripheral blood
+T38	region 1060 1070	lymphocyte
+T39	region 1155 1179	CD4(+)CD25(+) Treg cells
+T40	disease 631 647	immune imbalance
+T41	disease 651 667	major depression
+T42	region 307 311	Treg
+T43	region 293 305	regulatory T
+R8	abbreviation_for Arg1:T42 Arg2:T43	
+T44	signs 1123 1136	Th1/Th2 ratio
+#9	AnnotatorNotes T16	C0036751
+#10	AnnotatorNotes T19	C0036751
+#11	AnnotatorNotes T20	C0036751
+R6	associated_with Arg1:T25 Arg2:T33	
+R12	occurs_in Arg1:T33 Arg2:T29	
+R17	located_in Arg1:T16 Arg2:T10	
+R18	help_diagnose Arg1:T15 Arg2:T16	
+R21	help_diagnose Arg1:T35 Arg2:T17	
+R20	help_diagnose Arg1:T36 Arg2:T18	
+R19	occurs_in Arg1:T27 Arg2:T32	
+R10	characteristic_of Arg1:T19 Arg2:T23	
+R2	characteristic_of Arg1:T20 Arg2:T23	
+R4	characteristic_of Arg1:T2 Arg2:T5	
+R5	help_diagnose Arg1:T35 Arg2:T18	
+R7	help_diagnose Arg1:T36 Arg2:T17	
+R9	characteristic_of Arg1:T1 Arg2:T4	
+R11	occurs_in Arg1:T40 Arg2:T41	
+R1	characteristic_of Arg1:T3 Arg2:T4	
+R16	associated_with Arg1:T30 Arg2:T40	

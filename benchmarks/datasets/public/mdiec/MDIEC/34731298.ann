@@ -1,0 +1,61 @@
+T1	disease 25 32	anxiety
+T2	disease 53 79	inflammatory bowel disease
+T3	disease 138 159	psychiatric disorders
+T4	disease 176 202	inflammatory bowel disease
+T5	disease 204 207	IBD
+T6	disease 326 336	depression
+T7	disease 341 348	anxiety
+T8	disease 352 355	IBD
+T9	disease 405 431	chronic medical conditions
+T10	disease 599 602	IBD
+T11	disease 642 652	depression
+T12	disease 657 664	anxiety
+T13	disease 668 671	IBD
+T14	disease 734 760	chronic medical conditions
+T15	disease 826 844	ulcerative colitis
+T16	disease 849 864	Crohn's disease
+T17	disease 951 954	IBD
+T18	disease 1006 1016	depression
+T19	disease 1041 1048	anxiety
+T20	disease 1068 1078	depression
+T21	disease 1083 1090	anxiety
+T22	disease 1119 1122	IBD
+T23	disease 1288 1291	IBD
+T24	disease 1362 1370	diabetes
+T25	disease 1372 1389	metastatic cancer
+T26	disease 1395 1418	coronary artery disease
+T27	disease 1420 1435	Crohn's disease
+T28	disease 1440 1458	ulcerative colitis
+T29	disease 1610 1613	IBD
+T30	disease 1657 1667	depression
+T31	disease 1672 1679	anxiety
+T32	disease 1738 1759	psychiatric illnesses
+T33	disease 1765 1768	IBD
+T34	disease 1816 1842	chronic medical conditions
+T35	disease 10 20	depression
+T36	method 94 113	nationwide analysis
+R1	abbreviation_for Arg1:T5 Arg2:T4	
+T37	method 452 478	retrospective cohort study
+R2	risk_factor_of Arg1:T22 Arg2:T20	
+R3	risk_factor_of Arg1:T22 Arg2:T21	
+T38	disease 1246 1256	depression
+T39	disease 1261 1268	anxiety
+R4	associated_with Arg1:T38 Arg2:T39	
+T40	disease 1338 1356	chronic conditions
+R7	hyponym_of Arg1:T24 Arg2:T40	
+R8	hyponym_of Arg1:T25 Arg2:T40	
+R9	hyponym_of Arg1:T26 Arg2:T40	
+T41	disease 1512 1522	depression
+T42	disease 1527 1534	anxiety
+R10	risk_factor_of Arg1:T27 Arg2:T41	
+R11	risk_factor_of Arg1:T27 Arg2:T42	
+R12	risk_factor_of Arg1:T28 Arg2:T41	
+R13	risk_factor_of Arg1:T28 Arg2:T42	
+R14	risk_factor_of Arg1:T29 Arg2:T30	
+R15	risk_factor_of Arg1:T29 Arg2:T31	
+R16	associated_with Arg1:T32 Arg2:T33	
+T48	Health_factors 698 722	general adult population
+T43	physiology 244 265	medication compliance
+T44	Health_factors 278 295	clinical outcomes
+T45	Health_factors 1149 1167	general population
+T46	Health_factors 1697 1715	general population

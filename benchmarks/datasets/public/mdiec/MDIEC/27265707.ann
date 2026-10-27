@@ -1,0 +1,90 @@
+T0	disease 0 17	Diabetes mellitus
+T1	disease 33 46	schizophrenia
+T2	disease 48 64	bipolar disorder
+T3	disease 69 94	major depressive disorder
+T4	method 98 115	systematic review
+T5	method 132 145	meta-analysis
+T7	disease 147 171	Type 2 diabetes mellitus
+T8	disease 173 177	T2DM
+T9	disease 203 226	cardiovascular diseases
+T10	disease 295 316	severe mental illness
+T11	disease 318 321	SMI
+T12	disease 329 342	schizophrenia
+T13	disease 344 360	bipolar disorder
+T14	disease 364 389	major depressive disorder
+T16	disease 454 458	T2DM
+T17	disease 474 477	SMI
+T18	disease 566 570	T2DM
+T19	disease 610 614	T2DM
+T20	disease 683 686	SMI
+T23	method 396 409	meta-analysis
+T24	disease 523 530	illness
+T25	disease 762 766	T2DM
+T26	disease 804 807	SMI
+T27	method 823 825	CI
+T28	disease 895 899	T2DM
+T29	Health_factors 844 875	antipsychotic-nave participants
+T30	method 914 916	CI
+T32	disease 1061 1064	SMI
+T33	disease 1116 1120	T2DM
+T34	method 991 1016	comparative meta-analysis
+T35	method 1158 1171	relative risk
+T36	method 1173 1175	RR
+T37	method 1186 1188	CI
+T38	method 1126 1142	matched controls
+T39	disease 1214 1218	T2DM
+T40	method 1316 1332	matched controls
+T41	disease 1341 1345	T2DM
+T42	disease 1386 1389	SMI
+T43	Health_factors 1375 1380	women
+T44	Health_factors 1402 1405	men
+T45	method 1407 1409	RR
+T46	method 1420 1422	CI
+T47	disease 1528 1532	T2DM
+T49	method 1538 1576	multivariable meta-regression analysis
+T50	disease 1604 1608	T2DM
+T51	drug 1681 1694	aripriprazole
+T52	drug 1699 1710	amisulpride
+T53	drug 1654 1668	antipsychotics
+T54	disease 1766 1770	T2DM
+T55	method 1712 1729	Routine screening
+T56	method 1734 1762	multidisciplinary management
+T57	disease 1782 1786	T2DM
+T58	drug 1807 1832	antipsychotic medications
+R1	occurs_in Arg1:T43 Arg2:T42	
+R2	risk_factor_of Arg1:T43 Arg2:T41	
+R3	occurs_in Arg1:T0 Arg2:T1	
+R4	occurs_in Arg1:T0 Arg2:T2	
+R5	occurs_in Arg1:T0 Arg2:T3	
+R6	abbreviation_for Arg1:T8 Arg2:T7	
+R7	risk_factor_of Arg1:T7 Arg2:T9	
+R8	abbreviation_for Arg1:T11 Arg2:T10	
+R9	hyponym_of Arg1:T12 Arg2:T10	
+R10	hyponym_of Arg1:T13 Arg2:T10	
+R11	hyponym_of Arg1:T14 Arg2:T10	
+R12	hyponym_of Arg1:T12 Arg2:T11	
+R13	hyponym_of Arg1:T13 Arg2:T11	
+R14	hyponym_of Arg1:T14 Arg2:T11	
+R15	associated_with Arg1:T7 Arg2:T10	
+R16	associated_with Arg1:T7 Arg2:T11	
+R17	associated_with Arg1:T7 Arg2:T12	
+R18	associated_with Arg1:T7 Arg2:T13	
+R19	associated_with Arg1:T7 Arg2:T14	
+R20	associated_with Arg1:T8 Arg2:T10	
+R21	associated_with Arg1:T8 Arg2:T11	
+R22	associated_with Arg1:T8 Arg2:T12	
+R23	associated_with Arg1:T8 Arg2:T13	
+R24	associated_with Arg1:T8 Arg2:T14	
+R25	occurs_in Arg1:T16 Arg2:T17	
+T6	Health_factors 510 521	demographic
+T15	method 571 589	assessment methods
+T60	Health_factors 700 726	general population samples
+T31	Health_factors 1034 1055	multi-episode persons
+R26	occurs_in Arg1:T31 Arg2:T32	
+R27	risk_factor_of Arg1:T31 Arg2:T33	
+T61	Health_factors 1445 1488	Multi-episode (versus first-episode) status
+R28	risk_factor_of Arg1:T61 Arg2:T47	
+R29	risk_factor_of Arg1:T53 Arg2:T50	
+R30	risk_factor_of Arg1:T51 Arg2:T50	
+R31	risk_factor_of Arg1:T52 Arg2:T50	
+R32	risk_factor_of Arg1:T58 Arg2:T57	

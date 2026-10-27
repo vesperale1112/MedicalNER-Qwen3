@@ -1,0 +1,118 @@
+T0	disease 0 17	Bipolar disorders
+T1	disease 19 36	Bipolar disorders
+T2	disease 103 121	bipolar I disorder
+T3	disease 232 260	syndromal, hypomanic episode
+T4	disease 267 291	major depressive episode
+T7	disease 182 201	bipolar II disorder
+T8	disease 152 176	syndromal, manic episode
+T9	disease 60 88	severe and chronic disorders
+T10	disease 293 310	Bipolar disorders
+T11	Health_factors 332 356	psychosocial functioning
+T12	disease 479 496	bipolar disorders
+T13	disease 570 592	cardiovascular disease
+T14	disease 597 604	suicide
+T15	disease 440 449	mortality
+T16	Health_factors 505 523	general population
+T17	disease 558 564	deaths
+T20	disease 606 622	Bipolar disorder
+T21	Health_factors 634 646	heritability
+T23	disease 668 685	Bipolar disorders
+T24	disease 724 752	mental and medical disorders
+T26	gene 692 712	genetic risk alleles
+T27	disease 802 815	schizophrenia
+T28	disease 884 909	major depressive disorder
+T31	physiology 777 796	genetic association
+T32	physiology 859 878	genetic association
+T33	disease 940 957	bipolar disorders
+T38	physiology 1128 1150	mitochondrial function
+T39	physiology 1095 1122	cellular metabolic pathways
+T40	physiology 1042 1066	monoaminergic signalling
+T41	physiology 999 1040	disturbances in neuronal-glial plasticity
+T42	disease 1213 1230	bipolar disorders
+T43	disease 1317 1333	bipolar disorder
+T44	disease 1443 1460	bipolar disorders
+T45	Health_factors 1175 1197	childhood maltreatment
+T46	Health_factors 1259 1281	childhood maltreatment
+T47	disease 1353 1364	suicidality
+T48	Health_factors 1388 1419	adverse environmental exposures
+T52	disease 1471 1476	mania
+T53	disease 1485 1503	bipolar I disorder
+T54	disease 1638 1655	bipolar disorders
+T55	disease 1505 1524	depressive episodes
+T56	disease 1610 1619	morbidity
+T57	disease 1624 1633	mortality
+T60	drug 1657 1664	Lithium
+T61	disease 1742 1759	bipolar disorders
+T68	drug 1686 1708	mood-stabilising agent
+T69	disease 1872 1877	mania
+T70	disease 1929 1947	bipolar depression
+T71	drug 1831 1845	antipsychotics
+T72	drug 1883 1897	antipsychotics
+T73	drug 1949 1959	Divalproex
+T74	drug 1964 1977	carbamazepine
+T75	drug 2028 2039	lamotrigine
+T76	disease 2080 2098	bipolar depression
+T77	disease 2012 2023	acute mania
+T78	disease 2142 2159	bipolar disorders
+T79	drug 2100 2115	Antidepressants
+T83	method 2378 2399	maintenance treatment
+T84	symptom 2338 2358	mood destabilisation
+T85	disease 2457 2474	bipolar disorders
+T86	method 2426 2452	pharmacological treatments
+T87	Health_factors 2522 2560	low-income and middle-income countries
+T88	disease 2741 2758	bipolar disorders
+T91	Health_factors 2671 2681	caregivers
+T92	Health_factors 2709 2724	health outcomes
+T93	method 2621 2655	adjunctive psychosocial treatments
+T94	disease 2572 2607	medical and psychiatric comorbidity
+T97	disease 2926 2943	bipolar disorders
+T98	disease 3067 3084	bipolar disorders
+T99	method 3013 3025	epidemiology
+T100	method 3039 3048	screening
+R1	hyponym_of Arg1:T2 Arg2:T9	
+R2	hyponym_of Arg1:T1 Arg2:T9	
+R3	characteristic_of Arg1:T8 Arg2:T1	
+R4	characteristic_of Arg1:T3 Arg2:T7	
+R5	characteristic_of Arg1:T4 Arg2:T7	
+R6	associated_with Arg1:T10 Arg2:T11	
+T5	Health_factors 411 434	potential years of life
+R7	associated_with Arg1:T10 Arg2:T5	
+R8	risk_factor_of Arg1:T13 Arg2:T17	
+R9	risk_factor_of Arg1:T14 Arg2:T17	
+R10	characteristic_of Arg1:T21 Arg2:T20	
+T6	disease 754 763	Bipolar I
+R11	associated_with Arg1:T6 Arg2:T27	
+T18	disease 828 838	bipolar II
+R12	associated_with Arg1:T18 Arg2:T28	
+T19	disease 924 936	pathogenesis
+T22	physiology 1068 1093	inflammatory homoeostasis
+R13	associated_with Arg1:T33 Arg2:T41	
+R14	associated_with Arg1:T33 Arg2:T40	
+R15	associated_with Arg1:T33 Arg2:T22	
+R16	associated_with Arg1:T33 Arg2:T39	
+R17	associated_with Arg1:T33 Arg2:T38	
+R18	risk_factor_of Arg1:T45 Arg2:T42	
+R19	associated_with Arg1:T46 Arg2:T43	
+R20	associated_with Arg1:T46 Arg2:T47	
+R21	associated_with Arg1:T48 Arg2:T44	
+R22	characteristic_of Arg1:T52 Arg2:T53	
+R23	associated_with Arg1:T55 Arg2:T56	
+R24	associated_with Arg1:T55 Arg2:T57	
+R25	occurs_in Arg1:T56 Arg2:T54	
+R26	occurs_in Arg1:T57 Arg2:T54	
+R27	treatment_for Arg1:T60 Arg2:T61	
+T25	physiology 1769 1820	antimanic, antidepressant, and anti-suicide effects
+R28	associated_with Arg1:T60 Arg2:T25	
+R29	treatment_for Arg1:T71 Arg2:T69	
+R31	treatment_for Arg1:T73 Arg2:T77	
+R32	treatment_for Arg1:T74 Arg2:T77	
+R33	treatment_for Arg1:T75 Arg2:T76	
+R34	treatment_for Arg1:T79 Arg2:T78	
+T29	drug 2255 2282	antidepressant prescription
+T30	disease 2286 2302	bipolar disorder
+R30	associated_with Arg1:T29 Arg2:T84	
+R35	treatment_for Arg1:T94 Arg2:T88	
+R36	treatment_for Arg1:T93 Arg2:T88	
+T34	Health_factors 2814 2837	primary care physicians
+R37	treatment_for Arg1:T91 Arg2:T88	
+R38	associated_with Arg1:T23 Arg2:T24	

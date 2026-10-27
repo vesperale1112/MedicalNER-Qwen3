@@ -1,0 +1,74 @@
+T1	disease 113 123	depression
+T4	disease 1147 1199	current treatment-resistant major depressive episode
+T6	disease 3211 3219	headache
+T7	disease 3324 3354	treatment-resistant depression
+T8	disease 3413 3423	depression
+T9	method 36 95	high-frequency repetitive transcranial magnetic stimulation
+T10	method 137 169	randomised non-inferiority trial
+T12	method 125 132	THREE-D
+T13	disease 183 228	Treatment-resistant major depressive disorder
+T14	method 240 284	repetitive transcranial magnetic stimulation
+T15	method 286 290	rTMS
+R1	abbreviation_for Arg1:T15 Arg2:T14	
+T16	method 384 408	evidence-based treatment
+T17	method 325 377	left-side dorsolateral prefrontal cortex stimulation
+T18	method 428 464	Intermittent theta burst stimulation
+T19	method 466 470	iTBS
+R6	abbreviation_for Arg1:T19 Arg2:T18	
+T20	method 491 495	rTMS
+R7	hyponym_of Arg1:T19 Arg2:T20	
+R8	hyponym_of Arg1:T18 Arg2:T20	
+T21	method 662 666	iTBS
+T22	method 696 700	rTMS
+T23	method 765 820	randomised, multicentre, non-inferiority clinical trial
+T3	drug 1235 1250	antidepressants
+T24	drug 1297 1322	antidepressant medication
+T25	method 1378 1385	HRSD-17
+T27	method 1478 1482	rTMS
+T28	method 1486 1490	iTBS
+T29	method 1504 1532	random permuted block method
+T30	drug 1605 1620	antidepressants
+T32	method 1785 1789	rTMS
+T33	method 1793 1797	iTBS
+T34	region 1805 1840	left dorsolateral prefrontal cortex
+T35	method 1929 1973	17-item Hamilton Rating Scale for Depression
+T36	method 1975 1982	HRSD-17
+R9	abbreviation_for Arg1:T36 Arg2:T35	
+T38	method 2392 2396	rTMS
+T39	method 2429 2433	iTBS
+T40	method 2503 2507	iTBS
+T41	method 2471 2475	rTMS
+T42	method 2582 2589	HRSD-17
+T43	method 2617 2619	SD
+T44	method 2652 2656	rTMS
+T45	method 2704 2708	iTBS
+T46	method 2766 2768	CI
+T47	method 2822 2826	iTBS
+T48	method 2957 2978	verbal analogue scale
+T49	method 2902 2906	iTBS
+T5	method 2984 2986	SD
+T50	method 2931 2935	rTMS
+T51	method 3077 3081	rTMS
+T52	method 3112 3116	iTBS
+T53	method 3242 3246	rTMS
+T54	method 3266 3270	iTBS
+T55	method 3356 3360	iTBS
+T56	method 3387 3391	rTMS
+R10	treatment_for Arg1:T56 Arg2:T8	
+R11	treatment_for Arg1:T55 Arg2:T8	
+T57	method 3540 3544	iTBS
+T58	method 3598 3610	rTMS devices
+R2	hyponym_of Arg1:T14 Arg2:T16	
+R3	hyponym_of Arg1:T15 Arg2:T16	
+T31	method 2079 2100	per-protocol analysis
+T11	disease 716 746	treatment-resistant depression
+T63	Health_factors 1107 1111	aged
+T69	disease 2852 2856	pain
+T64	Health_factors 3175 3206	treatment-related adverse event
+T26	Health_factors 971 984	Mental Health
+R5	treatment_for Arg1:T14 Arg2:T13	
+R12	treatment_for Arg1:T15 Arg2:T13	
+T59	physiology 17 28	theta burst
+R16	associated_with Arg1:T69 Arg2:T49	
+R4	occurs_in Arg1:T7 Arg2:T55	
+T37	Health_factors 704 710	adults

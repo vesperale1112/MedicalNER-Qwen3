@@ -1,0 +1,80 @@
+T1	disease 68 84	mental disorders
+T2	drug 323 350	polyunsaturated fatty acids
+T3	drug 352 357	PUFAs
+T4	drug 394 405	amino acids
+T5	disease 543 559	mental disorders
+T6	drug 996 1001	PUFAs
+T7	drug 1019 1040	eicosapentaenoic acid
+T8	disease 1073 1083	depression
+T9	drug 1122 1127	PUFAs
+T10	disease 1155 1195	attention-deficit/hyperactivity disorder
+T11	disease 1231 1244	schizophrenia
+T12	drug 1246 1270	Folate-based supplements
+T13	disease 1323 1333	depression
+T14	disease 1338 1351	schizophrenia
+T15	drug 1398 1410	methylfolate
+T16	disease 1414 1439	major depressive disorder
+T17	drug 1473 1489	N-acetylcysteine
+T18	disease 1526 1540	mood disorders
+T19	disease 1545 1558	schizophrenia
+T20	drug 1837 1858	eicosapentaenoic acid
+T21	disease 1862 1872	depression
+T22	method 88 99	meta-review
+T23	method 120 148	randomized controlled trials
+T24	Health_factors 175 188	mental health
+T26	method 465 478	meta-analyses
+T27	method 658 671	meta-analyses
+T28	method 675 703	randomized controlled trials
+T29	method 705 709	RCTs
+T30	disease 786 809	severe mental disorders
+T31	method 847 860	meta-analyses
+T33	method 864 887	placebo-controlled RCTs
+T34	method 894 910	primary analyses
+T35	method 1380 1384	RCTs
+T36	Health_factors 1631 1654	serious adverse effects
+T39	Health_factors 1721 1731	clinicians
+T40	drug 1758 1778	nutrient supplements
+T41	drug 1681 1704	psychiatric medications
+T43	drug 1564 1584	nutrient supplements
+T45	drug 751 771	nutrient supplements
+T46	drug 502 522	nutrient supplements
+T47	drug 410 435	pre/probiotic supplements
+T48	drug 380 392	antioxidants
+T49	drug 360 368	vitamins
+T50	drug 292 312	nutrient supplements
+T51	drug 27 47	nutrient supplements
+R1	treatment_for Arg1:T51 Arg2:T1	
+T52	method 103 116	meta-analyses
+T53	drug 162 171	nutrition
+T54	Health_factors 239 253	dietary intake
+T55	drug 255 264	nutrition
+R3	abbreviation_for Arg1:T3 Arg2:T2	
+R4	hyponym_of Arg1:T2 Arg2:T50	
+R5	hyponym_of Arg1:T3 Arg2:T50	
+R6	hyponym_of Arg1:T49 Arg2:T50	
+T56	drug 370 378	minerals
+R7	hyponym_of Arg1:T56 Arg2:T50	
+R8	hyponym_of Arg1:T48 Arg2:T50	
+R9	hyponym_of Arg1:T4 Arg2:T50	
+R10	hyponym_of Arg1:T47 Arg2:T50	
+T25	method 574 585	meta-review
+R11	abbreviation_for Arg1:T29 Arg2:T28	
+R12	hyponym_of Arg1:T7 Arg2:T6	
+R13	treatment_for Arg1:T6 Arg2:T8	
+R14	treatment_for Arg1:T7 Arg2:T8	
+R15	treatment_for Arg1:T9 Arg2:T10	
+R16	treatment_for Arg1:T12 Arg2:T13	
+R17	treatment_for Arg1:T12 Arg2:T14	
+R18	treatment_for Arg1:T15 Arg2:T16	
+R19	treatment_for Arg1:T17 Arg2:T18	
+R20	treatment_for Arg1:T17 Arg2:T19	
+R21	treatment_for Arg1:T20 Arg2:T21	
+T32	drug 2023 2049	evidence-based supplements
+R22	treatment_for Arg1:T46 Arg2:T5	
+T37	method 1048 1068	adjunctive treatment
+R2	hyponym_of Arg1:T6 Arg2:T37	
+T38	method 1502 1522	adjunctive treatment
+R23	hyponym_of Arg1:T17 Arg2:T38	
+R24	hyponym_of Arg1:T7 Arg2:T37	
+T42	method 1297 1318	adjunctive treatments
+R25	hyponym_of Arg1:T12 Arg2:T42	

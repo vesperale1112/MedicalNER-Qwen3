@@ -1,0 +1,62 @@
+T0	disease 0 33	Stress-Induced Metabolic Disorder
+T1	region 37 60	Peripheral CD4+ T Cells
+T2	disease 70 91	Anxiety-like Behavior
+T3	disease 183 193	depression
+T4	disease 198 205	anxiety
+T6	physiology 128 143	neuroplasticity
+T7	region 151 156	brain
+T9	Health_factors 93 118	Physical or mental stress
+T10	disease 234 273	dysfunction of peripheral T lymphocytes
+T12	region 345 369	peripheral T lymphocytes
+T13	disease 373 387	mood disorders
+T15	physiology 321 341	regulatory mechanism
+T16	region 451 463	CD4+ T cells
+T18	method 473 477	mice
+T21	disease 483 519	stress-induced anxiety-like behavior
+T22	drug 521 559	Physical stress-induced leukotriene B4
+T23	region 601 613	CD4+ T cells
+T25	disease 651 675	behavioral abnormalities
+T26	disease 686 693	anxiety
+T27	disease 695 705	depression
+T28	disease 711 727	social disorders
+T30	region 792 803	CD4+ T cell
+T32	drug 812 820	xanthine
+T33	region 829 845	oligodendrocytes
+T35	gene 871 892	adenosine receptor A1
+T36	method 754 779	single-cell transcriptome
+T37	region 853 866	left amygdala
+T39	method 729 749	Metabolomic profiles
+T41	gene 961 991	interferon regulatory factor 1
+T42	region 1008 1020	CD4+ T cells
+T43	physiology 929 956	de novo synthesis of purine
+T44	disease 1069 1094	purine metabolic disorder
+T46	region 1098 1110	CD4+ T cells
+T50	disease 1115 1150	stress-driven anxiety-like behavior
+R1	located_in Arg1:T0 Arg2:T1	
+R2	risk_factor_of Arg1:T0 Arg2:T2	
+R3	risk_factor_of Arg1:T9 Arg2:T6	
+R4	located_in Arg1:T6 Arg2:T7	
+R5	risk_factor_of Arg1:T9 Arg2:T3	
+R6	risk_factor_of Arg1:T9 Arg2:T4	
+T5	Health_factors 207 222	Stress exposure
+R7	risk_factor_of Arg1:T5 Arg2:T10	
+R8	treatment_for Arg1:T16 Arg2:T21	
+T11	physiology 576 597	mitochondrial fission
+R9	associated_with Arg1:T22 Arg2:T11	
+R10	located_in Arg1:T11 Arg2:T23	
+R11	risk_factor_of Arg1:T22 Arg2:T25	
+R12	risk_factor_of Arg1:T22 Arg2:T26	
+R13	risk_factor_of Arg1:T22 Arg2:T27	
+R14	risk_factor_of Arg1:T22 Arg2:T28	
+R15	hyponym_of Arg1:T26 Arg2:T25	
+R16	hyponym_of Arg1:T27 Arg2:T25	
+R17	hyponym_of Arg1:T28 Arg2:T25	
+R19	associated_with Arg1:T32 Arg2:T33	
+R20	located_in Arg1:T33 Arg2:T37	
+T14	physiology 894 915	Mitochondrial fission
+R21	associated_with Arg1:T32 Arg2:T35	
+R22	associated_with Arg1:T14 Arg2:T43	
+R23	associated_with Arg1:T14 Arg2:T41	
+R24	located_in Arg1:T41 Arg2:T42	
+R25	associated_with Arg1:T44 Arg2:T50	
+R26	located_in Arg1:T44 Arg2:T46	

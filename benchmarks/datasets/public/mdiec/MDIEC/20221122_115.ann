@@ -1,0 +1,15 @@
+T2	method 111 141	Patient Health Questionnaire-2
+T3	method 148 153	PHQ-2
+T4	method 195 212	therapeutic range
+T5	method 214 217	TTR
+T7	method 340 361	cross-sectional study
+T9	Health_factors 262 277	health literacy
+T1	disease 77 91	depressiveness
+R1	help_diagnose Arg1:T2 Arg2:T1	
+R2	abbreviation_for Arg1:T3 Arg2:T2	
+R3	abbreviation_for Arg1:T5 Arg2:T4	
+T8	drug 279 294	anticoagulation
+T10	drug 370 390	oral anticoagulation
+R4	help_diagnose Arg1:T3 Arg2:T1	
+T11	Health_factors 312 334	treatment satisfaction
+T6	Health_factors 391 402	outpatients

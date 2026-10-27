@@ -1,0 +1,83 @@
+T1	disease 0 25	Major depressive disorder
+T2	disease 29 37	epilepsy
+T3	disease 97 107	depression
+T4	Health_factors 149 169	people with epilepsy
+T5	disease 217 236	Comorbid depression
+T6	disease 355 362	fatigue
+T7	disease 364 376	irritability
+T8	disease 457 482	major depression disorder
+T9	disease 484 487	MDD
+T10	disease 710 713	MDD
+T11	disease 827 837	depression
+T12	disease 1484 1487	MDD
+T13	disease 1743 1746	MDD
+T14	disease 1918 1921	MDD
+T15	disease 1957 1965	epilepsy
+T16	disease 2109 2112	MDD
+T17	disease 2154 2157	MDD
+T18	disease 2260 2270	depression
+T19	disease 122 145	psychiatric comorbidity
+R1	hyponym_of Arg1:T3 Arg2:T19	
+T20	Health_factors 171 174	PWE
+R2	abbreviation_for Arg1:T20 Arg2:T4	
+T21	Health_factors 284 299	quality of life
+T22	Health_factors 301 304	QOL
+R5	abbreviation_for Arg1:T22 Arg2:T21	
+T23	Health_factors 342 345	PWE
+T24	method 400 413	meta-analysis
+R8	abbreviation_for Arg1:T9 Arg2:T8	
+T25	Health_factors 509 512	PWE
+T26	method 854 867	meta-analysis
+T29	method 882 899	subgroup analysis
+T30	method 1280 1293	meta-analysis
+T31	Health_factors 1315 1318	PWE
+T32	method 1398 1413	Cochran Q value
+T33	Health_factors 1950 1953	PWE
+T34	Health_factors 2058 2061	PWE
+T35	Health_factors 2164 2167	PWE
+T36	Health_factors 2274 2277	PWE
+T37	method 49 62	meta-analysis
+T38	Health_factors 1491 1494	PWE
+T39	method 1559 1578	fixed effects model
+T40	method 1583 1600	subgroup analyses
+#1	AnnotatorNotes T8	C1269683
+#2	AnnotatorNotes T9	C1269683
+#3	AnnotatorNotes T2	C0014544
+#4	AnnotatorNotes T20	C0014544
+T41	method 618 640	Hospital-based studies
+T27	method 1516 1535	confidence interval
+T42	method 1537 1539	CI
+R10	abbreviation_for Arg1:T42 Arg2:T27	
+T43	method 1823 1833	odds ratio
+T44	method 1835 1837	OR
+R11	abbreviation_for Arg1:T44 Arg2:T43	
+T45	method 535 542	MEDLINE
+T46	method 544 550	EMBASE
+T47	method 552 568	Cochrane Library
+T48	method 570 584	Web of Science
+T49	method 590 596	SCOPUS
+T50	disease 382 393	suicidality
+T51	method 1853 1855	CI
+T52	method 1221 1230	screening
+T53	Health_factors 1761 1768	females
+T54	Health_factors 1991 1998	females
+T55	Health_factors 2213 2220	females
+T56	Health_factors 2131 2137	female
+T57	Health_factors 1777 1782	males
+T58	Health_factors 2007 2012	males
+T59	method 734 763	gold standard diagnostic tool
+T60	Health_factors 767 776	adult PWE
+T28	Health_factors 1022 1028	gender
+R4	risk_factor_of Arg1:T54 Arg2:T14	
+T61	Health_factors 2296 2299	QOL
+R7	associated_with Arg1:T5 Arg2:T21	
+R9	associated_with Arg1:T5 Arg2:T22	
+T62	Health_factors 261 279	treatment outcomes
+R12	associated_with Arg1:T5 Arg2:T62	
+R13	associated_with Arg1:T5 Arg2:T62	
+R19	help_diagnose Arg1:T59 Arg2:T10	
+R14	characteristic_of Arg1:T1 Arg2:T2	
+R17	occurs_in Arg1:T19 Arg2:T4	
+R18	occurs_in Arg1:T19 Arg2:T20	
+R15	occurs_in Arg1:T59 Arg2:T60	
+R3	risk_factor_of Arg1:T53 Arg2:T13	

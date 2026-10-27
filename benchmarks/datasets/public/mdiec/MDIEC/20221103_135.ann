@@ -1,0 +1,10 @@
+T2	disease 66 76	depression
+T3	disease 102 108	stroke
+T5	Health_factors 131 147	chief caregivers
+T6	Health_factors 149 156	spouses
+T7	Health_factors 163 171	children
+T8	method 233 281	after-hospital-discharge interventional programs
+T9	method 283 308	outpatient rehabilitation
+T12	method 354 379	Finnish Heart Association
+T13	method 381 384	FHA
+R1	abbreviation_for Arg1:T13 Arg2:T12	

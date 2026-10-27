@@ -1,0 +1,64 @@
+T1	drug 18 58	urinary polycyclic aromatic hydrocarbons
+T2	disease 63 73	depression
+T3	drug 122 154	Polycyclic aromatic hydrocarbons
+T4	drug 156 160	PAHs
+T5	drug 226 252	carbon-containing products
+T6	Health_factors 254 266	PAH exposure
+T7	disease 286 303	pulmonary disease
+T8	disease 305 327	cardiovascular disease
+T9	disease 329 342	liver disease
+T10	disease 348 354	cancer
+T11	drug 392 396	PAHs
+T12	disease 401 411	depression
+T13	Health_factors 505 525	urinary PAH exposure
+T14	disease 530 540	depression
+T15	Health_factors 914 926	PAH exposure
+T16	disease 931 941	depression
+T17	drug 1031 1043	urinary PAHs
+T18	drug 1063 1083	1-hydroxynaphthalene
+T19	drug 1085 1105	2-hydroxynaphthalene
+T20	drug 1107 1124	3-hydroxyfluorene
+T21	drug 1126 1143	2-hydroxyfluorene
+T22	drug 1145 1166	1-hydroxyphenanthrene
+T23	disease 1250 1260	depression
+R1	associated_with Arg1:T1 Arg2:T2	
+T24	method 77 98	cross-sectional study
+R2	abbreviation_for Arg1:T4 Arg2:T3	
+R5	associated_with Arg1:T6 Arg2:T7	
+R6	associated_with Arg1:T6 Arg2:T8	
+R7	associated_with Arg1:T6 Arg2:T9	
+R8	associated_with Arg1:T6 Arg2:T10	
+T26	method 575 623	National Health and Nutrition Examination Survey
+T27	method 104 110	NHANES
+T28	method 625 631	NHANES
+R9	abbreviation_for Arg1:T28 Arg2:T26	
+T29	method 655 693	nine-item Patient Health Questionnaire
+T30	method 695 700	PHQ-9
+R10	abbreviation_for Arg1:T30 Arg2:T29	
+T31	disease 725 735	depression
+R11	help_diagnose Arg1:T30 Arg2:T31	
+R12	help_diagnose Arg1:T29 Arg2:T31	
+T32	method 739 744	PHQ-9
+T33	disease 772 781	depressed
+R13	help_diagnose Arg1:T32 Arg2:T33	
+T34	method 783 824	Multivariate logistic regression analysis
+R14	hyponym_of Arg1:T18 Arg2:T17	
+R15	hyponym_of Arg1:T19 Arg2:T17	
+R16	hyponym_of Arg1:T20 Arg2:T17	
+R17	hyponym_of Arg1:T21 Arg2:T17	
+R18	hyponym_of Arg1:T22 Arg2:T17	
+T35	drug 1168 1183	1-hydroxypyrene
+R19	hyponym_of Arg1:T35 Arg2:T17	
+T36	drug 1189 1216	2 and 3-hydroxyphenanthrene
+R20	hyponym_of Arg1:T36 Arg2:T17	
+R21	associated_with Arg1:T17 Arg2:T23	
+R22	associated_with Arg1:T18 Arg2:T23	
+R23	associated_with Arg1:T19 Arg2:T23	
+R24	associated_with Arg1:T20 Arg2:T23	
+R25	associated_with Arg1:T21 Arg2:T23	
+R26	associated_with Arg1:T22 Arg2:T23	
+R27	associated_with Arg1:T35 Arg2:T23	
+R28	associated_with Arg1:T36 Arg2:T23	
+T37	Health_factors 548 564	adult population
+T38	Health_factors 960 966	adults
+T39	Health_factors 967 971	aged

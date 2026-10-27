@@ -1,0 +1,46 @@
+T1	physiology 10 42	reduced NMDA receptor expression
+T2	disease 72 85	schizophrenia
+T3	method 0 4	Mice
+T7	gene 87 117	N-methyl-D-aspartate receptors
+T8	gene 119 125	NMDARs
+T10	gene 151 170	glutamate receptors
+T11	physiology 225 235	physiology
+T12	physiology 200 220	neuronal development
+T13	gene 328 334	NMDAR1
+T14	gene 336 339	NR1
+T15	method 270 274	mice
+T19	method 357 370	NR1 null mice
+T20	method 378 382	mice
+T21	Health_factors 394 403	adulthood
+T22	disease 416 440	behavioral abnormalities
+T23	symptom 481 491	stereotypy
+T24	physiology 452 476	increased motor activity
+T26	drug 700 711	haloperidol
+T27	drug 715 724	clozapine
+T28	gene 762 801	dopaminergic and serotonergic receptors
+T30	drug 726 745	antipsychotic drugs
+T31	method 628 658	animal models of schizophrenia
+T32	symptom 546 568	behavioral alterations
+T34	physiology 843 873	reduced NMDA receptor activity
+T35	disease 885 912	schizophrenic-like behavior
+T39	physiology 961 983	monoaminergic pathways
+R1	associated_with Arg1:T1 Arg2:T2	
+R2	occurs_in Arg1:T3 Arg2:T1	
+R3	abbreviation_for Arg1:T8 Arg2:T7	
+R4	hyponym_of Arg1:T7 Arg2:T10	
+R5	hyponym_of Arg1:T8 Arg2:T10	
+R6	associated_with Arg1:T7 Arg2:T12	
+R7	associated_with Arg1:T7 Arg2:T11	
+R8	associated_with Arg1:T8 Arg2:T12	
+R9	associated_with Arg1:T8 Arg2:T11	
+R10	abbreviation_for Arg1:T14 Arg2:T13	
+T4	gene 328 348	NMDAR1 (NR1) subunit
+T6	symptom 496 538	deficits in social and sexual interactions
+R11	hyponym_of Arg1:T24 Arg2:T22	
+R12	hyponym_of Arg1:T23 Arg2:T22	
+R13	hyponym_of Arg1:T6 Arg2:T22	
+R14	treatment_for Arg1:T26 Arg2:T32	
+R15	treatment_for Arg1:T27 Arg2:T32	
+R17	associated_with Arg1:T32 Arg2:T31	
+R18	risk_factor_of Arg1:T34 Arg2:T35	
+R16	associated_with Arg1:T30 Arg2:T28	

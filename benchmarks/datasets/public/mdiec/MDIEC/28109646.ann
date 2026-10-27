@@ -1,0 +1,29 @@
+T1	disease 0 30	Post-traumatic stress disorder
+T2	disease 35 57	cardiovascular disease
+T3	disease 148 178	post-traumatic stress disorder
+T4	disease 193 215	cardiovascular disease
+T5	disease 304 334	post-traumatic stress disorder
+T6	disease 342 371	cardiovascular disease events
+T7	disease 667 697	post-traumatic stress disorder
+T8	disease 728 750	cardiovascular disease
+T9	disease 792 821	cardiovascular disease events
+T10	disease 861 883	cardiovascular disease
+T11	disease 942 972	post-traumatic stress disorder
+T12	disease 977 999	cardiovascular disease
+T13	disease 1269 1299	post-traumatic stress disorder
+T14	disease 1306 1335	cardiovascular disease events
+T16	method 476 494	systematic reviews
+T18	method 1196 1238	individual and environmental interventions
+T20	Health_factors 622 648	US Veterans Administration
+T21	Health_factors 584 613	National Institutes of Health
+T22	Health_factors 391 406	prognostic risk
+R1	associated_with Arg1:T3 Arg2:T4	
+R2	risk_factor_of Arg1:T6 Arg2:T5	
+R3	risk_factor_of Arg1:T7 Arg2:T8	
+R4	risk_factor_of Arg1:T9 Arg2:T7	
+R5	associated_with Arg1:T7 Arg2:T10	
+R6	associated_with Arg1:T11 Arg2:T12	
+T17	physiology 1068 1108	behavioural and physiological mechanisms
+T19	method 1122 1146	early phase intervention
+R7	associated_with Arg1:T18 Arg2:T13	
+R8	associated_with Arg1:T18 Arg2:T14	

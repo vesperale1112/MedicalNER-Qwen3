@@ -1,0 +1,52 @@
+T0	disease 0 29	Obsessive-compulsive disorder
+T1	disease 31 60	Obsessive-compulsive disorder
+T2	disease 62 65	OCD
+T3	disease 154 164	disability
+T5	disease 93 110	chronic condition
+T6	disease 166 169	OCD
+T7	disease 197 239	obsessive-compulsive and related disorders
+T8	method 305 373	Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition
+T10	disease 506 509	OCD
+T11	disease 539 564	neuropsychiatric disorder
+T12	method 595 608	phenomenology
+T13	method 625 640	pharmacotherapy
+T14	method 645 658	psychotherapy
+T17	disease 732 735	OCD
+T18	disease 894 905	comorbidity
+T21	method 814 839	individualized assessment
+T22	disease 752 771	homogenous disorder
+T23	disease 963 966	OCD
+T24	disease 1037 1040	OCD
+T25	physiology 925 951	neurobiological mechanisms
+T27	region 1008 1022	brain circuits
+T29	disease 1207 1210	OCD
+T31	gene 1183 1190	genetic
+T32	disease 1095 1129	cellular and molecular dysfunction
+T33	method 1055 1072	laboratory models
+T34	disease 1264 1267	OCD
+T35	drug 1276 1305	serotonin reuptake inhibitors
+T37	method 1310 1339	cognitive-behavioural therapy
+T39	method 1345 1357	neurosurgery
+T40	disease 1508 1511	OCD
+T41	Health_factors 1417 1430	mental health
+T42	method 1435 1472	translational neuroscience approaches
+T43	Health_factors 1524 1541	clinical outcomes
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+R2	hyponym_of Arg1:T1 Arg2:T5	
+R3	hyponym_of Arg1:T2 Arg2:T5	
+R4	associated_with Arg1:T1 Arg2:T3	
+R5	associated_with Arg1:T2 Arg2:T3	
+R6	hyponym_of Arg1:T6 Arg2:T7	
+R7	help_diagnose Arg1:T8 Arg2:T7	
+T4	method 383 438	International Classification of Diseases, 11th Revision
+R8	help_diagnose Arg1:T4 Arg2:T7	
+R9	hyponym_of Arg1:T10 Arg2:T11	
+T9	method 610 623	psychobiology
+R10	hyponym_of Arg1:T17 Arg2:T22	
+R11	associated_with Arg1:T25 Arg2:T23	
+R12	associated_with Arg1:T27 Arg2:T24	
+T16	symptom 1140 1173	repetitive stereotyped behaviours
+R13	associated_with Arg1:T32 Arg2:T16	
+R14	treatment_for Arg1:T35 Arg2:T34	
+R15	treatment_for Arg1:T37 Arg2:T34	
+R16	treatment_for Arg1:T39 Arg2:T34	

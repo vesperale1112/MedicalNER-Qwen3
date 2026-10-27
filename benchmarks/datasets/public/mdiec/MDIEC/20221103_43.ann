@@ -1,0 +1,16 @@
+T2	gene 40 60	transcription factor
+T3	gene 62 69	Freud-1
+T5	physiology 86 116	5-HT1A autoreceptor expression
+T7	gene 198 218	5-HT1A autoreceptors
+T8	disease 222 254	anxiety/depression-like behavior
+T10	physiology 283 308	antidepressant resistance
+R2	associated_with Arg1:T3 Arg2:T5	
+T1	region 150 167	serotonin neurons
+T4	gene 139 146	Freud-1
+R1	located_in Arg1:T4 Arg2:T1	
+T6	method 120 124	vivo
+T9	method 171 175	mice
+R3	associated_with Arg1:T7 Arg2:T8	
+R4	hyponym_of Arg1:T3 Arg2:T2	
+R5	associated_with Arg1:T4 Arg2:T7	
+R6	associated_with Arg1:T4 Arg2:T8	

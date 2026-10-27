@@ -1,0 +1,41 @@
+T1	disease 53 78	Major Depression Disorder
+T2	disease 85 110	Major depressive disorder
+T3	disease 112 115	MDD
+T4	disease 324 327	MDD
+T5	disease 650 653	MDD
+T6	disease 795 829	dysfunctions in emotional capacity
+T7	disease 1001 1011	depression
+T9	disease 1513 1527	mood disorders
+T10	physiology 0 23	Brainwaves Oscillations
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T11	disease 122 147	multidimensional disorder
+R2	hyponym_of Arg1:T2 Arg2:T11	
+R3	hyponym_of Arg1:T3 Arg2:T11	
+T12	symptom 189 208	alterations in mood
+T13	method 546 566	electroencephalogram
+T16	method 1092 1134	pharmacological, electroconvulsive therapy
+#1	AnnotatorNotes T16	C0013806
+T17	signs 1317 1359	alpha and theta neurophysiological markers
+T18	signs 39 48	Biomarker
+R11	hyponym_of Arg1:T10 Arg2:T18	
+R10	characteristic_of Arg1:T10 Arg2:T1	
+T21	method 1081 1090	therapies
+T22	physiology 210 228	cognitive capacity
+T24	physiology 248 269	homeostatic functions
+T23	physiology 230 242	sensorimotor
+T25	method 570 602	noninvasive and inexpensive tool
+R19	hyponym_of Arg1:T13 Arg2:T25	
+T19	physiology 665 707	ateralization in brain electrical activity
+R15	characteristic_of Arg1:T19 Arg2:T5	
+T20	symptom 714 752	alterations in alpha and theta rhythms
+R7	characteristic_of Arg1:T20 Arg2:T5	
+T27	disease 1461 1476	state disorders
+R4	characteristic_of Arg1:T12 Arg2:T2	
+R5	characteristic_of Arg1:T22 Arg2:T2	
+R9	characteristic_of Arg1:T23 Arg2:T2	
+R12	characteristic_of Arg1:T24 Arg2:T2	
+R13	characteristic_of Arg1:T12 Arg2:T3	
+R14	characteristic_of Arg1:T22 Arg2:T3	
+R17	characteristic_of Arg1:T23 Arg2:T3	
+R18	characteristic_of Arg1:T24 Arg2:T3	
+T8	method 1381 1398	clinical practice

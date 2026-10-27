@@ -1,0 +1,64 @@
+T0	disease 33 62	obsessive-compulsive disorder
+T2	method 64 94	diffusion-tensor imaging study
+T3	region 0 15	Corpus callosum
+T4	disease 129 171	microstructural white matter abnormalities
+T5	disease 217 246	obsessive-compulsive disorder
+T6	disease 248 251	OCD
+T7	disease 414 417	OCD
+T8	method 351 353	DT
+T9	method 355 371	imaging measures
+T11	region 179 194	corpus callosum
+T14	disease 604 607	OCD
+T15	Health_factors 615 619	male
+T16	Health_factors 626 632	female
+T17	Health_factors 639 642	age
+T18	method 664 682	standard deviation
+T19	Health_factors 745 749	male
+T20	Health_factors 756 762	female
+T21	Health_factors 769 772	age
+T24	signs 853 855	FA
+T25	disease 1017 1020	OCD
+T26	signs 974 976	FA
+T27	region 980 990	CC regions
+T28	method 907 920	paired t test
+T31	disease 1235 1238	OCD
+T33	region 1152 1159	isthmus
+T34	region 1129 1141	rostral body
+T35	region 1114 1118	genu
+T36	region 1096 1103	rostrum
+T38	disease 1352 1355	OCD
+T39	signs 1294 1296	FA
+T40	signs 1374 1384	rostral FA
+T44	region 1443 1450	rostrum
+T45	signs 1428 1430	FA
+T46	method 1664 1679	pathophysiology
+T47	disease 1683 1686	OCD
+T49	disease 1776 1779	OCD
+T50	region 1709 1730	orbitofrontal circuit
+T51	region 1619 1644	orbital prefrontal region
+R1	located_in Arg1:T4 Arg2:T11	
+T1	region 196 198	CC
+R2	abbreviation_for Arg1:T1 Arg2:T11	
+R3	located_in Arg1:T4 Arg2:T1	
+R4	abbreviation_for Arg1:T6 Arg2:T5	
+T29	method 333 349	diffusion-tensor
+R5	abbreviation_for Arg1:T8 Arg2:T29	
+T30	region 379 388	CC region
+T10	signs 830 851	fractional anisotropy
+R6	abbreviation_for Arg1:T24 Arg2:T10	
+T12	region 899 901	CC
+T13	region 1170 1178	splenium
+T22	region 1317 1324	rostrum
+T23	region 1332 1334	CC
+R7	characteristic_of Arg1:T39 Arg2:T38	
+R8	located_in Arg1:T39 Arg2:T22	
+R9	located_in Arg1:T22 Arg2:T23	
+R10	located_in Arg1:T45 Arg2:T44	
+T32	method 1487 1524	Yale-Brown obsessive-compulsive scale
+R11	associated_with Arg1:T45 Arg2:T32	
+R12	associated_with Arg1:T51 Arg2:T47	
+R13	associated_with Arg1:T50 Arg2:T49	
+T37	disease 393 410	clinical symptoms
+T41	signs 809 825	Mean diffusivity
+T42	signs 950 966	mean diffusivity
+T43	signs 1192 1208	mean diffusivity

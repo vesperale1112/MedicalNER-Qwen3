@@ -1,0 +1,51 @@
+T1	disease 39 62	end-stage renal disease
+T2	disease 66 99	pre-end-stage renal disease death
+T3	disease 103 132	advanced diabetic nephropathy
+T4	method 168 182	Diabetes Study
+T5	disease 332 355	end-stage renal disease
+T6	disease 357 361	ESRD
+T7	disease 399 428	advanced diabetic nephropathy
+T8	disease 529 544	type 2 diabetes
+T9	disease 549 578	advanced diabetic nephropathy
+T10	disease 648 658	depression
+T11	disease 705 731	mild and severe depression
+T12	disease 758 762	ESRD
+T13	disease 877 887	depression
+T14	disease 1211 1215	ESRD
+T15	disease 1266 1270	ESRD
+T16	disease 1303 1320	severe depression
+T17	disease 1357 1361	ESRD
+T18	disease 1413 1439	mild and severe depression
+T19	disease 1483 1493	depression
+T20	disease 1786 1790	ESRD
+T21	disease 1931 1960	advanced diabetic nephropathy
+T22	disease 10 20	depression
+T23	method 136 160	prospective cohort study
+T24	disease 299 309	depression
+R4	abbreviation_for Arg1:T6 Arg2:T5	
+T25	disease 367 381	pre-ESRD death
+T26	method 458 496	single-center prospective cohort study
+T27	method 590 620	Patient Health Questionnaire-9
+R5	help_diagnose Arg1:T27 Arg2:T10	
+T28	method 789 814	renal replacement therapy
+T30	method 928 949	competing risks model
+T31	signs 1068 1094	glomerular filtration rate
+T32	method 1233 1262	cumulative incidence function
+T33	method 1328 1339	Gray's test
+R6	risk_factor_of Arg1:T18 Arg2:T17	
+T34	method 1568 1609	multivariate subdistribution hazard model
+T36	disease 1727 1737	Depression
+T37	disease 1817 1830	comorbidities
+T38	disease 1882 1892	depression
+R8	associated_with Arg1:T38 Arg2:T35	
+T45	Health_factors 208 213	Women
+T46	Health_factors 1137 1140	men
+T47	disease 820 834	pre-ESRD death
+T29	disease 1675 1680	death
+T41	method 1160 1169	follow up
+T40	disease 1223 1227	died
+R1	associated_with Arg1:T37 Arg2:T38	
+T35	Health_factors 1900 1913	renal outcome
+R3	associated_with Arg1:T36 Arg2:T20	
+R7	help_diagnose Arg1:T27 Arg2:T11	
+R16	occurs_in Arg1:T35 Arg2:T21	

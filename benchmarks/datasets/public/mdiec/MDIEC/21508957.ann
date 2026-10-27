@@ -1,0 +1,78 @@
+T0	gene 0 9	Neuropsin
+T1	gene 18 23	EphB2
+T2	disease 51 58	anxiety
+T3	region 31 39	amygdala
+T4	disease 124 141	anxiety disorders
+T5	Health_factors 99 115	traumatic events
+T6	disease 267 274	anxiety
+T8	Health_factors 223 243	psychological trauma
+T10	physiology 370 389	neuronal plasticity
+T12	gene 452 477	serine protease neuropsin
+T14	physiology 570 601	EphB2-NMDA-receptor interaction
+T17	disease 631 653	anxiety-like behaviour
+T18	method 438 442	mice
+T21	region 527 535	amygdala
+T22	physiology 607 626	expression of Fkbp5
+T23	physiology 494 519	stress-related plasticity
+T24	physiology 673 710	neuropsin-dependent cleavage of EphB2
+T29	gene 785 798	NMDA receptor
+T31	disease 655 661	Stress
+T32	region 718 726	amygdala
+T33	physiology 735 777	dissociation of EphB2 from the NR1 subunit
+T34	physiology 813 849	membrane turnover of EphB2 receptors
+T35	physiology 851 880	Dynamic EphB2-NR1 interaction
+T38	physiology 890 911	NMDA receptor current
+T40	disease 982 989	anxiety
+T41	physiology 921 942	Fkbp5 gene expression
+T44	physiology 1039 1053	EphB2 cleavage
+T45	physiology 1062 1083	dissociation from NR1
+T46	physiology 1099 1127	static EphB2-NR1 interaction
+T48	gene 1157 1167	Fkbp5 gene
+T49	disease 1176 1183	anxiety
+T50	disease 994 1000	stress
+T51	method 1002 1026	neuropsin-deficient mice
+T53	gene 1267 1276	neuropsin
+T55	gene 1348 1369	anti-EphB2 antibodies
+T56	gene 1387 1397	Fkbp5 gene
+T59	method 1282 1306	neuropsin-deficient mice
+T60	region 1405 1413	amygdala
+T61	method 1417 1431	wild-type mice
+T62	method 1239 1263	intra-amygdala injection
+T63	physiology 1189 1219	behavioural response to stress
+T65	disease 1544 1551	anxiety
+T66	physiology 1489 1524	stress-induced proteolysis of EphB2
+T67	region 1532 1540	amygdala
+T68	physiology 1464 1480	neuronal pathway
+R1	located_in Arg1:T1 Arg2:T3	
+R2	associated_with Arg1:T0 Arg2:T2	
+R3	associated_with Arg1:T0 Arg2:T1	
+R4	risk_factor_of Arg1:T5 Arg2:T4	
+T7	physiology 287 312	Extracellular proteolysis
+T9	disease 328 353	fear-associated responses
+T69	region 397 420	neuron-matrix interface
+R5	associated_with Arg1:T7 Arg2:T9	
+R7	located_in Arg1:T10 Arg2:T69	
+R8	associated_with Arg1:T12 Arg2:T23	
+R9	located_in Arg1:T23 Arg2:T21	
+R13	located_in Arg1:T24 Arg2:T32	
+R14	risk_factor_of Arg1:T31 Arg2:T24	
+R15	located_in Arg1:T33 Arg2:T29	
+R16	associated_with Arg1:T35 Arg2:T38	
+R17	associated_with Arg1:T35 Arg2:T41	
+R18	associated_with Arg1:T35 Arg2:T40	
+R19	located_in Arg1:T56 Arg2:T60	
+R20	occurs_in Arg1:T60 Arg2:T61	
+R21	risk_factor_of Arg1:T24 Arg2:T33	
+R22	associated_with Arg1:T24 Arg2:T34	
+R23	treatment_for Arg1:T53 Arg2:T63	
+R24	occurs_in Arg1:T53 Arg2:T59	
+R25	associated_with Arg1:T63 Arg2:T55	
+R26	associated_with Arg1:T63 Arg2:T56	
+R27	located_in Arg1:T66 Arg2:T67	
+R28	associated_with Arg1:T66 Arg2:T65	
+R29	associated_with Arg1:T46 Arg2:T48	
+R30	associated_with Arg1:T46 Arg2:T49	
+R6	associated_with Arg1:T9 Arg2:T10	
+R10	associated_with Arg1:T23 Arg2:T14	
+R11	associated_with Arg1:T23 Arg2:T22	
+R12	associated_with Arg1:T23 Arg2:T17	

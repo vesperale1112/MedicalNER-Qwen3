@@ -1,0 +1,50 @@
+T1	disease 119 132	schizophrenia
+T2	gene 20 42	brain isoform of KCNH2
+T3	physiology 72 81	cognition
+T4	physiology 83 106	neuronal repolarization
+T5	physiology 51 70	cortical physiology
+T6	disease 215 228	schizophrenia
+T7	physiology 175 194	cortical processing
+T8	physiology 134 159	Organized neuronal firing
+T11	physiology 355 395	ether-a-go-go-related K(+) channel KCNH2
+T13	physiology 411 426	neuronal firing
+T14	region 288 299	human brain
+T15	gene 428 451	KCNH2-3.1 messenger RNA
+T16	gene 477 499	full-length KCNH2 (1A)
+T17	region 510 515	brain
+T18	region 555 560	heart
+T19	disease 599 612	schizophrenia
+T22	region 565 576	hippocampus
+T23	physiology 614 634	KCNH2-3.1 expression
+T24	physiology 660 679	KCNH2-1A expression
+T25	gene 837 842	KCNH2
+T26	disease 848 861	schizophrenia
+T27	method 683 696	meta-analysis
+T28	gene 802 833	single nucleotide polymorphisms
+T29	gene 1047 1061	KCNH2-3.1 mRNA
+T33	signs 973 1032	memory-linked functional magnetic resonance imaging signals
+T35	region 1072 1094	postmortem hippocampus
+T36	symptom 934 963	speed of cognitive processing
+T37	method 901 929	intelligence quotient scores
+T38	gene 863 886	Risk-associated alleles
+T39	gene 1096 1105	KCNH2-3.1
+R1	associated_with Arg1:T2 Arg2:T5	
+R2	associated_with Arg1:T2 Arg2:T3	
+R3	associated_with Arg1:T2 Arg2:T4	
+R4	risk_factor_of Arg1:T2 Arg2:T1	
+R5	associated_with Arg1:T8 Arg2:T7	
+R6	characteristic_of Arg1:T8 Arg2:T6	
+T30	physiology 236 284	rapid amplification of 5' complementary DNA ends
+R7	located_in Arg1:T30 Arg2:T14	
+T12	gene 317 347	primate-specific isoform (3.1)
+R9	located_in Arg1:T16 Arg2:T17	
+T9	method 705 723	clinical data sets
+R11	located_in Arg1:T28 Arg2:T25	
+R12	associated_with Arg1:T28 Arg2:T26	
+R13	associated_with Arg1:T38 Arg2:T37	
+R14	associated_with Arg1:T38 Arg2:T36	
+R15	associated_with Arg1:T38 Arg2:T33	
+R16	located_in Arg1:T29 Arg2:T35	
+R17	associated_with Arg1:T38 Arg2:T29	
+T10	physiology 1141 1166	slow channel deactivation
+R8	associated_with Arg1:T12 Arg2:T13	

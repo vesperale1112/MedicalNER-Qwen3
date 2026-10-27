@@ -1,0 +1,55 @@
+T0	disease 106 119	schizophrenia
+T2	Health_factors 79 102	environmental exposures
+T3	physiology 47 74	molecular genetic liability
+T4	disease 151 164	Schizophrenia
+T6	Health_factors 310 333	environmental exposures
+T8	gene 258 274	genetic variants
+T10	disease 170 197	heritable complex phenotype
+T11	disease 460 492	schizophrenia spectrum disorders
+T12	physiology 371 394	proxy-genetic liability
+T13	gene 412 416	gene
+T14	Health_factors 417 428	environment
+T15	method 335 364	Early twin and family studies
+T16	disease 611 624	schizophrenia
+T17	disease 701 733	schizophrenia spectrum disorders
+T18	disease 887 900	schizophrenia
+T19	signs 586 606	polygenic risk score
+T22	gene 855 859	gene
+T23	Health_factors 860 871	environment
+T26	Health_factors 639 662	environmental exposures
+T27	physiology 949 995	molecular genetic risk state for schizophrenia
+T28	Health_factors 1150 1162	sexual abuse
+T29	disease 1244 1262	hearing impairment
+T30	Health_factors 1312 1326	physical abuse
+T31	Health_factors 1330 1346	physical neglect
+T34	signs 1012 1019	PRS-SCZ
+T36	Health_factors 1164 1179	emotional abuse
+T37	Health_factors 1181 1198	emotional neglect
+T38	Health_factors 1204 1212	bullying
+T39	Health_factors 1264 1279	season of birth
+T41	Health_factors 1350 1359	childhood
+T42	method 1281 1293	winter birth
+T43	Health_factors 1114 1148	exposure to early-life adversities
+T44	Health_factors 1080 1109	lifetime regular cannabis use
+T46	method 1365 1385	sensitivity analyses
+T47	signs 1409 1416	PRS-SCZ
+T49	disease 1551 1564	schizophrenia
+T51	Health_factors 1665 1688	environmental exposures
+T1	method 138 149	EUGEI study
+R1	hyponym_of Arg1:T4 Arg2:T10	
+R2	risk_factor_of Arg1:T8 Arg2:T4	
+R3	risk_factor_of Arg1:T6 Arg2:T4	
+T5	method 448 456	etiology
+R4	occurs_in Arg1:T19 Arg2:T16	
+T7	signs 586 624	polygenic risk score for schizophrenia
+T9	signs 626 633	PRS-SCZ
+R5	abbreviation_for Arg1:T9 Arg2:T7	
+R6	occurs_in Arg1:T31 Arg2:T41	
+R7	occurs_in Arg1:T30 Arg2:T41	
+R8	associated_with Arg1:T27 Arg2:T44	
+R10	associated_with Arg1:T27 Arg2:T43	
+R11	associated_with Arg1:T27 Arg2:T28	
+R12	associated_with Arg1:T27 Arg2:T36	
+R13	associated_with Arg1:T27 Arg2:T37	
+R14	associated_with Arg1:T27 Arg2:T38	
+T21	method 1531 1547	etiopathogenesis

@@ -1,0 +1,59 @@
+T1	disease 23 78	Sexually Dimorphic Oxytocin-Dependent Anxiety Behaviors
+T3	region 2 18	Cortical Circuit
+T4	disease 103 133	social and emotional disorders
+T5	Health_factors 163 168	males
+T6	Health_factors 173 180	females
+T9	region 245 252	OxtrINs
+T10	region 213 243	oxytocin receptor interneurons
+T13	Health_factors 270 290	sociosexual behavior
+T14	region 326 333	OxtrINs
+T15	disease 343 368	anxiety-related behaviors
+T17	method 315 324	male mice
+T19	gene 390 437	corticotropin-releasing-hormone-binding protein
+T20	gene 439 444	CRHBP
+T22	drug 468 486	stress hormone CRH
+T24	gene 540 545	CRHBP
+T25	physiology 557 581	CRH-induced potentiation
+T26	Health_factors 635 639	male
+T27	Health_factors 649 655	female
+T28	method 657 661	mice
+T29	physiology 681 698	anxiolytic effect
+T30	physiology 585 631	postsynaptic layer 2/3 pyramidal cell activity
+T31	region 718 725	OxtrINs
+T32	drug 933 936	OXT
+T33	gene 941 944	CRH
+T35	Health_factors 795 802	females
+T36	Health_factors 807 812	males
+T37	physiology 826 845	molecular mechanism
+T39	region 891 895	mPFC
+T40	region 859 905	local medial prefrontal cortex (mPFC) circuits
+T41	region 859 889	local medial prefrontal cortex
+T42	Health_factors 756 786	social and emotional behaviors
+T46	physiology 1004 1035	OXT/OXTR and CRHBP/CRH pathways
+T48	Health_factors 1049 1056	females
+T51	method 1093 1118	gender-specific therapies
+R1	abbreviation_for Arg1:T9 Arg2:T10	
+R2	associated_with Arg1:T10 Arg2:T13	
+R3	associated_with Arg1:T9 Arg2:T13	
+T7	Health_factors 263 269	female
+R4	occurs_in Arg1:T17 Arg2:T14	
+R5	associated_with Arg1:T14 Arg2:T15	
+R6	abbreviation_for Arg1:T20 Arg2:T19	
+T8	region 517 524	OxtrINs
+R7	associated_with Arg1:T19 Arg2:T8	
+R8	associated_with Arg1:T20 Arg2:T8	
+R11	associated_with Arg1:T24 Arg2:T30	
+R12	occurs_in Arg1:T30 Arg2:T26	
+R13	occurs_in Arg1:T30 Arg2:T28	
+R14	associated_with Arg1:T24 Arg2:T29	
+R15	associated_with Arg1:T31 Arg2:T42	
+R16	occurs_in Arg1:T42 Arg2:T35	
+R17	occurs_in Arg1:T42 Arg2:T36	
+R18	abbreviation_for Arg1:T39 Arg2:T41	
+R19	associated_with Arg1:T40 Arg2:T32	
+R20	associated_with Arg1:T40 Arg2:T33	
+T11	Health_factors 1039 1044	males
+R21	occurs_in Arg1:T46 Arg2:T11	
+R22	occurs_in Arg1:T46 Arg2:T48	
+T2	Health_factors 97 102	human
+R23	associated_with Arg1:T24 Arg2:T25	

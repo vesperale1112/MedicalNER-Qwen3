@@ -1,0 +1,8 @@
+T2	gene 29 38	PPARalpha
+T4	method 58 82	antidepressant therapies
+T5	physiology 96 134	motivational anti-anhedonic properties
+T7	physiology 170 207	unbalanced mesolimbic dopamine system
+T9	disease 230 250	depressive disorders
+R2	associated_with Arg1:T7 Arg2:T9	
+R3	associated_with Arg1:T2 Arg2:T5	
+T1	method 211 226	pathophysiology

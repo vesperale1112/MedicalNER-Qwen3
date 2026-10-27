@@ -1,0 +1,66 @@
+T0	Health_factors 40 62	lay health counsellors
+T1	disease 67 99	depressive and anxiety disorders
+T2	method 20 32	intervention
+T3	method 103 115	primary care
+T5	method 141 176	cluster randomised controlled trial
+T6	disease 204 221	anxiety disorders
+T7	disease 233 249	mental disorders
+T8	Health_factors 335 357	lay health counsellors
+T10	method 315 327	intervention
+T12	method 265 276	MANAS trial
+T14	method 583 595	intervention
+T15	method 608 627	enhanced usual care
+T16	method 453 477	cluster randomised trial
+T17	disease 681 697	mental disorders
+T18	Health_factors 641 647	adults
+T22	method 785 811	psychosocial interventions
+T24	drug 874 894	antidepressant drugs
+T25	Health_factors 902 924	primary care physician
+T27	Health_factors 946 970	mental health specialist
+T29	Health_factors 827 856	trained lay health counsellor
+T30	Health_factors 765 780	case management
+T31	method 717 756	collaborative stepped-care intervention
+T32	disease 1051 1067	mental disorders
+T33	method 1086 1180	International Statistical Classification of Diseases and Related Health Problems-10th revision
+T34	method 1182 1188	ICD-10
+T39	method 1486 1499	control group
+T40	disease 1572 1588	mental disorders
+T43	method 1728 1738	risk ratio
+T44	method 1748 1750	CI
+T45	method 1786 1788	CI
+T46	method 1760 1775	risk difference
+T47	method 1685 1698	control group
+T48	Health_factors 1971 1997	private facility attenders
+T49	drug 2036 2048	095, 074-122
+T50	method 1804 1816	intervention
+T51	method 1906 1916	risk ratio
+T52	method 1926 1928	CI
+T53	method 2025 2035	risk ratio
+T56	disease 2084 2100	suicide attempts
+T57	disease 2149 2155	deaths
+T58	disease 2164 2180	suicide attempts
+T59	disease 2227 2233	deaths
+T60	disease 2244 2251	suicide
+T63	method 2299 2330	collaborative care intervention
+T64	method 2404 2434	public primary care facilities
+T4	disease 189 199	Depression
+R2	hyponym_of Arg1:T6 Arg2:T7	
+R3	hyponym_of Arg1:T4 Arg2:T7	
+T65	method 131 136	MANAS
+T66	method 361 382	primary care settings
+T11	method 479 502	primary care facilities
+T9	Health_factors 1030 1038	recovery
+R4	abbreviation_for Arg1:T34 Arg2:T33	
+R5	help_diagnose Arg1:T33 Arg2:T32	
+R6	help_diagnose Arg1:T34 Arg2:T32	
+T13	method 1437 1449	intervention
+T19	method 1548 1554	ICD-10
+R7	help_diagnose Arg1:T19 Arg2:T40	
+T20	method 1596 1608	intervention
+T21	Health_factors 1853 1878	public facility attenders
+R1	associated_with Arg1:T50 Arg2:T21	
+T23	disease 2068 2074	deaths
+T26	method 2188 2207	enhanced usual care
+T28	Health_factors 2272 2294	trained lay counsellor
+T35	disease 2375 2378	CMD
+R8	treatment_for Arg1:T63 Arg2:T35	

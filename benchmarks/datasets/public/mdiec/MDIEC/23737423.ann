@@ -1,0 +1,42 @@
+T0	disease 62 94	depressive and anxiety disorders
+T1	method 16 29	psychotherapy
+T2	method 34 49	pharmacotherapy
+T3	method 98 111	meta-analysis
+T5	disease 224 256	depressive and anxiety disorders
+T6	method 144 157	psychotherapy
+T7	drug 162 187	antidepressant medication
+T9	method 364 377	psychotherapy
+T10	drug 382 397	antidepressants
+T13	disease 577 609	depressive and anxiety disorders
+T14	method 456 469	meta-analysis
+T15	method 490 503	psychotherapy
+T16	drug 508 533	antidepressant medication
+T17	disease 771 791	depressive disorders
+T18	disease 811 828	anxiety disorders
+T19	method 675 692	randomized trials
+T20	method 728 746	inclusion criteria
+T21	method 634 659	bibliographical databases
+T22	method 888 901	psychotherapy
+T23	method 906 921	pharmacotherapy
+T25	method 971 973	CI
+T28	method 834 853	overall effect size
+T29	disease 1105 1114	dysthymia
+T30	disease 1202 1231	obsessive-compulsive disorder
+T31	method 1032 1047	Pharmacotherapy
+T32	method 1088 1101	psychotherapy
+T33	method 1129 1142	psychotherapy
+T34	method 1183 1198	pharmacotherapy
+T35	method 1255 1270	pharmacotherapy
+T37	method 1350 1363	psychotherapy
+T38	method 1404 1450	pharmacotherapy with tricyclic antidepressants
+T40	method 1311 1335	non-directive counseling
+T41	disease 1637 1646	dysthymia
+T44	method 1559 1596	multivariate meta-regression analysis
+R1	treatment_for Arg1:T1 Arg2:T0	
+R2	treatment_for Arg1:T2 Arg2:T0	
+R3	treatment_for Arg1:T6 Arg2:T5	
+R4	treatment_for Arg1:T7 Arg2:T5	
+R5	treatment_for Arg1:T31 Arg2:T29	
+R6	treatment_for Arg1:T33 Arg2:T30	
+R7	treatment_for Arg1:T15 Arg2:T13	
+R8	treatment_for Arg1:T16 Arg2:T13	

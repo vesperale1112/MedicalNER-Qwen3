@@ -1,0 +1,72 @@
+T0	disease 0 20	Bacterial Infections
+T1	disease 37 60	Substance Use Disorders
+T3	method 62 74	Large Cohort
+T4	disease 151 171	bacterial infections
+T5	disease 181 203	infective endocarditis
+T6	disease 205 207	IE
+T7	Health_factors 253 266	opioid crisis
+T8	disease 295 297	IE
+T9	disease 371 375	SUDs
+T10	disease 316 326	infections
+T11	disease 346 369	substance use disorders
+T17	Health_factors 499 505	adults
+T19	method 410 437	Premier Healthcare Database
+T20	disease 740 743	SUD
+T21	disease 724 734	infections
+T24	disease 841 843	IE
+T25	disease 963 967	SUDs
+T27	region 785 809	Blood and cardiac tissue
+T28	Health_factors 844 860	hospitalizations
+T29	Health_factors 929 945	hospitalizations
+T34	disease 1214 1227	osteomyelitis
+T35	disease 1264 1296	central nervous system abscesses
+T36	disease 1339 1370	skin and soft tissue infections
+T37	Health_factors 1098 1114	Hospitalizations
+T38	disease 1401 1404	IE-
+T39	disease 1404 1407	SUD
+T40	Health_factors 1376 1382	adults
+T41	Health_factors 1383 1387	aged
+T42	Health_factors 1408 1424	hospitalizations
+T43	disease 1507 1509	IE
+T44	disease 1510 1513	SUD
+T46	disease 1600 1602	IE
+T47	disease 1628 1632	SUDs
+T48	Health_factors 1514 1530	hospitalizations
+T49	disease 1544 1575	Staphylococcus aureus infection
+T50	Health_factors 1603 1619	hospitalizations
+T54	disease 1685 1695	infections
+T56	disease 1815 1817	IE
+T57	Health_factors 1818 1834	hospitalizations
+T58	method 1870 1882	epidemiology
+T59	disease 1892 1902	infections
+T60	method 1799 1811	microbiology
+R1	associated_with Arg1:T0 Arg2:T1	
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+R3	hyponym_of Arg1:T5 Arg2:T4	
+R4	hyponym_of Arg1:T6 Arg2:T4	
+R5	risk_factor_of Arg1:T7 Arg2:T4	
+R6	risk_factor_of Arg1:T7 Arg2:T5	
+R7	risk_factor_of Arg1:T7 Arg2:T6	
+R8	abbreviation_for Arg1:T9 Arg2:T11	
+R9	occurs_in Arg1:T10 Arg2:T11	
+R10	occurs_in Arg1:T10 Arg2:T9	
+R11	occurs_in Arg1:T8 Arg2:T11	
+R12	occurs_in Arg1:T8 Arg2:T9	
+T2	Health_factors 453 469	hospitalizations
+T12	disease 542 562	bacterial infections
+T13	disease 577 580	SUD
+T14	method 598 686	International Classification of Diseases, Clinical Modification Ninth and Tenth Revision
+R13	help_diagnose Arg1:T14 Arg2:T12	
+R14	help_diagnose Arg1:T14 Arg2:T13	
+R15	occurs_in Arg1:T21 Arg2:T20	
+T15	method 877 889	microbiology
+T16	disease 1001 1003	IE
+T18	disease 1025 1028	SUD
+T22	disease 1120 1124	SUDs
+T23	disease 1175 1177	IE
+T26	disease 1715 1719	SUDs
+R16	risk_factor_of Arg1:T26 Arg2:T54	
+T30	Health_factors 1756 1763	younger
+T31	Health_factors 1764 1767	age
+T32	disease 1848 1852	SUDs
+R17	associated_with Arg1:T32 Arg2:T59	

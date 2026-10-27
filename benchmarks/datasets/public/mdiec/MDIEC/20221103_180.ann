@@ -1,0 +1,10 @@
+T3	method 104 149	English-language Internet-based interventions
+T5	disease 242 252	depression
+T1	method 166 173	MoodGYM
+T2	method 178 187	BluePages
+R1	treatment_for Arg1:T3 Arg2:T5	
+T4	method 47 52	trial
+R2	treatment_for Arg1:T1 Arg2:T5	
+R3	treatment_for Arg1:T2 Arg2:T5	
+R4	hyponym_of Arg1:T1 Arg2:T3	
+R5	hyponym_of Arg1:T2 Arg2:T3	

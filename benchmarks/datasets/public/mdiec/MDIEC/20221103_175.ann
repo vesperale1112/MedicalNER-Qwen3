@@ -1,0 +1,4 @@
+T1	method 3 34	primary care pediatric settings
+T2	method 40 44	EPDS
+T3	method 107 133	depression screening tools
+R1	hyponym_of Arg1:T2 Arg2:T3	

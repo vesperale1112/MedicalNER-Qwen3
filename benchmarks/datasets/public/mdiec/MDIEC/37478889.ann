@@ -1,0 +1,33 @@
+T0	disease 69 82	schizophrenia
+T2	method 4 42	interpersonal computational psychiatry
+T3	disease 84 118	Impairments in social coordination
+T4	disease 152 173	psychiatric disorders
+T5	disease 185 198	schizophrenia
+T7	disease 313 326	schizophrenia
+T10	method 212 254	interpersonal and computational psychiatry
+T12	Health_factors 397 421	interpersonal activities
+T14	disease 710 723	schizophrenia
+T15	method 840 857	statistical model
+T16	method 745 768	dynamical system models
+T17	method 571 608	interpersonal computational framework
+T18	disease 1024 1037	schizophrenia
+T19	method 905 953	interpersonal computational psychiatry framework
+T20	method 1002 1017	psychopathology
+T23	method 1084 1118	clinical intervention and practice
+T24	disease 972 990	aberrant processes
+T25	disease 1205 1236	social coordination impairments
+T26	Health_factors 1155 1168	opportunities
+T1	Health_factors 46 65	social coordination
+R1	hyponym_of Arg1:T5 Arg2:T4	
+R2	characteristic_of Arg1:T3 Arg2:T4	
+R3	characteristic_of Arg1:T3 Arg2:T5	
+R4	occurs_in Arg1:T1 Arg2:T0	
+T6	Health_factors 290 309	social coordination
+R5	occurs_in Arg1:T6 Arg2:T7	
+T8	method 632 658	active inference framework
+T9	Health_factors 668 706	aberrant social coordination processes
+R6	occurs_in Arg1:T9 Arg2:T14	
+T11	Health_factors 780 827	intrapersonal and interpersonal synchronisation
+T13	method 867 883	active inference
+R7	risk_factor_of Arg1:T24 Arg2:T20	
+R8	hyponym_of Arg1:T18 Arg2:T20	

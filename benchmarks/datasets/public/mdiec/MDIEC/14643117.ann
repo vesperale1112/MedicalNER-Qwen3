@@ -1,0 +1,60 @@
+T0	disease 0 22	Cortical abnormalities
+T1	disease 56 96	attention-deficit hyperactivity disorder
+T2	Health_factors 26 34	children
+T3	Health_factors 39 50	adolescents
+T4	disease 170 210	attention-deficit hyperactivity disorder
+T9	region 284 302	right frontal lobe
+T10	signs 243 261	total brain volume
+T12	method 120 152	structural brain imaging studies
+T13	disease 464 489	grey-matter abnormalities
+T14	signs 440 459	regional brain size
+T17	method 341 406	conventional volumetric and voxel-based methods of image analysis
+T18	disease 628 668	attention-deficit hyperactivity disorder
+T21	signs 774 793	regional brain size
+T22	Health_factors 865 873	children
+T23	Health_factors 878 889	adolescents
+T24	disease 895 935	attention-deficit hyperactivity disorder
+T25	Health_factors 979 982	age
+T26	Health_factors 987 990	sex
+T27	method 688 707	high-resolution MRI
+T28	disease 1074 1114	attention-deficit hyperactivity disorder
+T29	signs 1129 1148	regional brain size
+T30	region 1169 1228	inferior portions of dorsal prefrontal cortices bilaterally
+T31	region 1040 1056	frontal cortices
+T32	signs 1230 1240	Brain size
+T33	region 1261 1299	anterior temporal cortices bilaterally
+T34	region 1375 1436	posterior temporal and inferior parietal cortices bilaterally
+T35	region 1324 1335	grey matter
+T36	physiology 1597 1606	attention
+T37	physiology 1611 1633	behavioural inhibition
+T38	region 1554 1579	distributed neural system
+T39	region 1503 1535	heteromodal association cortices
+T40	region 1459 1498	frontal, temporal, and parietal regions
+T41	disease 1792 1832	attention-deficit hyperactivity disorder
+T44	region 1698 1740	cortical components of attentional systems
+T45	disease 1654 1694	region-specific anatomical abnormalities
+R3	occurs_in Arg1:T3 Arg2:T1	
+T5	region 307 322	caudate nucleus
+R4	characteristic_of Arg1:T10 Arg2:T4	
+R5	characteristic_of Arg1:T9 Arg2:T4	
+R6	characteristic_of Arg1:T5 Arg2:T4	
+T6	region 531 539	cortical
+T7	method 712 766	surface-based, computational image analytic techniques
+T8	disease 798 823	grey-matter abnormalities
+T11	region 831 839	cortical
+R7	occurs_in Arg1:T23 Arg2:T24	
+R8	occurs_in Arg1:T22 Arg2:T24	
+T15	disease 1003 1022	Abnormal morphology
+R9	located_in Arg1:T15 Arg2:T31	
+R10	characteristic_of Arg1:T15 Arg2:T28	
+R11	located_in Arg1:T29 Arg2:T30	
+R12	characteristic_of Arg1:T29 Arg2:T28	
+R13	hyponym_of Arg1:T40 Arg2:T39	
+R14	associated_with Arg1:T40 Arg2:T38	
+R15	associated_with Arg1:T38 Arg2:T36	
+R16	associated_with Arg1:T38 Arg2:T37	
+R17	located_in Arg1:T45 Arg2:T44	
+R18	associated_with Arg1:T45 Arg2:T41	
+R19	occurs_in Arg1:T0 Arg2:T2	
+R20	occurs_in Arg1:T0 Arg2:T3	
+R1	occurs_in Arg1:T2 Arg2:T1	

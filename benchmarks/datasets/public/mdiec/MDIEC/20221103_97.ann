@@ -1,0 +1,11 @@
+T2	method 45 49	HADS
+T3	method 77 91	screening tool
+T4	disease 117 120	CAD
+T5	disease 125 128	ACS
+T6	disease 164 174	depression
+T10	disease 291 301	depression
+T11	disease 305 308	CVD
+R1	hyponym_of Arg1:T2 Arg2:T3	
+R2	help_diagnose Arg1:T2 Arg2:T4	
+R3	help_diagnose Arg1:T2 Arg2:T5	
+R4	occurs_in Arg1:T10 Arg2:T11	

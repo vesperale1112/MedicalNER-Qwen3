@@ -1,0 +1,50 @@
+T2	disease 108 128	Long-term depression
+T3	disease 232 248	major depression
+T4	disease 313 323	depression
+T5	disease 410 420	depression
+T6	disease 514 524	depression
+T10	disease 1104 1114	depression
+T11	disease 0 43	Impaired LTD-like motor cortical plasticity
+T12	disease 130 133	LTD
+R1	abbreviation_for Arg1:T12 Arg2:T2	
+T13	physiology 276 295	LTP-like plasticity
+T14	method 342 376	continuous theta burst stimulation
+T15	method 378 382	cTBS
+R2	abbreviation_for Arg1:T15 Arg2:T14	
+T16	disease 392 395	LTD
+T17	method 461 476	healthy control
+T18	method 539 552	cTBS protocol
+T19	region 556 573	left motor cortex
+T20	method 587 610	motor evoked potentials
+T21	method 612 616	MEPs
+R3	abbreviation_for Arg1:T21 Arg2:T20	
+T22	physiology 638 657	LTD-like plasticity
+T24	method 698 718	correlation analyses
+T25	physiology 722 741	cortical plasticity
+T26	disease 773 812	persistent LTD-like plasticity deficits
+T27	physiology 849 868	LTD-like plasticity
+T29	disease 1058 1086	impaired LTD-like plasticity
+T31	physiology 148 170	physiologic plasticity
+R7	hyponym_of Arg1:T2 Arg2:T31	
+R8	hyponym_of Arg1:T12 Arg2:T31	
+T23	Health_factors 47 92	female patients with major depression disorde
+T28	Health_factors 493 499	female
+T32	disease 837 847	depression
+T36	physiology 193 210	reversal learning
+T8	signs 932 965	peripheral concentrations of BDNF
+T9	disease 899 909	depression
+R12	associated_with Arg1:T12 Arg2:T36	
+R13	associated_with Arg1:T2 Arg2:T36	
+R14	associated_with Arg1:T2 Arg2:T3	
+R15	associated_with Arg1:T12 Arg2:T3	
+R9	characteristic_of Arg1:T27 Arg2:T9	
+T30	region 659 679	Peripheral molecules
+R10	risk_factor_of Arg1:T15 Arg2:T16	
+R11	risk_factor_of Arg1:T14 Arg2:T16	
+T34	method 1165 1180	pathophysiology
+R23	help_diagnose Arg1:T21 Arg2:T22	
+R24	help_diagnose Arg1:T20 Arg2:T22	
+R18	characteristic_of Arg1:T29 Arg2:T10	
+R4	characteristic_of Arg1:T26 Arg2:T32	
+T1	Health_factors 816 822	female
+R5	occurs_in Arg1:T1 Arg2:T32	

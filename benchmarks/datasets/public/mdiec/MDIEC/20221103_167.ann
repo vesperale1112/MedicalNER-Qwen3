@@ -1,0 +1,6 @@
+T1	method 33 80	internet-delivered cognitive behavioral therapy
+T3	disease 121 131	depression
+T4	method 82 86	iCBT
+R1	abbreviation_for Arg1:T4 Arg2:T1	
+T2	method 12 80	Therapist-supported, internet-delivered cognitive behavioral therapy
+R2	treatment_for Arg1:T2 Arg2:T3	

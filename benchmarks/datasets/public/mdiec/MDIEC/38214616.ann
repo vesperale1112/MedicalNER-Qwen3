@@ -1,0 +1,96 @@
+T0	disease 24 40	eating disorders
+T1	method 44 99	transdiagnostic and disorder-specific systematic review
+T2	method 101 114	meta-analysis
+T4	method 119 157	multivariable meta-regression analysis
+T5	disease 159 175	Eating disorders
+T6	disease 177 180	EDs
+T7	disease 219 228	mortality
+T8	method 279 310	comprehensive systematic review
+T9	Health_factors 239 264	chronic and severe course
+T14	method 388 401	meta-analysis
+T15	method 415 429	cohort studies
+T16	method 434 449	clinical trials
+T17	disease 575 582	relapse
+T19	Health_factors 584 624	all-cause and ED-related hospitalization
+T20	disease 672 679	purging
+T21	disease 681 693	binge eating
+T22	disease 729 738	mortality
+T23	Health_factors 549 557	recovery
+T24	method 501 508	DSM/ICD
+T25	disease 876 892	anorexia nervosa
+T26	disease 894 896	AN
+T27	disease 899 914	bulimia nervosa
+T28	disease 916 918	BN
+T29	disease 921 942	binge eating disorder
+T30	disease 944 947	BED
+T31	disease 950 994	other specified feeding and eating disorders
+R1	abbreviation_for Arg1:T6 Arg2:T5	
+R2	associated_with Arg1:T5 Arg2:T7	
+R3	associated_with Arg1:T5 Arg2:T9	
+R4	associated_with Arg1:T6 Arg2:T7	
+R5	associated_with Arg1:T6 Arg2:T9	
+T3	method 366 383	systematic review
+T10	disease 517 520	EDs
+R6	help_diagnose Arg1:T24 Arg2:T10	
+T11	Health_factors 530 541	ED outcomes
+R7	hyponym_of Arg1:T23 Arg2:T11	
+R8	hyponym_of Arg1:T17 Arg2:T11	
+R9	hyponym_of Arg1:T19 Arg2:T11	
+T12	symptom 630 640	chronicity
+R10	hyponym_of Arg1:T12 Arg2:T11	
+T13	Health_factors 698 716	body weight status
+R11	abbreviation_for Arg1:T26 Arg2:T25	
+R13	abbreviation_for Arg1:T30 Arg2:T29	
+R12	abbreviation_for Arg1:T28 Arg2:T27	
+T18	disease 996 1001	OSFED
+R14	abbreviation_for Arg1:T18 Arg2:T31	
+T32	disease 1011 1020	mixed EDs
+T33	Health_factors 1100 1108	recovery
+T34	method 1120 1140	family-based therapy
+T35	method 1142 1170	cognitive-behavioral therapy
+T36	method 1172 1175	CBT
+R15	abbreviation_for Arg1:T36 Arg2:T35	
+T37	method 1178 1199	psychodynamic therapy
+T38	method 1205 1230	nutritional interventions
+T39	disease 1235 1237	AN
+R16	treatment_for Arg1:T34 Arg2:T39	
+R17	treatment_for Arg1:T35 Arg2:T39	
+R18	treatment_for Arg1:T36 Arg2:T39	
+R19	treatment_for Arg1:T37 Arg2:T39	
+R20	treatment_for Arg1:T38 Arg2:T39	
+T40	method 1239 1248	self-help
+T41	method 1250 1253	CBT
+T42	method 1255 1285	dialectical behavioral therapy
+T43	method 1287 1290	DBT
+R21	abbreviation_for Arg1:T43 Arg2:T42	
+T44	method 1293 1314	psychodynamic therapy
+T45	method 1316 1358	nutritional and pharmacological treatments
+T46	disease 1363 1365	BN
+T47	method 1367 1370	CBT
+T48	method 1372 1417	nutritional and pharmacological interventions
+T49	method 1423 1426	DBT
+T50	disease 1431 1434	BED
+T51	method 1440 1443	CBT
+T52	method 1448 1469	psychodynamic therapy
+T53	disease 1474 1479	OSFED
+R22	treatment_for Arg1:T44 Arg2:T46	
+R23	treatment_for Arg1:T45 Arg2:T46	
+R24	treatment_for Arg1:T40 Arg2:T46	
+R25	treatment_for Arg1:T41 Arg2:T46	
+R26	treatment_for Arg1:T42 Arg2:T46	
+R27	treatment_for Arg1:T43 Arg2:T46	
+R28	treatment_for Arg1:T47 Arg2:T50	
+R29	treatment_for Arg1:T48 Arg2:T50	
+R30	treatment_for Arg1:T49 Arg2:T50	
+R31	treatment_for Arg1:T51 Arg2:T53	
+R32	treatment_for Arg1:T52 Arg2:T53	
+T54	disease 1484 1486	AN
+T55	method 1488 1513	pharmacological treatment
+T56	disease 1579 1588	mortality
+R33	occurs_in Arg1:T54 Arg2:T55	
+R34	risk_factor_of Arg1:T55 Arg2:T56	
+T57	disease 1540 1548	recovery
+R35	associated_with Arg1:T55 Arg2:T57	
+T58	disease 1702 1705	EDs
+T59	method 1635 1652	clinical practice
+T60	method 1657 1684	health service organization

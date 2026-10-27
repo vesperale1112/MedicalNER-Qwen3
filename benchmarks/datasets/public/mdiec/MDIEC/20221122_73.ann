@@ -1,0 +1,25 @@
+T1	disease 10 31	poststroke depression
+T2	disease 93 97	MoCA
+T12	physiology 250 268	executive function
+T13	physiology 304 323	language processing
+T14	physiology 359 365	memory
+T15	physiology 401 418	number processing
+R1	associated_with Arg1:T1 Arg2:T2	
+T3	method 112 126	standard error
+T4	method 128 130	SE
+R2	abbreviation_for Arg1:T4 Arg2:T3	
+T5	method 192 195	OCS
+T6	physiology 197 214	spatial attention
+T7	method 229 231	SE
+T8	physiology 458 464	praxis
+R3	help_diagnose Arg1:T5 Arg2:T6	
+R4	help_diagnose Arg1:T5 Arg2:T12	
+R5	help_diagnose Arg1:T5 Arg2:T13	
+R6	help_diagnose Arg1:T5 Arg2:T14	
+R7	help_diagnose Arg1:T5 Arg2:T15	
+R8	help_diagnose Arg1:T5 Arg2:T8	
+T9	method 283 285	SE
+T10	method 338 340	SE
+T11	method 380 382	SE
+T16	method 433 435	SE
+T17	method 479 481	SE

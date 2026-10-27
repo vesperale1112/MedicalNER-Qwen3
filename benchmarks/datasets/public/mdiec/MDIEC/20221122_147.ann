@@ -1,0 +1,16 @@
+T1	physiology 68 70	TP
+T2	physiology 91 93	TN
+T4	region 111 131	Default Mode Network
+T5	region 133 136	DMN
+T9	disease 179 199	recurrent depression
+T10	physiology 53 66	task positive
+R1	abbreviation_for Arg1:T1 Arg2:T10	
+T11	physiology 76 89	task negative
+R2	abbreviation_for Arg1:T2 Arg2:T11	
+R3	abbreviation_for Arg1:T5 Arg2:T4	
+T3	physiology 212 232	cognitive mechanisms
+R4	associated_with Arg1:T9 Arg2:T3	
+R5	associated_with Arg1:T10 Arg2:T11	
+R6	associated_with Arg1:T1 Arg2:T11	
+R7	associated_with Arg1:T10 Arg2:T2	
+R8	associated_with Arg1:T1 Arg2:T2	

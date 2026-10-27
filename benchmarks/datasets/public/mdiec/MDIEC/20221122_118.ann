@@ -1,0 +1,10 @@
+T1	physiology 99 111	neurogenesis
+T2	disease 170 180	depression
+T3	physiology 231 249	crosstalk channels
+T4	region 258 269	glial cells
+T5	region 274 281	neurons
+T7	gene 42 53	miR-146a-5p
+R1	associated_with Arg1:T7 Arg2:T1	
+T6	region 198 217	microglial exosomes
+T8	disease 132 154	pathological processes
+R2	risk_factor_of Arg1:T2 Arg2:T8	

@@ -1,0 +1,57 @@
+T0	disease 0 21	Personality disorders
+T1	disease 26 45	depressive symptoms
+T2	disease 49 85	late luteal phase dysphoric disorder
+T3	disease 135 171	late luteal phase dysphoric disorder
+T4	disease 173 177	LLPD
+T5	disease 257 278	personality disorders
+T6	symptom 301 310	hostility
+T7	disease 315 319	LLPD
+T8	disease 280 299	depressive symptoms
+T13	method 603 646	Structured Clinical Interview for DSM-III-R
+T14	disease 686 707	personality disorders
+T16	method 786 827	Montgomery-Asberg Depression Rating Scale
+T19	method 898 908	odds ratio
+T20	method 910 912	OR
+T21	method 925 944	confidence interval
+T22	method 946 948	CI
+T23	Health_factors 967 972	women
+T25	disease 978 1014	mild or moderate depressive symptoms
+T27	method 892 908	crude odds ratio
+T28	disease 1204 1208	LLPD
+T29	disease 1213 1242	avoidant personality disorder
+T31	Health_factors 1025 1028	age
+T32	disease 1115 1134	depressive symptoms
+T33	Health_factors 1263 1274	older women
+T34	method 1276 1287	adjusted OR
+T35	method 1310 1312	CI
+T39	disease 1422 1441	depressive symptoms
+T41	method 1368 1385	preliminary study
+T42	disease 1479 1483	LLPD
+T43	disease 1488 1517	avoidant personality disorder
+T44	Health_factors 1569 1572	age
+T46	disease 1615 1619	LLPD
+T47	disease 1624 1653	avoidant personality disorder
+T48	disease 1687 1722	spectrum of recurrent mood disorder
+T51	disease 1894 1898	LLPD
+T53	symptom 1860 1871	personality
+T54	method 1819 1856	prospective, longitudinal assessments
+R1	occurs_in Arg1:T0 Arg2:T2	
+R2	occurs_in Arg1:T1 Arg2:T2	
+R3	abbreviation_for Arg1:T4 Arg2:T3	
+T9	disease 373 377	LLPD
+T10	method 502 524	psychiatric evaluation
+T11	disease 553 595	psychotic, affective and anxiety disorders
+T12	method 713 777	Buss Durkee Inventory for Assessing Different Kinds of Hostility
+T15	disease 866 870	LLPD
+R4	abbreviation_for Arg1:T20 Arg2:T19	
+R5	abbreviation_for Arg1:T22 Arg2:T21	
+R6	risk_factor_of Arg1:T25 Arg2:T15	
+R7	occurs_in Arg1:T23 Arg2:T25	
+T17	disease 1106 1110	LLPD
+R8	associated_with Arg1:T17 Arg2:T32	
+R9	associated_with Arg1:T28 Arg2:T29	
+R10	occurs_in Arg1:T29 Arg2:T33	
+T18	disease 1413 1417	LLPD
+R11	associated_with Arg1:T18 Arg2:T39	
+R12	hyponym_of Arg1:T46 Arg2:T48	
+R13	hyponym_of Arg1:T47 Arg2:T48	

@@ -1,0 +1,23 @@
+T2	disease 88 106	bipolar I disorder
+T4	method 0 42	Lithium plus valproate combination therapy
+T5	method 50 61	monotherapy
+T8	method 120 147	randomised open-label trial
+T9	method 108 115	BALANCE
+T10	drug 160 177	Lithium carbonate
+T11	drug 182 202	valproate semisodium
+T13	method 227 238	monotherapy
+T15	disease 257 284	relapse in bipolar disorder
+T1	disease 66 73	relapse
+R1	occurs_in Arg1:T1 Arg2:T2	
+R2	treatment_for Arg1:T4 Arg2:T1	
+R3	treatment_for Arg1:T10 Arg2:T15	
+R4	treatment_for Arg1:T11 Arg2:T15	
+R5	treatment_for Arg1:T5 Arg2:T1		
+T6	disease 376 394	bipolar I disorder
+T7	method 405 422	long-term therapy
+T12	drug 478 500	lithium plus valproate
+T14	method 505 524	lithium monotherapy
+T16	disease 552 559	relapse
+T17	method 568 589	valproate monotherapy
+R6	treatment_for Arg1:T12 Arg2:T16	
+R7	treatment_for Arg1:T14 Arg2:T16	

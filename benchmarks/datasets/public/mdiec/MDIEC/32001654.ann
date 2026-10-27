@@ -1,0 +1,37 @@
+T0	disease 12 25	schizophrenia
+T1	gene 0 8	Genetics
+T2	disease 196 211	complex disease
+T3	Health_factors 88 101	modern humans
+T4	disease 250 263	schizophrenia
+T5	gene 238 246	genetics
+T6	disease 280 287	illness
+T7	Health_factors 358 361	age
+T8	Health_factors 364 370	gender
+T10	disease 422 435	schizophrenia
+T11	drug 638 647	glutamine
+T12	drug 649 667	-aminobutyric acid
+T13	drug 673 681	dopamine
+T15	region 587 603	neural circuitry
+T16	drug 620 637	neurotransmitters
+T17	physiology 491 536	private, severely damaging mutations in genes
+T18	disease 683 696	Schizophrenia
+T19	physiology 744 779	severe ultrarare mutations in genes
+T20	physiology 801 820	synaptic plasticity
+T21	disease 968 981	schizophrenia
+T22	physiology 835 852	genetic variation
+T23	gene 956 964	genetics
+T26	gene 159 171	human genome
+T9	Health_factors 377 386	residence
+R2	risk_factor_of Arg1:T10 Arg2:T17	
+T14	physiology 558 575	synaptic function
+R3	associated_with Arg1:T15 Arg2:T16	
+R4	associated_with Arg1:T15 Arg2:T11	
+R5	associated_with Arg1:T15 Arg2:T12	
+R1	associated_with Arg1:T15 Arg2:T13	
+T27	physiology 700 732	genetically highly heterogeneous
+R6	associated_with Arg1:T19 Arg2:T20	
+R7	associated_with Arg1:T17 Arg2:T14	
+R8	hyponym_of Arg1:T15 Arg2:T14	
+R9	associated_with Arg1:T17 Arg2:T15	
+R10	characteristic_of Arg1:T27 Arg2:T18	
+R11	associated_with Arg1:T18 Arg2:T19	

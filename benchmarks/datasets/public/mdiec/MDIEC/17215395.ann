@@ -1,0 +1,36 @@
+T0	physiology 46 65	synaptic depression
+T1	region 73 76	CA1
+T2	region 87 98	hippocampus
+T5	physiology 107 137	short-term synaptic depression
+T6	physiology 139 156	neurotransmission
+T7	physiology 190 224	repetitive action potential firing
+T9	gene 248 263	vacuolar ATPase
+T10	physiology 449 468	synaptic depression
+T11	drug 334 344	pH buffers
+T12	region 506 537	hippocampal CA1 pyramidal cells
+T13	disease 552 562	depression
+T16	disease 664 674	depression
+T17	physiology 778 795	neurotransmission
+T18	disease 819 829	depression
+T19	disease 899 909	depression
+T20	disease 1036 1046	depression
+T21	disease 1061 1103	impairment of rapid synaptic vesicle reuse
+T23	drug 921 931	pH buffers
+T27	physiology 1174 1216	kinetics of short-term synaptic plasticity
+T28	physiology 0 27	Fast synaptic vesicle reuse
+R1	located_in Arg1:T1 Arg2:T2	
+R2	located_in Arg1:T0 Arg2:T1	
+R3	associated_with Arg1:T28 Arg2:T0	
+R4	associated_with Arg1:T6 Arg2:T7	
+T3	signs 296 298	pH
+T4	region 312 323	hippocampal
+T8	physiology 358 384	neurotransmitter refilling
+T29	physiology 432 445	vesicle reuse
+T30	region 492 500	synapses
+T14	physiology 614 653	compromising neurotransmitter refilling
+R5	associated_with Arg1:T14 Arg2:T16	
+T15	region 758 774	reserve vesicles
+R6	risk_factor_of Arg1:T23 Arg2:T19	
+R7	risk_factor_of Arg1:T21 Arg2:T20	
+T22	physiology 1133 1161	synaptic vesicle trafficking
+R8	associated_with Arg1:T22 Arg2:T27	

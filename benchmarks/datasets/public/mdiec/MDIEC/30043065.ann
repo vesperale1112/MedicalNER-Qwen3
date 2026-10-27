@@ -1,0 +1,81 @@
+T1	drug 10 22	Escitalopram
+T2	disease 106 129	Acute Coronary Syndrome
+T3	disease 235 258	acute coronary syndrome
+T4	disease 260 263	ACS
+T5	drug 445 457	escitalopram
+T6	disease 471 481	depression
+T7	disease 506 509	ACS
+T8	disease 638 641	ACS
+T9	disease 646 656	depression
+T10	drug 862 874	escitalopram
+T11	disease 1067 1088	myocardial infarction
+T12	disease 1090 1092	MI
+T13	disease 1225 1238	cardiac death
+T14	disease 1240 1242	MI
+T15	drug 1310 1322	escitalopram
+T16	drug 1574 1586	escitalopram
+T17	drug 1725 1737	escitalopram
+T18	disease 1871 1884	cardiac death
+T19	disease 1945 1947	MI
+T20	disease 2118 2128	depression
+T21	disease 2146 2169	acute coronary syndrome
+T22	drug 2194 2206	escitalopram
+T25	disease 48 58	Depression
+T26	method 133 158	Randomized Clinical Trial
+T27	disease 172 182	Depression
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+T28	method 307 331	antidepressant treatment
+T29	disease 406 434	major adverse cardiac events
+T30	disease 436 440	MACE
+R4	abbreviation_for Arg1:T30 Arg2:T29	
+T31	method 546 596	Randomized, double-blind, placebo-controlled trial
+T33	disease 1025 1029	MACE
+R6	abbreviation_for Arg1:T12 Arg2:T11	
+T34	method 1099 1133	percutaneous coronary intervention
+T35	method 1135 1138	PCI
+R7	abbreviation_for Arg1:T35 Arg2:T34	
+T36	disease 1185 1189	MACE
+T37	disease 1204 1223	all-cause mortality
+R8	hyponym_of Arg1:T37 Arg2:T36	
+R9	hyponym_of Arg1:T13 Arg2:T36	
+R10	hyponym_of Arg1:T14 Arg2:T36	
+T38	method 1248 1251	PCI
+R11	hyponym_of Arg1:T38 Arg2:T36	
+T39	disease 1046 1065	all-cause mortality
+R12	hyponym_of Arg1:T39 Arg2:T33	
+R13	hyponym_of Arg1:T11 Arg2:T33	
+R14	hyponym_of Arg1:T12 Arg2:T33	
+R15	hyponym_of Arg1:T34 Arg2:T33	
+R16	hyponym_of Arg1:T35 Arg2:T33	
+T40	method 1253 1284	Cox proportional hazards models
+T42	method 1624 1636	hazard ratio
+T43	method 1638 1640	HR
+R17	abbreviation_for Arg1:T43 Arg2:T42	
+T44	method 1653 1655	CI
+T46	method 1828 1830	HR
+T47	method 1842 1844	CI
+T23	method 2011 2014	PCI
+T52	method 1902 1904	HR
+T53	method 1916 1918	CI
+T54	method 1964 1966	HR
+T55	method 1978 1980	CI
+T56	method 2032 2034	HR
+T57	method 2046 2048	CI
+T58	Health_factors 215 231	medical outcomes
+R5	associated_with Arg1:T27 Arg2:T58	
+T66	disease 1359 1363	MACE
+T67	Health_factors 1410 1413	age
+T68	Health_factors 1429 1434	women
+T69	disease 1527 1531	MACE
+T70	disease 1699 1703	MACE
+T71	disease 1787 1806	all-cause mortality
+T72	disease 2257 2285	major adverse cardiac events
+T51	method 700 709	follow-up
+T73	method 1516 1525	follow-up
+R18	treatment_for Arg1:T22 Arg2:T72	
+T24	method 797 810	Interventions
+T32	Health_factors 62 88	Long-term Cardiac Outcomes
+R19	treatment_for Arg1:T5 Arg2:T6	
+R2	occurs_in Arg1:T58 Arg2:T3	
+R3	occurs_in Arg1:T58 Arg2:T4	
+R20	occurs_in Arg1:T6 Arg2:T7	

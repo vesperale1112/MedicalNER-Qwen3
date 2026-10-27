@@ -1,0 +1,14 @@
+T1	method 33 50	prospective study
+T3	disease 93 112	depressive symptoms
+T4	physiology 122 131	pregnancy
+T5	physiology 250 259	pregnancy
+T6	disease 166 169	GDM
+T7	disease 190 193	GDM
+T9	Health_factors 268 285	postpartum period
+T10	disease 209 230	postpartum depression
+T11	disease 375 385	depression
+T12	disease 390 420	glucose intolerance phenotypes
+R1	risk_factor_of Arg1:T3 Arg2:T6	
+R2	risk_factor_of Arg1:T7 Arg2:T10	
+R3	associated_with Arg1:T11 Arg2:T12	
+R4	occurs_in Arg1:T3 Arg2:T4	

@@ -1,0 +1,3 @@
+T1	method 0 20	Coronary angiography
+T2	disease 72 75	CAD
+R1	help_diagnose Arg1:T1 Arg2:T2	

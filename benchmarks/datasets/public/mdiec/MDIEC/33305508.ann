@@ -1,0 +1,99 @@
+T1	disease 76 101	Major Depression Disorder
+T2	disease 241 266	major depressive disorder
+T3	disease 268 271	MDD
+T4	disease 368 371	MDD
+T5	disease 526 529	MDD
+T6	disease 662 665	MDD
+T7	signs 742 770	blood oxygen level-dependent
+T8	method 883 915	Hamilton depression rating scale
+T9	disease 1612 1615	MDD
+T10	disease 1743 1746	MDD
+T11	disease 2079 2082	MDD
+T12	region 45 72	Brain White and Gray Matter
+T15	region 143 145	GM
+R2	abbreviation_for Arg1:T3 Arg2:T2	
+T16	physiology 277 301	antidepressant responses
+T17	region 334 346	white matter
+T18	region 348 350	WM
+R9	abbreviation_for Arg1:T18 Arg2:T17	
+T20	physiology 473 496	functional connectivity
+T21	physiology 498 500	FC
+R10	abbreviation_for Arg1:T21 Arg2:T20	
+T22	region 505 507	WM
+T23	region 509 511	GM
+T24	region 517 522	WM-GM
+T25	physiology 576 578	FC
+T26	method 620 638	Longitudinal study
+T27	method 682 698	healthy controls
+T28	method 700 702	HC
+R11	abbreviation_for Arg1:T28 Arg2:T27	
+T29	signs 772 776	BOLD
+R12	abbreviation_for Arg1:T29 Arg2:T7	
+T30	method 778 809	single-shot echo planar imaging
+T31	method 917 921	HAMD
+R13	abbreviation_for Arg1:T31 Arg2:T8	
+T32	method 941 950	fMRI scan
+T33	method 972 996	antidepressant treatment
+T34	method 1021 1025	HAMD
+T35	method 1037 1041	HAMD
+T36	method 1146 1150	HAMD
+T37	physiology 1163 1165	FC
+T38	method 1260 1277	two-sample t-test
+T39	method 1283 1298	chi-square test
+T40	physiology 1396 1398	FC
+T41	method 1403 1407	HAMD
+T42	method 1442 1446	HAMD
+T43	method 1467 1498	Pearson or Spearman correlation
+T44	method 1500 1532	Receiver operator curve analysis
+T45	method 1608 1610	HC
+T46	physiology 1659 1670	FC of WM-GM
+R14	characteristic_of Arg1:T46 Arg2:T9	
+T47	region 1688 1698	GM regions
+T48	region 1706 1716	WM bundles
+T49	physiology 1775 1786	FC of WM-GM
+T51	method 1825 1829	HAMD
+T52	physiology 1842 1853	FC of WM-GM
+T50	method 1899 1903	HAMD
+T54	region 1925 1927	WM
+T55	region 1933 1938	WM-GM
+T56	physiology 1915 1917	FC
+T57	method 2023 2027	HAMD
+R20	associated_with Arg1:T56 Arg2:T57	
+T58	physiology 2050 2061	FC of WM-GM
+R22	characteristic_of Arg1:T58 Arg2:T11	
+T53	physiology 2130 2154	antidepressant responses
+R19	associated_with Arg1:T58 Arg2:T53	
+T60	physiology 583 606	antidepressant response
+T63	region 130 141	gray matter
+T59	region 730 741	Whole-brain
+T65	Health_factors 1130 1133	age
+T66	Health_factors 1135 1144	education
+T67	Health_factors 1342 1348	gender
+T68	physiology 1562 1585	antidepressant response
+T64	symptom 1721 1739	lower connectivity
+T13	physiology 0 36	Desynchronized Functional Activities
+T19	method 1092 1109	STATISTICAL TESTS
+R15	associated_with Arg1:T52 Arg2:T50	
+R16	associated_with Arg1:T49 Arg2:T51	
+R1	abbreviation_for Arg1:T15 Arg2:T63	
+T61	method 416 431	pathophysiology
+T62	method 2110 2125	pathophysiology
+T70	region 1921 1923	GM
+T71	symptom 115 141	Alterations in gray matter
+R3	associated_with Arg1:T71 Arg2:T2	
+R4	associated_with Arg1:T71 Arg2:T3	
+R6	associated_with Arg1:T71 Arg2:T16	
+R40	located_in Arg1:T56 Arg2:T70	
+R7	located_in Arg1:T56 Arg2:T54	
+R17	located_in Arg1:T56 Arg2:T55	
+R26	located_in Arg1:T13 Arg2:T12	
+R21	characteristic_of Arg1:T48 Arg2:T10	
+R27	characteristic_of Arg1:T47 Arg2:T10	
+R23	characteristic_of Arg1:T13 Arg2:T1	
+R5	associated_with Arg1:T58 Arg2:T62	
+T14	physiology 204 229	neurobiological mechanism
+R8	associated_with Arg1:T14 Arg2:T2	
+R18	associated_with Arg1:T14 Arg2:T3	
+R24	associated_with Arg1:T14 Arg2:T16	
+R28	associated_with Arg1:T40 Arg2:T41	
+T69	method 1174 1194	false discovery rate

@@ -1,0 +1,47 @@
+T0	disease 16 62	comorbid schizophrenia and learning disability
+T2	method 66 82	controlled study
+T3	disease 131 144	schizophrenia
+T4	disease 148 165	learning-disabled
+T5	disease 319 338	learning disability
+T6	disease 343 356	schizophrenia
+T7	disease 358 375	learning-disabled
+T8	disease 404 417	schizophrenia
+T9	method 269 295	magnetic resonance imaging
+T10	method 297 300	MRI
+T11	method 258 295	structural magnetic resonance imaging
+T14	Health_factors 429 432	Age
+T15	Health_factors 445 448	sex
+T16	disease 503 516	schizophrenia
+T18	region 574 579	brain
+T20	region 587 592	brain
+T22	method 650 665	normal controls
+T26	region 858 866	amygdala
+T30	region 902 913	hippocampus
+T31	method 967 982	normal controls
+T32	disease 1062 1079	learning-disabled
+T33	region 1052 1058	brains
+T34	region 1158 1187	amygdalohippocampal complexes
+T39	disease 1331 1344	schizophrenia
+T40	disease 1425 1438	schizophrenia
+T41	disease 1442 1459	learning-disabled
+T42	disease 1501 1514	schizophrenic
+T43	disease 1575 1592	learning-disabled
+T44	disease 1668 1681	schizophrenia
+T45	disease 1535 1553	cognitive deficits
+R1	risk_factor_of Arg1:T4 Arg2:T3	
+T12	method 0 12	Neuroanatomy
+T13	region 213 234	neuroanatomical basis
+R2	abbreviation_for Arg1:T10 Arg2:T9	
+T23	disease 471 490	learning disability
+T17	method 557 560	MRI
+T19	disease 776 789	schizophrenic
+T21	region 867 878	hippocampus
+T24	region 893 901	amygdala
+R3	characteristic_of Arg1:T33 Arg2:T32	
+R4	characteristic_of Arg1:T34 Arg2:T32	
+T25	region 1230 1235	brain
+T27	disease 1261 1307	comorbid learning disability and schizophrenia
+T28	disease 1364 1383	learning disability
+R5	risk_factor_of Arg1:T41 Arg2:T40	
+R6	risk_factor_of Arg1:T42 Arg2:T45	
+R7	risk_factor_of Arg1:T44 Arg2:T43	

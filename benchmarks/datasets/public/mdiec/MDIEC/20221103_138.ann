@@ -1,0 +1,6 @@
+T1	Health_factors 51 61	physicians
+T2	Health_factors 72 85	professionals
+T3	disease 133 158	major depressive disorder
+T4	disease 163 180	anxiety disorders
+T5	method 20 35	screening tools
+T6	method 89 101	primary care

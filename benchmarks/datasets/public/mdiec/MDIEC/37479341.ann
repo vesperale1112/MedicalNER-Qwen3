@@ -1,0 +1,67 @@
+T0	disease 80 110	post-traumatic stress disorder
+T3	disease 112 121	STOP-PTSD
+T5	method 126 177	UK-based, single-blind, randomised controlled trial
+T6	method 0 49	Therapist-assisted online psychological therapies
+T7	disease 265 295	post-traumatic stress disorder
+T8	disease 297 301	PTSD
+T9	method 236 260	psychological treatments
+T10	method 337 381	therapist-assisted internet-based treatments
+T12	disease 651 655	PTSD
+T16	method 480 488	iCT-PTSD
+T17	method 528 567	first-line, trauma-focused intervention
+T19	Health_factors 587 639	UK National Institute for Health and Care Excellence
+T21	method 727 739	iStress-PTSD
+T22	method 744 799	comprehensive cognitive behavioural treatment programme
+T25	method 861 902	single-blind, randomised controlled trial
+T1	disease 63 69	trauma
+R1	abbreviation_for Arg1:T3 Arg2:T0	
+R2	abbreviation_for Arg1:T8 Arg2:T7	
+T2	method 433 478	internet-delivered cognitive therapy for PTSD
+R3	abbreviation_for Arg1:T16 Arg2:T2	
+R4	hyponym_of Arg1:T2 Arg2:T17	
+R5	hyponym_of Arg1:T16 Arg2:T17	
+T4	Health_factors 641 645	NICE
+R6	abbreviation_for Arg1:T4 Arg2:T19	
+T11	method 672 725	internet-delivered stress management therapy for PTSD
+R7	abbreviation_for Arg1:T21 Arg2:T11	
+R8	hyponym_of Arg1:T11 Arg2:T22	
+R9	hyponym_of Arg1:T21 Arg2:T22	
+T13	Health_factors 828 841	coping skills
+T14	method 977 1003	UK National Health Service
+T15	method 1005 1008	NHS
+R10	abbreviation_for Arg1:T15 Arg2:T14	
+T18	method 1010 1053	Improving Access to Psychological Therapies
+T20	method 1055 1059	IAPT
+R11	abbreviation_for Arg1:T20 Arg2:T18	
+T23	method 1098 1112	DSM-5 criteria
+T24	disease 1117 1121	PTSD
+R12	help_diagnose Arg1:T23 Arg2:T24	
+T26	method 1152 1160	iCT-PTSD
+T27	method 1177 1189	iStress-PTSD
+T28	disease 1202 1215	PTSD symptoms
+R13	treatment_for Arg1:T26 Arg2:T28	
+T29	method 1255 1260	PCL-5
+T30	method 1299 1323	standardised effect size
+T31	method 1491 1513	waiting list for PCL-5
+T32	method 1550 1558	iCT-PTSD
+T33	method 1584 1596	iStress-PTSD
+T34	method 1629 1637	iCT-PTSD
+T35	disease 1673 1690	high dissociation
+T36	physiology 1694 1715	complex PTSD symptoms
+R14	treatment_for Arg1:T34 Arg2:T35	
+R15	treatment_for Arg1:T34 Arg2:T36	
+T37	disease 1807 1813	trauma
+T38	Health_factors 1837 1855	flashback memories
+T39	Health_factors 1860 1882	serious adverse events
+T40	method 1914 1937	Trauma-focused iCT-PTSD
+T41	disease 1983 1987	PTSD
+R16	treatment_for Arg1:T40 Arg2:T41	
+T42	method 2007 2073	non-trauma-focused cognitive behavioural stress management therapy
+T43	method 2091 2099	iCT-PTSD
+T44	method 2150 2157	CT-PTSD
+T45	method 2170 2208	NICE-recommended first-line treatments
+T46	disease 2213 2217	PTSD
+R17	hyponym_of Arg1:T43 Arg2:T45	
+R18	treatment_for Arg1:T43 Arg2:T46	
+T47	Health_factors 2234 2243	therapist
+T48	method 2263 2283	face-to-face therapy

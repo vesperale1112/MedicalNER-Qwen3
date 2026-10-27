@@ -1,0 +1,139 @@
+T0	disease 32 80	Comorbid Psychiatric and Substance Use Disorders
+T1	disease 99 107	COVID-19
+T2	Health_factors 0 15	Hospitalization
+T3	Health_factors 87 93	Adults
+T5	Health_factors 119 143	US Emergency Departments
+T6	disease 258 279	psychiatric disorders
+T7	disease 281 284	PDs
+T9	Health_factors 199 216	COVID-19 pandemic
+T10	Health_factors 243 245	ED
+T12	disease 290 304	drug overdoses
+T13	disease 316 337	Psychiatric disorders
+T14	disease 342 365	substance use disorders
+T15	disease 367 371	SUDs
+T17	Health_factors 409 433	COVID-19 hospitalization
+T19	disease 498 517	comorbid PD and SUD
+T20	disease 596 604	COVID-19
+T22	Health_factors 557 572	hospitalization
+T23	disease 739 747	COVID-19
+T25	Health_factors 710 716	adults
+T26	Health_factors 718 721	age
+T28	method 646 681	retrospective cross-sectional study
+T29	disease 891 894	SUD
+T30	drug 921 928	alcohol
+T31	drug 940 947	cocaine
+T32	disease 991 993	PD
+T33	disease 1005 1045	attention-deficit/hyperactivity disorder
+T34	disease 1047 1051	ADHD
+T35	disease 1054 1061	anxiety
+T36	disease 1063 1079	bipolar disorder
+T37	disease 1081 1097	major depression
+T38	disease 1105 1118	mood disorder
+T39	disease 1120 1149	posttraumatic stress disorder
+T40	disease 1151 1155	PTSD
+T41	disease 1161 1174	schizophrenia
+T42	drug 930 938	cannabis
+T43	drug 969 979	substances
+T44	drug 949 958	sedatives
+T45	drug 909 919	stimulants
+T46	drug 900 907	opioids
+T48	Health_factors 1229 1244	hospitalization
+T50	disease 1344 1346	PD
+T51	disease 1351 1354	SUD
+T52	disease 1369 1371	PD
+T53	disease 1379 1382	SUD
+T54	Health_factors 1276 1291	hospitalization
+T57	disease 1449 1457	COVID-19
+T58	disease 1528 1530	PD
+T59	disease 1577 1580	SUD
+T61	method 1465 1467	SD
+T62	Health_factors 1469 1472	age
+T63	Health_factors 1500 1505	women
+T64	Health_factors 1537 1540	age
+T65	Health_factors 1560 1563	men
+T66	Health_factors 1587 1590	age
+T67	Health_factors 1610 1613	men
+T68	Health_factors 1640 1643	age
+T69	Health_factors 1663 1666	men
+T73	disease 1685 1688	PDs
+T74	disease 1694 1701	anxiety
+T75	disease 1711 1727	major depression
+T76	disease 1736 1748	poly (2) PDs
+T77	disease 1761 1774	schizophrenia
+T78	disease 1799 1803	SUDs
+T79	drug 1813 1820	alcohol
+T80	disease 1866 1879	poly (2) SUDs
+T81	drug 1829 1837	cannabis
+T82	drug 1846 1853	opioids
+T83	disease 1902 1905	SUD
+T84	disease 1926 1930	PTSD
+T85	disease 1932 1945	schizophrenia
+T86	disease 1953 1966	mood disorder
+T87	disease 1971 1975	ADHD
+T88	disease 2025 2027	PD
+T89	disease 2028 2031	SUD
+T90	disease 2100 2110	PD and SUD
+T92	Health_factors 2065 2080	hospitalization
+T93	method 2220 2223	IQR
+T94	disease 2240 2242	PD
+T95	method 2291 2294	IQR
+T96	method 2365 2368	IQR
+T98	disease 2412 2414	PD
+T99	disease 2419 2422	SUD
+T101	disease 2424 2446	Substance use disorder
+T102	disease 2496 2498	PD
+T103	Health_factors 2475 2490	hospitalization
+T104	disease 2568 2578	PD and SUD
+T106	Health_factors 2608 2623	hospitalization
+T109	disease 2759 2762	PDs
+T110	disease 2693 2716	Substance use disorders
+T111	Health_factors 2787 2802	hospitalization
+T113	disease 2825 2846	coexisting PD and SUD
+T115	disease 2867 2875	COVID-19
+T117	Health_factors 2912 2927	hospitalization
+R1	occurs_in Arg1:T0 Arg2:T3	
+R2	associated_with Arg1:T2 Arg2:T0	
+R3	occurs_in Arg1:T3 Arg2:T1	
+T4	Health_factors 221 241	emergency department
+R4	abbreviation_for Arg1:T10 Arg2:T4	
+R5	abbreviation_for Arg1:T7 Arg2:T6	
+R6	abbreviation_for Arg1:T15 Arg2:T14	
+R7	risk_factor_of Arg1:T13 Arg2:T17	
+R8	risk_factor_of Arg1:T14 Arg2:T17	
+R9	risk_factor_of Arg1:T15 Arg2:T17	
+T8	Health_factors 579 581	ED
+R10	occurs_in Arg1:T8 Arg2:T20	
+R11	occurs_in Arg1:T22 Arg2:T8	
+T11	Health_factors 773 776	EDs
+T16	Health_factors 781 800	inpatient hospitals
+R12	abbreviation_for Arg1:T34 Arg2:T33	
+R13	hyponym_of Arg1:T33 Arg2:T32	
+R14	hyponym_of Arg1:T34 Arg2:T32	
+R15	hyponym_of Arg1:T35 Arg2:T32	
+R16	hyponym_of Arg1:T36 Arg2:T32	
+R17	hyponym_of Arg1:T37 Arg2:T32	
+R18	abbreviation_for Arg1:T40 Arg2:T39	
+R19	hyponym_of Arg1:T38 Arg2:T32	
+R20	hyponym_of Arg1:T39 Arg2:T32	
+R21	hyponym_of Arg1:T40 Arg2:T32	
+R22	hyponym_of Arg1:T41 Arg2:T32	
+T18	Health_factors 1432 1434	ED
+R23	occurs_in Arg1:T18 Arg2:T57	
+R24	hyponym_of Arg1:T74 Arg2:T73	
+R25	hyponym_of Arg1:T75 Arg2:T73	
+R26	hyponym_of Arg1:T76 Arg2:T73	
+R27	hyponym_of Arg1:T77 Arg2:T73	
+R28	hyponym_of Arg1:T80 Arg2:T78	
+R29	occurs_in Arg1:T83 Arg2:T84	
+R30	occurs_in Arg1:T83 Arg2:T85	
+R31	occurs_in Arg1:T83 Arg2:T86	
+R32	occurs_in Arg1:T83 Arg2:T87	
+R33	risk_factor_of Arg1:T90 Arg2:T92	
+T21	disease 2314 2317	SUD
+R34	risk_factor_of Arg1:T101 Arg2:T103	
+R35	risk_factor_of Arg1:T104 Arg2:T106	
+R36	associated_with Arg1:T110 Arg2:T111	
+T24	Health_factors 2850 2852	ED
+R37	occurs_in Arg1:T113 Arg2:T24	
+R38	occurs_in Arg1:T24 Arg2:T115	
+T27	method 2929 2938	Screening

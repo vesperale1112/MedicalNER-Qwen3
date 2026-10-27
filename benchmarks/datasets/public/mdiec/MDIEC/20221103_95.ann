@@ -1,0 +1,8 @@
+T3	Health_factors 66 86	emergency department
+T5	Health_factors 88 90	ED
+T7	method 98 116	brief intervention
+T9	disease 176 195	depression symptoms
+T1	method 118 120	BI
+R1	abbreviation_for Arg1:T1 Arg2:T7	
+R2	abbreviation_for Arg1:T5 Arg2:T3	
+T2	Health_factors 125 171	dating violence perpetration and victimization

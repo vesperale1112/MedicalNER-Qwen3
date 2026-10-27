@@ -1,0 +1,88 @@
+T0	drug 0 11	Cariprazine
+T1	drug 19 30	risperidone
+T2	disease 107 120	schizophrenia
+T3	method 31 42	monotherapy
+T6	method 124 166	randomised, double-blind, controlled trial
+T7	disease 60 89	predominant negative symptoms
+T8	disease 221 234	schizophrenia
+T10	disease 265 286	persistent impairment
+T11	disease 188 217	predominant negative symptoms
+T12	drug 352 392	new generation antipsychotic cariprazine
+T16	disease 416 445	predominant negative symptoms
+T18	Health_factors 519 525	adults
+T19	Health_factors 526 530	aged
+T20	disease 576 589	schizophrenia
+T24	Health_factors 678 696	university clinics
+T25	disease 594 623	predominant negative symptoms
+T27	method 465 505	randomised, double-blind, phase 3b trial
+T28	drug 890 901	cariprazine
+T29	drug 950 961	risperidone
+T30	method 857 868	monotherapy
+T31	method 885 889	oral
+T32	drug 1016 1026	medication
+T34	method 810 841	interactive web response system
+T35	method 1141 1212	Positive and Negative Syndrome Scale factor score for negative symptoms
+T39	method 1299 1320	follow-up assessments
+T40	drug 1363 1368	drugs
+T42	Health_factors 1240 1278	modified intention-to-treat population
+T46	drug 1495 1499	drug
+T48	drug 1702 1713	cariprazine
+T49	drug 1726 1737	risperidone
+T50	drug 1822 1826	drug
+T53	drug 1869 1880	cariprazine
+T54	drug 1924 1935	risperidone
+T56	Health_factors 1963 2001	modified intention-to-treat population
+T57	drug 2101 2112	cariprazine
+T58	drug 2132 2143	risperidone
+T59	method 2090 2092	SD
+T60	disease 2184 2192	insomnia
+T61	disease 2194 2203	akathisia
+T62	disease 2218 2231	schizophrenia
+T63	disease 2233 2241	headache
+T64	disease 2243 2250	anxiety
+T65	drug 2301 2312	cariprazine
+T66	drug 2349 2360	risperidone
+T68	Health_factors 2145 2178	Treatment-emergent adverse events
+T69	drug 2369 2380	cariprazine
+T70	drug 2472 2483	risperidone
+T71	drug 2501 2512	cariprazine
+T72	drug 2532 2543	risperidone
+T74	method 2585 2587	CI
+T75	method 2611 2622	effect size
+T76	method 2545 2574	least squares mean difference
+T79	drug 2648 2659	risperidone
+T80	disease 2666 2670	died
+T82	drug 2771 2782	cariprazine
+T84	disease 2836 2849	schizophrenia
+T85	disease 2803 2832	predominant negative symptoms
+R1	occurs_in Arg1:T7 Arg2:T2	
+R2	treatment_for Arg1:T0 Arg2:T7	
+R3	treatment_for Arg1:T1 Arg2:T7	
+R4	occurs_in Arg1:T11 Arg2:T8	
+R5	risk_factor_of Arg1:T11 Arg2:T10	
+T4	Health_factors 396 401	adult
+R6	occurs_in Arg1:T4 Arg2:T16	
+T5	Health_factors 664 673	hospitals
+T9	method 1214 1224	PANSS-FSNS
+R7	abbreviation_for Arg1:T9 Arg2:T35	
+R8	hyponym_of Arg1:T60 Arg2:T68	
+R9	hyponym_of Arg1:T61 Arg2:T68	
+R10	hyponym_of Arg1:T62 Arg2:T68	
+R11	hyponym_of Arg1:T63 Arg2:T68	
+R12	hyponym_of Arg1:T64 Arg2:T68	
+R13	risk_factor_of Arg1:T66 Arg2:T68	
+R14	risk_factor_of Arg1:T66 Arg2:T60	
+R15	risk_factor_of Arg1:T66 Arg2:T61	
+R16	risk_factor_of Arg1:T66 Arg2:T62	
+R17	risk_factor_of Arg1:T66 Arg2:T63	
+R18	risk_factor_of Arg1:T66 Arg2:T64	
+R19	risk_factor_of Arg1:T65 Arg2:T60	
+R20	risk_factor_of Arg1:T65 Arg2:T61	
+R21	risk_factor_of Arg1:T65 Arg2:T62	
+R22	risk_factor_of Arg1:T65 Arg2:T63	
+R23	risk_factor_of Arg1:T65 Arg2:T64	
+T14	method 2427 2437	PANSS-FSNS
+T15	method 2398 2416	least squares mean
+R24	treatment_for Arg1:T82 Arg2:T85	
+R25	occurs_in Arg1:T85 Arg2:T84	
+T13	Health_factors 721 738	private practices

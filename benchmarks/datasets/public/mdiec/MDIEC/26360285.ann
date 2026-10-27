@@ -1,0 +1,74 @@
+T0	disease 30 60	post-traumatic stress disorder
+T1	disease 65 86	acute stress disorder
+T2	method 0 26	Pharmacological prevention
+T3	method 90 107	systematic review
+T4	method 112 125	meta-analysis
+T5	disease 222 252	post-traumatic stress disorder
+T6	disease 254 258	PTSD
+T7	disease 264 285	acute stress disorder
+T8	disease 287 290	ASD
+T9	method 192 218	pharmacological prevention
+T11	drug 389 403	hydrocortisone
+T12	disease 527 531	PTSD
+T13	disease 535 538	ASD
+T15	method 311 328	systematic review
+T16	method 355 372	pharmacotherapies
+T17	drug 379 387	blockers
+T18	drug 409 449	selective serotonin re-uptake inhibitors
+T19	Health_factors 488 515	traumatic or aversive event
+T20	method 556 571	pharmacotherapy
+T23	method 636 642	PubMed
+T24	method 644 652	PsycINFO
+T25	method 654 660	Embase
+T27	method 736 764	randomised controlled trials
+T29	method 798 812	cohort studies
+T30	method 766 792	controlled clinical trials
+T31	disease 933 937	PTSD
+T32	disease 941 944	ASD
+T33	disease 1004 1008	PTSD
+T34	disease 1012 1015	ASD
+T37	method 1023 1037	control groups
+T38	method 873 900	pooled incidence risk ratio
+T39	disease 1091 1095	PTSD
+T40	disease 1099 1102	ASD
+T42	method 1065 1086	Hedges'g effect sizes
+T43	method 1150 1168	inclusion criteria
+T45	disease 1238 1242	PTSD
+T46	disease 1246 1249	ASD
+T47	method 1189 1204	Pharmacotherapy
+T50	method 1326 1328	CI
+T51	method 1407 1435	randomised controlled trials
+T52	method 1494 1496	CI
+T54	drug 1507 1521	Hydrocortisone
+T55	disease 1568 1572	PTSD
+T56	method 1618 1620	CI
+T60	disease 1744 1748	PTSD
+T61	disease 1752 1755	ASD
+T62	drug 1761 1775	hydrocortisone
+T63	disease 1807 1811	PTSD
+T64	method 1699 1722	early pharmacotherapies
+T65	method 1859 1873	methodological
+R1	treatment_for Arg1:T62 Arg2:T63	
+R2	treatment_for Arg1:T54 Arg2:T55	
+T57	method 1605 1608	IRR
+R3	treatment_for Arg1:T47 Arg2:T45	
+R4	treatment_for Arg1:T47 Arg2:T46	
+T14	method 1313 1316	IRR
+T22	method 1481 1484	IRR
+T35	method 902 905	IRR
+R5	abbreviation_for Arg1:T35 Arg2:T38	
+T36	method 952 967	pharmacotherapy
+T28	method 670 708	Cochrane database of randomised trials
+R6	hyponym_of Arg1:T17 Arg2:T16	
+R7	hyponym_of Arg1:T11 Arg2:T16	
+R8	hyponym_of Arg1:T18 Arg2:T16	
+R9	treatment_for Arg1:T16 Arg2:T12	
+R10	treatment_for Arg1:T17 Arg2:T12	
+R11	treatment_for Arg1:T11 Arg2:T12	
+R12	treatment_for Arg1:T18 Arg2:T12	
+R13	treatment_for Arg1:T16 Arg2:T13	
+R14	treatment_for Arg1:T17 Arg2:T13	
+R15	treatment_for Arg1:T11 Arg2:T13	
+R16	treatment_for Arg1:T18 Arg2:T13	
+R17	abbreviation_for Arg1:T6 Arg2:T5	
+R18	abbreviation_for Arg1:T8 Arg2:T7	

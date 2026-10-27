@@ -1,0 +1,60 @@
+T0	region 13 49	locus ceruleus noradrenergic neurons
+T1	gene 61 98	human interleukin-2 receptor -subunit
+T2	drug 123 164	recombinant immunotoxin anti-Tac(Fv)-PE38
+T7	disease 217 259	anxiety-like and depression-like behaviors
+T8	physiology 188 211	noradrenergic influence
+T9	method 102 117	transgenic mice
+T10	region 265 291	noradrenergic (NA) neurons
+T11	region 299 313	locus ceruleus
+T12	gene 449 486	human interleukin-2 receptor- subunit
+T13	gene 488 494	hIL-2R
+T14	gene 496 499	Tac
+T16	gene 536 557	dopamine -hydroxylase
+T18	method 410 425	Transgenic mice
+T20	gene 613 662	Fv fragment of an anti-hIL-2R monoclonal antibody
+T21	gene 692 712	Pseudomonas exotoxin
+T22	region 768 770	LC
+T23	method 778 783	mouse
+T24	gene 714 731	anti-Tac(Fv)-PE38
+T25	drug 563 586	recombinant immunotoxin
+T26	region 802 815	LC-NA neurons
+T27	drug 851 871	tissue noradrenaline
+T30	region 888 901	brain regions
+T31	drug 955 975	tissue noradrenaline
+T32	drug 1042 1086	N-(2-chloroethyl)-N-ethyl-2-bromobenzylamine
+T34	gene 1088 1093	DSP-4
+T35	region 1156 1169	LC-NA neurons
+T37	method 1024 1028	mice
+T38	gene 1215 1220	DSP-4
+T40	method 1171 1175	Mice
+T41	disease 1241 1263	anxiety-like behaviors
+T43	method 1325 1343	DSP-4-treated mice
+T44	disease 1362 1386	depression-like behavior
+T45	method 1287 1311	immunotoxin-treated mice
+T46	gene 1200 1211	immunotoxin
+T47	disease 1497 1499	LC
+T48	disease 1535 1557	neurological disorders
+R2	occurs_in Arg1:T1 Arg2:T9	
+T3	region 315 317	LC
+R3	abbreviation_for Arg1:T3 Arg2:T11	
+T4	method 369 408	immunotoxin-mediated neuronal targeting
+R4	located_in Arg1:T10 Arg2:T11	
+R5	located_in Arg1:T10 Arg2:T3	
+T6	drug 915 917	NA
+T15	region 934 936	LC
+T17	gene 1098 1108	neurotoxin
+R7	hyponym_of Arg1:T34 Arg2:T17	
+T29	region 1129 1134	axons
+R8	associated_with Arg1:T34 Arg2:T29	
+R9	risk_factor_of Arg1:T38 Arg2:T41	
+R10	risk_factor_of Arg1:T46 Arg2:T41	
+R11	risk_factor_of Arg1:T45 Arg2:T44	
+T33	method 1392 1431	immunotoxin-mediated neuronal targeting
+T39	disease 1504 1531	pathological manifestations
+R12	associated_with Arg1:T12 Arg2:T16	
+R13	associated_with Arg1:T13 Arg2:T16	
+R14	associated_with Arg1:T14 Arg2:T16	
+R15	hyponym_of Arg1:T32 Arg2:T17	
+R1	abbreviation_for Arg1:T13 Arg2:T12	
+R6	associated_with Arg1:T32 Arg2:T29	
+R16	associated_with Arg1:T47 Arg2:T48	

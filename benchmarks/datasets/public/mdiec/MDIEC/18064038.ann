@@ -1,0 +1,28 @@
+T0	disease 54 67	schizophrenia
+T2	drug 34 38	drug
+T3	signs 0 29	Neurophysiological biomarkers
+T4	disease 69 82	Schizophrenia
+T5	disease 144 158	hallucinations
+T6	disease 163 172	delusions
+T7	disease 174 191	social withdrawal
+T9	physiology 209 230	cognitive performance
+T10	disease 106 131	deficit in brain function
+T11	disease 250 284	genetic and neuronal abnormalities
+T12	disease 288 301	schizophrenia
+T14	method 420 451	psychotherapeutic interventions
+T16	disease 581 594	schizophrenia
+T20	drug 621 625	drug
+T21	disease 539 563	abnormal brain functions
+T22	method 472 501	neurophysiological techniques
+T23	disease 844 857	schizophrenia
+T26	drug 858 862	drug
+T27	signs 816 840	translational biomarkers
+T28	method 754 773	preclinical studies
+T29	physiology 671 699	neurophysiological processes
+R1	characteristic_of Arg1:T10 Arg2:T4	
+R2	occurs_in Arg1:T11 Arg2:T12	
+R3	occurs_in Arg1:T21 Arg2:T16	
+R4	risk_factor_of Arg1:T4 Arg2:T5	
+R5	risk_factor_of Arg1:T4 Arg2:T6	
+R6	risk_factor_of Arg1:T4 Arg2:T7	
+R7	risk_factor_of Arg1:T4 Arg2:T9	

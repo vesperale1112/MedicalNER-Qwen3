@@ -1,0 +1,111 @@
+T1	disease 0 16	Mental disorders
+T3	disease 159 175	Mental disorders
+T4	disease 203 218	severe COVID-19
+T6	disease 379 394	mental disorder
+T7	disease 434 450	mental disorders
+T8	disease 707 715	COVID-19
+T9	disease 742 763	psychiatric disorders
+T10	method 1579 1614	baseline COVID-19 treatment setting
+T11	disease 1976 1984	COVID-19
+T12	disease 2004 2020	mental disorders
+T13	disease 2228 2243	mental disorder
+T15	disease 2380 2399	psychotic disorders
+T16	disease 2427 2441	mood disorders
+T17	disease 2469 2492	substance use disorders
+T18	disease 2524 2549	intellectual disabilities
+T19	disease 2554 2577	developmental disorders
+T20	disease 2616 2633	anxiety disorders
+T21	disease 2661 2679	COVID-19 mortality
+T22	disease 2844 2863	psychotic disorders
+T23	disease 2865 2879	mood disorders
+T24	disease 3005 3021	Mental disorders
+T25	method 3256 3291	baseline COVID-19 treatment setting
+T26	disease 3624 3640	mental disorders
+T27	disease 3670 3684	mood disorders
+T28	disease 3754 3772	COVID-19 mortality
+T29	disease 3964 3972	COVID-19
+T30	disease 29 55	COVID-19-related mortality
+T31	Health_factors 57 72	hospitalisation
+T32	method 111 128	systematic review
+T33	method 133 146	meta-analysis
+T34	disease 261 287	COVID-19-related mortality
+T35	Health_factors 289 304	hospitalisation
+T36	drug 468 494	psychopharmacological drug
+T37	method 522 539	systematic review
+T38	method 544 557	meta-analysis
+T39	method 571 585	Web of Science
+T40	method 587 595	Cochrane
+T41	method 597 603	PubMed
+T43	Health_factors 894 903	languages
+T44	method 992 1020	random-effects meta-analyses
+T45	method 1039 1050	odds ratios
+T46	method 1052 1054	OR
+T47	disease 1060 1069	mortality
+T48	disease 1076 1096	SARS-CoV-2 infection
+T49	Health_factors 1125 1140	hospitalisation
+T50	method 1205 1208	ORs
+T52	method 1515 1532	subgroup analyses
+T53	method 1537 1553	meta-regressions
+T54	Health_factors 1624 1627	age
+T55	Health_factors 1638 1652	pandemic phase
+T56	method 1888 1905	systematic review
+T57	method 1928 1941	meta-analysis
+T58	Health_factors 2049 2056	females
+T59	Health_factors 2094 2099	males
+T60	Health_factors 2145 2149	race
+T61	Health_factors 2154 2163	ethnicity
+T62	disease 2285 2303	COVID-19 mortality
+T63	method 2305 2307	OR
+T64	method 2317 2319	CI
+T66	drug 2712 2726	antipsychotics
+T67	drug 2797 2812	antidepressants
+T68	drug 2881 2895	antipsychotics
+T69	Health_factors 2972 2975	age
+T70	Health_factors 2977 2980	sex
+T71	Health_factors 3061 3076	hospitalisation
+T72	disease 3137 3146	mortality
+T73	method 3182 3199	Subgroup analyses
+T74	method 3204 3220	meta-regressions
+T75	disease 3328 3337	mortality
+T76	disease 3372 3381	mortality
+T77	method 3463 3479	GRADE assessment
+T78	disease 3515 3524	mortality
+T79	Health_factors 3529 3544	hospitalisation
+T80	disease 3656 3665	psychotic
+T81	drug 3702 3716	antipsychotics
+T84	method 1654 1678	quality assessment score
+T86	method 1455 1477	Newcastle Ottawa Scale
+T87	method 1385 1399	GRADE approach
+T90	method 609 617	PsycINFO
+T92	Health_factors 78 107	intensive care unit admission
+R1	risk_factor_of Arg1:T3 Arg2:T4	
+T2	Health_factors 310 329	intensive care unit
+T5	Health_factors 331 334	ICU
+R2	abbreviation_for Arg1:T5 Arg2:T2	
+R3	abbreviation_for Arg1:T46 Arg2:T45	
+T42	Health_factors 1145 1158	ICU admission
+T89	method 1317 1333	Egger regression
+T51	Health_factors 1629 1636	country
+T85	method 1680 1692	sample sizes
+T14	method 2330 2332	I2
+T83	method 1266 1278	I2 statistic
+R4	risk_factor_of Arg1:T13 Arg2:T62	
+R5	associated_with Arg1:T21 Arg2:T66	
+R6	associated_with Arg1:T21 Arg2:T67	
+T65	drug 2754 2765	anxiolytics
+R7	associated_with Arg1:T21 Arg2:T65	
+T93	drug 2901 2912	anxiolytics
+R11	risk_factor_of Arg1:T24 Arg2:T71	
+T94	Health_factors 3167 3180	ICU admission
+T95	Health_factors 3305 3312	country
+R12	associated_with Arg1:T25 Arg2:T75	
+R13	associated_with Arg1:T95 Arg2:T75	
+T96	Health_factors 3579 3592	ICU admission
+T97	drug 3721 3732	anxiolytics
+R14	associated_with Arg1:T26 Arg2:T28	
+R15	associated_with Arg1:T80 Arg2:T28	
+R16	associated_with Arg1:T27 Arg2:T28	
+R17	associated_with Arg1:T81 Arg2:T28	
+R18	associated_with Arg1:T97 Arg2:T28	
+R8	hyponym_of Arg1:T80 Arg2:T26	
+R9	hyponym_of Arg1:T27 Arg2:T26	

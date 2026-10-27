@@ -1,0 +1,39 @@
+T0	disease 25 32	anxiety
+T1	drug 54 69	benzodiazepines
+T2	Health_factors 18 21	age
+T3	method 34 46	pharmacology
+T4	drug 107 122	benzodiazepines
+T5	disease 190 197	anxiety
+T6	disease 199 207	seizures
+T7	disease 209 226	muscle relaxation
+T8	disease 232 240	sedation
+T9	physiology 154 178	neurochemical mechanisms
+T13	drug 332 347	benzodiazepines
+T14	method 271 286	pharmacological
+T15	region 447 452	brain
+T17	gene 402 428	high-affinity binding site
+T20	gene 458 481	benzodiazepine receptor
+T21	drug 512 535	gamma-aminobutyric acid
+T22	physiology 591 609	inhibitory effects
+T23	drug 539 572	major inhibitory neurotransmitter
+T25	gene 615 638	benzodiazepine receptor
+T26	drug 741 748	purines
+T27	drug 753 765	nicotinamide
+T28	drug 696 725	naturally occurring compounds
+T29	drug 662 683	endogenous substances
+T30	drug 806 813	purines
+T31	drug 818 830	nicotinamide
+T32	drug 844 858	benzodiazepine
+T33	drug 958 984	endogenous benzodiazepines
+T34	method 875 882	in vivo
+T10	method 254 269	electrophysical
+R1	located_in Arg1:T17 Arg2:T15	
+R2	associated_with Arg1:T13 Arg2:T17	
+R3	hyponym_of Arg1:T21 Arg2:T23	
+R4	associated_with Arg1:T20 Arg2:T21	
+R5	hyponym_of Arg1:T26 Arg2:T28	
+R6	hyponym_of Arg1:T27 Arg2:T28	
+R7	associated_with Arg1:T25 Arg2:T29	
+R8	associated_with Arg1:T25 Arg2:T28	
+R9	associated_with Arg1:T25 Arg2:T26	
+R10	associated_with Arg1:T25 Arg2:T27	

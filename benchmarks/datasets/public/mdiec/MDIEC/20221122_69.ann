@@ -1,0 +1,14 @@
+T2	disease 129 148	depressive symptoms
+T3	drug 232 244	flavan-3-ols
+T4	disease 286 296	depression
+T5	drug 303 311	flavones
+T6	drug 316 333	proanthocyanidins
+T7	method 369 371	HR
+T12	disease 18 31	late-life NHS
+T8	Health_factors 46 50	aged
+T1	method 80 89	follow-up
+T9	drug 200 209	flavonoid
+R1	treatment_for Arg1:T9 Arg2:T4	
+T10	method 392 394	CI
+R2	associated_with Arg1:T4 Arg2:T5	
+R3	associated_with Arg1:T4 Arg2:T6	

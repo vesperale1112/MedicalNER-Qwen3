@@ -1,0 +1,1 @@
+Here, we show that spike timing-dependent long-term depression (tLTD) and A-type K+ currents are modulated by pharmacological agents affecting the levels of active glycogen-synthase kinase 3 (GSK3) and by GSK3beta knockdown in layer 2/3 of the mouse somatosensory cortex.

@@ -1,0 +1,34 @@
+T0	disease 25 41	eating disorders
+T1	disease 46 72	gastrointestinal disorders
+T2	method 97 112	practical guide
+T3	disease 114 130	Eating disorders
+T4	disease 153 181	disordered thinking patterns
+T6	symptom 186 210	behaviours around eating
+T7	disease 287 303	eating disorders
+T8	disease 308 332	gastrointestinal disease
+T10	disease 334 359	Gastrointestinal symptoms
+T11	disease 399 415	eating disorders
+T12	disease 421 445	gastrointestinal disease
+T13	disease 473 488	eating disorder
+T15	disease 558 574	eating disorders
+T16	disease 640 665	gastrointestinal symptoms
+T17	disease 672 713	avoidant-restrictive food intake disorder
+T18	disease 786 823	functional gastrointestinal disorders
+T19	physiology 738 747	attention
+T21	method 502 526	Cross-sectional research
+T22	disease 903 929	gastrointestinal disorders
+T23	disease 934 950	eating disorders
+T24	disease 1100 1125	gastrointestinal symptoms
+T25	disease 1129 1145	eating disorders
+T26	method 996 1014	practical guidance
+R1	associated_with Arg1:T0 Arg2:T1	
+T28	method 76 92	narrative review
+R2	characteristic_of Arg1:T4 Arg2:T3	
+R3	characteristic_of Arg1:T6 Arg2:T3	
+R4	associated_with Arg1:T7 Arg2:T8	
+R5	risk_factor_of Arg1:T11 Arg2:T10	
+R6	risk_factor_of Arg1:T12 Arg2:T13	
+R7	associated_with Arg1:T17 Arg2:T18	
+R8	associated_with Arg1:T22 Arg2:T23	
+T5	method 1023 1039	gastroenterology
+R9	occurs_in Arg1:T24 Arg2:T25	

@@ -1,0 +1,99 @@
+T1	disease 76 115	First-Episode Major Depression Disorder
+T2	disease 262 287	major depression disorder
+T3	disease 289 292	MDD
+T4	disease 644 670	first-episode unipolar MDD
+T5	disease 943 946	MDD
+T6	disease 1089 1132	first-episode medication-naive unipolar MDD
+T7	disease 1422 1441	depressive symptoms
+T8	disease 1503 1506	MDD
+T9	disease 1583 1586	MDD
+T10	disease 2170 2173	MDD
+T11	disease 2355 2389	cognitive and emotional impairment
+T12	disease 2393 2396	MDD
+#1	AnnotatorNotes T1	C1269683
+#2	AnnotatorNotes T2	C1269683
+#3	AnnotatorNotes T3	C1269683
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T13	method 139 165	Quantitative Meta-Analysis
+T14	method 209 222	meta-analysis
+#4	AnnotatorNotes T14	C0282458
+T15	method 389 426	resting-state functional neuroimaging
+#5	AnnotatorNotes T4	C0041696
+T16	method 710 726	healthy controls
+T17	method 728 731	HCs
+R2	abbreviation_for Arg1:T17 Arg2:T16	
+T18	method 871 912	resting-state functional activity studies
+T19	method 920 939	voxel-wise analysis
+T20	method 956 1007	anisotropic effect size-signed differential mapping
+T21	method 1021 1046	whole-brain meta-analysis
+T22	method 1146 1149	HCs
+T23	method 1191 1213	subgroup meta-analysis
+T24	method 1247 1266	MRI analysis method
+T25	method 1282 1306	meta-regression analyses
+#6	AnnotatorNotes T24	C3515983
+T26	method 1525 1528	HCs
+T27	method 1534 1567	pooled and subgroup meta-analysis
+T28	region 1725 1745	middle frontal gyrus
+T29	region 1747 1750	MFG
+T30	method 1915 1939	meta-regression analyses
+T31	method 2141 2154	meta-analysis
+T32	region 1624 1650	left parahippocampal gyrus
+T33	region 1791 1809	left lingual gyrus
+T34	Health_factors 1950 1966	illness duration
+T35	region 2022 2048	left parahippocampal gyrus
+T36	signs 2210 2249	resting-state brain activity alteration
+R7	characteristic_of Arg1:T36 Arg2:T10	
+T38	region 1652 1681	left supplementary motor area
+T39	region 1683 1697	left amygdala,
+T40	region 1698 1714	left hippocampus
+T42	region 1811 1838	left middle occipital gyrus
+T43	region 1840 1859	right cuneus cortex
+T44	region 1861 1870	right MFG
+T45	region 1891 1906	left cerebellum
+T50	region 2263 2279	left hippocampus
+T51	method 790 796	PubMed
+T52	method 798 802	Ovid
+T53	method 808 824	Web of Knowledge
+T54	region 2075 2098	hemispheric lobule IV/V
+T55	region 1872 1884	orbital part
+T56	region 1752 1764	orbital part
+T57	method 120 135	Healthy Control
+T62	symptom 0 41	Altered Resting-State Functional Activity
+T63	signs 246 258	brain states
+T64	signs 337 347	biomarkers
+T65	symptom 574 609	regional brain activity alterations
+T66	symptom 1058 1080	functional alterations
+T67	Health_factors 1363 1366	age
+T68	Health_factors 1368 1386	education duration
+T69	Health_factors 1388 1404	illness duration
+T70	method 2336 2351	pathophysiology
+T71	region 1720 1745	left middle frontal gyrus
+T46	region 2106 2121	left cerebellum
+T47	region 2253 2261	amygdala
+T37	Health_factors 613 638	medication-naive patients
+T41	Health_factors 45 70	Medication-Naive Patients
+T49	symptom 1603 1616	hyperactivity
+R23	characteristic_of Arg1:T49 Arg2:T9	
+R4	located_in Arg1:T49 Arg2:T32	
+R5	located_in Arg1:T49 Arg2:T38	
+R14	located_in Arg1:T49 Arg2:T39	
+R15	located_in Arg1:T49 Arg2:T40	
+R16	located_in Arg1:T49 Arg2:T71	
+T58	symptom 1771 1783	hypoactivity
+R17	characteristic_of Arg1:T58 Arg2:T9	
+R19	located_in Arg1:T58 Arg2:T33	
+R20	located_in Arg1:T58 Arg2:T42	
+R21	located_in Arg1:T58 Arg2:T43	
+R22	located_in Arg1:T58 Arg2:T44	
+R24	located_in Arg1:T58 Arg2:T45	
+T59	symptom 1998 2014	hyper-activation
+R25	associated_with Arg1:T34 Arg2:T59	
+R6	located_in Arg1:T59 Arg2:T35	
+T60	symptom 2053 2067	hypoactivation
+R9	associated_with Arg1:T34 Arg2:T60	
+R10	located_in Arg1:T60 Arg2:T54	
+R26	located_in Arg1:T54 Arg2:T46	
+R8	located_in Arg1:T36 Arg2:T47	
+R11	located_in Arg1:T36 Arg2:T50	
+R3	characteristic_of Arg1:T62 Arg2:T1	
+R12	characteristic_of Arg1:T65 Arg2:T4	

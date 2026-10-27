@@ -1,0 +1,101 @@
+T0	disease 83 112	Posttraumatic Stress Disorder
+T1	disease 117 140	Substance Use Disorders
+T2	method 144 169	Randomized Clinical Trial
+T4	method 0 44	Concurrent Treatment with Prolonged Exposure
+T5	disease 259 288	posttraumatic stress disorder
+T6	disease 290 294	PTSD
+T7	disease 375 378	SUD
+T8	disease 417 421	PTSD
+T9	disease 426 429	SUD
+T10	method 440 444	COPE
+T11	disease 486 489	SUD
+T12	disease 337 373	co-occurring substance use disorders
+T13	method 449 475	relapse prevention therapy
+T16	method 497 528	active monitoring control group
+T17	method 393 413	concurrent treatment
+T19	Health_factors 619 624	males
+T20	Health_factors 630 647	African Americans
+T21	method 657 726	Diagnostic and Statistical Manual of Mental Disorders, fourth edition
+T22	disease 776 780	PTSD
+T24	method 562 586	randomized 12-week trial
+T25	disease 958 970	PTSD symptom
+T26	disease 1205 1209	PTSD
+T27	disease 1258 1262	PTSD
+T31	method 1330 1334	AMCG
+T32	method 1387 1391	AMCG
+T33	Health_factors 1367 1380	substance use
+T36	disease 1504 1507	SUD
+T37	disease 1675 1679	PTSD
+T38	method 1578 1587	follow-up
+T39	Health_factors 1708 1721	substance use
+T44	disease 1757 1761	PTSD
+T45	disease 1800 1809	PTSD + SU
+T46	disease 1856 1860	PTSD
+T47	method 1902 1920	SUD-only treatment
+T48	disease 1876 1889	PTSD symptoms
+T50	disease 1940 1944	PTSD
+T51	disease 1990 2003	PTSD symptoms
+T52	Health_factors 2025 2038	substance use
+T3	method 212 230	prolonged exposure
+T18	method 232 234	PE
+R1	abbreviation_for Arg1:T18 Arg2:T3	
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+T42	disease 350 373	substance use disorders
+R3	abbreviation_for Arg1:T7 Arg2:T42	
+R4	occurs_in Arg1:T5 Arg2:T12	
+R5	occurs_in Arg1:T6 Arg2:T12	
+T43	method 436 438	PE
+T14	method 477 480	RPT
+R6	abbreviation_for Arg1:T14 Arg2:T13	
+T15	method 530 534	AMCG
+R7	abbreviation_for Arg1:T15 Arg2:T16	
+R8	treatment_for Arg1:T43 Arg2:T8	
+R9	treatment_for Arg1:T43 Arg2:T9	
+T23	disease 785 788	SUD
+R10	help_diagnose Arg1:T21 Arg2:T22	
+R11	help_diagnose Arg1:T21 Arg2:T23	
+T53	method 829 833	COPE
+T54	method 844 847	RPT
+T55	method 861 865	AMCG
+T56	method 911 915	COPE
+T57	method 920 923	RPT
+T58	method 992 996	AMCG
+T59	method 998 1002	COPE
+T60	method 1003 1007	AMCG
+T61	method 1029 1032	RPT
+T62	method 1033 1037	AMCG
+R12	treatment_for Arg1:T56 Arg2:T25	
+R13	treatment_for Arg1:T57 Arg2:T25	
+T30	method 1092 1096	COPE
+T63	method 1101 1104	RPT
+T28	method 1275 1279	COPE
+R14	treatment_for Arg1:T28 Arg2:T27	
+T29	method 1292 1295	RPT
+T34	method 1382 1386	COPE
+T35	method 1411 1414	RPT
+T64	method 1415 1419	AMCG
+T65	method 1453 1457	COPE
+T66	method 1459 1462	RPT
+R15	treatment_for Arg1:T66 Arg2:T36	
+T67	method 1537 1540	RPT
+T68	method 1541 1545	COPE
+T41	method 1589 1593	COPE
+T69	method 1598 1601	RPT
+R16	treatment_for Arg1:T41 Arg2:T37	
+R17	treatment_for Arg1:T69 Arg2:T37	
+R18	treatment_for Arg1:T41 Arg2:T39	
+R19	treatment_for Arg1:T69 Arg2:T39	
+T40	method 1736 1740	COPE
+T70	method 1745 1748	RPT
+T71	disease 1766 1769	SUD
+R20	occurs_in Arg1:T44 Arg2:T45	
+R21	occurs_in Arg1:T71 Arg2:T45	
+R22	treatment_for Arg1:T40 Arg2:T44	
+R23	treatment_for Arg1:T40 Arg2:T71	
+R24	treatment_for Arg1:T70 Arg2:T44	
+R25	treatment_for Arg1:T70 Arg2:T71	
+T49	method 1862 1866	COPE
+R26	occurs_in Arg1:T46 Arg2:T49	
+R27	treatment_for Arg1:T49 Arg2:T48	
+T72	method 1933 1935	PE
+R28	treatment_for Arg1:T72 Arg2:T51	

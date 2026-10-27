@@ -1,0 +1,43 @@
+T0	disease 0 11	Bulimarexia
+T1	disease 24 48	serious eating disorders
+T2	disease 54 75	medical complications
+T3	disease 77 88	Bulimarexia
+T4	disease 93 108	eating disorder
+T6	disease 292 307	eating disorder
+T7	disease 134 146	binge eating
+T8	Health_factors 159 180	self-induced vomiting
+T9	Health_factors 184 220	abuse of cathartic or diuretic drugs
+T10	disease 249 276	sequela of anorexia nervosa
+T11	disease 379 403	various eating disorders
+T12	disease 405 421	anorexia nervosa
+T13	disease 423 427	pica
+T14	disease 429 459	rumination disorder of infancy
+T15	disease 465 473	bulimia/
+T16	disease 473 484	bulimarexia
+T17	disease 358 371	complications
+T18	disease 565 576	bulimarexia
+T19	physiology 510 519	attention
+T21	disease 693 704	bulimarexia
+T22	symptom 657 689	individual behavioral components
+T23	region 628 640	organ system
+T24	disease 714 725	bulimarexia
+T25	disease 810 831	medical complications
+T27	Health_factors 844 854	physicians
+T28	symptom 869 890	behavioral components
+T29	Health_factors 1010 1019	physician
+T30	Health_factors 1024 1044	behavioral therapist
+R1	associated_with Arg1:T0 Arg2:T1	
+R2	occurs_in Arg1:T1 Arg2:T2	
+R3	hyponym_of Arg1:T3 Arg2:T4	
+R4	characteristic_of Arg1:T7 Arg2:T3	
+R5	characteristic_of Arg1:T8 Arg2:T3	
+R6	characteristic_of Arg1:T9 Arg2:T3	
+R7	hyponym_of Arg1:T3 Arg2:T10	
+R8	hyponym_of Arg1:T3 Arg2:T6	
+R9	hyponym_of Arg1:T12 Arg2:T11	
+R10	hyponym_of Arg1:T13 Arg2:T11	
+R11	hyponym_of Arg1:T14 Arg2:T11	
+R12	hyponym_of Arg1:T15 Arg2:T11	
+R13	hyponym_of Arg1:T16 Arg2:T11	
+R14	characteristic_of Arg1:T25 Arg2:T24	
+T5	disease 894 905	bulimarexia

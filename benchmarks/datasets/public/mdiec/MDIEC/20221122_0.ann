@@ -1,0 +1,19 @@
+T1	physiology 19 62	spike timing-dependent long-term depression
+T2	physiology 74 92	A-type K+ currents
+T3	drug 110 132	pharmacological agents
+T4	gene 192 196	GSK3
+T5	physiology 205 223	GSK3beta knockdown
+T6	region 227 270	layer 2/3 of the mouse somatosensory cortex
+T7	gene 164 190	glycogen-synthase kinase 3
+T8	physiology 64 68	tLTD
+R1	abbreviation_for Arg1:T8 Arg2:T1	
+R2	abbreviation_for Arg1:T4 Arg2:T7	
+R3	associated_with Arg1:T2 Arg2:T3	
+R4	associated_with Arg1:T8 Arg2:T3	
+R5	associated_with Arg1:T1 Arg2:T3	
+R7	associated_with Arg1:T1 Arg2:T5	
+R8	associated_with Arg1:T8 Arg2:T5	
+R9	associated_with Arg1:T2 Arg2:T5	
+R10	located_in Arg1:T5 Arg2:T6	
+R6	associated_with Arg1:T3 Arg2:T7	
+R11	associated_with Arg1:T3 Arg2:T4	

@@ -1,0 +1,20 @@
+T1	method 59 81	animal models research
+T2	disease 124 134	depression
+T3	disease 189 199	depression
+T4	disease 284 294	depression
+T5	disease 341 351	depression
+T6	physiology 139 156	circadian rhythms
+T7	physiology 518 535	circadian rhythms
+T8	disease 205 232	seasonal affective disorder
+T9	gene 258 279	circadian clock genes
+T10	disease 321 336	sleep disorders
+T11	physiology 361 382	antidepressant effect
+T12	physiology 413 434	antidepressant effect
+T13	method 386 403	sleep deprivation
+T14	Health_factors 438 459	bright light exposure
+T15	drug 484 504	antidepressant drugs
+T18	Health_factors 508 513	sleep
+R1	associated_with Arg1:T2 Arg2:T6	
+R2	associated_with Arg1:T10 Arg2:T5	
+R3	associated_with Arg1:T9 Arg2:T4	
+T16	Health_factors 44 49	human

@@ -1,0 +1,84 @@
+T2	disease 304 307	MDD
+T4	disease 584 587	MDD
+T5	disease 631 662	borderline personality disorder
+T6	disease 667 674	bulimia
+T7	disease 699 709	depression
+T9	disease 1143 1146	MDD
+T10	disease 1932 1942	depression
+T12	disease 2073 2092	Depression relapsed
+T14	disease 2892 2895	MDD
+T15	disease 2900 2931	borderline personality disorder
+T16	method 66 88	deep brain stimulation
+#2	AnnotatorNotes T16	C0394162
+T18	method 192 214	electrical stimulation
+#4	AnnotatorNotes T18	C0013786
+T3	Health_factors 382 431	history of recurrent episodes of major depression
+#5	AnnotatorNotes T3	C1269683
+#6	AnnotatorNotes T5	C0006012
+#7	AnnotatorNotes T6	C0006370
+T21	drug 837 852	antidepressants
+T22	method 854 871	cognitive therapy
+T23	method 877 902	electroconvulsive therapy
+#8	AnnotatorNotes T21	C0003289
+#9	AnnotatorNotes T22	C0009244
+#10	AnnotatorNotes T23	C0013806
+T11	method 1959 1990	Hamilton Depression Scale score
+T24	method 2049 2071	electrical stimulation
+T25	method 2133 2155	Electrical stimulation
+T26	disease 2173 2183	depression
+R8	treatment_for Arg1:T25 Arg2:T26	
+T27	disease 2197 2207	depression
+T29	drug 2342 2367	antidepressant medication
+T30	disease 2662 2681	comorbid conditions
+#11	AnnotatorNotes T30	C1275143
+T31	method 2778 2800	electrical stimulation
+T13	disease 2844 2873	recurrent unipolar depression
+#12	AnnotatorNotes T13	unipolar depression(C0041696)
+R11	treatment_for Arg1:T31 Arg2:T13	
+T1	disease 17 52	resistant major depression disorder
+T19	disease 277 302	major depression disorder
+R3	abbreviation_for Arg1:T2 Arg2:T19	
+#1	AnnotatorNotes T19	C1269683
+R5	help_diagnose Arg1:T11 Arg2:T10	
+T33	method 494 547	Diagnostic and Statistical Manual of Mental Disorders
+T8	method 994 1032	Global Assessment of Functioning score
+T34	method 1048 1079	Hamilton Depression Scale score
+T35	region 1283 1309	inferior thalamic peduncle
+T36	method 1461 1481	electroencephalogram
+T37	method 1866 1887	double-blind protocol
+T20	disease 2259 2269	depression
+T28	method 2461 2486	Hamilton Depression Scale
+T38	method 2491 2530	Global Assessment of Functioning scores
+T40	method 1350 1383	unilateral electrical stimulation
+T41	method 1547 1569	deep brain stimulation
+T42	method 1590 1621	internalized stimulation system
+T43	method 1626 1656	continuous bipolar stimulation
+T46	method 2706 2728	psychosurgery services
+T50	method 1723 1769	psychiatric and neuropsychological evaluations
+T51	method 981 988	surgery
+T52	method 1131 1138	surgery
+T53	method 754 761	surgery
+T48	method 1704 1713	follow-up
+R1	treatment_for Arg1:T16 Arg2:T1	
+T49	Health_factors 369 374	woman
+R2	help_diagnose Arg1:T33 Arg2:T4	
+R7	hyponym_of Arg1:T50 Arg2:T48	
+R12	occurs_in Arg1:T13 Arg2:T15	
+T54	physiology 2219 2249	neuropsychological performance
+R15	treatment_for Arg1:T25 Arg2:T27	
+R16	treatment_for Arg1:T25 Arg2:T54	
+R17	help_diagnose Arg1:T28 Arg2:T55	
+R18	help_diagnose Arg1:T38 Arg2:T55	
+T55	signs 2403 2427	spontaneous fluctuations
+T17	Health_factors 464 480	hospitalizations
+R4	occurs_in Arg1:T13 Arg2:T14	
+T32	disease 715 732	suicidal ideation
+T39	region 222 248	inferior thalamic peduncle
+T44	region 96 122	inferior thalamic peduncle
+T45	region 2808 2834	inferior thalamic peduncle
+R6	located_in Arg1:T16 Arg2:T44	
+R9	located_in Arg1:T18 Arg2:T39	
+T47	disease 267 302	resistant major depression disorder
+R10	occurs_in Arg1:T49 Arg2:T3	
+R13	occurs_in Arg1:T7 Arg2:T32	
+R14	located_in Arg1:T31 Arg2:T45	

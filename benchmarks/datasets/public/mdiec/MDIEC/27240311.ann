@@ -1,0 +1,37 @@
+T2	disease 245 270	major depression disorder
+T3	disease 272 275	MDD
+T6	method 711 739	MDD case-finding instruments
+T7	disease 1736 1739	MDD
+T8	disease 1873 1876	MDD
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T10	method 749 818	Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition
+T11	method 820 826	DSM-IV
+R2	abbreviation_for Arg1:T11 Arg2:T10	
+R3	help_diagnose Arg1:T10 Arg2:T6	
+T12	method 1393 1430	Postpartum Depression Screening Scale
+#2	AnnotatorNotes T12	C5438698
+T13	method 1344 1388	10 item Edinburgh Postnatal Depression Scale
+#3	AnnotatorNotes T13	C0451144
+T4	disease 397 409	maternal MDD
+T14	method 906 912	PubMed
+T15	method 914 922	PsycINFO
+T16	method 928 934	EMBASE
+R4	help_diagnose Arg1:T11 Arg2:T6	
+T17	method 138 155	systematic review
+T18	method 525 542	systematic review
+T19	method 1225 1241	full-text review
+T20	method 1321 1338	systematic review
+T21	method 1010 1068	Standards for the Reporting of Diagnostic Accuracy studies
+T22	method 1073 1133	Quality Assessment of Diagnostic Accuracy Studies guidelines
+T24	Health_factors 88 113	mothers of young children
+T25	Health_factors 283 290	mothers
+T26	Health_factors 301 309	children
+T27	method 26 76	major depression disorder case-finding instruments
+T28	method 484 508	case-finding instruments
+T29	method 570 606	maternal MDD case-finding instrument
+T31	method 1980 2007	MDD case-finding instrument
+T34	method 870 904	electronic bibliographic databases
+T35	Health_factors 1516 1549	antepartum and postpartum periods
+T36	Health_factors 2012 2029	peripartum period
+T37	Health_factors 411 431	Healthcare providers
+T23	Health_factors 329 342	public health

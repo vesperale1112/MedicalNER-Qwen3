@@ -1,0 +1,103 @@
+T0	disease 0 7	Fatigue
+T1	disease 9 16	anxiety
+T2	disease 22 32	depression
+T4	Health_factors 36 76	long-term survivors of testicular cancer
+T5	disease 119 134	chronic fatigue
+T6	disease 136 138	CF
+T7	disease 155 162	anxiety
+T8	disease 167 177	depression
+T9	disease 227 267	long-term survivors of testicular cancer
+T10	disease 269 273	TCSs
+T12	disease 348 365	Hodgkin's disease
+T13	Health_factors 330 344	male survivors
+T14	Health_factors 380 385	males
+T15	Health_factors 395 413	general population
+T18	method 454 461	cohorts
+T19	method 490 511	Fatigue Questionnaire
+T20	method 525 562	Hospital Anxiety and Depression Scale
+T21	method 564 568	HADS
+T23	disease 614 616	CF
+T24	disease 684 691	anxiety
+T25	disease 705 715	depression
+T28	disease 869 871	CF
+T30	Health_factors 828 835	younger
+T31	Health_factors 923 927	TCSs
+T32	disease 934 941	anxiety
+T33	disease 943 953	depression
+T34	disease 1002 1004	CF
+T35	Health_factors 929 932	age
+T36	disease 959 970	comorbidity
+T37	Health_factors 1031 1035	TCSs
+T39	Health_factors 1150 1154	TCSs
+T40	method 1134 1140	HADS-D
+T42	Health_factors 1262 1275	youngest TCSs
+T46	disease 1407 1414	anxiety
+T47	disease 1419 1429	depression
+T48	disease 1438 1440	CF
+T49	Health_factors 1444 1448	TCSs
+T50	disease 1499 1501	CF
+T51	Health_factors 1508 1512	TCSs
+T54	Health_factors 1402 1405	age
+T55	method 1461 1485	psychiatric intervention
+T56	disease 1514 1521	Anxiety
+T57	Health_factors 1545 1549	TCSs
+T58	disease 1555 1565	depression
+T59	Health_factors 1590 1603	youngest TCSs
+R1	abbreviation_for Arg1:T6 Arg2:T5	
+R2	abbreviation_for Arg1:T10 Arg2:T9	
+T16	disease 290 292	CF
+T17	Health_factors 296 300	TCSs
+R3	occurs_in Arg1:T16 Arg2:T17	
+T22	disease 367 371	HDSs
+R4	abbreviation_for Arg1:T22 Arg2:T12	
+T26	Health_factors 415 421	GenPop
+R5	abbreviation_for Arg1:T26 Arg2:T15	
+T27	Health_factors 434 438	TCSs
+T29	disease 440 444	HDSs
+T38	Health_factors 469 475	GenPop
+T43	method 513 515	FQ
+R6	abbreviation_for Arg1:T43 Arg2:T19	
+R7	abbreviation_for Arg1:T21 Arg2:T20	
+T44	method 583 603	questionnaire survey
+T45	method 693 699	HADS-A
+T52	method 717 723	HADS-D
+T53	Health_factors 762 766	TCSs
+T60	disease 782 784	CF
+T61	disease 786 790	HDSs
+T62	Health_factors 797 803	GenPop
+T63	Health_factors 886 890	TCSs
+T64	Health_factors 903 909	GenPop
+T65	Health_factors 818 821	age
+R8	risk_factor_of Arg1:T63 Arg2:T28	
+R9	occurs_in Arg1:T30 Arg2:T28	
+R10	associated_with Arg1:T35 Arg2:T34	
+R11	associated_with Arg1:T32 Arg2:T34	
+R12	associated_with Arg1:T33 Arg2:T34	
+R13	associated_with Arg1:T36 Arg2:T34	
+R14	occurs_in Arg1:T31 Arg2:T35	
+R15	occurs_in Arg1:T31 Arg2:T32	
+R16	occurs_in Arg1:T31 Arg2:T33	
+R17	occurs_in Arg1:T31 Arg2:T36	
+T66	method 1015 1021	HADS-A
+T67	Health_factors 1089 1095	GenPop
+T68	disease 1119 1123	HDSs
+T41	Health_factors 1177 1183	GenPop
+T69	method 1223 1229	HADS-A
+T70	method 1234 1240	HADS-D
+T71	disease 1308 1310	CF
+T72	Health_factors 1322 1326	TCSs
+T73	disease 1335 1339	HDSs
+T74	Health_factors 1364 1370	GenPop
+T75	disease 1386 1397	comorbidity
+R18	associated_with Arg1:T75 Arg2:T48	
+R19	associated_with Arg1:T54 Arg2:T48	
+R20	associated_with Arg1:T46 Arg2:T48	
+R21	associated_with Arg1:T47 Arg2:T48	
+R22	occurs_in Arg1:T48 Arg2:T49	
+R23	occurs_in Arg1:T50 Arg2:T51	
+R24	associated_with Arg1:T56 Arg2:T57	
+R25	occurs_in Arg1:T0 Arg2:T4	
+R26	occurs_in Arg1:T1 Arg2:T4	
+R27	occurs_in Arg1:T2 Arg2:T4	
+R31	occurs_in Arg1:T13 Arg2:T12	
+R32	occurs_in Arg1:T13 Arg2:T22	

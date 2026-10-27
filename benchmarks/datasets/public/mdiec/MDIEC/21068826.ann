@@ -1,0 +1,18 @@
+T1	disease 11 24	schizophrenia
+T2	disease 43 56	schizophrenia
+T3	disease 66 79	Schizophrenia
+T4	disease 121 136	mental disorder
+T5	disease 224 237	schizophrenia
+T6	disease 491 504	schizophrenia
+T7	disease 570 583	schizophrenia
+T8	disease 589 616	neurodevelopmental disorder
+T9	disease 622 631	psychosis
+T10	disease 710 723	schizophrenia
+T11	disease 729 756	neurodevelopmental disorder
+T12	method 305 331	pharmacological treatments
+T13	disease 680 687	illness
+T14	disease 819 826	illness
+T15	method 869 879	prevention
+R1	hyponym_of Arg1:T3 Arg2:T4	
+R2	hyponym_of Arg1:T7 Arg2:T8	
+R3	hyponym_of Arg1:T10 Arg2:T11	

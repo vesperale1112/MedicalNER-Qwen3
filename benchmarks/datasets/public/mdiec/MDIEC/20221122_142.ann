@@ -1,0 +1,7 @@
+T1	Health_factors 13 20	Low SES
+T2	Health_factors 24 33	childhood
+T3	Health_factors 85 91	adults
+T4	disease 65 81	major depression
+R1	risk_factor_of Arg1:T1 Arg2:T4	
+R2	occurs_in Arg1:T1 Arg2:T2	
+R3	occurs_in Arg1:T4 Arg2:T3	

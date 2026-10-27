@@ -1,0 +1,61 @@
+T1	disease 0 13	Schizophrenia
+T2	disease 15 28	Schizophrenia
+T3	disease 34 48	mental illness
+T4	disease 93 113	long-term disability
+T5	disease 131 144	schizophrenia
+T6	disease 153 162	psychosis
+T7	disease 164 170	apathy
+T8	disease 175 185	withdrawal
+T9	disease 191 211	cognitive impairment
+T10	disease 333 346	schizophrenia
+T11	disease 557 570	schizophrenia
+T12	disease 781 794	schizophrenia
+T13	disease 943 956	schizophrenia
+T14	disease 1096 1105	psychosis
+T15	disease 1232 1261	co-occurring substance misuse
+T17	Health_factors 239 274	social and occupational functioning
+T18	Health_factors 416 421	sexes
+T19	disease 427 434	illness
+T20	Health_factors 464 468	ages
+T21	gene 610 625	genetic factors
+T23	Health_factors 693 707	social factors
+T25	region 869 885	brain structures
+T26	drug 887 912	Antipsychotic medications
+T29	method 1064 1091	cognitive-behaviour therapy
+T31	method 1207 1227	integrated treatment
+T32	method 1172 1201	assertive community treatment
+T33	Health_factors 1131 1170	teaching illness self-management skills
+T34	Health_factors 1042 1062	supported employment
+T35	method 1021 1040	family intervention
+T36	method 969 992	psychosocial treatments
+T38	disease 663 686	obstetric complications
+T39	Health_factors 633 657	environmental influences
+R1	hyponym_of Arg1:T2 Arg2:T3	
+R2	risk_factor_of Arg1:T2 Arg2:T4	
+R3	characteristic_of Arg1:T6 Arg2:T5	
+R4	characteristic_of Arg1:T7 Arg2:T5	
+R5	characteristic_of Arg1:T8 Arg2:T5	
+R6	characteristic_of Arg1:T9 Arg2:T5	
+R7	risk_factor_of Arg1:T9 Arg2:T17	
+R8	risk_factor_of Arg1:T8 Arg2:T17	
+R9	risk_factor_of Arg1:T7 Arg2:T17	
+R10	risk_factor_of Arg1:T6 Arg2:T17	
+R11	hyponym_of Arg1:T38 Arg2:T39	
+T22	Health_factors 713 720	poverty
+R12	hyponym_of Arg1:T22 Arg2:T23	
+R13	risk_factor_of Arg1:T21 Arg2:T11	
+R14	risk_factor_of Arg1:T39 Arg2:T11	
+R15	risk_factor_of Arg1:T38 Arg2:T11	
+R16	risk_factor_of Arg1:T23 Arg2:T11	
+R17	risk_factor_of Arg1:T22 Arg2:T11	
+R18	treatment_for Arg1:T26 Arg2:T13	
+R19	hyponym_of Arg1:T35 Arg2:T36	
+R20	hyponym_of Arg1:T34 Arg2:T36	
+T24	Health_factors 1107 1129	social skills training
+R23	hyponym_of Arg1:T29 Arg2:T36	
+R24	hyponym_of Arg1:T24 Arg2:T36	
+R25	hyponym_of Arg1:T33 Arg2:T36	
+R26	hyponym_of Arg1:T32 Arg2:T36	
+R27	hyponym_of Arg1:T31 Arg2:T36	
+R21	treatment_for Arg1:T29 Arg2:T14	
+R22	treatment_for Arg1:T31 Arg2:T15	

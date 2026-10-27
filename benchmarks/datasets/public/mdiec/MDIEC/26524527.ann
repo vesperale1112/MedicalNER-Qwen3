@@ -1,0 +1,70 @@
+T1	drug 26 33	lithium
+T2	physiology 37 59	hyperexcitable neurons
+T3	disease 79 95	bipolar disorder
+T4	disease 97 113	Bipolar disorder
+T5	disease 127 152	neuropsychiatric disorder
+T8	disease 493 509	bipolar disorder
+T9	symptom 536 561	reduced glial cell number
+T10	physiology 600 661	upregulated activities of the protein kinase A and C pathways
+T11	disease 749 765	bipolar disorder
+T12	drug 908 915	lithium
+T13	drug 976 983	lithium
+T14	disease 1063 1079	bipolar disorder
+T15	disease 1246 1262	bipolar disorder
+T16	region 1307 1345	hippocampal dentate gyrus-like neurons
+T17	disease 1382 1398	bipolar disorder
+T18	disease 1464 1491	mitochondrial abnormalities
+T20	disease 1528 1544	bipolar disorder
+T21	drug 1634 1640	Ca(2+)
+T23	disease 1757 1773	bipolar disorder
+T24	drug 1802 1809	lithium
+T25	region 1828 1835	neurons
+T26	drug 1880 1887	lithium
+T27	disease 1958 1974	bipolar disorder
+T29	disease 267 274	suicide
+T31	disease 356 365	morbidity
+T32	symptom 450 475	alterations in the brains
+T33	method 513 526	animal models
+T34	region 569 586	prefrontal cortex
+T38	method 1410 1445	RNA sequencing expression profiling
+T39	method 2049 2058	therapies
+T40	drug 2063 2068	drugs
+T41	method 2082 2100	clinical treatment
+T42	physiology 1284 1303	cellular phenotypes
+T43	method 1042 1058	biological model
+T45	symptom 666 694	changes in neurotransmission
+T46	method 398 423	neuropathological studies
+T47	Health_factors 309 334	World Health Organization
+T48	disease 178 223	intermittent episodes of mania and depression
+R1	hyponym_of Arg1:T4 Arg2:T5	
+R2	characteristic_of Arg1:T48 Arg2:T4	
+R3	risk_factor_of Arg1:T4 Arg2:T29	
+R4	characteristic_of Arg1:T32 Arg2:T8	
+R5	located_in Arg1:T9 Arg2:T34	
+R6	characteristic_of Arg1:T45 Arg2:T8	
+R7	characteristic_of Arg1:T10 Arg2:T8	
+R8	characteristic_of Arg1:T9 Arg2:T8	
+T6	region 1122 1151	induced pluripotent stem-cell
+T7	region 1153 1157	iPSC
+R9	abbreviation_for Arg1:T7 Arg2:T6	
+T30	method 1225 1235	iPSC model
+T35	region 1359 1364	iPSCs
+R10	characteristic_of Arg1:T18 Arg2:T20	
+T19	method 1554 1574	mitochondrial assays
+R11	help_diagnose Arg1:T19 Arg2:T18	
+T36	method 1600 1621	patch-clamp recording
+T37	method 1626 1648	somatic Ca(2+) imaging
+T44	physiology 1667 1702	hyperactive action-potential firing
+R12	help_diagnose Arg1:T36 Arg2:T44	
+R13	help_diagnose Arg1:T37 Arg2:T44	
+T49	physiology 1709 1736	hyperexcitability phenotype
+R14	characteristic_of Arg1:T49 Arg2:T23	
+T22	physiology 1910 1927	hyperexcitability
+R15	characteristic_of Arg1:T22 Arg2:T27	
+T50	region 1993 1998	iPSCs
+T28	symptom 1941 1954	endophenotype
+R16	hyponym_of Arg1:T22 Arg2:T28	
+T51	region 1495 1508	young neurons
+R17	located_in Arg1:T18 Arg2:T51	
+T52	region 1740 1753	young neurons
+R18	located_in Arg1:T49 Arg2:T52	

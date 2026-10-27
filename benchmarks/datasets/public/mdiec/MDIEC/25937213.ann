@@ -1,0 +1,78 @@
+T0	drug 14 31	trans-resveratrol
+T1	disease 35 57	post-stroke depression
+T4	physiology 62 111	regulation of hypothalamus-pituitary-adrenal axis
+T6	disease 113 135	Post-stroke depression
+T7	disease 137 140	PSD
+T8	Health_factors 169 185	stroke survivors
+T9	method 205 220	pharmacotherapy
+T12	drug 305 333	polyphenol trans-resveratrol
+T13	drug 335 338	RES
+T14	disease 368 400	middle cerebral artery occlusion
+T15	disease 402 406	MCAO
+T16	symptom 343 361	behavioral changes
+T19	drug 456 459	RES
+T20	disease 529 533	MCAO
+T23	physiology 583 597	motor activity
+T24	method 503 522	neurological scores
+T25	drug 599 602	RES
+T26	method 699 724	sucrose consumption tests
+T27	disease 621 646	depressive-like behaviors
+T29	method 679 694	forced swimming
+T30	gene 934 937	CRF
+T31	gene 1048 1050	GR
+T32	drug 1204 1207	RES
+T33	disease 736 740	MCAO
+T34	disease 781 806	depressive-like behaviors
+T35	signs 819 869	abnormal adrenal gland weight to body weight ratio
+T36	symptom 874 932	increased expression of the corticotropin-releasing factor
+T37	region 946 960	frontal cortex
+T38	region 962 973	hippocampus
+T39	region 978 990	hypothalamus
+T40	symptom 996 1046	differential expression of glucocorticoid receptor
+T41	region 1067 1072	brain
+T42	symptom 1088 1144	decreased brain-derived neurotrophic factor (BDNF) level
+T43	method 1235 1241	gavage
+T44	drug 1291 1294	RES
+T45	disease 1415 1418	PSD
+T46	region 1308 1313	brain
+T47	physiology 1385 1411	antidepressant-like effect
+T50	physiology 1478 1522	hypothalamus-pituitary-adrenal axis function
+T51	disease 1322 1360	focal cerebral ischemia-induced injury
+R1	abbreviation_for Arg1:T7 Arg2:T6	
+R2	abbreviation_for Arg1:T13 Arg2:T12	
+R3	abbreviation_for Arg1:T15 Arg2:T14	
+T2	disease 566 578	brain damage
+R4	treatment_for Arg1:T25 Arg2:T27	
+T3	disease 661 665	MCAO
+R5	risk_factor_of Arg1:T33 Arg2:T34	
+R6	hyponym_of Arg1:T35 Arg2:T34	
+R7	risk_factor_of Arg1:T33 Arg2:T35	
+T5	gene 902 932	corticotropin-releasing factor
+R8	abbreviation_for Arg1:T30 Arg2:T5	
+R9	located_in Arg1:T36 Arg2:T37	
+R10	located_in Arg1:T36 Arg2:T38	
+R11	located_in Arg1:T36 Arg2:T39	
+R12	hyponym_of Arg1:T36 Arg2:T34	
+T10	gene 1023 1046	glucocorticoid receptor
+R13	abbreviation_for Arg1:T31 Arg2:T10	
+R14	located_in Arg1:T40 Arg2:T41	
+T11	gene 1098 1131	brain-derived neurotrophic factor
+T17	gene 1133 1137	BDNF
+R15	abbreviation_for Arg1:T17 Arg2:T11	
+R16	treatment_for Arg1:T32 Arg2:T42	
+R17	hyponym_of Arg1:T42 Arg2:T34	
+R18	risk_factor_of Arg1:T33 Arg2:T36	
+R19	risk_factor_of Arg1:T33 Arg2:T40	
+R20	risk_factor_of Arg1:T33 Arg2:T42	
+R21	treatment_for Arg1:T32 Arg2:T40	
+R22	treatment_for Arg1:T32 Arg2:T36	
+R23	treatment_for Arg1:T32 Arg2:T35	
+R24	treatment_for Arg1:T32 Arg2:T34	
+R25	treatment_for Arg1:T44 Arg2:T51	
+R26	treatment_for Arg1:T44 Arg2:T45	
+T18	signs 486 498	infarct size
+R27	associated_with Arg1:T19 Arg2:T18	
+R28	associated_with Arg1:T19 Arg2:T24	
+R29	treatment_for Arg1:T19 Arg2:T2	
+R30	treatment_for Arg1:T19 Arg2:T23	
+R31	associated_with Arg1:T47 Arg2:T50	

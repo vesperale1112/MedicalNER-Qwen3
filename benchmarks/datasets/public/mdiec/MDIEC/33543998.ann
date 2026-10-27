@@ -1,0 +1,51 @@
+T1	disease 66 85	depressive symptoms
+T2	disease 199 209	depression
+T3	disease 391 401	depression
+T4	disease 585 604	depressive symptoms
+T5	disease 1184 1203	depressive symptoms
+T6	disease 1385 1404	depressive symptoms
+T7	disease 1705 1724	depressive symptoms
+T8	disease 1822 1841	depressive symptoms
+T9	disease 48 62	multimorbidity
+T10	disease 99 113	Multimorbidity
+R1	associated_with Arg1:T10 Arg2:T2	
+T11	disease 346 364	chronic conditions
+T12	physiology 294 309	Positive affect
+R2	treatment_for Arg1:T12 Arg2:T11	
+R3	treatment_for Arg1:T12 Arg2:T3	
+T13	disease 403 427	Long-term multimorbidity
+T14	physiology 450 465	positive affect
+R4	associated_with Arg1:T13 Arg2:T14	
+T15	disease 566 580	multimorbidity
+T16	method 703 723	German Ageing Survey
+T17	method 725 729	DEAS
+R5	abbreviation_for Arg1:T17 Arg2:T16	
+T18	method 933 973	inverse-probability weighting techniques
+T19	method 906 927	mediational g-formula
+T20	disease 1086 1100	multimorbidity
+T21	disease 1165 1179	multimorbidity
+R6	associated_with Arg1:T21 Arg2:T5	
+T22	physiology 1257 1272	positive affect
+R7	associated_with Arg1:T21 Arg2:T22	
+R8	associated_with Arg1:T5 Arg2:T22	
+T23	disease 1367 1381	multimorbidity
+T24	Health_factors 1465 1488	multimorbidity duration
+T25	disease 1537 1561	long-term multimorbidity
+T26	disease 1687 1701	multimorbidity
+T27	disease 1740 1765	short-term multimorbidity
+T28	physiology 1793 1808	positive affect
+R10	treatment_for Arg1:T28 Arg2:T8	
+T29	disease 1858 1872	multimorbidity
+T30	method 1940 1971	longitudinal mediation analysis
+T31	method 2011 2032	mediational g-formula
+T32	disease 214 228	multimorbidity
+R11	associated_with Arg1:T15 Arg2:T4	
+R12	associated_with Arg1:T23 Arg2:T6	
+R13	associated_with Arg1:T9 Arg2:T1	
+T33	physiology 5 20	positive affect
+T34	physiology 523 538	positive affect
+T35	Health_factors 753 765	older adults
+T36	Health_factors 766 770	aged
+T37	physiology 1503 1518	positive affect
+R9	associated_with Arg1:T26 Arg2:T7	
+R14	occurs_in Arg1:T8 Arg2:T29	

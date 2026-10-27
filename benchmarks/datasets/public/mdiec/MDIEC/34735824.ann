@@ -1,0 +1,107 @@
+T2	signs 21 53	plasma fatty acid concentrations
+T3	disease 58 71	schizophrenia
+T4	signs 158 207	concentrations of omega-3 and omega-6 fatty acids
+T5	disease 238 251	schizophrenia
+T6	method 288 314	fatty acid supplementation
+T7	signs 382 427	omega-3 and omega-6 fatty acid concentrations
+T8	disease 452 465	schizophrenia
+T9	disease 812 825	schizophrenia
+T10	drug 869 880	fatty acids
+T11	disease 906 919	schizophrenia
+T13	gene 1248 1265	FADS gene cluster
+T14	gene 1270 1287	ELOVL2 gene locus
+T15	gene 1289 1306	FADS gene cluster
+T16	gene 1311 1322	ELOVL2 gene
+T17	disease 1341 1354	schizophrenia
+T18	disease 1424 1437	schizophrenia
+T19	drug 1673 1692	omega-3 fatty acids
+T20	disease 1696 1709	schizophrenia
+T21	drug 1726 1745	omega-6 fatty acids
+T22	gene 1765 1768	HDL
+T23	gene 1773 1776	LDL
+T24	drug 1783 1796	triglycerides
+T25	signs 1857 1924	long-chain omega-3 and long-chain omega-6 fatty acid concentrations
+T26	disease 1962 1975	schizophrenia
+T27	drug 2113 2168	short-chain omega-3 and short-chain omega-6 fatty acids
+T28	disease 2211 2224	schizophrenia
+T29	drug 2284 2299	-linolenic acid
+T30	method 2366 2390	FADS single-SNP analyses
+T31	signs 2408 2475	long-chain omega-3 and long-chain omega-6 fatty acid concentrations
+T32	disease 2511 2524	schizophrenia
+T33	drug 2558 2578	docosahexaenoic acid
+T35	signs 2588 2657	short-chain omega-3 and short-chain omega-6 fatty acid concentrations
+T36	disease 2700 2713	schizophrenia
+T37	method 2797 2823	ELOVL2 single-SNP analyses
+T38	drug 2924 2934	fatty acid
+T39	drug 3023 3043	docosahexaenoic acid
+T40	disease 3047 3060	schizophrenia
+T41	disease 3344 3357	schizophrenia
+T42	disease 3387 3400	schizophrenia
+T43	drug 3434 3473	short-chain polyunsaturated fatty acids
+T44	drug 3477 3515	long-chain polyunsaturated fatty acids
+T45	method 3567 3620	long-chain polyunsaturated fatty acid supplementation
+T46	disease 3668 3681	schizophrenia
+T49	method 652 719	inverse variance weighted two-sample Mendelian randomisation method
+T50	method 739 770	genome-wide association studies
+T51	method 772 777	GWASs
+T52	method 827 831	GWAS
+T53	Health_factors 947 950	age
+T54	Health_factors 955 961	gender
+T55	method 1017 1021	GWAS
+T56	method 1067 1115	Mendelian randomisation Egger regression methods
+T58	method 1129 1149	sensitivity analyses
+T59	method 1596 1633	Multivariable Mendelian randomisation
+T60	method 1809 1841	Mendelian randomisation analyses
+T61	method 2007 2017	odds ratio
+T62	method 2019 2021	OR
+T63	method 2032 2034	CI
+T64	drug 2048 2068	docosahexaenoic acid
+T65	method 2256 2258	OR
+T66	method 2268 2270	CI
+T67	method 2337 2357	sensitivity analyses
+T69	method 2530 2532	OR
+T70	method 2542 2544	CI
+T71	method 2719 2721	OR
+T72	method 2731 2733	CI
+T73	method 2945 2982	Multivariable Mendelian randomisation
+T74	method 3186 3188	OR
+T75	method 3198 3200	CI
+T78	drug 3287 3305	long-chain omega-3
+T79	drug 2748 2762	linolenic acid
+R1	associated_with Arg1:T2 Arg2:T3	
+T1	method 75 115	two-sample Mendelian randomisation study
+R2	characteristic_of Arg1:T4 Arg2:T5	
+T81	method 486 526	two-sample Mendelian randomisation study
+R3	abbreviation_for Arg1:T51 Arg2:T50	
+T82	signs 782 807	fatty acid concentrations
+T83	Health_factors 859 867	European
+T84	Health_factors 886 894	European
+T85	Health_factors 899 904	Asian
+T86	Health_factors 921 929	ancestry
+T12	gene 1387 1417	single nucleotide polymorphism
+T57	gene 1419 1422	SNP
+R4	abbreviation_for Arg1:T57 Arg2:T12	
+T87	drug 1461 1475	SNP-fatty acid
+T88	method 1497 1512	standard errors
+T89	method 1549 1571	delta method expansion
+T90	gene 1747 1759	lipoproteins
+R5	hyponym_of Arg1:T22 Arg2:T90	
+R6	hyponym_of Arg1:T23 Arg2:T90	
+R7	treatment_for Arg1:T25 Arg2:T26	
+R8	abbreviation_for Arg1:T62 Arg2:T61	
+T91	method 1981 2017	inverse variance weighted odds ratio
+R9	risk_factor_of Arg1:T27 Arg2:T28	
+T92	method 2230 2258	inverse variance weighted OR
+R11	treatment_for Arg1:T31 Arg2:T32	
+R12	associated_with Arg1:T33 Arg2:T32	
+R13	treatment_for Arg1:T64 Arg2:T26	
+R14	risk_factor_of Arg1:T29 Arg2:T28	
+R15	risk_factor_of Arg1:T35 Arg2:T36	
+R17	risk_factor_of Arg1:T79 Arg2:T36	
+R18	associated_with Arg1:T39 Arg2:T40	
+T68	drug 3099 3105	lipids
+T93	method 3146 3188	multivariable inverse variance weighted OR
+T76	drug 3310 3340	long-chain omega-6 fatty acids
+R19	associated_with Arg1:T76 Arg2:T41	
+R20	associated_with Arg1:T78 Arg2:T41	
+T94	Health_factors 3624 3639	diet enrichment

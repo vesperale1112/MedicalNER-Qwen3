@@ -1,0 +1,5 @@
+T1	disease 17 42	Major depressive disorder
+T3	disease 115 133	death from suicide
+T5	disease 76 85	morbidity
+R2	characteristic_of Arg1:T5 Arg2:T1	
+R3	risk_factor_of Arg1:T1 Arg2:T3	

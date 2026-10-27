@@ -1,0 +1,94 @@
+T0	disease 47 87	attention-deficit hyperactivity disorder
+T1	method 91 111	genome-wide analysis
+T2	disease 236 264	neurodevelopmental disorders
+T3	disease 276 316	attention-deficit hyperactivity disorder
+T4	disease 318 322	ADHD
+T5	gene 184 204	copy number variants
+T6	disease 387 391	ADHD
+T7	disease 484 490	autism
+T8	disease 495 508	schizophrenia
+T9	Health_factors 571 579	children
+T10	disease 585 589	ADHD
+T12	method 651 671	British Birth Cohort
+T13	method 599 636	unrelated ethnically matched controls
+T15	method 535 555	genome-wide analysis
+T16	disease 751 755	ADHD
+T17	disease 759 780	hyperkinetic disorder
+T18	disease 790 803	schizophrenia
+T19	disease 808 814	autism
+T20	Health_factors 673 681	Children
+T21	Health_factors 685 690	white
+T22	Health_factors 702 706	aged
+T27	method 867 896	paediatric outpatient clinics
+T28	method 836 862	community child psychiatry
+T29	disease 959 963	ADHD
+T30	gene 898 929	Single nucleotide polymorphisms
+T31	gene 931 935	SNPs
+T32	method 968 982	control groups
+T33	gene 1028 1032	SNPs
+T35	method 1000 1012	CNV analysis
+T36	disease 1117 1121	ADHD
+T37	method 1148 1181	comparative genomic hybridisation
+T38	gene 1310 1314	CNVs
+T40	gene 1199 1217	genome-wide burden
+T41	disease 1502 1508	autism
+T42	disease 1512 1525	schizophrenia
+T45	method 1371 1391	Locus-specific tests
+T46	disease 1583 1587	ADHD
+T48	Health_factors 1676 1684	children
+T49	disease 1690 1694	ADHD
+T50	method 1639 1652	full analyses
+T51	disease 1767 1771	ADHD
+T52	disease 1842 1846	ADHD
+T53	Health_factors 1753 1761	children
+T55	gene 1898 1902	CNVs
+T56	disease 1939 1962	intellectual disability
+T57	disease 2050 2060	disability
+T59	disease 2141 2145	ADHD
+T60	method 2182 2198	multiple testing
+T62	disease 2288 2292	ADHD
+T63	disease 2365 2371	autism
+T64	disease 2386 2399	schizophrenia
+T65	method 2293 2299	cohort
+T67	disease 2520 2524	ADHD
+T68	disease 2542 2546	ADHD
+T73	gene 0 43	Rare chromosomal deletions and duplications
+R1	occurs_in Arg1:T73 Arg2:T0	
+T74	gene 124 174	Large, rare chromosomal deletions and duplications
+T75	gene 206 210	CNVs
+R2	abbreviation_for Arg1:T75 Arg2:T5	
+R3	hyponym_of Arg1:T74 Arg2:T5	
+R4	hyponym_of Arg1:T74 Arg2:T75	
+R5	abbreviation_for Arg1:T4 Arg2:T3	
+R6	associated_with Arg1:T74 Arg2:T2	
+R7	associated_with Arg1:T74 Arg2:T3	
+R8	associated_with Arg1:T74 Arg2:T4	
+T66	gene 365 369	CNVs
+T71	gene 431 435	CNVs
+T76	gene 454 458	loci
+T77	gene 559 563	CNVs
+R9	occurs_in Arg1:T9 Arg2:T10	
+R10	abbreviation_for Arg1:T31 Arg2:T30	
+T11	gene 942 951	genotyped
+T14	gene 1105 1109	CNVs
+T23	gene 1270 1274	CNVs
+T24	method 1358 1369	permutation
+T25	gene 1467 1471	CNVs
+T26	gene 1483 1487	loci
+R11	occurs_in Arg1:T48 Arg2:T49	
+T34	gene 1717 1733	large, rare CNVs
+R12	characteristic_of Arg1:T34 Arg2:T51	
+R13	occurs_in Arg1:T53 Arg2:T51	
+T39	gene 1834 1838	CNVs
+R14	characteristic_of Arg1:T39 Arg2:T52	
+R15	characteristic_of Arg1:T55 Arg2:T56	
+T43	gene 2091 2123	chromosome 16p13.11 duplications
+R16	characteristic_of Arg1:T43 Arg2:T59	
+T44	gene 2265 2269	CNVs
+T47	gene 2332 2336	loci
+T54	gene 2489 2499	large CNVs
+R17	characteristic_of Arg1:T54 Arg2:T67	
+R18	characteristic_of Arg1:T44 Arg2:T62	
+R19	associated_with Arg1:T44 Arg2:T63	
+R20	associated_with Arg1:T44 Arg2:T64	
+R21	help_diagnose Arg1:T37 Arg2:T14	

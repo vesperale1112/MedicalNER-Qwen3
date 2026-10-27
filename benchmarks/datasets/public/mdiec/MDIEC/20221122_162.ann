@@ -1,0 +1,5 @@
+T1	disease 74 90	major depression
+T3	disease 106 167	dysfunction of the limbic-hypothalamic-pituitary-adrenal axis
+T4	disease 29 49	geriatric depression
+R1	risk_factor_of Arg1:T3 Arg2:T1	
+T2	disease 13 25	pathogenesis

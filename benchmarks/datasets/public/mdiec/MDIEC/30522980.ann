@@ -1,0 +1,68 @@
+T0	disease 70 77	anxiety
+T1	Health_factors 32 58	mental health professional
+T2	disease 82 92	depression
+T3	Health_factors 96 104	children
+T4	Health_factors 109 121	young people
+T5	method 155 172	systematic review
+T6	method 125 139	scoping review
+T8	disease 319 329	depression
+T9	disease 333 340	anxiety
+T10	method 245 262	systematic review
+T11	method 275 288	interventions
+T12	Health_factors 344 352	children
+T13	Health_factors 357 369	young people
+T14	Health_factors 380 383	age
+T15	Health_factors 424 451	mental health professionals
+T16	method 216 230	scoping review
+T18	Health_factors 524 532	children
+T19	Health_factors 536 548	young people
+T20	method 457 471	scoping review
+T21	Health_factors 600 618	social interaction
+T22	Health_factors 690 707	physical activity
+T24	Health_factors 752 767	self-expression
+T25	Health_factors 773 784	exploration
+T26	symptom 709 729	altering perceptions
+T27	physiology 669 688	sensory stimulation
+T28	physiology 656 667	distraction
+T29	method 788 805	systematic review
+T30	method 924 936	intervention
+T31	method 950 968	inclusion criteria
+T33	method 869 883	scoping review
+T36	method 1038 1059	digital interventions
+T37	Health_factors 1102 1119	physical exercise
+T39	drug 1153 1172	dietary supplements
+T41	Health_factors 1237 1255	contact with a dog
+T42	Health_factors 1205 1224	online peer support
+T43	method 1181 1196	massage therapy
+T44	method 1129 1142	light therapy
+T45	method 1071 1084	bibliotherapy
+T46	Health_factors 1281 1292	adolescents
+T47	Health_factors 1296 1308	young adults
+T49	disease 1371 1388	season depression
+T50	disease 1477 1484	anxiety
+T52	method 1398 1419	digital interventions
+T53	method 1429 1456	attention bias modification
+T54	method 1334 1347	light therapy
+T55	disease 1601 1608	anxiety
+T56	disease 1639 1649	depression
+T57	method 1539 1581	computerised cognitive behavioural therapy
+T58	Health_factors 1617 1634	physical exercise
+T60	method 1916 1933	systematic review
+T61	method 1852 1866	scoping review
+R1	occurs_in Arg1:T0 Arg2:T3	
+R2	occurs_in Arg1:T0 Arg2:T4	
+R3	occurs_in Arg1:T2 Arg2:T3	
+R4	occurs_in Arg1:T2 Arg2:T4	
+R5	occurs_in Arg1:T9 Arg2:T12	
+R6	occurs_in Arg1:T8 Arg2:T12	
+R7	occurs_in Arg1:T9 Arg2:T13	
+R8	occurs_in Arg1:T8 Arg2:T13	
+T7	Health_factors 550 557	younger
+T17	Health_factors 620 642	engagement with nature
+T35	method 644 654	relaxation
+T23	Health_factors 731 750	engaging in hobbies
+T32	method 995 1030	cognitive or behavioural principles
+R9	treatment_for Arg1:T54 Arg2:T49	
+R10	treatment_for Arg1:T52 Arg2:T50	
+T34	disease 1586 1596	depression
+T38	method 2061 2089	self or community approaches

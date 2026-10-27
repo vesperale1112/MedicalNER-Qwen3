@@ -1,0 +1,43 @@
+T0	disease 0 29	Obsessive-compulsive disorder
+T3	method 34 85	integrative genetic and neurobiological perspective
+T4	disease 87 116	Obsessive-compulsive disorder
+T5	disease 118 121	OCD
+T6	symptom 143 177	repetitive thoughts and behaviours
+T7	disease 259 262	OCD
+T9	method 212 235	Family and twin studies
+T10	disease 535 565	neuropsychological impairments
+T11	disease 583 586	OCD
+T12	method 363 383	Neuroimaging studies
+T13	method 452 467	pathophysiology
+T14	physiology 598 617	executive functions
+T16	region 404 444	cortico-striato-thalamo-cortical circuit
+T18	gene 649 654	genes
+T19	region 669 721	serotonergic, dopaminergic and glutamatergic systems
+T20	disease 869 889	psychological trauma
+T21	disease 894 913	neurological trauma
+T22	Health_factors 813 834	Environmental factors
+T24	gene 948 953	genes
+T25	disease 995 1026	obsessive-compulsive behaviours
+T27	Health_factors 843 867	adverse perinatal events
+R1	abbreviation_for Arg1:T5 Arg2:T4	
+R2	characteristic_of Arg1:T6 Arg2:T4	
+R3	characteristic_of Arg1:T6 Arg2:T5	
+T1	disease 268 301	multifactorial familial condition
+R4	hyponym_of Arg1:T7 Arg2:T1	
+T2	Health_factors 321 361	polygenic and environmental risk factors
+R5	associated_with Arg1:T7 Arg2:T2	
+R6	characteristic_of Arg1:T10 Arg2:T11	
+R7	occurs_in Arg1:T10 Arg2:T14	
+T8	method 619 634	Genetic studies
+R8	associated_with Arg1:T18 Arg2:T19	
+R9	hyponym_of Arg1:T27 Arg2:T22	
+R10	hyponym_of Arg1:T20 Arg2:T22	
+R11	hyponym_of Arg1:T21 Arg2:T22	
+R12	associated_with Arg1:T22 Arg2:T24	
+R13	associated_with Arg1:T27 Arg2:T24	
+R14	associated_with Arg1:T20 Arg2:T24	
+R15	associated_with Arg1:T21 Arg2:T24	
+R16	risk_factor_of Arg1:T22 Arg2:T25	
+R17	risk_factor_of Arg1:T27 Arg2:T25	
+R18	risk_factor_of Arg1:T20 Arg2:T25	
+R19	risk_factor_of Arg1:T21 Arg2:T25	

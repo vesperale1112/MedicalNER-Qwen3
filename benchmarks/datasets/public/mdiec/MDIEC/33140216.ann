@@ -1,0 +1,84 @@
+T1	physiology 34 83	ventricular repolarization-related ion remodeling
+T3	disease 175 200	major depressive disorder
+T4	disease 202 205	MDD
+T5	disease 231 254	ventricular arrhythmias
+T6	disease 320 323	MDD
+T7	disease 436 446	depression
+T8	disease 451 474	ventricular arrhythmias
+T9	disease 606 609	MDD
+T10	disease 625 628	MDD
+T11	disease 1030 1033	MDD
+T12	gene 1055 1090	transient outward potassium current
+T13	gene 1101 1123	L-type calcium current
+T14	disease 1247 1250	MDD
+T15	drug 1293 1304	fluvoxamine
+T16	drug 1352 1363	Fluvoxamine
+T17	drug 1495 1506	fluvoxamine
+T18	drug 1521 1525	Ca2+
+T19	drug 1617 1623	BD1047
+T20	gene 0 24	Sigma-1 receptor ligands
+R2	abbreviation_for Arg1:T4 Arg2:T3	
+R3	risk_factor_of Arg1:T4 Arg2:T5	
+R4	risk_factor_of Arg1:T3 Arg2:T5	
+T21	gene 270 286	Sigma-1 receptor
+R5	associated_with Arg1:T21 Arg2:T6	
+T22	gene 387 403	Sigma-1 receptor
+R6	associated_with Arg1:T22 Arg2:T7	
+R7	associated_with Arg1:T22 Arg2:T8	
+T23	gene 518 534	Sigma-1 receptor
+T24	disease 538 548	depression
+T25	disease 652 685	chronic unpredictable mild stress
+T26	disease 687 691	CUMS
+R8	abbreviation_for Arg1:T26 Arg2:T25	
+T27	method 740 754	behavior tests
+T28	method 791 807	western blotting
+T29	symptom 813 842	cardiac morphological changes
+T30	method 860 875	Masson staining
+T31	method 877 909	Electrophysiological measurement
+T32	region 917 927	myocardium
+T33	method 951 983	whole-cell patch-clamp technique
+T34	gene 1092 1095	Ito
+R9	abbreviation_for Arg1:T34 Arg2:T12	
+T35	gene 1125 1130	ICa-L
+R10	abbreviation_for Arg1:T35 Arg2:T13	
+T36	drug 1308 1332	Sigma-1 receptor agonist
+R11	hyponym_of Arg1:T15 Arg2:T36	
+T37	gene 1679 1695	Sigma-1 receptor
+T38	physiology 356 381	antiarrhythmic properties
+R12	associated_with Arg1:T38 Arg2:T21	
+T40	symptom 1049 1090	lower transient outward potassium current
+R13	characteristic_of Arg1:T40 Arg2:T11	
+R14	treatment_for Arg1:T20 Arg2:T1	
+T42	physiology 553 602	ventricular repolarization-related ion remodeling
+T43	physiology 756 774	Protein expression
+T44	physiology 1174 1195	depolarization of Ito
+T45	physiology 1200 1226	hyperpolarization of ICa-L
+R15	characteristic_of Arg1:T45 Arg2:T14	
+R16	characteristic_of Arg1:T44 Arg2:T14	
+T46	gene 1337 1340	Ito
+T47	gene 1345 1350	ICa-L
+T48	gene 1373 1376	Ito
+R17	associated_with Arg1:T16 Arg2:T48	
+R18	associated_with Arg1:T17 Arg2:T18	
+T49	gene 1576 1581	ICa-L
+T50	gene 1723 1726	Ito
+T51	gene 1731 1736	ICa-L
+T52	physiology 1755 1777	antiarrhythmic effects
+R19	associated_with Arg1:T37 Arg2:T50	
+R20	associated_with Arg1:T37 Arg2:T51	
+R23	risk_factor_of Arg1:T25 Arg2:T10	
+R24	risk_factor_of Arg1:T26 Arg2:T10	
+R26	characteristic_of Arg1:T11 Arg2:T13	
+R27	characteristic_of Arg1:T11 Arg2:T35	
+T39	disease 97 122	major depression disorder
+R31	help_diagnose Arg1:T28 Arg2:T43	
+R32	help_diagnose Arg1:T30 Arg2:T29	
+R1	associated_with Arg1:T37 Arg2:T52	
+R25	associated_with Arg1:T17 Arg2:T49	
+R28	occurs_in Arg1:T1 Arg2:T39	
+T2	method 1020 1024	rats
+T41	method 610 614	rats
+R21	associated_with Arg1:T15 Arg2:T46	
+R22	associated_with Arg1:T15 Arg2:T47	
+T53	method 87 91	rats
+R29	occurs_in Arg1:T1 Arg2:T53	

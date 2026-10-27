@@ -1,0 +1,10 @@
+T2	disease 33 54	poststroke depression
+T3	disease 59 79	cognitive impairment
+T4	disease 124 149	stroke-related depression
+T5	physiology 155 161	memory
+T6	Health_factors 173 198	nonverbal problem solving
+T8	symptom 214 245	attention and psychomotor speed
+R1	associated_with Arg1:T2 Arg2:T3	
+R2	associated_with Arg1:T4 Arg2:T5	
+R3	associated_with Arg1:T4 Arg2:T6	
+R5	associated_with Arg1:T4 Arg2:T8	

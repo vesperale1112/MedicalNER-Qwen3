@@ -1,0 +1,56 @@
+T0	disease 0 40	Attention-deficit/hyperactivity disorder
+T1	disease 42 82	Attention-deficit/hyperactivity disorder
+T2	disease 84 88	ADHD
+T3	disease 95 133	persistent neurodevelopmental disorder
+T4	Health_factors 153 161	children
+T5	Health_factors 166 177	adolescents
+T6	Health_factors 190 196	adults
+T7	disease 245 249	ADHD
+T8	disease 281 302	psychiatric disorders
+T9	Health_factors 353 364	criminality
+T10	Health_factors 366 383	social disability
+T11	disease 388 398	addictions
+T12	Health_factors 342 351	accidents
+T13	disease 458 462	ADHD
+T15	disease 478 482	ADHD
+T16	Health_factors 503 541	genetic and environmental risk factors
+T19	disease 660 664	ADHD
+T20	disease 849 890	structural and functional brain anomalies
+T21	disease 751 775	psychiatric co-morbidity
+T25	disease 801 826	neurocognitive impairment
+T26	disease 928 932	ADHD
+T28	method 975 1018	standard criteria for psychiatric disorders
+T29	method 1020 1033	Rating scales
+T31	method 1087 1096	screening
+T33	method 1038 1057	clinical interviews
+T35	Health_factors 1181 1209	social and academic contexts
+T36	disease 1257 1261	ADHD
+T37	disease 1338 1349	impairments
+T40	method 1263 1289	evidenced-based treatments
+T42	drug 1364 1375	medications
+T44	method 1433 1463	non-pharmacological approaches
+T45	disease 1601 1605	ADHD
+T47	method 1560 1597	diagnostic and therapeutic approaches
+T48	method 1491 1528	clinical and neurobiological research
+R1	risk_factor_of Arg1:T7 Arg2:T8	
+T49	Health_factors 304 340	educational and occupational failure
+R2	risk_factor_of Arg1:T7 Arg2:T49	
+R3	risk_factor_of Arg1:T7 Arg2:T12	
+R4	abbreviation_for Arg1:T2 Arg2:T1	
+R5	hyponym_of Arg1:T1 Arg2:T3	
+R6	hyponym_of Arg1:T2 Arg2:T3	
+R7	associated_with Arg1:T1 Arg2:T4	
+R8	associated_with Arg1:T1 Arg2:T5	
+R9	associated_with Arg1:T1 Arg2:T6	
+R10	associated_with Arg1:T2 Arg2:T4	
+R11	associated_with Arg1:T2 Arg2:T5	
+R12	associated_with Arg1:T2 Arg2:T6	
+R13	risk_factor_of Arg1:T7 Arg2:T9	
+R14	risk_factor_of Arg1:T7 Arg2:T10	
+R15	risk_factor_of Arg1:T7 Arg2:T11	
+R16	risk_factor_of Arg1:T16 Arg2:T15	
+R17	characteristic_of Arg1:T21 Arg2:T19	
+R18	characteristic_of Arg1:T25 Arg2:T19	
+R19	characteristic_of Arg1:T20 Arg2:T19	
+R20	help_diagnose Arg1:T28 Arg2:T26	
+R21	treatment_for Arg1:T40 Arg2:T36	

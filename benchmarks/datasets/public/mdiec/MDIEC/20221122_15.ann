@@ -1,0 +1,40 @@
+T1	Health_factors 0 17	Exercise training
+T3	method 85 113	standardized mean difference
+T4	method 115 118	SMD
+T5	method 285 288	SMD
+T6	method 322 325	SMD
+T7	method 373 376	SMD
+T8	method 488 491	SMD
+T9	method 558 561	SMD
+T10	method 595 598	SMD
+T11	method 632 635	SMD
+T12	method 720 723	SMD
+T13	method 767 770	SMD
+T14	method 812 815	SMD
+T15	method 131 150	confidence interval
+T17	method 152 154	CI
+T18	method 300 302	CI
+T19	method 337 339	CI
+T20	method 388 390	CI
+T21	method 503 505	CI
+T22	method 573 575	CI
+T23	method 610 612	CI
+T24	method 647 649	CI
+T25	method 735 737	CI
+T26	method 782 784	CI
+T27	method 827 829	CI
+T28	physiology 181 202	antidepressive effect
+T29	Health_factors 255 259	ages
+T31	disease 73 83	depression
+T32	disease 233 235	HF
+R1	treatment_for Arg1:T1 Arg2:T31	
+R2	abbreviation_for Arg1:T4 Arg2:T3	
+R3	abbreviation_for Arg1:T17 Arg2:T15	
+T2	Health_factors 671 706	short or longer training programmes
+T16	method 433 458	interventional strategies
+T30	Health_factors 474 486	aerobic mode
+T33	Health_factors 523 556	centre, home, or combined setting
+R4	hyponym_of Arg1:T30 Arg2:T16	
+R5	hyponym_of Arg1:T33 Arg2:T16	
+R6	hyponym_of Arg1:T2 Arg2:T16	
+T34	signs 360 363	EFs

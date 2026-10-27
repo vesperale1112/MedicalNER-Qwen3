@@ -1,0 +1,11 @@
+T1	physiology 69 104	hippocampal neurotrophin expression
+T3	physiology 109 121	neurogenesis
+T5	region 229 240	hippocampus
+T7	physiology 318 351	hippocampal synaptic connectivity
+T9	disease 185 195	depression
+T8	disease 24 32	epilepsy	
+R2	associated_with Arg1:T9 Arg2:T5	
+T2	disease 40 47	seizure
+R6	associated_with Arg1:T2 Arg2:T1	
+R7	associated_with Arg1:T2 Arg2:T3	
+T4	method 169 181	neurobiology

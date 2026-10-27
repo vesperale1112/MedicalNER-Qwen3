@@ -1,0 +1,31 @@
+T1	method 3 25	multivariable analyses
+T2	Health_factors 40 52	maternal age
+T3	Health_factors 54 58	race
+T4	Health_factors 60 66	income
+T5	signs 68 83	body mass index
+T6	Health_factors 85 96	tobacco use
+T7	disease 141 148	anxiety
+T8	disease 160 172	hypertension
+T9	disease 178 190	preeclampsia
+T10	Health_factors 192 197	women
+T11	disease 120 136	major depression
+T12	disease 224 234	depression
+T19	method 352 371	confidence interval
+T23	disease 268 281	preterm birth
+T24	disease 397 410	preterm birth
+T27	physiology 305 314	gestation
+T28	physiology 434 443	gestation
+T13	disease 150 158	diabetes
+T14	method 326 336	odds ratio
+T15	method 338 340	OR
+R1	abbreviation_for Arg1:T15 Arg2:T14	
+T16	method 373 375	CI
+R2	abbreviation_for Arg1:T16 Arg2:T19	
+T17	method 455 457	OR
+T18	method 468 470	CI
+T20	disease 506 517	SGA neonate
+T21	method 528 530	OR
+T22	method 541 543	CI
+R3	risk_factor_of Arg1:T12 Arg2:T23	
+R4	risk_factor_of Arg1:T12 Arg2:T24	
+R5	risk_factor_of Arg1:T12 Arg2:T20	

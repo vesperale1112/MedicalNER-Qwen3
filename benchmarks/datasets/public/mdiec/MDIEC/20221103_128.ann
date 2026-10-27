@@ -1,0 +1,4 @@
+T2	method 87 129	automated Web-based self-help intervention
+T3	disease 157 217	co-occurring depressive symptoms and problematic alcohol use
+T5	Health_factors 221 233	young people
+R1	occurs_in Arg1:T3 Arg2:T5	

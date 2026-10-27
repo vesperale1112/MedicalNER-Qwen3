@@ -1,0 +1,46 @@
+T0	disease 15 38	Substance Use Disorders
+T1	disease 60 80	Schizotypal Disorder
+T2	disease 84 97	Schizophrenia
+T3	disease 179 199	schizotypal disorder
+T4	disease 203 216	schizophrenia
+T5	disease 316 329	schizophrenia
+T6	disease 136 159	substance use disorders
+T7	Health_factors 229 239	physicians
+T8	Health_factors 244 257	psychiatrists
+T9	method 283 293	prevention
+R1	associated_with Arg1:T0 Arg2:T1	
+R2	associated_with Arg1:T0 Arg2:T2	
+T10	disease 366 389	substance use disorders
+T11	disease 405 426	cannabis use disorder
+R3	hyponym_of Arg1:T11 Arg2:T10	
+T12	disease 462 475	schizophrenia
+T13	disease 496 516	schizotypal disorder
+R4	occurs_in Arg1:T12 Arg2:T13	
+T14	method 521 542	fully adjusted models
+T15	disease 548 570	substance use disorder
+T16	disease 605 618	schizophrenia
+R5	associated_with Arg1:T15 Arg2:T16	
+T17	method 620 622	HR
+T18	method 634 636	CI
+T19	disease 679 712	substance, cannabis use disorders
+T20	method 714 716	HR
+T21	method 728 730	CI
+T22	disease 744 769	amphetamine use disorders
+T23	disease 805 825	opioid use disorders
+T24	disease 891 904	schizophrenia
+R6	associated_with Arg1:T22 Arg2:T24	
+R7	associated_with Arg1:T23 Arg2:T24	
+T25	disease 1005 1034	incident schizotypal disorder
+T26	Health_factors 1039 1075	parental history of mental disorders
+T27	drug 965 979	antipsychotics
+T28	disease 1105 1128	Substance use disorders
+T29	drug 1144 1152	cannabis
+T30	drug 1154 1166	amphetamines
+T31	drug 1172 1179	opioids
+T32	disease 1220 1240	schizotypal disorder
+T33	disease 1244 1257	schizophrenia
+R8	associated_with Arg1:T28 Arg2:T32	
+R9	associated_with Arg1:T28 Arg2:T33	
+T34	disease 1316 1339	substance use disorders
+T35	method 1377 1406	substance-targeted prevention
+T36	disease 1427 1447	schizotypal disorder

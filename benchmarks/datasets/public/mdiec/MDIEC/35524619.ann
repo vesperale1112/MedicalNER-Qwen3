@@ -1,0 +1,139 @@
+T1	disease 25 38	schizophrenia
+T2	disease 93 106	schizophrenia
+T3	disease 413 426	schizophrenia
+T4	disease 527 548	psychiatric disorders
+T5	disease 945 958	schizophrenia
+T6	disease 1025 1044	psychiatric illness
+T7	disease 1118 1131	schizophrenia
+T8	disease 1147 1160	schizophrenia
+T9	disease 1320 1333	schizophrenia
+T10	disease 1530 1539	pneumonia
+T11	disease 1666 1674	diabetes
+T12	drug 1698 1705	alcohol
+T13	region 1866 1874	pancreas
+T14	disease 1882 1888	cancer
+T15	disease 2055 2068	schizophrenia
+T16	disease 2263 2276	schizophrenia
+T17	disease 2344 2357	schizophrenia
+T18	disease 2387 2418	Comorbid substance use disorder
+T19	drug 2735 2744	clozapine
+T20	disease 2784 2787	LAI
+T21	disease 2831 2834	SGA
+T22	disease 3076 3089	schizophrenia
+T23	disease 3345 3358	schizophrenia
+T24	disease 3416 3440	comorbid substance abuse
+T25	drug 3532 3541	clozapine
+T27	disease 0 9	Mortality
+T28	method 42 59	systematic review
+T29	method 64 77	meta-analysis
+T30	disease 150 159	mortality
+T31	method 249 266	systematic review
+T32	method 271 299	random-effects meta-analysis
+T33	method 303 372	prospective and retrospective, nationwide and targeted cohort studies
+T34	disease 383 392	mortality
+T35	Health_factors 438 456	general population
+T37	method 597 627	all-cause mortality risk ratio
+T38	method 629 631	RR
+T39	disease 662 671	mortality
+T40	disease 679 686	suicide
+T42	method 808 832	meta-regression analyses
+T43	Health_factors 973 991	general population
+T44	disease 1069 1088	all-cause mortality
+T45	method 1176 1178	RR
+T46	method 1189 1191	CI
+T47	method 1251 1253	RR
+T48	method 1264 1266	CI
+T49	method 1335 1337	RR
+T50	method 1348 1350	CI
+T51	Health_factors 1379 1397	general population
+T53	disease 1440 1447	suicide
+T54	method 1503 1505	RR
+T55	method 1562 1564	RR
+T56	method 1575 1577	CI
+T57	physiology 1624 1633	endocrine
+T58	method 1683 1685	RR
+T59	method 1802 1804	RR
+T60	method 1897 1899	RR
+T61	disease 1915 1934	All-cause mortality
+T62	method 2013 2015	CI
+T63	Health_factors 2085 2088	age
+T66	Health_factors 2202 2209	females
+T69	disease 2286 2305	All-cause mortality
+T70	method 2359 2361	RR
+T71	disease 2429 2448	all-cause mortality
+T72	method 2450 2452	RR
+T73	method 2463 2465	CI
+T74	drug 2484 2498	Antipsychotics
+T75	disease 2523 2542	all-cause mortality
+T76	method 2572 2574	RR
+T77	method 2585 2587	CI
+T78	drug 2632 2688	second-generation long-acting injectable anti-psychotics
+T79	method 2701 2703	RR
+T80	method 2714 2716	CI
+T81	method 2746 2748	RR
+T82	method 2759 2761	CI
+T83	method 2789 2791	RR
+T84	method 2802 2804	CI
+T85	method 2836 2838	RR
+T86	method 2849 2851	CI
+T87	drug 2870 2884	Antipsychotics
+T88	disease 2914 2945	natural cause-related mortality
+T90	disease 3021 3030	mortality
+T91	disease 3038 3045	suicide
+T92	Health_factors 3181 3204	natural-cause mortality
+T93	drug 3277 3291	antipsychotics
+T94	disease 3332 3341	mortality
+T95	method 3442 3487	long-term maintenance antipsychotic treatment
+T96	disease 3560 3569	mortality
+T98	drug 2951 2982	first-generation antipsychotics
+T99	disease 2220 2245	suicide-related mortality
+T100	disease 2103 2142	all-cause and suicide-related mortality
+T101	disease 1399 1423	Specific-cause mortality
+T102	method 858 880	Newcastle-Ottawa Scale
+T106	disease 751 775	specific-cause mortality
+T107	disease 479 501	physical comorbidities
+T108	disease 107 110	die
+T36	method 617 627	risk ratio
+R1	abbreviation_for Arg1:T38 Arg2:T36	
+R3	risk_factor_of Arg1:T7 Arg2:T44	
+T41	disease 1451 1467	injury-poisoning
+R4	associated_with Arg1:T101 Arg2:T53	
+R5	associated_with Arg1:T101 Arg2:T41	
+T52	disease 1610 1620	infectious
+T103	physiology 1637 1648	respiratory
+T104	region 1652 1662	urogenital
+T105	region 1709 1725	gastrointestinal
+T109	region 1729 1734	renal
+T110	region 1738 1752	nervous system
+T111	region 1756 1778	cardio-cerebrovascular
+T112	region 1818 1823	liver
+T113	region 1827 1842	cerebrovascular
+T114	region 1847 1853	breast
+T115	region 1857 1862	colon
+R6	characteristic_of Arg1:T100 Arg2:T15	
+R7	risk_factor_of Arg1:T66 Arg2:T99	
+R8	occurs_in Arg1:T99 Arg2:T16	
+R10	associated_with Arg1:T18 Arg2:T71	
+R11	treatment_for Arg1:T74 Arg2:T75	
+T64	drug 2553 2566	antipsychotic
+T65	drug 2690 2698	SGA-LAIs
+R12	abbreviation_for Arg1:T65 Arg2:T78	
+R13	associated_with Arg1:T75 Arg2:T78	
+R14	associated_with Arg1:T75 Arg2:T65	
+R15	associated_with Arg1:T75 Arg2:T19	
+R16	associated_with Arg1:T75 Arg2:T20	
+R17	associated_with Arg1:T75 Arg2:T21	
+R18	treatment_for Arg1:T87 Arg2:T88	
+T67	drug 2984 2988	FGAs
+R19	abbreviation_for Arg1:T67 Arg2:T98	
+R21	risk_factor_of Arg1:T67 Arg2:T90	
+R22	risk_factor_of Arg1:T98 Arg2:T90	
+R23	occurs_in Arg1:T94 Arg2:T23	
+T68	drug 3519 3527	SGA-LAIs
+R24	treatment_for Arg1:T95 Arg2:T96	
+R25	treatment_for Arg1:T68 Arg2:T96	
+R26	treatment_for Arg1:T25 Arg2:T96	
+T89	Health_factors 3386 3404	modifiable factors
+R27	associated_with Arg1:T94 Arg2:T89	
+T97	method 838 856	quality assessment
+T26	Health_factors 2170 2173	old

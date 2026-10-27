@@ -1,0 +1,21 @@
+T1	disease 23 36	schizophrenia
+T2	disease 119 132	schizophrenia
+T3	disease 409 430	debilitating disorder
+T4	disease 551 577	first episode of psychosis
+T5	disease 631 644	schizophrenia
+T6	disease 714 727	schizophrenia
+T7	disease 750 763	schizophrenia
+T8	disease 903 912	psychosis
+T9	disease 1036 1049	schizophrenia
+T10	disease 1061 1081	psychiatric disorder
+T11	disease 1218 1231	schizophrenia
+T12	Health_factors 159 191	genetic and environmental causes
+T13	physiology 245 282	aberrant patterns of neurodevelopment
+T14	method 496 524	course-altering intervention
+T15	Health_factors 593 605	young people
+T19	Health_factors 1161 1174	opportunities
+T21	method 812 863	psychosocial or cognitive-behavioural interventions
+T22	method 777 807	pre-diagnostic pharmacotherapy
+T23	method 732 745	rodent models
+R1	treatment_for Arg1:T22 Arg2:T8	
+R2	treatment_for Arg1:T21 Arg2:T8	

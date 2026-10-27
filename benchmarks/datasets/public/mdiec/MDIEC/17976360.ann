@@ -1,0 +1,23 @@
+T0	disease 27 37	depression
+T1	method 52 64	primary care
+T2	method 75 105	Patient Health Questionnaire-9
+T3	method 2 23	system-based approach
+T4	disease 168 178	depression
+T5	disease 215 227	hypertension
+T8	Health_factors 107 130	Primary care physicians
+T11	disease 446 456	depression
+T12	method 302 332	Patient Health Questionnaire-9
+T13	method 421 441	screening instrument
+T14	method 460 481	primary care practice
+T16	method 343 365	self-administered tool
+T18	disease 539 549	depression
+T19	disease 661 671	depression
+T20	method 571 601	Patient Health Questionnaire-9
+T21	Health_factors 611 621	clinicians
+T23	method 680 694	follow-up care
+T26	method 514 535	system-based approach
+T9	method 274 296	primary care practices
+R1	hyponym_of Arg1:T12 Arg2:T16	
+R2	help_diagnose Arg1:T12 Arg2:T11	
+R3	occurs_in Arg1:T11 Arg2:T14	
+R4	help_diagnose Arg1:T20 Arg2:T19	

@@ -1,0 +1,42 @@
+T1	disease 20 30	depression
+T2	disease 288 298	depression
+T3	disease 731 741	depression
+T4	disease 825 835	depression
+T5	disease 936 946	depression
+T6	Health_factors 142 157	gendered racism
+T7	Health_factors 186 199	mental health
+T8	method 517 530	online survey
+T9	disease 575 585	depression
+T10	Health_factors 711 726	gendered racism
+R2	associated_with Arg1:T10 Arg2:T3	
+T11	Health_factors 748 763	gendered racism
+T12	Health_factors 784 801	decreased support
+R3	associated_with Arg1:T11 Arg2:T12	
+R4	associated_with Arg1:T11 Arg2:T4	
+T13	Health_factors 909 924	gendered racism
+R5	associated_with Arg1:T13 Arg2:T5	
+T14	Health_factors 37 48	Black women
+T15	Health_factors 73 100	social support and identity
+T16	Health_factors 113 124	Black women
+T17	Health_factors 0 15	Gendered racism
+T18	Health_factors 251 266	gendered racism
+T19	Health_factors 268 282	social support
+T20	Health_factors 376 391	gendered racism
+T21	Health_factors 441 460	Black college women
+T22	method 476 478	SD
+T23	Health_factors 542 557	gendered racism
+T24	Health_factors 559 573	social support
+T25	Health_factors 591 615	gendered racial identity
+T26	Health_factors 326 352	gendered racial centrality
+T27	Health_factors 640 654	social support
+T28	Health_factors 850 876	gendered racial centrality
+T29	Health_factors 957 971	social support
+T30	Health_factors 1042 1057	gendered racism
+T31	Health_factors 1061 1072	Black women
+R6	associated_with Arg1:T27 Arg2:T10	
+R7	associated_with Arg1:T27 Arg2:T3	
+R10	associated_with Arg1:T28 Arg2:T13	
+T32	Health_factors 395 417	mental health outcomes
+R12	associated_with Arg1:T28 Arg2:T29	
+R13	associated_with Arg1:T30 Arg2:T31	
+T33	method 1108 1120	intervention

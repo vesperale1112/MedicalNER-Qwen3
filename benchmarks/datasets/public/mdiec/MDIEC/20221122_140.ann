@@ -1,0 +1,6 @@
+T2	disease 94 107	schizophrenia
+T3	disease 112 128	bipolar disorder
+T4	gene 28 50	lipid transporter gene
+T5	gene 51 57	ABCA13
+R2	risk_factor_of Arg1:T5 Arg2:T2	
+R3	risk_factor_of Arg1:T5 Arg2:T3	

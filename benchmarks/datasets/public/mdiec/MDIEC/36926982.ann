@@ -1,0 +1,6 @@
+T0	disease 0 13	Schizophrenia
+T2	disease 44 55	heat deaths
+T3	disease 61 75	mental illness
+T4	disease 96 101	death
+R1	associated_with Arg1:T0 Arg2:T2	
+R2	risk_factor_of Arg1:T3 Arg2:T4	

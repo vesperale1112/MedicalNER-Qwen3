@@ -1,0 +1,15 @@
+T3	method 158 169	PC practice
+T6	Health_factors 191 202	adolescents
+T7	disease 208 218	depression
+T8	disease 328 338	depression
+T9	method 425 442	depression scales
+T10	method 224 250	annual universal screening
+T11	Health_factors 254 259	youth
+T12	Health_factors 342 347	youth
+T13	Health_factors 275 300	health maintenance visits
+T15	method 374 406	systematic assessment procedures
+T19	method 444 476	patient and caregiver interviews
+T21	method 482 559	Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition criteria
+T23	Health_factors 565 599	patient and family psychoeducation
+R1	occurs_in Arg1:T6 Arg2:T7	
+R2	occurs_in Arg1:T8 Arg2:T12	

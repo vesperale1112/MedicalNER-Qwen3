@@ -1,0 +1,40 @@
+T0	disease 73 86	schizophrenia
+T1	method 0 26	Magnetic resonance imaging
+T2	region 30 35	brain
+T4	disease 99 112	Schizophrenia
+T5	disease 118 141	multifactorial disorder
+T6	disease 166 196	disturbed cerebral development
+T7	disease 369 382	schizophrenia
+T10	region 293 298	brain
+T12	region 317 338	mesial temporal lobes
+T14	method 198 230	Structural brain-imaging studies
+T15	disease 421 453	abnormalities of brain structure
+T17	disease 546 559	schizophrenia
+T19	method 684 700	healthy controls
+T20	method 711 737	magnetic resonance imaging
+T21	region 745 750	brain
+T22	disease 645 675	first episode of schizophrenia
+T23	Health_factors 573 612	first-degree or second-degree relatives
+T28	method 874 876	SD
+T29	signs 836 859	Mean whole-brain volume
+T37	method 1534 1547	control group
+T38	region 1456 1471	thalamic nuclei
+T44	disease 1824 1837	schizophrenia
+T46	region 1782 1785	AHC
+R1	hyponym_of Arg1:T4 Arg2:T5	
+R2	associated_with Arg1:T4 Arg2:T6	
+R3	characteristic_of Arg1:T12 Arg2:T7	
+T3	region 1016 1049	left amygdala-hippocampal complex
+T8	region 1021 1049	amygdala-hippocampal complex
+T9	region 1051 1054	AHC
+R4	abbreviation_for Arg1:T9 Arg2:T8	
+T11	signs 1298 1310	brain volume
+T13	region 1338 1347	right AHC
+T16	disease 1647 1677	structural brain abnormalities	
+R6	risk_factor_of Arg1:T46 Arg2:T44	
+T18	disease 1600 1613	schizophrenia
+R5	characteristic_of Arg1:T16 Arg2:T18	
+R7	characteristic_of Arg1:T10 Arg2:T7	
+T24	region 1789 1796	thalami
+R8	risk_factor_of Arg1:T24 Arg2:T44	
+R9	hyponym_of Arg1:T12 Arg2:T10	

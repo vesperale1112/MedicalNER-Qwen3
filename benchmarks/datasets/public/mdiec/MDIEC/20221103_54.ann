@@ -1,0 +1,5 @@
+T1	region 0 33	Rostral anterior cingulate cortex
+T2	physiology 63 96	repetitive TMS treatment response
+T3	disease 100 110	depression
+R1	associated_with Arg1:T1 Arg2:T2	
+R2	occurs_in Arg1:T2 Arg2:T3	

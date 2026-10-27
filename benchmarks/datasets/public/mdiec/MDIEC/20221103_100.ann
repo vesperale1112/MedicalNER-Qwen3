@@ -1,0 +1,13 @@
+T2	disease 52 73	myocardial infarction
+T3	disease 75 77	MI
+T4	disease 226 228	MI
+T5	disease 309 311	MI
+T6	disease 79 98	depressive disorder
+T8	Health_factors 273 286	health status
+T9	disease 141 157	cardiac symptoms
+T10	disease 159 169	disability
+T11	Health_factors 175 205	health related quality of life
+T12	disease 251 268	cardiac condition
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T1	Health_factors 102 115	health status
+T7	method 127 140	self reported

@@ -1,0 +1,13 @@
+T2	Health_factors 184 189	women
+T4	Health_factors 217 220	men
+T5	region 231 237	testes
+T6	disease 43 52	depressed
+T1	region 75 83	HPA-axis
+T7	region 135 143	HPG-axis
+T8	drug 171 180	androgens
+T3	region 197 204	adrenal	
+T9	Health_factors 53 58	males
+T10	Health_factors 63 70	females
+R3	characteristic_of Arg1:T1 Arg2:T6	
+R1	characteristic_of Arg1:T7 Arg2:T6	
+R2	associated_with Arg1:T8 Arg2:T3	

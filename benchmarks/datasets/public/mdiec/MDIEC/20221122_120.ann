@@ -1,0 +1,24 @@
+T1	disease 0 7	Obesity
+T3	Health_factors 9 31	educational attainment
+T4	Health_factors 33 43	body image
+T5	disease 45 57	binge eating
+T6	Health_factors 59 74	physical health
+T7	Health_factors 76 105	psychological characteristics
+T9	disease 197 204	obesity
+T10	disease 209 219	depression
+T11	Health_factors 110 137	interpersonal effectiveness
+R1	associated_with Arg1:T9 Arg2:T10	
+R2	associated_with Arg1:T1 Arg2:T10	
+R3	associated_with Arg1:T3 Arg2:T10	
+R4	associated_with Arg1:T4 Arg2:T10	
+R5	associated_with Arg1:T5 Arg2:T10	
+R6	associated_with Arg1:T6 Arg2:T10	
+R7	associated_with Arg1:T7 Arg2:T10	
+R8	associated_with Arg1:T11 Arg2:T10	
+R9	associated_with Arg1:T1 Arg2:T9	
+R10	associated_with Arg1:T3 Arg2:T9	
+R11	associated_with Arg1:T4 Arg2:T9	
+R12	associated_with Arg1:T5 Arg2:T9	
+R13	associated_with Arg1:T6 Arg2:T9	
+R14	associated_with Arg1:T7 Arg2:T9	
+R15	associated_with Arg1:T11 Arg2:T9	

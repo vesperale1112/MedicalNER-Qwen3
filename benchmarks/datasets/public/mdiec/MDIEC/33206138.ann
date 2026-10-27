@@ -1,0 +1,114 @@
+T0	method 15 55	Borderline Personality Disorder Criteria
+T2	disease 61 77	Suicide Attempts
+T3	method 97 154	Collaborative Longitudinal Study of Personality Disorders
+T4	method 172 181	Follow-up
+T5	disease 194 225	Borderline personality disorder
+T6	disease 227 230	BPD
+T7	disease 280 297	suicidal behavior
+T8	disease 309 325	suicide attempts
+T10	method 389 402	interventions
+T13	disease 474 490	suicide attempts
+T14	method 517 574	Collaborative Longitudinal Study of Personality Disorders
+T16	method 600 609	follow-up
+T17	disease 627 630	BPD
+T22	method 699 741	multisite, naturalistic, prospective study
+T23	disease 771 792	personality disorders
+T24	Health_factors 825 831	adults
+T25	disease 837 862	major depressive disorder
+T26	disease 875 877	PD
+T31	method 1192 1212	follow-up assessment
+T33	method 1218 1225	cohorts
+T36	method 1497 1533	semistructured diagnostic interviews
+T37	disease 1709 1712	BPD
+T38	method 1728 1740	BPD criteria
+T41	Health_factors 1660 1697	demographic and clinical risk factors
+T42	method 1799 1808	follow-up
+T43	Health_factors 1869 1875	female
+T44	Health_factors 1890 1895	White
+T45	Health_factors 1933 1943	unemployed
+T46	Health_factors 1982 1999	college education
+T47	disease 2019 2022	BPD
+T48	disease 2257 2279	childhood sexual abuse
+T49	disease 2281 2301	alcohol use disorder
+T51	disease 2303 2325	substance use disorder
+T52	disease 2331 2360	posttraumatic stress disorder
+T55	method 2116 2126	odds ratio
+T56	method 2128 2130	OR
+T57	method 2143 2145	CI
+T58	Health_factors 2198 2209	demographic
+T59	Health_factors 2211 2214	sex
+T60	Health_factors 2216 2226	employment
+T61	Health_factors 2232 2241	education
+T62	method 2377 2389	BPD criteria
+T63	method 2718 2730	BPD criteria
+T65	method 2413 2415	OR
+T66	method 2427 2429	CI
+T67	method 2474 2476	OR
+T68	method 2488 2490	CI
+T69	method 2546 2548	OR
+T70	method 2560 2562	CI
+T71	method 2658 2667	follow-up
+T73	method 2767 2796	multisite, longitudinal study
+T74	Health_factors 2800 2806	adults
+T75	disease 2812 2833	personality disorders
+T76	disease 2964 2980	suicide attempts
+T77	disease 3117 3120	BPD
+R1	associated_with Arg1:T0 Arg2:T2	
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+R3	hyponym_of Arg1:T8 Arg2:T7	
+R4	risk_factor_of Arg1:T5 Arg2:T7	
+R5	risk_factor_of Arg1:T6 Arg2:T7	
+R6	risk_factor_of Arg1:T5 Arg2:T8	
+R7	risk_factor_of Arg1:T6 Arg2:T8	
+T1	method 576 580	CLPS
+R8	abbreviation_for Arg1:T1 Arg2:T14	
+T9	method 635 647	BPD criteria
+T11	method 689 693	CLPS
+R9	hyponym_of Arg1:T11 Arg2:T22	
+T12	Health_factors 745 750	adult
+T15	disease 794 797	PDs
+R10	abbreviation_for Arg1:T15 Arg2:T23	
+R11	occurs_in Arg1:T12 Arg2:T23	
+R12	occurs_in Arg1:T12 Arg2:T15	
+R13	occurs_in Arg1:T24 Arg2:T25	
+R14	occurs_in Arg1:T24 Arg2:T26	
+T18	Health_factors 947 1000	inpatient, partial, and outpatient treatment settings
+T19	method 1351 1367	follow-up sample
+T20	method 1551 1571	self-report measures
+T21	method 1592 1629	Multiple logistic regression analyses
+R15	hyponym_of Arg1:T37 Arg2:T41	
+R16	hyponym_of Arg1:T38 Arg2:T41	
+T27	disease 1745 1760	suicide attempt
+T28	disease 2096 2111	suicide attempt
+R17	associated_with Arg1:T47 Arg2:T28	
+R18	abbreviation_for Arg1:T56 Arg2:T55	
+R19	hyponym_of Arg1:T59 Arg2:T58	
+R20	hyponym_of Arg1:T60 Arg2:T58	
+R21	hyponym_of Arg1:T61 Arg2:T58	
+T29	symptom 2391 2411	identity disturbance
+T30	symptom 2443 2472	chronic feelings of emptiness
+T32	symptom 2508 2544	frantic efforts to avoid abandonment
+R22	occurs_in Arg1:T62 Arg2:T29	
+T34	disease 2634 2649	suicide attempt
+R23	associated_with Arg1:T29 Arg2:T34	
+R24	associated_with Arg1:T30 Arg2:T34	
+R25	associated_with Arg1:T32 Arg2:T34	
+R26	occurs_in Arg1:T74 Arg2:T75	
+T35	symptom 2835 2855	identity disturbance
+T39	symptom 2857 2886	chronic feelings of emptiness
+T40	symptom 2892 2928	frantic efforts to avoid abandonment
+R27	occurs_in Arg1:T62 Arg2:T30	
+R28	occurs_in Arg1:T62 Arg2:T32	
+R29	occurs_in Arg1:T75 Arg2:T35	
+R30	occurs_in Arg1:T75 Arg2:T39	
+R31	occurs_in Arg1:T75 Arg2:T40	
+R32	associated_with Arg1:T35 Arg2:T76	
+R33	associated_with Arg1:T39 Arg2:T76	
+R34	associated_with Arg1:T40 Arg2:T76	
+T50	symptom 2982 3002	Identity disturbance
+T53	symptom 3004 3033	chronic feelings of emptiness
+T54	symptom 3039 3075	frantic efforts to avoid abandonment
+R35	characteristic_of Arg1:T50 Arg2:T77	
+R36	characteristic_of Arg1:T53 Arg2:T77	
+R37	characteristic_of Arg1:T54 Arg2:T77	
+T64	method 3135 3158	suicide risk assessment

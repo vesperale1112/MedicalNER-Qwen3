@@ -1,0 +1,25 @@
+T1	disease 0 30	Non-psychotic mental disorders
+T2	disease 56 72	Mental disorders
+T3	disease 331 361	non-psychotic mental disorders
+T4	disease 411 437	perinatal mental disorders
+T5	disease 666 686	postnatal depression
+T6	physiology 114 123	pregnancy
+T8	Health_factors 163 178	adverse effects
+T9	Health_factors 186 192	mother
+T10	Health_factors 198 203	child
+T11	method 265 277	epidemiology
+T13	method 313 326	interventions
+T15	physiology 540 549	pregnancy
+T16	method 574 602	randomised controlled trials
+T17	method 617 661	psychosocial and psychological interventions
+T19	method 826 852	pharmacological treatments
+T20	drug 954 959	drugs
+T21	Health_factors 967 983	perinatal period
+T24	Health_factors 860 876	perinatal period
+T26	Health_factors 132 148	postnatal period
+T27	Health_factors 38 54	perinatal period
+T28	disease 99 110	morbidities
+T7	method 376 389	phenomenology
+T12	Health_factors 554 567	breastfeeding
+R1	treatment_for Arg1:T17 Arg2:T5	
+T14	method 1002 1034	individual risk-benefit analyses

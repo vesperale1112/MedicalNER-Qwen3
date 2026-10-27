@@ -1,0 +1,7 @@
+T1	disease 80 90	depression
+T2	physiology 118 161	mbalances in adult hippocampal neurogenesis
+T3	disease 44 70	neuropsychiatric disorders
+R1	hyponym_of Arg1:T1 Arg2:T3	
+R2	associated_with Arg1:T1 Arg2:T2	
+R3	associated_with Arg1:T3 Arg2:T2	
+T4	method 17 32	pathophysiology

@@ -1,0 +1,60 @@
+T0	disease 64 80	bipolar disorder
+T2	disease 0 46	Continuum of depressive and manic mixed states
+T4	method 82 106	quantitative measurement
+T6	disease 130 150	Bipolar mixed states
+T8	disease 174 179	manic
+T9	disease 273 280	illness
+T12	disease 333 363	depressive and manic syndromes
+T13	method 282 297	DSM-IV criteria
+T16	disease 602 607	manic
+T17	disease 587 597	depressive
+T18	disease 685 701	bipolar disorder
+T21	method 703 709	DSM-IV
+T25	method 923 940	Mixed State Index
+T27	disease 1015 1048	manic and depressive mixed states
+T28	disease 1099 1124	Kraepelinian mixed states
+T30	disease 1163 1170	Anxiety
+T31	disease 1201 1211	depression
+T32	disease 1222 1227	manic
+T33	disease 1246 1251	mania
+T34	disease 1262 1271	depressed
+T35	disease 1354 1367	hyperactivity
+T40	disease 1401 1439	subjective depressive or elevated mood
+T41	disease 1372 1391	negative cognitions
+T42	method 1282 1312	Discriminant function analysis
+T44	disease 1478 1502	severe course of illness
+T46	disease 1508 1536	depressive or manic episodes
+T49	method 1633 1654	cross-sectional study
+T51	disease 1727 1756	depressive and manic symptoms
+T52	disease 1841 1868	depressive or manic episode
+T1	disease 159 169	depressive
+R1	associated_with Arg1:T6 Arg2:T1	
+R2	associated_with Arg1:T6 Arg2:T8	
+R3	occurs_in Arg1:T2 Arg2:T0	
+R4	associated_with Arg1:T30 Arg2:T31	
+R5	occurs_in Arg1:T31 Arg2:T32	
+R6	associated_with Arg1:T30 Arg2:T33	
+R7	occurs_in Arg1:T33 Arg2:T34	
+T3	disease 304 315	mixed state
+T5	disease 380 392	mixed states
+T7	disease 448 460	mixed states
+T10	disease 638 663	continuum of mixed states
+R8	associated_with Arg1:T17 Arg2:T10	
+R9	associated_with Arg1:T16 Arg2:T10	
+T11	disease 777 787	depression
+T14	disease 795 800	mania
+T15	disease 843 855	mixed states
+T19	method 942 945	MSI
+R10	abbreviation_for Arg1:T19 Arg2:T25	
+T20	method 1151 1154	MSI
+T22	disease 1324 1336	mixed states
+R11	associated_with Arg1:T22 Arg2:T35	
+R12	associated_with Arg1:T22 Arg2:T41	
+T23	method 1446 1449	MSI
+R13	associated_with Arg1:T23 Arg2:T44	
+T24	disease 1557 1569	mixed states
+T26	disease 1656 1668	Mixed states
+T29	disease 1814 1826	mixed states
+T36	disease 1956 1967	mixed state
+R14	characteristic_of Arg1:T52 Arg2:T36	
+R15	characteristic_of Arg1:T51 Arg2:T29	

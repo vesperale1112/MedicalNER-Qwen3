@@ -1,0 +1,8 @@
+T1	disease 13 27	Depressed mood
+T2	disease 45 51	stroke
+T5	disease 113 123	depression
+T6	Health_factors 127 143	stroke survivors
+T8	Health_factors 57 83	activities of daily living
+R1	associated_with Arg1:T1 Arg2:T2	
+R2	associated_with Arg1:T8 Arg2:T5	
+R3	occurs_in Arg1:T5 Arg2:T6	

@@ -1,0 +1,36 @@
+T0	disease 31 38	anxiety
+T1	disease 40 83	trauma-related and stress-related disorders
+T2	Health_factors 8 13	women
+T3	drug 107 119	sex hormones
+T4	disease 167 174	anxiety
+T5	disease 176 219	trauma-related and stress-related disorders
+T6	Health_factors 223 228	women
+T7	Health_factors 243 246	men
+T9	drug 362 372	oestradiol
+T10	drug 377 389	progesterone
+T11	drug 335 347	sex hormones
+T12	Health_factors 438 453	sex differences
+T15	drug 646 656	oestradiol
+T16	drug 661 673	progesterone
+T17	disease 703 720	anxiety disorders
+T18	disease 776 792	anxiety disorder
+T19	disease 845 861	anxious symptoms
+T21	drug 540 552	sex hormones
+T22	physiology 556 603	biological, behavioural, and cognitive pathways
+T23	Health_factors 684 699	sex differences
+T26	disease 996 1013	anxiety disorders
+R1	risk_factor_of Arg1:T2 Arg2:T0	
+R2	risk_factor_of Arg1:T2 Arg2:T1	
+R5	hyponym_of Arg1:T9 Arg2:T11	
+R6	hyponym_of Arg1:T10 Arg2:T11	
+R7	associated_with Arg1:T11 Arg2:T12	
+R8	associated_with Arg1:T9 Arg2:T12	
+R9	associated_with Arg1:T10 Arg2:T12	
+T8	method 949 992	psychological and pharmacological treatment
+R3	risk_factor_of Arg1:T6 Arg2:T5	
+R4	risk_factor_of Arg1:T6 Arg2:T4	
+R10	associated_with Arg1:T21 Arg2:T22	
+R12	associated_with Arg1:T16 Arg2:T23	
+R13	associated_with Arg1:T15 Arg2:T23	
+R14	occurs_in Arg1:T23 Arg2:T17	
+R11	treatment_for Arg1:T8 Arg2:T26	

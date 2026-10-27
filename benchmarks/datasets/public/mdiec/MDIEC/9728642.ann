@@ -1,0 +1,47 @@
+T0	drug 0 10	Paroxetine
+T1	disease 24 49	generalized social phobia
+T2	disease 51 74	social anxiety disorder
+T3	method 79 106	randomized controlled trial
+T4	disease 140 153	social phobia
+T5	disease 155 178	social anxiety disorder
+T6	disease 220 234	social anxiety
+T7	Health_factors 272 290	general population
+T9	drug 319 347	monoamine oxidase inhibitors
+T10	drug 351 366	benzodiazepines
+T15	drug 491 501	paroxetine
+T16	drug 505 543	selective serotonin reuptake inhibitor
+T18	Health_factors 561 567	adults
+T19	method 622 665	multicenter, randomized, double-blind trial
+T23	method 1013 1025	INTERVENTION
+T25	drug 1139 1149	paroxetine
+T28	drug 1205 1215	paroxetine
+T30	method 1545 1575	Liebowitz Social Anxiety Scale
+T35	drug 1634 1644	paroxetine
+T37	method 1755 1765	odds ratio
+T38	method 1767 1769	OR
+T39	method 1782 1801	confidence interval
+T40	method 1803 1805	CI
+T42	drug 1979 1989	paroxetine
+T43	drug 2158 2168	paroxetine
+T45	method 1825 1855	Liebowitz Social Anxiety Scale
+T46	method 1961 1970	follow-up
+T47	method 2073 2082	follow-up
+T48	method 2133 2135	CI
+T51	drug 2184 2194	Paroxetine
+T53	disease 2377 2387	disability
+T56	method 2500 2552	specific educational-cognitive-behavioral techniques
+R1	treatment_for Arg1:T0 Arg2:T1	
+R2	treatment_for Arg1:T0 Arg2:T2	
+R3	hyponym_of Arg1:T4 Arg2:T6	
+R4	hyponym_of Arg1:T5 Arg2:T6	
+T8	disease 573 598	generalized social phobia
+R5	occurs_in Arg1:T18 Arg2:T8	
+T11	method 818 896	Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition criteria
+T12	disease 901 926	generalized social phobia
+R6	help_diagnose Arg1:T11 Arg2:T12	
+T13	method 1418 1468	Clinical Global Impression Global Improvement Item
+R7	abbreviation_for Arg1:T38 Arg2:T37	
+R8	abbreviation_for Arg1:T40 Arg2:T39	
+T14	disease 2239 2264	generalized social phobia
+R9	treatment_for Arg1:T51 Arg2:T14	
+R10	hyponym_of Arg1:T15 Arg2:T16	

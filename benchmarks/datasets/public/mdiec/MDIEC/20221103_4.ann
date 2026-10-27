@@ -1,0 +1,20 @@
+T1	gene 0 30	C-X-C motif chemokine ligand 1
+T2	gene 32 37	CXCL1
+T3	gene 165 176	lenti-CXCL1
+T4	region 0 65	C-X-C motif chemokine ligand 1 (CXCL1)-related molecular networks
+T5	disease 82 107	depression-like behaviors
+T6	method 130 161	intrahippocampal microinjection
+T8	gene 213 245	C-X-C motif chemokine receptor 2
+T9	gene 247 252	CXCR2
+T10	drug 264 272	SB265610
+T11	gene 314 322	GSK3beta
+T12	drug 334 344	AR-A014418
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+T13	drug 197 207	fluoxetine
+T14	drug 213 263	C-X-C motif chemokine receptor 2 (CXCR2) inhibitor
+R3	abbreviation_for Arg1:T9 Arg2:T8	
+T15	gene 282 312	glycogen synthase kinase-3beta
+R5	abbreviation_for Arg1:T11 Arg2:T15	
+T16	drug 282 333	glycogen synthase kinase-3beta (GSK3beta) inhibitor
+R7	associated_with Arg1:T4 Arg2:T5	
+T7	drug 182 196	antidepressant

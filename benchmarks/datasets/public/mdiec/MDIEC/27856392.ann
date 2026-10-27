@@ -1,0 +1,27 @@
+T1	disease 7 17	depression
+T2	disease 112 122	depression
+T3	disease 273 283	depression
+T5	disease 561 571	depression
+T6	method 728 745	psychopathologies
+T10	Health_factors 36 41	women
+T11	Health_factors 53 56	men
+T12	Health_factors 58 63	Women
+T13	Health_factors 97 100	men
+T14	method 198 210	epidemiology
+T15	Health_factors 214 232	gender differences
+T16	disease 333 370	Gender-related subtypes of depression
+T19	Health_factors 1240 1243	men
+T20	Health_factors 1248 1253	women
+T23	physiology 919 942	psychological functions
+T24	Health_factors 892 910	gender differences
+T25	Health_factors 672 697	specific susceptibilities
+T27	Health_factors 321 331	gender gap
+T4	disease 408 429	developmental subtype
+T28	Health_factors 479 489	gender gap
+R2	associated_with Arg1:T4 Arg2:T28	
+T17	method 768 807	internalising and externalising spectra
+T26	method 831 865	Research Domain Criteria framework
+T18	Health_factors 1108 1118	gender gap
+T21	method 1219 1236	psychopathologies
+T22	method 1043 1076	socioeconomic and cultural trends
+R1	risk_factor_of Arg1:T12 Arg2:T2	

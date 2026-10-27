@@ -1,0 +1,75 @@
+T0	disease 54 94	attention-deficit/hyperactivity disorder
+T2	region 23 36	basal ganglia
+T3	Health_factors 40 48	children
+T4	disease 0 19	Functional deficits
+T5	disease 157 197	Attention-deficit/hyperactivity disorder
+T6	disease 234 259	neuropsychiatric disorder
+T9	Health_factors 286 305	school-age children
+T10	symptom 334 345	inattention
+T11	disease 347 360	hyperactivity
+T12	symptom 365 376	impulsivity
+T13	drug 430 445	methylphenidate
+T14	drug 449 466	dextroamphetamine
+T15	drug 579 587	dopamine
+T17	disease 499 534	deficit in corticostriatal circuits
+T22	region 724 731	caudate
+T23	region 736 743	putamen
+T24	Health_factors 767 770	age
+T25	disease 809 849	attention-deficit/hyperactivity disorder
+T32	drug 1109 1124	methylphenidate
+T33	disease 1203 1243	attention-deficit/hyperactivity disorder
+T36	Health_factors 1189 1197	children
+T37	Health_factors 1326 1331	child
+T41	region 1414 1427	right caudate
+T42	drug 1539 1554	methylphenidate
+T45	disease 1556 1605	Attention-deficit/hyperactivity disorder symptoms
+T46	disease 1629 1653	functional abnormalities
+T47	region 1661 1668	putamen
+T48	symptom 1716 1730	motor behavior
+R1	located_in Arg1:T4 Arg2:T2	
+R2	occurs_in Arg1:T3 Arg2:T0	
+T50	method 106 155	functional magnetic resonance imaging relaxometry
+T51	Health_factors 210 219	heritable
+R3	characteristic_of Arg1:T51 Arg2:T5	
+R4	hyponym_of Arg1:T5 Arg2:T6	
+R5	associated_with Arg1:T5 Arg2:T9	
+R6	treatment_for Arg1:T13 Arg2:T10	
+R7	treatment_for Arg1:T13 Arg2:T11	
+R8	treatment_for Arg1:T13 Arg2:T12	
+R9	treatment_for Arg1:T14 Arg2:T10	
+R10	treatment_for Arg1:T14 Arg2:T11	
+R11	treatment_for Arg1:T14 Arg2:T12	
+T1	method 468 488	Etiological theories
+T7	method 608 655	functional magnetic resonance imaging procedure
+T8	method 657 671	T2 relaxometry
+T16	signs 694 706	blood volume
+T18	region 714 722	striatum
+T19	Health_factors 748 752	boys
+R12	located_in Arg1:T16 Arg2:T18	
+R13	located_in Arg1:T16 Arg2:T22	
+R14	located_in Arg1:T16 Arg2:T23	
+R15	help_diagnose Arg1:T8 Arg2:T16	
+R16	help_diagnose Arg1:T7 Arg2:T16	
+T20	Health_factors 799 803	Boys
+R17	occurs_in Arg1:T20 Arg2:T25	
+T21	signs 861 888	T2 relaxation time measures
+R18	characteristic_of Arg1:T21 Arg2:T25	
+T26	region 896 915	putamen bilaterally
+R19	occurs_in Arg1:T21 Arg2:T26	
+T27	method 921 945	healthy control subjects
+T28	signs 947 963	Relaxation times
+T29	method 1059 1086	computerized attention task
+R20	associated_with Arg1:T28 Arg2:T29	
+T30	Health_factors 993 1022	child's capacity to sit still
+R21	associated_with Arg1:T28 Arg2:T30	
+T31	signs 1151 1170	T2 relaxation times
+T34	region 1178 1185	putamen
+R22	occurs_in Arg1:T31 Arg2:T34	
+R23	associated_with Arg1:T32 Arg2:T31	
+R25	occurs_in Arg1:T36 Arg2:T33	
+T35	signs 1429 1456	T2 relaxation time measures
+T38	region 1460 1468	thalamus
+R30	occurs_in Arg1:T35 Arg2:T38	
+R31	associated_with Arg1:T45 Arg2:T46	
+R32	located_in Arg1:T46 Arg2:T47	
+R33	associated_with Arg1:T47 Arg2:T48	

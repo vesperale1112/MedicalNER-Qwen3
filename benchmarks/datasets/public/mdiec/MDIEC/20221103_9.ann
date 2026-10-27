@@ -1,0 +1,21 @@
+T1	method 8 41	within-subject prospective design
+T2	drug 88 106	long-chain omega-3
+T3	drug 131 134	DHA
+T4	drug 160 163	EPA
+T6	drug 178 194	arachidonic acid
+T7	drug 197 199	AA
+T8	drug 201 229	di-homo-gamma-linolenic acid
+T9	drug 232 236	DGLA
+T10	drug 238 248	fatty acid
+T11	disease 304 315	hepatitis C
+T12	drug 108 128	docosahexaenoic acid
+R1	abbreviation_for Arg1:T3 Arg2:T12	
+T13	drug 136 157	eicosapentaenoic acid
+R2	abbreviation_for Arg1:T4 Arg2:T13	
+T14	drug 169 176	omega-6
+R7	abbreviation_for Arg1:T7 Arg2:T6	
+R10	abbreviation_for Arg1:T9 Arg2:T8	
+T15	physiology 276 300	depression vulnerability
+T16	gene 338 347	IFN-alpha
+R13	treatment_for Arg1:T16 Arg2:T11	
+R3	hyponym_of Arg1:T15 Arg2:T11	

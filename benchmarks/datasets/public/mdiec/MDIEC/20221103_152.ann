@@ -1,0 +1,7 @@
+T2	method 14 36	Measurement-based care
+T3	method 38 41	MBC
+T4	Health_factors 45 69	depression care managers
+T5	method 75 93	systematic metrics
+T6	Health_factors 102 129	HIV primary-care clinicians
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T1	method 130 167	standardized antidepressant treatment

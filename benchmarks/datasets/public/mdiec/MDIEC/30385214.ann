@@ -1,0 +1,32 @@
+T0	disease 73 80	anxiety
+T1	disease 82 121	trauma-related, and addiction disorders
+T2	physiology 0 6	Memory
+T3	physiology 48 63	reconsolidation
+T4	method 315 330	psychopathology
+T8	physiology 474 480	memory
+T9	physiology 433 455	hypothetical processes
+T10	physiology 385 407	memory reconsolidation
+T11	disease 657 661	fear
+T12	disease 663 688	anxiety-related disorders
+T13	disease 694 703	addiction
+T14	disease 748 767	disorders of memory
+T16	Health_factors 626 633	animals
+T17	physiology 562 584	memory reconsolidation
+T19	method 829 855	novel treatment techniques
+T23	method 888 913	behavioural interventions
+T25	Health_factors 1189 1209	clinical populations
+T27	method 1365 1382	clinical research
+T28	method 1460 1481	psychological science
+T6	physiology 184 192	memories
+R1	associated_with Arg1:T10 Arg2:T9	
+T5	Health_factors 609 615	humans
+R2	associated_with Arg1:T11 Arg2:T14	
+R3	associated_with Arg1:T12 Arg2:T14	
+R4	associated_with Arg1:T13 Arg2:T14	
+T7	physiology 926 941	reconsolidation
+T15	method 959 990	retrieval-extinction techniques
+R5	hyponym_of Arg1:T15 Arg2:T23	
+T18	method 1050 1070	memory modifications
+T20	physiology 1089 1104	reconsolidation
+T21	method 1151 1183	reconsolidation-based strategies
+T22	method 1297 1329	reconsolidation-based approaches

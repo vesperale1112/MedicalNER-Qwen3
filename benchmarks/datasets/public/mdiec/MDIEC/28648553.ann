@@ -1,0 +1,61 @@
+T1	drug 0 12	Escitalopram
+T2	disease 56 81	Major Depression Disorder
+T3	disease 83 86	MDD
+T4	disease 348 351	MDD
+T5	drug 377 389	escitalopram
+T7	disease 531 534	MDD
+T8	method 557 581	escitalopram monotherapy
+T10	physiology 936 938	AR
+T11	drug 1366 1378	escitalopram
+T13	drug 1614 1626	escitalopram
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+#2	AnnotatorNotes T2	C1269683
+T6	signs 452 487	serum concentration of escitalopram
+T14	signs 489 492	SCE
+R3	abbreviation_for Arg1:T14 Arg2:T6	
+T15	physiology 498 521	antidepressant response
+T16	physiology 523 525	AR
+R4	abbreviation_for Arg1:T16 Arg2:T15	
+#3	AnnotatorNotes T15	C3549249
+T17	method 628 665	Hamilton Depression Rating Scale - 21
+T18	method 667 674	HAMD-21
+R6	abbreviation_for Arg1:T18 Arg2:T17	
+T20	method 776 802	Linear regression analysis
+#4	AnnotatorNotes T20	C0023733
+T21	method 807 841	nonlinear least-squares regression
+T22	signs 928 931	SCE
+R8	associated_with Arg1:T22 Arg2:T10	
+T23	physiology 31 54	antidepressant response
+#5	AnnotatorNotes T23	C3549249
+T9	method 1431 1457	nearly-asymptotic function
+T12	method 180 196	pharmacokinetics
+T19	signs 884 887	SCE
+T24	physiology 892 894	AR
+T25	method 1207 1227	curvilinear function
+T26	method 1306 1325	linear other models
+T27	signs 1403 1406	SCE
+T28	physiology 1411 1413	AR
+R7	associated_with Arg1:T27 Arg2:T28	
+T29	symptom 1464 1471	poor AR
+T32	region 272 278	plasma
+R9	treatment_for Arg1:T5 Arg2:T4	
+T33	physiology 738 740	AR
+T34	signs 742 745	SCE
+T35	signs 1035 1038	SCE
+T36	signs 1093 1096	SCE
+T37	signs 1120 1123	SCE
+T38	physiology 1228 1230	AR
+T39	signs 1238 1241	SCE
+T40	signs 1242 1246	SCE2
+T41	signs 1475 1494	sub-therapeutic SCE
+T42	physiology 1506 1517	AR response
+T43	signs 1533 1536	SCE
+T45	signs 1571 1586	therapeutic SCE
+T30	method 201 217	pharmacodynamics
+T31	method 221 236	drug treatments
+R2	treatment_for Arg1:T8 Arg2:T7	
+T44	drug 327 343	first-line drugs
+R5	hyponym_of Arg1:T5 Arg2:T44	
+R10	help_diagnose Arg1:T18 Arg2:T33	
+R11	help_diagnose Arg1:T17 Arg2:T33	
+T46	region 13 19	plasma

@@ -1,0 +1,9 @@
+T1	disease 77 87	depression
+T2	Health_factors 95 110	distractability
+T3	disease 112 155	impaired short-term memory or concentration
+T5	Health_factors 157 171	indecisiveness
+R1	characteristic_of Arg1:T2 Arg2:T1	
+R2	characteristic_of Arg1:T3 Arg2:T1	
+R3	characteristic_of Arg1:T5 Arg2:T1	
+T4	method 213 235	ERP scalp distribution
+T6	Health_factors 186 189	age

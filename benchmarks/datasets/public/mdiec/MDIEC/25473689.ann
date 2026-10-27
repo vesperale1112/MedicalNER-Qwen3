@@ -1,0 +1,82 @@
+T1	disease 62 92	Post-Traumatic Stress Disorder
+T3	disease 123 133	Depression
+T4	disease 185 215	Post-traumatic stress disorder
+T5	disease 217 221	PTSD
+T6	disease 224 248	general anxiety disorder
+T7	disease 250 253	GAD
+T8	disease 260 285	major depression disorder
+T9	disease 287 290	MDD
+T10	disease 303 325	debilitating disorders
+T11	disease 1137 1144	phobias
+T12	disease 1146 1153	anxiety
+T13	disease 1647 1651	PTSD
+T14	disease 1653 1656	GAD
+T15	disease 1661 1671	depression
+T2	disease 94 118	General Anxiety Disorder
+#1	AnnotatorNotes T2	C0270549
+#2	AnnotatorNotes T1	C0038436
+#3	AnnotatorNotes T3	C0011581
+R1	abbreviation_for Arg1:T5 Arg2:T4	
+R2	abbreviation_for Arg1:T7 Arg2:T6	
+R3	abbreviation_for Arg1:T9 Arg2:T8	
+R4	hyponym_of Arg1:T8 Arg2:T10	
+R5	hyponym_of Arg1:T6 Arg2:T10	
+R6	hyponym_of Arg1:T4 Arg2:T10	
+T16	method 0 28	Neuro-Linguistic Programming
+T17	method 500 513	psychotherapy
+T18	method 515 540	electroconvulsive therapy
+T19	method 542 575	transcranial magnetic stimulation
+T20	method 577 600	vagus nerve stimulation
+T21	method 602 624	deep brain stimulation
+T22	method 630 658	neuro-linguistic programming
+T23	method 660 663	NLP
+R10	abbreviation_for Arg1:T23 Arg2:T22	
+#4	AnnotatorNotes T17	C0033968
+#5	AnnotatorNotes T16	C0683473
+#6	AnnotatorNotes T22	C0683473
+#7	AnnotatorNotes T18	C0013806
+#8	AnnotatorNotes T20	C2350432
+#9	AnnotatorNotes T19	C0436548
+#10	AnnotatorNotes T21	C0394162
+T24	method 707 710	NLP
+T25	method 873 876	NLP
+T26	disease 1158 1168	depression
+#11	AnnotatorNotes T11	C0031572
+#12	AnnotatorNotes T12	C0003467
+T27	method 1170 1173	NLP
+T28	method 1639 1642	NLP
+T29	method 1713 1716	NLP
+#13	AnnotatorNotes T8	C1269683
+T30	method 436 459	pharmacologic treatment
+T31	method 1468 1484	Therapy sessions
+R14	hyponym_of Arg1:T5 Arg2:T10	
+R15	hyponym_of Arg1:T7 Arg2:T10	
+R16	hyponym_of Arg1:T9 Arg2:T10	
+T36	method 471 491	treatment modalities
+R17	hyponym_of Arg1:T17 Arg2:T36	
+R18	hyponym_of Arg1:T18 Arg2:T36	
+R19	hyponym_of Arg1:T19 Arg2:T36	
+R20	hyponym_of Arg1:T20 Arg2:T36	
+R21	hyponym_of Arg1:T21 Arg2:T36	
+R22	hyponym_of Arg1:T22 Arg2:T36	
+R23	hyponym_of Arg1:T23 Arg2:T36	
+T37	physiology 832 855	psychological responses
+T38	physiology 929 951	neurological processes
+T39	Health_factors 961 969	language
+R24	associated_with Arg1:T38 Arg2:T39	
+T40	Health_factors 987 1006	behavioral patterns
+T41	Health_factors 1265 1274	physician
+T42	method 1673 1698	Evidence-based guidelines
+T43	Health_factors 50 56	Adults
+T44	method 716 737	therapeutic technique
+R33	hyponym_of Arg1:T24 Arg2:T44	
+T47	Health_factors 1090 1099	education
+T48	Health_factors 1080 1088	business
+T32	method 1179 1204	multi-dimensional process
+R26	hyponym_of Arg1:T27 Arg2:T32	
+T49	physiology 1433 1441	thinking
+R7	treatment_for Arg1:T16 Arg2:T1	
+R8	treatment_for Arg1:T16 Arg2:T2	
+R9	treatment_for Arg1:T16 Arg2:T3	
+R27	associated_with Arg1:T39 Arg2:T40	
+R28	associated_with Arg1:T24 Arg2:T37	

@@ -1,0 +1,79 @@
+T0	disease 23 42	generalized anxiety
+T1	disease 46 60	panic disorder
+T3	method 67 114	Rational Clinical Examination systematic review
+T5	disease 153 181	generalized anxiety disorder
+T6	disease 183 186	GAD
+T7	disease 192 206	panic disorder
+T11	disease 309 312	GAD
+T12	disease 317 331	panic disorder
+T13	method 283 304	screening instruments
+T15	method 412 433	systematically review
+T18	disease 498 501	GAD
+T19	disease 506 520	panic disorder
+T20	Health_factors 524 530	adults
+T21	method 450 483	self-report screening instruments
+T22	method 559 566	MEDLINE
+T23	method 568 576	PsycINFO
+T24	method 586 602	Cochrane Library
+T25	method 683 702	Prospective studies
+T28	disease 779 782	GAD
+T29	disease 786 800	panic disorder
+T31	method 854 907	Diagnostic and Statistical Manual of Mental Disorders
+T32	method 911 960	International Classification of Diseases criteria
+T33	Health_factors 830 847	trained clinician
+T35	method 742 774	self-report screening instrument
+T36	gene 1168 1171	GAD
+T37	disease 1176 1190	panic disorder
+T38	disease 1323 1326	GAD
+T39	disease 1382 1396	panic disorder
+T42	method 1236 1257	diagnostic interviews
+T46	disease 1427 1430	GAD
+T47	method 1439 1480	Generalized Anxiety Disorder Scale 7 Item
+T48	method 1482 1487	GAD-7
+T49	method 1535 1537	CI
+T50	method 1593 1595	CI
+T51	disease 1638 1652	panic disorder
+T54	method 1735 1737	CI
+T55	method 1792 1794	CI
+T56	method 1753 1778	negative likelihood ratio
+T57	method 1698 1723	positive likelihood ratio
+T58	method 1661 1689	Patient Health Questionnaire
+T60	method 1840 1861	screening instruments
+T61	method 1867 1872	GAD-7
+T62	disease 1877 1880	GAD
+T64	method 1889 1917	Patient Health Questionnaire
+T65	disease 1922 1936	panic disorder
+T66	method 2004 2016	primary care
+T2	method 130 151	primary care settings
+R1	abbreviation_for Arg1:T6 Arg2:T5	
+R2	occurs_in Arg1:T19 Arg2:T20	
+R3	occurs_in Arg1:T18 Arg2:T20	
+R4	help_diagnose Arg1:T21 Arg2:T18	
+R5	help_diagnose Arg1:T21 Arg2:T19	
+R6	help_diagnose Arg1:T35 Arg2:T28	
+R7	help_diagnose Arg1:T35 Arg2:T29	
+R8	help_diagnose Arg1:T33 Arg2:T28	
+R9	help_diagnose Arg1:T33 Arg2:T29	
+R10	help_diagnose Arg1:T31 Arg2:T28	
+R11	help_diagnose Arg1:T31 Arg2:T29	
+R12	help_diagnose Arg1:T32 Arg2:T28	
+R13	help_diagnose Arg1:T32 Arg2:T29	
+T4	method 1081 1102	screening instruments
+R14	help_diagnose Arg1:T4 Arg2:T36	
+R15	help_diagnose Arg1:T4 Arg2:T37	
+T9	Health_factors 1194 1215	primary care patients
+R16	occurs_in Arg1:T37 Arg2:T9	
+R17	occurs_in Arg1:T36 Arg2:T9	
+R18	help_diagnose Arg1:T42 Arg2:T38	
+R19	help_diagnose Arg1:T42 Arg2:T39	
+R20	abbreviation_for Arg1:T48 Arg2:T47	
+T8	method 1497 1522	positive likelihood ratio
+T10	method 1554 1579	negative likelihood ratio
+R21	help_diagnose Arg1:T47 Arg2:T46	
+R22	help_diagnose Arg1:T48 Arg2:T46	
+R23	help_diagnose Arg1:T58 Arg2:T51	
+R24	hyponym_of Arg1:T61 Arg2:T60	
+R25	help_diagnose Arg1:T61 Arg2:T62	
+R26	help_diagnose Arg1:T64 Arg2:T65	
+R27	hyponym_of Arg1:T64 Arg2:T60	
+T14	Health_factors 2134 2157	primary care population

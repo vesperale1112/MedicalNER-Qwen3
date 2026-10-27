@@ -1,0 +1,21 @@
+T1	drug 17 28	medications
+T2	drug 30 42	pioglitazone
+T3	drug 44 53	metformin
+T4	drug 66 78	atorvastatin
+T5	disease 152 171	metabolic disorders
+T7	disease 208 218	depression
+T8	method 228 265	randomized controlled clinical trials
+T9	drug 55 64	exenatide
+T10	drug 80 105	gram-negative antibiotics
+R6	treatment_for Arg1:T2 Arg2:T5	
+R7	treatment_for Arg1:T3 Arg2:T5	
+R8	treatment_for Arg1:T9 Arg2:T5	
+R9	treatment_for Arg1:T4 Arg2:T5	
+R10	treatment_for Arg1:T10 Arg2:T5	
+R11	treatment_for Arg1:T2 Arg2:T7	
+R12	treatment_for Arg1:T3 Arg2:T7	
+R13	treatment_for Arg1:T9 Arg2:T7	
+R14	treatment_for Arg1:T4 Arg2:T7	
+R15	treatment_for Arg1:T10 Arg2:T7	
+R16	treatment_for Arg1:T1 Arg2:T5	
+R17	treatment_for Arg1:T1 Arg2:T7	

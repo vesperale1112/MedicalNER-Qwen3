@@ -1,0 +1,16 @@
+T1	method 12 34	Deep brain stimulation
+T2	method 36 39	DBS
+T3	region 48 100	supero-lateral branch of the medial forebrain bundle
+T5	disease 112 142	treatment-resistant depression
+T6	disease 144 147	TRD
+T7	physiology 168 196	acute antidepressant effects
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+T4	region 102 107	slMFB
+R2	abbreviation_for Arg1:T4 Arg2:T3	
+R3	abbreviation_for Arg1:T6 Arg2:T5	
+R4	associated_with Arg1:T1 Arg2:T7	
+R5	associated_with Arg1:T2 Arg2:T7	
+R8	treatment_for Arg1:T2 Arg2:T5	
+R9	treatment_for Arg1:T2 Arg2:T6	
+R10	treatment_for Arg1:T1 Arg2:T6	
+R11	treatment_for Arg1:T1 Arg2:T5	

@@ -1,0 +1,5 @@
+T2	disease 64 75	comorbidity
+T3	Health_factors 77 105	18-39-year-old men and women
+T5	disease 158 168	depression
+T1	Health_factors 32 36	aged
+R1	risk_factor_of Arg1:T3 Arg2:T5	

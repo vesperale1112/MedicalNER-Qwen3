@@ -1,0 +1,1 @@
+MDD risk scores calculated at age 12 were positively associated with levels of suPAR (but not CRP or IL-6) at age 18 after adjusting for key covariates (b = 1.70, 95% CI = 0.46 - 2.95, p=.007).

@@ -1,0 +1,66 @@
+T1	disease 12 28	major depression
+T2	disease 127 152	Major depression disorder
+T3	disease 154 157	MDD
+T4	disease 188 204	mental disorders
+T5	disease 227 237	depression
+T6	disease 306 316	depression
+T7	disease 705 715	depression
+T8	disease 783 797	MDD depression
+T9	disease 1680 1683	MDD
+T10	method 65 68	EEG
+T11	method 70 82	eye tracking
+T12	physiology 87 109	galvanic skin response
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	hyponym_of Arg1:T2 Arg2:T4	
+T14	method 421 448	machine learning approaches
+T15	method 475 497	Electroencephalography
+T16	method 499 502	EEG
+R4	abbreviation_for Arg1:T16 Arg2:T15	
+T17	method 587 623	multimodal machine learning approach
+T18	method 634 637	EEG
+#1	AnnotatorNotes T15	C0013819
+#2	AnnotatorNotes T16	C0013819
+T19	method 639 651	eye tracking
+T20	physiology 656 678	galvanic skin response
+#3	AnnotatorNotes T20	C0016989
+#4	AnnotatorNotes T19	C5392849
+T22	method 932 935	EEG
+T23	method 937 949	eye tracking
+T24	physiology 966 988	galvanic skin response
+T25	method 1050 1077	machine learning algorithms
+T26	method 1088 1102	Random Forests
+T27	method 1104 1123	Logistic Regression
+T28	method 1128 1150	Support Vector Machine
+T29	method 1152 1155	SVM
+R5	abbreviation_for Arg1:T29 Arg2:T28	
+T30	method 1179 1211	dichotomous classification model
+R6	hyponym_of Arg1:T26 Arg2:T25	
+R7	hyponym_of Arg1:T27 Arg2:T25	
+R8	hyponym_of Arg1:T28 Arg2:T25	
+R9	hyponym_of Arg1:T29 Arg2:T25	
+#5	AnnotatorNotes T25	C0376284
+#6	AnnotatorNotes T28	C2699740
+#7	AnnotatorNotes T29	C2699740
+#8	AnnotatorNotes T27	C0206031
+T31	method 1298 1328	Logistic Regression algorithms
+T32	method 1617 1642	machine learning approach
+R10	help_diagnose Arg1:T32 Arg2:T9	
+R11	help_diagnose Arg1:T17 Arg2:T7	
+R12	help_diagnose Arg1:T10 Arg2:T1	
+R13	help_diagnose Arg1:T11 Arg2:T1	
+R14	help_diagnose Arg1:T12 Arg2:T1	
+R15	help_diagnose Arg1:T18 Arg2:T7	
+R16	help_diagnose Arg1:T19 Arg2:T7	
+R17	help_diagnose Arg1:T20 Arg2:T7	
+T33	method 1273 1275	f1
+T34	method 1394 1396	f1
+T13	method 508 520	neuroimaging
+T35	method 42 58	healthy controls
+T36	method 729 745	healthy controls
+T37	method 823 839	healthy controls
+T38	method 1697 1713	healthy controls
+T39	Health_factors 1570 1584	elder patients
+T42	Health_factors 1550 1561	young adult
+R3	hyponym_of Arg1:T3 Arg2:T4	
+T21	Health_factors 1428 1449	hospitalized patients
+T40	Health_factors 1471 1482	outpatients

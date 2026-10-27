@@ -1,0 +1,16 @@
+T1	disease 21 57	perinatal mood and anxiety disorders
+T4	Health_factors 95 100	women
+T5	Health_factors 111 119	children
+T6	Health_factors 152 182	poor adherence to medical care
+T7	disease 200 218	medical conditions
+T9	Health_factors 267 292	smoking and substance use
+T10	disease 294 301	suicide
+T3	Health_factors 220 265	loss of interpersonal and financial resources
+T11	Health_factors 307 318	infanticide
+R1	risk_factor_of Arg1:T1 Arg2:T6	
+R2	risk_factor_of Arg1:T1 Arg2:T7	
+R3	risk_factor_of Arg1:T1 Arg2:T3	
+R5	risk_factor_of Arg1:T1 Arg2:T9	
+R6	risk_factor_of Arg1:T1 Arg2:T10	
+R7	risk_factor_of Arg1:T1 Arg2:T11	
+T2	Health_factors 76 91	adverse effects

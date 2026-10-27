@@ -1,0 +1,76 @@
+T0	disease 67 96	Obsessive-Compulsive Disorder
+T1	disease 101 117	Anorexia Nervosa
+T3	method 0 29	Cognitive Remediation Therapy
+T4	method 121 148	Randomized Controlled Trial
+T5	disease 239 268	obsessive-compulsive disorder
+T6	disease 270 273	OCD
+T7	disease 279 295	anorexia nervosa
+T8	disease 297 299	AN
+T10	method 161 192	Guideline-recommended therapies
+T18	symptom 332 355	Cognitive inflexibility
+T20	method 499 528	Cognitive remediation therapy
+T22	symptom 603 628	impairing cognitive style
+T24	method 638 663	disorder-specific therapy
+T25	method 550 575	augmentation intervention
+T27	method 788 817	specialized attention therapy
+T28	method 839 857	treatment as usual
+T29	method 859 862	TAU
+T33	disease 953 956	OCD
+T35	method 1053 1056	TAU
+T36	method 880 928	randomized controlled multicenter clinical trial
+T37	disease 1219 1222	OCD
+T39	disease 1277 1279	AN
+T40	method 1231 1272	Eating Disorder Examination Questionnaire
+T41	method 1177 1214	Yale-Brown Obsessive Compulsive Scale
+T44	method 1329 1336	CRT+TAU
+T45	method 1375 1384	(SAT)+TAU
+T46	disease 1397 1400	OCD
+T50	disease 1525 1528	OCD
+T51	method 1445 1452	SAT+TAU
+T52	method 1487 1494	CRT+TAU
+T54	method 1578 1581	TAU
+T55	disease 1586 1589	OCD
+T56	disease 1700 1703	OCD
+T57	method 1693 1696	TAU
+T59	disease 1854 1857	OCD
+T60	disease 1862 1864	AN
+T61	method 1825 1837	intervention
+T62	Health_factors 1842 1848	adults
+R1	abbreviation_for Arg1:T6 Arg2:T5	
+R2	abbreviation_for Arg1:T8 Arg2:T7	
+R3	treatment_for Arg1:T10 Arg2:T5	
+R4	treatment_for Arg1:T10 Arg2:T6	
+R5	treatment_for Arg1:T10 Arg2:T7	
+R6	treatment_for Arg1:T10 Arg2:T8	
+T2	method 530 533	CRT
+R7	abbreviation_for Arg1:T2 Arg2:T20	
+R8	hyponym_of Arg1:T20 Arg2:T25	
+R9	hyponym_of Arg1:T2 Arg2:T25	
+R10	treatment_for Arg1:T20 Arg2:T22	
+R11	treatment_for Arg1:T2 Arg2:T22	
+T9	method 709 712	CRT
+T11	method 819 822	SAT
+R12	abbreviation_for Arg1:T11 Arg2:T27	
+R13	abbreviation_for Arg1:T29 Arg2:T28	
+T12	Health_factors 933 938	adult
+R14	occurs_in Arg1:T12 Arg2:T33	
+T13	disease 969 971	AN
+R15	occurs_in Arg1:T12 Arg2:T13	
+T14	method 1029 1032	CRT
+T15	method 1036 1039	SAT
+T16	method 1100 1103	CRT
+T17	method 1104 1107	SAT
+R16	help_diagnose Arg1:T41 Arg2:T37	
+R17	help_diagnose Arg1:T40 Arg2:T39	
+T19	disease 1405 1407	AN
+R18	treatment_for Arg1:T51 Arg2:T50	
+T21	method 1544 1547	CRT
+T23	disease 1594 1596	AN
+T26	method 1607 1610	SAT
+T30	method 1626 1629	SAT
+R19	treatment_for Arg1:T30 Arg2:T56	
+T31	method 1786 1789	SAT
+R20	occurs_in Arg1:T62 Arg2:T59	
+R21	occurs_in Arg1:T62 Arg2:T60	
+R22	treatment_for Arg1:T31 Arg2:T59	
+R23	treatment_for Arg1:T31 Arg2:T60	

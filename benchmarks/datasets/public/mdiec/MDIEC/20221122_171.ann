@@ -1,0 +1,14 @@
+T1	method 53 77	general population study
+T2	disease 109 129	psychiatric symptoms
+T3	disease 168 175	anxiety
+T5	disease 177 194	suicidal ideation
+T6	disease 200 215	anxiety attacks
+T7	Health_factors 220 226	adults
+T8	disease 156 166	depression
+T9	method 21 34	questionnaire
+T10	Health_factors 91 104	social habits
+T4	Health_factors 246 259	history of AD
+R1	occurs_in Arg1:T6 Arg2:T7	
+R2	occurs_in Arg1:T5 Arg2:T7	
+R3	occurs_in Arg1:T3 Arg2:T7	
+R4	occurs_in Arg1:T8 Arg2:T7	

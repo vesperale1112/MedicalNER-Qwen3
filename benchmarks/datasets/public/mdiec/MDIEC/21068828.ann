@@ -1,0 +1,30 @@
+T0	disease 20 33	schizophrenia
+T1	Health_factors 4 15	environment
+T3	disease 35 54	Psychotic syndromes
+T5	Health_factors 103 117	social context
+T7	Health_factors 128 140	heritability
+T8	Health_factors 187 208	environmental factors
+T10	Health_factors 303 315	cannabis use
+T11	region 379 393	'social' brain
+T12	Health_factors 401 418	sensitive periods
+T14	Health_factors 239 273	growing up in an urban environment
+T15	Health_factors 217 237	early life adversity
+T16	Health_factors 430 442	heritability
+T17	Health_factors 459 476	genetic influence
+T18	Health_factors 563 577	social effects
+T22	Health_factors 622 648	gene-environment interplay
+T24	Health_factors 704 722	general population
+T26	disease 745 767	severe psychopathology
+T28	method 579 600	Longitudinal research
+R1	hyponym_of Arg1:T15 Arg2:T8	
+R2	hyponym_of Arg1:T14 Arg2:T8	
+T2	Health_factors 275 298	minority group position
+R3	hyponym_of Arg1:T2 Arg2:T8	
+R4	hyponym_of Arg1:T10 Arg2:T8	
+R5	associated_with Arg1:T8 Arg2:T11	
+R6	associated_with Arg1:T15 Arg2:T11	
+R7	associated_with Arg1:T14 Arg2:T11	
+R8	associated_with Arg1:T2 Arg2:T11	
+R9	associated_with Arg1:T10 Arg2:T11	
+R10	associated_with Arg1:T3 Arg2:T5	
+R11	associated_with Arg1:T16 Arg2:T17	

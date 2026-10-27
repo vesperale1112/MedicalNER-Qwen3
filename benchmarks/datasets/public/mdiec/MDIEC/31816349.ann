@@ -1,0 +1,87 @@
+T1	disease 50 93	psychiatric and neurodegenerative disorders
+T2	disease 294 332	central nervous system (CNS) disorders
+T3	disease 783 796	CNS disorders
+T4	disease 860 880	cognitive impairment
+T5	disease 886 899	CNS disorders
+T6	disease 908 933	Major depression disorder
+T7	disease 935 938	MDD
+T8	disease 941 957	Bipolar disorder
+T9	disease 959 961	BD
+T10	disease 964 977	Schizophrenia
+T11	disease 979 981	SZ
+T12	disease 984 1003	Alzheimer's disease
+T13	disease 1005 1007	AD
+T14	disease 1013 1030	Parkinson disease
+T15	disease 1032 1034	PD
+T16	gene 1171 1181	miR-132-3p
+T17	disease 1241 1254	CNS disorders
+T18	gene 0 21	Circulating microRNAs
+R1	characteristic_of Arg1:T18 Arg2:T1	
+T19	gene 95 116	Circulating microRNAs
+T20	gene 118 126	cimiRNAs
+R2	abbreviation_for Arg1:T20 Arg2:T19	
+T21	gene 143 160	non-encoding RNAs
+R3	hyponym_of Arg1:T20 Arg2:T21	
+R4	hyponym_of Arg1:T19 Arg2:T21	
+T22	region 192 197	blood
+T23	region 199 218	cerebrospinal fluid
+T24	region 220 223	CSF
+R5	abbreviation_for Arg1:T24 Arg2:T23	
+T25	region 229 234	tears
+T26	region 170 183	bodily fluids
+R6	hyponym_of Arg1:T22 Arg2:T26	
+R7	hyponym_of Arg1:T23 Arg2:T26	
+R8	hyponym_of Arg1:T24 Arg2:T26	
+R9	hyponym_of Arg1:T25 Arg2:T26	
+T27	gene 236 244	CimiRNAs
+R10	characteristic_of Arg1:T27 Arg2:T2	
+T28	region 294 316	central nervous system
+T29	region 318 321	CNS
+R11	abbreviation_for Arg1:T29 Arg2:T28	
+T30	method 646 670	comprehensive assessment
+T31	gene 728 736	cimiRNAs
+T32	signs 740 754	CNS biomarkers
+R13	hyponym_of Arg1:T6 Arg2:T5	
+R14	abbreviation_for Arg1:T7 Arg2:T6	
+R15	hyponym_of Arg1:T7 Arg2:T5	
+R16	abbreviation_for Arg1:T9 Arg2:T8	
+R17	hyponym_of Arg1:T8 Arg2:T5	
+R18	hyponym_of Arg1:T9 Arg2:T5	
+R19	abbreviation_for Arg1:T11 Arg2:T10	
+R20	hyponym_of Arg1:T10 Arg2:T5	
+R21	hyponym_of Arg1:T11 Arg2:T5	
+R22	abbreviation_for Arg1:T13 Arg2:T12	
+R23	abbreviation_for Arg1:T15 Arg2:T14	
+R24	hyponym_of Arg1:T12 Arg2:T5	
+R25	hyponym_of Arg1:T13 Arg2:T5	
+R26	hyponym_of Arg1:T14 Arg2:T5	
+R27	hyponym_of Arg1:T15 Arg2:T5	
+T33	symptom 1078 1094	altered cimiRNAs
+T35	gene 1141 1147	miR-29
+T36	gene 1156 1166	miR-34a-5p
+T37	gene 1206 1227	dysregulated cimiRNAs
+T38	region 1298 1310	bodily fluid
+T39	gene 1330 1338	cimiRNAs
+T40	physiology 1374 1393	cimiRNAs expression
+T41	region 1430 1433	CSF
+T42	region 1435 1450	blood cell-free
+T43	region 1455 1471	blood cell-bound
+R30	hyponym_of Arg1:T16 Arg2:T37	
+R31	hyponym_of Arg1:T36 Arg2:T37	
+#1	AnnotatorNotes T4	C4062278
+T44	signs 35 45	biomarkers
+R32	hyponym_of Arg1:T18 Arg2:T44	
+T45	signs 279 289	biomarkers
+R33	hyponym_of Arg1:T27 Arg2:T45	
+T46	physiology 428 471	developmental and differentiation processes
+T47	signs 506 516	biomarkers
+R34	hyponym_of Arg1:T35 Arg2:T37	
+R36	associated_with Arg1:T27 Arg2:T46	
+T34	region 552 558	tissue
+R12	characteristic_of Arg1:T4 Arg2:T3	
+R35	characteristic_of Arg1:T37 Arg2:T17	
+R28	located_in Arg1:T21 Arg2:T26	
+R29	hyponym_of Arg1:T31 Arg2:T32	
+R37	characteristic_of Arg1:T35 Arg2:T17	
+R38	characteristic_of Arg1:T36 Arg2:T17	
+R39	characteristic_of Arg1:T16 Arg2:T17	

@@ -1,0 +1,14 @@
+T1	method 19 58	pragmatic retrospective cohort analysis
+T3	disease 99 109	depression
+T4	disease 117 133	anxiety symptoms
+T6	method 162 192	Patient Health Questionnaire-9
+T7	method 194 199	PHQ-9
+T8	method 261 297	blended care psychotherapy treatment
+R1	abbreviation_for Arg1:T7 Arg2:T6	
+T2	method 205 235	Generalized Anxiety Disorder-7
+T5	method 237 242	GAD-7
+R2	abbreviation_for Arg1:T5 Arg2:T2	
+R3	help_diagnose Arg1:T6 Arg2:T3	
+R4	help_diagnose Arg1:T7 Arg2:T3	
+R5	help_diagnose Arg1:T2 Arg2:T4	
+R6	help_diagnose Arg1:T5 Arg2:T4	

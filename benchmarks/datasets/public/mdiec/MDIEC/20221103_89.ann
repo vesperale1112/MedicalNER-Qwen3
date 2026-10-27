@@ -1,0 +1,15 @@
+T2	drug 42 46	PUFA
+T3	drug 295 299	PUFA
+T13	drug 319 321	Es
+T17	method 83 140	tail suspension, open field, and sucrose preference tests
+T18	disease 151 170	depressive symptoms
+T19	method 188 210	Morris water maze test
+T20	physiology 221 230	cognition
+T22	disease 253 286	chronic unpredictable mild stress
+T23	disease 288 292	CUMS
+T24	drug 305 317	escitalopram
+R1	abbreviation_for Arg1:T23 Arg2:T22	
+R2	abbreviation_for Arg1:T13 Arg2:T24	
+R3	help_diagnose Arg1:T17 Arg2:T18	
+R4	help_diagnose Arg1:T19 Arg2:T20	
+T1	drug 50 52	Es

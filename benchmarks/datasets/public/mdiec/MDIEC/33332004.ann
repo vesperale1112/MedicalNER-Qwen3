@@ -1,0 +1,47 @@
+T1	disease 13 23	Depression
+T2	disease 111 121	depression
+T3	disease 201 211	depression
+T4	disease 283 293	depression
+T5	disease 489 499	depression
+T6	disease 542 552	depression
+T9	drug 805 814	serotonin
+T10	drug 816 820	5-HT
+T11	Health_factors 908 926	cannabis addiction
+T12	disease 1054 1064	depression
+T13	drug 1263 1302	selective serotonin reuptake inhibitors
+T14	disease 1342 1361	depressive symptoms
+T15	disease 1415 1425	depression
+T16	disease 1432 1467	co-occurring substance use disorder
+T17	disease 1621 1631	depression
+T18	drug 0 8	Cannabis
+T19	drug 94 102	cannabis
+T20	drug 167 175	cannabis
+R2	risk_factor_of Arg1:T20 Arg2:T3	
+T21	Health_factors 331 353	cannabis use frequency
+T22	method 355 396	Observational and epidemiological studies
+T23	drug 525 533	cannabis
+R4	associated_with Arg1:T23 Arg2:T6	
+T25	drug 1094 1102	cannabis
+T26	drug 1109 1124	anti-depressant
+T27	drug 1304 1309	SSRIs
+R7	abbreviation_for Arg1:T27 Arg2:T13	
+T28	drug 1604 1612	cannabis
+R10	associated_with Arg1:T28 Arg2:T17	
+T29	drug 447 455	cannabis
+T30	disease 736 791	comorbidity of cannabis dependence and major depression
+R12	risk_factor_of Arg1:T4 Arg2:T21	
+T32	Health_factors 575 578	men
+T33	Health_factors 586 597	adolescence
+T34	Health_factors 637 642	women
+T35	drug 1374 1383	substance
+T36	Health_factors 1391 1402	adolescents
+T37	Health_factors 611 620	adulthood
+T38	Health_factors 650 657	midlife
+R11	abbreviation_for Arg1:T10 Arg2:T9	
+T31	method 1637 1652	epidemiological
+T39	method 1654 1666	neurological
+T40	method 1681 1696	pharmacological
+T41	region 963 1003	alteration in the endocannabinoid system
+R6	treatment_for Arg1:T41 Arg2:T12	
+R1	hyponym_of Arg1:T25 Arg2:T26	
+T7	gene 1668 1675	genetic

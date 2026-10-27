@@ -1,0 +1,81 @@
+T1	disease 47 60	schizophrenia
+T2	disease 157 170	schizophrenia
+T3	disease 335 348	schizophrenia
+T4	disease 547 560	schizophrenia
+T5	disease 847 879	schizophrenia spectrum disorders
+T6	disease 947 989	concurrent medical or psychiatric disorder
+T7	disease 1029 1038	psychosis
+T8	disease 1204 1217	schizophrenia
+T9	disease 2779 2792	schizophrenia
+T10	method 0 20	Family interventions
+T11	disease 25 32	relapse
+T13	method 64 81	systematic review
+T14	method 94 114	Family interventions
+T15	disease 135 142	relapse
+T17	method 288 308	family interventions
+T18	disease 313 320	relapse
+T20	method 367 384	systematic review
+T21	method 389 410	network meta-analysis
+T22	method 428 456	randomised controlled trials
+T23	method 475 501	family intervention models
+T24	disease 522 529	relapse
+T25	method 574 580	EMBASE
+T26	method 582 589	MEDLINE
+T27	method 591 599	PsycINFO
+T28	method 601 607	BIOSIS
+T29	method 618 636	ClinicalTrials.gov
+T30	method 642 693	WHO International Clinical Trials Registry Platform
+T31	method 717 723	PubMed
+T32	method 757 808	blinded and open-label randomised controlled trials
+T33	disease 928 939	acutely ill
+T34	Health_factors 1111 1120	reviewers
+T35	disease 1181 1200	depressive symptoms
+T36	Health_factors 1219 1234	quality of life
+T37	disease 1366 1373	relapse
+T38	method 1389 1413	operationalised criteria
+T39	Health_factors 1415 1446	psychiatric hospital admissions
+T40	method 1480 1530	frequentist, random-effects, network meta-analysis
+T41	method 1544 1555	odds ratios
+T42	method 1558 1561	ORs
+T43	method 1589 1618	standardised mean differences
+T44	method 1650 1653	CIs
+T45	method 1846 1872	family intervention models
+T46	method 1897 1925	randomised controlled trials
+T47	Health_factors 1956 1963	females
+T48	Health_factors 1973 1978	males
+T49	Health_factors 1984 1987	sex
+T50	Health_factors 2006 2009	age
+T51	method 2041 2062	network meta-analysis
+T52	Health_factors 2064 2073	Ethnicity
+T53	method 2103 2116	interventions
+T54	method 2140 2169	crisis-oriented interventions
+T55	Health_factors 2174 2196	family psychoeducation
+T56	disease 2237 2244	relapse
+T57	method 2341 2344	ORs
+T58	method 2399 2401	CI
+T59	Health_factors 2415 2437	family psychoeducation
+T61	method 2572 2589	subgroup analyses
+T62	method 2710 2736	family intervention models
+T63	disease 2768 2775	relapse
+T64	Health_factors 2794 2816	Family psychoeducation
+T65	Health_factors 2981 3003	family psychoeducation
+T67	Health_factors 2832 2862	behavioural or skills training
+T68	method 2465 2494	community-based interventions
+T70	physiology 1283 1300	expressed emotion
+T71	Health_factors 1268 1281	family burden
+T72	physiology 1247 1266	overall functioning
+R1	treatment_for Arg1:T10 Arg2:T1	
+R2	treatment_for Arg1:T14 Arg2:T2	
+T12	method 609 616	CENTRAL
+T16	Health_factors 1236 1245	adherence
+T19	Health_factors 1306 1340	discontinuations due to inefficacy
+R4	abbreviation_for Arg1:T42 Arg2:T41	
+R5	treatment_for Arg1:T54 Arg2:T56	
+R6	treatment_for Arg1:T55 Arg2:T56	
+T69	method 2283 2301	treatment as usual
+T73	method 2359 2377	treatment as usual
+T60	Health_factors 2505 2519	family members
+R7	treatment_for Arg1:T62 Arg2:T9	
+R9	help_diagnose Arg1:T38 Arg2:T37	
+T66	Health_factors 2958 2979	financial constraints
+R10	help_diagnose Arg1:T39 Arg2:T37	

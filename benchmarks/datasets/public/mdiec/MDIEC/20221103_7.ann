@@ -1,0 +1,23 @@
+T2	method 37 53	clinical studies
+T5	physiology 246 285	nonsteroidal anti-inflammatory pathways
+T6	drug 293 300	aspirin
+T7	drug 302 311	celecoxib
+T8	physiology 314 333	cytokine antagonism
+T9	gene 353 363	infliximab
+T10	gene 366 395	N-methyl-D-aspartate receptor
+T11	gene 397 401	NMDA
+T12	physiology 366 422	N-methyl-D-aspartate receptor (NMDA) receptor antagonism
+T13	drug 430 438	ketamine
+T14	physiology 445 478	modulation of kynurenine pathways
+T15	drug 486 497	minocycline
+T1	drug 87 101	antidepressant
+T3	physiology 191 214	inflammatory mechanisms
+T4	disease 225 235	depression
+T16	drug 341 351	etanercept
+R1	abbreviation_for Arg1:T11 Arg2:T10	
+T17	drug 172 178	agents
+R2	associated_with Arg1:T3 Arg2:T4	
+R3	hyponym_of Arg1:T5 Arg2:T3	
+R4	hyponym_of Arg1:T12 Arg2:T3	
+R5	hyponym_of Arg1:T14 Arg2:T3	
+R6	hyponym_of Arg1:T8 Arg2:T3	

@@ -1,0 +1,8 @@
+T1	disease 66 85	Alzheimer's disease
+T2	disease 98 118	cognitive impairment
+T3	physiology 0 30	Overproduction of beta-amyloid
+T4	gene 32 37	Abeta
+T5	gene 18 30	beta-amyloid
+R1	abbreviation_for Arg1:T4 Arg2:T5	
+R2	characteristic_of Arg1:T3 Arg2:T1	
+R3	risk_factor_of Arg1:T3 Arg2:T2	

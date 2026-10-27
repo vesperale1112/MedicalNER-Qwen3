@@ -1,0 +1,104 @@
+T0	disease 27 43	Bipolar Disorder
+T2	disease 67 83	Bipolar disorder
+T3	Health_factors 116 122	adults
+T5	disease 258 268	depression
+T6	disease 273 278	mania
+T7	disease 282 291	hypomania
+T8	disease 199 215	Bipolar disorder
+T9	disease 293 320	Bipolar depressive episodes
+T10	disease 336 361	major depressive episodes
+T11	disease 363 391	Manic and hypomanic episodes
+T12	physiology 434 438	mood
+T13	Health_factors 443 451	behavior
+T16	disease 539 549	depression
+T18	disease 643 662	depressive episodes
+T21	Health_factors 743 752	prognosis
+T24	disease 860 878	depressive episode
+T27	drug 938 945	lithium
+T28	drug 947 956	valproate
+T29	drug 962 973	lamotrigine
+T30	drug 912 928	mood stabilizers
+T31	method 880 899	Long-term treatment
+T32	drug 1005 1015	quetiapine
+T33	drug 1017 1029	aripiprazole
+T34	drug 1031 1040	asenapine
+T35	drug 1042 1052	lurasidone
+T36	drug 1058 1069	cariprazine
+T39	symptom 1117 1128	weight gain
+T40	drug 1130 1145	Antidepressants
+T41	method 1169 1180	monotherapy
+T42	disease 1213 1229	bipolar disorder
+T43	Health_factors 1238 1259	adherent to treatment
+T44	disease 1335 1351	bipolar disorder
+T47	Health_factors 1471 1489	general population
+T48	disease 1391 1415	cardiovascular mortality
+T49	Health_factors 1261 1276	Life expectancy
+T50	disease 1511 1529	metabolic syndrome
+T51	disease 1537 1544	obesity
+T52	disease 1581 1596	type 2 diabetes
+T53	disease 1632 1648	bipolar disorder
+T54	Health_factors 1552 1569	cigarette smoking
+T55	disease 1684 1693	mortality
+T58	disease 1764 1780	bipolar disorder
+T59	disease 1706 1713	suicide
+T60	Health_factors 1809 1827	general population
+T62	disease 1869 1885	bipolar disorder
+T63	disease 1886 1889	die
+T64	disease 1893 1900	suicide
+T65	disease 1929 1945	Bipolar disorder
+T66	Health_factors 1978 1984	adults
+T68	drug 2050 2057	lithium
+T69	drug 2084 2093	valproate
+T70	drug 2098 2109	lamotrigine
+T71	drug 2153 2163	quetiapine
+T72	drug 2165 2177	aripiprazole
+T73	drug 2179 2188	asenapine
+T74	drug 2190 2200	lurasidone
+T75	drug 2206 2217	cariprazine
+T77	drug 2024 2040	mood stabilizers
+T78	drug 2059 2074	anticonvulsants
+T80	drug 2115 2143	atypical antipsychotic drugs
+T81	method 1996 2014	First-line therapy
+R1	characteristic_of Arg1:T5 Arg2:T8	
+R2	characteristic_of Arg1:T6 Arg2:T8	
+R3	characteristic_of Arg1:T7 Arg2:T8	
+R4	characteristic_of Arg1:T12 Arg2:T11	
+R5	characteristic_of Arg1:T13 Arg2:T11	
+T1	Health_factors 486 489	age
+R6	hyponym_of Arg1:T30 Arg2:T31	
+R7	hyponym_of Arg1:T27 Arg2:T30	
+R8	hyponym_of Arg1:T28 Arg2:T30	
+R9	hyponym_of Arg1:T29 Arg2:T30	
+T4	drug 975 995	Antipsychotic agents
+R10	hyponym_of Arg1:T32 Arg2:T4	
+R11	hyponym_of Arg1:T33 Arg2:T4	
+R12	hyponym_of Arg1:T34 Arg2:T4	
+R13	hyponym_of Arg1:T35 Arg2:T4	
+R14	hyponym_of Arg1:T36 Arg2:T4	
+R15	associated_with Arg1:T32 Arg2:T39	
+R16	associated_with Arg1:T33 Arg2:T39	
+R17	associated_with Arg1:T34 Arg2:T39	
+R18	associated_with Arg1:T35 Arg2:T39	
+R19	associated_with Arg1:T36 Arg2:T39	
+R20	characteristic_of Arg1:T49 Arg2:T44	
+R21	risk_factor_of Arg1:T44 Arg2:T48	
+R22	risk_factor_of Arg1:T53 Arg2:T50	
+R23	risk_factor_of Arg1:T53 Arg2:T51	
+R24	risk_factor_of Arg1:T53 Arg2:T54	
+R25	risk_factor_of Arg1:T53 Arg2:T52	
+R26	risk_factor_of Arg1:T50 Arg2:T55	
+R27	risk_factor_of Arg1:T51 Arg2:T55	
+R28	risk_factor_of Arg1:T54 Arg2:T55	
+R29	risk_factor_of Arg1:T52 Arg2:T55	
+R30	associated_with Arg1:T62 Arg2:T64	
+R31	hyponym_of Arg1:T77 Arg2:T81	
+R32	hyponym_of Arg1:T78 Arg2:T81	
+R33	hyponym_of Arg1:T80 Arg2:T81	
+R34	hyponym_of Arg1:T68 Arg2:T77	
+R35	hyponym_of Arg1:T69 Arg2:T78	
+R36	hyponym_of Arg1:T70 Arg2:T78	
+R37	hyponym_of Arg1:T71 Arg2:T80	
+R38	hyponym_of Arg1:T72 Arg2:T80	
+R39	hyponym_of Arg1:T73 Arg2:T80	
+R40	hyponym_of Arg1:T74 Arg2:T80	
+R41	hyponym_of Arg1:T75 Arg2:T80	

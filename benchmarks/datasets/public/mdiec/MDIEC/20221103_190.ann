@@ -1,0 +1,6 @@
+T3	disease 32 54	mental health problems
+T4	method 56 75	sleep interventions
+T6	disease 98 117	depression symptoms
+T8	method 134 136	CI
+R1	associated_with Arg1:T4 Arg2:T6	
+R2	occurs_in Arg1:T3 Arg2:T4	

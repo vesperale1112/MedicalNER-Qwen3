@@ -1,0 +1,44 @@
+T0	disease 7 27	cognitive impairment
+T1	disease 71 84	schizophrenia
+T2	method 47 66	diagnostic criteria
+T3	disease 86 111	Neurocognitive impairment
+T4	disease 146 159	schizophrenia
+T6	disease 246 266	cognitive impairment
+T7	disease 357 370	schizophrenia
+T8	method 310 326	healthy controls
+T9	disease 383 403	cognitive decrements
+T10	disease 467 474	illness
+T13	disease 502 521	affective disorders
+T14	disease 523 543	cognitive impairment
+T15	disease 547 560	schizophrenia
+T16	disease 621 638	clinical symptoms
+T17	disease 690 703	schizophrenia
+T18	disease 734 754	cognitive impairment
+T19	disease 811 824	schizophrenia
+T20	disease 850 870	cognitive impairment
+T22	method 653 662	DSM-IV-TR
+T23	method 768 787	diagnostic criteria
+T24	method 930 949	diagnostic criteria
+T25	physiology 994 1015	cognitive functioning
+T27	Health_factors 1135 1186	educational, familial, and socioeconomic background
+T29	disease 1040 1057	severe impairment
+T31	disease 1261 1280	affective psychoses
+T32	disease 1323 1343	cognitive impairment
+T37	method 1456 1486	genetic and biological studies
+T41	disease 1592 1612	cognitive impairment
+T43	method 1626 1656	standard diagnostic evaluation
+T48	method 1804 1821	brief assessments
+T49	disease 1972 1985	schizophrenia
+R1	characteristic_of Arg1:T3 Arg2:T4	
+T56	method 1919 1939	cognitive treatments	
+T54	method 1749 1777	Cognitive assessment methods
+R3	hyponym_of Arg1:T48 Arg2:T54		
+R5	characteristic_of Arg1:T9 Arg2:T7	
+R6	occurs_in Arg1:T14 Arg2:T15	
+T5	method 667 673	ICD-10
+R7	help_diagnose Arg1:T22 Arg2:T17	
+R8	help_diagnose Arg1:T5 Arg2:T17	
+T11	Health_factors 1684 1698	diagnosticians
+T12	Health_factors 2015 2038	mental health education
+T21	method 1826 1853	interview-based assessments
+R9	hyponym_of Arg1:T21 Arg2:T54	

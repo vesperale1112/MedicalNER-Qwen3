@@ -1,0 +1,69 @@
+T0	region 28 46	excitatory neurons
+T1	disease 74 87	schizophrenia
+T3	region 50 70	medial temporal lobe
+T4	disease 124 137	schizophrenia
+T5	region 226 233	neurons
+T8	region 151 190	cytoarchitecture of the cerebral cortex
+T9	gene 277 308	presynaptic protein complexin I
+T10	region 324 356	axosomatic (inhibitory) synapses
+T11	gene 366 378	complexin II
+T12	method 267 271	mice
+T13	gene 469 479	complexins
+T14	disease 546 559	schizophrenia
+T15	method 524 542	synaptic pathology
+T18	region 624 630	tissue
+T20	region 682 693	hippocampus
+T21	region 722 732	cerebellum
+T22	region 695 716	parahippocampal gyrus
+T23	region 654 680	human medial temporal lobe
+T24	method 640 648	necropsy
+T25	disease 923 936	schizophrenia
+T26	method 944 970	non-schizophrenic controls
+T28	region 882 902	medial temporal lobe
+T29	gene 852 866	messenger RNAs
+T36	method 1054 1058	mice
+T40	gene 1186 1201	complexin mRNAs
+T41	disease 1216 1229	schizophrenic
+T42	gene 1288 1305	complexin II mRNA
+T43	gene 1333 1352	complexin I protein
+T44	disease 1370 1383	schizophrenia
+T45	gene 1389 1409	complexin II protein
+T46	signs 1466 1496	complexin II/complexin I ratio
+T48	disease 1510 1523	schizophrenia
+T50	drug 1632 1642	medication
+T53	disease 1687 1700	schizophrenia
+T55	region 1714 1734	medial temporal lobe
+T56	method 1665 1683	synaptic pathology
+T58	method 1913 1928	pathophysiology
+T60	region 1821 1856	excitatory and inhibitory circuitry
+R1	located_in Arg1:T0 Arg2:T3	
+R2	associated_with Arg1:T0 Arg2:T1	
+R3	associated_with Arg1:T4 Arg2:T8	
+T2	region 238 246	synapses
+T6	region 394 435	axodendritic (mainly excitatory) synapses
+R4	associated_with Arg1:T9 Arg2:T10	
+R5	occurs_in Arg1:T12 Arg2:T9	
+R6	associated_with Arg1:T11 Arg2:T6	
+T7	gene 610 620	complexins
+R7	located_in Arg1:T7 Arg2:T18	
+T16	method 739 760	in-situ hybridisation
+T17	method 765 786	immunoautoradiography
+T19	gene 831 841	complexins
+T30	gene 868 873	mRNAs
+R8	abbreviation_for Arg1:T30 Arg2:T29	
+R9	located_in Arg1:T29 Arg2:T28	
+R10	located_in Arg1:T30 Arg2:T28	
+T27	gene 1003 1021	complexin I and II
+T31	gene 1091 1102	complexin I
+T32	region 1106 1124	inhibitory neurons
+R11	associated_with Arg1:T31 Arg2:T32	
+T33	gene 1130 1142	complexin II
+T34	region 1146 1164	excitatory neurons
+R12	associated_with Arg1:T33 Arg2:T34	
+R13	characteristic_of Arg1:T40 Arg2:T41	
+R14	characteristic_of Arg1:T42 Arg2:T41	
+R15	characteristic_of Arg1:T45 Arg2:T44	
+T35	gene 1444 1448	mRNA
+R16	characteristic_of Arg1:T46 Arg2:T48	
+T37	region 1754 1788	excitatory (glutamatergic) neurons
+R17	associated_with Arg1:T53 Arg2:T37	

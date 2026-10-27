@@ -1,0 +1,5 @@
+T2	Health_factors 24 42	antidepressant use
+T3	disease 55 70	coronary events
+T5	disease 91 101	depression
+R1	occurs_in Arg1:T3 Arg2:T5	
+R2	associated_with Arg1:T2 Arg2:T3	

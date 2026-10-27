@@ -1,0 +1,8 @@
+T2	physiology 57 75	adult neurogenesis
+T3	disease 80 97	depressive states
+T4	physiology 117 136	olfactory functions
+T5	drug 32 42	fluoxetine
+R2	treatment_for Arg1:T5 Arg2:T2	
+R3	treatment_for Arg1:T5 Arg2:T3	
+R4	treatment_for Arg1:T5 Arg2:T4	
+T1	drug 17 31	antidepressant

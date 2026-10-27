@@ -1,0 +1,54 @@
+T0	disease 71 84	schizophrenia
+T1	Health_factors 11 25	family history
+T4	Health_factors 30 55	place and season of birth
+T6	disease 180 193	schizophrenia
+T8	Health_factors 195 216	environmental factors
+T11	Health_factors 229 254	place and season of birth
+T13	Health_factors 108 139	family history of schizophrenia
+T14	method 363 386	population-based cohort
+T15	Health_factors 417 424	mothers
+T17	Health_factors 430 442	Danish women
+T18	method 308 344	Civil Registration System in Denmark
+T19	disease 565 578	schizophrenia
+T24	method 500 535	Danish Psychiatric Central Register
+T25	method 656 681	respective relative risks
+T26	disease 685 698	schizophrenia
+T27	Health_factors 718 724	mother
+T28	disease 753 766	schizophrenia
+T29	method 789 808	confidence interval
+T30	method 843 862	confidence interval
+T32	Health_factors 979 986	parents
+T34	disease 1012 1025	schizophrenia
+T36	method 1096 1109	relative risk
+T37	Health_factors 1130 1141	rural areas
+T38	method 1160 1179	confidence interval
+T40	Health_factors 1118 1125	capital
+T41	Health_factors 1060 1094	urbanization of the place of birth
+T44	physiology 1284 1290	births
+T45	physiology 1328 1334	births
+T49	Health_factors 1528 1543	season of birth
+T50	Health_factors 1481 1501	urban place of birth
+T51	method 1364 1392	population attributable risk
+T55	Health_factors 1690 1715	place and season of birth
+R1	risk_factor_of Arg1:T13 Arg2:T6	
+R2	hyponym_of Arg1:T11 Arg2:T8	
+T2	method 486 492	cohort
+T3	method 585 591	cohort
+T5	Health_factors 633 640	parents
+T7	Health_factors 726 732	father
+T9	Health_factors 737 744	sibling
+T10	Health_factors 990 998	siblings
+R3	risk_factor_of Arg1:T41 Arg2:T34	
+T12	Health_factors 1248 1263	season of birth
+T16	Health_factors 1415 1439	history of schizophrenia
+T20	Health_factors 1445 1451	parent
+T21	Health_factors 1455 1462	sibling
+R4	occurs_in Arg1:T16 Arg2:T20	
+R5	occurs_in Arg1:T16 Arg2:T21	
+T22	Health_factors 1570 1594	history of schizophrenia
+T23	Health_factors 1600 1606	parent
+T33	Health_factors 1610 1617	sibling
+R6	occurs_in Arg1:T22 Arg2:T23	
+R7	occurs_in Arg1:T22 Arg2:T33	
+R8	associated_with Arg1:T6 Arg2:T8	
+R9	associated_with Arg1:T6 Arg2:T11	

@@ -1,0 +1,48 @@
+T0	disease 35 71	severe obsessive-compulsive disorder
+T2	disease 103 132	obsessive-compulsive disorder
+T3	disease 134 137	OCD
+T4	disease 144 163	disabling condition
+T5	disease 264 282	movement disorders
+T9	method 165 203	Stimulation of the subthalamic nucleus
+T12	disease 523 537	refractory OCD
+T13	method 674 692	active stimulation
+T14	method 645 661	sham stimulation
+T15	method 607 623	sham stimulation
+T16	method 549 594	active stimulation of the subthalamic nucleus
+T17	method 435 473	stimulation of the subthalamic nucleus
+T18	method 355 397	crossover, double-blind, multicenter study
+T19	disease 742 745	OCD
+T21	method 766 803	Yale-Brown Obsessive Compulsive Scale
+T25	method 1028 1052	neuropsychological tests
+T26	method 941 972	standardized psychiatric scales
+T30	method 1283 1285	SD
+T32	method 1324 1327	GAF
+T33	method 1256 1272	sham stimulation
+T35	method 1070 1114	active stimulation of the subthalamic nucleu
+T36	disease 1520 1530	depression
+T37	disease 1536 1543	anxiety
+T38	method 1491 1518	neuropsychological measures
+T39	disease 1636 1660	intracerebral hemorrhage
+T40	Health_factors 1592 1614	serious adverse events
+T41	disease 1667 1677	infections
+T43	Health_factors 1698 1723	nonserious adverse events
+T45	disease 1861 1864	OCD
+T46	Health_factors 1910 1932	serious adverse events
+T49	method 1779 1817	stimulation of the subthalamic nucleus
+T51	method 0 31	Subthalamic nucleus stimulation
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T52	disease 84 132	Severe, refractory obsessive-compulsive disorder
+R2	hyponym_of Arg1:T52 Arg2:T4	
+R3	treatment_for Arg1:T9 Arg2:T5	
+R4	help_diagnose Arg1:T21 Arg2:T19	
+T1	method 805 811	Y-BOCS
+R5	abbreviation_for Arg1:T1 Arg2:T21	
+R6	help_diagnose Arg1:T1 Arg2:T19	
+T6	method 978 1010	Global Assessment of Functioning
+T7	method 1012 1015	GAF
+R7	abbreviation_for Arg1:T7 Arg2:T6	
+T8	method 1121 1127	Y-BOCS
+R8	hyponym_of Arg1:T39 Arg2:T40	
+R9	hyponym_of Arg1:T41 Arg2:T40	
+R10	treatment_for Arg1:T49 Arg2:T45	
+R11	risk_factor_of Arg1:T49 Arg2:T46	

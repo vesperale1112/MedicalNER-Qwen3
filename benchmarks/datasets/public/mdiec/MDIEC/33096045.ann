@@ -1,0 +1,36 @@
+T1	disease 13 29	mental disorders
+T2	disease 202 218	mental disorders
+T3	disease 378 399	psychiatric disorders
+T4	disease 429 450	psychiatric disorders
+T5	disease 642 656	mental illness
+T6	disease 668 689	personality disorders
+T7	disease 691 704	schizophrenia
+T8	disease 710 726	substance misuse
+T9	disease 757 778	personality disorders
+T10	disease 783 815	schizophrenia spectrum disorders
+T11	disease 841 857	substance misuse
+T14	Health_factors 0 8	Violence
+T16	Health_factors 223 231	violence
+T17	method 296 310	Relative risks
+T19	Health_factors 940 948	violence
+T20	method 1096 1111	epidemiological
+T22	Health_factors 880 905	comorbid substance misuse
+T25	Health_factors 343 359	violent outcomes
+T29	method 70 90	individual diagnoses
+T30	method 33 50	structured review
+R1	associated_with Arg1:T2 Arg2:T16	
+R2	risk_factor_of Arg1:T3 Arg2:T25	
+T15	method 467 471	odds
+T23	Health_factors 574 587	violent crime
+R3	hyponym_of Arg1:T6 Arg2:T5	
+R4	hyponym_of Arg1:T7 Arg2:T5	
+R5	hyponym_of Arg1:T8 Arg2:T5	
+R6	risk_factor_of Arg1:T9 Arg2:T23	
+R7	risk_factor_of Arg1:T10 Arg2:T23	
+R8	risk_factor_of Arg1:T11 Arg2:T23	
+T18	Health_factors 864 875	criminality
+R9	risk_factor_of Arg1:T18 Arg2:T19	
+R10	risk_factor_of Arg1:T22 Arg2:T19	
+T21	Health_factors 1206 1214	violence
+T24	disease 1231 1242	psychiatric
+T26	method 991 1028	national clinical practice guidelines

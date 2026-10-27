@@ -1,0 +1,93 @@
+T0	disease 0 29	Obsessive-Compulsive Disorder
+T3	disease 79 108	Obsessive-compulsive disorder
+T4	disease 110 113	OCD
+T5	disease 120 145	neuropsychiatric disorder
+T7	disease 174 184	impairment
+T8	signs 191 210	lifetime prevalence
+T10	method 360 369	screening
+T11	disease 408 411	OCD
+T14	method 415 430	Evidence Review
+T15	method 443 449	PubMed
+T16	method 451 457	EMBASE
+T17	method 463 471	PsycINFO
+T18	method 484 512	randomized controlled trials
+T19	method 514 518	RCTs
+T20	method 521 534	meta-analyses
+T21	method 540 558	systematic reviews
+T22	method 574 583	screening
+T23	disease 628 631	OCD
+T24	Health_factors 638 644	adults
+T25	method 603 623	treatment approaches
+T27	method 798 811	Meta-analyses
+T28	method 816 834	systematic reviews
+T29	method 853 876	case series and reports
+T30	method 900 913	interventions
+T31	method 924 928	RCTs
+T32	method 1005 1009	RCTs
+T33	method 1014 1032	systematic reviews
+T34	method 1036 1049	meta-analyses
+T37	disease 1125 1128	OCD
+T38	disease 1235 1238	OCD
+T39	disease 1255 1272	anxiety disorders
+T40	method 1149 1217	Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition
+T42	disease 1550 1562	OCD symptoms
+T45	Health_factors 1581 1599	trained therapists
+T46	method 1428 1488	online-based dissemination of cognitive behavioral therapies
+T47	disease 1736 1739	OCD
+T48	disease 1866 1889	treatment-resistant OCD
+T49	drug 1650 1689	selective serotonin reuptake inhibitors
+T53	method 1839 1861	neurosurgical ablation
+T54	method 1811 1833	deep-brain stimulation
+T55	drug 1779 1809	adjunctive use of neuroleptics
+T56	method 1693 1731	first-line pharmacologic interventions
+T57	drug 1944 1952	riluzole
+T58	drug 1954 1962	ketamine
+T59	drug 1964 1973	memantine
+T60	drug 1975 1991	N-acetylcysteine
+T61	drug 1993 2004	lamotrigine
+T62	drug 2006 2015	celecoxib
+T63	drug 2017 2028	ondansetron
+T64	disease 2135 2138	OCD
+T65	drug 1932 1938	agents
+T66	drug 2057 2096	selective serotonin reuptake inhibitors
+T67	method 2103 2114	monotherapy
+T70	disease 2369 2372	OCD
+T72	method 2226 2286	dissemination of computer-based cognitive behavioral therapy
+T73	method 2383 2411	cognitive behavioral therapy
+T74	drug 2428 2467	selective serotonin reuptake inhibitors
+T75	method 2496 2514	treatment strategy
+T76	method 2721 2745	first-line interventions
+T77	drug 2577 2589	neuroleptics
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+R2	hyponym_of Arg1:T4 Arg2:T5	
+R3	hyponym_of Arg1:T3 Arg2:T5	
+R4	associated_with Arg1:T3 Arg2:T7	
+R5	associated_with Arg1:T4 Arg2:T7	
+T1	method 255 276	primary care settings
+R6	abbreviation_for Arg1:T19 Arg2:T18	
+R7	occurs_in Arg1:T23 Arg2:T24	
+T2	method 1057 1075	reviews/guidelines
+R8	help_diagnose Arg1:T40 Arg2:T37	
+R9	treatment_for Arg1:T46 Arg2:T42	
+R10	treatment_for Arg1:T49 Arg2:T47	
+R11	treatment_for Arg1:T55 Arg2:T48	
+R12	treatment_for Arg1:T54 Arg2:T48	
+R13	treatment_for Arg1:T53 Arg2:T48	
+R14	hyponym_of Arg1:T57 Arg2:T65	
+R15	hyponym_of Arg1:T58 Arg2:T65	
+R16	hyponym_of Arg1:T59 Arg2:T65	
+R17	hyponym_of Arg1:T60 Arg2:T65	
+R18	hyponym_of Arg1:T61 Arg2:T65	
+R19	hyponym_of Arg1:T62 Arg2:T65	
+R20	hyponym_of Arg1:T63 Arg2:T65	
+R21	treatment_for Arg1:T65 Arg2:T64	
+R22	treatment_for Arg1:T57 Arg2:T64	
+R23	treatment_for Arg1:T58 Arg2:T64	
+R24	treatment_for Arg1:T59 Arg2:T64	
+R25	treatment_for Arg1:T60 Arg2:T64	
+R26	treatment_for Arg1:T61 Arg2:T64	
+R27	treatment_for Arg1:T62 Arg2:T64	
+R28	treatment_for Arg1:T63 Arg2:T64	
+R29	treatment_for Arg1:T66 Arg2:T64	
+R30	treatment_for Arg1:T72 Arg2:T70	
+T6	method 2594 2620	neuromodulatory approaches

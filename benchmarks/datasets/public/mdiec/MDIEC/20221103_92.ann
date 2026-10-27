@@ -1,0 +1,6 @@
+T3	method 117 148	face-to-face therapist guidance
+T5	Health_factors 164 185	primary care patients
+T6	disease 191 227	mild to moderate depressive symptoms
+T1	method 87 112	Web-based program MoodGYM
+T2	method 60 72	intervention
+R1	occurs_in Arg1:T5 Arg2:T6	

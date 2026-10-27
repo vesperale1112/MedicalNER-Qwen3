@@ -1,0 +1,67 @@
+T1	disease 8 26	metabolic syndrome
+T2	disease 61 74	schizophrenia
+T3	disease 87 106	psychotic disorders
+T4	disease 108 124	bipolar disorder
+T5	disease 129 154	major depressive disorder
+T6	disease 195 213	Metabolic syndrome
+T7	disease 215 219	MetS
+T8	disease 265 288	cardiovascular diseases
+T9	disease 382 386	MetS
+T10	disease 421 434	schizophrenia
+T11	disease 447 466	psychotic disorders
+T12	disease 468 484	bipolar disorder
+T13	disease 489 514	major depressive disorder
+T14	disease 676 680	MetS
+T15	disease 793 797	MetS
+T16	disease 980 984	MetS
+T17	disease 1026 1039	schizophrenia
+T18	disease 1047 1063	bipolar disorder
+T19	disease 1121 1146	major depressive disorder
+T20	disease 1195 1208	schizophrenia
+T21	disease 1213 1238	major depressive disorder
+T22	disease 1518 1522	MetS
+T23	disease 1573 1577	MetS
+T24	drug 1613 1622	clozapine
+T25	drug 1627 1637	olanzapine
+T26	drug 1650 1659	clozapine
+T27	drug 1717 1729	aripiprazole
+T28	drug 1768 1779	amisulpride
+T29	disease 1845 1866	severe mental illness
+T30	disease 1906 1910	MetS
+T31	disease 1984 1996	hypertension
+T32	disease 2044 2048	MetS
+T33	disease 2102 2123	severe mental illness
+T37	method 158 175	systematic review
+T38	method 180 193	meta-analysis
+T39	method 314 331	systematic review
+T40	method 336 349	meta-analysis
+T41	Health_factors 584 595	demographic
+T42	disease 824 845	severe mental illness
+T43	method 861 863	CI
+T45	method 896 923	Relative risk meta-analyses
+T46	disease 1097 1113	bipolar disorder
+T47	Health_factors 1279 1288	Older age
+T48	signs 1302 1317	body mass index
+T49	method 1359 1387	demographic regression model
+T50	drug 1455 1480	antipsychotic medications
+T51	drug 1672 1686	antipsychotics
+T52	drug 1741 1755	antipsychotics
+T53	method 1912 1914	RR
+T54	method 1925 1927	CI
+T55	method 2125 2142	Routine screening
+T56	drug 2262 2276	antipsychotics
+R1	abbreviation_for Arg1:T7 Arg2:T6	
+R2	risk_factor_of Arg1:T7 Arg2:T8	
+R3	risk_factor_of Arg1:T6 Arg2:T8	
+T58	drug 610 633	psychotropic medication
+T44	method 1251 1277	meta-analytic calculations
+T57	Health_factors 1540 1571	antipsychotic-nave participants
+R4	risk_factor_of Arg1:T50 Arg2:T22	
+R5	risk_factor_of Arg1:T24 Arg2:T23	
+R6	risk_factor_of Arg1:T25 Arg2:T23	
+R7	risk_factor_of Arg1:T29 Arg2:T30	
+R8	risk_factor_of Arg1:T33 Arg2:T32	
+T59	method 2147 2175	multidisciplinary management
+T60	disease 2179 2212	medical and behavioral conditions
+T34	Health_factors 753 771	general population
+T35	Health_factors 1804 1822	general population

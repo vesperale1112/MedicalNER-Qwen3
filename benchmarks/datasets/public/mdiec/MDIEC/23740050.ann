@@ -1,0 +1,102 @@
+T0	disease 67 96	obsessive-compulsive disorder
+T2	region 43 63	orbitofrontal cortex
+T3	disease 0 35	Abnormally high degree connectivity
+T4	disease 135 164	obsessive-compulsive disorder
+T5	disease 166 169	OCD
+T7	disease 179 192	hyperactivity
+T8	region 196 210	brain circuits
+T10	region 254 267	basal ganglia
+T11	region 341 354	brain network
+T12	region 225 245	orbitofrontal cortex
+T13	disease 450 453	OCD
+T14	drug 519 544	antidepressant medication
+T15	disease 548 551	OCD
+T17	disease 404 432	abnormal degree connectivity
+T19	method 603 654	resting-state functional magnetic resonance imaging
+T20	region 733 744	whole-brain
+T21	disease 807 810	OCD
+T22	method 825 841	healthy controls
+T23	Health_factors 781 801	unmedicated patients
+T26	method 661 691	data-driven, model-free method
+T27	method 562 596	Case-control cross-sectional study
+T29	disease 875 878	OCD
+T30	Health_factors 853 870	Outpatient clinic
+T31	disease 922 925	OCD
+T32	Health_factors 930 935	women
+T33	Health_factors 940 943	men
+T34	drug 958 968	medication
+T35	disease 987 990	OCD
+T36	Health_factors 995 1000	women
+T37	Health_factors 1004 1007	men
+T38	drug 1022 1047	antidepressant medication
+T39	Health_factors 1097 1100	age
+T40	Health_factors 1102 1105	sex
+T41	Health_factors 1119 1130	educational
+T44	physiology 1220 1261	distant and local functional connectivity
+T46	method 1277 1289	hub analysis
+T48	method 1170 1197	Statistical parametric maps
+T51	disease 1368 1371	OCD
+T54	region 1527 1534	putamen
+T55	region 1498 1518	orbitofrontal cortex
+T56	physiology 1472 1490	local connectivity
+T57	region 1415 1435	orbitofrontal cortex
+T58	physiology 1387 1407	distant connectivity
+T59	Health_factors 1342 1362	Unmedicated patients
+T60	disease 1648 1659	OCD symptom
+T62	region 1606 1613	putamen
+T64	region 1577 1597	orbitofrontal cortex
+T65	physiology 1549 1569	distant connectivity
+T66	disease 1694 1697	OCD
+T68	Health_factors 1774 1794	unmedicated patients
+T69	region 1739 1755	ventral striatum
+T70	physiology 1713 1731	local connectivity
+T72	disease 1866 1869	OCD
+T74	region 1904 1917	basal ganglia
+T75	Health_factors 1940 1960	unmedicated patients
+T76	region 1875 1895	orbitofrontal cortex
+T78	region 2046 2059	basal ganglia
+T79	region 2124 2138	cortical areas
+T81	region 2150 2175	corticostriatal circuitry
+T84	region 2017 2037	orbitofrontal cortex
+T85	physiology 1977 2009	distant connectivity alterations
+T86	disease 2321 2324	OCD
+T87	drug 2214 2239	antidepressant medication
+T89	region 2271 2317	corticobasal ganglia-thalamo-cortical circuits
+R1	located_in Arg1:T3 Arg2:T2	
+R2	occurs_in Arg1:T3 Arg2:T0	
+R3	abbreviation_for Arg1:T5 Arg2:T4	
+T1	method 109 131	Neurobiological models
+R4	located_in Arg1:T7 Arg2:T8	
+R5	occurs_in Arg1:T59 Arg2:T51	
+R6	characteristic_of Arg1:T58 Arg2:T51	
+T6	region 1440 1459	subthalamic nucleus
+R7	located_in Arg1:T58 Arg2:T57	
+R8	located_in Arg1:T58 Arg2:T6	
+R9	characteristic_of Arg1:T56 Arg2:T51	
+R10	located_in Arg1:T56 Arg2:T55	
+R11	located_in Arg1:T56 Arg2:T54	
+R12	located_in Arg1:T65 Arg2:T64	
+R13	located_in Arg1:T65 Arg2:T62	
+R14	associated_with Arg1:T65 Arg2:T60	
+T9	Health_factors 1670 1688	Medicated patients
+R15	occurs_in Arg1:T9 Arg2:T66	
+R16	characteristic_of Arg1:T70 Arg2:T66	
+R17	located_in Arg1:T70 Arg2:T69	
+T42	method 1840 1862	neurobiological models
+R18	associated_with Arg1:T76 Arg2:T75	
+R19	associated_with Arg1:T74 Arg2:T75	
+R20	located_in Arg1:T85 Arg2:T84	
+R21	located_in Arg1:T85 Arg2:T78	
+R22	associated_with Arg1:T87 Arg2:T89	
+R23	occurs_in Arg1:T89 Arg2:T86	
+T43	disease 1310 1321	OCD symptom
+R24	treatment_for Arg1:T38 Arg2:T35	
+T45	Health_factors 1107 1117	handedness
+T47	symptom 1142 1144	IQ
+R25	occurs_in Arg1:T23 Arg2:T21	
+R27	associated_with Arg1:T4 Arg2:T12	
+R28	associated_with Arg1:T4 Arg2:T10	
+R29	associated_with Arg1:T5 Arg2:T12	
+R30	associated_with Arg1:T5 Arg2:T10	
+R31	occurs_in Arg1:T17 Arg2:T13	
+R26	associated_with Arg1:T76 Arg2:T74	

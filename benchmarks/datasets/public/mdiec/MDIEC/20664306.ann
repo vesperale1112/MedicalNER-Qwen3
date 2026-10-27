@@ -1,0 +1,70 @@
+T0	disease 25 46	personality disorders
+T1	disease 50 74	chronic fatigue syndrome
+T3	method 78 100	population-based study
+T4	disease 113 137	Chronic fatigue syndrome
+T5	disease 139 142	CFS
+T6	disease 235 238	CFS
+T7	symptom 198 209	Personality
+T8	disease 284 291	illness
+T17	disease 580 601	personality disorders
+T18	method 510 559	Personality Diagnostic Questionnaire, 4th edition
+T20	method 573 579	DSM-IV
+T22	symptom 673 684	neuroticism
+T23	symptom 686 698	extraversion
+T24	symptom 728 745	conscientiousness
+T25	symptom 710 723	agreeableness
+T26	method 615 640	NEO Five-Factor Inventory
+T27	method 752 786	Multidimensional Fatigue Inventory
+T28	disease 812 819	fatigue
+T29	method 829 863	Medical Outcomes Survey Short Form
+T30	disease 892 913	functional impairment
+T33	disease 977 997	personality disorder
+T35	disease 1079 1166	paranoid, schizoid, avoidant, obsessive-compulsive and depressive personality disorders
+T36	disease 1196 1199	CFS
+T37	disease 1204 1207	ISF
+T39	disease 1243 1246	CFS
+T40	disease 1364 1367	ISF
+T41	symptom 1288 1299	neuroticism
+T42	symptom 1335 1347	extraversion
+T44	disease 1470 1477	fatigue
+T48	symptom 1568 1600	maladaptive personality features
+T49	disease 1605 1626	personality disorders
+T52	Health_factors 1769 1787	social environment
+T53	symptom 1795 1818	maladaptive personality
+T54	disease 1838 1841	CFS
+T56	disease 1871 1878	illness
+T58	symptom 0 20	Personality features
+R1	occurs_in Arg1:T0 Arg2:T1	
+R2	abbreviation_for Arg1:T5 Arg2:T4	
+R3	risk_factor_of Arg1:T7 Arg2:T6	
+R4	associated_with Arg1:T7 Arg2:T8	
+T2	Health_factors 351 369	general population
+T9	disease 398 401	CFS
+T10	disease 443 446	CFS
+T11	disease 448 468	insufficient fatigue
+T12	disease 470 473	ISF
+R5	abbreviation_for Arg1:T12 Arg2:T11	
+R6	help_diagnose Arg1:T18 Arg2:T17	
+T13	symptom 651 671	personality features
+R7	help_diagnose Arg1:T26 Arg2:T13	
+T14	symptom 700 708	openness
+R8	help_diagnose Arg1:T26 Arg2:T22	
+R9	help_diagnose Arg1:T26 Arg2:T23	
+R10	help_diagnose Arg1:T26 Arg2:T14	
+R11	help_diagnose Arg1:T26 Arg2:T25	
+R12	help_diagnose Arg1:T26 Arg2:T24	
+R13	help_diagnose Arg1:T27 Arg2:T28	
+R14	help_diagnose Arg1:T29 Arg2:T30	
+T15	disease 952 955	CFS
+T16	disease 1022 1025	ISF
+R15	risk_factor_of Arg1:T36 Arg2:T35	
+R16	risk_factor_of Arg1:T37 Arg2:T35	
+R17	characteristic_of Arg1:T41 Arg2:T39	
+R18	characteristic_of Arg1:T42 Arg2:T39	
+T19	symptom 1390 1410	Personality features
+R19	associated_with Arg1:T19 Arg2:T44	
+T21	disease 1518 1521	CFS
+R20	risk_factor_of Arg1:T21 Arg2:T48	
+R21	risk_factor_of Arg1:T21 Arg2:T49	
+R22	associated_with Arg1:T53 Arg2:T56	
+R23	occurs_in Arg1:T58 Arg2:T1	

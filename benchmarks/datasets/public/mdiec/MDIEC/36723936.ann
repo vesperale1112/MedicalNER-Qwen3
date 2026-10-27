@@ -1,0 +1,43 @@
+T0	disease 0 29	Obsessive-Compulsive Disorder
+T1	disease 83 100	Anxiety Disorders
+T2	method 106 146	National Swedish Extended Adoption Study
+T4	disease 201 230	obsessive-compulsive disorder
+T5	disease 232 235	OCD
+T8	disease 328 331	OCD
+T9	disease 394 411	anxiety disorders
+R1	associated_with Arg1:T0 Arg2:T1	
+R2	abbreviation_for Arg1:T5 Arg2:T4	
+T3	Health_factors 295 301	parent	
+T6	Health_factors 302 311	offspring
+T7	method 418 444	bivariate adoption analyse
+T10	disease 499 502	OCD
+T11	disease 508 524	anxiety disorder
+T12	disease 582 599	anxiety disorders
+R3	associated_with Arg1:T10 Arg2:T12	
+T13	method 611 613	CI
+T14	disease 630 633	GAD
+R4	associated_with Arg1:T10 Arg2:T14	
+T15	method 645 647	CI
+T16	disease 664 677	social phobia
+R5	associated_with Arg1:T10 Arg2:T16	
+T17	method 689 691	CI
+T18	disease 712 726	panic disorder
+R6	associated_with Arg1:T10 Arg2:T18	
+T19	method 738 740	CI
+R7	associated_with Arg1:T10 Arg2:T11	
+T20	method 789 828	Swedish population register-based study
+T21	disease 840 843	OCD
+T22	Health_factors 865 872	parents
+T23	Health_factors 876 884	children
+T24	disease 989 992	OCD
+T25	disease 997 1014	anxiety disorders
+R8	associated_with Arg1:T24 Arg2:T25	
+T26	disease 1103 1106	OCD
+T27	disease 1111 1114	GAD
+R9	associated_with Arg1:T26 Arg2:T27	
+T28	disease 1133 1136	OCD
+T29	disease 1141 1154	social phobia
+R10	associated_with Arg1:T28 Arg2:T29	
+T30	disease 1176 1179	OCD
+T31	disease 1184 1198	panic disorder
+R11	associated_with Arg1:T30 Arg2:T31	

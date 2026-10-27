@@ -1,0 +1,10 @@
+T1	disease 39 59	long term depression
+T2	disease 61 64	LTD
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+T3	disease 0 59	Metabotropic Glu 1/5 receptor-mediated long term depression
+T4	region 69 101	Schaffer collateral CA1 synapses
+T5	method 154 170	old WAG/Rij rats
+T6	Health_factors 183 186	age
+T7	disease 199 208	epileptic
+R2	located_in Arg1:T3 Arg2:T4	
+T8	method 217 221	rats

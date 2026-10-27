@@ -1,0 +1,78 @@
+T0	disease 24 34	depression
+T1	disease 94 110	incurable cancer
+T2	disease 39 55	anxiety symptoms
+T4	Health_factors 59 76	family caregivers
+T5	Health_factors 123 140	Family caregivers
+T6	Health_factors 142 145	FCs
+T7	disease 190 196	cancer
+T8	disease 222 244	psychological distress
+T9	Health_factors 256 274	caregiving demands
+T10	disease 307 317	depression
+T11	disease 322 329	anxiety
+T12	disease 354 370	incurable cancer
+T13	disease 463 485	psychological distress
+T14	method 525 549	cross-sectional analysis
+T15	method 574 590	randomized trial
+T17	method 594 615	early palliative care
+T19	disease 629 639	depression
+T20	disease 644 651	anxiety
+T21	disease 743 784	incurable lung or gastrointestinal cancer
+T22	method 662 699	Hospital Anxiety and Depression Scale
+T23	disease 972 978	cancer
+T25	Health_factors 827 842	quality of life
+T26	disease 844 891	Functional Assessment of Cancer Therapy-General
+T28	Health_factors 894 911	coping strategies
+T30	disease 1095 1105	depression
+T31	Health_factors 1092 1094	FC
+T32	disease 1110 1126	anxiety symptoms
+T33	method 998 1015	linear regression
+T34	Health_factors 1213 1219	female
+T35	disease 1315 1325	depression
+T36	Health_factors 1373 1376	FCs
+T37	disease 1404 1411	anxiety
+T38	Health_factors 1288 1291	FCs
+T39	disease 1674 1681	anxiety
+T40	method 1529 1531	FC
+T41	disease 1532 1542	depression
+T42	Health_factors 1625 1627	FC
+T43	disease 1628 1638	depression
+T44	method 1671 1673	FC
+T47	disease 1780 1786	cancer
+T48	Health_factors 1815 1817	FC
+T49	disease 1818 1828	depression
+T53	disease 1879 1895	incurable cancer
+T54	disease 1932 1942	depression
+T55	disease 1947 1963	anxiety symptoms
+T57	Health_factors 1996 2013	coping strategies
+T58	Health_factors 2064 2066	FC
+T59	disease 2067 2077	depression
+T60	disease 2082 2098	anxiety symptoms
+T61	disease 2188 2210	psychological distress
+T64	Health_factors 2018 2042	prognostic understanding
+R1	abbreviation_for Arg1:T6 Arg2:T5	
+R2	occurs_in Arg1:T2 Arg2:T4	
+R3	occurs_in Arg1:T0 Arg2:T4	
+T3	Health_factors 333 336	FCs
+R4	occurs_in Arg1:T11 Arg2:T3	
+R5	occurs_in Arg1:T10 Arg2:T3	
+R6	help_diagnose Arg1:T22 Arg2:T19	
+R7	help_diagnose Arg1:T22 Arg2:T20	
+T16	Health_factors 795 798	FCs
+T18	method 913 923	Brief COPE
+R8	help_diagnose Arg1:T26 Arg2:T25	
+R9	help_diagnose Arg1:T18 Arg2:T28	
+T27	Health_factors 1190 1193	FCs
+R10	risk_factor_of Arg1:T36 Arg2:T37	
+T29	Health_factors 1485 1502	acceptance coping
+R11	associated_with Arg1:T29 Arg2:T41	
+T46	Health_factors 1573 1597	emotional support coping
+R12	associated_with Arg1:T46 Arg2:T43	
+R13	associated_with Arg1:T46 Arg2:T39	
+T45	Health_factors 1906 1909	FCs
+R14	risk_factor_of Arg1:T45 Arg2:T54	
+R15	risk_factor_of Arg1:T45 Arg2:T55	
+R16	associated_with Arg1:T57 Arg2:T59	
+R17	associated_with Arg1:T64 Arg2:T59	
+R18	associated_with Arg1:T57 Arg2:T60	
+R19	associated_with Arg1:T64 Arg2:T60	
+T50	Health_factors 2226 2229	FCs

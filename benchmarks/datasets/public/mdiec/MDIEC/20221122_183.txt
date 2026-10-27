@@ -1,0 +1,1 @@
+RESULTS: In fully adjusted models, patients with stroke (n = 174,901) were  50% more likely than patients with MI (n = 193,418) to develop depression during the 1.5-year follow-up period (Kaplan-Meier cumulative risk 0.1596 +- 0.001 in patients with stroke vs 0.0973 +- 0.000778 in patients with MI, log-rank p < 0.0001).

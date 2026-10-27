@@ -1,0 +1,76 @@
+T1	drug 0 11	Amisulpride
+T2	drug 13 25	aripiprazole
+T3	drug 31 41	olanzapine
+T4	disease 59 91	schizophrenia-spectrum disorders
+T5	drug 166 177	Amisulpride
+T6	drug 179 191	aripiprazole
+T7	drug 197 207	olanzapine
+T8	disease 622 654	schizophrenia-spectrum disorders
+T9	disease 685 701	active psychosis
+T10	drug 755 771	oral amisulpride
+T11	drug 773 785	aripiprazole
+T12	drug 790 800	olanzapine
+T13	method 1253 1289	Positive And Negative Syndrome Scale
+T14	drug 1776 1787	amisulpride
+T15	drug 1803 1815	aripiprazole
+T16	drug 1833 1843	olanzapine
+T17	drug 1901 1912	amisulpride
+T18	drug 2009 2021	aripiprazole
+T19	drug 2058 2068	olanzapine
+T20	gene 2141 2150	prolactin
+T21	drug 2272 2283	amisulpride
+T22	drug 2323 2335	aripiprazole
+T23	drug 2379 2389	olanzapine
+T24	drug 2757 2768	Amisulpride
+T25	drug 2795 2807	aripiprazole
+T26	drug 2811 2821	olanzapine
+T27	disease 2873 2905	schizophrenia-spectrum disorders
+T31	drug 374 380	agents
+T32	method 419 470	pragmatic, rater-blind, randomised controlled trial
+T33	method 509 519	psychiatry
+T34	Health_factors 574 578	aged
+T35	Health_factors 591 596	older
+T36	method 602 608	ICD-10
+T38	Health_factors 944 962	treating physician
+T39	Health_factors 1054 1067	statisticians
+T40	method 1083 1094	followed up
+T41	method 1327 1343	primary analyses
+T42	Health_factors 1361 1390	intention-to-treat population
+T43	method 1422 1440	ClinicalTrials.gov
+T44	method 1728 1730	SD
+T45	method 1962 1964	SD
+T46	method 2023 2025	SD
+T47	symptom 2095 2106	weight gain
+T49	Health_factors 2169 2191	serious adverse events
+T50	drug 2456 2461	drugs
+T51	drug 2524 2528	drug
+T52	disease 2608 2624	death by suicide
+T53	disease 2642 2647	death
+T54	method 2699 2708	follow-up
+T55	Health_factors 2861 2867	adults
+T56	drug 3061 3080	antipsychotic drugs
+T57	drug 3120 3145	first-line antipsychotics
+T58	method 3158 3183	pragmatic clinical trials
+T60	drug 2124 2136	serum lipids
+T61	method 1695 1700	PANSS
+T62	method 386 402	controlled trial
+T63	method 304 319	pragmatic trial
+T64	drug 212 246	first-line atypical antipsychotics
+T65	method 108 153	pragmatic, rater-blind, semi-randomised trial
+R1	hyponym_of Arg1:T5 Arg2:T64	
+R2	hyponym_of Arg1:T6 Arg2:T64	
+R3	hyponym_of Arg1:T7 Arg2:T64	
+R4	help_diagnose Arg1:T36 Arg2:T8	
+T29	method 1291 1296	PANSS
+R5	abbreviation_for Arg1:T29 Arg2:T13	
+T30	method 1919 1924	PANSS
+T48	Health_factors 2193 2197	SAEs
+R6	abbreviation_for Arg1:T48 Arg2:T49	
+T66	Health_factors 2482 2486	SAEs
+T67	Health_factors 2598 2602	SAEs
+T68	method 2839 2844	PANSS
+R7	treatment_for Arg1:T24 Arg2:T27	
+T69	physiology 2907 2918	Side-effect
+T70	method 3206 3223	clinical practice
+T28	Health_factors 2561 2579	hospital admission
+T37	method 1600 1618	inclusion criteria

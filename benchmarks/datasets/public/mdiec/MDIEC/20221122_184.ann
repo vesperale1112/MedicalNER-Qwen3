@@ -1,0 +1,5 @@
+T1	disease 30 40	depression
+T3	method 116 120	HADS
+T4	disease 18 25	anxiety
+R1	help_diagnose Arg1:T3 Arg2:T1	
+R2	help_diagnose Arg1:T3 Arg2:T4	

@@ -1,0 +1,11 @@
+T1	drug 42 50	ketamine
+T2	gene 55 84	N-methyl-D-aspartate receptor
+T3	gene 86 91	NMDAR
+T4	drug 199 215	NMDAR modulators
+T6	physiology 109 154	rapid and long-lasting antidepressant effects
+T8	method 223 238	pharmacotherapy
+T9	disease 242 252	depression
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T10	drug 55 103	N-methyl-D-aspartate receptor (NMDAR) antagonist
+R2	hyponym_of Arg1:T1 Arg2:T10	
+R4	treatment_for Arg1:T4 Arg2:T9	

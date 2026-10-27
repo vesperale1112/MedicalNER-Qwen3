@@ -1,0 +1,11 @@
+T1	method 9 31	Electrode implantation
+T2	physiology 44 86	antidepressant- and anxiolytic-like effect
+T3	physiology 108 126	glucose metabolism
+T4	region 151 156	brain
+T5	disease 185 195	depression
+T6	physiology 204 227	antidepressant response
+R1	associated_with Arg1:T1 Arg2:T2	
+R2	associated_with Arg1:T1 Arg2:T3	
+R3	associated_with Arg1:T1 Arg2:T4	
+R4	associated_with Arg1:T4 Arg2:T5	
+R5	associated_with Arg1:T4 Arg2:T6	

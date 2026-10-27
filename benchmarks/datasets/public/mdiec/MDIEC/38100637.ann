@@ -1,0 +1,45 @@
+T0	disease 0 29	Obsessive-Compulsive Disorder
+T1	Health_factors 33 41	Children
+T2	Health_factors 46 57	Adolescents
+T3	disease 59 88	Obsessive-compulsive disorder
+T4	disease 90 93	OCD
+T5	disease 128 153	neurobehavioral condition
+T7	Health_factors 111 122	adolescents
+T8	disease 171 192	functional impairment
+T9	Health_factors 227 242	quality of life
+T10	disease 319 349	comorbidities of pediatric OCD
+T13	Health_factors 281 306	diagnostic considerations
+T15	disease 409 412	OCD
+T17	Health_factors 484 489	youth
+T18	method 370 405	biological and psychological models
+T19	disease 538 541	OCD
+T20	method 508 533	evidence-based treatments
+T21	Health_factors 545 554	childhood
+T22	Health_factors 559 570	adolescence
+T23	method 582 610	cognitive behavioral therapy
+T24	method 612 615	CBT
+T26	method 665 680	pharmacotherapy
+T27	method 622 654	exposure and response prevention
+T28	method 727 730	CBT
+R1	occurs_in Arg1:T0 Arg2:T1	
+R2	occurs_in Arg1:T0 Arg2:T2	
+R3	abbreviation_for Arg1:T4 Arg2:T3	
+T30	Health_factors 98 106	children
+R4	occurs_in Arg1:T3 Arg2:T30	
+R5	occurs_in Arg1:T3 Arg2:T7	
+R6	occurs_in Arg1:T4 Arg2:T30	
+R7	occurs_in Arg1:T4 Arg2:T7	
+R8	hyponym_of Arg1:T3 Arg2:T5	
+R9	hyponym_of Arg1:T4 Arg2:T5	
+R10	risk_factor_of Arg1:T3 Arg2:T8	
+R11	risk_factor_of Arg1:T4 Arg2:T8	
+R12	risk_factor_of Arg1:T3 Arg2:T9	
+R13	risk_factor_of Arg1:T3 Arg2:T9	
+R14	occurs_in Arg1:T19 Arg2:T21	
+R15	occurs_in Arg1:T19 Arg2:T22	
+R16	abbreviation_for Arg1:T24 Arg2:T23	
+R18	hyponym_of Arg1:T26 Arg2:T20	
+T6	method 583 660	ognitive behavioral therapy (CBT) with exposure and response prevention (ERP)
+T11	method 656 659	ERP
+R17	abbreviation_for Arg1:T11 Arg2:T27	
+R19	hyponym_of Arg1:T6 Arg2:T20	

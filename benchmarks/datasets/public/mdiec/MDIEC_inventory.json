@@ -1,0 +1,38 @@
+{
+  "annotation_files": 946,
+  "text_files": 946,
+  "entity_types": {
+    "disease": 8951,
+    "method": 7972,
+    "region": 1161,
+    "Health_factors": 4498,
+    "signs": 557,
+    "physiology": 1615,
+    "gene": 1298,
+    "symptom": 463,
+    "drug": 2145
+  },
+  "relation_types": {
+    "hyponym_of": 1183,
+    "associated_with": 2704,
+    "characteristic_of": 719,
+    "abbreviation_for": 1114,
+    "risk_factor_of": 1205,
+    "occurs_in": 1260,
+    "treatment_for": 1260,
+    "help_diagnose": 592,
+    "located_in": 523
+  },
+  "entity_annotations": 28660,
+  "relation_annotations": 10560,
+  "spans": {
+    "continuous": 28660
+  },
+  "other_files": [],
+  "documents": {
+    "with_entities": 946,
+    "with_relations": 914,
+    "without_relations": 32
+  },
+  "publication_archive_discrepancy": "Paper reports 500 abstracts; downloaded archive contains 946 paired .ann/.txt files. No official split or README found in this archive. Not verified to be the exact paper evaluation version."
+}

@@ -1,0 +1,66 @@
+T0	gene 0 5	DISC1
+T1	gene 10 15	PDE4B
+T2	disease 51 64	schizophrenia
+T3	physiology 79 93	cAMP signaling
+T4	gene 32 47	genetic factors
+T5	gene 99 127	disrupted in schizophrenia 1
+T7	gene 129 134	DISC1
+T8	disease 182 195	schizophrenia
+T9	gene 136 140	gene
+T13	gene 288 308	phosphodiesterase 4B
+T14	gene 310 315	PDE4B
+T15	disease 386 399	schizophrenia
+T16	disease 420 447	chronic psychiatric illness
+T18	gene 453 457	PDEs
+T19	drug 469 498	adenosine 3',5'-monophosphate
+T20	drug 500 504	cAMP
+T21	physiology 550 556	memory
+T22	physiology 562 566	mood
+T23	symptom 540 548	learning
+T24	drug 509 525	second messenger
+T25	gene 581 586	DISC1
+T26	gene 606 610	UCR2
+T27	gene 621 626	PDE4B
+T28	drug 649 662	cellular cAMP
+T29	gene 688 693	PDE4B
+T30	gene 699 704	DISC1
+T31	physiology 724 738	PDE4B activity
+T33	disease 672 684	dissociation
+T34	gene 779 784	DISC1
+T35	gene 796 801	PDE4B
+T36	drug 881 885	cAMP
+T38	method 753 770	mechanistic model
+R1	associated_with Arg1:T0 Arg2:T2	
+R2	associated_with Arg1:T1 Arg2:T2	
+R3	associated_with Arg1:T0 Arg2:T3	
+R4	associated_with Arg1:T1 Arg2:T3	
+R5	abbreviation_for Arg1:T7 Arg2:T5	
+R6	risk_factor_of Arg1:T7 Arg2:T8	
+R7	risk_factor_of Arg1:T5 Arg2:T8	
+R8	abbreviation_for Arg1:T14 Arg2:T13	
+R13	abbreviation_for Arg1:T20 Arg2:T19	
+R14	associated_with Arg1:T18 Arg2:T19	
+R15	associated_with Arg1:T18 Arg2:T20	
+R16	hyponym_of Arg1:T20 Arg2:T24	
+R17	hyponym_of Arg1:T19 Arg2:T24	
+R18	associated_with Arg1:T19 Arg2:T23	
+R19	associated_with Arg1:T19 Arg2:T21	
+R20	associated_with Arg1:T19 Arg2:T22	
+R21	associated_with Arg1:T20 Arg2:T23	
+R22	associated_with Arg1:T20 Arg2:T21	
+R23	associated_with Arg1:T20 Arg2:T22	
+R24	associated_with Arg1:T25 Arg2:T26	
+R25	located_in Arg1:T26 Arg2:T27	
+R26	associated_with Arg1:T28 Arg2:T29	
+R27	associated_with Arg1:T28 Arg2:T31	
+R9	characteristic_of Arg1:T14 Arg2:T15	
+R10	characteristic_of Arg1:T13 Arg2:T15	
+R11	characteristic_of Arg1:T14 Arg2:T16	
+R12	characteristic_of Arg1:T13 Arg2:T16	
+R28	associated_with Arg1:T28 Arg2:T30	
+R29	associated_with Arg1:T34 Arg2:T35	
+T6	region 805 818	resting cells
+R30	located_in Arg1:T35 Arg2:T6	
+T10	gene 274 278	gene
+T11	Health_factors 406 414	relative
+R31	occurs_in Arg1:T11 Arg2:T16	

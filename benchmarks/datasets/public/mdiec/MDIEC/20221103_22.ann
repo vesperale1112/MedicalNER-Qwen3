@@ -1,0 +1,27 @@
+T1	method 0 27	Technology-facilitated care
+T7	disease 62 82	depression remission
+T9	method 555 582	technology-facilitated care
+T14	method 115 125	usual care
+T16	method 231 241	usual care
+T17	method 248 275	technology-facilitated care
+T18	method 328 338	usual care
+T19	method 347 374	technology-facilitated care
+T21	method 438 448	usual care
+T22	method 455 482	technology-facilitated care
+T24	method 586 596	usual care
+T25	disease 181 199	emotional problems
+T26	disease 206 215	depressed
+T27	method 226 229	LSE
+T28	method 323 326	LSE
+T29	method 433 436	LSE
+T30	drug 298 315	total cholesterol
+T31	method 418 431	diabetes care
+T32	method 529 553	glycated hemoglobin test
+T12	method 127 129	OR
+R1	associated_with Arg1:T1 Arg2:T7	
+R2	associated_with Arg1:T1 Arg2:T30	
+R3	associated_with Arg1:T1 Arg2:T25	
+R5	associated_with Arg1:T1 Arg2:T31	
+R6	associated_with Arg1:T1 Arg2:T32	
+T2	method 84 111	technology-facilitated care
+R7	occurs_in Arg1:T25 Arg2:T26	

@@ -1,0 +1,12 @@
+T1	method 12 15	FNS
+T2	disease 37 62	depressive-like behaviors
+T3	signs 67 71	rCBF
+T4	method 75 89	PSD rats model
+T6	region 143 168	cerebellar Purkinje cells
+T7	gene 186 222	mRNA level of inflammatory cytokines
+R1	treatment_for Arg1:T1 Arg2:T2	
+R2	associated_with Arg1:T1 Arg2:T6	
+R4	associated_with Arg1:T1 Arg2:T3	
+R3	associated_with Arg1:T1 Arg2:T7	
+R7	occurs_in Arg1:T3 Arg2:T4	
+R8	occurs_in Arg1:T2 Arg2:T4	

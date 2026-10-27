@@ -1,0 +1,40 @@
+T1	method 1629 1659	Internet-based writing therapy
+T2	disease 1696 1725	obsessive-compulsive symptoms
+R1	treatment_for Arg1:T1 Arg2:T2	
+T3	method 1825 1850	Internet-based approaches
+T4	disease 1926 1929	OCD
+R2	treatment_for Arg1:T3 Arg2:T4	
+T5	method 41 84	Internet-based cognitive behavioral therapy
+T6	disease 126 155	obsessive compulsive disorder
+R3	treatment_for Arg1:T5 Arg2:T6	
+T7	disease 187 216	obsessive-compulsive disorder
+T8	disease 218 221	OCD
+R4	abbreviation_for Arg1:T8 Arg2:T7	
+T9	method 296 324	cognitive behavioral therapy
+T10	method 364 367	CBT
+T11	method 373 376	ERP
+T12	method 408 430	Internet-based therapy
+T13	method 518 548	Internet-based writing therapy
+T14	method 602 614	CBT with ERP
+T15	disease 633 636	OCD
+T16	disease 676 679	OCD
+T17	method 693 708	DSM-IV-criteria
+R5	help_diagnose Arg1:T17 Arg2:T16	
+T18	method 730 735	trial
+T19	method 766 793	waiting-list control design
+T20	method 799 808	follow-up
+T21	method 847 859	intervention
+T22	disease 1011 1023	OCD symptoms
+T23	method 1025 1074	Yale-Brown Obsessive Compulsive Scale Self-Rating
+T24	method 1076 1085	Y-BOCS SR
+R6	abbreviation_for Arg1:T24 Arg2:T23	
+T25	method 1091 1129	Obsessive-Compulsive Inventory-Revised
+T26	method 1131 1136	OCI-R
+R7	abbreviation_for Arg1:T26 Arg2:T25	
+T27	disease 1149 1178	Obsessive-compulsive symptoms
+T28	method 1246 1272	waiting-list control group
+T29	method 1300 1309	Cohen's d
+T30	method 1318 1327	Y-BOCS SR
+T31	method 1343 1348	OCI-R
+T32	method 1360 1387	intention-to-treat analysis
+T33	method 1428 1437	follow-up

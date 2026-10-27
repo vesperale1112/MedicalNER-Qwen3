@@ -1,0 +1,83 @@
+T1	disease 35 43	COVID-19
+T2	disease 48 68	psychiatric disorder
+T3	disease 108 116	COVID-19
+T5	disease 204 211	anxiety
+T6	disease 216 226	depression
+T7	method 424 469	electronic health record network cohort study
+T8	disease 543 551	COVID-19
+T9	disease 588 596	COVID-19
+T10	disease 810 818	COVID-19
+T11	disease 1080 1088	COVID-19
+T12	disease 1181 1189	COVID-19
+T13	disease 1306 1314	COVID-19
+T14	disease 1401 1422	psychiatric disorders
+T15	disease 1424 1432	dementia
+T16	disease 1438 1446	insomnia
+T17	disease 1500 1508	COVID-19
+T18	disease 1586 1594	COVID-19
+T19	disease 1761 1770	influenza
+T20	disease 1791 1819	respiratory tract infections
+T21	disease 1834 1848	skin infection
+T22	disease 1863 1877	cholelithiasis
+T23	disease 1892 1904	urolithiasis
+T24	disease 1923 1947	fracture of a large bone
+T25	disease 1987 2004	anxiety disorders
+T26	disease 2006 2014	insomnia
+T27	disease 2020 2028	dementia
+T28	disease 2204 2212	COVID-19
+T29	disease 2339 2347	dementia
+T30	disease 2375 2383	COVID-19
+T31	disease 2535 2543	COVID-19
+T32	disease 2668 2676	COVID-19
+T33	disease 2919 2927	COVID-19
+T38	method 70 98	retrospective cohort studies
+T39	disease 390 401	psychiatric
+T42	Health_factors 618 631	health events
+T43	disease 683 694	psychiatric
+T44	Health_factors 734 764	history of psychiatric illness
+T45	method 931 956	electronic health records
+T47	method 1133 1140	cohorts
+T48	Health_factors 1210 1223	health events
+T49	method 1233 1258	propensity score matching
+T50	disease 1335 1342	illness
+T51	method 1377 1390	hazard ratios
+T52	method 1392 1395	HRs
+T53	Health_factors 1538 1569	no previous psychiatric history
+T54	disease 1646 1657	psychiatric
+T55	Health_factors 1723 1736	health events
+T56	method 1738 1740	HR
+T57	method 1749 1751	CI
+T58	method 1967 1969	HR
+T59	method 2082 2085	HRs
+T60	Health_factors 2092 2100	relapses
+T61	disease 2155 2166	psychiatric
+T62	method 2237 2239	CI
+T63	method 2407 2409	CI
+T64	Health_factors 2427 2432	older
+T65	disease 2450 2461	psychiatric
+T66	method 2555 2568	relative risk
+T67	method 2578 2580	CI
+T68	Health_factors 2773 2794	Survivors of COVID-19
+T69	disease 2857 2868	psychiatric
+T72	method 3009 3035	prospective cohort studies
+T73	method 2986 3003	clinical services
+T75	Health_factors 2733 2754	socioeconomic factors
+T83	Health_factors 963 988	health-care organisations
+T84	method 842 867	TriNetX Analytics Network
+R1	associated_with Arg1:T1 Arg2:T2	
+T87	Health_factors 309 324	physical health
+T40	method 1033 1040	TriNetX
+R2	abbreviation_for Arg1:T52 Arg2:T51	
+R3	risk_factor_of Arg1:T18 Arg2:T54	
+R4	risk_factor_of Arg1:T65 Arg2:T31	
+T41	Health_factors 2635 2650	physical health
+T46	disease 2829 2849	psychiatric sequelae
+R5	risk_factor_of Arg1:T68 Arg2:T46	
+R6	risk_factor_of Arg1:T69 Arg2:T33	
+T70	disease 146 192	Adverse mental health consequences of COVID-19
+R7	hyponym_of Arg1:T5 Arg2:T70	
+R8	hyponym_of Arg1:T6 Arg2:T70	
+T4	disease 342 350	COVID-19
+R9	occurs_in Arg1:T53 Arg2:T18	
+R10	risk_factor_of Arg1:T87 Arg2:T4	
+R11	risk_factor_of Arg1:T41 Arg2:T32	

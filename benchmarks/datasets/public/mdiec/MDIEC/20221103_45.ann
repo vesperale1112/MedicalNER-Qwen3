@@ -1,0 +1,8 @@
+T1	drug 0 9	Celecoxib
+T3	physiology 82 101	dilatation of dural
+T4	region 110 123	pial arteries
+T5	disease 188 204	migraine attacks
+R3	associated_with Arg1:T1 Arg2:T3	
+T2	physiology 18 77	cortical spreading depression-induced macrophage activation
+R4	associated_with Arg1:T1 Arg2:T2	
+T6	method 127 134	rodents

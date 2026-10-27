@@ -1,0 +1,141 @@
+T0	disease 0 24	Autism Spectrum Disorder
+T1	disease 48 72	Autism spectrum disorder
+T2	disease 74 77	ASD
+T3	disease 202 229	neurodevelopmental disorder
+T4	Health_factors 150 195	restricted, repetitive behaviors or interests
+T5	Health_factors 259 267	children
+T6	Health_factors 268 272	aged
+T7	Health_factors 317 323	adults
+T8	disease 391 394	ASD
+T10	disease 438 441	ASD
+T11	method 551 570	diagnostic criteria
+T12	method 596 605	screening
+T14	disease 703 706	ASD
+T16	disease 764 767	ASD
+T17	Health_factors 773 778	child
+T18	disease 971 974	ASD
+T20	method 1329 1356	Autism Diagnostic Interview
+T21	Health_factors 1012 1048	multidisciplinary team of clinicians
+T22	Health_factors 1106 1111	child
+T23	Health_factors 1119 1127	behavior
+T24	method 1132 1166	semistructured caregiver interview
+T26	method 1232 1253	standardized measures
+T27	method 1065 1098	semistructured direct observation
+T29	method 931 949	criterion standard
+T30	method 1364 1383	diagnostic measures
+T31	disease 1491 1494	ASD
+T32	disease 1513 1516	ASD
+T33	disease 1538 1548	depression
+T34	disease 1562 1569	anxiety
+T35	disease 1583 1601	sleep difficulties
+T36	disease 1619 1627	epilepsy
+T37	disease 1651 1674	intellectual disability
+T38	method 1685 1719	Intensive behavioral interventions
+T39	Health_factors 1777 1785	children
+T40	Health_factors 1797 1804	younger
+T41	Health_factors 1824 1832	language
+T42	method 1903 1931	standardized mean difference
+T43	method 1882 1893	effect size
+T44	symptom 1844 1864	social communication
+T45	method 1733 1757	Early Start Denver Model
+T46	disease 1967 2001	co-occurring psychiatric condition
+T47	disease 2012 2033	emotion dysregulation
+T48	disease 2037 2077	attention-deficit/hyperactivity disorder
+T49	method 1934 1949	Pharmacotherapy
+T50	drug 2079 2090	Risperidone
+T51	drug 2095 2107	aripiprazole
+T52	disease 2120 2132	irritability
+T53	method 2149 2177	standardized mean difference
+T55	method 2210 2221	effect size
+T56	disease 2281 2321	attention-deficit/hyperactivity disorder
+T57	method 2323 2351	standardized mean difference
+T59	method 2387 2398	effect size
+T60	drug 2246 2262	Psychostimulants
+T61	drug 2429 2440	medications
+T62	Health_factors 2461 2476	adverse effects
+T63	signs 2524 2530	weight
+T64	Health_factors 2536 2541	sleep
+T65	symptom 2503 2522	changes in appetite
+T66	disease 2570 2573	ASD
+T67	Health_factors 2604 2612	children
+T68	Health_factors 2613 2617	aged
+T69	Health_factors 2652 2658	adults
+T70	disease 2733 2768	co-occurring psychiatric conditions
+T71	disease 2778 2785	anxiety
+T72	disease 2789 2799	aggression
+T73	method 2670 2688	First-line therapy
+T74	method 2701 2725	behavioral interventions
+T75	method 2830 2848	behavioral therapy
+T76	drug 2852 2862	medication
+R1	abbreviation_for Arg1:T2 Arg2:T1	
+T77	Health_factors 97 129	deficits in social communication
+R2	characteristic_of Arg1:T77 Arg2:T1	
+R3	characteristic_of Arg1:T77 Arg2:T2	
+R4	characteristic_of Arg1:T4 Arg2:T1	
+R5	characteristic_of Arg1:T4 Arg2:T2	
+R6	hyponym_of Arg1:T1 Arg2:T3	
+R7	hyponym_of Arg1:T2 Arg2:T3	
+R8	associated_with Arg1:T61 Arg2:T62	
+R9	hyponym_of Arg1:T65 Arg2:T62	
+R10	hyponym_of Arg1:T63 Arg2:T62	
+R11	hyponym_of Arg1:T64 Arg2:T62	
+R12	risk_factor_of Arg1:T61 Arg2:T63	
+R13	risk_factor_of Arg1:T61 Arg2:T64	
+R14	associated_with Arg1:T66 Arg2:T67	
+R15	associated_with Arg1:T66 Arg2:T69	
+R16	hyponym_of Arg1:T74 Arg2:T73	
+R17	hyponym_of Arg1:T71 Arg2:T70	
+R18	hyponym_of Arg1:T72 Arg2:T70	
+R19	treatment_for Arg1:T75 Arg2:T70	
+R20	treatment_for Arg1:T75 Arg2:T71	
+R21	treatment_for Arg1:T75 Arg2:T72	
+R22	treatment_for Arg1:T76 Arg2:T70	
+R23	treatment_for Arg1:T76 Arg2:T71	
+R24	treatment_for Arg1:T76 Arg2:T72	
+R25	associated_with Arg1:T1 Arg2:T5	
+R26	associated_with Arg1:T2 Arg2:T5	
+R27	associated_with Arg1:T1 Arg2:T7	
+R28	associated_with Arg1:T2 Arg2:T7	
+T9	method 610 626	diagnostic tools
+R29	occurs_in Arg1:T16 Arg2:T17	
+T13	symptom 816 847	no response to name when called
+T15	symptom 855 895	limited use of gestures in communication
+T78	symptom 901 925	lack of imaginative play
+R30	characteristic_of Arg1:T13 Arg2:T16	
+R31	characteristic_of Arg1:T15 Arg2:T16	
+R32	characteristic_of Arg1:T78 Arg2:T16	
+T28	method 980 1004	comprehensive evaluation
+T19	method 1267 1320	Autism Diagnostic Observation Schedule-Second Edition
+R33	help_diagnose Arg1:T21 Arg2:T18	
+R34	help_diagnose Arg1:T27 Arg2:T18	
+R35	help_diagnose Arg1:T24 Arg2:T18	
+R36	help_diagnose Arg1:T26 Arg2:T18	
+R37	hyponym_of Arg1:T19 Arg2:T26	
+R38	hyponym_of Arg1:T20 Arg2:T26	
+R39	help_diagnose Arg1:T19 Arg2:T18	
+R40	help_diagnose Arg1:T20 Arg2:T18	
+R41	risk_factor_of Arg1:T32 Arg2:T33	
+R42	risk_factor_of Arg1:T32 Arg2:T34	
+R43	risk_factor_of Arg1:T32 Arg2:T35	
+R44	risk_factor_of Arg1:T32 Arg2:T36	
+R45	hyponym_of Arg1:T31 Arg2:T37	
+R46	hyponym_of Arg1:T45 Arg2:T38	
+R47	treatment_for Arg1:T38 Arg2:T41	
+R48	treatment_for Arg1:T45 Arg2:T41	
+T25	Health_factors 1834 1838	play
+R49	treatment_for Arg1:T38 Arg2:T25	
+R50	treatment_for Arg1:T45 Arg2:T25	
+R51	treatment_for Arg1:T38 Arg2:T44	
+R52	treatment_for Arg1:T45 Arg2:T44	
+R53	hyponym_of Arg1:T47 Arg2:T46	
+R54	hyponym_of Arg1:T48 Arg2:T46	
+R55	treatment_for Arg1:T49 Arg2:T46	
+R56	treatment_for Arg1:T49 Arg2:T47	
+R57	treatment_for Arg1:T49 Arg2:T48	
+T79	disease 2137 2147	aggression
+R58	treatment_for Arg1:T50 Arg2:T52	
+R59	treatment_for Arg1:T50 Arg2:T79	
+R60	treatment_for Arg1:T51 Arg2:T52	
+R61	treatment_for Arg1:T51 Arg2:T79	
+R62	treatment_for Arg1:T60 Arg2:T56	
+T54	signs 663 673	biomarkers

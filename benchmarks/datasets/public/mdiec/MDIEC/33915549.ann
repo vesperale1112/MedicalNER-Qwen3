@@ -1,0 +1,54 @@
+T1	disease 67 77	Depression
+T2	drug 89 103	Corticosterone
+T3	disease 132 142	Depression
+T4	disease 193 206	mood disorder
+T5	disease 590 600	depression
+T6	drug 612 626	corticosterone
+T7	disease 1007 1027	cognitive impairment
+T8	gene 1102 1106	BDNF
+T10	disease 1251 1261	depression
+R1	hyponym_of Arg1:T3 Arg2:T4	
+T11	drug 208 236	Conventional antidepressants
+T14	drug 355 376	antidepressant agents
+T15	drug 395 404	riparin I
+T16	drug 406 411	RIP I
+R2	abbreviation_for Arg1:T16 Arg2:T15	
+T17	physiology 523 544	antidepressant effect
+T18	drug 548 553	RIP I
+T19	method 574 586	animal model
+T20	drug 628 632	CORT
+R3	abbreviation_for Arg1:T20 Arg2:T6	
+T12	drug 788 792	CORT
+T13	drug 822 827	RIP I
+T21	method 848 885	Behavioral and neurochemical analyses
+T22	drug 933 938	RIP I
+T24	drug 1038 1042	CORT
+R4	risk_factor_of Arg1:T24 Arg2:T7	
+R5	treatment_for Arg1:T22 Arg2:T7	
+T25	region 1117 1147	depression-related brain areas
+R7	associated_with Arg1:T22 Arg2:T8	
+T9	signs 1070 1097	oxidative stress parameters
+R9	associated_with Arg1:T22 Arg2:T9	
+T26	drug 1189 1194	RIP I
+R10	treatment_for Arg1:T26 Arg2:T10	
+T27	drug 43 52	Riparin I
+T28	method 758 769	Female mice
+T30	method 107 118	Female Mice
+T29	drug 298 340	Antioxidant and neuroprotective substances
+R11	hyponym_of Arg1:T29 Arg2:T14	
+R12	risk_factor_of Arg1:T6 Arg2:T5	
+R13	risk_factor_of Arg1:T20 Arg2:T5	
+T31	disease 952 990	depressive and psychotic-like behavior
+R14	treatment_for Arg1:T22 Arg2:T31	
+T32	physiology 0 39	Neuroprotective and Antioxidant Effects
+R6	risk_factor_of Arg1:T2 Arg2:T1	
+T23	drug 291 296	drugs
+T33	drug 1225 1230	drugs
+T34	drug 486 502	therapeutic drug
+R8	located_in Arg1:T8 Arg2:T25	
+R17	located_in Arg1:T9 Arg2:T25	
+R16	occurs_in Arg1:T2 Arg2:T30	
+T35	physiology 654 696	neuroprotective and antioxidant mechanisms
+R15	hyponym_of Arg1:T26 Arg2:T33	
+R18	hyponym_of Arg1:T16 Arg2:T34	
+R19	hyponym_of Arg1:T15 Arg2:T34	

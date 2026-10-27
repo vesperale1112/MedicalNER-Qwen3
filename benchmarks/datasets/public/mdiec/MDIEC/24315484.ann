@@ -1,0 +1,74 @@
+T1	disease 79 107	neurodevelopmental disorders
+T2	disease 109 137	Neurodevelopmental disorders
+T3	disease 149 173	autism spectrum disorder
+T4	disease 175 178	ASD
+T6	disease 466 469	ASD
+T7	disease 489 502	MIA offspring
+T9	disease 702 715	MIA offspring
+T10	disease 1122 1125	ASD
+T11	disease 1214 1248	human neurodevelopmental disorders
+T12	Health_factors 0 10	Microbiota
+T13	disease 201 223	behavioral impairments
+T14	symptom 354 376	microbiota alterations
+T15	disease 661 700	anxiety-like and sensorimotor behaviors
+T16	symptom 727 760	altered serum metabolomic profile
+T17	method 834 838	mice
+T18	physiology 1070 1101	gut-microbiome-brain connection
+T21	method 1151 1168	probiotic therapy
+T22	Health_factors 512 548	human commensal Bacteroides fragilis
+T23	disease 20 62	behavioral and physiological abnormalities
+R1	associated_with Arg1:T12 Arg2:T23	
+R3	abbreviation_for Arg1:T4 Arg2:T3	
+R4	hyponym_of Arg1:T3 Arg2:T2	
+R5	hyponym_of Arg1:T4 Arg2:T2	
+R6	characteristic_of Arg1:T13 Arg2:T2	
+R7	characteristic_of Arg1:T13 Arg2:T3	
+R8	characteristic_of Arg1:T13 Arg2:T4	
+T24	disease 279 314	gastrointestinal (GI) abnormalities
+R9	characteristic_of Arg1:T24 Arg2:T2	
+R10	characteristic_of Arg1:T24 Arg2:T3	
+R11	characteristic_of Arg1:T24 Arg2:T4	
+T25	disease 331 349	GI barrier defects
+T5	method 471 485	Oral treatment
+T27	physiology 558 574	gut permeability
+T28	Health_factors 583 604	microbial composition
+T29	disease 622 646	defects in communicative
+T30	disease 648 659	stereotypic
+R12	treatment_for Arg1:T22 Arg2:T27	
+R13	associated_with Arg1:T22 Arg2:T28	
+R14	treatment_for Arg1:T22 Arg2:T29	
+R15	treatment_for Arg1:T22 Arg2:T30	
+R16	treatment_for Arg1:T22 Arg2:T15	
+R17	characteristic_of Arg1:T16 Arg2:T9	
+T8	Health_factors 766 777	B. fragilis
+T31	drug 806 817	metabolites
+T32	drug 846 856	metabolite
+T33	disease 878 881	MIA
+T34	Health_factors 898 909	B. fragilis
+T35	disease 925 949	behavioral abnormalities
+T36	Health_factors 967 980	gut bacterial
+T37	physiology 996 1011	host metabolome
+R18	associated_with Arg1:T36 Arg2:T37	
+T38	Health_factors 1019 1027	behavior
+R20	associated_with Arg1:T37 Arg2:T38	
+T39	method 1107 1118	mouse model
+T19	region 1173 1175	GI
+T20	disease 1191 1210	behavioral symptoms
+R22	treatment_for Arg1:T21 Arg2:T20	
+T40	disease 384 410	maternal immune activation
+T26	disease 412 415	MIA
+R23	abbreviation_for Arg1:T26 Arg2:T40	
+T41	method 417 428	mouse model
+R26	occurs_in Arg1:T14 Arg2:T40	
+R27	occurs_in Arg1:T14 Arg2:T26	
+R28	occurs_in Arg1:T25 Arg2:T40	
+R29	occurs_in Arg1:T25 Arg2:T26	
+R30	associated_with Arg1:T23 Arg2:T1	
+R2	characteristic_of Arg1:T6 Arg2:T40	
+R24	characteristic_of Arg1:T6 Arg2:T26	
+R25	treatment_for Arg1:T22 Arg2:T7	
+R31	associated_with Arg1:T8 Arg2:T31	
+R32	associated_with Arg1:T32 Arg2:T33	
+R33	associated_with Arg1:T32 Arg2:T34	
+R34	risk_factor_of Arg1:T32 Arg2:T35	
+R19	occurs_in Arg1:T20 Arg2:T11	

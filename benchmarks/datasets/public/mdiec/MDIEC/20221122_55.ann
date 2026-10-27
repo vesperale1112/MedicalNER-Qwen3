@@ -1,0 +1,36 @@
+T2	disease 43 53	depression
+T3	drug 71 89	angiotensin agents
+T4	drug 91 100	enalapril
+T5	drug 105 113	ramipril
+T6	drug 123 142	calcium antagonists
+T7	drug 144 154	amlodipine
+T8	drug 156 165	verapamil
+T9	drug 171 180	verapamil
+T10	drug 222 233	propranolol
+T11	drug 235 243	atenolol
+T12	drug 245 255	bisoprolol
+T13	drug 261 271	carvedilol
+R2	treatment_for Arg1:T3 Arg2:T2	
+R3	treatment_for Arg1:T4 Arg2:T2	
+R4	treatment_for Arg1:T5 Arg2:T2	
+R5	treatment_for Arg1:T6 Arg2:T2	
+R6	treatment_for Arg1:T7 Arg2:T2	
+R7	treatment_for Arg1:T8 Arg2:T2	
+R8	treatment_for Arg1:T9 Arg2:T2	
+T14	drug 207 220	beta-blockers
+R9	hyponym_of Arg1:T10 Arg2:T14	
+R10	hyponym_of Arg1:T11 Arg2:T14	
+R11	hyponym_of Arg1:T12 Arg2:T14	
+R12	hyponym_of Arg1:T13 Arg2:T14	
+R13	treatment_for Arg1:T10 Arg2:T2	
+R14	treatment_for Arg1:T11 Arg2:T2	
+R15	treatment_for Arg1:T12 Arg2:T2	
+R16	treatment_for Arg1:T13 Arg2:T2	
+R1	hyponym_of Arg1:T4 Arg2:T3	
+R17	hyponym_of Arg1:T5 Arg2:T3	
+R18	hyponym_of Arg1:T7 Arg2:T6	
+R19	hyponym_of Arg1:T8 Arg2:T6	
+R20	hyponym_of Arg1:T9 Arg2:T6	
+R21	treatment_for Arg1:T14 Arg2:T2	
+T1	drug 11 16	drugs
+R22	treatment_for Arg1:T1 Arg2:T2	

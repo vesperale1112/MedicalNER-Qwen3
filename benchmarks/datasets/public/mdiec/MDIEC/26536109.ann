@@ -1,0 +1,50 @@
+T0	disease 49 56	anxiety
+T2	disease 61 65	fear
+T3	physiology 29 45	top-down control
+T4	region 0 19	Basomedial amygdala
+T5	disease 67 93	Anxiety-related conditions
+T6	disease 123 148	neuropsychiatric diseases
+T8	method 192 211	cognitive therapies
+T11	region 349 353	mPFC
+T12	region 323 347	medial prefrontal cortex
+T13	region 271 288	top-down pathways
+T16	method 490 502	intervention
+T17	physiology 433 463	cognitive regulation of affect
+T22	disease 602 606	fear
+T25	physiology 682 702	top-down connections
+T29	region 859 867	amygdala
+T30	method 871 875	mice
+T31	region 843 855	ventral mPFC
+T32	region 786 805	basomedial amygdala
+T33	region 887 898	BMA neurons
+T34	disease 1000 1012	high-anxiety
+T36	physiology 949 963	BMA activation
+T38	disease 1105 1112	anxiety
+T39	disease 1165 1187	stress-induced anxiety
+T42	physiology 1085 1101	top-down control
+T43	physiology 1046 1073	ventral mPFC-BMA projection
+R1	associated_with Arg1:T4 Arg2:T0	
+R4	hyponym_of Arg1:T5 Arg2:T6	
+T1	method 158 175	pharmacologically
+R5	treatment_for Arg1:T8 Arg2:T5	
+T7	region 294 319	cognitive control regions
+R6	abbreviation_for Arg1:T11 Arg2:T12	
+R7	located_in Arg1:T7 Arg2:T12	
+R8	located_in Arg1:T7 Arg2:T11	
+R9	located_in Arg1:T13 Arg2:T7	
+T9	region 541 575	dorsal and ventral mPFC subregions
+R10	associated_with Arg1:T9 Arg2:T22	
+T10	region 807 810	BMA
+R11	abbreviation_for Arg1:T10 Arg2:T32	
+R12	associated_with Arg1:T10 Arg2:T31	
+R13	located_in Arg1:T31 Arg2:T29	
+R14	occurs_in Arg1:T29 Arg2:T30	
+R15	associated_with Arg1:T32 Arg2:T31	
+T14	disease 974 995	fear-related freezing
+R16	treatment_for Arg1:T36 Arg2:T14	
+R17	treatment_for Arg1:T36 Arg2:T34	
+T15	disease 1123 1139	learned freezing
+R18	associated_with Arg1:T43 Arg2:T38	
+R19	associated_with Arg1:T43 Arg2:T15	
+R2	associated_with Arg1:T4 Arg2:T2	
+T18	physiology 1221 1260	top-down behavioural regulation pathway

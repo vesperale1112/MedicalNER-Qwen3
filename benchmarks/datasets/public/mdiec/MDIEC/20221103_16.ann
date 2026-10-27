@@ -1,0 +1,8 @@
+T1	drug 0 10	Fluoxetine
+T4	physiology 70 96	resting energy expenditure
+T5	disease 124 162	moderate and transient bodyweight loss
+T6	physiology 19 55	food, energy and carbohydrate intake
+R1	associated_with Arg1:T1 Arg2:T6	
+R2	associated_with Arg1:T1 Arg2:T4	
+R4	associated_with Arg1:T6 Arg2:T5	
+R5	associated_with Arg1:T4 Arg2:T5	

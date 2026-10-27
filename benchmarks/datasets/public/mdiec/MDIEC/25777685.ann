@@ -1,0 +1,98 @@
+T2	disease 63 70	anxiety
+T3	disease 102 118	thyroid diseases
+T4	disease 123 133	depression
+T5	disease 248 264	thyroid diseases
+T6	disease 270 280	depression
+T7	disease 285 292	anxiety
+T9	drug 443 446	TSH
+T10	disease 510 520	depression
+T11	disease 525 532	anxiety
+T13	disease 794 801	anxiety
+T14	disease 948 975	current depressive symptoms
+T15	disease 977 993	Thyroid diseases
+T16	disease 1065 1075	depression
+T17	disease 1080 1087	anxiety
+T21	disease 1429 1432	MDD
+T22	disease 1528 1538	depression
+T23	disease 1543 1550	anxiety
+T24	disease 1637 1654	thyroid disorders
+T25	disease 1687 1697	depression
+T26	disease 1702 1719	anxiety disorders
+T28	disease 1827 1837	depression
+T29	disease 1842 1849	anxiety
+T31	disease 1915 1925	depression
+T32	disease 48 58	depression
+#1	AnnotatorNotes T32	C0011581
+#2	AnnotatorNotes T2	C0003467
+T33	drug 414 441	thyroid-stimulating hormone
+#4	AnnotatorNotes T33	C0857986
+T34	gene 460 494	anti-thyroid-peroxidase antibodies
+T35	gene 496 503	TPO-abs
+R5	abbreviation_for Arg1:T35 Arg2:T34	
+T36	method 744 750	DSM-VI
+T37	disease 764 789	major depression disorder
+R12	help_diagnose Arg1:T36 Arg2:T37	
+T38	method 882 907	Beck depression inventory
+T39	method 909 915	BDI-II
+R14	abbreviation_for Arg1:T39 Arg2:T38	
+R15	help_diagnose Arg1:T38 Arg2:T14	
+#5	AnnotatorNotes T38	C5188416
+#6	AnnotatorNotes T36	C1137105
+#7	AnnotatorNotes T37	C1269683
+R16	associated_with Arg1:T15 Arg2:T16	
+R17	associated_with Arg1:T15 Arg2:T17	
+T19	disease 1277 1291	hypothyroidism
+#8	AnnotatorNotes T19	C2749407
+T40	method 1327 1333	BDI-II
+T41	disease 1349 1356	anxiety
+T42	gene 1460 1476	Serum TSH levels
+T43	gene 1481 1488	TPO-Abs
+T27	disease 1793 1807	hypothyroidism
+#9	AnnotatorNotes T27	C2749407
+R8	associated_with Arg1:T27 Arg2:T28	
+R9	associated_with Arg1:T27 Arg2:T29	
+T20	disease 1384 1399	hyperthyroidism
+#11	AnnotatorNotes T20	C0020550
+R11	associated_with Arg1:T20 Arg2:T21	
+T30	disease 1880 1895	hyperthyroidism
+#10	AnnotatorNotes T30	C0020550
+R10	associated_with Arg1:T30 Arg2:T31	
+#12	AnnotatorNotes T3	C0040128
+T1	disease 10 27	thyroid disorders
+R1	associated_with Arg1:T1 Arg2:T32	
+R2	associated_with Arg1:T1 Arg2:T2	
+T8	disease 389 406	thyroid disorders
+T44	method 304 325	gold-standard methods
+R4	abbreviation_for Arg1:T9 Arg2:T33	
+T47	method 626 654	Study of Health in Pomerania
+T48	method 656 662	SHIP-1
+R24	abbreviation_for Arg1:T48 Arg2:T47	
+T49	method 675 733	Life-Events and Gene-Environment Interaction in Depression
+T50	method 735 741	LEGEND
+R25	abbreviation_for Arg1:T50 Arg2:T49	
+T51	method 825 876	Munich-Composite International Diagnostic Interview
+T18	method 1094 1112	Poisson regression
+T52	Health_factors 1610 1632	childhood maltreatment
+R26	associated_with Arg1:T52 Arg2:T24	
+T53	method 193 217	population-based studies
+T54	signs 1187 1190	BMI
+T12	method 1229 1235	SHIP-1
+T55	method 1240 1246	LEGEND
+R13	help_diagnose Arg1:T39 Arg2:T14	
+T56	Health_factors 1126 1129	age
+T57	Health_factors 1131 1134	sex
+T58	Health_factors 1136 1150	marital status
+T59	Health_factors 1152 1163	educational
+T60	Health_factors 1171 1185	smoking status
+T61	method 609 618	follow-up
+T45	signs 408 441	serum thyroid-stimulating hormone
+T62	signs 1029 1039	biomarkers
+R18	associated_with Arg1:T19 Arg2:T41	
+R21	help_diagnose Arg1:T51 Arg2:T13	
+R23	associated_with Arg1:T19 Arg2:T40	
+R3	associated_with Arg1:T3 Arg2:T4	
+R19	help_diagnose Arg1:T44 Arg2:T7	
+R20	help_diagnose Arg1:T44 Arg2:T6	
+T46	method 1011 1021	interviews
+R6	help_diagnose Arg1:T46 Arg2:T15	
+R7	help_diagnose Arg1:T62 Arg2:T15	

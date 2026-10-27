@@ -1,0 +1,65 @@
+T0	disease 59 72	schizophrenia
+T1	method 0 27	Psychological interventions
+T2	method 74 91	systematic review
+T3	method 96 117	network meta-analysis
+T4	disease 38 55	positive symptoms
+T5	disease 198 211	schizophrenia
+T6	method 119 143	Psychological treatments
+T7	method 180 193	interventions
+T9	method 305 332	psychological interventions
+T10	disease 351 376	current positive symptoms
+T12	disease 508 542	positive symptoms of schizophrenia
+T14	method 479 503	psychological treatments
+T16	disease 878 912	positive symptoms of schizophrenia
+T17	method 653 659	EMBASE
+T18	method 661 668	MEDLINE
+T19	method 670 678	PsycINFO
+T20	method 680 686	PubMed
+T21	method 688 694	BIOSIS
+T22	method 696 712	Cochrane Library
+T25	method 794 812	ClinicalTrials.gov
+T26	method 817 845	randomized controlled trials
+T27	method 849 873	psychological treatments
+T29	method 714 789	World Health Organization's International Clinical Trials Registry Platform
+T30	disease 998 1011	schizophrenia
+T31	Health_factors 971 977	adults
+T32	disease 1045 1062	positive symptoms
+T35	method 1130 1153	validated rating scales
+T36	disease 1098 1115	positive symptoms
+T38	method 1170 1198	randomized controlled trials
+T39	method 1208 1235	psychological interventions
+T40	method 1285 1308	psychological treatment
+T41	drug 1322 1336	antipsychotics
+T42	method 1396 1417	network meta-analysis
+T43	method 1430 1459	cognitive behavioural therapy
+T44	method 1527 1555	standardized mean difference
+T45	method 1557 1560	SMD
+T46	method 1572 1574	CI
+T48	method 1613 1616	SMD
+T49	method 1628 1630	CI
+T51	method 1672 1675	SMD
+T52	method 1687 1689	CI
+T53	method 1652 1670	supportive therapy
+T54	method 1509 1525	inactive control
+T55	disease 1481 1498	positive symptoms
+T56	method 1708 1737	Cognitive behavioural therapy
+T58	method 1814 1824	risk ratio
+T59	method 1826 1828	RR
+T60	method 1839 1841	CI
+T65	method 2035 2055	sensitivity analyses
+T66	disease 2271 2284	schizophrenia
+T67	method 2169 2195	Cognitive behavior therapy
+T69	method 2291 2303	effect sizes
+T70	Health_factors 2242 2265	moderately ill patients
+T71	disease 2221 2238	positive symptoms
+R1	treatment_for Arg1:T1 Arg2:T4	
+R2	occurs_in Arg1:T4 Arg2:T0	
+R3	treatment_for Arg1:T6 Arg2:T5	
+T8	method 557 587	network meta-analysis approach
+R4	help_diagnose Arg1:T35 Arg2:T36	
+R5	treatment_for Arg1:T43 Arg2:T55	
+R6	abbreviation_for Arg1:T45 Arg2:T44	
+R7	abbreviation_for Arg1:T59 Arg2:T58	
+R8	occurs_in Arg1:T71 Arg2:T70	
+R9	occurs_in Arg1:T71 Arg2:T66	
+R10	treatment_for Arg1:T67 Arg2:T71	

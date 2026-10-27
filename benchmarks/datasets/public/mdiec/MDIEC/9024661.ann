@@ -1,0 +1,62 @@
+T0	gene 10 42	prefrontal dopamine D1 receptors
+T1	disease 46 59	schizophrenia
+T2	disease 77 90	Schizophrenia
+T4	gene 136 154	dopamine receptors
+T6	gene 246 266	dopamine D2 receptor
+T7	gene 268 271	D2R
+T9	gene 274 277	D2R
+T10	gene 420 423	D2R
+T11	disease 453 467	schizophrenics
+T12	region 310 318	striatum
+T13	region 441 449	striatum
+T14	method 373 376	PET
+T15	method 343 371	positron emission tomography
+T17	gene 555 575	dopamine D1 receptor
+T18	gene 577 580	D1R
+T19	disease 746 759	schizophrenia
+T20	region 616 633	prefrontal cortex
+T24	disease 693 719	working memory dysfunction
+T25	physiology 673 687	working memory
+T26	gene 819 822	D1R
+T27	gene 827 830	D2R
+T28	Health_factors 844 890	drug-naive or drug-free schizophrenic patients
+T29	region 834 840	brains
+T33	method 784 787	PET
+T35	disease 1046 1060	schizophrenics
+T36	region 937 945	striatum
+T37	region 1025 1042	prefrontal cortex
+T38	physiology 976 1005	binding of radioligand to D1R
+T40	disease 1112 1129	negative symptoms
+T42	method 1198 1225	Wisconsin Card Sorting Test
+T43	physiology 1174 1190	poor performance
+T44	disease 1145 1165	emotional withdrawal
+T46	disease 1243 1272	dysfunction of D1R signalling
+T47	disease 1369 1382	schizophrenia
+T48	region 1280 1297	prefrontal cortex
+T49	disease 1320 1337	negative symptoms
+T50	disease 1342 1360	cognitive deficits
+T51	method 72 75	PET
+R1	characteristic_of Arg1:T0 Arg2:T1	
+R2	associated_with Arg1:T2 Arg2:T4	
+T3	physiology 203 223	antipsychotic effect
+T52	drug 227 238	antagonists
+R3	abbreviation_for Arg1:T7 Arg2:T6	
+R4	associated_with Arg1:T9 Arg2:T12	
+R5	abbreviation_for Arg1:T14 Arg2:T15	
+R6	located_in Arg1:T10 Arg2:T13	
+R7	abbreviation_for Arg1:T18 Arg2:T17	
+R8	associated_with Arg1:T17 Arg2:T20	
+R9	associated_with Arg1:T18 Arg2:T20	
+R10	associated_with Arg1:T17 Arg2:T25	
+R11	associated_with Arg1:T18 Arg2:T25	
+R12	characteristic_of Arg1:T24 Arg2:T19	
+R13	located_in Arg1:T27 Arg2:T29	
+R14	located_in Arg1:T26 Arg2:T29	
+R15	located_in Arg1:T38 Arg2:T37	
+R16	characteristic_of Arg1:T38 Arg2:T35	
+R17	hyponym_of Arg1:T44 Arg2:T40	
+R18	located_in Arg1:T46 Arg2:T48	
+R19	risk_factor_of Arg1:T46 Arg2:T49	
+R20	risk_factor_of Arg1:T46 Arg2:T50	
+R21	occurs_in Arg1:T50 Arg2:T47	
+R22	occurs_in Arg1:T49 Arg2:T47	

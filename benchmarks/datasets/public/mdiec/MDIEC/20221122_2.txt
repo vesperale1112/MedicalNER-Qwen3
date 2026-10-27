@@ -1,0 +1,1 @@
+In visual cortex layer II/III pyramidal neurons, long-term depression (LTD) of synaptic currents was induced by a combination of the intracellular increase of inositol-1,4,5-trisphosphate (IP(3)), achieved by photolyzing caged-IP(3), and the tetanization to nearby cortex, but not by either of these two procedures alone.

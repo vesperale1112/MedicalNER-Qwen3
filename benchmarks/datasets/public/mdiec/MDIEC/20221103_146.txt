@@ -1,0 +1,1 @@
+Multivariate logistic regression showed that survivors who were younger, were female, had >=3 comorbid conditions, were functionally disabled from stroke, lacked emotional-social support, and who took antidepressants before study entry had higher risk of depression.

@@ -1,0 +1,9 @@
+T1	disease 34 48	chronic stress
+T2	region 87 105	mouse raphe nuclei
+T4	disease 152 190	depression-like behavioral alterations
+T6	region 222 241	serotonergic system
+T7	gene 14 26	microRNA-34a
+R1	risk_factor_of Arg1:T7 Arg2:T4	
+R4	associated_with Arg1:T7 Arg2:T6	
+R2	occurs_in Arg1:T7 Arg2:T1	
+R3	associated_with Arg1:T7 Arg2:T2	

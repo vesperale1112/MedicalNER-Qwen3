@@ -1,0 +1,12 @@
+T1	method 15 50	population-based case-control study
+T2	disease 74 93	unprovoked seizures
+T3	Health_factors 100 118	Icelandic children
+T4	Health_factors 123 129	adults
+T5	disease 182 198	major depression
+T8	disease 231 249	unprovoked seizure
+T9	disease 254 262	epilepsy
+T7	Health_factors 130 134	aged
+T10	Health_factors 148 153	older
+T6	disease 308 318	depression
+R1	occurs_in Arg1:T2 Arg2:T3	
+R2	occurs_in Arg1:T2 Arg2:T4	

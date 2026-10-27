@@ -1,0 +1,37 @@
+T1	disease 0 13	Schizophrenia
+T2	disease 15 28	Schizophrenia
+T3	symptom 84 115	social and occupational decline
+T4	disease 401 419	Catatonic symptoms
+T5	disease 440 453	schizophrenia
+T6	disease 539 559	Cognitive impairment
+T7	symptom 625 656	Lateral ventricular enlargement
+T8	disease 908 933	Neurochemical disturbance
+T9	physiology 945 962	dopamine function
+T11	physiology 967 1019	glutamatergic N-methyl-D-aspartate receptor function
+T12	disease 1095 1108	schizophrenia
+T15	disease 1408 1421	schizophrenia
+T16	disease 47 65	psychotic symptoms
+T17	Health_factors 236 239	men
+T18	Health_factors 248 253	women
+T20	method 384 399	factor analysis
+T27	gene 1071 1078	genetic
+T28	physiology 1152 1157	Birth
+T29	drug 1257 1289	dopamine receptor-blocking drugs
+T30	method 1293 1319	psychological intervention
+T31	method 1321 1350	cognitive behavioural therapy
+T32	disease 1478 1496	psychotic symptoms
+T33	drug 1553 1561	cannabis
+T34	Health_factors 1566 1585	childhood adversity
+T35	symptom 1625 1649	progressive brain change
+T36	method 1698 1710	intervention
+T39	region 880 906	large-scale brain networks
+T40	region 786 800	frontal cortex
+T41	symptom 724 748	Brain functional changes
+T42	symptom 661 684	brain volume reductions
+T44	disease 342 367	disorganisation syndromes
+R1	characteristic_of Arg1:T16 Arg2:T2	
+R2	characteristic_of Arg1:T3 Arg2:T2	
+R3	characteristic_of Arg1:T4 Arg2:T5	
+T10	gene 1141 1150	polygenic
+R4	associated_with Arg1:T8 Arg2:T9	
+R5	associated_with Arg1:T8 Arg2:T11	

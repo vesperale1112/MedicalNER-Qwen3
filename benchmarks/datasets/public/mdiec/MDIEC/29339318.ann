@@ -1,0 +1,131 @@
+T0	disease 38 50	inflammation
+T1	disease 64 74	depression
+T2	disease 79 101	mental health problems
+T3	Health_factors 0 16	Dietary patterns
+T4	signs 18 33	body mass index
+T5	Health_factors 105 116	adolescents
+T6	method 129 150	Observational studies
+T7	Health_factors 164 180	dietary patterns
+T8	Health_factors 192 214	mental health outcomes
+T9	physiology 225 256	biologically plausible pathways
+T10	disease 409 428	depressive symptoms
+T11	Health_factors 339 355	dietary patterns
+T12	disease 368 380	inflammation
+T13	Health_factors 385 398	mental health
+T14	method 434 457	population-based cohort
+T15	Health_factors 461 472	adolescents
+T16	disease 357 366	adiposity
+T18	Health_factors 510 521	adolescents
+T21	Health_factors 618 621	age
+T22	method 543 592	Western Australian Pregnancy Cohort (Raine) Study
+T23	drug 826 832	leptin
+T24	disease 838 850	inflammation
+T25	gene 852 887	high sensitivity C-reactive protein
+T26	gene 890 896	hs-CRP
+T28	method 623 652	Structural equation modelling
+T29	Health_factors 706 722	dietary patterns
+T30	signs 753 768	body mass index
+T31	gene 798 824	pro-inflammatory adipokine
+T32	signs 916 936	inflammatory markers
+T33	disease 940 959	depressive symptoms
+T34	method 961 986	Beck Depression Inventory
+T38	method 1045 1089	Child Behavior Check List Youth Self- Report
+T39	disease 992 1043	Internalising and Externalising Behavioral Problems
+T40	disease 780 789	adiposity
+T41	disease 742 751	adiposity
+T42	disease 1150 1160	depression
+T43	Health_factors 1186 1202	dietary patterns
+T44	method 1119 1143	reverse hypothesis model
+T47	method 1239 1252	tested models
+T49	signs 1436 1439	BMI
+T50	signs 1457 1460	BMI
+T53	signs 1465 1491	biomarkers of inflammation
+T54	disease 1626 1638	inflammation
+T55	signs 1618 1621	BMI
+T56	drug 1713 1719	leptin
+T57	gene 1729 1735	hs-CRP
+T58	disease 1745 1764	depressive symptoms
+T59	disease 1777 1799	mental health problems
+T60	signs 1662 1665	BMI
+T61	signs 1700 1703	BMI
+T62	disease 1897 1919	mental health problems
+T63	disease 1930 1949	depressive symptoms
+T64	Health_factors 1953 1964	adolescents
+T65	disease 2023 2035	inflammation
+T66	disease 2009 2018	adiposity
+T67	physiology 1974 2005	biologically plausible pathways
+T69	disease 2230 2242	inflammation
+T70	disease 2281 2300	depressive symptoms
+T71	Health_factors 2139 2148	adulthood
+T72	Health_factors 2201 2217	dietary patterns
+T73	disease 2247 2269	mental health problems
+T74	disease 2219 2228	adiposity
+T76	method 2111 2133	Longitudinal modelling
+R1	occurs_in Arg1:T1 Arg2:T5	
+R2	occurs_in Arg1:T2 Arg2:T5	
+R3	associated_with Arg1:T7 Arg2:T8	
+R7	hyponym_of Arg1:T10 Arg2:T13	
+T17	Health_factors 724 737	energy intake
+R4	abbreviation_for Arg1:T26 Arg2:T25	
+T19	Health_factors 1288 1313	'Western' dietary pattern
+T20	Health_factors 1330 1338	red meat
+T27	Health_factors 1340 1348	takeaway
+T35	Health_factors 1350 1363	refined foods
+T36	Health_factors 1369 1382	confectionary
+T37	Health_factors 1418 1431	energy intake
+R5	associated_with Arg1:T19 Arg2:T37	
+R6	associated_with Arg1:T19 Arg2:T49	
+R8	associated_with Arg1:T19 Arg2:T50	
+R9	associated_with Arg1:T19 Arg2:T53	
+R10	risk_factor_of Arg1:T20 Arg2:T37	
+R11	risk_factor_of Arg1:T27 Arg2:T37	
+R12	risk_factor_of Arg1:T35 Arg2:T37	
+R13	risk_factor_of Arg1:T36 Arg2:T37	
+R14	risk_factor_of Arg1:T20 Arg2:T49	
+R15	risk_factor_of Arg1:T27 Arg2:T49	
+R16	risk_factor_of Arg1:T35 Arg2:T49	
+R17	risk_factor_of Arg1:T36 Arg2:T49	
+R18	associated_with Arg1:T20 Arg2:T50	
+R19	associated_with Arg1:T27 Arg2:T50	
+R20	associated_with Arg1:T35 Arg2:T50	
+R21	associated_with Arg1:T36 Arg2:T50	
+R22	associated_with Arg1:T20 Arg2:T53	
+R23	associated_with Arg1:T27 Arg2:T53	
+R24	associated_with Arg1:T35 Arg2:T53	
+R25	associated_with Arg1:T36 Arg2:T53	
+T45	Health_factors 1514 1539	'Healthy' dietary pattern
+T46	Health_factors 1549 1554	fruit
+T48	Health_factors 1556 1566	vegetables
+T51	Health_factors 1568 1572	fish
+T52	Health_factors 1574 1586	whole-grains
+R26	associated_with Arg1:T45 Arg2:T55	
+R27	associated_with Arg1:T45 Arg2:T54	
+R28	associated_with Arg1:T46 Arg2:T55	
+R29	associated_with Arg1:T48 Arg2:T55	
+R30	associated_with Arg1:T51 Arg2:T55	
+R31	associated_with Arg1:T52 Arg2:T55	
+R32	associated_with Arg1:T46 Arg2:T54	
+R33	associated_with Arg1:T48 Arg2:T54	
+R34	associated_with Arg1:T51 Arg2:T54	
+R35	associated_with Arg1:T52 Arg2:T54	
+R36	risk_factor_of Arg1:T60 Arg2:T61	
+R37	risk_factor_of Arg1:T60 Arg2:T56	
+R38	risk_factor_of Arg1:T60 Arg2:T57	
+R39	risk_factor_of Arg1:T60 Arg2:T58	
+R40	risk_factor_of Arg1:T60 Arg2:T59	
+T77	Health_factors 1834 1859	'Western' dietary pattern
+R41	hyponym_of Arg1:T63 Arg2:T62	
+R42	occurs_in Arg1:T63 Arg2:T64	
+R43	risk_factor_of Arg1:T77 Arg2:T62	
+R44	risk_factor_of Arg1:T77 Arg2:T63	
+R45	associated_with Arg1:T62 Arg2:T66	
+R47	associated_with Arg1:T62 Arg2:T65	
+R46	associated_with Arg1:T63 Arg2:T66	
+R48	associated_with Arg1:T63 Arg2:T65	
+R49	hyponym_of Arg1:T70 Arg2:T73	
+R50	associated_with Arg1:T72 Arg2:T73	
+R51	associated_with Arg1:T74 Arg2:T73	
+R52	associated_with Arg1:T69 Arg2:T73	
+R53	associated_with Arg1:T72 Arg2:T70	
+R54	associated_with Arg1:T74 Arg2:T70	
+R55	associated_with Arg1:T69 Arg2:T70	

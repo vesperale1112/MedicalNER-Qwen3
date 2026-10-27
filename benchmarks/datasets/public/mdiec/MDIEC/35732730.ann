@@ -1,0 +1,49 @@
+T1	disease 0 10	Depression
+T2	disease 15 22	anxiety
+T3	disease 26 52	inflammatory bowel disease
+T4	disease 79 105	Inflammatory bowel disease
+T5	disease 107 110	IBD
+T6	disease 128 148	Crohn&#x27;s disease
+T7	disease 153 171	ulcerative colitis
+T8	disease 197 220	immune-mediated disease
+T9	disease 273 276	IBD
+T10	disease 414 417	IBD
+T11	disease 443 453	depression
+T12	disease 458 465	anxiety
+T15	disease 618 666	co-occurrence of IBD with depression and anxiety
+T16	disease 799 802	IBD
+T17	disease 867 914	co-occurrence of IBD and depression and anxiety
+T20	physiology 1062 1082	nitric oxide pathway
+T21	disease 1119 1132	gut dysbiosis
+T22	disease 1204 1214	depression
+T23	disease 1219 1226	anxiety
+T24	disease 1253 1256	IBD
+T25	disease 1306 1309	IBD
+T26	disease 1330 1333	IBD
+T27	Health_factors 299 314	early adulthood
+T28	Health_factors 356 371	quality of life
+T30	physiology 941 972	brain signalling and morphology
+T32	gene 1137 1145	genetics
+T33	method 1275 1302	psychological interventions
+T34	disease 1347 1370	psychiatric comorbidity
+T35	gene 987 1042	peripheral and intracerebral pro-inflammatory cytokines
+T36	disease 751 771	psychological stress
+T37	method 54 66	epidemiology
+R1	abbreviation_for Arg1:T5 Arg2:T4	
+R2	hyponym_of Arg1:T4 Arg2:T8	
+R3	hyponym_of Arg1:T5 Arg2:T8	
+R4	hyponym_of Arg1:T6 Arg2:T5	
+R5	hyponym_of Arg1:T7 Arg2:T5	
+R6	hyponym_of Arg1:T6 Arg2:T4	
+R7	hyponym_of Arg1:T7 Arg2:T4	
+R8	associated_with Arg1:T9 Arg2:T28	
+R9	risk_factor_of Arg1:T10 Arg2:T11	
+R10	risk_factor_of Arg1:T10 Arg2:T12	
+R11	associated_with Arg1:T36 Arg2:T16	
+T29	physiology 1095 1117	vagal nerve signalling
+R12	associated_with Arg1:T17 Arg2:T30	
+R13	associated_with Arg1:T17 Arg2:T35	
+R14	associated_with Arg1:T17 Arg2:T20	
+R15	associated_with Arg1:T17 Arg2:T29	
+R16	associated_with Arg1:T17 Arg2:T21	
+R17	associated_with Arg1:T17 Arg2:T32	

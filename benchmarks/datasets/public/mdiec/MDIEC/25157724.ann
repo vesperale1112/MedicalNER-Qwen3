@@ -1,0 +1,89 @@
+T1	Health_factors 23 34	adolescents
+T2	disease 159 175	major depression
+T3	disease 244 254	depression
+T4	Health_factors 326 337	adolescents
+T5	disease 363 373	depressive
+T6	disease 665 675	depression
+T7	disease 794 810	major depression
+T8	Health_factors 888 907	alcohol/drug misuse
+T9	disease 942 958	bipolar disorder
+T10	disease 960 979	developmental delay
+T11	method 1204 1224	depression screening
+T12	Health_factors 1250 1272	mental health services
+T13	disease 1357 1376	depressive symptoms
+T14	disease 2202 2212	depression
+T15	disease 2396 2406	depression
+T16	disease 2498 2517	depressive symptoms
+T17	Health_factors 2576 2598	mental health services
+T18	Health_factors 2603 2614	adolescents
+T19	method 70 95	randomized clinical trial
+T20	method 0 18	Collaborative care
+T21	method 290 321	collaborative care intervention
+T22	method 417 465	Randomized trial with blinded outcome assessment
+T24	method 677 712	Patient Health Questionnaire 9-item
+T25	method 714 719	PHQ-9
+R3	abbreviation_for Arg1:T25 Arg2:T24	
+R4	help_diagnose Arg1:T24 Arg2:T6	
+R5	help_diagnose Arg1:T25 Arg2:T6	
+T26	method 1036 1067	collaborative care intervention
+T27	method 1130 1139	follow-up
+T28	Health_factors 1089 1109	in-person engagement
+R6	hyponym_of Arg1:T28 Arg2:T26	
+R7	hyponym_of Arg1:T27 Arg2:T26	
+T29	method 1406 1443	Child Depression Rating Scale-Revised
+T30	method 1445 1451	CDRS-R
+R8	abbreviation_for Arg1:T30 Arg2:T29	
+T32	method 1572 1575	CIS
+T33	method 1621 1627	CDRS-R
+T34	method 1645 1650	PHQ-9
+T35	method 1788 1794	CDRS-R
+T36	method 1874 1876	CI
+T37	method 1913 1915	CI
+T38	method 2070 2073	CIS
+T39	method 2239 2241	OR
+T40	method 2253 2255	CI
+T41	method 2307 2309	OR
+T42	method 2321 2323	CI
+T43	method 2431 2462	collaborative care intervention
+R10	treatment_for Arg1:T43 Arg2:T16	
+T44	method 1539 1570	Columbia Impairment Scale score
+T45	disease 1578 1588	depression
+T46	method 525 537	primary care
+T47	method 54 66	primary care
+T49	method 2654 2666	primary care
+T50	Health_factors 1684 1689	youth
+T52	Health_factors 1838 1843	youth
+T54	Health_factors 2149 2154	youth
+T55	method 208 233	evidence-based treatments
+T56	method 397 407	usual care
+T57	method 1170 1180	Usual care
+T59	method 2536 2546	usual care
+R2	abbreviation_for Arg1:T32 Arg2:T44	
+T31	Health_factors 122 133	adolescents
+T60	Health_factors 608 619	Adolescents
+T62	Health_factors 994 1006	psychiatrist
+T63	Health_factors 1143 1168	master's-level clinicians
+T64	Health_factors 1939 1944	youth
+T65	Health_factors 2033 2038	youth
+T66	Health_factors 2185 2190	youth
+T67	disease 343 353	depression
+T23	Health_factors 1189 1194	youth
+T53	disease 2620 2630	depression
+T68	Health_factors 179 182	age
+T69	method 1008 1021	INTERVENTIONS
+T70	Health_factors 621 625	aged
+T71	disease 909 917	suicidal
+R1	help_diagnose Arg1:T29 Arg2:T13	
+R9	help_diagnose Arg1:T30 Arg2:T13	
+R11	help_diagnose Arg1:T33 Arg2:T45	
+T72	method 1671 1683	Intervention
+T73	method 1825 1837	intervention
+T74	method 1954 1966	intervention
+T75	method 2008 2020	intervention
+T76	method 2136 2148	intervention
+R13	help_diagnose Arg1:T34 Arg2:T45	
+R12	treatment_for Arg1:T55 Arg2:T3	
+T48	disease 40 50	depression
+R14	occurs_in Arg1:T15 Arg2:T43	
+T51	Health_factors 2379 2390	adolescents
+R15	occurs_in Arg1:T51 Arg2:T43	

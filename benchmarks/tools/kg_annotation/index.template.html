@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MedicalNER · 摘要知识图谱标注</title>
+  <style>__APP_CSS__</style>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36"><path d="M10 9 27 17 12 28M10 9 12 28"/><circle cx="10" cy="9" r="4"/><circle cx="27" cy="17" r="4"/><circle cx="12" cy="28" r="4"/></svg></div>
+        <div><strong>MedicalNER <span class="brand-divider">/</span> 知识图谱工作台</strong><span class="brand-subtitle">摘要阅读与人工标注</span></div>
+      </div>
+      <div class="top-actions">
+        <span class="save-indicator" id="save-indicator" role="status">进度保存在此浏览器</span>
+        <button class="button quiet" id="reviewer-button" type="button"><span class="avatar" id="reviewer-avatar">?</span><span id="reviewer-label">填写标注人</span></button>
+        <button class="button quiet" id="schema-button" type="button">Schema 参考</button>
+        <button class="button secondary" id="import-button" type="button">导入进度</button>
+        <button class="button primary" id="export-button" type="button"><span aria-hidden="true">↓</span> 导出全部 JSON</button>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <div class="sidebar-heading"><span class="eyebrow">ARTICLE COLLECTION</span><span class="count-pill">20 篇</span></div>
+      <h1>文章索引</h1>
+      <div class="collection-progress"><div><strong id="completed-count">0</strong><span>/ 20 已完成</span></div><span id="progress-percent">0%</span></div>
+      <div class="progress-track"><div id="progress-fill"></div></div>
+      <label class="search-box"><span aria-hidden="true">⌕</span><input id="article-search" type="search" placeholder="搜索标题、主题或索引" aria-label="搜索文章"></label>
+      <select id="article-filter" class="filter-select" aria-label="筛选文章状态"><option value="all">全部文章</option><option value="pending">未开始</option><option value="in_progress">标注中</option><option value="completed">已完成</option></select>
+      <nav id="article-list" class="article-list" aria-label="文章索引"></nav>
+      <div class="sidebar-footer"><span class="small-dot"></span><span>独立标注 · 本地保存<br>交接进度请使用导出 / 导入</span></div>
+    </aside>
+
+    <main class="workspace" id="workspace">
+      <section class="article-heading">
+        <div class="article-kicker"><span id="article-number" class="eyebrow"></span><span id="article-topic" class="topic-chip"></span><span id="article-status" class="status-chip"></span></div>
+        <h2 id="article-title"></h2>
+        <div class="article-meta"><span id="article-source"></span><span class="meta-divider">·</span><span id="article-original-index"></span><span class="meta-divider">·</span><a id="article-doi" target="_blank" rel="noopener noreferrer"></a></div>
+        <div class="article-heading-actions"><div class="article-navigation"><button class="icon-button" id="previous-article" type="button" aria-label="上一篇">←</button><button class="icon-button" id="next-article" type="button" aria-label="下一篇">→</button></div><button class="button secondary" id="complete-button" type="button">✓ 标记本篇完成</button></div>
+      </section>
+
+      <div class="working-panels">
+        <section class="panel reading-panel">
+          <div class="panel-header"><div><span class="panel-number">01</span><h3>阅读摘要</h3></div><span class="muted" id="word-count"></span></div>
+          <div class="reading-tip">选中原文，可创建节点或填入关系证据。</div>
+          <div id="abstract-text" class="abstract-text" tabindex="0"></div>
+          <div id="selection-bar" class="selection-bar" hidden><div><span class="eyebrow">已选原文</span><span id="selected-text-preview"></span></div><div class="selection-actions"><button class="button secondary small" id="selection-node" type="button">＋ 创建节点</button><button class="button quiet small" id="selection-evidence" type="button">作为关系证据</button><button class="icon-button" id="clear-selection" type="button" aria-label="清除选择">×</button></div></div>
+        </section>
+
+        <section class="panel editor-panel">
+          <div class="panel-header editor-header"><div><span class="panel-number">02</span><h3>构建知识图谱</h3><span class="graph-count" id="graph-count"></span></div><div class="editor-actions"><button class="button secondary small" id="add-relation" type="button">＋ 关系</button><button class="button primary small" id="add-node" type="button">＋ 节点</button></div></div>
+          <div class="editor-tabs" role="tablist" aria-label="图谱查看方式"><button class="tab active" data-tab="graph" role="tab" aria-selected="true" type="button">图谱</button><button class="tab" data-tab="nodes" role="tab" aria-selected="false" type="button">节点 <span id="node-tab-count">0</span></button><button class="tab" data-tab="relations" role="tab" aria-selected="false" type="button">关系 <span id="relation-tab-count">0</span></button><button class="tab" data-tab="json" role="tab" aria-selected="false" type="button">JSON 预览</button></div>
+          <div id="graph-tab" class="tab-panel graph-panel" role="tabpanel">
+            <div class="graph-toolbar"><div id="graph-legend" class="graph-legend"></div><div class="graph-controls"><button class="button quiet small" id="auto-layout" type="button">自动排列</button><button class="icon-button" id="zoom-out" type="button" aria-label="缩小图谱">−</button><button class="icon-button" id="zoom-in" type="button" aria-label="放大图谱">＋</button><button class="button quiet small" id="reset-view" type="button">适配</button></div></div>
+            <div id="graph-canvas" class="graph-canvas"><svg id="graph-svg" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="本篇文章知识图谱"></svg><div id="graph-empty" class="empty-state"><div class="empty-graph-icon" aria-hidden="true"><span></span><span></span><span></span></div><h4>从第一个节点开始</h4><p>在摘要中选中文字，或点击「创建节点」。<br>添加节点后，就可以连接它们。</p><button class="button primary" id="empty-add-node" type="button">＋ 创建节点</button></div></div>
+            <div class="graph-footer"><span>拖动节点调整位置 · 点击节点或关系进行编辑</span><span id="graph-footer-status">尚未开始</span></div>
+          </div>
+          <div id="nodes-tab" class="tab-panel list-panel" role="tabpanel" hidden><div id="node-list" class="node-list"></div></div>
+          <div id="relations-tab" class="tab-panel list-panel" role="tabpanel" hidden><div id="relation-list" class="relation-list"></div></div>
+          <div id="json-tab" class="tab-panel json-panel" role="tabpanel" hidden><div class="json-toolbar"><span>本篇 output</span><div><button class="button quiet small" id="copy-json" type="button">复制 JSON</button><button class="button secondary small" id="export-current" type="button">导出本篇</button></div></div><pre id="json-preview"></pre></div>
+          <details class="article-notes"><summary>本篇备注 <span class="muted">可选</span></summary><textarea id="article-notes" rows="3" placeholder="记录本篇的疑问或交接备注，不会写入图谱的节点或关系。" aria-label="本篇备注"></textarea></details>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <dialog id="node-dialog" class="edit-dialog">
+    <form id="node-form">
+      <div class="dialog-header"><div><span class="eyebrow">ENTITY</span><h3 id="node-dialog-title">创建节点</h3></div><button class="icon-button" type="button" data-close="node-dialog" aria-label="关闭节点编辑">×</button></div>
+      <div class="dialog-body"><div class="form-grid"><label>节点类别 <span class="required">*</span><select id="node-type" required></select></label><label>节点 ID<input id="node-id" readonly></label></div><p id="node-type-description" class="field-help"></p><label class="field-label">节点名称 <span class="required">*</span><textarea id="node-name" rows="2" required placeholder="填写摘要中的实体名称"></textarea></label><div class="property-heading"><h4>节点属性</h4><button class="button quiet small" id="add-property" type="button">＋ 添加属性</button></div><div id="property-fields" class="property-fields"></div><p id="property-empty" class="field-help">属性均来自 Excel schema；按摘要实际内容填写。</p><div class="form-error" id="node-error" role="alert"></div></div>
+      <div class="dialog-footer"><button class="button quiet danger" id="delete-node" type="button" hidden>删除节点</button><div class="footer-spacer"></div><button class="button secondary" type="button" data-close="node-dialog">取消</button><button class="button primary" type="submit">保存节点</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="relation-dialog" class="edit-dialog">
+    <form id="relation-form">
+      <div class="dialog-header"><div><span class="eyebrow">RELATION</span><h3 id="relation-dialog-title">创建关系</h3></div><button class="icon-button" type="button" data-close="relation-dialog" aria-label="关闭关系编辑">×</button></div>
+      <div class="dialog-body"><label class="field-label">起点节点 <span class="required">*</span><select id="relation-source" required></select></label><div class="relation-direction" aria-hidden="true">↓</div><label class="field-label">关系 <span class="required">*</span><select id="relation-type" required></select></label><div id="relation-schema-hint" class="schema-hint"></div><div class="relation-direction" aria-hidden="true">↓</div><label class="field-label">终点节点 <span class="required">*</span><select id="relation-target" required></select></label><label class="field-label evidence-label">证据原文 <span class="required">*</span><textarea id="relation-evidence" rows="4" required placeholder="粘贴摘要中支持这条关系的原文"></textarea></label><button class="button quiet small" id="use-selection-evidence" type="button">填入当前选中的原文</button><div class="form-error" id="relation-error" role="alert"></div></div>
+      <div class="dialog-footer"><button class="button quiet danger" id="delete-relation" type="button" hidden>删除关系</button><div class="footer-spacer"></div><button class="button secondary" type="button" data-close="relation-dialog">取消</button><button class="button primary" id="save-relation" type="submit">保存关系</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="schema-dialog" class="schema-dialog">
+    <div class="dialog-header"><div><span class="eyebrow">SCHEMA REFERENCE</span><h3>final_schema.xlsx</h3><p class="field-help">节点类别、属性与关系直接取自 Excel，原表备注同时保留。</p></div><button class="icon-button" type="button" data-close="schema-dialog" aria-label="关闭 schema">×</button></div>
+    <div class="schema-controls"><div class="schema-tabs"><button class="tab active" data-schema-tab="nodes" type="button">节点定义 <span>15</span></button><button class="tab" data-schema-tab="relations" type="button">关系定义 <span>82</span></button><button class="tab" data-schema-tab="original" type="button">原表与说明</button></div><button class="button secondary small" id="download-schema" type="button">↓ 下载原始 Excel</button></div>
+    <div class="schema-search-row"><input id="schema-search" type="search" placeholder="搜索类别、属性、关系或中文说明" aria-label="搜索schema"></div>
+    <div id="schema-content" class="schema-content"></div>
+  </dialog>
+
+  <dialog id="reviewer-dialog" class="identity-dialog">
+    <form id="reviewer-form"><div class="dialog-header"><div><span class="eyebrow">ANNOTATOR</span><h3>你的标注身份</h3></div><button class="icon-button" type="button" data-close="reviewer-dialog" aria-label="关闭身份设置">×</button></div><div class="dialog-body"><label class="field-label">姓名或学号<input id="reviewer-name" list="reviewer-names" required maxlength="80" autocomplete="off" placeholder="例如：张同学 / 学号"><datalist id="reviewer-names"></datalist></label><p class="field-help">每位同学的进度独立保存。首次填写姓名时，当前未署名草稿会归到该姓名。</p><p class="field-help">浏览器保存用于继续工作；把导出的 JSON 文件交给负责人即可。</p></div><div class="dialog-footer"><button class="button secondary" type="button" data-close="reviewer-dialog">取消</button><button class="button primary" type="submit">保存身份 / 切换</button></div></form>
+  </dialog>
+
+  <input id="import-file" type="file" accept=".json,application/json" hidden>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script id="app-data" type="application/json">__APP_DATA__</script>
+  <script>__APP_JS__</script>
+</body>
+</html>

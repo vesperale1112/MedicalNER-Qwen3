@@ -1,0 +1,7 @@
+T1	gene 29 35	allele
+T2	gene 49 62	BDNF A allele
+T3	disease 101 105	AD-D
+T4	disease 126 131	AD-nD	
+T5	method 141 143	OR
+T6	method 153 155	CI
+R1	characteristic_of Arg1:T2 Arg2:T3	

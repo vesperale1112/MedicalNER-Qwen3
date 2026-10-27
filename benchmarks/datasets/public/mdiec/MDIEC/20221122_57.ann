@@ -1,0 +1,33 @@
+T1	method 3 29	short term clinical trials
+T3	disease 47 57	depression
+T4	drug 59 69	paroxetine
+T6	drug 198 204	agents
+T7	drug 215 240	tricyclic antidepressants
+T8	drug 249 260	maprotiline
+T9	drug 262 272	nefazodone
+T10	drug 281 320	selective serotonin reuptake inhibitors
+T11	drug 322 327	SSRIs
+T12	drug 329 339	fluoxetine
+T13	drug 341 352	fluvoxamine
+T14	drug 357 367	sertraline
+R1	hyponym_of Arg1:T7 Arg2:T6	
+T2	drug 242 246	TCAs
+R2	abbreviation_for Arg1:T2 Arg2:T7	
+R3	hyponym_of Arg1:T8 Arg2:T6	
+R4	hyponym_of Arg1:T9 Arg2:T6	
+R5	abbreviation_for Arg1:T11 Arg2:T10	
+R6	hyponym_of Arg1:T10 Arg2:T6	
+R7	hyponym_of Arg1:T11 Arg2:T6	
+R8	hyponym_of Arg1:T12 Arg2:T6	
+R9	hyponym_of Arg1:T13 Arg2:T6	
+R10	hyponym_of Arg1:T14 Arg2:T6	
+R11	treatment_for Arg1:T4 Arg2:T3	
+R12	treatment_for Arg1:T7 Arg2:T3	
+R13	treatment_for Arg1:T2 Arg2:T3	
+R14	treatment_for Arg1:T8 Arg2:T3	
+R15	treatment_for Arg1:T9 Arg2:T3	
+R16	treatment_for Arg1:T10 Arg2:T3	
+R17	treatment_for Arg1:T11 Arg2:T3	
+R18	treatment_for Arg1:T12 Arg2:T3	
+R19	treatment_for Arg1:T13 Arg2:T3	
+R20	treatment_for Arg1:T14 Arg2:T3	

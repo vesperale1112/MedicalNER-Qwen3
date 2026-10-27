@@ -1,0 +1,12 @@
+T0	disease 82 95	schizophrenia
+T4	method 121 138	systematic review
+T5	method 143 156	meta-analysis
+T6	method 167 191	head-to-head comparisons
+T9	drug 27 64	oral second-generation antipsychotics
+T11	disease 278 291	schizophrenia
+T12	drug 193 225	Second-generation antipsychotics
+T13	method 253 274	maintenance treatment
+T1	drug 227 231	SGAs
+R1	abbreviation_for Arg1:T1 Arg2:T12	
+R2	treatment_for Arg1:T12 Arg2:T11	
+R3	treatment_for Arg1:T1 Arg2:T11	

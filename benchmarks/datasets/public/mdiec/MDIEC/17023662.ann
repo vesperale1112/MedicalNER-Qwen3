@@ -1,0 +1,42 @@
+T1	disease 52 76	anxiety-related behavior
+T2	gene 0 44	Genetic variant BDNF (Val66Met) polymorphism
+T5	gene 125 158	brain-derived neurotrophic factor
+T6	gene 160 164	BDNF
+T7	drug 174 184	methionine
+T8	drug 186 189	Met
+T9	drug 208 214	valine
+T10	drug 216 219	Val
+T13	gene 234 242	Val66Met
+T14	physiology 297 303	memory
+T17	gene 87 117	single-nucleotide polymorphism
+T18	method 372 390	variant BDNF mouse
+T19	gene 392 396	BDNF
+T20	drug 401 404	Met
+T22	gene 467 481	variant allele
+T23	gene 483 492	BDNF(Met)
+T24	region 557 564	neurons
+T25	region 510 515	brain
+T31	drug 728 738	fluoxetine
+T32	method 615 633	BDNF(Met/Met) mice
+T33	disease 654 679	anxiety-related behaviors
+T34	drug 712 726	antidepressant
+T35	Health_factors 595 613	stressful settings
+T36	gene 742 754	variant BDNF
+T37	disease 810 842	anxiety and depressive disorders
+R1	associated_with Arg1:T2 Arg2:T1	
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+R3	abbreviation_for Arg1:T8 Arg2:T7	
+R4	located_in Arg1:T17 Arg2:T5	
+R5	located_in Arg1:T17 Arg2:T6	
+R6	abbreviation_for Arg1:T10 Arg2:T9	
+T3	region 279 284	brain
+R7	associated_with Arg1:T17 Arg2:T3	
+R8	associated_with Arg1:T17 Arg2:T14	
+T4	Health_factors 451 457	humans
+T12	drug 397 400	Met
+R9	associated_with Arg1:T23 Arg2:T25	
+R10	treatment_for Arg1:T31 Arg2:T33	
+R11	risk_factor_of Arg1:T32 Arg2:T33	
+R12	occurs_in Arg1:T35 Arg2:T32	
+R13	associated_with Arg1:T36 Arg2:T37	
+T11	gene 224 232	codon 66

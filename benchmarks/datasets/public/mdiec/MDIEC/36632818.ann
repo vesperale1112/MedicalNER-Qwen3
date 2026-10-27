@@ -1,0 +1,8 @@
+T0	disease 29 42	schizophrenia
+T1	disease 92 114	Cardiovascular disease
+T2	disease 167 180	schizophrenia
+T3	signs 10 24	polygenic risk
+T4	disease 142 151	mortality
+T6	region 46 63	cardiac structure
+R1	risk_factor_of Arg1:T1 Arg2:T4	
+R2	occurs_in Arg1:T4 Arg2:T2	

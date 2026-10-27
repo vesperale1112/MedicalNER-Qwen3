@@ -1,0 +1,83 @@
+T0	disease 30 43	breast cancer
+T1	disease 58 71	schizophrenia
+T3	Health_factors 47 52	women
+T5	method 75 111	nationwide nested case-control study
+T6	disease 135 148	Breast cancer
+T7	disease 188 201	schizophrenia
+T9	Health_factors 214 232	general population
+T10	disease 342 355	breast cancer
+T11	drug 273 308	prolactin-increasing antipsychotics
+T12	method 334 338	odds
+T17	method 485 510	nested case-control study
+T18	method 407 425	hospital treatment
+T19	method 375 403	Finnish nationwide registers
+T20	disease 526 539	schizophrenia
+T21	disease 552 565	breast cancer
+T22	disease 642 648	cancer
+T23	Health_factors 515 520	women
+T24	Health_factors 590 593	age
+T26	Health_factors 628 633	women
+T27	Health_factors 598 617	duration of illness
+T28	disease 743 749	cancer
+T29	disease 818 821	HIV
+T30	Health_factors 685 689	aged
+T31	method 790 800	mastectomy
+T32	method 761 788	receipt of organ transplant
+T33	method 706 724	exclusion criteria
+T34	method 661 679	Cases and controls
+T36	disease 923 936	breast cancer
+T37	drug 892 918	prolactin-increasing drugs
+T41	disease 1016 1035	comorbid conditions
+T44	drug 1040 1063	concomitant medications
+T45	method 966 997	conditional logistic regression
+T47	Health_factors 1120 1125	women
+T48	disease 1141 1154	schizophrenia
+T49	disease 1203 1216	breast cancer
+T51	drug 1472 1481	clozapine
+T52	drug 1483 1493	quetiapine
+T53	drug 1498 1510	aripiprazole
+T54	disease 1557 1570	breast cancer
+T55	method 1324 1343	adjusted odds ratio
+T56	method 1345 1347	OR
+T57	method 1358 1360	CI
+T58	method 1399 1410	adjusted OR
+T59	drug 1428 1460	prolactin-sparing antipsychotics
+T61	method 1275 1291	matched controls
+T62	drug 1669 1704	prolactin-increasing antipsychotics
+T63	drug 1716 1730	antipsychotics
+T64	method 1870 1881	adjusted OR
+T67	disease 1930 1952	lobular adenocarcinoma
+T68	disease 2092 2113	ductal adenocarcinoma
+T72	method 2044 2046	CI
+T73	method 2136 2138	CI
+T74	drug 1986 2021	prolactin-increasing antipsychotics
+T75	physiology 2189 2209	prolactin-increasing
+T76	physiology 2222 2239	prolactin-sparing
+T77	drug 2241 2255	antipsychotics
+T79	disease 2307 2320	breast cancer
+T81	disease 2333 2346	prolactinemia
+T82	disease 2362 2380	hyperprolactinemia
+T83	disease 2408 2421	schizophrenia
+T84	Health_factors 2397 2402	women
+T85	drug 2441 2476	prolactin-increasing antipsychotics
+T87	Health_factors 2488 2533	Finnish Ministry of Social Affairs and Health
+T88	drug 0 13	Antipsychotic
+R1	occurs_in Arg1:T0 Arg2:T3	
+R2	occurs_in Arg1:T3 Arg2:T1	
+T2	Health_factors 167 173	female
+R3	risk_factor_of Arg1:T2 Arg2:T6	
+R4	occurs_in Arg1:T2 Arg2:T7	
+T4	disease 460 466	cancer
+T8	method 427 454	prescription drug purchases
+R5	occurs_in Arg1:T23 Arg2:T20	
+T13	Health_factors 1065 1074	Ethnicity
+R6	abbreviation_for Arg1:T56 Arg2:T55	
+R7	hyponym_of Arg1:T51 Arg2:T59	
+R8	hyponym_of Arg1:T52 Arg2:T59	
+R9	hyponym_of Arg1:T53 Arg2:T59	
+R10	risk_factor_of Arg1:T74 Arg2:T67	
+T14	method 2023 2034	adjusted OR
+T15	method 2115 2126	adjusted OR
+R11	occurs_in Arg1:T84 Arg2:T83	
+R12	treatment_for Arg1:T85 Arg2:T83	
+R13	risk_factor_of Arg1:T77 Arg2:T79	

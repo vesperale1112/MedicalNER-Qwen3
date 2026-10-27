@@ -1,0 +1,10 @@
+T1	disease 160 166	stress
+T2	disease 171 187	major depression
+T3	symptom 77 116	increased mitochondrial DNA copy number
+T4	Health_factors 150 159	childhood
+T5	symptom 121 146	decreased telomere length
+R1	associated_with Arg1:T3 Arg2:T1	
+R2	associated_with Arg1:T3 Arg2:T2	
+R3	associated_with Arg1:T5 Arg2:T1	
+R4	associated_with Arg1:T5 Arg2:T2	
+T6	physiology 46 65	cellular mechanisms

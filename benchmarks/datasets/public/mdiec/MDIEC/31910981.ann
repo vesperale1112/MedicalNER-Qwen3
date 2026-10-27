@@ -1,0 +1,68 @@
+T1	disease 62 72	depression
+T2	disease 77 84	anxiety
+T3	disease 207 217	loneliness
+T4	disease 239 255	mental disorders
+T5	disease 517 527	loneliness
+T6	disease 570 577	anxiety
+T8	disease 946 956	depression
+T9	disease 1212 1222	depression
+T10	disease 1640 1647	anxiety
+T11	disease 1906 1925	affective disorders
+T16	Health_factors 91 106	older Americans
+T17	method 118 149	longitudinal mediation analysis
+T18	Health_factors 186 202	social isolation
+T19	Health_factors 332 341	isolation
+T23	Health_factors 480 511	perceptions of social isolation
+T24	signs 582 609	depression symptom severity
+T26	Health_factors 645 649	aged
+T27	method 694 725	longitudinal mediation analysis
+T30	method 989 1018	Structural equation modelling
+T31	Health_factors 1108 1114	adults
+T32	Health_factors 1115 1119	aged
+T33	disease 1237 1253	anxiety symptoms
+T35	disease 1384 1403	depression symptoms
+T36	disease 1424 1440	anxiety symptoms
+T37	Health_factors 1679 1697	general population
+T38	Health_factors 1701 1713	older adults
+T40	Health_factors 1838 1858	community activities
+T41	Health_factors 1754 1773	perceived isolation
+T43	Health_factors 1316 1335	perceived isolation
+T44	method 1050 1073	longitudinal path model
+T45	Health_factors 921 940	perceived isolation
+T46	method 874 892	Validated measures
+T47	Health_factors 613 644	community-residing older adults
+T48	Health_factors 529 554	perceived lack of support
+T49	Health_factors 445 474	infrequent social interaction
+T50	Health_factors 423 443	small social network
+T51	Health_factors 25 44	perceived isolation
+T52	Health_factors 0 23	Social disconnectedness
+R1	risk_factor_of Arg1:T3 Arg2:T4	
+R2	risk_factor_of Arg1:T18 Arg2:T4	
+T15	Health_factors 394 417	social disconnectedness
+R3	hyponym_of Arg1:T50 Arg2:T15	
+R4	hyponym_of Arg1:T49 Arg2:T15	
+R5	hyponym_of Arg1:T5 Arg2:T23	
+R6	hyponym_of Arg1:T48 Arg2:T23	
+T7	method 108 113	NSHAP
+T20	method 745 792	National Social Life, Health, and Aging Project
+T21	method 794 799	NSHAP
+R7	abbreviation_for Arg1:T21 Arg2:T20	
+T25	Health_factors 896 919	social disconnectedness
+T28	disease 961 977	anxiety symptoms
+T29	Health_factors 1264 1287	social disconnectedness
+R8	associated_with Arg1:T29 Arg2:T43	
+R9	associated_with Arg1:T43 Arg2:T35	
+R10	associated_with Arg1:T43 Arg2:T36	
+T34	disease 1652 1671	depression symptoms
+T42	Health_factors 1572 1609	Social network structure and function
+R11	associated_with Arg1:T42 Arg2:T10	
+R12	associated_with Arg1:T42 Arg2:T34	
+R13	occurs_in Arg1:T34 Arg2:T38	
+R14	occurs_in Arg1:T10 Arg2:T38	
+T39	Health_factors 1790 1816	social network integration
+R15	treatment_for Arg1:T39 Arg2:T41	
+R16	treatment_for Arg1:T40 Arg2:T41	
+R17	associated_with Arg1:T39 Arg2:T11	
+R18	associated_with Arg1:T40 Arg2:T11	
+R19	occurs_in Arg1:T34 Arg2:T37	
+R20	occurs_in Arg1:T10 Arg2:T37	

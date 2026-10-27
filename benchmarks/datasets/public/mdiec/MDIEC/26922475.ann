@@ -1,0 +1,57 @@
+T0	disease 52 65	schizophrenia
+T1	physiology 14 34	treatment resistance
+T2	method 69 98	population-based cohort study
+T4	disease 154 187	treatment-resistant schizophrenia
+T5	disease 203 216	schizophrenia
+T6	drug 289 298	clozapine
+T8	drug 344 372	non-clozapine antipsychotics
+T11	physiology 419 439	treatment resistance
+T14	disease 504 537	treatment-resistant schizophrenia
+T15	disease 628 641	schizophrenia
+T16	physiology 574 594	treatment resistance
+T21	method 859 870	followed up
+T22	disease 783 805	incident schizophrenia
+T23	disease 920 953	treatment-resistant schizophrenia
+T24	drug 990 999	clozapine
+T25	disease 1037 1050	schizophrenia
+T28	method 1093 1118	antipsychotic monotherapy
+T30	physiology 1256 1276	treatment resistance
+T31	method 1127 1185	multivariable Cox proportional hazards regression analysis
+T32	disease 1449 1482	treatment-resistant schizophrenia
+T33	method 1499 1508	follow-up
+T34	method 1522 1525	IQR
+T36	method 1344 1380	multivariable complete-case analyses
+T37	disease 1773 1786	schizophrenia
+T38	disease 1833 1846	schizophrenia
+T39	disease 1908 1937	comorbid personality disorder
+T40	drug 2043 2058	benzodiazepines
+T41	disease 2159 2192	treatment-resistant schizophrenia
+T45	method 1548 1560	hazard ratio
+T46	method 1570 1572	CI
+T49	drug 1978 1992	antipsychotics
+T50	drug 2008 2023	antidepressants
+T51	Health_factors 1955 1976	psychotropic drug use
+T52	Health_factors 1661 1678	primary education
+T53	Health_factors 1596 1611	less urban area
+T54	method 2306 2323	prediction models
+T56	disease 2328 2361	treatment-resistant schizophrenia
+T59	disease 2401 2414	schizophrenia
+T60	disease 2528 2541	schizophrenia
+T61	physiology 2431 2451	treatment resistance
+T65	method 2587 2635	European Community's Seventh Framework Programme
+R1	occurs_in Arg1:T1 Arg2:T0	
+T3	method 671 700	population-based cohort study
+T7	method 714 743	Danish national registry data
+T9	Health_factors 752 757	adult
+T10	Health_factors 1535 1546	Younger age
+T12	Health_factors 1727 1747	psychiatric hospital
+T13	disease 1874 1890	paranoid subtype
+T17	disease 2088 2103	suicide attempt
+R2	associated_with Arg1:T10 Arg2:T41	
+R3	associated_with Arg1:T53 Arg2:T41	
+R4	associated_with Arg1:T52 Arg2:T41	
+R5	associated_with Arg1:T13 Arg2:T41	
+R6	associated_with Arg1:T39 Arg2:T41	
+R7	associated_with Arg1:T51 Arg2:T41	
+R8	associated_with Arg1:T17 Arg2:T41	
+T18	disease 2469 2496	treatment-resistant disease

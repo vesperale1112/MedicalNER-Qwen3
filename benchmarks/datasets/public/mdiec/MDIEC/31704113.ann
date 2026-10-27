@@ -1,0 +1,36 @@
+T1	region 0 11	Glial cells
+T2	disease 15 28	schizophrenia
+T3	disease 81 94	schizophrenia
+T4	region 225 236	glial cells
+T5	disease 276 289	schizophrenia
+T6	physiology 346 398	differentiation competence of glial progenitor cells
+T7	region 465 481	oligodendrocytes
+T8	region 486 496	astrocytes
+T9	physiology 514 551	immune activation of microglial cells
+T10	physiology 632 694	defective differentiation competence of glial progenitor cells
+T11	physiology 710 725	hypomyelination
+T12	physiology 858 884	astrocytic differentiation
+T13	physiology 949 995	delayed and deficient maturation of astrocytes
+T15	region 1174 1185	glial cells
+T16	disease 1189 1202	schizophrenia
+T18	method 56 77	cellular neurobiology
+T19	method 133 153	neuroimaging studies
+T20	gene 590 610	genetic risk factors
+T23	physiology 1111 1145	dysregulated synaptic transmission
+R1	associated_with Arg1:T4 Arg2:T5	
+T28	physiology 422 461	morphological and functional maturation
+T27	physiology 730 762	disrupted white matter integrity
+T29	physiology 783 833	transmission desynchronisation and dysconnectivity
+R8	associated_with Arg1:T11 Arg2:T29	
+R9	associated_with Arg1:T27 Arg2:T29	
+T30	physiology 896 943	abnormal glial coverage and support of synapses
+R10	risk_factor_of Arg1:T12 Arg2:T30	
+T31	physiology 1024 1096	disruption of glutamatergic, potassium, and neuromodulatory homoeostasis
+R11	risk_factor_of Arg1:T31 Arg2:T23	
+R4	associated_with Arg1:T9 Arg2:T10	
+R5	help_diagnose Arg1:T20 Arg2:T10	
+R6	risk_factor_of Arg1:T13 Arg2:T31	
+R12	associated_with Arg1:T15 Arg2:T16	
+R2	associated_with Arg1:T6 Arg2:T28	
+R3	located_in Arg1:T28 Arg2:T7	
+R7	located_in Arg1:T28 Arg2:T8	

@@ -1,0 +1,11 @@
+T2	disease 74 99	major depressive episodes
+T3	Health_factors 110 121	adolescents
+T4	Health_factors 126 138	young adults
+T5	Health_factors 164 187	sociodemographic groups
+T6	disease 210 220	depression
+T1	disease 101 105	MDEs
+R1	abbreviation_for Arg1:T1 Arg2:T2	
+R2	occurs_in Arg1:T1 Arg2:T3	
+R3	occurs_in Arg1:T1 Arg2:T4	
+R4	occurs_in Arg1:T2 Arg2:T3	
+R5	occurs_in Arg1:T2 Arg2:T4	

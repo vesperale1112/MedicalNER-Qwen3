@@ -1,0 +1,101 @@
+T1	disease 25 45	Perinatal Depression
+T2	disease 119 139	Perinatal depression
+T3	disease 170 189	depressive disorder
+T4	disease 376 396	perinatal depression
+T5	disease 589 609	perinatal depression
+T6	disease 719 739	perinatal depression
+T7	disease 903 923	perinatal depression
+T8	drug 1250 1263	nortriptyline
+T9	drug 1265 1275	sertraline
+T10	drug 1281 1300	omega-3 fatty acids
+T11	disease 1472 1492	perinatal depression
+T12	Health_factors 1507 1528	history of depression
+T13	disease 1530 1557	current depressive symptoms
+T14	disease 2227 2247	perinatal depression
+T15	disease 2397 2417	perinatal depression
+T17	method 503 536	US Preventive Services Task Force
+T18	Health_factors 538 544	USPSTF
+R3	abbreviation_for Arg1:T18 Arg2:T17	
+T20	method 690 714	preventive interventions
+T21	method 958 982	preventive interventions
+T22	method 984 997	Interventions
+T23	method 1016 1026	counseling
+T24	method 1028 1055	health system interventions
+T25	Health_factors 1057 1074	physical activity
+T26	Health_factors 1076 1085	education
+T27	method 1087 1111	supportive interventions
+T28	method 1123 1147	behavioral interventions
+T29	Health_factors 1157 1178	infant sleep training
+T30	Health_factors 1183 1201	expressive writing
+R5	hyponym_of Arg1:T23 Arg2:T22	
+R6	hyponym_of Arg1:T24 Arg2:T22	
+R7	hyponym_of Arg1:T25 Arg2:T22	
+R8	hyponym_of Arg1:T26 Arg2:T22	
+R9	hyponym_of Arg1:T27 Arg2:T22	
+R10	hyponym_of Arg1:T28 Arg2:T22	
+R11	hyponym_of Arg1:T29 Arg2:T28	
+R12	hyponym_of Arg1:T30 Arg2:T28	
+T31	method 1203 1229	Pharmacological approaches
+R13	hyponym_of Arg1:T8 Arg2:T31	
+R14	hyponym_of Arg1:T9 Arg2:T31	
+R15	hyponym_of Arg1:T10 Arg2:T31	
+T32	method 1354 1378	counseling interventions
+T33	method 1388 1416	cognitive behavioral therapy
+T34	method 1421 1442	interpersonal therapy
+R16	treatment_for Arg1:T34 Arg2:T11	
+R17	treatment_for Arg1:T33 Arg2:T11	
+R18	treatment_for Arg1:T32 Arg2:T11	
+R19	hyponym_of Arg1:T33 Arg2:T32	
+R20	hyponym_of Arg1:T34 Arg2:T32	
+T35	method 1663 1687	counseling interventions
+T36	method 1798 1822	counseling interventions
+T38	method 2009 2036	noncounseling interventions
+T39	method 2161 2185	counseling interventions
+R21	treatment_for Arg1:T39 Arg2:T14	
+T40	method 2421 2445	counseling interventions
+T41	method 611 626	Evidence Review
+T42	physiology 197 206	pregnancy
+T43	physiology 220 230	childbirth
+T44	Health_factors 258 263	women
+T46	Health_factors 460 465	woman
+T47	Health_factors 470 475	child
+T48	method 47 80	US Preventive Services Task Force
+T49	Health_factors 632 638	USPSTF
+T50	Health_factors 743 771	pregnant or postpartum women
+T51	Health_factors 781 789	children
+T52	Health_factors 795 801	USPSTF
+T53	Health_factors 876 881	women
+T54	Health_factors 1316 1322	USPSTF
+T55	Health_factors 1494 1499	Women
+T56	Health_factors 1616 1621	young
+T57	Health_factors 1625 1642	single parenthood
+T58	Health_factors 1602 1612	low income
+T59	Health_factors 1570 1596	socioeconomic risk factors
+T60	Health_factors 1735 1741	USPSTF
+T61	Health_factors 1934 1940	USPSTF
+T62	Health_factors 2042 2048	USPSTF
+T63	Health_factors 2111 2139	pregnant or postpartum women
+T64	Health_factors 2285 2291	USPSTF
+T65	Health_factors 2308 2318	clinicians
+T66	Health_factors 2336 2367	pregnant and postpartum persons
+T16	disease 294 346	complications of pregnancy and the postpartum period
+T67	physiology 411 447	adverse short- and long-term effects
+R31	associated_with Arg1:T2 Arg2:T44	
+R1	hyponym_of Arg1:T2 Arg2:T16	
+T68	disease 681 686	harms
+T45	disease 1789 1794	harms
+T69	disease 1923 1928	harms
+T70	disease 1994 1999	harms
+R2	hyponym_of Arg1:T58 Arg2:T59	
+R4	hyponym_of Arg1:T56 Arg2:T59	
+R22	hyponym_of Arg1:T57 Arg2:T59	
+T19	method 0 13	Interventions
+R24	treatment_for Arg1:T19 Arg2:T1	
+T37	method 564 577	interventions
+R25	treatment_for Arg1:T37 Arg2:T5	
+R26	treatment_for Arg1:T20 Arg2:T6	
+R27	occurs_in Arg1:T6 Arg2:T50	
+R28	occurs_in Arg1:T6 Arg2:T51	
+R23	associated_with Arg1:T4 Arg2:T67	
+R29	occurs_in Arg1:T67 Arg2:T46	
+R30	occurs_in Arg1:T67 Arg2:T47	

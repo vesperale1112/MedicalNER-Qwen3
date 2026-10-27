@@ -1,0 +1,7 @@
+T1	signs 25 54	W1 fronto-midline theta power
+T2	physiology 59 77	theta connectivity
+T5	method 125 129	rTMS
+T6	disease 144 154	depression
+R5	treatment_for Arg1:T5 Arg2:T6	
+R1	associated_with Arg1:T1 Arg2:T5	
+R2	associated_with Arg1:T2 Arg2:T5	

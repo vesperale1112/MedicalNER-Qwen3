@@ -1,0 +1,4 @@
+T1	method 17 42	clinical prediction model
+T2	disease 92 102	depression
+T4	disease 162 168	stroke
+T5	Health_factors 51 61	clinicians

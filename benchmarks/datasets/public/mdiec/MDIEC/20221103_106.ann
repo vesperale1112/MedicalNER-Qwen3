@@ -1,0 +1,7 @@
+T2	method 78 100	deep brain stimulation
+T3	method 102 105	DBS
+T4	region 131 136	brain
+T8	disease 186 217	treatment refractory depression
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	treatment_for Arg1:T2 Arg2:T8	
+R3	treatment_for Arg1:T3 Arg2:T8	

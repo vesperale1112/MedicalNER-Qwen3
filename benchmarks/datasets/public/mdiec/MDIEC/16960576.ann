@@ -1,0 +1,25 @@
+T0	disease 54 67	schizophrenia
+T2	method 0 50	Pathophysiologically based treatment interventions
+T3	disease 174 187	schizophrenia
+T4	method 125 140	pathophysiology
+T5	method 244 269	therapeutic interventions
+T7	disease 279 298	devastating illness
+T9	disease 332 361	impairments in working memory
+T10	disease 478 491	schizophrenia
+T11	disease 300 318	Cognitive deficits
+T13	Health_factors 456 474	functional outcome
+T14	disease 378 427	dysfunction of the dorsolateral prefrontal cortex
+T18	disease 620 646	working memory impairments
+T19	disease 650 663	schizophrenia
+T20	disease 820 842	prefrontal dysfunction
+T21	disease 531 593	disturbances in glutamate, dopamine and GABA neurotransmission
+T22	method 601 616	pathophysiology
+T23	method 801 816	pathophysiology
+T25	drug 885 889	drug
+R1	hyponym_of Arg1:T9 Arg2:T11	
+R2	risk_factor_of Arg1:T14 Arg2:T9	
+R4	occurs_in Arg1:T13 Arg2:T10	
+R5	occurs_in Arg1:T18 Arg2:T19	
+R6	associated_with Arg1:T21 Arg2:T18	
+R3	associated_with Arg1:T11 Arg2:T13	
+R7	associated_with Arg1:T9 Arg2:T13	

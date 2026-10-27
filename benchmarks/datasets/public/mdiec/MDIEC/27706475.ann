@@ -1,0 +1,97 @@
+T0	disease 43 72	Obsessive-Compulsive Disorder
+T2	method 76 128	Population-Based Birth Cohort, Sibling Control Study
+T4	Health_factors 15 37	Perinatal Risk Factors
+T5	disease 190 219	obsessive-compulsive disorder
+T6	disease 221 224	OCD
+T8	disease 141 164	Perinatal complications
+T10	gene 384 391	genetic
+T11	method 258 311	small, retrospective, specialist clinic-based studies
+T13	disease 499 502	OCD
+T15	Health_factors 462 494	potential perinatal risk factors
+T18	Health_factors 678 686	children
+T20	method 772 783	followed up
+T21	physiology 692 708	singleton births
+T22	method 621 656	population-based birth cohort study
+T23	disease 1024 1027	OCD
+T24	method 844 850	cohort
+T29	physiology 1230 1239	pregnancy
+T31	disease 1302 1315	preterm birth
+T37	method 1377 1397	5-minute Apgar score
+T38	Health_factors 1360 1375	gestational age
+T39	signs 1332 1344	birth weight
+T40	signs 1318 1330	birth weight
+T41	Health_factors 1281 1296	gestational age
+T42	method 1261 1279	obstetric delivery
+T43	method 1162 1192	Swedish Medical Birth Register
+T48	method 1484 1580	International Statistical Classification of Diseases and Health Related Problems, Tenth Revision
+T50	method 1683 1689	cohort
+T51	disease 1725 1728	OCD
+T52	Health_factors 1750 1753	men
+T53	disease 1818 1821	OCD
+T54	method 1773 1775	SD
+T55	Health_factors 1777 1780	age
+T57	disease 1866 1869	OCD
+T58	disease 2249 2262	preterm birth
+T59	Health_factors 1964 1967	sex
+T60	Health_factors 1969 1982	year of birth
+T61	Health_factors 1984 2018	maternal and paternal age at birth
+T64	Health_factors 2037 2044	smoking
+T65	physiology 2082 2091	pregnancy
+T66	method 2093 2105	hazard ratio
+T67	method 2107 2109	HR
+T68	method 2122 2124	CI
+T69	method 2159 2161	HR
+T70	method 2173 2175	CI
+T71	method 2219 2221	HR
+T72	method 2233 2235	CI
+T73	method 2264 2266	HR
+T74	method 2278 2280	CI
+T76	signs 2294 2306	birth weight
+T77	method 2323 2325	HR
+T78	method 2337 2339	CI
+T79	method 2372 2374	HR
+T80	method 2386 2388	CI
+T81	Health_factors 2418 2433	gestational age
+T82	method 2435 2437	HR
+T83	method 2449 2451	CI
+T85	method 2505 2507	HR
+T86	method 2519 2521	CI
+T87	method 2469 2503	Apgar distress scores at 5 minutes
+T88	method 2189 2217	delivery by cesarean section
+T89	signs 2138 2157	breech presentation
+T91	disease 2653 2656	OCD
+T95	Health_factors 2670 2678	children
+T98	signs 2714 2731	lower birth weigh
+T99	Health_factors 2686 2709	shorter gestational age
+T101	signs 2555 2567	birth weight
+T102	Health_factors 2535 2550	Gestational age
+T103	disease 2832 2835	OCD
+T104	method 2847 2850	HRs
+T105	method 2874 2876	CI
+T106	method 2914 2916	CI
+T108	disease 3050 3053	OCD
+T109	disease 3169 3172	OCD
+T111	Health_factors 3114 3136	perinatal risk factors
+T113	Health_factors 2990 3012	perinatal risk factors
+R1	associated_with Arg1:T4 Arg2:T0	
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+R3	risk_factor_of Arg1:T8 Arg2:T5	
+R4	risk_factor_of Arg1:T8 Arg2:T6	
+T1	Health_factors 554 562	siblings
+T3	Health_factors 875 883	siblings
+T7	Health_factors 914 922	siblings
+T9	Health_factors 990 998	siblings
+T12	Health_factors 1206 1222	maternal smoking
+T14	symptom 1241 1259	labor presentation
+T16	signs 1403 1421	head circumference
+T17	disease 1473 1476	OCD
+T19	method 1599 1632	Swedish National Patient Register
+R5	abbreviation_for Arg1:T67 Arg2:T66	
+R6	occurs_in Arg1:T91 Arg2:T95	
+R7	risk_factor_of Arg1:T99 Arg2:T91	
+R8	risk_factor_of Arg1:T98 Arg2:T91	
+R9	associated_with Arg1:T102 Arg2:T101	
+T25	Health_factors 2801 2817	perinatal events
+R10	risk_factor_of Arg1:T25 Arg2:T103	
+R11	risk_factor_of Arg1:T113 Arg2:T108	
+R12	associated_with Arg1:T111 Arg2:T109	

@@ -1,0 +1,84 @@
+T0	drug 0 39	Muscarinic Cholinergic Receptor Agonist
+T1	disease 70 83	Schizophrenia
+T2	drug 44 65	Peripheral Antagonist
+T4	drug 100 127	muscarinic receptor agonist
+T6	physiology 185 220	dopamine receptor-blocking activity
+T7	disease 232 258	cholinergic adverse events
+T9	drug 260 268	Trospium
+T10	drug 376 386	xanomeline
+T11	drug 274 328	peripherally restricted muscarinic receptor antagonist
+T12	physiology 342 372	peripheral cholinergic effects
+T14	drug 424 434	xanomeline
+T15	drug 439 447	trospium
+T16	disease 465 478	schizophrenia
+T21	disease 574 587	schizophrenia
+T24	method 510 537	double-blind, phase 2 trial
+T25	disease 954 967	schizophrenia
+T26	method 837 873	Positive and Negative Syndrome Scale
+T27	method 875 880	PANSS
+T34	method 1014 1045	PANSS positive symptom subscore
+T35	method 1101 1106	CGI-S
+T36	disease 1180 1187	illness
+T37	method 1259 1297	PANSS Marder negative symptom subscore
+T38	method 1361 1366	CGI-S
+T43	drug 1558 1568	xanomeline
+T44	drug 1569 1577	trospium
+T48	drug 1672 1682	xanomeline
+T49	drug 1683 1691	trospium
+T51	method 1771 1790	confidence interval
+T52	method 1722 1751	least-squares mean difference
+T54	drug 1891 1901	xanomeline
+T55	drug 1902 1910	trospium
+T58	drug 2054 2064	xanomeline
+T59	drug 2065 2073	trospium
+T60	disease 2085 2097	constipation
+T61	disease 2099 2105	nausea
+T62	disease 2107 2116	dry mouth
+T63	disease 2118 2127	dyspepsia
+T64	disease 2133 2141	vomiting
+T65	Health_factors 2032 2046	adverse events
+T66	disease 2161 2171	somnolence
+T67	disease 2186 2198	restlessness
+T68	disease 2204 2227	extrapyramidal symptoms
+T69	symptom 2173 2184	weight gain
+T75	disease 2406 2452	cholinergic and anticholinergic adverse events
+T77	method 2286 2291	trial
+T78	drug 2532 2542	xanomeline
+T79	drug 2543 2551	trospium
+T80	disease 2569 2582	schizophrenia
+T81	method 2472 2478	trials
+T3	drug 128 138	xanomeline
+R1	risk_factor_of Arg1:T3 Arg2:T7	
+R2	hyponym_of Arg1:T9 Arg2:T11	
+R3	associated_with Arg1:T9 Arg2:T12	
+T5	drug 626 636	xanomeline
+T8	drug 683 693	xanomeline
+T13	drug 707 715	trospium
+R4	abbreviation_for Arg1:T27 Arg2:T26	
+R5	help_diagnose Arg1:T27 Arg2:T25	
+R6	help_diagnose Arg1:T26 Arg2:T25	
+T17	method 1064 1099	Clinical Global Impression-Severity
+R7	abbreviation_for Arg1:T35 Arg2:T17	
+R8	help_diagnose Arg1:T35 Arg2:T36	
+R9	help_diagnose Arg1:T17 Arg2:T36	
+T18	method 1208 1239	PANSS negative symptom subscore
+T19	drug 1461 1471	xanomeline
+T20	method 1512 1517	PANSS
+T22	drug 1472 1480	trospium
+T23	drug 637 645	trospium
+T28	method 2000 2005	CGI-S
+R10	risk_factor_of Arg1:T58 Arg2:T60	
+R11	risk_factor_of Arg1:T58 Arg2:T61	
+R12	risk_factor_of Arg1:T58 Arg2:T62	
+R13	risk_factor_of Arg1:T58 Arg2:T63	
+R14	risk_factor_of Arg1:T58 Arg2:T64	
+R15	risk_factor_of Arg1:T59 Arg2:T60	
+R16	risk_factor_of Arg1:T59 Arg2:T61	
+R17	risk_factor_of Arg1:T59 Arg2:T62	
+R18	risk_factor_of Arg1:T59 Arg2:T63	
+R19	risk_factor_of Arg1:T59 Arg2:T64	
+T29	drug 2293 2303	xanomeline
+T30	drug 2304 2312	trospium
+T31	method 2351 2356	PANSS
+R20	associated_with Arg1:T29 Arg2:T75	
+R21	associated_with Arg1:T30 Arg2:T75	

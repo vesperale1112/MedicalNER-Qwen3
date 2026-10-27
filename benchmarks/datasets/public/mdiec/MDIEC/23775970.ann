@@ -1,0 +1,56 @@
+T0	disease 58 65	anxiety
+T1	disease 70 80	depression
+T2	disease 107 113	cancer
+T4	method 127 162	population-based longitudinal study
+T5	Health_factors 227 243	cancer survivors
+T6	Health_factors 266 291	early survivorship stages
+T8	disease 362 369	anxiety
+T9	disease 371 381	depression
+T10	disease 387 414	comorbid anxiety-depression
+T12	disease 542 582	chronic and late psychological morbidity
+T14	Health_factors 421 443	adult cancer survivors
+T15	Health_factors 485 500	health behavior
+T20	method 666 695	state-based cancer registries
+T21	Health_factors 620 642	adult cancer survivors
+T22	method 596 616	heterogeneous sample
+T23	method 734 760	self-report questionnaires
+T24	disease 813 820	Anxiety
+T25	disease 825 835	depression
+T26	method 857 894	Hospital Anxiety and Depression Scale
+T28	disease 1027 1034	anxiety
+T29	disease 1042 1052	depression
+T33	disease 1098 1105	anxiety
+T34	disease 1134 1144	depression
+T35	disease 1335 1342	anxiety
+T36	disease 1350 1360	depression
+T38	disease 1372 1399	comorbid anxiety-depression
+T39	disease 1413 1436	psychological morbidity
+T40	disease 1478 1501	psychological morbidity
+T41	disease 1534 1545	lung cancer
+T44	Health_factors 1573 1580	smoking
+T46	Health_factors 1582 1612	insufficient physical activity
+T47	Health_factors 1550 1571	health risk behaviors
+T50	method 1717 1735	early intervention
+T52	method 1656 1712	Targeted psychological screening of vulnerable survivors
+T53	method 1835 1841	Trials
+T57	Health_factors 1914 1935	health risk behaviors
+T58	physiology 1884 1909	psychological functioning
+T59	method 1845 1873	risk reduction interventions
+T3	Health_factors 198 222	psychological adjustment
+R1	occurs_in Arg1:T8 Arg2:T14	
+R2	occurs_in Arg1:T9 Arg2:T14	
+R3	occurs_in Arg1:T10 Arg2:T14	
+R4	help_diagnose Arg1:T26 Arg2:T25	
+R5	help_diagnose Arg1:T26 Arg2:T24	
+T7	method 948 976	Logistic regression analyses
+T11	disease 1174 1201	comorbid anxiety-depression
+R6	associated_with Arg1:T39 Arg2:T40	
+R7	associated_with Arg1:T40 Arg2:T41	
+R8	associated_with Arg1:T40 Arg2:T47	
+R9	associated_with Arg1:T40 Arg2:T44	
+R10	associated_with Arg1:T40 Arg2:T46	
+T13	disease 1788 1811	psychological morbidity
+R11	treatment_for Arg1:T52 Arg2:T13	
+R12	treatment_for Arg1:T50 Arg2:T13	
+T16	Health_factors 1815 1833	early survivorship
+R13	occurs_in Arg1:T13 Arg2:T16	

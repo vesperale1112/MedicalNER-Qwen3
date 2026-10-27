@@ -1,0 +1,77 @@
+T2	disease 182 192	Depression
+T7	disease 919 929	depression
+T9	disease 1356 1366	Depression
+T10	disease 1424 1434	depression
+T11	disease 1526 1536	depression
+T12	disease 1797 1807	depression
+T14	disease 2373 2383	depression
+T16	disease 2905 2924	depressive symptoms
+T18	disease 2979 2989	depression
+T19	disease 44 54	Depression
+T20	method 605 612	MEDLINE
+T21	method 614 620	PubMed
+T22	method 622 630	PsycINFO
+T23	method 640 692	Cochrane Collaboration Registry of Controlled Trials
+T24	method 773 796	English-language trials
+T25	method 935 962	diagnostic accuracy studies
+T26	method 1194 1222	Random-effects meta-analysis
+T27	method 1259 1287	cognitive behavioral therapy
+T28	method 1289 1292	CBT
+R1	abbreviation_for Arg1:T28 Arg2:T27	
+T29	method 2027 2080	English-language Edinburgh Postnatal Depression Scale
+T30	method 2129 2131	CI
+T31	method 2157 2159	CI
+T32	method 2238 2278	Patient Health Questionnaire instruments
+T33	method 2314 2317	CBT
+T34	method 2467 2469	CI
+T35	Health_factors 2632 2664	second-generation antidepressant
+T36	disease 2753 2766	serious harms
+R2	risk_factor_of Arg1:T35 Arg2:T36	
+T37	method 0 12	Primary Care
+T38	method 516 536	depression screening
+T40	method 844 864	depression treatment
+T41	method 966 998	depression screening instruments
+T42	method 1876 1896	depression screening
+T43	method 2839 2893	screening pregnant and postpartum women for depression
+T44	method 3137 3146	screening
+T45	method 384 418	depression screening and treatment
+T46	method 445 466	screening instruments
+T1	method 1569 1593	antidepressant treatment
+T3	method 2435 2455	pooled relative risk
+T4	method 336 357	systematically review
+T5	method 109 126	Systematic Review
+T6	method 1961 1971	usual care
+T8	method 2533 2543	usual care
+T13	method 1497 1515	screening measures
+T47	method 1725 1743	screening programs
+T48	method 3179 3199	screening instrument
+T50	Health_factors 273 278	women
+T51	Health_factors 472 501	pregnant and postpartum women
+T52	Health_factors 868 897	pregnant and postpartum women
+T53	Health_factors 1002 1031	pregnant and postpartum women
+T54	Health_factors 1297 1326	pregnant and postpartum women
+T55	Health_factors 1610 1639	pregnant and postpartum women
+T56	Health_factors 2322 2351	pregnant and postpartum women
+R3	treatment_for Arg1:T43 Arg2:T16	
+T58	Health_factors 2928 2933	women
+T59	Health_factors 3026 3040	pregnant women
+T60	Health_factors 3094 3110	postpartum women
+R4	treatment_for Arg1:T43 Arg2:T18	
+T62	method 1811 1820	follow-up
+T49	Health_factors 58 87	Pregnant and Postpartum Women
+T63	Health_factors 290 320	pregnant and postpartum period
+T65	Health_factors 540 546	adults
+R5	treatment_for Arg1:T33 Arg2:T14	
+T64	method 135 168	US Preventive Services Task Force
+R8	help_diagnose Arg1:T13 Arg2:T11	
+T66	method 822 842	depression screening
+T67	Health_factors 1542 1565	serious adverse effects
+T68	Health_factors 1653 1658	older
+R10	occurs_in Arg1:T14 Arg2:T56	
+R12	occurs_in Arg1:T16 Arg2:T58	
+T39	method 89 104	Evidence Report
+T15	disease 375 380	harms
+T17	disease 813 818	harms
+T57	disease 2939 2949	depression
+R6	occurs_in Arg1:T16 Arg2:T57	
+T61	physiology 2676 2685	pregnancy

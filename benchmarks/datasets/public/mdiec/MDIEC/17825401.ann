@@ -1,0 +1,53 @@
+T0	gene 0 28	Disrupted-In-Schizophrenia 1
+T1	region 54 77	newly generated neurons
+T3	region 85 96	adult brain
+T5	physiology 98 116	Adult neurogenesis
+T8	region 167 188	adult mammalian brain
+T10	region 306 313	neurons
+T11	region 319 342	adult neural stem cells
+T12	region 361 370	circuitry
+T15	gene 403 431	Disrupted-In-Schizophrenia 1
+T16	gene 433 438	DISC1
+T17	gene 443 476	schizophrenia susceptibility gene
+T21	physiology 481 511	adult hippocampal neurogenesis
+T22	gene 545 550	DISC1
+T24	disease 646 689	mispositioning of new dentate granule cells
+T25	disease 607 641	aberrant morphological development
+T26	physiology 572 592	neuronal integration
+T27	region 734 749	newborn neurons
+T29	physiology 817 838	dendritic development
+T30	physiology 788 800	excitability
+T31	gene 875 880	DISC1
+T32	gene 917 922	NDEL1
+T33	physiology 937 955	adult neurogenesis
+T34	gene 994 999	DISC1
+T39	physiology 1219 1237	adult neurogenesis
+T40	physiology 1187 1207	neuronal development
+T42	physiology 1050 1081	functional neuronal integration
+R1	located_in Arg1:T1 Arg2:T3	
+R2	risk_factor_of Arg1:T22 Arg2:T26	
+R3	associated_with Arg1:T0 Arg2:T1	
+R4	associated_with Arg1:T5 Arg2:T8	
+R5	abbreviation_for Arg1:T16 Arg2:T15	
+R6	hyponym_of Arg1:T15 Arg2:T17	
+R7	hyponym_of Arg1:T16 Arg2:T17	
+R8	located_in Arg1:T15 Arg2:T21	
+R9	located_in Arg1:T16 Arg2:T21	
+R10	risk_factor_of Arg1:T26 Arg2:T25	
+R11	risk_factor_of Arg1:T26 Arg2:T24	
+T2	physiology 695 718	cell-autonomous fashion
+T4	physiology 755 770	DISC1 knockdown
+R12	associated_with Arg1:T4 Arg2:T30	
+R13	located_in Arg1:T4 Arg2:T27	
+T6	physiology 843 860	synapse formation
+R14	associated_with Arg1:T4 Arg2:T29	
+R15	associated_with Arg1:T4 Arg2:T6	
+R16	associated_with Arg1:T31 Arg2:T33	
+R17	associated_with Arg1:T32 Arg2:T33	
+R18	associated_with Arg1:T31 Arg2:T32	
+T7	region 1089 1100	adult brain
+R19	located_in Arg1:T42 Arg2:T7	
+R20	associated_with Arg1:T34 Arg2:T42	
+T9	gene 1139 1183	susceptibility gene for major mental illness
+R21	associated_with Arg1:T9 Arg2:T40	
+R22	associated_with Arg1:T9 Arg2:T39	

@@ -1,0 +1,79 @@
+T1	disease 71 84	schizophrenia
+T2	disease 220 233	schizophrenia
+T3	disease 450 463	schizophrenia
+T4	disease 713 726	schizophrenia
+T5	disease 987 1000	schizophrenia
+T6	disease 1101 1132	medical or psychiatric disorder
+T7	disease 1167 1176	psychosis
+T8	disease 3277 3290	schizophrenia
+T9	method 0 44	Psychosocial and psychological interventions
+T10	method 88 105	systematic review
+T11	method 110 131	network meta-analysis
+T12	method 149 193	psychosocial and psychological interventions
+T13	method 379 423	psychosocial and psychological interventions
+T14	method 491 508	systematic review
+T15	method 513 534	network meta-analysis
+T16	method 577 605	randomised controlled trials
+T18	method 624 667	psychosocial or psychological interventions
+T19	method 740 746	EMBASE
+T20	method 748 755	MEDLINE
+T21	method 757 765	PsycINFO
+T22	method 775 791	Cochrane Library
+T23	method 793 844	WHO International Clinical Trials Registry Platform
+T25	method 902 908	PubMed
+T26	Health_factors 975 981	adults
+T30	method 1408 1421	interventions
+T32	method 1605 1641	random-effects network meta-analysis
+T33	method 1655 1666	odds ratios
+T34	method 1668 1671	ORs
+T36	method 1722 1725	CIs
+T37	method 2026 2035	screening
+T38	Health_factors 2304 2311	females
+T39	Health_factors 2321 2326	males
+T40	Health_factors 2332 2335	sex
+T41	method 2368 2389	network meta-analysis
+T42	method 2395 2423	randomised controlled trials
+T43	method 2445 2472	psychological interventions
+T44	drug 2499 2513	antipsychotics
+T45	Health_factors 2515 2524	Ethnicity
+T47	method 2572 2574	OR
+T48	method 2584 2586	CI
+T49	method 2628 2630	OR
+T50	method 2646 2675	cognitive behavioural therapy
+T51	method 2677 2679	OR
+T52	method 2719 2721	OR
+T54	method 2763 2765	OR
+T55	method 2810 2812	OR
+T57	method 3121 3149	cognitive behavioral therapy
+T58	method 3188 3214	psychosocial interventions
+T61	method 3071 3091	family interventions
+T62	method 2737 2761	integrated interventions
+T63	method 2550 2570	Family interventions
+T64	method 1537 1561	operationalised criteria
+T65	disease 428 435	relapse
+T66	disease 49 56	relapse
+R1	treatment_for Arg1:T12 Arg2:T2	
+T67	disease 287 294	relapse
+R2	treatment_for Arg1:T9 Arg2:T1	
+T17	disease 688 695	relapse
+R3	treatment_for Arg1:T18 Arg2:T4	
+T68	method 767 773	BIOSIS
+T24	method 850 868	ClinicalTrials.gov
+T27	disease 1070 1081	acutely ill
+T28	Health_factors 1232 1241	reviewers
+T29	disease 1515 1522	relapse
+T31	Health_factors 1565 1596	psychiatric hospital admissions
+R4	help_diagnose Arg1:T64 Arg2:T29	
+R5	help_diagnose Arg1:T31 Arg2:T29	
+R6	abbreviation_for Arg1:T34 Arg2:T33	
+T35	method 1676 1705	standardised mean differences
+T69	method 1707 1711	SMDs
+R7	abbreviation_for Arg1:T69 Arg2:T35	
+T70	method 2230 2251	qualitative synthesis
+T46	method 2597 2626	relapse prevention programmes
+T71	Health_factors 2695 2717	family psychoeducation
+T53	method 2785 2808	patient psychoeducation
+T72	disease 2835 2842	relapse
+T73	disease 3059 3066	relapse
+T56	Health_factors 3093 3115	family psychoeducation
+R8	treatment_for Arg1:T58 Arg2:T8	

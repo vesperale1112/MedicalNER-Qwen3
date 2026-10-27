@@ -1,0 +1,28 @@
+T0	disease 17 30	schizophrenia
+T4	method 56 96	Northern Finland 1966 Birth Cohort Study
+T6	Health_factors 226 229	age
+T7	method 155 195	Northern Finland 1966 Birth Cohort Study
+T9	disease 262 303	delayed motor or intellectual development
+T10	disease 333 366	pregnancy and birth complications
+T11	disease 443 456	schizophrenia
+T15	disease 234 254	Impaired performance
+T16	disease 553 566	schizophrenia
+T18	Health_factors 467 491	upper social class girls
+T19	disease 632 645	schizophrenia
+T20	Health_factors 728 746	general population
+T21	disease 955 968	schizophrenia
+T23	method 874 921	descriptive, lifespan, multilevel systems model
+T1	method 32 46	Follow-up data
+R1	hyponym_of Arg1:T9 Arg2:T15	
+T2	Health_factors 308 325	adverse exposures
+R2	hyponym_of Arg1:T10 Arg2:T2	
+T3	disease 368 399	central nervous system diseases
+R3	hyponym_of Arg1:T3 Arg2:T2	
+R4	risk_factor_of Arg1:T15 Arg2:T11	
+R5	risk_factor_of Arg1:T9 Arg2:T11	
+R6	risk_factor_of Arg1:T2 Arg2:T11	
+R7	risk_factor_of Arg1:T10 Arg2:T11	
+R8	risk_factor_of Arg1:T3 Arg2:T11	
+T5	Health_factors 496 513	clever schoolboys
+R9	risk_factor_of Arg1:T18 Arg2:T16	
+R10	risk_factor_of Arg1:T5 Arg2:T16	

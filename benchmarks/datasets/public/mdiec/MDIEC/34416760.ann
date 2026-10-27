@@ -1,0 +1,46 @@
+T1	disease 60 85	Major Depression Disorder
+T2	disease 90 106	Bipolar Disorder
+T3	disease 215 236	psychiatric disorders
+T4	disease 406 431	major depressive disorder
+T5	disease 436 452	bipolar disorder
+T6	disease 454 456	BD
+T7	disease 631 656	major depressive disorder
+T8	disease 678 680	BD
+T9	disease 877 902	major depressive disorder
+T10	disease 907 909	BD
+T11	disease 1073 1075	BD
+T12	disease 1095 1120	major depressive disorder
+T13	disease 1241 1243	BD
+T14	disease 1306 1331	major depressive disorder
+T15	disease 1336 1338	BD
+T16	method 0 20	Dimensional Analysis
+T17	physiology 175 198	functional connectivity
+T18	physiology 200 202	FC
+R1	abbreviation_for Arg1:T18 Arg2:T17	
+T19	method 247 278	traditional statistical methods
+T21	method 382 402	atypical FC patterns
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+T22	method 548 599	resting-state functional magnetic resonance imaging
+T23	method 702 717	health controls
+T24	method 769 782	FC dimensions
+T25	method 850 872	atypical FC dimensions
+T26	method 926 947	atypical FC dimension
+T27	symptom 964 985	decreased FC strength
+T29	method 1187 1207	atypical FC patterns
+T30	disease 1211 1236	major depressive disorder
+T31	method 1277 1297	atypical FC patterns
+T32	physiology 24 56	Atypical Functional Connectivity
+T20	physiology 166 198	atypical functional connectivity
+R10	characteristic_of Arg1:T25 Arg2:T9	
+R11	characteristic_of Arg1:T25 Arg2:T10	
+R12	characteristic_of Arg1:T29 Arg2:T30	
+R13	characteristic_of Arg1:T29 Arg2:T13	
+T28	region 989 997	thalamus
+T33	region 1002 1015	basal ganglia
+R18	located_in Arg1:T27 Arg2:T28	
+R19	located_in Arg1:T27 Arg2:T33	
+R3	associated_with Arg1:T26 Arg2:T11	
+R4	occurs_in Arg1:T32 Arg2:T1	
+R5	occurs_in Arg1:T32 Arg2:T2	
+R6	characteristic_of Arg1:T20 Arg2:T3	
+T34	method 1151 1166	brain dimension

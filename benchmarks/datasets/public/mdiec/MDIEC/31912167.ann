@@ -1,0 +1,59 @@
+T1	disease 41 51	depression
+T2	disease 56 73	anxiety disorders
+T3	Health_factors 176 201	intimate partner violence
+T4	Health_factors 203 206	IPV
+T5	disease 268 285	anxiety disorders
+T7	disease 545 570	major depression disorder
+T8	disease 575 592	anxiety disorders
+T9	disease 775 800	major depression disorder
+T10	disease 896 915	depression disorder
+T11	disease 954 971	anxiety disorders
+T12	disease 1010 1027	anxiety disorders
+T15	disease 1140 1165	major depression disorder
+T16	Health_factors 1200 1215	emotional abuse
+T17	disease 1255 1272	anxiety disorders
+T19	disease 1404 1426	mental health problems
+T20	disease 1516 1523	anxiety
+T21	disease 1528 1538	depression
+T23	disease 1626 1643	anxiety disorders
+T24	method 96 114	longitudinal study
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+T25	disease 253 263	depression
+T26	method 406 412	cohort
+T6	method 476 497	Composite Abuse Scale
+T27	method 617 661	Composite International Diagnostic Interview
+R2	help_diagnose Arg1:T27 Arg2:T8	
+R3	help_diagnose Arg1:T27 Arg2:T7	
+T28	Health_factors 733 736	IPV
+T29	Health_factors 917 920	IPV
+R5	associated_with Arg1:T29 Arg2:T12	
+R7	risk_factor_of Arg1:T16 Arg2:T17	
+T30	method 1338 1379	sex-specific and integrated interventions
+T18	method 1443 1460	IPV interventions
+T22	Health_factors 1657 1672	emotional abuse
+T31	Health_factors 0 25	Intimate partner violence
+#1	AnnotatorNotes T16	C4062278
+#2	AnnotatorNotes T22	C4062278
+T14	Health_factors 449 452	IPV
+T32	Health_factors 1114 1117	IPV
+T33	Health_factors 1592 1595	IPV
+T34	Health_factors 1396 1399	IPV
+T35	Health_factors 753 760	females
+T36	Health_factors 849 856	females
+T38	Health_factors 1122 1127	males
+T39	Health_factors 1286 1291	males
+T40	Health_factors 1688 1693	males
+T44	method 353 402	Mater-University of Queensland Study of Pregnancy
+T45	physiology 1561 1584	psychological responses
+T46	Health_factors 1738 1741	men
+T41	Health_factors 211 226	early adulthood
+T42	Health_factors 289 304	young adulthood
+T43	method 533 543	follow-ups
+R6	risk_factor_of Arg1:T22 Arg2:T23	
+T37	Health_factors 1031 1038	females
+R13	help_diagnose Arg1:T6 Arg2:T14	
+R15	occurs_in Arg1:T12 Arg2:T37	
+R8	occurs_in Arg1:T17 Arg2:T39	
+R16	occurs_in Arg1:T22 Arg2:T40	
+T13	disease 1055 1062	anxiety
+R4	occurs_in Arg1:T12 Arg2:T13	

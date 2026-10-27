@@ -1,0 +1,8 @@
+T1	method 5 21	nascent research
+T2	method 36 57	dietary interventions
+T3	method 102 117	adjunct therapy
+T4	disease 123 133	depression
+T5	disease 138 145	anxiety
+R1	treatment_for Arg1:T2 Arg2:T4	
+R2	treatment_for Arg1:T2 Arg2:T5	
+R3	hyponym_of Arg1:T2 Arg2:T3	

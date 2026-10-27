@@ -1,0 +1,84 @@
+T0	disease 28 51	Substance Use Disorders
+T3	Health_factors 58 71	Female Youths
+T4	disease 193 216	substance use disorders
+T6	disease 85 101	Suicide attempts
+T7	Health_factors 122 135	female youths
+T9	disease 336 359	substance use disorders
+T10	disease 263 279	suicide attempts
+T11	Health_factors 286 293	females
+T12	Health_factors 313 316	age
+T17	Health_factors 431 438	females
+T18	Health_factors 439 443	aged
+T19	Health_factors 484 490	youths
+T20	disease 496 513	attempted suicide
+T21	Health_factors 532 545	female youths
+T22	method 404 429	longitudinal cohort study
+T23	disease 725 748	substance use disorders
+T24	method 628 634	cohort
+T25	method 639 650	followed up
+T27	disease 771 787	suicide attempts
+T28	Health_factors 794 801	females
+T29	Health_factors 819 822	age
+T32	disease 903 925	substance use disorder
+T33	Health_factors 881 896	hospitalization
+T35	disease 1017 1040	substance use disorders
+T36	disease 1132 1146	mental illness
+T38	method 941 954	Hazard ratios
+T39	method 956 959	HRs
+T40	method 969 972	CIs
+T41	Health_factors 1127 1130	age
+T43	method 1208 1217	follow-up
+T45	Health_factors 1148 1185	resource-limited socioeconomic status
+T47	method 1062 1104	Cox proportional hazards regression models
+T48	disease 1348 1370	substance use disorder
+T50	Health_factors 1241 1254	female youths
+T51	method 1262 1264	SD
+T52	Health_factors 1266 1269	age
+T53	disease 1302 1319	attempted suicide
+T54	disease 1530 1552	substance use disorder
+T55	disease 1623 1657	sedative or hypnotic use disorders
+T58	Health_factors 1405 1418	female youths
+T59	disease 1431 1446	attempt suicide
+T60	disease 1466 1483	attempted suicide
+T61	Health_factors 1506 1521	hospitalization
+T62	method 1582 1584	HR
+T63	method 1596 1598	CI
+T64	method 1659 1661	HR
+T65	method 1674 1676	CI
+T66	disease 1747 1781	sedative or hypnotic use disorders
+T68	method 1797 1799	HR
+T69	method 1812 1814	CI
+T70	disease 2047 2070	substance use disorders
+T74	Health_factors 1951 1964	female youths
+T75	disease 1980 1996	suicide attempts
+T76	method 2012 2014	CI
+T77	Health_factors 2080 2093	female youths
+T78	method 2123 2125	CI
+T80	disease 2291 2314	substance use disorders
+T81	disease 2355 2370	attempt suicide
+T84	method 2208 2220	cohort study
+T85	Health_factors 2222 2235	female youths
+T86	disease 2240 2257	attempted suicide
+T87	Health_factors 2329 2342	female youths
+T90	Health_factors 2436 2449	substance use
+T91	Health_factors 2456 2469	female youths
+T92	disease 2474 2489	attempt suicide
+T95	disease 0 15	Suicide Attempt
+R1	occurs_in Arg1:T0 Arg2:T3	
+R2	associated_with Arg1:T6 Arg2:T7	
+R3	occurs_in Arg1:T10 Arg2:T11	
+R4	occurs_in Arg1:T27 Arg2:T28	
+R5	abbreviation_for Arg1:T39 Arg2:T38	
+T1	disease 996 1011	suicide attempt
+R6	risk_factor_of Arg1:T60 Arg2:T54	
+T2	method 1564 1573	follow-up
+R7	risk_factor_of Arg1:T60 Arg2:T55	
+T5	disease 1692 1707	Suicide attempt
+R8	associated_with Arg1:T5 Arg2:T66	
+T8	disease 1934 1949	suicide attempt
+R9	occurs_in Arg1:T74 Arg2:T75	
+R10	risk_factor_of Arg1:T75 Arg2:T70	
+R11	occurs_in Arg1:T85 Arg2:T86	
+R12	risk_factor_of Arg1:T86 Arg2:T80	
+R13	occurs_in Arg1:T90 Arg2:T91	
+R14	occurs_in Arg1:T91 Arg2:T92	

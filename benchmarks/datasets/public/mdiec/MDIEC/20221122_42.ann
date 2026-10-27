@@ -1,0 +1,7 @@
+T1	physiology 26 49	hepatocellular function
+T2	method 112 126	cecal ligation
+T3	method 131 139	puncture
+T5	disease 86 92	sepsis
+R1	associated_with Arg1:T1 Arg2:T5	
+T4	physiology 240 267	indocyanine green clearance
+T6	disease 54 63	depressed

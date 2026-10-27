@@ -1,0 +1,19 @@
+T1	method 0 33	Intracerebroventricular injection
+T2	drug 41 68	selective mGluR5 antagonist
+T3	drug 69 103	2-methyl-6-(phenylethynyl)pyridine
+T5	physiology 128 155	basal synaptic transmission
+T6	physiology 189 209	long-term depression
+T7	physiology 211 214	LTD
+T8	physiology 255 258	LTD
+T9	method 228 250	electrical stimulation
+T10	physiology 274 315	novel object-place configuration learning
+T11	drug 105 109	MPEP
+R1	abbreviation_for Arg1:T11 Arg2:T3	
+R4	abbreviation_for Arg1:T7 Arg2:T6	
+R5	risk_factor_of Arg1:T9 Arg2:T7	
+R6	risk_factor_of Arg1:T9 Arg2:T6	
+R8	treatment_for Arg1:T3 Arg2:T6	
+R9	treatment_for Arg1:T11 Arg2:T7	
+R10	treatment_for Arg1:T3 Arg2:T8	
+R11	treatment_for Arg1:T11 Arg2:T8	
+R2	associated_with Arg1:T8 Arg2:T10	

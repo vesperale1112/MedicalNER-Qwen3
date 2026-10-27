@@ -1,0 +1,83 @@
+T0	disease 10 23	schizophrenia
+T1	region 30 66	human induced pluripotent stem cells
+T2	disease 68 81	Schizophrenia
+T3	disease 83 87	SCZD
+T5	disease 94 128	debilitating neurological disorder
+T7	Health_factors 220 232	heritability
+T10	disease 532 536	SCZD
+T11	disease 565 569	SCZD
+T13	region 374 391	prefrontal cortex
+T14	region 396 407	hippocampus
+T15	region 411 428	SCZD brain tissue
+T16	physiology 578 598	molecular mechanisms
+T18	physiology 478 528	dopaminergic, glutamatergic and GABAergic activity
+T19	method 433 461	neuropharmacological studies
+T20	disease 338 366	abnormal neural distribution
+T21	signs 309 318	cell size
+T22	method 253 272	post-mortem studies
+T23	disease 695 699	SCZD
+T24	region 726 737	fibroblasts
+T25	disease 743 747	SCZD
+T26	region 876 883	neurons
+T27	disease 661 691	cellular and molecular defects
+T28	region 762 798	human induced pluripotent stem cells
+T30	region 908 926	SCZD hiPSC neurons
+T31	gene 1013 1026	PSD95-protein
+T34	physiology 1038 1067	glutamate receptor expression
+T35	signs 997 1011	neurite number
+T36	physiology 934 966	diminished neuronal connectivity
+T37	region 1097 1115	SCZD hiPSC neurons
+T39	drug 1172 1182	cyclic AMP
+T43	physiology 1187 1210	WNT signalling pathways
+T44	physiology 1069 1093	Gene expression profiles
+T45	disease 1255 1269	SCZD phenotype
+T47	region 1310 1328	SCZD hiPSC neurons
+T48	drug 1338 1360	antipsychotic loxapine
+T49	region 1216 1247	cellular and molecular elements
+T52	gene 1490 1502	gene product
+T54	Health_factors 1536 1551	early childhood
+T55	disease 1507 1532	rapid disease progression
+T56	disease 1461 1477	loss of function
+T58	method 1371 1395	hiPSC neuronal pathology
+T59	disease 1637 1641	SCZD
+T60	disease 1653 1681	genetic psychiatric disorder
+T64	physiology 1597 1612	gene expression
+T65	region 1567 1592	hiPSC neuronal phenotypes
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	hyponym_of Arg1:T2 Arg2:T5	
+R3	hyponym_of Arg1:T3 Arg2:T5	
+T4	gene 183 200	genetic component
+T6	signs 295 307	brain volume
+T8	signs 320 333	spine density
+R4	located_in Arg1:T6 Arg2:T13	
+R5	located_in Arg1:T21 Arg2:T13	
+R6	located_in Arg1:T8 Arg2:T13	
+R7	located_in Arg1:T20 Arg2:T13	
+R8	located_in Arg1:T6 Arg2:T14	
+R9	located_in Arg1:T21 Arg2:T14	
+R10	located_in Arg1:T8 Arg2:T14	
+R11	located_in Arg1:T20 Arg2:T14	
+R13	located_in Arg1:T14 Arg2:T15	
+R14	occurs_in Arg1:T18 Arg2:T10	
+T9	region 542 546	cell
+T12	region 800 806	hiPSCs
+R16	abbreviation_for Arg1:T12 Arg2:T28	
+T17	region 864 870	hiPSCs
+R17	characteristic_of Arg1:T36 Arg2:T30	
+R18	characteristic_of Arg1:T35 Arg2:T30	
+R19	characteristic_of Arg1:T31 Arg2:T30	
+R20	characteristic_of Arg1:T34 Arg2:T30	
+R21	characteristic_of Arg1:T39 Arg2:T37	
+R22	characteristic_of Arg1:T43 Arg2:T37	
+R23	occurs_in Arg1:T49 Arg2:T45	
+R24	treatment_for Arg1:T48 Arg2:T45	
+R25	occurs_in Arg1:T55 Arg2:T54	
+R26	associated_with Arg1:T65 Arg2:T59	
+R27	associated_with Arg1:T64 Arg2:T59	
+R28	hyponym_of Arg1:T59 Arg2:T60	
+R12	occurs_in Arg1:T13 Arg2:T15	
+R15	characteristic_of Arg1:T6 Arg2:T15	
+R29	characteristic_of Arg1:T21 Arg2:T15	
+R30	characteristic_of Arg1:T8 Arg2:T15	
+R31	characteristic_of Arg1:T20 Arg2:T15	
+R32	occurs_in Arg1:T27 Arg2:T23	

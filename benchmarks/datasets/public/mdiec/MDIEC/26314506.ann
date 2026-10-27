@@ -1,0 +1,54 @@
+T1	gene 0 7	MiR-335
+T2	disease 23 48	major depression disorder
+T4	disease 102 127	Major depressive disorder
+T5	disease 129 132	MDD
+T7	disease 177 180	MDD
+T8	gene 231 265	Glutamate receptor, metabotropic 4
+T9	gene 267 271	GRM4
+T11	disease 455 458	MDD
+T12	gene 484 491	miR-335
+T13	disease 530 540	depression
+T14	gene 605 612	miR-335
+T15	gene 633 637	GRM4
+T16	gene 685 692	miR-335
+T17	drug 729 739	citalopram
+T18	physiology 755 773	miR-335 expression
+T19	physiology 791 806	GRM4 expression
+T20	gene 835 842	miR-335
+T21	disease 885 895	depression
+#1	AnnotatorNotes T2	C1269683
+#2	AnnotatorNotes T1	C1537879
+R3	abbreviation_for Arg1:T5 Arg2:T4	
+R5	abbreviation_for Arg1:T9 Arg2:T8	
+T10	disease 314 317	MDD
+R6	associated_with Arg1:T8 Arg2:T10	
+T22	method 694 723	Antidepressant drug treatment
+#5	AnnotatorNotes T17	C0008845
+R11	associated_with Arg1:T20 Arg2:T21	
+T23	method 930 955	antidepressant treatments
+#6	AnnotatorNotes T4	C1269683
+T6	disease 149 161	mood disorde
+#3	AnnotatorNotes T6	C0525045
+R4	hyponym_of Arg1:T4 Arg2:T6	
+T3	gene 96 100	GRM4
+R1	associated_with Arg1:T1 Arg2:T3	
+T24	method 53 77	antidepressant treatment
+R13	associated_with Arg1:T1 Arg2:T2	
+T25	method 203 229	biopsychosocial approaches
+R9	associated_with Arg1:T9 Arg2:T10	
+R7	associated_with Arg1:T17 Arg2:T18	
+R8	associated_with Arg1:T17 Arg2:T19	
+R12	associated_with Arg1:T15 Arg2:T16	
+T26	method 416 431	cellular assays
+T27	method 555 571	healthy controls
+R15	characteristic_of Arg1:T12 Arg2:T13	
+R16	associated_with Arg1:T14 Arg2:T15	
+R18	hyponym_of Arg1:T5 Arg2:T6	
+T28	method 361 391	drug discovery and development
+T29	region 436 441	blood
+R10	associated_with Arg1:T1 Arg2:T24	
+T30	method 866 881	pathophysiology
+R2	associated_with Arg1:T20 Arg2:T23	
+R14	treatment_for Arg1:T25 Arg2:T7	
+R17	associated_with Arg1:T22 Arg2:T18	
+R19	associated_with Arg1:T22 Arg2:T19	

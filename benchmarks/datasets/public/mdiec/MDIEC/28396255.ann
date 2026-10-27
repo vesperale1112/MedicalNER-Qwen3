@@ -1,0 +1,41 @@
+T2	disease 52 77	Major depression disorder
+T3	disease 79 82	MDD
+T5	disease 253 256	MDD
+T6	disease 287 290	MDD
+T7	disease 972 982	depression
+T9	disease 1428 1438	depression
+#2	AnnotatorNotes T2	C1269683
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T10	disease 134 143	morbidity
+T11	disease 148 157	mortality
+T12	method 23 50	animal models of depression
+T13	method 737 750	animal models
+#4	AnnotatorNotes T12	C0599779
+T14	drug 899 921	pharmacological agents
+T4	disease 89 116	debilitating mental illness
+#3	AnnotatorNotes T4	C0004936
+R2	hyponym_of Arg1:T2 Arg2:T4	
+R5	hyponym_of Arg1:T3 Arg2:T4	
+T15	region 312 328	peripheral blood
+T16	region 332 349	post-mortem brain
+T18	method 1101 1128	animal models of depression
+T19	method 926 938	gene editing
+T20	region 292 298	tissue
+R8	hyponym_of Arg1:T15 Arg2:T20	
+R9	hyponym_of Arg1:T16 Arg2:T20	
+T21	Health_factors 482 500	medication history
+T22	Health_factors 502 505	age
+T23	Health_factors 570 573	sex
+T24	Health_factors 575 579	race
+T25	Health_factors 585 602	living conditions
+T26	region 810 841	molecular and cellular pathways
+T27	method 986 999	animal models
+T28	method 1034 1055	human patient studies
+T29	disease 518 523	death
+R3	characteristic_of Arg1:T10 Arg2:T3	
+R4	characteristic_of Arg1:T10 Arg2:T2	
+R6	characteristic_of Arg1:T11 Arg2:T3	
+R7	characteristic_of Arg1:T11 Arg2:T2	
+T30	region 531 549	post-mortem tissue
+T31	Health_factors 565 568	age
+T17	region 789 805	neural circuitry

@@ -1,0 +1,50 @@
+T1	disease 66 94	neurodevelopmental disorders
+T2	region 395 400	Brain
+T3	region 410 429	innate immune cells
+T4	region 432 441	microglia
+T5	region 569 581	immune cells
+T6	gene 779 798	Toll-like receptors
+T7	disease 1004 1032	neurodevelopmental disorders
+T8	disease 1044 1050	autism
+T9	disease 1055 1068	schizophrenia
+T10	region 1115 1124	microglia
+T12	physiology 465 488	sculpt neural circuitry
+T14	physiology 691 707	neurodevelopment
+T15	gene 800 809	cytokines
+T16	physiology 886 903	brain development
+T18	region 1200 1226	functioning nervous system
+T19	physiology 918 966	dysfunction in innate immune signalling pathways
+T20	region 747 767	innate immune system
+T21	region 639 664	developing nervous system
+T22	gene 586 621	immune-related signalling molecules
+T23	physiology 524 552	neurodevelopmental processes
+T27	region 190 217	intricate networks of cells
+T28	region 100 126	immune and nervous systems
+T29	physiology 37 61	healthy brain maturation
+T30	physiology 0 15	Innate immunity
+T11	physiology 368 378	maturation
+R1	hyponym_of Arg1:T4 Arg2:T3	
+R2	located_in Arg1:T3 Arg2:T2	
+R3	located_in Arg1:T4 Arg2:T2	
+R4	associated_with Arg1:T4 Arg2:T12	
+R5	associated_with Arg1:T4 Arg2:T23	
+R6	located_in Arg1:T22 Arg2:T21	
+R7	located_in Arg1:T5 Arg2:T21	
+R8	associated_with Arg1:T22 Arg2:T14	
+R9	associated_with Arg1:T5 Arg2:T14	
+R10	hyponym_of Arg1:T6 Arg2:T20	
+R11	hyponym_of Arg1:T15 Arg2:T20	
+T13	physiology 811 847	inflammasomes and phagocytic signals
+R12	hyponym_of Arg1:T13 Arg2:T20	
+R13	associated_with Arg1:T20 Arg2:T16	
+R14	associated_with Arg1:T6 Arg2:T16	
+R15	associated_with Arg1:T15 Arg2:T16	
+R16	associated_with Arg1:T13 Arg2:T16	
+R17	associated_with Arg1:T19 Arg2:T7	
+R18	hyponym_of Arg1:T8 Arg2:T7	
+R19	hyponym_of Arg1:T9 Arg2:T7	
+R20	associated_with Arg1:T19 Arg2:T8	
+R21	associated_with Arg1:T19 Arg2:T9	
+T17	physiology 1129 1153	innate immune signalling
+R22	associated_with Arg1:T10 Arg2:T18	
+R23	associated_with Arg1:T17 Arg2:T18	

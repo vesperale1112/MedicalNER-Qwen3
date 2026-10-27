@@ -1,0 +1,9 @@
+T1	physiology 27 43	glycemic control
+T2	disease 48 58	depression
+T4	physiology 62 80	cognitive function
+T6	Health_factors 102 105	age
+T8	disease 166 185	comorbid depression
+T9	method 187 216	mini-mental state examination
+T10	method 218 222	MMSE
+T13	gene 128 157	A1c (glycosylated hemoglobin)
+R1	abbreviation_for Arg1:T10 Arg2:T9	

@@ -1,0 +1,6 @@
+T1	method 12 39	ablation of olfactory bulbs
+T3	disease 49 73	depression-like syndrome
+T4	drug 90 111	antidepressant agents
+R1	risk_factor_of Arg1:T1 Arg2:T3	
+T2	method 3 10	rodents
+R2	occurs_in Arg1:T2 Arg2:T1	

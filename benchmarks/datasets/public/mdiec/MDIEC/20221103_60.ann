@@ -1,0 +1,5 @@
+T3	signs 62 80	cortical thickness
+T4	method 93 97	rTMS
+T6	disease 117 127	depression
+T8	method 160 167	cohorts
+R1	treatment_for Arg1:T4 Arg2:T6	

@@ -1,0 +1,54 @@
+T1	method 0 90	National Institute of Mental Health Treatment of Depression Collaborative Research Program
+T2	disease 291 316	major depression disorder
+T3	method 512 561	imipramine hydrochloride plus clinical management
+T4	disease 696 715	depressive symptoms
+T5	method 844 879	imipramine plus clinical management
+#1	AnnotatorNotes T1	C0011581
+T10	method 193 220	interpersonal psychotherapy
+T11	method 225 251	cognitive behavior therapy
+#2	AnnotatorNotes T2	C1269683
+#3	AnnotatorNotes T10	C0871787
+#4	AnnotatorNotes T11	C0009244
+T12	method 455 482	interpersonal psychotherapy
+T13	method 484 510	cognitive behavior therapy
+#5	AnnotatorNotes T3	C0589978
+T7	method 1384 1419	imipramine plus clinical management
+T14	method 1685 1712	interpersonal psychotherapy
+T15	method 603 635	placebo plus clinical management
+T17	disease 2025 2044	depressive symptoms
+T18	disease 2049 2074	impairment of functioning
+T20	disease 2286 2307	functionally impaired
+T21	method 2363 2390	interpersonal psychotherapy
+R4	treatment_for Arg1:T21 Arg2:T20	
+T22	disease 2618 2636	severely depressed
+T23	disease 2641 2662	functionally impaired
+T24	method 2571 2603	placebo plus clinical management
+T19	disease 2263 2281	severely depressed
+T9	method 2455 2490	imipramine plus clinical management
+R3	treatment_for Arg1:T21 Arg2:T19	
+R5	treatment_for Arg1:T9 Arg2:T20	
+R6	treatment_for Arg1:T9 Arg2:T19	
+T28	method 1005 1040	imipramine plus clinical management
+T29	method 902 934	placebo plus clinical management
+T31	method 1468 1500	placebo plus clinical management
+T32	method 1613 1639	cognitive behavior therapy
+T33	method 1717 1752	imipramine plus clinical management
+T34	method 1771 1803	placebo plus clinical management
+T6	method 176 191	psychotherapies
+T8	method 330 358	Research Diagnostic Criteria
+R10	help_diagnose Arg1:T8 Arg2:T2	
+T16	method 568 596	standard reference treatment
+T25	method 1354 1382	standard reference treatment
+#6	AnnotatorNotes T18	Loss of neuron(C0598940)
+R11	hyponym_of Arg1:T3 Arg2:T16	
+T26	method 954 969	psychotherapies
+T27	method 1138 1154	primary analyses
+T30	method 1218 1233	psychotherapies
+T35	method 1296 1311	psychotherapies
+T36	method 1443 1458	psychotherapies
+T37	method 1572 1599	interpersonal psychotherapy
+T38	method 1919 1935	primary analyses
+T39	method 1937 1955	Secondary analyses
+T40	method 2143 2159	primary analyses
+T43	disease 1125 1132	illness
+T41	disease 1650 1658	recovery

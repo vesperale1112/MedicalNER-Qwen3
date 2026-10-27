@@ -1,0 +1,5 @@
+T2	disease 21 42	poststroke depression
+T1	gene 63 89	serotonin transporter gene
+T3	gene 90 96	SLC6A4
+T4	gene 133 148	S/S homozygotes
+R1	characteristic_of Arg1:T4 Arg2:T2	

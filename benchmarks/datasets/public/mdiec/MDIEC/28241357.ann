@@ -1,0 +1,72 @@
+T1	disease 46 65	Depressive Symptoms
+T3	disease 210 229	depressive symptoms
+T4	disease 323 342	depressive symptoms
+T5	disease 360 377	severe depression
+T6	method 607 677	Diagnostic and Statistical Manual of Mental Disorders (Fourth Edition)
+T7	disease 837 859	functional impairments
+T8	disease 872 885	mood symptoms
+T9	signs 1089 1122	self-reported depression severity
+T10	disease 1348 1367	depressive disorder
+T11	disease 2061 2071	depression
+T13	disease 2576 2595	depressive symptoms
+T14	method 10 28	Collaborative Care
+T15	method 116 148	CASPER Randomized Clinical Trial
+T16	method 280 311	collaborative care intervention
+T17	method 430 455	Randomized clinical trial
+T18	method 513 525	primary care
+T20	method 763 781	Collaborative care
+T22	method 913 934	behavioral activation
+T24	method 1009 1027	usual primary care
+T25	method 1151 1186	9-item Patient Health Questionnaire
+T26	method 1188 1193	PHQ-9
+R1	abbreviation_for Arg1:T26 Arg2:T25	
+T27	method 1274 1279	PHQ-9
+T28	method 1369 1374	PHQ-9
+T29	method 1486 1488	SD
+T30	method 1565 1583	collaborative care
+T31	method 1629 1647	Collaborative care
+T32	method 1666 1671	PHQ-9
+T33	method 1731 1749	collaborative care
+T34	method 1810 1812	CI
+T35	method 1891 1896	PHQ-9
+T36	method 1908 1926	collaborative care
+T37	method 1987 1989	CI
+T38	method 2169 2171	CI
+T39	method 2215 2217	CI
+T40	method 2190 2203	relative risk
+T41	method 2329 2331	CI
+T42	method 2351 2364	relative risk
+T43	method 2376 2378	CI
+T44	method 2478 2496	collaborative care
+T45	method 32 42	Usual Care
+T46	method 1602 1612	usual care
+T47	method 1682 1692	usual care
+T48	method 1764 1774	usual care
+T49	method 1941 1950	usual car
+T50	method 2511 2520	usual car
+T51	Health_factors 1456 1462	female
+T52	Health_factors 69 81	Older Adults
+T53	Health_factors 233 245	older people
+T54	Health_factors 381 393	older people
+R2	help_diagnose Arg1:T25 Arg2:T9	
+R3	help_diagnose Arg1:T26 Arg2:T9	
+R4	help_diagnose Arg1:T28 Arg2:T10	
+T23	Health_factors 2435 2447	older adults
+T56	Health_factors 579 583	aged
+T58	method 1298 1307	follow-up
+T59	Health_factors 1475 1478	age
+T60	method 721 732	followed up
+T55	method 1134 1143	follow-up
+T62	method 1406 1415	follow-up
+T63	method 1552 1561	follow-up
+T64	method 2083 2092	follow-up
+T65	method 1704 1713	follow-up
+T66	method 2256 2265	follow-up
+T67	method 2607 2616	follow-up
+T57	method 748 761	Interventions
+T61	Health_factors 596 601	older
+T68	Health_factors 811 823	case manager
+T69	Health_factors 965 980	weekly sessions
+T2	disease 678 701	subthreshold depression
+T12	disease 87 109	Subthreshold Depressio
+T19	disease 2453 2476	subthreshold depression

@@ -1,0 +1,1 @@
+METHODS: We applied piecewise growth mixture modeling (PGMM) to identify different latent classes of early change in individuals with mild-to-moderate depression (n=409) who underwent a CBT-based web intervention for depression.

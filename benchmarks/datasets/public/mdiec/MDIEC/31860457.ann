@@ -1,0 +1,121 @@
+T1	disease 80 93	schizophrenia
+T2	disease 1082 1095	schizophrenia
+T3	drug 1221 1232	cholesterol
+T4	drug 1234 1249	LDL cholesterol
+T6	drug 1251 1266	HDL cholesterol
+T8	drug 1268 1280	triglyceride
+T9	signs 1286 1308	glucose concentrations
+T10	drug 1891 1902	haloperidol
+T11	drug 1930 1939	clozapine
+T12	drug 1983 1994	haloperidol
+T13	drug 2025 2035	olanzapine
+T14	drug 2047 2058	cholesterol
+T15	drug 2094 2105	cariprazine
+T16	drug 2134 2143	clozapine
+T17	drug 2149 2164	LDL cholesterol
+T19	drug 2202 2213	cariprazine
+T20	drug 2245 2255	olanzapine
+T21	drug 2261 2276	HDL cholesterol
+T23	drug 2310 2323	brexpiprazole
+T24	drug 2357 2368	amisulpride
+T25	drug 2374 2387	triglycerides
+T26	drug 2423 2436	brexpiprazole
+T27	drug 2468 2477	clozapine
+T28	drug 2483 2490	glucose
+T29	drug 2527 2537	lurasidone
+T30	drug 2569 2578	clozapine
+T31	drug 2601 2608	glucose
+T32	drug 2751 2762	cholesterol
+T33	drug 2917 2934	total-cholesterol
+T34	drug 2956 2971	LDL cholesterol
+T36	drug 3006 3021	HDL cholesterol
+T38	drug 3146 3156	olanzapine
+T39	drug 3161 3170	clozapine
+T40	drug 3205 3217	aripiprazole
+T41	drug 3219 3232	brexpiprazole
+T42	drug 3234 3245	cariprazine
+T43	drug 3247 3257	lurasidone
+T44	drug 3263 3274	ziprasidone
+T45	disease 3494 3515	metabolic disturbance
+T46	drug 26 40	antipsychotics
+T47	physiology 44 62	metabolic function
+T48	method 174 191	systematic review
+T49	method 196 217	network meta-analysis
+T50	drug 381 395	antipsychotics
+T51	drug 586 600	antipsychotics
+T52	Health_factors 674 685	demographic
+T53	disease 798 816	psychotic symptoms
+T54	method 904 911	MEDLINE
+T55	method 913 919	EMBASE
+T56	method 925 933	PsycINFO
+T57	method 982 1019	blinded, randomised controlled trials
+T58	drug 1033 1047	antipsychotics
+T60	method 1063 1078	acute treatment
+T61	method 1104 1152	frequentist random-effects network meta-analyses
+T62	signs 1197 1208	body weight
+T63	signs 1210 1213	BMI
+T64	method 1317 1333	meta-regressions
+T65	Health_factors 1388 1391	age
+T66	Health_factors 1393 1396	sex
+T67	Health_factors 1398 1407	ethnicity
+T68	signs 1418 1424	weight
+T69	symptom 1584 1607	symptom severity change
+T70	method 1686 1714	randomised controlled trials
+T71	Health_factors 1749 1767	treatment duration
+T72	symptom 1812 1823	weight gain
+T74	method 1871 1873	CI
+T75	signs 1945 1948	BMI
+T76	signs 2643 2649	weight
+T77	Health_factors 2664 2672	male sex
+T79	Health_factors 2684 2703	Non-white ethnicity
+T81	Health_factors 2786 2801	white ethnicity
+T82	signs 2819 2835	symptom severity
+T83	signs 2870 2876	weight
+T84	signs 2895 2898	BMI
+T85	drug 3090 3104	antipsychotics
+T86	symptom 3301 3326	Increased baseline weight
+T87	Health_factors 3328 3336	male sex
+T89	Health_factors 3342 3361	non-white ethnicity
+T90	Health_factors 3725 3731	carers
+T91	Health_factors 3737 3747	clinicians
+T94	physiology 109 132	metabolic dysregulation
+T95	method 155 170	psychopathology
+R1	associated_with Arg1:T46 Arg2:T47	
+R2	occurs_in Arg1:T47 Arg2:T1	
+T96	method 230 253	Antipsychotic treatment
+T97	disease 273 294	metabolic disturbance
+R3	associated_with Arg1:T96 Arg2:T97	
+T98	symptom 325 346	metabolic alterations
+T99	physiology 422 445	metabolic dysregulation
+T100	symptom 496 512	metabolic change
+T101	method 527 542	psychopathology
+T102	physiology 623 645	metabolic side-effects
+T103	physiology 656 669	physiological
+T104	physiology 700 745	antipsychotic-induced metabolic dysregulation
+T105	signs 831 851	metabolic parameters
+T106	method 857 880	antipsychotic treatment
+R4	treatment_for Arg1:T58 Arg2:T2	
+T5	symptom 1367 1383	metabolic change
+T7	signs 1439 1464	metabolic parameter level
+T59	symptom 1502 1518	metabolic change
+T107	symptom 1523 1545	psychopathology change
+T108	symptom 1612 1638	metabolic parameter change
+T109	method 1791 1807	Mean differences
+R5	associated_with Arg1:T31 Arg2:T76	
+R6	associated_with Arg1:T31 Arg2:T77	
+R7	associated_with Arg1:T79 Arg2:T32	
+R8	associated_with Arg1:T82 Arg2:T83	
+R9	associated_with Arg1:T82 Arg2:T84	
+R10	associated_with Arg1:T82 Arg2:T33	
+R11	associated_with Arg1:T82 Arg2:T34	
+R12	associated_with Arg1:T82 Arg2:T36	
+T18	physiology 3117 3139	metabolic side-effects
+T22	method 3517 3537	Treatment guidelines
+T35	symptom 3398 3436	antipsychotic-induced metabolic change
+T37	drug 3604 3617	antipsychotic
+R13	associated_with Arg1:T86 Arg2:T35	
+R14	associated_with Arg1:T87 Arg2:T35	
+R15	associated_with Arg1:T89 Arg2:T35	
+T73	method 3458 3473	psychopathology
+R16	associated_with Arg1:T73 Arg2:T45	
+T78	method 1781 1784	IQR

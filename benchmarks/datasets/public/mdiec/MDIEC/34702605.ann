@@ -1,0 +1,61 @@
+T1	disease 63 73	Depression
+T2	disease 164 174	depression
+T3	disease 337 356	depressive symptoms
+T4	disease 1073 1092	depression symptoms
+T5	disease 1337 1365	elevated depressive symptoms
+T6	disease 1663 1691	elevated depressive symptoms
+T8	disease 1844 1863	depressive symptoms
+T9	method 439 472	National Child Development Survey
+T11	method 686 713	self-reported questionnaire
+T12	method 761 806	teacher-rated Bristol Social Adjustment Guide
+T13	method 812 838	teacher-rated Rutter scale
+T14	method 848 876	self-rated Malaise Inventory
+T15	disease 913 935	psychological symptoms
+T10	method 964 985	follow-up assessments
+T16	method 1010 1024	Best-fit model
+T17	method 1044 1057	hazard ratios
+T18	method 1066 1069	CIs
+T19	method 1245 1266	multivariate analysis
+T20	Health_factors 1274 1291	physically active
+R1	associated_with Arg1:T20 Arg2:T5	
+T21	method 1367 1379	hazard ratio
+T22	method 1390 1392	CI
+T23	Health_factors 1615 1632	physical activity
+R2	associated_with Arg1:T23 Arg2:T6	
+T7	Health_factors 0 19	Physical Inactivity
+T24	Health_factors 113 130	physical activity
+T25	Health_factors 265 282	physical activity
+T26	method 416 428	birth cohort
+T27	physiology 485 491	births
+T28	physiology 553 558	birth
+T29	Health_factors 604 608	ages
+T30	Health_factors 632 662	Leisure-time physical activity
+T31	method 715 737	Psychological measures
+T32	Health_factors 878 908	Leisure-time physical activity
+T33	Health_factors 1096 1113	physical activity
+T34	Health_factors 1134 1138	ages
+T35	Health_factors 1452 1469	physical activity
+T36	Health_factors 1483 1486	age
+T37	Health_factors 1295 1298	age
+T38	Health_factors 1533 1536	age
+T39	Health_factors 1752 1770	healthy lifestyles
+T40	Health_factors 1820 1839	physical inactivity
+T41	Health_factors 25 34	Childhood
+T42	Health_factors 38 49	Adolescence
+T43	Health_factors 194 203	adulthood
+T44	Health_factors 290 299	childhood
+T45	Health_factors 304 315	adolescence
+T46	Health_factors 360 393	early, middle, and late adulthood
+T47	method 568 578	follow-ups
+T48	Health_factors 1416 1425	adulthood
+T49	Health_factors 1560 1571	Adolescence
+T50	Health_factors 1703 1712	adulthood
+T51	Health_factors 1714 1736	Public health policies
+T52	Health_factors 1517 1526	adulthood
+R6	help_diagnose Arg1:T11 Arg2:T30	
+R7	occurs_in Arg1:T6 Arg2:T50	
+R5	occurs_in Arg1:T5 Arg2:T48	
+R4	help_diagnose Arg1:T12 Arg2:T31	
+R8	help_diagnose Arg1:T13 Arg2:T31	
+R9	help_diagnose Arg1:T14 Arg2:T31	
+T53	Health_factors 1150 1161	demographic

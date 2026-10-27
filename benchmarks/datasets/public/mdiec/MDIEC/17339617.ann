@@ -1,0 +1,49 @@
+T1	disease 0 17	Anxiety disorders
+T2	disease 98 105	Anxiety
+T3	disease 129 139	depression
+T4	disease 291 308	anxiety disorders
+T5	method 691 713	7-item anxiety measure
+T7	method 900 905	GAD-7
+T8	disease 973 1004	depressive and somatic symptoms
+T9	disease 1158 1174	anxiety disorder
+T10	disease 1205 1234	posttraumatic stress disorder
+T11	disease 1266 1294	generalized anxiety disorder
+T12	disease 1326 1340	panic disorder
+T13	disease 1376 1399	social anxiety disorder
+T14	disease 1516 1533	anxiety disorders
+T15	disease 1573 1589	anxiety disorder
+T16	method 1691 1702	GAD-7 scale
+T17	method 1725 1730	GAD-2
+T18	disease 1813 1830	anxiety disorders
+T19	disease 1933 1950	Anxiety disorders
+T20	method 21 33	primary care
+T21	disease 47 57	impairment
+T22	disease 59 70	comorbidity
+T23	physiology 159 168	attention
+T24	disease 260 270	impairment
+T25	disease 276 287	comorbidity
+T26	method 312 324	primary care
+T27	Health_factors 487 507	primary care clinics
+T31	method 646 674	ollow-up telephone interview
+T32	method 715 757	Generalized Anxiety Disorder [GAD]-7 scale
+T33	Health_factors 850 876	mental health professional
+T35	method 934 970	Medical Outcomes Study Short Form-20
+T36	method 1010 1023	self-reported
+T37	disease 1024 1034	disability
+T38	Health_factors 1044 1053	physician
+T39	method 1123 1125	CI
+T40	method 1182 1184	CI
+T41	method 1242 1244	CI
+T42	method 1302 1304	CI
+T43	method 1352 1354	CI
+T44	disease 1447 1457	impairment
+T45	method 1787 1802	screening tools
+T46	method 1895 1917	primary care practices
+T47	method 2000 2012	primary care
+T48	method 2016 2037	2-item screening test
+T52	method 812 844	structured psychiatric interview
+T53	method 603 628	self-report questionnaire
+T54	method 397 421	Criterion-standard study
+T6	method 1621 1669	Receiver-operating characteristic curve analysis
+R1	help_diagnose Arg1:T16 Arg2:T18	
+R2	help_diagnose Arg1:T17 Arg2:T18	

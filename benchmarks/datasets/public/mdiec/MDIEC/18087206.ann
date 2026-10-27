@@ -1,0 +1,50 @@
+T0	disease 75 104	obsessive-compulsive disorder
+T6	method 17 33	behavior therapy
+T7	disease 244 273	obsessive-compulsive disorder
+T11	method 179 196	cognitive therapy
+T12	method 169 172	ERP
+T13	method 135 167	exposure and response prevention
+T14	method 308 328	treatment modalities
+T16	method 472 475	ERP
+T19	method 628 637	follow-up
+T20	Health_factors 591 606	specific stages
+T21	method 661 698	Yale-Brown Obsessive-Compulsive Scale
+T22	method 828 831	ERP
+T23	disease 783 794	compulsions
+T24	disease 768 778	obsessions
+T26	method 937 940	ERP
+T29	Health_factors 986 994	behavior
+T30	disease 1084 1094	obsessions
+T31	disease 1010 1021	compulsions
+T32	method 959 962	ERP
+T33	disease 1220 1231	compulsions
+T34	disease 1205 1215	obsessions
+T36	method 1155 1158	ERP
+T37	disease 1337 1347	obsessions
+T38	disease 1270 1281	compulsions
+T39	method 1449 1452	ERP
+T40	disease 1403 1414	compulsions
+T1	method 117 133	Behavior therapy
+R1	abbreviation_for Arg1:T12 Arg2:T13	
+T2	method 198 200	CT
+R2	abbreviation_for Arg1:T2 Arg2:T11	
+R3	treatment_for Arg1:T1 Arg2:T7	
+R4	treatment_for Arg1:T13 Arg2:T7	
+R5	treatment_for Arg1:T12 Arg2:T7	
+R6	treatment_for Arg1:T11 Arg2:T7	
+R7	treatment_for Arg1:T2 Arg2:T7	
+T3	method 480 482	CT
+T4	method 700 706	Y-BOCS
+R8	abbreviation_for Arg1:T4 Arg2:T21	
+R9	help_diagnose Arg1:T21 Arg2:T24	
+R10	help_diagnose Arg1:T21 Arg2:T23	
+R11	help_diagnose Arg1:T4 Arg2:T24	
+R12	help_diagnose Arg1:T4 Arg2:T23	
+T5	method 822 824	CT
+T8	method 891 893	CT
+T9	method 1035 1037	CT
+T15	method 1163 1165	CT
+T17	method 1457 1459	CT
+R13	treatment_for Arg1:T39 Arg2:T40	
+R14	treatment_for Arg1:T17 Arg2:T40	
+R16	treatment_for Arg1:T6 Arg2:T0	

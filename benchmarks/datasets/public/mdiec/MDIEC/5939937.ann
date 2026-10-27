@@ -1,0 +1,30 @@
+T0	drug 49 72	plasma free fatty acids
+T3	physiology 18 24	dreams
+T4	drug 109 132	plasma free fatty acids
+T7	method 183 202	indwelling catheter
+T8	physiology 247 266	rapid eye movements
+T14	drug 537 553	free fatty acids
+T17	physiology 571 580	REM sleep
+T19	disease 638 645	anxiety
+T20	drug 665 681	free fatty acids
+T21	drug 809 823	catecholamines
+T22	drug 856 870	catecholamines
+T23	drug 904 920	free fatty acids
+T24	disease 767 774	anxiety
+T26	region 926 934	body fat
+T27	physiology 833 844	circulation
+T28	physiology 778 784	dreams
+T29	disease 0 7	Anxiety
+R1	occurs_in Arg1:T29 Arg2:T3	
+R2	associated_with Arg1:T29 Arg2:T0	
+T1	method 74 87	Blood samples
+T2	physiology 336 344	awakened
+T5	physiology 371 377	dreams
+T6	disease 428 435	Anxiety
+R3	occurs_in Arg1:T14 Arg2:T17	
+R4	associated_with Arg1:T6 Arg2:T14	
+T9	physiology 718 727	awakening
+R5	occurs_in Arg1:T24 Arg2:T28	
+R6	associated_with Arg1:T24 Arg2:T21	
+R7	associated_with Arg1:T22 Arg2:T23	
+R8	occurs_in Arg1:T23 Arg2:T26	

@@ -1,0 +1,93 @@
+T0	disease 20 55	alcohol and substance use disorders
+T2	disease 102 115	schizophrenia
+T3	disease 117 133	bipolar disorder
+T4	disease 139 158	unipolar depression
+T6	method 162 207	nationwide, prospective, register-based study
+T7	disease 60 98	all-cause and cause-specific mortality
+T8	disease 232 253	severe mental illness
+T10	disease 274 283	mortality
+T11	disease 437 450	schizophrenia
+T12	disease 452 468	bipolar disorder
+T13	disease 473 492	unipolar depression
+T14	disease 374 383	mortality
+T16	disease 388 419	lifetime substance use disorder
+T19	disease 591 604	schizophrenia
+T20	disease 606 622	bipolar disorder
+T21	disease 627 646	unipolar depression
+T25	method 512 552	prospective, register-based cohort study
+T26	disease 758 781	substance use disorders
+T27	drug 814 821	alcohol
+T28	drug 823 831	cannabis
+T30	disease 863 868	death
+T31	disease 887 892	death
+T32	Health_factors 898 907	education
+T35	Health_factors 836 852	hard drug misuse
+T36	disease 1046 1068	substance use disorder
+T37	drug 1072 1079	alcohol
+T38	method 929 942	hazard ratios
+T39	method 944 947	HRs
+T40	disease 953 972	all-cause mortality
+T42	drug 1081 1089	cannabis
+T44	drug 1094 1104	hard drugs
+T45	disease 1005 1029	cause-specific mortality
+T46	method 977 993	subhazard ratios
+T48	disease 1172 1181	mortality
+T51	method 1120 1149	standardised mortality ratios
+T52	disease 1298 1311	schizophrenia
+T53	disease 1331 1347	bipolar disorder
+T54	disease 1371 1381	depression
+T58	disease 1386 1399	schizophrenia
+T59	method 1405 1408	SMR
+T61	method 1468 1470	CI
+T62	disease 1423 1454	lifetime substance use disorder
+T63	disease 1550 1566	bipolar disorder
+T64	disease 1612 1622	depression
+T65	disease 1664 1677	schizophrenia
+T66	disease 1683 1706	substance use disorders
+T67	drug 1800 1807	alcohol
+T68	disease 1760 1779	all-cause mortality
+T69	method 1809 1811	HR
+T70	method 1821 1823	CI
+T71	drug 1843 1851	cannabis
+T73	drug 1877 1887	hard drugs
+T75	disease 1936 1952	bipolar disorder
+T76	disease 1956 1966	depression
+T77	disease 1973 2007	substance use disorders of alcohol
+T79	disease 2009 2025	bipolar disorder
+T80	disease 2061 2071	depression
+T81	disease 2112 2128	bipolar disorder
+T82	disease 2154 2164	depression
+T83	method 2027 2029	HR
+T84	method 2039 2041	CI
+T86	disease 2208 2227	all-cause mortality
+T88	drug 2100 2110	hard drugs
+T89	disease 2259 2268	Mortality
+T90	disease 2284 2298	mental illness
+T91	disease 2333 2356	substance use disorders
+T92	Health_factors 2407 2436	misuse alcohol and hard drugs
+T97	disease 2547 2570	substance use disorders
+T99	method 2438 2470	Mortality-reducing interventions
+R1	occurs_in Arg1:T89 Arg2:T90	
+R2	risk_factor_of Arg1:T91 Arg2:T89	
+R3	occurs_in Arg1:T7 Arg2:T2	
+R4	occurs_in Arg1:T7 Arg2:T3	
+R5	occurs_in Arg1:T7 Arg2:T4	
+T1	disease 314 336	substance use disorder
+R6	risk_factor_of Arg1:T8 Arg2:T10	
+R7	risk_factor_of Arg1:T8 Arg2:T1	
+R8	occurs_in Arg1:T16 Arg2:T11	
+R9	occurs_in Arg1:T16 Arg2:T12	
+R10	occurs_in Arg1:T16 Arg2:T13	
+R11	abbreviation_for Arg1:T39 Arg2:T38	
+T5	method 995 999	SHRs
+R12	abbreviation_for Arg1:T5 Arg2:T46	
+T15	method 1151 1155	SMRs
+R13	abbreviation_for Arg1:T15 Arg2:T51	
+T17	method 1542 1546	SMRs
+R14	occurs_in Arg1:T65 Arg2:T66	
+R15	risk_factor_of Arg1:T66 Arg2:T68	
+R16	occurs_in Arg1:T75 Arg2:T77	
+R17	occurs_in Arg1:T76 Arg2:T77	
+R18	risk_factor_of Arg1:T77 Arg2:T86	
+R19	risk_factor_of Arg1:T88 Arg2:T86	
+R20	associated_with Arg1:T45 Arg2:T36	

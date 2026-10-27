@@ -1,0 +1,86 @@
+T0	Health_factors 28 53	health care professionals
+T1	disease 59 82	substance use disorders
+T2	disease 17 24	relapse
+T4	disease 92 115	Substance use disorders
+T5	Health_factors 122 132	physicians
+T6	drug 325 332	alcohol
+T8	drug 219 232	major opioids
+T9	disease 380 387	relapse
+T10	method 415 436	monitoring strategies
+T18	drug 610 614	drug
+T19	disease 647 654	relapse
+T21	drug 545 557	major opioid
+T23	method 692 718	Retrospective cohort study
+T25	method 768 804	Washington Physicians Health Program
+T26	method 855 866	followed up
+T27	method 821 853	posttreatment monitoring program
+T28	disease 962 969	relapse
+T29	Health_factors 1000 1013	substance use
+T30	disease 1078 1097	chemical dependency
+T31	method 1056 1073	primary treatment
+T34	disease 1168 1175	relapse
+T37	Health_factors 1179 1221	family history of a substance use disorder
+T38	disease 1244 1251	relapse
+T39	method 1253 1265	hazard ratio
+T40	method 1267 1269	HR
+T41	method 1282 1301	confidence interval
+T42	method 1303 1305	CI
+T45	disease 1411 1442	coexisting psychiatric disorder
+T46	disease 1513 1533	psychiatric disorder
+T47	disease 1368 1375	relapse
+T48	method 1444 1446	HR
+T49	method 1458 1460	CI
+T50	method 1535 1537	HR
+T51	method 1549 1551	CI
+T53	drug 1333 1345	major opioid
+T54	Health_factors 1634 1648	family history
+T55	disease 1681 1688	relapse
+T56	method 1690 1692	HR
+T57	method 1705 1707	CI
+T60	drug 1596 1612	major opioid use
+T63	method 1789 1791	HR
+T64	method 1803 1805	CI
+T65	disease 1774 1787	first relapse
+T66	disease 1734 1753	subsequent relapses
+T69	disease 1845 1852	relapse
+T70	Health_factors 1858 1871	substance use
+T72	Health_factors 1984 2026	family history of a substance use disorder
+T73	disease 1948 1978	coexisting psychiatric illness
+T74	drug 1926 1938	major opioid
+T77	disease 2135 2142	relapse
+T79	disease 2082 2098	previous relapse
+T82	Health_factors 2214 2239	health care professionals
+T83	Health_factors 2202 2210	recovery
+R1	occurs_in Arg1:T0 Arg2:T1	
+R2	occurs_in Arg1:T4 Arg2:T5	
+T3	Health_factors 251 268	anesthesiologists
+T7	disease 298 305	relapse
+T13	drug 337 347	nonopioids
+R3	risk_factor_of Arg1:T8 Arg2:T7	
+T11	Health_factors 490 536	chemically dependent health care professionals
+T12	drug 563 571	fentanyl
+T14	drug 573 583	sufentanil
+T15	drug 585 593	morphine
+T16	drug 595 605	meperidine
+R4	hyponym_of Arg1:T12 Arg2:T21	
+R5	hyponym_of Arg1:T14 Arg2:T21	
+R6	hyponym_of Arg1:T15 Arg2:T21	
+R7	hyponym_of Arg1:T16 Arg2:T21	
+T17	Health_factors 726 751	health care professionals
+R8	risk_factor_of Arg1:T37 Arg2:T38	
+R9	abbreviation_for Arg1:T40 Arg2:T39	
+R10	abbreviation_for Arg1:T42 Arg2:T41	
+R11	risk_factor_of Arg1:T53 Arg2:T47	
+R12	occurs_in Arg1:T47 Arg2:T45	
+R13	risk_factor_of Arg1:T60 Arg2:T55	
+R14	risk_factor_of Arg1:T54 Arg2:T55	
+R15	risk_factor_of Arg1:T65 Arg2:T66	
+R16	occurs_in Arg1:T69 Arg2:T70	
+T20	Health_factors 1889 1914	health care professionals
+R17	risk_factor_of Arg1:T20 Arg2:T69	
+R18	risk_factor_of Arg1:T74 Arg2:T69	
+R19	risk_factor_of Arg1:T73 Arg2:T69	
+R20	risk_factor_of Arg1:T72 Arg2:T69	
+R21	occurs_in Arg1:T83 Arg2:T82	
+R22	risk_factor_of Arg1:T79 Arg2:T77	
+R23	occurs_in Arg1:T2 Arg2:T0	

@@ -1,0 +1,11 @@
+T1	disease 14 43	amnestic cognitive impairment
+T2	method 57 71	control groups
+T5	disease 109 134	major depression disorder
+T7	disease 139 168	amnestic cognitive impairment
+T8	physiology 179 211	increased effective connectivity
+T9	region 221 235	right amygdala
+T10	region 261 276	calcarine gyrus
+T11	region 296 331	bilateral supplementary motor areas
+T3	region 243 256	right lingual
+R1	characteristic_of Arg1:T8 Arg2:T7	
+R2	characteristic_of Arg1:T8 Arg2:T5	

@@ -1,0 +1,25 @@
+T0	disease 52 65	schizophrenia
+T1	disease 112 125	schizophrenia
+T3	disease 240 253	schizophrenia
+T4	disease 339 352	schizophrenia
+T5	method 363 369	ICD-10
+T6	method 289 309	polydiagnostic study
+T7	disease 423 436	schizophrenia
+T8	method 416 422	ICD-10
+T10	disease 590 624	paranoid and non-paranoid subtypes
+T13	disease 672 685	schizophrenia
+T14	disease 755 769	hallucinations
+T15	disease 781 798	negative symptoms
+T17	disease 873 886	schizophrenia
+T18	signs 0 12	Premorbid IQ
+T2	signs 105 107	IQ
+T19	signs 271 283	premorbid IQ
+T20	method 354 361	ICD-8/9
+T21	signs 478 490	premorbid IQ
+R3	characteristic_of Arg1:T21 Arg2:T7	
+T9	method 583 589	ICD-10
+T11	signs 701 703	IQ
+T12	signs 734 750	low premorbid IQ
+R4	associated_with Arg1:T12 Arg2:T14	
+R5	associated_with Arg1:T12 Arg2:T15	
+T16	signs 821 833	premorbid IQ

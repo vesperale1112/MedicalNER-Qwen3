@@ -1,0 +1,92 @@
+T0	disease 52 75	social anxiety disorder
+T2	method 0 47	Psychological and pharmacological interventions
+T3	Health_factors 79 85	adults
+T4	method 89 106	systematic review
+T5	method 111 132	network meta-analysis
+T6	disease 145 168	Social anxiety disorder
+T8	disease 237 247	impairment
+T9	method 268 327	pharmacological, psychological, and self-help interventions
+T11	disease 171 212	chronic and naturally unremitting disease
+T12	disease 437 460	social anxiety disorder
+T13	method 355 368	interventions
+T14	method 418 433	acute treatment
+T15	Health_factors 464 470	adults
+T16	method 491 508	systematic review
+T17	method 513 534	network meta-analysis
+T18	method 538 551	interventions
+T19	Health_factors 556 562	adults
+T20	disease 568 591	social anxiety disorder
+T22	method 687 700	interventions
+T23	disease 764 778	social anxiety
+T24	method 742 760	validated measures
+T25	method 792 821	standardised mean differences
+T26	method 823 827	SMDs
+T27	method 955 961	trials
+T28	method 989 1002	interventions
+T29	method 1006 1024	control conditions
+T33	drug 1161 1189	monoamine oxidase inhibitors
+T34	drug 1244 1259	benzodiazepines
+T36	method 1066 1095	pharmacological interventions
+T37	method 1191 1194	SMD
+T38	method 1205 1222	credible interval
+T39	drug 1282 1321	selective serotonin-reuptake inhibitors
+T40	drug 1326 1370	serotonin-norepinephrine reuptake inhibitors
+T41	drug 1372 1377	SSRIs
+T42	drug 1382 1387	SNRIs
+T43	drug 1414 1429	anticonvulsants
+T44	method 1499 1526	psychological interventions
+T45	method 1543 1572	cognitive-behavioural therapy
+T46	method 1574 1577	CBT
+T47	method 1579 1582	SMD
+T48	method 1612 1621	group CBT
+T51	method 1790 1817	psychodynamic psychotherapy
+T52	Health_factors 1738 1763	self-help without support
+T53	Health_factors 1693 1715	self-help with support
+T54	method 1644 1670	exposure and social skills
+T58	method 1892 1895	SMD
+T59	drug 1929 1934	SSRIs
+T60	drug 1939 1944	SNRIs
+T62	method 2018 2031	interventions
+T66	drug 1959 1971	pill placebo
+T67	method 1869 1890	psychological placebo
+T68	method 1840 1854	Individual CBT
+T71	method 2170 2173	SMD
+T72	method 2206 2233	interpersonal psychotherapy
+T73	method 2235 2246	mindfulness
+T75	method 2252 2270	supportive therapy
+T76	method 2141 2168	psychodynamic psychotherapy
+T77	method 2095 2109	Individual CBT
+T79	physiology 2381 2393	side-effects
+T80	method 2399 2414	pharmacotherapy
+T84	method 2310 2324	Individual CBT
+T85	disease 2537 2560	social anxiety disorder
+T86	method 2495 2507	intervention
+T87	method 2516 2533	initial treatment
+T88	method 2590 2616	psychological intervention
+T89	drug 2618 2623	SSRIs
+R1	occurs_in Arg1:T0 Arg2:T3	
+R2	hyponym_of Arg1:T6 Arg2:T11	
+R3	risk_factor_of Arg1:T6 Arg2:T8	
+R4	treatment_for Arg1:T9 Arg2:T6	
+R5	occurs_in Arg1:T12 Arg2:T15	
+R6	abbreviation_for Arg1:T26 Arg2:T25	
+T10	method 1224 1227	CrI
+R7	abbreviation_for Arg1:T10 Arg2:T38	
+R8	hyponym_of Arg1:T41 Arg2:T36	
+R9	hyponym_of Arg1:T33 Arg2:T36	
+R10	hyponym_of Arg1:T34 Arg2:T36	
+R11	hyponym_of Arg1:T39 Arg2:T36	
+R12	hyponym_of Arg1:T40 Arg2:T36	
+R13	hyponym_of Arg1:T42 Arg2:T36	
+R14	hyponym_of Arg1:T43 Arg2:T36	
+R15	abbreviation_for Arg1:T46 Arg2:T45	
+T21	method 1532 1572	individual cognitive-behavioural therapy
+R16	hyponym_of Arg1:T21 Arg2:T44	
+R17	hyponym_of Arg1:T48 Arg2:T44	
+R18	hyponym_of Arg1:T54 Arg2:T44	
+R19	hyponym_of Arg1:T53 Arg2:T44	
+R20	hyponym_of Arg1:T52 Arg2:T44	
+R21	hyponym_of Arg1:T51 Arg2:T44	
+T30	method 1593 1596	CrI
+T31	method 1906 1909	CrI
+T32	method 2184 2187	CrI

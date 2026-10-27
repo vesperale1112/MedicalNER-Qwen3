@@ -1,0 +1,80 @@
+T0	disease 70 102	schizophrenia spectrum disorders
+T3	method 0 29	Pharmacological interventions
+T4	method 106 123	systematic review
+T5	method 125 138	meta-analysis
+T6	method 144 165	network meta-analysis
+T7	disease 190 203	schizophrenia
+T8	Health_factors 225 232	smoking
+T9	Health_factors 242 260	general population
+T13	method 292 320	randomised controlled trials
+T14	method 360 389	pharmacological interventions
+T15	disease 629 661	schizophrenia spectrum disorders
+T18	method 445 462	systematic review
+T20	Health_factors 505 523	smoking abstinence
+T22	method 561 590	pharmacological interventions
+T23	method 467 501	pairwise and network meta-analysis
+T27	method 700 706	PubMed
+T28	method 708 714	Embase
+T29	method 716 762	Cochrane Central Register of Controlled Trials
+T30	method 764 772	PsycINFO
+T31	method 855 883	randomised controlled trials
+T32	drug 887 898	varenicline
+T33	method 915 943	nicotine replacement therapy
+T34	disease 982 1014	schizophrenia spectrum disorders
+T35	disease 1018 1037	psychotic disorders
+T36	Health_factors 1047 1054	smokers
+T40	disease 1167 1185	psychotic symptoms
+T42	method 1207 1228	network meta-analyses
+T43	Health_factors 1256 1274	smoking abstinence
+T45	method 1276 1296	Sensitivity analyses
+T48	method 1310 1334	study inclusion criteria
+T50	method 1780 1793	meta-analysis
+T54	drug 1870 1881	varenicline
+T55	drug 1942 1951	bupropion
+T57	method 1802 1824	pairwise meta-analyses
+T58	method 1883 1885	RR
+T59	method 1895 1897	CI
+T60	method 1916 1918	I2
+T61	method 1974 1976	RR
+T62	method 1986 1988	CI
+T63	method 2007 2009	I2
+T64	method 2064 2092	nicotine replacement therapy
+T65	method 2094 2096	RR
+T66	method 2106 2108	CI
+T67	method 2128 2130	I2
+T71	drug 2220 2231	varenicline
+T72	drug 2248 2257	bupropion
+T73	drug 2339 2350	varenicline
+T75	drug 2388 2397	bupropion
+T77	method 2197 2218	network meta-analysis
+T78	method 2259 2261	RR
+T79	method 2271 2273	CI
+T80	method 2355 2383	nicotine replacement therapy
+T81	method 2402 2430	nicotine replacement therapy
+T82	drug 2500 2511	varenicline
+T83	disease 2548 2554	nausea
+T85	disease 2474 2494	psychiatric symptoms
+T88	drug 2626 2648	pharmacological agents
+T89	disease 2687 2696	psychosis
+T90	drug 2698 2709	Varenicline
+T91	drug 2731 2740	bupropion
+T92	disease 2912 2921	psychosis
+T95	drug 2803 2825	pharmacological agents
+T98	method 2781 2799	combination trials
+R1	risk_factor_of Arg1:T7 Arg2:T8	
+R2	risk_factor_of Arg1:T82 Arg2:T83	
+T10	Health_factors 34 51	smoking cessation
+R3	occurs_in Arg1:T10 Arg2:T0	
+T1	Health_factors 394 411	smoking cessation
+T2	Health_factors 595 612	smoking cessation
+R4	occurs_in Arg1:T2 Arg2:T15	
+T11	method 779 817	hina National Knowledge Infrastructure
+T12	drug 900 909	bupropion
+T16	Health_factors 948 965	smoking cessation
+R5	occurs_in Arg1:T16 Arg2:T34	
+R6	occurs_in Arg1:T16 Arg2:T35	
+T17	Health_factors 1135 1162	smoking abstinence outcomes
+T19	Health_factors 2653 2670	smoking cessation
+R7	occurs_in Arg1:T19 Arg2:T89	
+R8	treatment_for Arg1:T88 Arg2:T19	
+T21	Health_factors 2830 2847	smoking cessation

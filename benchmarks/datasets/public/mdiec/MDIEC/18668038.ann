@@ -1,0 +1,50 @@
+T0	disease 61 74	schizophrenia
+T1	disease 76 89	Schizophrenia
+T2	disease 128 142	hallucinations
+T3	disease 144 153	delusions
+T4	disease 155 173	cognitive deficits
+T5	disease 178 184	apathy
+T6	disease 95 117	severe mental disorder
+T7	Health_factors 193 205	heritability
+T8	gene 297 313	genetic variants
+T10	disease 420 433	schizophrenia
+T11	disease 446 474	neurodevelopmental disorders
+T12	method 480 511	large-scale genome-wide surveys
+T14	gene 343 363	Copy number variants
+T15	disease 609 622	schizophrenia
+T16	method 669 693	high-density microarrays
+T17	method 633 661	ancestrally matched controls
+T18	method 554 572	genome-wide survey
+T19	disease 854 867	schizophrenia
+T22	gene 991 996	genes
+T23	disease 1096 1123	velo-cardio-facial syndrome
+T24	disease 1140 1158	psychotic symptoms
+T25	disease 1197 1210	schizophrenia
+T26	gene 1231 1279	large deletions on chromosome 15q13.3 and 1q21.1
+T28	disease 1445 1471	schizophrenia pathogenesis
+T30	gene 1560 1573	specific loci
+T31	gene 1510 1534	rare structural variants
+T32	gene 0 43	Rare chromosomal deletions and duplications
+R1	risk_factor_of Arg1:T32 Arg2:T0	
+R2	hyponym_of Arg1:T1 Arg2:T6	
+R3	characteristic_of Arg1:T2 Arg2:T1	
+R4	characteristic_of Arg1:T3 Arg2:T1	
+R5	characteristic_of Arg1:T4 Arg2:T1	
+R6	characteristic_of Arg1:T5 Arg2:T1	
+R7	characteristic_of Arg1:T7 Arg2:T1	
+T9	gene 365 369	CNVs
+R8	abbreviation_for Arg1:T9 Arg2:T14	
+R9	associated_with Arg1:T14 Arg2:T10	
+R10	associated_with Arg1:T9 Arg2:T10	
+R11	associated_with Arg1:T14 Arg2:T11	
+R12	associated_with Arg1:T9 Arg2:T11	
+T13	gene 576 585	rare CNVs
+T33	gene 699 703	CNVs
+R13	characteristic_of Arg1:T33 Arg2:T19	
+T20	gene 933 962	rarer, single-occurrence CNVs
+R14	associated_with Arg1:T25 Arg2:T26	
+T21	method 1371 1393	genome-wide correction
+R15	associated_with Arg1:T28 Arg2:T31	
+T27	gene 1541 1552	genome-wide
+R16	located_in Arg1:T31 Arg2:T27	
+R17	located_in Arg1:T31 Arg2:T30	

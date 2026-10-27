@@ -1,0 +1,118 @@
+T0	drug 27 54	muscarinic receptor agonist
+T1	drug 62 81	xanomeline-trospium
+T3	disease 86 99	schizophrenia
+T5	method 140 213	randomised, double-blind, placebo-controlled, flexible-dose phase 3 trial
+T6	disease 298 311	schizophrenia
+T9	drug 313 323	Xanomeline
+T10	drug 329 386	dual M(1) and M(4)-preferring muscarinic receptor agonist
+T11	gene 407 430	D(2) dopamine receptors
+T13	disease 477 490	schizophrenia
+T15	drug 492 511	Xanomeline-trospium
+T17	drug 529 539	xanomeline
+T18	drug 604 621	trospium chloride
+T20	gene 702 733	peripheral muscarinic receptors
+T22	Health_factors 652 685	xanomeline-related adverse events
+T23	drug 549 603	peripherally restricted muscarinic receptor antagonist
+T24	disease 820 833	schizophrenia
+T26	disease 847 862	acute psychosis
+T27	method 739 755	EMERGENT-2 trial
+T28	disease 999 1012	schizophrenia
+T30	method 890 983	randomised, double-blind, placebo-controlled, flexible-dose, 5-week, inpatient, phase 3 trial
+T31	disease 1076 1089	schizophrenia
+T32	disease 1120 1129	psychosis
+T37	Health_factors 1141 1159	hospital admission
+T38	method 1163 1199	Positive and Negative Syndrome Scale
+T40	drug 1486 1496	xanomeline
+T41	drug 1507 1515	trospium
+T42	drug 1567 1577	xanomeline
+T43	drug 1588 1596	trospium
+T44	drug 1707 1717	xanomeline
+T45	drug 1728 1736	trospium
+T46	drug 1786 1796	xanomeline
+T47	drug 1807 1815	trospium
+T53	method 2045 2050	trial
+T54	Health_factors 1944 1982	modified intention-to-treat population
+T55	method 1917 1934	Efficacy analyses
+T60	method 2121 2139	Least squares mean
+T61	method 2435 2440	trial
+T63	method 2370 2385	Safety analyses
+T64	method 2520 2538	ClinicalTrials.gov
+T71	method 3033 3035	CI
+T72	method 2994 3023	least squares mean difference
+T76	disease 3241 3253	constipation
+T77	disease 3278 3287	dyspepsia
+T78	disease 3311 3319	headache
+T79	disease 3344 3350	nausea
+T80	disease 3377 3385	vomiting
+T81	disease 3410 3422	hypertension
+T82	disease 3447 3456	dizziness
+T83	disease 3481 3514	gastro-oesophageal reflux disease
+T84	disease 3546 3555	diarrhoea
+T85	Health_factors 3195 3209	adverse events
+T87	disease 3625 3654	extrapyramidal motor symptoms
+T88	disease 3697 3706	akathisia
+T89	disease 3772 3782	somnolence
+T93	symptom 3731 3742	weight gain
+T94	Health_factors 3866 3879	adverse event
+T97	disease 4010 4040	positive and negative symptoms
+T98	method 3960 3976	EMERGENT-2 trial
+T99	drug 4178 4201	antipsychotic medicines
+T100	gene 4222 4242	muscarinic receptors
+T102	physiology 4252 4293	D(2) dopamine receptor-blocking mechanism
+T103	drug 4309 4334	antipsychotic medications
+T106	disease 4558 4571	schizophrenia
+T107	method 4360 4366	trials
+T108	method 4426 4469	open-label EMERGENT-4 and EMERGENT-5 trials
+T110	method 4382 4408	identical EMERGENT-3 trial
+T112	method 4582 4601	Karuna Therapeutics
+T105	drug 4115 4120	KarXT
+R1	hyponym_of Arg1:T105 Arg2:T99	
+R2	associated_with Arg1:T105 Arg2:T100	
+R3	hyponym_of Arg1:T9 Arg2:T10	
+T4	drug 513 518	KarXT
+T2	drug 55 60	KarXT
+R4	abbreviation_for Arg1:T2 Arg2:T1	
+R5	abbreviation_for Arg1:T4 Arg2:T15	
+T7	drug 799 804	KarXT
+T8	Health_factors 1032 1038	adults
+T12	Health_factors 1039 1043	aged
+T14	method 1201 1206	PANSS
+R6	abbreviation_for Arg1:T14 Arg2:T38	
+T16	method 1237 1272	Clinical Global Impression-Severity
+R7	help_diagnose Arg1:T38 Arg2:T31	
+R8	help_diagnose Arg1:T14 Arg2:T31	
+R9	help_diagnose Arg1:T16 Arg2:T31	
+T19	drug 1399 1404	KarXT
+T21	drug 1465 1470	KarXT
+T25	drug 1645 1650	KarXT
+T29	method 1898 1903	PANSS
+T34	method 2102 2107	PANSS
+T35	method 2162 2164	SE
+T36	method 2170 2199	least squares mean difference
+T39	drug 2212 2217	KarXT
+T49	method 2267 2269	CI
+T50	method 2466 2488	descriptive statistics
+T51	drug 2709 2714	KarXT
+T52	method 2752 2757	PANSS
+T57	drug 2781 2786	KarXT
+T58	method 2825 2830	trial
+T59	method 2902 2907	PANSS
+T62	drug 2934 2939	KarXT
+T65	drug 3146 3151	KarXT
+T67	drug 3215 3220	KarXT
+R10	risk_factor_of Arg1:T67 Arg2:T76	
+R11	risk_factor_of Arg1:T67 Arg2:T77	
+R12	risk_factor_of Arg1:T67 Arg2:T78	
+R13	risk_factor_of Arg1:T67 Arg2:T79	
+R14	risk_factor_of Arg1:T67 Arg2:T80	
+R15	risk_factor_of Arg1:T67 Arg2:T81	
+R16	risk_factor_of Arg1:T67 Arg2:T82	
+R17	risk_factor_of Arg1:T67 Arg2:T83	
+R18	risk_factor_of Arg1:T67 Arg2:T84	
+T68	method 3583 3615	Treatment-emergent adverse event
+T69	drug 3656 3661	KarXT
+T70	drug 3832 3837	KarXT
+T73	drug 3978 3983	KarXT
+R19	treatment_for Arg1:T73 Arg2:T97	
+T33	drug 4537 4542	KarXT
+R20	associated_with Arg1:T22 Arg2:T20	

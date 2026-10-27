@@ -1,0 +1,41 @@
+T0	gene 69 104	schizophrenia-related microdeletion
+T2	physiology 0 36	Derepression of a neuronal inhibitor
+T3	disease 148 166	cognitive deficits
+T4	disease 171 184	schizophrenia
+T5	gene 106 128	22q11.2 microdeletions
+T7	disease 258 321	abnormalities in the formation of neuronal dendrites and spines
+T8	method 198 215	Df(16)A(+/-) mice
+T12	gene 342 357	brain microRNAs
+T14	gene 396 403	miR-185
+T15	physiology 546 577	dendritic and spine development
+T17	gene 579 586	miR-185
+T20	physiology 750 775	prenatal brain expression
+T23	physiology 824 829	birth
+T24	region 892 898	brains
+T25	method 902 919	Df(16)A(+/-) mice
+T26	symptom 935 976	structural alterations in the hippocampus
+T29	physiology 777 799	Sustained derepression
+T30	gene 991 998	miR-185
+T33	gene 1074 1093	Golgi-related genes
+T34	physiology 1015 1047	age- and region-specific effects
+T36	disease 1152 1173	psychiatric disorders
+T37	disease 1178 1199	cognitive dysfunction
+T38	gene 1139 1148	microRNAs
+T40	physiology 44 63	miRNA dysregulation
+R1	located_in Arg1:T40 Arg2:T0	
+R2	risk_factor_of Arg1:T40 Arg2:T2	
+R3	risk_factor_of Arg1:T5 Arg2:T3	
+R4	risk_factor_of Arg1:T5 Arg2:T4	
+T1	gene 430 443	22q11.2 locus
+R5	located_in Arg1:T14 Arg2:T1	
+T6	gene 479 498	hemizygous deletion
+R6	associated_with Arg1:T14 Arg2:T15	
+T9	region 717 732	Golgi apparatus
+T10	physiology 857 884	transcriptional disturbance
+R7	located_in Arg1:T10 Arg2:T24	
+R8	risk_factor_of Arg1:T29 Arg2:T26	
+R9	associated_with Arg1:T38 Arg2:T36	
+R10	associated_with Arg1:T38 Arg2:T37	
+R11	associated_with Arg1:T30 Arg2:T33	
+T11	gene 234 247	microdeletion
+R12	associated_with Arg1:T29 Arg2:T10	

@@ -1,0 +1,33 @@
+T0	disease 0 38	Mood and disruptive behavior disorders
+T1	Health_factors 59 104	offspring of patients with bipolar I disorder
+T3	disease 153 191	mood and disruptive behavior disorders
+T5	Health_factors 211 219	children
+T8	disease 271 289	bipolar I disorder
+T9	Health_factors 308 316	children
+T11	Health_factors 364 367	age
+T12	Health_factors 369 389	socioeconomic status
+T13	Health_factors 394 403	education
+T14	Health_factors 323 337	healthy adults
+T15	Health_factors 226 243	adult outpatients
+T19	Health_factors 409 438	offspring of bipolar patients
+T21	disease 585 598	mood disorder
+T22	Health_factors 520 562	children of patients with bipolar disorder
+T23	disease 616 635	mild depressed mood
+T24	method 675 711	statistically significant difference
+T25	Health_factors 717 734	bipolar offspring
+T27	disease 835 839	ADHD
+T28	method 853 882	Conners' Teacher Rating Scale
+T29	method 775 819	hyperactivity and conduct problems subscales
+T30	disease 912 925	mood symptoms
+T33	Health_factors 956 985	offspring of bipolar patients
+T34	method 1018 1043	psychosocial intervention
+T36	disease 888 907	disruptive behavior
+R1	occurs_in Arg1:T0 Arg2:T1	
+T6	method 251 257	DSM-IV
+R2	help_diagnose Arg1:T6 Arg2:T8	
+T7	disease 482 493	psychiatric
+R3	risk_factor_of Arg1:T19 Arg2:T7	
+R4	associated_with Arg1:T36 Arg2:T33	
+R5	associated_with Arg1:T30 Arg2:T33	
+R6	occurs_in Arg1:T3 Arg2:T5	
+R7	occurs_in Arg1:T3 Arg2:T15	

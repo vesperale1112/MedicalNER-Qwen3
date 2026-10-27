@@ -1,0 +1,57 @@
+T0	disease 50 54	pain
+T1	disease 56 63	anxiety
+T2	disease 69 85	mood disturbance
+T4	method 22 45	complementary therapies
+T5	method 0 20	Integrative oncology
+T6	disease 104 110	cancer
+T7	disease 128 135	anxiety
+T8	disease 141 157	mood disturbance
+T9	disease 122 126	pain
+T11	Health_factors 288 300	side effects
+T13	method 159 182	Conventional treatments
+T15	method 334 345	acupuncture
+T16	method 347 367	mind-body techniques
+T18	Health_factors 434 464	physical and mental well-being
+T21	method 369 376	massage
+T22	method 302 325	Complementary therapies
+T24	disease 518 533	procedural pain
+T25	method 484 505	relaxation techniques
+T26	method 466 479	Self-hypnosis
+T27	disease 577 596	chronic cancer pain
+T28	method 535 546	Acupuncture
+T29	disease 629 636	anxiety
+T30	disease 659 667	distress
+T32	physiology 610 620	meditation
+T33	method 598 605	Massage
+T34	drug 674 693	dietary supplements
+T35	physiology 751 755	mood
+T37	method 774 797	complementary therapies
+T39	method 1029 1052	mainstream intervention
+T42	drug 1054 1073	Dietary supplements
+T44	Health_factors 1094 1123	serious negative consequences
+T46	method 1323 1338	mainstream care
+T47	method 1295 1318	complementary therapies
+R1	characteristic_of Arg1:T9 Arg2:T6	
+R2	characteristic_of Arg1:T7 Arg2:T6	
+R3	characteristic_of Arg1:T8 Arg2:T6	
+R4	hyponym_of Arg1:T15 Arg2:T22	
+R5	hyponym_of Arg1:T16 Arg2:T22	
+R6	hyponym_of Arg1:T21 Arg2:T22	
+R7	treatment_for Arg1:T22 Arg2:T18	
+R8	treatment_for Arg1:T15 Arg2:T18	
+R9	treatment_for Arg1:T16 Arg2:T18	
+R10	treatment_for Arg1:T21 Arg2:T18	
+R11	treatment_for Arg1:T26 Arg2:T24	
+R12	treatment_for Arg1:T25 Arg2:T24	
+R13	treatment_for Arg1:T28 Arg2:T27	
+R14	treatment_for Arg1:T33 Arg2:T30	
+R15	treatment_for Arg1:T32 Arg2:T30	
+R16	treatment_for Arg1:T33 Arg2:T29	
+R17	treatment_for Arg1:T32 Arg2:T29	
+T3	drug 702 734	biologically active constituents
+R18	associated_with Arg1:T3 Arg2:T35	
+R19	associated_with Arg1:T42 Arg2:T44	
+T10	Health_factors 1340 1365	Practical clinical issues
+R20	treatment_for Arg1:T4 Arg2:T0	
+R21	treatment_for Arg1:T4 Arg2:T1	
+R22	treatment_for Arg1:T4 Arg2:T2	

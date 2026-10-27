@@ -1,0 +1,45 @@
+T0	disease 2 25	focal brain abnormality
+T1	disease 29 43	panic disorder
+T2	disease 62 69	anxiety
+T3	disease 71 85	Panic disorder
+T4	disease 106 131	recurrent anxiety attacks
+T5	Health_factors 221 239	general population
+T6	method 271 290	cardiology practice
+T8	drug 304 322	sodium (DL)lactate
+T9	disease 339 353	anxiety attack
+T11	method 411 426	normal controls
+T13	disease 529 543	panic disorder
+T14	method 510 525	pathophysiology
+T15	disease 661 675	panic disorder
+T16	disease 696 708	panic attack
+T17	signs 618 637	cerebral blood flow
+T18	signs 639 642	CBF
+T19	method 578 606	positron emission tomography
+T20	disease 768 773	panic
+T21	disease 775 782	anxiety
+T22	signs 722 725	CBF
+T23	signs 861 864	CBF
+T24	region 915 936	parahippocampal gyrus
+T27	disease 988 1002	panic disorder
+T28	method 1030 1046	lactate infusion
+T29	disease 1112 1126	panic disorder
+T30	drug 1166 1173	lactate
+T31	method 1069 1084	normal controls
+T34	disease 1236 1253	brain abnormality
+T35	disease 1291 1298	anxiety
+R1	occurs_in Arg1:T0 Arg2:T1	
+R2	hyponym_of Arg1:T0 Arg2:T2	
+R3	characteristic_of Arg1:T4 Arg2:T3	
+R4	risk_factor_of Arg1:T8 Arg2:T9	
+T7	method 441 462	neurobiological basis
+R5	abbreviation_for Arg1:T18 Arg2:T17	
+R6	help_diagnose Arg1:T19 Arg2:T17	
+R7	help_diagnose Arg1:T19 Arg2:T18	
+R8	occurs_in Arg1:T18 Arg2:T15	
+R9	occurs_in Arg1:T17 Arg2:T15	
+R10	associated_with Arg1:T22 Arg2:T20	
+R11	associated_with Arg1:T22 Arg2:T21	
+T10	physiology 787 796	vigilance
+R12	associated_with Arg1:T22 Arg2:T10	
+R13	located_in Arg1:T23 Arg2:T24	
+R14	characteristic_of Arg1:T34 Arg2:T35	

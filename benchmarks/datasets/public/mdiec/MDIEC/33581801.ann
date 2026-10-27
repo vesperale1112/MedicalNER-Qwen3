@@ -1,0 +1,35 @@
+T1	disease 0 17	Anxiety disorders
+T2	disease 19 36	Anxiety disorders
+T3	disease 67 83	mental disorders
+T4	disease 156 182	excessive fear and anxiety
+T6	disease 252 269	Anxiety disorders
+T7	disease 341 358	anxiety disorders
+T8	disease 448 465	Anxiety disorders
+T9	disease 517 533	mental disorders
+T10	disease 546 556	depression
+T11	disease 574 591	somatic disorders
+T12	disease 753 770	anxiety disorders
+T14	Health_factors 117 132	early adulthood
+T19	disease 598 609	comorbidity
+T21	method 979 1008	cognitive behavioural therapy
+T24	method 1441 1459	precision medicine
+T25	physiology 1246 1264	therapy resistance
+T26	method 1186 1205	preventive measures
+T27	drug 1014 1038	psychoactive medications
+T28	method 936 964	Evidence-based psychotherapy
+T30	Health_factors 660 675	clinical burden
+T31	Health_factors 393 414	environmental factors
+T32	gene 376 391	genetic factors
+T33	disease 278 307	dysfunction in brain circuits
+R1	hyponym_of Arg1:T2 Arg2:T3	
+T5	Health_factors 186 216	avoidance of perceived threats
+R2	associated_with Arg1:T6 Arg2:T33	
+R3	risk_factor_of Arg1:T32 Arg2:T7	
+R4	risk_factor_of Arg1:T31 Arg2:T7	
+R5	associated_with Arg1:T8 Arg2:T10	
+R6	associated_with Arg1:T8 Arg2:T9	
+R7	associated_with Arg1:T8 Arg2:T11	
+T13	Health_factors 730 747	burden of disease
+R8	hyponym_of Arg1:T21 Arg2:T28	
+T15	drug 1053 1075	serotonergic compounds
+R9	hyponym_of Arg1:T15 Arg2:T27	

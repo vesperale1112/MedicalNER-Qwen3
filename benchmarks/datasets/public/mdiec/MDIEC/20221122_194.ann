@@ -1,0 +1,6 @@
+T2	disease 34 44	depression
+T3	Health_factors 77 102	HIV-negative participants
+T4	disease 128 131	HIV
+T1	disease 58 60	DM
+R1	associated_with Arg1:T2 Arg2:T1	
+R2	occurs_in Arg1:T1 Arg2:T3	

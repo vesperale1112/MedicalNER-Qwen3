@@ -1,0 +1,60 @@
+T0	disease 57 70	schizophrenia
+T1	gene 19 36	chromosome 6p22.1
+T2	gene 0 15	Common variants
+T3	disease 72 85	Schizophrenia
+T4	disease 101 121	psychiatric disorder
+T5	Health_factors 161 173	heritability
+T6	physiology 187 207	complex transmission
+T7	gene 307 312	genes
+T8	physiology 316 337	biological mechanisms
+T11	disease 400 413	schizophrenia
+T12	gene 493 541	extended major histocompatibility complex region
+T13	gene 447 478	single nucleotide polymorphisms
+T14	gene 480 484	SNPs
+T15	gene 545 557	chromosome 6
+T16	method 628 663	Molecular Genetics of Schizophrenia
+T17	method 738 776	International Schizophrenia Consortium
+T18	method 576 605	genome-wide association study
+T21	method 702 715	meta-analysis
+T22	gene 609 620	common SNPs
+T23	disease 972 985	schizophrenia
+T25	method 867 880	meta-analysis
+T26	Health_factors 884 910	European-ancestry subjects
+T27	gene 1040 1057	chromosome 6p22.1
+T28	gene 1102 1122	histone gene cluster
+T31	gene 1135 1157	immunity-related genes
+T32	disease 1286 1295	infection
+T33	physiology 1266 1278	autoimmunity
+T34	physiology 1238 1264	transcriptional regulation
+T36	gene 1335 1371	schizophrenia susceptibility alleles
+R1	located_in Arg1:T2 Arg2:T1	
+R2	associated_with Arg1:T2 Arg2:T0	
+R3	hyponym_of Arg1:T3 Arg2:T4	
+R4	characteristic_of Arg1:T5 Arg2:T3	
+R5	characteristic_of Arg1:T6 Arg2:T3	
+T10	gene 263 283	copy number variants
+R6	abbreviation_for Arg1:T14 Arg2:T13	
+R7	associated_with Arg1:T11 Arg2:T13	
+R8	associated_with Arg1:T11 Arg2:T14	
+R9	located_in Arg1:T14 Arg2:T12	
+R10	located_in Arg1:T13 Arg2:T12	
+R11	located_in Arg1:T12 Arg2:T15	
+T9	method 665 668	MGS
+R12	abbreviation_for Arg1:T9 Arg2:T16	
+T19	method 670 689	case-control sample
+T20	method 733 736	MGS
+T24	method 781 796	SGENE data sets
+T29	method 801 804	MGS
+T30	method 822 858	genome-wide statistical significance
+T38	gene 1014 1036	linkage disequilibrium
+R13	located_in Arg1:T38 Arg2:T27	
+R14	associated_with Arg1:T23 Arg2:T38	
+T39	physiology 1214 1236	chromatin modification
+R15	associated_with Arg1:T28 Arg2:T39	
+R16	associated_with Arg1:T28 Arg2:T34	
+R17	associated_with Arg1:T28 Arg2:T33	
+R18	associated_with Arg1:T28 Arg2:T32	
+R19	associated_with Arg1:T31 Arg2:T39	
+R20	associated_with Arg1:T31 Arg2:T34	
+R21	associated_with Arg1:T31 Arg2:T33	
+R22	associated_with Arg1:T31 Arg2:T32	

@@ -1,0 +1,40 @@
+T1	disease 29 42	schizophrenia
+T2	disease 220 252	neuropsychiatric brain disorders
+T3	disease 285 298	schizophrenia
+T4	disease 894 907	schizophrenia
+T5	disease 920 939	psychotic disorders
+T6	Health_factors 979 1017	psychiatric clinicians and researchers
+T7	disease 1147 1160	schizophrenia
+T8	disease 0 12	Inflammation
+T9	method 61 76	pathophysiology
+T10	region 147 152	brain
+T11	method 376 411	epidemiological and genetic studies
+T13	disease 449 461	inflammation
+T14	region 505 510	brain
+T18	region 709 714	brain
+T19	physiology 745 749	mood
+T20	symptom 751 760	cognition
+T22	drug 1120 1143	anti-inflammatory drugs
+T23	physiology 855 890	innate and adaptive immune response
+T24	disease 678 699	systemic inflammation
+T25	region 663 676	immune system
+T26	region 569 588	blood-brain barrier
+T27	disease 435 444	infection
+T29	region 125 138	immune system
+T31	physiology 17 25	immunity
+R1	associated_with Arg1:T29 Arg2:T10	
+T30	method 174 186	aetiological
+R2	associated_with Arg1:T10 Arg2:T2	
+R3	associated_with Arg1:T29 Arg2:T2	
+T32	region 307 320	immune system
+R4	associated_with Arg1:T3 Arg2:T32	
+R5	associated_with Arg1:T3 Arg2:T27	
+R6	associated_with Arg1:T3 Arg2:T13	
+R7	associated_with Arg1:T25 Arg2:T24	
+R8	associated_with Arg1:T25 Arg2:T18	
+R9	associated_with Arg1:T25 Arg2:T19	
+R10	associated_with Arg1:T24 Arg2:T19	
+R11	associated_with Arg1:T18 Arg2:T19	
+R12	associated_with Arg1:T25 Arg2:T20	
+R13	associated_with Arg1:T24 Arg2:T20	
+R14	associated_with Arg1:T18 Arg2:T20	

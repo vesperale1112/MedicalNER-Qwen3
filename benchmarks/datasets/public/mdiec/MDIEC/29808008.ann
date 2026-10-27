@@ -1,0 +1,58 @@
+T0	disease 53 66	schizophrenia
+T1	method 15 31	placenta biology
+T2	gene 36 48	genetic risk
+T3	disease 194 211	complex disorders
+T4	gene 112 117	genes
+T5	disease 178 190	pathogenesis
+T6	symptom 126 148	disease susceptibility
+T7	Health_factors 81 102	environmental context
+T8	disease 287 300	schizophrenia
+T13	method 335 364	genome-wide association study
+T14	Health_factors 306 318	genomic risk
+T15	physiology 232 257	intra-uterine environment
+T16	disease 488 501	schizophrenia
+T17	disease 570 594	early-life complications
+T18	disease 596 600	ELCs
+T19	signs 515 518	PRS
+T20	disease 645 648	ELC
+T21	disease 711 714	ELC
+T22	signs 685 688	PRS
+T23	gene 816 834	schizophrenia loci
+T24	disease 854 858	ELCs
+T25	region 1026 1035	placentae
+T28	Health_factors 1041 1045	male
+T29	Health_factors 1060 1076	female offspring
+T30	physiology 969 987	normal pregnancies
+T31	region 882 890	placenta
+T33	physiology 1125 1144	PRS-ELC interaction
+T34	gene 1107 1112	genes
+T37	gene 1187 1192	genes
+T39	physiology 1284 1301	synaptic function
+T40	physiology 1238 1269	orthogonal biological processes
+T41	physiology 1161 1185	cellular stress response
+T42	method 1078 1094	Pathway analyses
+T43	disease 1387 1400	schizophrenia
+T44	gene 1354 1370	genetic variants
+T46	Health_factors 1536 1546	sex biases
+T48	method 1551 1569	primary prevention
+T49	physiology 1476 1504	placental response to stress
+R1	associated_with Arg1:T44 Arg2:T43	
+R2	risk_factor_of Arg1:T4 Arg2:T6	
+R3	associated_with Arg1:T8 Arg2:T14	
+R4	associated_with Arg1:T15 Arg2:T8	
+R5	associated_with Arg1:T15 Arg2:T14	
+T9	signs 373 394	polygenic risk scores
+T10	signs 396 400	PRSs
+R6	abbreviation_for Arg1:T10 Arg2:T9	
+R7	risk_factor_of Arg1:T19 Arg2:T16	
+R8	abbreviation_for Arg1:T18 Arg2:T17	
+R9	associated_with Arg1:T20 Arg2:T22	
+T11	gene 795 799	gene
+R10	associated_with Arg1:T23 Arg2:T24	
+R11	associated_with Arg1:T23 Arg2:T31	
+T12	region 923 932	placentae
+R12	associated_with Arg1:T23 Arg2:T12	
+R13	associated_with Arg1:T23 Arg2:T25	
+R14	hyponym_of Arg1:T39 Arg2:T40	
+R15	associated_with Arg1:T33 Arg2:T41	
+R16	associated_with Arg1:T44 Arg2:T49	

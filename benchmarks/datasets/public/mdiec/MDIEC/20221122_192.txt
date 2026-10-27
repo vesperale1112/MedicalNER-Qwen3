@@ -1,0 +1,1 @@
+CONCLUSIONS: The clinical prediction model enables clinicians to estimate the degree of the depression risk for an individual patient within the first week after stroke.

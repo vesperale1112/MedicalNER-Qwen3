@@ -1,0 +1,36 @@
+T1	disease 0 38	Complex post-traumatic stress disorder
+T2	disease 40 78	Complex post-traumatic stress disorder
+T3	disease 80 92	complex PTSD
+T4	disease 99 121	severe mental disorder
+T5	disease 348 360	Complex PTSD
+T6	disease 722 752	post-traumatic stress disorder
+T7	disease 757 788	borderline personality disorder
+T8	disease 173 185	Complex PTSD
+T9	symptom 283 346	disturbances in emotion regulation, identity, and relationships
+T10	disease 429 441	complex PTSD
+T12	Health_factors 508 523	childhood abuse
+T15	Health_factors 634 658	mental health facilities
+T16	Health_factors 841 849	children
+T17	Health_factors 854 865	adolescents
+T20	method 1065 1093	trauma-focused interventions
+T21	method 1034 1060	self-regulatory strategies
+T22	method 885 909	multicomponent therapies
+T24	signs 584 605	population prevalence
+T25	Health_factors 528 558	domestic or community violence
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	hyponym_of Arg1:T3 Arg2:T4	
+R3	hyponym_of Arg1:T2 Arg2:T4	
+T26	Health_factors 150 171	traumatic life events
+R4	risk_factor_of Arg1:T26 Arg2:T2	
+R5	risk_factor_of Arg1:T26 Arg2:T3	
+T23	disease 217 239	post-traumatic symptom
+R6	characteristic_of Arg1:T23 Arg2:T8	
+R7	characteristic_of Arg1:T9 Arg2:T8	
+T27	method 404 410	ICD-11
+R8	help_diagnose Arg1:T27 Arg2:T5	
+T11	disease 492 498	trauma
+R9	characteristic_of Arg1:T11 Arg2:T10	
+R10	characteristic_of Arg1:T12 Arg2:T10	
+R11	characteristic_of Arg1:T25 Arg2:T10	
+T13	Health_factors 943 958	psychoeducation
+T14	Health_factors 964 994	patient-provider collaboration

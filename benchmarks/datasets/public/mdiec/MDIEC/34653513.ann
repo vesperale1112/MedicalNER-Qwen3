@@ -1,0 +1,72 @@
+T1	gene 21 24	CRP
+T2	disease 29 39	depression
+T3	gene 167 185	C-reactive protein
+T4	gene 187 190	CRP
+T5	gene 432 435	CRP
+T6	disease 447 457	depression
+T7	disease 593 612	Depression symptoms
+T8	gene 696 699	CRP
+T9	gene 819 822	CRP
+T10	disease 827 837	depression
+T11	gene 859 862	CRP
+T12	gene 930 933	CRP
+T13	disease 991 1001	depression
+T14	gene 1036 1039	CRP
+T15	signs 1176 1179	CRP
+T16	gene 1312 1315	CRP
+T17	gene 1367 1370	CRP
+T18	disease 1513 1525	inflammation
+T19	disease 1572 1582	depression
+T20	gene 1587 1590	CRP
+T21	disease 1702 1712	depression
+T22	gene 1714 1717	CRP
+T23	gene 1803 1806	CRP
+T24	disease 1827 1850	inflammatory conditions
+R1	associated_with Arg1:T1 Arg2:T2	
+T25	method 43 70	genetically sensitive study
+T26	disease 146 162	major depression
+R2	abbreviation_for Arg1:T4 Arg2:T3	
+R3	associated_with Arg1:T26 Arg2:T3	
+R4	associated_with Arg1:T26 Arg2:T4	
+T27	method 637 670	revised Beck Depression Inventory
+T28	method 672 678	BDI-II
+R6	abbreviation_for Arg1:T28 Arg2:T27	
+R7	help_diagnose Arg1:T27 Arg2:T7	
+R8	help_diagnose Arg1:T28 Arg2:T7	
+T29	method 733 751	immunoturbidimetry
+T30	method 753 771	Linear regressions
+T31	method 890 919	Structural Equation Modelling
+T32	signs 968 971	BMI
+R10	associated_with Arg1:T12 Arg2:T32	
+T33	method 1091 1094	CIs
+T34	method 1138 1141	CIs
+T35	method 1222 1225	CIs
+T36	method 1269 1272	CIs
+T37	signs 1320 1323	BMI
+R11	associated_with Arg1:T16 Arg2:T37	
+T38	disease 1623 1635	inflammation
+T40	Health_factors 1167 1174	females
+T41	Health_factors 1340 1347	females
+T42	Health_factors 1017 1022	males
+T43	Health_factors 1868 1873	males
+T44	Health_factors 374 394	European populations
+T45	Health_factors 483 504	Sri Lankan population
+T46	Health_factors 559 569	singletons
+T47	Health_factors 545 550	twins
+T48	Health_factors 1747 1758	environment
+R5	associated_with Arg1:T22 Arg2:T48	
+T49	Health_factors 1064 1082	shared environment
+T50	Health_factors 1107 1129	non-shared environment
+R9	associated_with Arg1:T14 Arg2:T49	
+T51	Health_factors 1238 1260	non-shared environment
+R14	associated_with Arg1:T15 Arg2:T51	
+T52	Health_factors 248 288	shared genetic and environmental factors
+R13	associated_with Arg1:T14 Arg2:T50	
+T39	method 1771 1784	interventions
+R16	help_diagnose Arg1:T29 Arg2:T8	
+R18	occurs_in Arg1:T37 Arg2:T41	
+R15	occurs_in Arg1:T42 Arg2:T14	
+R17	occurs_in Arg1:T40 Arg2:T15	
+T53	gene 1206 1213	genetic
+R19	associated_with Arg1:T15 Arg2:T53	
+R12	associated_with Arg1:T38 Arg2:T21	

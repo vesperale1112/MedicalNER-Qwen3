@@ -1,0 +1,42 @@
+T1	disease 55 89	maternal major depression disorder
+T2	disease 254 257	MDD
+T3	disease 479 482	MDD
+T4	disease 1009 1012	MDD
+T5	disease 1301 1304	MDD
+T6	disease 1487 1490	MDD
+#1	AnnotatorNotes T1	C1269683
+#2	AnnotatorNotes T2	C1269683
+T7	method 489 546	Center of Epidemiological Studies-Depression - Short Form
+T8	method 548 555	CESD-SF
+R1	abbreviation_for Arg1:T8 Arg2:T7	
+T9	method 627 634	CESD-SF
+#3	AnnotatorNotes T7	C4289826
+#4	AnnotatorNotes T8	C4289826
+#5	AnnotatorNotes T9	C4289826
+T10	method 1106 1113	CESD-SF
+#6	AnnotatorNotes T10	C4289826
+T11	method 1223 1230	CESD-SF
+#7	AnnotatorNotes T11	C4289826
+#8	AnnotatorNotes T3	C1269683
+#9	AnnotatorNotes T6	C1269683
+#10	AnnotatorNotes T5	C1269683
+T12	method 861 897	Binomial Bayesian Latent Class model
+#11	AnnotatorNotes T12	C4704741
+T13	method 279 302	community-based studies
+R2	help_diagnose Arg1:T7 Arg2:T3	
+R3	help_diagnose Arg1:T8 Arg2:T3	
+T14	method 367 388	home visitation study
+T15	method 104 128	home visitation programs
+T16	method 1394 1417	case-finding instrument
+T17	method 1537 1561	case-finding instruments
+T18	Health_factors 264 271	mothers
+T19	Health_factors 338 345	mothers
+T20	Health_factors 917 924	mothers
+T21	Health_factors 1508 1515	mothers
+T23	Health_factors 687 697	antepartum
+T24	Health_factors 701 711	postpartum
+T25	Health_factors 932 965	antepartum and postpartum periods
+T26	Health_factors 1036 1046	antepartum
+T27	Health_factors 1051 1061	postpartum
+T28	Health_factors 1355 1365	antepartum
+T29	Health_factors 1373 1383	postpartum

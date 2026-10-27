@@ -1,0 +1,77 @@
+T0	disease 44 74	post-traumatic stress disorder
+T1	disease 167 197	post-traumatic stress disorder
+T2	disease 199 203	PTSD
+T7	method 137 163	front-line psychotherapies
+T8	method 101 117	exposure therapy
+T9	method 11 39	trauma-focused psychotherapy
+T10	disease 380 384	PTSD
+T12	method 335 351	exposure therapy
+T14	Health_factors 293 315	brief aerobic exercise
+T15	method 404 455	single-blind, parallel, randomised controlled trial
+T16	disease 543 547	PTSD
+T17	Health_factors 495 501	adults
+T18	Health_factors 503 507	aged
+T19	Health_factors 523 532	clinician
+T20	disease 665 674	psychosis
+T21	disease 678 698	substance dependence
+T22	Health_factors 700 752	history of moderate-to-severe traumatic brain injury
+T23	disease 771 788	physical disorder
+T24	disease 854 863	back pain
+T26	Health_factors 574 578	aged
+T27	Health_factors 591 596	older
+T28	Health_factors 637 650	suicidal plan
+T29	disease 792 802	impairment
+T30	Health_factors 832 848	aerobic exercise
+T31	disease 961 965	PTSD
+T34	Health_factors 978 994	aerobic exercise
+T36	method 1051 1069	passive stretching
+T37	method 1022 1038	exposure therapy
+T38	method 1005 1018	control group
+T39	method 940 956	exposure therapy
+T40	disease 1095 1099	PTSD
+T47	disease 1374 1378	PTSD
+T51	Health_factors 1536 1541	women
+T52	Health_factors 1555 1558	men
+T53	Health_factors 1572 1575	age
+T54	method 1590 1592	SD
+T55	drug 1598 1603	range
+T57	method 1475 1515	exposure therapy with passive stretching
+T59	method 1428 1458	exposure therapy with exercise
+T60	Health_factors 1639 1644	White
+T61	Health_factors 1660 1665	Asian
+T63	method 1717 1737	follow-up assessment
+T65	method 1825 1831	CAPS-2
+T66	method 1864 1902	exposure therapy with stretching group
+T67	method 1929 1931	CI
+T68	method 1970 1990	moderate effect size
+T69	method 1904 1919	mean difference
+T72	method 1759 1789	exposure therapy with exercise
+T74	Health_factors 2009 2023	adverse events
+T75	method 2044 2056	intervention
+T77	method 2145 2160	Clinical Trials
+T78	disease 2300 2304	PTSD
+T81	Health_factors 2384 2392	exercise
+T82	Health_factors 2350 2357	animals
+T83	method 2279 2295	exposure therapy
+T85	Health_factors 2208 2230	Brief aerobic exercise
+T86	disease 2561 2565	PTSD
+T88	method 2529 2545	exposure therapy
+T90	Health_factors 2576 2631	Australian National Health and Medical Research Council
+R1	treatment_for Arg1:T85 Arg2:T78	
+R2	treatment_for Arg1:T83 Arg2:T78	
+T79	Health_factors 2362 2368	humans
+T80	physiology 2411 2440	extinction learning processes
+R3	associated_with Arg1:T81 Arg2:T80	
+R4	treatment_for Arg1:T88 Arg2:T86	
+R5	hyponym_of Arg1:T8 Arg2:T7	
+R6	treatment_for Arg1:T8 Arg2:T1	
+R7	abbreviation_for Arg1:T2 Arg2:T1	
+R8	treatment_for Arg1:T8 Arg2:T2	
+R9	help_diagnose Arg1:T19 Arg2:T16	
+T3	disease 612 620	suicidal
+T4	method 1125 1160	clinician-administered PTSD scale 2
+T5	method 1162 1168	CAPS-2
+R10	abbreviation_for Arg1:T5 Arg2:T4	
+R11	help_diagnose Arg1:T4 Arg2:T40	
+R12	help_diagnose Arg1:T5 Arg2:T40	
+R13	associated_with Arg1:T72 Arg2:T65	

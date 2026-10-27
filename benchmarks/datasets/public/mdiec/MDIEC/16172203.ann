@@ -1,0 +1,45 @@
+T0	disease 54 75	chronic schizophrenia
+T1	drug 17 36	antipsychotic drugs
+T3	drug 118 166	second-generation (atypical) antipsychotic drugs
+T6	drug 342 354	perphenazine
+T9	method 386 404	double-blind study
+T11	drug 310 340	first-generation antipsychotic
+T12	disease 446 459	schizophrenia
+T13	drug 525 535	olanzapine
+T14	drug 560 572	perphenazine
+T15	drug 595 605	quetiapine
+T16	drug 634 645	risperidone
+T18	drug 691 702	Ziprasidone
+T20	method 765 793	Food and Drug Administration
+T24	drug 960 970	medication
+T25	drug 1080 1090	olanzapine
+T26	drug 1124 1136	perphenazine
+T27	drug 1170 1180	quetiapine
+T28	drug 1214 1225	risperidone
+T29	drug 1263 1274	ziprasidone
+T31	drug 1367 1377	olanzapine
+T32	drug 1396 1406	quetiapine
+T33	drug 1420 1431	risperidone
+T34	drug 1464 1476	perphenazine
+T35	drug 1490 1501	ziprasidone
+T36	drug 1648 1658	olanzapine
+T37	drug 1742 1754	perphenazine
+T38	symptom 1704 1715	weight gain
+T39	disease 1800 1822	extrapyramidal effects
+T40	physiology 1719 1736	metabolic effects
+T41	Health_factors 1571 1583	side effects
+T43	Health_factors 1950 1962	side effects
+T46	drug 1985 1995	Olanzapine
+T48	drug 2159 2169	quetiapine
+T49	drug 2171 2182	risperidone
+T50	drug 2188 2199	ziprasidone
+T52	drug 2085 2130	conventional antipsychotic agent perphenazine
+T54	drug 2201 2211	Olanzapine
+T57	symptom 2240 2251	weight gain
+R2	associated_with Arg1:T36 Arg2:T38	
+R3	associated_with Arg1:T36 Arg2:T40	
+T4	physiology 2281 2309	glucose and lipid metabolism
+R4	risk_factor_of Arg1:T54 Arg2:T57	
+R5	risk_factor_of Arg1:T54 Arg2:T4	
+R6	associated_with Arg1:T37 Arg2:T39	
+R1	hyponym_of Arg1:T6 Arg2:T11	

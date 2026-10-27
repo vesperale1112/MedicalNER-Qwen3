@@ -1,0 +1,7 @@
+T2	disease 121 141	depressive behaviors
+T3	physiology 174 213	Y1070 phosphorylation of GluN2B subunit
+T4	drug 251 266	antidepressants
+T5	region 79 83	mPFC
+T6	signs 33 71	phosphorylation levels of GluN2B-Y1070
+R2	associated_with Arg1:T6 Arg2:T2	
+R1	located_in Arg1:T6 Arg2:T5	

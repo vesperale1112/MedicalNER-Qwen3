@@ -1,0 +1,27 @@
+T0	disease 0 23	Social anxiety disorder
+T1	disease 46 69	social anxiety disorder
+T2	disease 85 98	social phobia
+T3	disease 159 166	shyness
+T5	disease 302 325	Social anxiety disorder
+T6	disease 345 361	anxiety disorder
+T7	disease 510 528	depressive illness
+T8	disease 533 548	substance abuse
+T10	Health_factors 396 399	age
+T11	Health_factors 429 432	age
+T12	Health_factors 373 391	early age of onset
+T13	disease 650 673	social anxiety disorder
+T21	gene 803 812	risk loci
+T22	symptom 775 790	core phenotypes
+T23	symptom 744 773	personality trait neuroticism
+T25	physiology 601 632	activity in amygdala and insula
+T26	method 550 581	Functional neuroimaging studies
+T28	method 835 887	cognitive behavioural and pharmacological treatments
+T29	Health_factors 892 900	children
+T30	Health_factors 905 911	adults
+R1	hyponym_of Arg1:T1 Arg2:T2	
+R2	hyponym_of Arg1:T5 Arg2:T6	
+R3	characteristic_of Arg1:T12 Arg2:T5	
+R4	risk_factor_of Arg1:T5 Arg2:T7	
+R5	risk_factor_of Arg1:T5 Arg2:T8	
+R8	characteristic_of Arg1:T25 Arg2:T13	
+T4	method 679 694	genetic studies

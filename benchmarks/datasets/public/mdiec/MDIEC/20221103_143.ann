@@ -1,0 +1,12 @@
+T1	drug 27 37	esketamine
+T2	Health_factors 42 48	adults
+T3	disease 74 99	major depressive disorder
+T4	disease 101 104	MDD
+T8	disease 242 252	depression
+R2	treatment_for Arg1:T1 Arg2:T9	
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+T5	Health_factors 11 14	FDA
+T6	drug 224 230	agents
+T7	drug 152 157	agent
+T9	disease 54 99	treatment-resistant major depressive disorder
+R3	occurs_in Arg1:T2 Arg2:T9	

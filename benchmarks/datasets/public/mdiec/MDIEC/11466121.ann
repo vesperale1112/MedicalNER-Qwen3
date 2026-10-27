@@ -1,0 +1,62 @@
+T0	disease 21 30	anhedonia
+T1	disease 34 47	schizophrenia
+T2	physiology 0 17	Neural mechanisms
+T3	disease 160 169	anhedonia
+T4	disease 201 214	schizophrenia
+T5	disease 311 332	cognitive impairments
+T6	disease 336 349	schizophrenia
+T7	disease 427 449	emotional disturbances
+T9	region 401 415	neural systems
+T10	disease 516 529	schizophrenia
+T12	physiology 558 573	brain responses
+T13	physiology 492 512	emotional processing
+T14	disease 693 706	schizophrenia
+T16	method 640 675	Positron emission tomographic study
+T17	method 832 845	data analyses
+T18	method 731 765	Positron emission tomographic data
+T21	Health_factors 889 927	Mental Health Clinical Research Center
+T22	Health_factors 1020 1023	age
+T23	disease 1059 1072	schizophrenia
+T24	Health_factors 1084 1087	age
+T29	signs 1168 1196	regional cerebral blood flow
+T31	method 1302 1334	emotion-induction olfactory task
+T32	method 1213 1241	positron emission tomography
+T35	disease 1499 1512	schizophrenia
+T36	disease 1608 1618	impairment
+T38	signs 1676 1704	regional cerebral blood flow
+T41	region 1916 1940	frontal cortical regions
+T43	region 1817 1838	parahippocampal gyrus
+T44	region 1794 1811	nucleus accumbens
+T45	region 1778 1792	insular cortex
+T46	region 1747 1772	limbic/paralimbic regions
+T49	disease 2094 2107	schizophrenia
+T50	disease 2068 2090	emotional disturbances
+T51	region 2024 2054	mesolimbic and frontal regions
+T52	physiology 1992 2015	functional interactions
+R1	occurs_in Arg1:T0 Arg2:T1	
+T8	method 51 60	PET study
+T27	Health_factors 76 105	unpleasant and pleasant odors
+T28	symptom 115 158	Loss of the capacity to experience pleasure
+R2	characteristic_of Arg1:T28 Arg2:T4	
+R3	characteristic_of Arg1:T3 Arg2:T4	
+T53	method 225 254	functional imaging techniques
+R4	characteristic_of Arg1:T5 Arg2:T6	
+R5	occurs_in Arg1:T13 Arg2:T10	
+T11	physiology 577 594	olfactory stimuli
+R6	help_diagnose Arg1:T32 Arg2:T29	
+T15	method 1250 1269	[(15)O]water method
+R7	help_diagnose Arg1:T15 Arg2:T29	
+T19	drug 1370 1378	vanillin
+T20	drug 1396 1416	4-methylvaleric acid
+R8	hyponym_of Arg1:T45 Arg2:T46	
+R9	hyponym_of Arg1:T44 Arg2:T46	
+R10	hyponym_of Arg1:T43 Arg2:T46	
+T25	Health_factors 1851 1881	experience of unpleasant odors
+R11	located_in Arg1:T52 Arg2:T51	
+R12	associated_with Arg1:T52 Arg2:T50	
+R13	occurs_in Arg1:T50 Arg2:T49	
+T30	Health_factors 1538 1554	unpleasant odors
+R14	help_diagnose Arg1:T53 Arg2:T5	
+T26	Health_factors 1626 1654	experience of pleasant odors
+R15	occurs_in Arg1:T36 Arg2:T26	
+R16	characteristic_of Arg1:T36 Arg2:T35	

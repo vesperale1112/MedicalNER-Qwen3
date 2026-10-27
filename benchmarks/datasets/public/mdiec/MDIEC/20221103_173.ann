@@ -1,0 +1,7 @@
+T2	method 17 52	dietary and lifestyle interventions
+T3	method 62 127	desirable, effective, pragmatical and non-stigmatizing prevention
+T4	method 132 150	treatment strategy
+T5	disease 155 165	depression
+R1	treatment_for Arg1:T2 Arg2:T5	
+R2	hyponym_of Arg1:T2 Arg2:T3	
+R3	hyponym_of Arg1:T2 Arg2:T4	

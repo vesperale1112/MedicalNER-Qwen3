@@ -1,0 +1,92 @@
+T0	disease 20 49	Cortical Spreading Depression
+T1	physiology 0 9	Apoptosis
+T2	method 53 66	Juvenile Rats
+T3	disease 79 108	cortical spreading depression
+T4	disease 110 113	CSD
+T7	region 141 162	immature brain tissue
+T8	disease 127 137	cell death
+T9	gene 164 172	Caspases
+T12	disease 220 254	CSD-related neurological disorders
+T13	disease 264 270	stroke
+T14	disease 275 283	epilepsy
+T15	disease 189 208	neuronal cell death
+T16	physiology 331 349	caspase activation
+T17	disease 309 312	CSD
+T18	region 353 377	adult or juvenile tissue
+T20	gene 557 566	caspase-3
+T21	gene 568 577	caspase-8
+T22	gene 579 588	caspase-9
+T23	gene 594 604	caspase-12
+T25	disease 415 418	CSD
+T28	method 475 479	vivo
+T29	disease 535 538	CSD
+T31	region 618 623	brain
+T32	method 638 658	immunohistochemistry
+T34	method 448 471	juvenile and adult rats
+T35	region 422 444	somatosensory cortices
+T36	region 710 722	dark neurons
+T37	disease 863 866	CSD
+T40	method 870 883	juvenile rats
+T41	region 819 856	entorhinal and somatosensory cortices
+T43	region 769 792	hippocampal CA1 and CA3
+T44	region 727 747	TUNEL-positive cells
+T46	gene 931 940	caspase-3
+T47	gene 942 951	caspase-8
+T48	gene 957 966	caspase-9
+T50	gene 968 978	Caspase-12
+T51	disease 1011 1014	CSD
+T55	physiology 1080 1103	CSD-triggered apoptosis
+T56	disease 1032 1060	endoplasmic reticulum stress
+T57	physiology 1116 1134	caspase expression
+T58	gene 1168 1180	procaspase-3
+T59	gene 1182 1194	procaspase-8
+T60	gene 1200 1212	procaspase-9
+T61	disease 1255 1258	CSD
+T64	region 1216 1241	juvenile rat brain tissue
+T65	physiology 1340 1356	caspase signalin
+T66	disease 1284 1287	CSD
+T69	method 1291 1301	adult rats
+T71	physiology 1494 1514	caspase upregulation
+T73	region 1418 1430	brain tissue
+T74	disease 1445 1448	CSD
+T76	region 1527 1542	juvenile tissue
+T77	disease 1473 1489	apoptotic damage
+T78	Health_factors 1380 1414	maturation-dependent vulnerability
+T79	physiology 1575 1592	caspase signaling
+T81	disease 1596 1618	CSD-induced cell death
+T83	region 1626 1640	immature brain
+T85	disease 1697 1728	CSD-related functional deficits
+T87	region 1736 1750	immature brain
+T88	method 1660 1684	anti-apoptotic treatment
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+R2	located_in Arg1:T8 Arg2:T7	
+R3	risk_factor_of Arg1:T3 Arg2:T8	
+R4	risk_factor_of Arg1:T4 Arg2:T8	
+R5	occurs_in Arg1:T0 Arg2:T2	
+R6	associated_with Arg1:T9 Arg2:T15	
+R7	occurs_in Arg1:T15 Arg2:T12	
+R8	hyponym_of Arg1:T13 Arg2:T12	
+R9	occurs_in Arg1:T15 Arg2:T13	
+R10	occurs_in Arg1:T15 Arg2:T14	
+R11	occurs_in Arg1:T16 Arg2:T18	
+R12	located_in Arg1:T25 Arg2:T35	
+T5	method 663 690	western blotting techniques
+R13	located_in Arg1:T23 Arg2:T31	
+R14	located_in Arg1:T22 Arg2:T31	
+R15	located_in Arg1:T21 Arg2:T31	
+R16	located_in Arg1:T20 Arg2:T31	
+R17	occurs_in Arg1:T37 Arg2:T40	
+R18	associated_with Arg1:T36 Arg2:T43	
+R19	associated_with Arg1:T36 Arg2:T41	
+R20	associated_with Arg1:T44 Arg2:T43	
+R21	associated_with Arg1:T44 Arg2:T41	
+R22	associated_with Arg1:T57 Arg2:T58	
+R23	associated_with Arg1:T57 Arg2:T59	
+R24	associated_with Arg1:T57 Arg2:T60	
+R25	occurs_in Arg1:T66 Arg2:T69	
+R26	associated_with Arg1:T77 Arg2:T76	
+R27	associated_with Arg1:T71 Arg2:T76	
+R28	associated_with Arg1:T79 Arg2:T81	
+R29	occurs_in Arg1:T81 Arg2:T83	
+R30	treatment_for Arg1:T88 Arg2:T85	
+R31	located_in Arg1:T85 Arg2:T87	

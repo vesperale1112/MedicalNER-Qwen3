@@ -1,0 +1,78 @@
+T0	drug 0 10	Sertraline
+T1	disease 44 73	obsessive-compulsive disorder
+T3	Health_factors 27 38	adolescents
+T5	method 77 116	multicenter randomized controlled trial
+T6	drug 130 159	serotonin reuptake inhibitors
+T7	disease 206 235	obsessive-compulsive disorder
+T8	Health_factors 303 311	children
+T9	Health_factors 316 327	adolescents
+T10	Health_factors 337 343	adults
+T12	drug 400 463	selective serotonin reuptake inhibitor sertraline hydrochloride
+T13	Health_factors 467 475	children
+T14	Health_factors 480 491	adolescents
+T15	disease 497 526	obsessive-compulsive disorder
+T16	method 537 587	Randomized, double-blind, placebo-controlled trial
+T18	Health_factors 639 647	children
+T19	Health_factors 648 652	aged
+T20	Health_factors 686 690	aged
+T21	drug 735 745	sertraline
+T22	Health_factors 750 758	children
+T23	Health_factors 763 774	adolescents
+T25	Health_factors 791 799	children
+T26	Health_factors 804 815	adolescents
+T28	method 896 924	randomized controlled trials
+T29	method 835 868	US academic and community clinics
+T32	drug 1111 1121	medication
+T34	method 1032 1052	double-blind therapy
+T39	method 1415 1420	CGI-S
+T40	method 1446 1459	rating scales
+T41	method 1267 1336	National Institute of Mental Health Global Obsessive Compulsive Scale
+T42	method 1203 1251	Children's Yale-Brown Obsessive Compulsive Scale
+T45	drug 1522 1532	sertraline
+T46	method 1474 1498	intent-to-treat analyses
+T47	drug 1827 1837	sertraline
+T51	drug 1976 1986	sertraline
+T53	Health_factors 2066 2069	age
+T54	Health_factors 2074 2077	sex
+T56	disease 2128 2136	insomnia
+T57	disease 2138 2144	nausea
+T58	disease 2146 2155	agitation
+T59	disease 2161 2167	tremor
+T60	drug 2217 2227	sertraline
+T61	drug 2244 2254	sertraline
+T63	Health_factors 2352 2374	adverse medical events
+T68	drug 2539 2549	Sertraline
+T69	Health_factors 2623 2634	adolescents
+T70	disease 2640 2669	obsessive-compulsive disorder
+T72	Health_factors 14 22	children
+R1	occurs_in Arg1:T72 Arg2:T1	
+R2	occurs_in Arg1:T3 Arg2:T1	
+R3	treatment_for Arg1:T6 Arg2:T7	
+R4	occurs_in Arg1:T13 Arg2:T15	
+R5	occurs_in Arg1:T14 Arg2:T15	
+T2	Health_factors 674 685	adolescents
+T4	drug 941 965	Sertraline hydrochloride
+T11	method 1253 1260	CY-BOCS
+R6	abbreviation_for Arg1:T11 Arg2:T42	
+T17	method 1338 1347	NIMH GOCS
+R7	abbreviation_for Arg1:T17 Arg2:T41	
+T24	method 1358 1402	NIMH Clinical Global Impressions of Severity
+R8	abbreviation_for Arg1:T39 Arg2:T24	
+T27	method 1439 1444	CGI-I
+T30	method 1615 1622	CY-BOCS
+T31	method 1679 1688	NIMH GOCS
+R9	treatment_for Arg1:T45 Arg2:T30	
+R10	treatment_for Arg1:T45 Arg2:T31	
+T33	method 1734 1739	CGI-I
+R11	treatment_for Arg1:T45 Arg2:T33	
+T35	method 1922 1927	CGI-I
+R12	associated_with Arg1:T35 Arg2:T51	
+R13	risk_factor_of Arg1:T60 Arg2:T56	
+R14	risk_factor_of Arg1:T60 Arg2:T57	
+R15	risk_factor_of Arg1:T60 Arg2:T58	
+R16	risk_factor_of Arg1:T60 Arg2:T59	
+T36	method 2491 2524	electrocardiographic measurements
+T37	Health_factors 2610 2618	children
+R17	occurs_in Arg1:T37 Arg2:T70	
+R18	occurs_in Arg1:T69 Arg2:T70	
+R19	treatment_for Arg1:T68 Arg2:T70	

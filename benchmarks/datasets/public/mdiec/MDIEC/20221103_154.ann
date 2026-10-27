@@ -1,0 +1,7 @@
+T1	disease 38 48	depression
+T2	Health_factors 53 79	physical and emotional QOL
+T3	Health_factors 83 114	stroke survivor-caregiver dyads
+T4	Health_factors 184 206	caregiver preparedness
+R1	associated_with Arg1:T1 Arg2:T2	
+T5	method 244 257	interventions
+R2	occurs_in Arg1:T2 Arg2:T3	

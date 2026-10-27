@@ -1,0 +1,53 @@
+T0	disease 56 85	obsessive-compulsive disorder
+T1	drug 125 136	fluvoxamine
+T3	method 2 29	randomized controlled trial
+T4	method 104 120	behavior therapy
+T5	drug 214 225	fluvoxamine
+T6	disease 268 271	OCD
+T7	disease 338 341	OCD
+T9	drug 245 249	SSRI
+T10	method 286 302	behavior therapy
+T18	Health_factors 425 436	outpatients
+T19	disease 472 475	OCD
+T21	method 569 602	behavior therapy +/- pill placebo
+T30	method 699 758	autogenic training (psychological placebo) +/- pill placebo
+T31	method 684 697	control group
+T33	method 610 678	autogenic training (a psychological placebo for OCD) +/- fluvoxamine
+T35	method 791 828	Yale-Brown Obsessive-Compulsive Scale
+T37	method 846 890	Clinical Global Impression-Improvement Scale
+T39	method 1036 1039	FLV
+T40	method 1266 1269	FLV
+T41	method 1282 1285	FLV
+T46	drug 1438 1449	fluvoxamine
+T47	disease 1399 1418	cleaning compulsion
+T48	Health_factors 1341 1383	past history of a major depressive episode
+T51	drug 1520 1531	fluvoxamine
+T52	disease 1559 1562	OCD
+T53	method 1499 1515	behavior therapy
+T54	disease 1607 1610	OCD
+T55	drug 1630 1641	fluvoxamine
+T57	method 1564 1580	Behavior therapy
+R1	treatment_for Arg1:T9 Arg2:T6	
+T2	method 449 467	DSM-III-R criteria
+R3	help_diagnose Arg1:T2 Arg2:T19	
+T8	disease 488 503	axis I disorder
+T11	method 565 567	BT
+T12	method 605 608	FLV
+T13	method 830 836	Y-BOCS
+R2	abbreviation_for Arg1:T13 Arg2:T35	
+T14	method 892 897	CGI-I
+R4	abbreviation_for Arg1:T14 Arg2:T37	
+T15	method 1029 1031	BT
+R5	abbreviation_for Arg1:T12 Arg2:T33	
+R6	abbreviation_for Arg1:T11 Arg2:T21	
+T16	method 1144 1150	Y-BOCS
+T17	method 1166 1168	BT
+T20	method 1220 1226	Y-BOCS
+T22	method 1277 1279	BT
+R7	treatment_for Arg1:T15 Arg2:T16	
+R8	treatment_for Arg1:T39 Arg2:T16	
+R9	treatment_for Arg1:T17 Arg2:T20	
+T23	method 1333 1339	Y-BOCS
+R10	treatment_for Arg1:T53 Arg2:T52	
+R11	treatment_for Arg1:T51 Arg2:T52	
+R12	treatment_for Arg1:T57 Arg2:T54	

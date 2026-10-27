@@ -1,0 +1,87 @@
+T1	physiology 34 66	taxonomic and tryptophan pathway
+T2	disease 100 125	major depressive disorder
+T3	drug 204 214	tryptophan
+T4	drug 216 219	Trp
+T5	disease 316 341	major depressive disorder
+T6	disease 343 346	MDD
+T7	disease 384 387	MDD
+T8	disease 495 498	MDD
+T9	disease 587 590	MDD
+T10	disease 831 834	MDD
+T11	disease 960 963	MDD
+T12	disease 1034 1037	MDD
+T13	disease 1288 1291	MDD
+T14	disease 1400 1403	MDD
+T15	disease 1666 1669	MDD
+T16	disease 1761 1764	MDD
+T17	method 0 20	Shotgun metagenomics
+T18	Health_factors 82 96	gut microbiota
+T20	physiology 152 177	microbiota-gut-brain axis
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+T21	physiology 194 256	microbial tryptophan (Trp) biosynthesis and metabolism pathway
+T22	physiology 258 265	MiTBamp
+R2	abbreviation_for Arg1:T22 Arg2:T21	
+R3	abbreviation_for Arg1:T6 Arg2:T5	
+T23	Health_factors 449 475	gut microbiota composition
+T24	method 531 561	shotgun metagenomic sequencing
+T25	method 607 623	healthy controls
+T26	method 625 628	HCs
+R4	abbreviation_for Arg1:T26 Arg2:T25	
+T27	method 679 695	MiTBamp analyses
+T28	method 741 755	Random Forests
+T29	method 757 759	RF
+R5	abbreviation_for Arg1:T29 Arg2:T28	
+T30	method 765 781	Boruta algorithm
+T31	Health_factors 798 812	gut microbiota
+T34	Health_factors 910 924	Actinobacteria
+T35	Health_factors 849 872	Bacteroidetes abundance
+T36	method 1008 1011	HCs
+T38	Health_factors 1116 1125	probiotic
+T39	method 1132 1171	Kyoto Encyclopedia of Genes and Genomes
+T40	method 1173 1177	KEGG
+R6	abbreviation_for Arg1:T40 Arg2:T39	
+T41	method 1132 1190	Kyoto Encyclopedia of Genes and Genomes (KEGG) orthologies
+T42	method 1192 1195	KOs
+R7	abbreviation_for Arg1:T42 Arg2:T41	
+T43	gene 1356 1372	K01626 abundance
+T44	gene 1198 1204	K01817
+T45	gene 1206 1212	K11358
+T46	gene 1214 1220	K01626
+T47	method 1381 1385	HAMD
+T48	gene 1222 1228	K01667
+T49	method 1420 1437	RF classification
+T50	Health_factors 1620 1634	gut microbiota
+T51	physiology 373 380	MiTBamp
+T52	physiology 484 491	MiTBamp
+T53	Health_factors 1071 1086	Bifidobacterium
+R10	hyponym_of Arg1:T53 Arg2:T38	
+T54	physiology 1248 1255	MiTBamp
+T55	physiology 1651 1662	Trp pathway
+T57	method 1779 1782	HCs
+R12	associated_with Arg1:T21 Arg2:T5	
+R13	associated_with Arg1:T22 Arg2:T5	
+R14	associated_with Arg1:T21 Arg2:T6	
+R15	associated_with Arg1:T22 Arg2:T6	
+T58	method 1487 1526	receiver operating characteristic curve
+T19	disease 300 312	pathogenesis
+T32	Health_factors 650 670	microbiota community
+T33	signs 816 826	biomarkers
+R17	hyponym_of Arg1:T31 Arg2:T33	
+R19	characteristic_of Arg1:T35 Arg2:T11	
+R20	characteristic_of Arg1:T34 Arg2:T11	
+T59	signs 1731 1741	biomarkers
+R8	associated_with Arg1:T43 Arg2:T47	
+R18	characteristic_of Arg1:T31 Arg2:T10	
+R9	characteristic_of Arg1:T53 Arg2:T12	
+R21	characteristic_of Arg1:T44 Arg2:T13	
+R23	characteristic_of Arg1:T45 Arg2:T13	
+R24	characteristic_of Arg1:T46 Arg2:T13	
+R25	characteristic_of Arg1:T48 Arg2:T13	
+R11	help_diagnose Arg1:T37 Arg2:T16	
+R34	hyponym_of Arg1:T37 Arg2:T59	
+R27	located_in Arg1:T48 Arg2:T54	
+R28	located_in Arg1:T46 Arg2:T54	
+R29	located_in Arg1:T45 Arg2:T54	
+R30	located_in Arg1:T44 Arg2:T54	
+R16	occurs_in Arg1:T47 Arg2:T14	
+T37	symptom 1671 1704	Alterations of the gut microbiota

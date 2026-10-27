@@ -1,0 +1,10 @@
+T1	drug 55 65	imipramine
+T2	drug 70 83	amitriptyline
+T3	disease 87 105	depressive illness
+T4	drug 182 191	trazodone
+T5	physiology 205 233	anticholinergic side effects
+T6	drug 243 268	tricyclic antidepressants
+R3	risk_factor_of Arg1:T4 Arg2:T5	
+R4	risk_factor_of Arg1:T6 Arg2:T5	
+R1	treatment_for Arg1:T1 Arg2:T3	
+R2	treatment_for Arg1:T2 Arg2:T3	

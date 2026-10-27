@@ -1,0 +1,23 @@
+T1	physiology 10 30	glutamate signalling
+T2	disease 34 44	depression
+T3	disease 70 95	Major depressive disorder
+T4	disease 97 100	MDD
+T6	drug 234 242	ketamine
+T7	drug 344 375	glutamate-signalling modulators
+T8	disease 408 428	depressive disorders
+T9	disease 534 544	depression
+T12	drug 175 233	glutamate N-methyl-D-aspartate receptor (NMDAR) antagonist
+T13	drug 272 301	rapidly acting antidepressant
+T15	drug 654 689	glutamate-targeting antidepressants
+T16	physiology 883 905	therapeutic mechanisms
+T19	method 565 602	preclinical and translational studies
+T20	drug 385 403	therapeutic agents
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+R2	hyponym_of Arg1:T6 Arg2:T13	
+R3	hyponym_of Arg1:T12 Arg2:T13	
+R5	hyponym_of Arg1:T7 Arg2:T20	
+R6	treatment_for Arg1:T7 Arg2:T8	
+T5	method 767 783	drug development
+T10	gene 185 214	N-methyl-D-aspartate receptor
+T14	gene 216 221	NMDAR
+R4	abbreviation_for Arg1:T14 Arg2:T10	

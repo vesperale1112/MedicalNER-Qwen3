@@ -1,0 +1,1 @@
+We found significant correlations between PHQ-8 scores and angina frequency (SAQ-AF, r=-0.28), physical limitation (SAQ-PL, r=-0.32) and disease perception (SAQ-DS r=-0.37, all P<0.001), which remained significant after adjustment for clinical characteristics, CAD severity, and anti-depressant use.

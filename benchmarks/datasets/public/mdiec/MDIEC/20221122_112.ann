@@ -1,0 +1,5 @@
+T1	Health_factors 33 51	glucose monitoring
+T2	Health_factors 56 75	intensive care unit
+T3	disease 97 109	hypoglycemia
+T5	Health_factors 150 188	intensive care unit management factors
+T6	disease 207 241	postintensive care unit depression

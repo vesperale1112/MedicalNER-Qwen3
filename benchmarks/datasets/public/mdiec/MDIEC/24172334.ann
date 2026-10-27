@@ -1,0 +1,81 @@
+T1	gene 0 20	Glycine transporters
+T2	disease 53 66	schizophrenia
+T3	disease 68 86	alcohol dependence
+T5	disease 91 95	pain
+T8	gene 97 117	Glycine transporters
+T9	drug 169 176	glycine
+T10	region 235 255	glycinergic synapses
+T11	drug 310 314	NMDA
+T12	gene 310 347	NMDA (N-methyl-D-aspartate) receptors
+T13	gene 316 336	N-methyl-D-aspartate
+T14	region 351 373	glutamatergic synapses
+T15	physiology 278 297	neuronal excitation
+T16	drug 204 231	inhibitory neurotransmitter
+T19	gene 401 421	glycine transporters
+T20	gene 423 428	GlyT1
+T21	gene 433 438	GlyT2
+T22	disease 497 544	central and peripheral nervous system disorders
+T23	disease 556 569	schizophrenia
+T24	disease 582 618	affective and cognitive disturbances
+T25	disease 620 638	alcohol dependence
+T27	disease 640 644	pain
+T28	disease 646 654	epilepsy
+T29	disease 656 675	breathing disorders
+T30	disease 680 695	startle disease
+T31	disease 711 724	hyperekplexia
+T32	disease 464 476	pathogenesis
+T34	physiology 795 821	GlyT1 and GlyT2 inhibition
+T36	physiology 873 903	glycine reuptake and transport
+T38	gene 983 1003	glycine transporters
+T39	method 862 869	biology
+T40	drug 919 923	drug
+T4	gene 122 143	endogenous regulators
+R1	abbreviation_for Arg1:T11 Arg2:T13	
+R2	located_in Arg1:T12 Arg2:T14	
+R4	hyponym_of Arg1:T8 Arg2:T4	
+R5	located_in Arg1:T16 Arg2:T10	
+R6	associated_with Arg1:T8 Arg2:T15	
+R7	associated_with Arg1:T8 Arg2:T9	
+R8	hyponym_of Arg1:T20 Arg2:T19	
+R9	hyponym_of Arg1:T21 Arg2:T19	
+R10	associated_with Arg1:T19 Arg2:T22	
+R11	associated_with Arg1:T20 Arg2:T22	
+R12	associated_with Arg1:T21 Arg2:T22	
+R13	hyponym_of Arg1:T23 Arg2:T22	
+R14	hyponym_of Arg1:T24 Arg2:T22	
+R15	hyponym_of Arg1:T25 Arg2:T22	
+R16	hyponym_of Arg1:T27 Arg2:T22	
+R17	hyponym_of Arg1:T28 Arg2:T22	
+R18	hyponym_of Arg1:T29 Arg2:T22	
+R19	hyponym_of Arg1:T30 Arg2:T22	
+R20	hyponym_of Arg1:T30 Arg2:T31	
+R21	hyponym_of Arg1:T31 Arg2:T22	
+R22	associated_with Arg1:T19 Arg2:T23	
+R23	associated_with Arg1:T19 Arg2:T24	
+R24	associated_with Arg1:T19 Arg2:T25	
+R25	associated_with Arg1:T19 Arg2:T27	
+R26	associated_with Arg1:T19 Arg2:T28	
+R27	associated_with Arg1:T19 Arg2:T29	
+R28	associated_with Arg1:T19 Arg2:T30	
+R29	associated_with Arg1:T19 Arg2:T31	
+R30	associated_with Arg1:T20 Arg2:T23	
+R31	associated_with Arg1:T21 Arg2:T23	
+R32	associated_with Arg1:T20 Arg2:T24	
+R33	associated_with Arg1:T21 Arg2:T24	
+R34	associated_with Arg1:T20 Arg2:T25	
+R35	associated_with Arg1:T21 Arg2:T25	
+R36	associated_with Arg1:T20 Arg2:T27	
+R37	associated_with Arg1:T21 Arg2:T27	
+R38	associated_with Arg1:T20 Arg2:T28	
+R39	associated_with Arg1:T21 Arg2:T28	
+R40	associated_with Arg1:T20 Arg2:T29	
+R41	associated_with Arg1:T21 Arg2:T29	
+R42	associated_with Arg1:T20 Arg2:T30	
+R43	associated_with Arg1:T21 Arg2:T30	
+R44	associated_with Arg1:T20 Arg2:T31	
+R45	associated_with Arg1:T21 Arg2:T31	
+R46	associated_with Arg1:T1 Arg2:T2	
+R47	associated_with Arg1:T1 Arg2:T3	
+R48	associated_with Arg1:T1 Arg2:T5	
+R49	associated_with Arg1:T8 Arg2:T10	
+R3	associated_with Arg1:T15 Arg2:T12	

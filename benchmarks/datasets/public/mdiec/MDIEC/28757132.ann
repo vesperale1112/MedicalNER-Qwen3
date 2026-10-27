@@ -1,0 +1,25 @@
+T1	drug 29 37	ketamine
+T2	disease 45 55	depression
+T3	drug 131 139	ketamine
+T4	disease 160 170	depression
+T5	drug 474 482	ketamine
+T6	drug 733 741	ketamine
+T7	disease 758 770	chronic pain
+T8	drug 871 879	ketamine
+T9	method 59 76	systematic review
+T10	method 96 113	systematic review
+T11	method 216 223	MEDLINE
+T12	method 225 231	PubMed
+T13	method 233 241	PsycINFO
+T15	disease 355 366	psychiatric
+T16	method 401 413	neurological
+T19	method 894 903	follow up
+T21	method 812 839	large-scale clinical trials
+T22	Health_factors 779 797	recreational users
+T25	region 385 399	cardiovascular
+T26	disease 368 383	psychotomimetic
+T27	method 315 333	inclusion criteria
+T28	method 247 255	Cochrane
+R1	treatment_for Arg1:T3 Arg2:T4	
+T14	disease 529 540	depresssion
+R2	treatment_for Arg1:T5 Arg2:T14	

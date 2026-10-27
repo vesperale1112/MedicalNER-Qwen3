@@ -1,0 +1,43 @@
+T2	disease 71 96	Major depression disorder
+T3	disease 109 128	psychiatric disease
+T4	disease 238 254	major depression
+T8	disease 1261 1281	psychiatric diseases
+T9	disease 1400 1416	major depression
+T1	disease 25 41	major depression
+#1	AnnotatorNotes T1	C1269683
+T10	gene 45 69	chromosome 12q22-12q23.2
+#2	AnnotatorNotes T10	C1520507
+#3	AnnotatorNotes T2	C1269683
+#4	AnnotatorNotes T3	C0004936
+T12	gene 573 589	chromosomal loci
+T13	method 670 685	genomewide scan
+T16	gene 1289 1311	q arm of chromosome 12
+T17	gene 1420 1431	12q22-q23.2
+R1	hyponym_of Arg1:T2 Arg2:T3	
+T11	disease 632 648	major depression
+T18	gene 1116 1124	D12S1706
+T14	gene 890 898	D12S1300
+T15	disease 854 870	major depression
+R3	associated_with Arg1:T15 Arg2:T14	
+T21	method 900 934	multipoint heterogeneity LOD score
+T22	method 970 986	multiple testing
+T23	method 1071 1105	multipoint heterogeneity LOD score
+T24	method 1176 1192	multiple testing
+T26	Health_factors 383 419	familial history of major depression
+T27	Health_factors 507 530	environmental component
+T20	Health_factors 781 815	family history of major depression
+T7	Health_factors 874 879	males
+T25	Health_factors 161 168	society
+R7	associated_with Arg1:T2 Arg2:T25	
+R8	occurs_in Arg1:T15 Arg2:T7	
+T19	gene 1364 1396	sex-specific predisposition gene
+T28	gene 468 488	predisposition genes
+T29	gene 1243 1248	genes
+T5	gene 0 20	Predisposition locus
+R5	associated_with Arg1:T1 Arg2:T10	
+R6	associated_with Arg1:T4 Arg2:T26	
+T6	signs 699 721	microsatellite markers
+R4	associated_with Arg1:T19 Arg2:T9	
+R9	located_in Arg1:T19 Arg2:T17	
+R10	associated_with Arg1:T29 Arg2:T8	
+R2	located_in Arg1:T29 Arg2:T16	

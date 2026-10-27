@@ -1,0 +1,793 @@
+
+--- PAGE 1 ---
+Supplementary Information for “Large Language
+Model Powered Knowledge Graph Construction
+for Mental Health Exploration“
+Shan Gao1, Kaixian Yu2, Yue Yang3, Sheng Yu4,
+Chenglong Shi5, Xueqin Wang6, Niansheng Tang1*,
+Hongtu Zhu3,7,8,9,10*
+1Yunnan Key Laboratory of Statistical Modeling and Data Analysis,
+Yunnan University, Kunming, 650500, YN, China.
+2Insilicom LLC, Tallahassee, 32303, FL, USA.
+3Department of Biostatistics, University of North Carolina at Chapel
+Hill, Chapel Hill, 27599, NC, USA.
+4Department of Statistics and Data Science, Tsinghua University,
+Beijing, 100084, China.
+5The Second Affiliated Hospital of Kunming Medical University,
+Kunming Medical University, Kunming, 650500, YN, China.
+6School of Management, University of Science and Technology of China,
+Hefei, 230026, AH, China.
+7Department of Genetics, University of North Carolina at Chapel Hill,
+Chapel Hill, 27599, NC, USA.
+8Biomedical Research Imaging Center, University of North Carolina at
+Chapel Hill, Chapel Hill, 27599, NC, USA.
+9Department of Computer Science, University of North Carolina at
+Chapel Hill, Chapel Hill, 27599, NC, USA.
+10Department of Statistics and Operations Research, University of
+North Carolina at Chapel Hill, Chapel Hill, 27599, NC, USA.
+*Corresponding author(s). E-mail(s): nstang@ynu.edu.cn;
+htzhu@email.unc.edu;
+1
+
+
+--- PAGE 2 ---
+1 The Integrated Biomedical Databases
+In this part, we delve into a comprehensive exploration of a wide array of existing
+biomedical databases. These databases are thoughtfully categorized into chemical-
+centric, pathway-centric, gene-centric, and Phenotype/disease-centric databases.
+1. Chemical-centric database
+• Side Effect Resource (SIDER)[1]: contains information on marketed medicines
+and their recorded adverse drug reactions. The information is extracted from public
+documents and package inserts. The available information includes side effect fre-
+quency, drug, and side effect classifications, as well as links to further information,
+for example, drug–target relations.
+• DrugBank[2]: a bioinformatics and cheminformatics knowledge base with rich
+drug data information (i.e., chemical, pharmacological, and pharmaceutical) and
+comprehensive drug target information (i.e., sequence, structure, and pathway).
+• Comparative Toxicogenomics Database (CTD)[3]: a regularly updated,
+chemical-centric resource that curates over 3.4 million evidence-based interactions
+involving chemicals, genes, phenotypes, anatomy, diseases, and exposure across
+multiple species, drawn from chemical-centric manually curated articles.
+2. Pathway-centric database
+• Reactome[4]: provides manually curated molecular details across various physio-
+logical and pathological biological processes in humans, including hereditary and
+acquired disease processes.
+3. Gene-centric database
+• Gene Ontology (GO)[5] [6]: focuses on defining gene activity on the molecular
+level, linking genes to locations in the body where its function is performed, and
+establishing links between genes and biological processes.
+• Bgee[7]: a database for retrieving and comparing gene expression patterns across
+multiple animal species. It provides an intuitive answer to the question ”Where
+is a gene expressed?” and supports cancer, agriculture, and evolutionary biology
+research.
+• ClinVar[8]: a public repository that collects, stores, and displays information on
+human genetic variants and their observed relationships to phenotypes, including
+clinical significance assertions, supportive evidence, and review status, with data
+sourced from clinical testing, research, and literature reports.
+4. Phenotype/diseases-centric database
+• DisGeNET[9]: one of the largest available collections of genes and variants
+involved in human diseases. It integrates data from expert-curated repositories,
+GWAS catalogues[10], animal models, and the scientific literature. DisGeNET
+data are homogeneously annotated with controlled vocabularies and community-
+driven ontologies. Additionally, several original metrics are provided to assist the
+prioritization of genotype–phenotype relationships.
+2
+
+
+--- PAGE 3 ---
+• Human Phenotype Ontology (HPO)[11]: a structured database of over 13,000
+medically relevant phenotypes and disease-phenotype annotations, derived from
+clinical data. Its structure is a directed acyclic graph connected by is-a (subclass-of)
+relationships.
+• Mondo Disease Ontology (MONDO)[12]: a semi-automatically constructed
+ontology that merges multiple disease resources to yield a coherent merged ontology.
+Unlike generic ontology mappings, MONDO employs rigorous semantics to distin-
+guish when two disease names or identifiers are exactly equivalent versus merely
+being related. This meticulous distinction ensures a high level of clarity and precision
+in disease representation and inter-resource mappings.
+5. Anatomy-centric database
+• Uberon[13]: an integrated cross-species ontology consisting of over 6,500 classes rep-
+resenting a variety of anatomical entities, organized according to traditional anatom-
+ical classification criteria. The ontology represents structures in a species-neutral
+way and includes extensive associations to existing species-centric anatomical
+ontologies, allowing the integration of model organism and human data.
+6. The Unified Medical Language System (UMLS)[14]: designed by the US
+National Library of Medicine, is a key resource that includes a Metathesaurus with
+controlled biomedical vocabularies. Concepts within this Metathesaurus are sorted into
+127 semantic types, such as organisms and chemicals, linked by 54 relationships like the
+hierarchical ”isa”. The semantic network catalogs these and includes five major non-
+hierarchical relationship categories, capturing potential connections between instances
+of different types. UMLS aids in medical informatics with natural language processing,
+free access, and quarterly updates.
+2 Entity and Relationship Types
+Through an in-depth analysis of high-impact PubMed articles, we identify ten key
+themes in mental health research, focusing on prevalent mental disorders like depres-
+sion, anxiety, and schizophrenia. These themes include pathogenesis, pharmacological
+interventions, therapeutic approaches, health-related factors, neurotransmitter and
+neural signaling dynamics, neural development and neurobiology, advances in neu-
+roimaging and neurophysiology, genetic influences and polymorphisms, intersections of
+endocrinology and metabolic processes, along with immunological and inflammatory
+responses. We also pinpoint nine entity types (Health Factors, Anatomy, Phenotype,
+Sign, Method/Procedure, Physiology, Gene/Protein, Disease/Symptom, Drug/Chem-
+ical) and seven relationship types (Risk relationships, Diagnostic relationships,
+Characteristic relationships, Association relationships, Therapeutic relationships,
+Hierarchical relationships, and Abbreviation) that are central to mental disorders
+research. These categories offer a structured lens for examining the complexities of
+mental health, thereby enhancing the comprehensiveness of our MDKG.
+3
+
+
+--- PAGE 4 ---
+2.1 Entity Types
+1. Health Factors: This refers to factors that influence a person’s likelihood of devel-
+oping health issues, such as health behaviors, clinical care, social and economic
+factors, and physical environment factors.
+2. Anatomy: This refers to bodily structures, including organs, tissues, cells, and
+other components within living organisms.
+3. Phenotype: This refers to observable or measurable changes in an individual’s
+anatomy, physiology, or signs.
+4. Sign: This refers to measurements or indicators of the body or organ’s functions
+or states, often obtained through laboratory tests or examinations.
+5. Method/Procedure: This refers to techniques or procedures used in research,
+diagnosis, treatment, or prevention of diseases, as well as disciplines and occupa-
+tions related to the biomedical field.
+6. Physiology: This refers to biological, molecular, and cellular functions, including
+mental processes and organ or tissue functions.
+7. Gene/Protein: This refers to a segment of DNA that carries genetic information
+involved in the sequencing of molecules and the formation of proteins, enzymes,
+and receptors.
+8. Disease/Symptom: This refers to various types of abnormalities or dysfunctions,
+including congenital, acquired, injuries, pathologies, mental or behavioral issues,
+and cellular or molecular issues.
+9. Drug/Chemical: This refers to substances with specific structures and func-
+tions, including organic and inorganic compounds, pharmacological substances,
+hormones, and hazardous materials.
+2.2 Relationship Types
+1. Risk relationship: This relationship refers to a factor that increases the likelihood
+of developing a specific disease or a factor that exacerbates the progression of a
+specific disease. For instance, poor dietary habits could increase the risk of heart
+disease, while smoking could exacerbate lung cancer progression.
+2. Diagnostic relationship: The diagnostic relationships in our knowledge graph
+are categorized into two main types. The first type encompasses disease diagnosis
+methods, which include tools and techniques like psychological assessments, neu-
+roimaging technologies, and biochemical tests. The second type involves identifying
+specific features or biomarkers that assist physicians or researchers in diagnosing
+particular diseases or pathological conditions. These features or biomarkers are
+typically characterized by their high diagnostic specificity and sensitivity, enabling
+effective differentiation between healthy and diseased states or among various
+disease states.
+3. Characteristic relationship: Characteristic relationships in the graph describe
+the symptoms, clinical manifestations, or distinct features of a disease. These
+characteristics span multiple dimensions, including physiological, biochemical,
+behavioral, and genetic levels. For example, in the context of depression, character-
+istic relationships might encompass symptoms like persistent sadness, biochemical
+4
+
+
+--- PAGE 5 ---
+factors such as serotonin imbalance, behavioral signs like loss of interest in activities,
+and genetic predispositions.
+4. Association relationship: This relationship describes an association or connec-
+tion between two or more entities, where changes in one entity may correspond
+with changes in another but not necessarily imply a cause-and-effect relationship.
+5. Therapeutic relationship: This relationship type highlights the link between various
+treatments or interventions and their impact on a specific disease or condition.
+It includes a range of treatment methods like medication, psychotherapy, lifestyle
+modifications, surgical procedures, and others.
+6. Hierarchical relationship: This relationship refers to the classification and hier-
+archical structure within the same entity type. For instance, within the ’Disease’
+category, major classifications like ’mental disorders’ could be further divided into
+subclass diseases such as depression, anxiety, and schizophrenia.
+7. Abbreviation relationship: This relationship type refers to the use of abbre-
+viations or acronyms to represent longer terms or phrases, especially in medical
+or technical fields. For example, ’AIDS’ is an abbreviation for ’Acquired Immune
+Deficiency Syndrome’, and ’MRI’ stands for ’Magnetic Resonance Imaging’.
+3 Confidence Score Calculation
+The confidence score integrates multiple quality indicators of scientific statements
+(triplets) using a weighted framework. Each component score is normalized to [0,1]
+and scaled by a predefined weight, ensuring the final score remains within the range
+[0,3]. Prior research on assessing study quality has highlighted key factors influencing
+a study’s credibility and impact, including impact factor, statement frequency, and the
+number of distinct publication years[15–17]. Our framework incorporates these estab-
+lished factors and further refines their contributions based on insights from domain
+experts, ensuring a balanced and context-aware evaluation. The confidence score is
+computed as follows:
+Sconfidence = Sprediction + 0.8 · SIF + 0.6 · SF requency + 0.4 · Syears + 0.2 · Sdate
+−0.5 · Scontradiction
+• Model Prediction Score (Sprediction): Quantifies the base trustworthiness of the
+triplet generated by the prediction model. The model directly outputs the score,
+ranging from [0, 1].
+• Impact Factor Score (SIF ): Reflects the academic influence of the resource.
+SIF (i) = 1 −exp (−αi)
+where i is the average impact factor of the source journal. To align with the 75th
+percentile impact factor value (6.6), the decay coefficient α = 0.25 ensures SIF ≥0.8
+when i ≥6.6.
+• Frequency Score (SF requency): Measures how frequently the triplet appears across
+different resources.
+SF requency(n) = 1 −exp (α(n −1))
+5
+
+
+--- PAGE 6 ---
+where n is the occurrence count of the triplet. With the 75th percentile n = 4, α =
+0.55 ensures SF requency ≥0.8 when n ≥4.
+• Distinct Publication Years Counts Score (Syears): Captures the historical
+consistency of the triplet across years.
+Syears(nt) = 1 −exp (−αnt)
+where nt is the number of distinct publication years. For the 75th percentile nt =
+4, α = 0.4 yields Syears ≥0.8 when nt ≥4.
+• Max Publication Year Score (Sdate): Rewards recency of the triplet’s latest
+publication.
+(
+Sdate(t) = exp (−α(T −t)) ,
+t ≤T
+Sdate(t) = 1,
+t > T
+where T is the reference year (e.g., 2025) and t is the latest publication year. The
+Decay Rate α = 0.1 imposes gradual penalties for older publications.
+• Contradiction Counts Score (Scontradiction): Penalizes conflicting statements
+from other sources.
+Scontradiction(c) = exp (−αc)
+where c is the count of contradictory triplets. α = 0.1 ensures a penalty of 0.8 when
+c = 2.
+In summary, the confidence score aggregates multiple aspects of a resource’s quality
+and relevance, with each factor having a distinct role in shaping the final score. The
+decay functions ensure that the score is adjusted for diminishing returns, while the
+weights reflect the relative importance of each factor in the overall assessment. This
+approach allows for a nuanced evaluation of resources, balancing credibility, academic
+impact, historical significance, recency, and frequency of use. The distribution of con-
+fidence scores across different types of relationships is illustrated in Supplementary
+Figure 1.
+Supplementary Fig. 1: The distribution of confidence scores for different rela-
+tionships.
+6
+
+
+--- PAGE 7 ---
+4 Additional Details of Information Extraction
+4.1 Performance of Relationship Annotation with GPT-4
+We used GPT-4 for pre-annotation, significantly reducing the time and effort required
+for manual annotation. GPT-4 performed two main tasks: (1) identifying noun phrases
+in abstracts and (2) determining whether a specific relationship (e.g., therapeutic or
+risk) existed between annotated entity pairs. The second task was treated as a binary
+classification problem.
+We evaluated GPT-4’s performance by comparing its annotations with manually
+reviewed data from 500 mental health-related abstracts (MDIEC). For entity identi-
+fication, GPT-4 achieved an F1-score of 0.88, with a precision of 0.84 and a recall of
+0.93, demonstrating strong recognition of relevant terms while occasionally including
+non-essential ones. For relationship extraction, performance was assessed against the
+manually reviewed dataset, with results summarized in Supplementary Table 1.
+Supplementary Table 1: Performance of GPT-4 in Relation and
+Conditional Statement Extraction Tasks
+Relationship Types
+GPT-4 F1 Score
+Sample Size
+Hierarchical
+0.92
+1166
+Association
+0.83
+2686
+Characteristic
+0.81
+700
+Risk
+0.85
+1199
+Therapeutic
+0.83
+1239
+Diagnostic
+0.91
+589
+Abbreviation
+0.97
+1112
+Conditional Statement Types
+Occurs in
+0.75
+1225
+Located in
+0.90
+524
+These results indicate that GPT-4 achieves high performance in identifying well-
+defined relationships (F1-scores above 0.9) but shows reduced accuracy for more
+ambiguous categories, such as Characteristic, Risk, Therapeutic, and Occurs in. The
+strong performance in relationship extraction is largely attributable to our reformula-
+tion of the original multi-class task (where the model determined the most appropriate
+relationship among nine possible types) into a binary classification task (where the
+model was only asked whether a specific relationship existed). This reformulation
+reduced categorical complexity, improving model accuracy, but significantly increased
+the cost of model usage.
+4.2 Performance of Triplet Extraction with Spert.pl and
+Refinement with GPT-4o
+Triplet extraction was performed in two stages. First, a BERT-based classification
+model (Spert.pl) was fine-tuned on the MDIEC annotated dataset for named entity
+7
+
+
+--- PAGE 8 ---
+recognition (NER) and relationship extraction (RE) and then applied to unannotated
+abstracts to extract triplets. In the second stage, GPT-4o was used to validate and
+refine the extracted triplets, improving their accuracy and reliability.
+1. The performance of Triplet Extraction
+For the NER task, Spert.pl performed multi-class classification to identify and cat-
+egorize potential entities. For the RE task, the model determined whether a specific
+relationship existed between a given pair of entities. As shown in Supplementary
+Table 2, Spert.pl achieved strong performance in NER (macro F1-score: 0.88), but
+relationship extraction remained challenging (macro F1-score: 0.67). When eval-
+uating the joint NER and RE performance—assessing whether both entities and
+their relationships were correctly identified—the model achieved a macro F1-score
+of 0.63.
+2. The performance of Triplet Validation
+To enhance the accuracy of extracted triplets, GPT-4o was employed for valida-
+tion and refinement. After this process, the micro F1-score for triplet extraction
+improved to 0.79, with micro precision increasing to 0.84. This substantial improve-
+ment significantly enhanced the quality of the knowledge graph while maintaining
+cost efficiency.
+Supplementary Table 2: Performance metrics for NER, RE, and Joint NER & RE tasks
+Task
+Micro-P
+Micro-R
+Micro-F1
+Macro-P
+Macro-R
+Macro-F1
+NER
+0.89
+0.90
+0.89
+0.88
+0.88
+0.88
+RE
+0.69
+0.67
+0.68
+0.68
+0.67
+0.67
+Joint NER & RE
+0.62
+0.65
+0.63
+0.62
+0.65
+0.63
+Valid Joint NER & RE
+0.84
+0.74
+0.79
+0.83
+0.70
+0.76
+4.3 Performance of Table Information Extraction
+We have conducted a manual review to assess the performance of extracting base-
+line characteristics from PDF tables. This review involved evaluating the accuracy of
+the process and identifying the causes of any errors encountered. The results of this
+evaluation are presented in Supplementary Table 3. Out of the 302 total documents
+reviewed, 238 were PDFs, among which 72 contained target tables expected to be
+extracted for analysis.
+The review identified two primary types of errors. The first, Tables Not Found,
+occurred in 12 documents. This issue was primarily caused by two factors: (1) in two
+instances, the system failed to detect tables because their titles spanned multiple pages,
+making it difficult to correctly associate the title with the corresponding data; (2) in
+three cases, the system struggled to identify tables due to unclear or missing keywords
+(in our method, we differentiate tables by locating baseline-related keywords). The
+remaining seven cases were attributed to less identifiable reasons, likely related to
+complex formatting or irregular data layouts.
+8
+
+
+--- PAGE 9 ---
+Supplementary Table 3: Baseline Characteristics Extraction Error Analysis
+Total number of documents
+302
+Total PDFs
+238
+PDFs with target tables
+72
+Error 1. Tables not found
+Reason 1: Issues with table titles across pages
+2
+Reason 2: Issues with keywords
+3
+Other Reasons
+7
+Error 2. The table found but the final answer is wrong
+Reason 1: Incomplete table
+1
+Reason 2: Header issues (headers not extracted)
+3
+Reason 3: Horizontal tables
+1
+Reason 4: Issues attributed to ChatGPT
+5
+a. Incorrect or incomplete grouping with multiple headers
+b. Inaccurate identification of categories such as education and employment
+c. Still provides answers when incorrect tables are input.
+The second error type, Table Found but Final Answer is Wrong, accounted for
+10 documents. The primary causes included incomplete table extraction, missing
+table headers, issues with Horizontal table formats, or incorrect answers generated by
+ChatGPT.
+4.4 Comparative Analysis of Large Language Models for
+Biomedical Information Extraction
+We systematically evaluated the performance of four language models—GPT-4
+(gpt-4), GPT-3 (text-davinci-003), Claude-3-opus, and ChatGPT (GPT-3.5-turbo-
+1106)—on two key biomedical natural language processing (NLP) tasks: named entity
+recognition (NER) and relationship extraction (RE). Both tasks were formulated as
+multi-class classification problems. To benchmark performance, we used MDIEC, a
+dataset of 500 manually annotated medical abstracts from our institutional corpus.
+The dataset included nine entity types (Anatomy, Disease/Symptom, Drug/Chemical,
+Gene/Protein, Health Factors, Method/Procedure, Phenotype, Physiology, and Sign)
+and seven relationship types (Therapeutic, Diagnostic, Risk, Characteristic, Associa-
+tion, Hierarchical, and Abbreviation). A standardized few-shot learning framework was
+applied, and model performance was evaluated using precision, recall, and F1-score
+metrics.
+For NER (Supplementary Table 4), Claude-3-opus demonstrated marginally
+superior performance to GPT-4 (F1: 0.87 vs. 0.85). In relationship extraction (Supple-
+mentary Table 5), GPT-4 achieved superior performance (F1: 0.66 vs. Claude-3-opus:
+0.63). Both models significantly outperformed GPT-3.5-turbo (NER F1: 0.74; RE F1:
+0.55) and GPT-3 (NER F1: 0.63; RE F1: 0.51) across all metrics.
+9
+
+
+--- PAGE 10 ---
+Supplementary Table 4: Comparative Anal-
+ysis of LLMs in Entity Recognition Task
+Model
+Precision
+Recall
+F1-score
+Claude-3-opus
+0.89
+0.85
+0.87
+GPT3
+0.67
+0.59
+0.63
+ChatGPT
+0.71
+0.78
+0.74
+GPT-4
+0.87
+0.84
+0.85
+Supplementary Table 5: Comparative Anal-
+ysis of LLMs in Relationship Extraction Task
+Model
+Precision
+Recall
+F1-score
+Claude-3-opus
+0.64
+0.62
+0.63
+GPT3
+0.45
+0.40
+0.42
+ChatGPT
+0.57
+0.54
+0.55
+GPT-4
+0.67
+0.64
+0.66
+4.5 Comparative Performance of GPT-4 and Spert.pl in
+Named Entity Recognition Task
+We evaluated the performance of Spert.pl (a BERT-based model) and GPT-4 on
+a named entity recognition (NER) task. Spert.pl was fine-tuned on 400 manually
+annotated biomedical abstracts for NER and relationship extraction tasks, while GPT-
+4 was assessed in a few-shot setting. Benchmarking was conducted on a held-out test
+set of 100 annotated abstracts distinct from Spert.pl’s training data. The F1 scores
+across entity types are summarized in Supplementary Table 6.
+Supplementary Table 6: Comparison of F1 Scores for
+Spert.pl and GPT-4 on Named Entity Recognition
+Entity Type
+Spert.pl
+GPT-4
+Sample Size (n)
+Disease/Symptom
+0.89
+0.94
+478
+Gene
+0.83
+0.92
+191
+Health Factors
+0.82
+0.80
+435
+Method/Procedure
+0.90
+0.84
+836
+Anatomy
+0.82
+0.93
+170
+Drug/Chemical
+0.88
+0.93
+180
+Phenotype
+0.78
+0.83
+86
+Physiology
+0.86
+0.89
+279
+Sign
+0.80
+0.83
+68
+Note: Spert.pl was fine-tuned on 400 abstracts; GPT-4 was
+evaluated Few-shot. Test data comprised 100 non-overlapping
+annotated abstracts.
+• Performance on Well-Defined Entities: GPT-4 demonstrated superior accuracy
+(F1 scores: 0.92–0.94) for entities with clear definitions, including Disease/Symptom,
+10
+
+
+--- PAGE 11 ---
+Gene, Anatomy, and Drug/Chemical. This high performance is likely attributable
+to its extensive pretraining on diverse corpora, including biomedical datasets.
+• Ambiguous Entity Challenges: Spert.pl achieved parity or outperformed GPT-
+4 on entities with ambiguous boundaries, such as Method/Procedure (F1: 0.90 vs.
+0.84) and Health Factors (F1: 0.82 vs. 0.80), suggesting task-specific training data
+enhances resolution of contextually complex entities.
+• Data Dependency of Traditional Models: The performance variability of
+Spert.pl (F1: 0.78–0.90) highlights the impact of training data quality and diversity,
+especially for low-sample entities such as Phenotype and Sign.
+• Practical Considerations: Task requirements and cost-efficiency trade-offs should
+guide model selection.
+4.6 The GPT Prompt
+Listing 1: The GPT-4.0 Prompt for Noun Phrases and abbreviations Recognition
+prompt = """
+You should
+extract
+noun
+phrases
+and
+abbreviations
+from the text
+using a JSON format , for
+example: {" Noun
+phrases ": [], "
+Abbreviations ": {}}. The
+sentence is:
+"""
+example_Sent = """
+Outpatients
+with
+Major
+Depression
+Disorder (MDD , n=44) and
+healthy
+controls (HCs , n=28) were
+administered
+the Beck
+Depression
+Inventory -I (BDI -I), the Three -Dimensional
+Psychological
+Pain
+Scale (TDPPS), and the Beck
+Scale for
+Suicide
+Ideation (BSS), and then
+patients
+were
+allocated
+to two groups: suicide
+attempts (MDD -SA , n=12) and
+suicidal
+ideation (MDD -SI , n=32).
+"""
+example_answer = """
+{" Noun
+phrases ": [" Outpatients
+with
+Major
+Depression
+Disorder
+", "Healthy
+controls", "Beck
+Depression
+Inventory -I", "
+Three -Dimensional
+Psychological
+Pain
+Scale", "Beck
+Scale
+for
+Suicide
+Ideation", "Suicide
+attempts", "Suicidal
+ideation "], "Abbreviations ": {"MDD": "Major
+Depression
+Disorder", "HC": "Healthy
+controls", "BDI -I": "Beck
+Depression
+Inventory -I", "TDPPS ": "Three -Dimensional
+Psychological
+Pain
+Scale", "BSS": "Beck
+Scale for
+Suicide
+Ideation", "MDD -SA": "Major
+Depression
+Disorder - Suicide
+Attempts", "MDD -SI": "Major
+Depression
+Disorder - Suicidal
+Ideation "}}
+"""
+{" role ": "system", "content ": "You are a helpful
+assistant
+designed to output
+JSON ."},
+11
+
+
+--- PAGE 12 ---
+{" role ": "user", "content ": prompt + example_Sent},
+{" role ": "assistant", "content ": example_answer },
+{" role ": "user", "content ": prompt + Target
+sent}
+Listing 2: The GPT-3.5 Prompt for Cohort Name Extraction
+prompt = """
+list the study
+population
+cohort
+name or biobank
+name in this
+study
+using a JSON form with "population
+name"
+"""
+5 Additional Details For Disease Prediction
+Supplementary Table 7: The Excluded Phecodes for the
+Control Group (Phecodes 295-306.99)
+Phecode
+Phenotype
+295.3
+Psychosis
+296
+Mood disorders
+300.1
+Anxiety disorder
+295.1
+Schizophrenia
+296.22
+Major depressive disorder
+301.1
+Schizoid personality disorder
+296.1
+Bipolar
+301
+Personality disorders
+300.4
+Dysthymic disorder
+300.13
+Phobia
+300.12
+Agoraphobia, social phobia, and panic disorder
+300.11
+Generalized anxiety disorder
+300.3
+Obsessive-compulsive disorders
+300.8
+Acute reaction to stress
+300.9
+Posttraumatic stress disorder
+304
+Adjustment reaction
+303.1
+Dissociative disorder
+303
+Psychogenic and somatoform disorders
+295
+Schizophrenia and other psychotic disorders
+303.4
+Somatoform disorder
+303.3
+Psychogenic disorder
+300
+Anxiety, phobic and dissociative disorders
+306
+Other mental disorder
+305.2
+Eating disorder
+305.21
+Anorexia nervosa
+302
+Sexual and gender identity disorders
+301.2
+Antisocial/borderline personality disorder
+306.9
+Tension headache
+297.2
+Suicide or self-inflicted injury
+297
+Suicidal ideation or attempt
+12
+
+
+--- PAGE 13 ---
+References
+1.
+Kuhn, M., Letunic, I., Jensen, L. J. & Bork, P. The SIDER database of drugs
+and side effects. eng. Nucleic Acids Research 44, D1075–1079. issn: 1362-4962
+(Jan. 2016).
+2.
+Wishart, D. S. et al. DrugBank 5.0: a major update to the DrugBank database
+for 2018. eng. Nucleic Acids Research 46, D1074–D1082. issn: 1362-4962 (Jan.
+2018).
+3.
+Davis, A. P. et al. Comparative Toxicogenomics Database (CTD): update 2023.
+Nucleic Acids Research 51, D1257–D1262. issn: 0305-1048. https://doi.org/10.
+1093/nar/gkac833 (2023) (Jan. 2023).
+4.
+Gillespie, M. et al. The reactome pathway knowledgebase 2022. Nucleic Acids
+Research 50, D687–D692. issn: 0305-1048. https : / / doi . org / 10 . 1093 / nar /
+gkab1028 (2023) (Jan. 2022).
+5.
+Gene Ontology Consortium et al. The Gene Ontology knowledgebase in 2023.
+eng. Genetics 224, iyad031. issn: 1943-2631 (May 2023).
+6.
+Ashburner, M. et al. Gene Ontology: tool for the unification of biology. en. Nature
+Genetics 25. Number: 1 Publisher: Nature Publishing Group, 25–29. issn: 1546-
+1718. https://www.nature.com/articles/ng0500 25 (2023) (May 2000).
+7.
+Bastian, F. B. et al. The Bgee suite: integrated curated expression atlas and
+comparative transcriptomics in animals. Nucleic Acids Research 49, D831–D847.
+issn: 0305-1048. https://doi.org/10.1093/nar/gkaa793 (2023) (Jan. 2021).
+8.
+Landrum, M. J. et al. ClinVar: improvements to accessing data. eng. Nucleic
+Acids Research 48, D835–D844. issn: 1362-4962 (Jan. 2020).
+9.
+Pi˜nero, J. et al. DisGeNET: a comprehensive platform integrating information on
+human disease-associated genes and variants. Nucleic Acids Research 45, D833–
+D839. issn: 0305-1048. https://doi.org/10.1093/nar/gkw943 (2023) (Jan. 2017).
+10.
+Sollis, E. et al. The NHGRI-EBI GWAS Catalog: knowledgebase and deposition
+resource. Nucleic Acids Research 51, D977–D985. issn: 0305-1048. https://doi.
+org/10.1093/nar/gkac1010 (2023) (Jan. 2023).
+11.
+K¨ohler, S. et al. The Human Phenotype Ontology in 2021. eng. Nucleic Acids
+Research 49, D1207–D1217. issn: 1362-4962 (Jan. 2021).
+12.
+Vasilevsky, N. A. et al. Mondo: Unifying diseases for the world, by the world en.
+Pages: 2022.04.13.22273750. May 2022. https://www.medrxiv.org/content/10.
+1101/2022.04.13.22273750v3 (2023).
+13.
+Mungall, C. J., Torniai, C., Gkoutos, G. V., Lewis, S. E. & Haendel, M. A.
+Uberon, an integrative multi-species anatomy ontology. eng. Genome Biology 13,
+R5. issn: 1474-760X (Jan. 2012).
+14.
+Bodenreider, O. The Unified Medical Language System (UMLS): integrating
+biomedical terminology. Nucleic Acids Research 32, D267–D270. issn: 0305-1048.
+https://www.ncbi.nlm.nih.gov/pmc/articles/PMC308795/ (2023) (Jan. 2004).
+15.
+Thelwall, M. et al. In which fields are citations indicators of research quality?
+Journal of the Association for Information Science and Technology 74, 941–953
+(2023).
+16.
+Shanta, A., Pradhan, A. & Sharma, S. Impact factor of a scientific journal: is it
+a measure of quality of research? 2013.
+13
+
+
+--- PAGE 14 ---
+17.
+Kousha, K. & Thelwall, M. Factors associating with or predicting more cited or
+higher quality journal articles: An Annual Review of Information Science and
+Technology (ARIST) paper. Journal of the Association for Information Science
+and Technology 75, 215–244 (2024).
+14

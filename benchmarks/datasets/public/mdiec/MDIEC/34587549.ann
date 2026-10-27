@@ -1,0 +1,54 @@
+T1	disease 521 538	suicidal ideation
+T2	disease 571 590	depressive symptoms
+T3	disease 625 632	anxiety
+T4	Health_factors 674 691	domestic violence
+T5	disease 946 963	mental ill-health
+T6	disease 1069 1085	Covid-19 illness
+T7	disease 1347 1378	Depressive and anxiety symptoms
+T9	disease 1551 1568	Suicidal ideation
+T12	Health_factors 1906 1923	domestic violence
+T13	disease 1953 1972	depressive symptoms
+T14	Health_factors 42 60	SARS-CoV2 pandemic
+T15	method 62 99	Representative cross-sectional survey
+T16	method 540 568	Beck Suicidal Ideation Scale
+T17	method 592 622	Patient Health Questionnaire-9
+T18	method 634 667	Hospital Anxiety Depression Scale
+T19	Health_factors 750 761	Demographic
+T20	Health_factors 766 796	Covid-19 specific occupational
+T21	method 862 895	multivariable regression analyses
+T22	Health_factors 1153 1166	mental health
+T23	Health_factors 1014 1023	Young age
+T24	Health_factors 1025 1059	working in healthcare or from home
+T25	disease 1224 1232	Covid-19
+T27	disease 1435 1445	depression
+T8	disease 1760 1776	Covid-19 illness
+T10	Health_factors 1484 1501	Domestic violence
+T11	Health_factors 1535 1549	hard lockdowns
+T28	Health_factors 1621 1641	second hard lockdown
+T29	Health_factors 1457 1482	second phase of lockdowns
+T30	Health_factors 2021 2035	hard lockdowns
+R10	associated_with Arg1:T12 Arg2:T30	
+R11	associated_with Arg1:T13 Arg2:T30	
+T31	disease 2097 2105	Covid-19
+T32	Health_factors 432 450	Austrian residents
+T33	Health_factors 1324 1345	governmental measures
+T34	Health_factors 1672 1677	women
+T35	Health_factors 1682 1694	young people
+T36	method 1643 1667	Mental health indicators
+T37	Health_factors 2037 2053	Healthcare staff
+T38	Health_factors 2055 2084	individuals working from home
+T39	Health_factors 2118 2130	young people
+T40	Health_factors 2135 2140	women
+T41	Health_factors 236 244	pandemic
+T42	Health_factors 740 748	pandemic
+T43	Health_factors 335 343	pandemic
+T44	Health_factors 1821 1829	pandemic
+T45	Health_factors 2255 2263	pandemic
+T46	Health_factors 0 13	Mental health
+T47	Health_factors 259 272	mental health
+T48	Health_factors 1869 1891	mental health outcomes
+R4	associated_with Arg1:T41 Arg2:T47	
+R6	associated_with Arg1:T10 Arg2:T11	
+T49	disease 801 810	morbidity
+R2	associated_with Arg1:T27 Arg2:T29	
+R3	associated_with Arg1:T9 Arg2:T28	

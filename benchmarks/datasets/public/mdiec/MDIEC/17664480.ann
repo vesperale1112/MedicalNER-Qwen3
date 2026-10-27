@@ -1,0 +1,74 @@
+T0	disease 23 44	terminally ill cancer
+T1	disease 110 117	anxiety
+T2	disease 122 132	depression
+T3	method 77 93	laboratory tests
+T5	Health_factors 280 311	individual psychological coping
+T6	Health_factors 439 449	physicians
+T8	disease 652 669	clinical symptoms
+T9	method 713 726	self-reported
+T10	disease 727 745	emotional distress
+T11	method 747 784	Hospital Anxiety and Depression Scale
+T13	method 691 707	laboratory tests
+T15	Health_factors 852 861	prognoses
+T17	disease 1165 1169	died
+T18	disease 1343 1357	primary cancer
+T19	disease 1359 1366	fatigue
+T20	disease 1368 1375	dyspnea
+T21	disease 1403 1419	brain metastases
+T22	physiology 1421 1433	leukocytosis
+T24	gene 1435 1456	lactate dehydrogenase
+T25	gene 1458 1461	LDH
+T26	disease 1464 1474	depression
+T27	disease 1480 1487	anxiety
+T28	drug 1384 1401	strong analgesics
+T29	physiology 1323 1341	performance status
+T30	method 1242 1261	univariate analysis
+T31	disease 1515 1543	colorectal and breast cancer
+T32	disease 1579 1595	brain metastases
+T33	disease 1660 1667	dyspnea
+T34	gene 1669 1672	LDH
+T35	physiology 1678 1690	leukocytosis
+T36	method 1492 1513	multivariate analysis
+T37	Health_factors 1550 1569	favorable prognosis
+T38	Health_factors 1714 1728	poor prognosis
+T39	drug 1641 1658	strong analgesics
+T40	Health_factors 1768 1778	physicians
+T41	disease 1856 1861	death
+T43	method 1863 1876	Self-reported
+T44	disease 1877 1895	emotional distress
+T47	Health_factors 250 268	prognostic factors
+T48	Health_factors 270 273	PFs
+R1	abbreviation_for Arg1:T48 Arg2:T47	
+T7	Health_factors 468 493	institutional tumor board
+T49	method 537 560	palliative radiotherapy
+T12	method 917 932	kappa statistic
+T14	physiology 671 689	performance status
+R2	abbreviation_for Arg1:T25 Arg2:T24	
+T16	Health_factors 1306 1314	survival
+R3	associated_with Arg1:T16 Arg2:T29	
+R4	associated_with Arg1:T16 Arg2:T18	
+R5	associated_with Arg1:T16 Arg2:T19	
+R6	associated_with Arg1:T16 Arg2:T20	
+R7	associated_with Arg1:T16 Arg2:T28	
+R8	associated_with Arg1:T16 Arg2:T21	
+R9	associated_with Arg1:T16 Arg2:T22	
+R10	associated_with Arg1:T16 Arg2:T24	
+R11	associated_with Arg1:T16 Arg2:T25	
+R12	associated_with Arg1:T16 Arg2:T26	
+R13	associated_with Arg1:T16 Arg2:T27	
+T23	Health_factors 0 8	Survival
+T50	Health_factors 155 184	survival of palliative cancer
+T51	Health_factors 230 238	survival
+T52	Health_factors 1119 1127	survival
+T53	Health_factors 1780 1788	survival
+T54	Health_factors 1942 1950	survival
+T55	method 1597 1625	Karnofsky performance status
+R14	associated_with Arg1:T32 Arg2:T38	
+R15	associated_with Arg1:T55 Arg2:T38	
+R16	associated_with Arg1:T39 Arg2:T38	
+R17	associated_with Arg1:T33 Arg2:T38	
+R18	associated_with Arg1:T34 Arg2:T38	
+R19	associated_with Arg1:T35 Arg2:T38	
+T42	Health_factors 1900 1913	objective PFs
+R20	characteristic_of Arg1:T37 Arg2:T31	
+T4	Health_factors 336 344	Survival

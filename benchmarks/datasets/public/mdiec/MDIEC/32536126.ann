@@ -1,0 +1,84 @@
+T1	drug 25 40	serum glutamate
+T2	drug 45 68	gamma-aminobutyric acid
+T3	disease 93 120	bipolar depressive disorder
+T4	disease 125 150	major depression disorder
+T5	drug 203 212	glutamate
+T6	drug 214 217	Glu
+T7	drug 223 247	gamma- aminobutyric acid
+T8	drug 249 253	GABA
+T9	disease 270 280	depressive
+T10	disease 294 310	bipolar disorder
+T11	disease 325 344	depressive episodes
+T12	disease 410 420	depression
+T13	disease 422 432	depression
+T14	disease 461 487	bipolar depressive episode
+T15	disease 489 507	bipolar depression
+T16	disease 727 737	depression
+T17	disease 742 749	anxiety
+T20	gene 884 901	Glu decarboxylase
+T21	gene 903 906	GAD
+T22	drug 982 991	serum Glu
+T23	signs 1065 1079	Glu/GABA ratio
+T25	disease 1139 1149	depression
+T26	disease 1154 1172	bipolar depression
+T27	gene 1239 1243	GABA
+T28	gene 1456 1466	serum GABA
+T29	disease 1470 1488	bipolar depression
+T30	disease 1518 1528	depression
+T32	gene 1545 1553	Glu/GABA
+T33	disease 1568 1586	bipolar depression
+T34	disease 1606 1616	depression
+T35	gene 1646 1656	serum GABA
+T36	disease 1660 1670	depression
+T37	method 1708 1734	HAMD sleep disorder factor
+T38	disease 1772 1782	depression
+T39	disease 1787 1805	bipolar depression
+T44	disease 1990 2008	bipolar depression
+R1	abbreviation_for Arg1:T6 Arg2:T5	
+T45	drug 197 212	serum glutamate
+R2	abbreviation_for Arg1:T8 Arg2:T7	
+T46	method 622 638	healthy controls
+T47	method 640 655	healthy control
+T48	method 767 804	17 items of Hamilton depression scale
+T49	method 806 813	HAMD-17
+R3	abbreviation_for Arg1:T49 Arg2:T48	
+T50	method 819 841	Hamilton Anxiety Scale
+T51	method 843 847	HAMA
+R4	abbreviation_for Arg1:T51 Arg2:T50	
+R5	help_diagnose Arg1:T48 Arg2:T16	
+R6	help_diagnose Arg1:T49 Arg2:T16	
+R7	help_diagnose Arg1:T50 Arg2:T17	
+R8	help_diagnose Arg1:T51 Arg2:T17	
+T53	gene 854 901	serum levels of Glu, GABA and Glu decarboxylase
+R9	abbreviation_for Arg1:T21 Arg2:T20	
+T54	method 925 958	enzyme-linked immunosorbent assay
+T55	method 960 965	ELISA
+R10	abbreviation_for Arg1:T55 Arg2:T54	
+T57	method 1206 1221	healthy control
+T58	gene 1333 1336	GAD
+T59	method 1420 1435	healthy control
+R11	associated_with Arg1:T35 Arg2:T37	
+T62	disease 1811 1857	abnormal levels of Glu, GABA neurotransmitters
+R12	characteristic_of Arg1:T62 Arg2:T38	
+R13	characteristic_of Arg1:T62 Arg2:T39	
+T40	region 1896 1912	peripheral blood
+T63	method 1 21	Comparative analysis
+T42	disease 1862 1892	imbalance between Glu and GABA
+R14	characteristic_of Arg1:T42 Arg2:T39	
+R15	characteristic_of Arg1:T42 Arg2:T38	
+T52	method 552 562	psychiatry
+R17	characteristic_of Arg1:T22 Arg2:T25	
+R18	characteristic_of Arg1:T23 Arg2:T25	
+R19	characteristic_of Arg1:T22 Arg2:T26	
+R20	characteristic_of Arg1:T23 Arg2:T26	
+R21	characteristic_of Arg1:T27 Arg2:T25	
+R22	characteristic_of Arg1:T27 Arg2:T26	
+R23	characteristic_of Arg1:T58 Arg2:T25	
+R24	characteristic_of Arg1:T58 Arg2:T26	
+R26	characteristic_of Arg1:T32 Arg2:T33	
+R35	help_diagnose Arg1:T54 Arg2:T53	
+R36	help_diagnose Arg1:T55 Arg2:T53	
+R37	occurs_in Arg1:T35 Arg2:T36	
+R27	located_in Arg1:T42 Arg2:T40	
+R28	located_in Arg1:T62 Arg2:T40	
+R25	characteristic_of Arg1:T28 Arg2:T29	

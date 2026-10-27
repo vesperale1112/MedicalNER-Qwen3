@@ -1,0 +1,76 @@
+T1	gene 0 17	Oxytocin Receptor
+T2	disease 77 106	Obsessive-Compulsive Disorder
+T3	disease 121 150	Obsessive-compulsive disorder
+T4	disease 152 155	OCD
+T5	gene 18 22	Gene
+T6	physiology 23 38	DNA Methylation
+T7	signs 42 51	Biomarker
+T8	physiology 55 73	Treatment Response
+T9	symptom 181 191	chronicity
+T11	signs 248 272	therapy response markers
+T12	physiology 282 325	fast and personalized treatment adaptations
+T15	gene 389 406	oxytocin receptor
+T16	gene 408 412	OXTR
+T17	disease 450 466	OCD pathogenesis
+T18	disease 556 559	OCD
+T20	gene 414 418	gene
+T23	signs 468 486	epigenetic markers
+T24	physiology 366 381	DNA methylation
+T25	physiology 336 357	epigenetic mechanisms
+T28	physiology 655 671	OXTR methylation
+T29	disease 706 709	OCD
+T30	method 598 621	therapyepigenetic study
+T31	disease 751 754	OCD
+T32	Health_factors 759 766	females
+T33	Health_factors 789 792	age
+T34	Health_factors 798 801	sex
+T35	method 810 826	healthy controls
+T36	Health_factors 735 745	inpatients
+T39	method 880 941	standardized, OCD-specific cognitive-behavioral psychotherapy
+T42	method 984 1021	Yale-Brown Obsessive Compulsive Scale
+T45	method 1152 1180	sodium bisulfite-treated DNA
+T46	region 1196 1207	blood cells
+T47	physiology 1088 1113	OXTR exon III methylation
+T48	method 1138 1148	sequencing
+T51	method 1291 1307	healthy controls
+T52	disease 1312 1315	OCD
+T54	physiology 1333 1349	OXTR methylation
+T55	physiology 1371 1398	impaired treatment response
+T57	physiology 1552 1570	treatment response
+T58	physiology 1516 1536	baseline methylation
+T59	physiology 1676 1697	OXTR hypermethylation
+T61	symptom 1793 1804	compulsions
+T62	disease 1773 1783	obsessions
+T64	physiology 1703 1730	impaired treatment response
+T68	disease 1911 1914	OCD
+T69	disease 1993 1996	OCD
+T70	physiology 1880 1907	impaired treatment response
+R1	occurs_in Arg1:T8 Arg2:T2	
+R2	abbreviation_for Arg1:T4 Arg2:T3	
+T13	physiology 196 216	treatment resistance
+R3	associated_with Arg1:T3 Arg2:T9	
+R4	associated_with Arg1:T4 Arg2:T9	
+R5	associated_with Arg1:T3 Arg2:T13	
+R6	associated_with Arg1:T4 Arg2:T13	
+R7	abbreviation_for Arg1:T16 Arg2:T15	
+R8	occurs_in Arg1:T24 Arg2:T15	
+R9	occurs_in Arg1:T24 Arg2:T16	
+R10	hyponym_of Arg1:T24 Arg2:T25	
+R11	associated_with Arg1:T24 Arg2:T17	
+R12	occurs_in Arg1:T36 Arg2:T31	
+T10	method 1023 1029	Y-BOCS
+R13	abbreviation_for Arg1:T10 Arg2:T42	
+T14	physiology 1228 1249	OXTR hypermethylation
+T19	disease 1266 1269	OCD
+R14	associated_with Arg1:T14 Arg2:T19	
+R15	occurs_in Arg1:T52 Arg2:T54	
+R16	associated_with Arg1:T54 Arg2:T55	
+T21	method 1476 1482	Y-BOCS
+R17	associated_with Arg1:T58 Arg2:T57	
+R18	help_diagnose Arg1:T48 Arg2:T47	
+T22	method 1617 1623	Y-BOCS
+R19	associated_with Arg1:T59 Arg2:T64	
+T26	physiology 1820 1841	OXTR hypermethylation
+R20	risk_factor_of Arg1:T26 Arg2:T70	
+R21	occurs_in Arg1:T70 Arg2:T68	
+T27	method 1959 1981	personalized treatment

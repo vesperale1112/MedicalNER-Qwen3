@@ -1,0 +1,118 @@
+T0	disease 82 95	schizophrenia
+T1	physiology 32 64	antipsychotic treatment response
+T2	method 99 128	genome-wide association study
+T3	drug 141 160	Antipsychotic drugs
+T4	disease 169 191	schizophrenia symptoms
+T5	disease 220 227	relapse
+T6	physiology 233 251	treatment response
+T8	gene 298 313	genetic factors
+T9	physiology 330 348	treatment response
+T10	disease 442 455	schizophrenia
+T11	method 359 388	genome-wide association study
+T12	physiology 392 424	antipsychotic treatment response
+T15	disease 512 525	schizophrenia
+T17	method 586 636	Chinese Antipsychotics Pharmacogenomics Consortium
+T19	method 471 487	discovery cohort
+T20	drug 726 736	olanzapine
+T21	drug 738 749	risperidone
+T22	drug 751 761	quetiapine
+T23	drug 763 775	aripiprazole
+T24	drug 777 788	ziprasidone
+T25	drug 794 805	haloperidol
+T26	drug 809 821	perphenazine
+T27	drug 841 852	haloperidol
+T28	drug 856 868	perphenazine
+T31	method 1004 1040	Positive and Negative Syndrome Scale
+T32	physiology 936 958	Antipsychotic response
+T34	gene 1075 1079	SNPs
+T35	physiology 1120 1138	treatment response
+T37	gene 1042 1073	Single-nucleotide polymorphisms
+T38	drug 1404 1414	olanzapine
+T39	drug 1416 1427	risperidone
+T40	drug 1432 1444	aripiprazole
+T44	method 1296 1346	Chinese Antipsychotics Pharmacogenetics Consortium
+T45	method 1249 1266	validation cohort
+T47	gene 1140 1179	Linkage-disequilibrium-independent SNPs
+T50	method 1522 1539	validation cohort
+T51	method 1473 1489	discovery cohort
+T52	gene 1612 1622	rs72790443
+T53	gene 1626 1632	MEGF10
+T54	gene 1659 1665	SLC1A1
+T55	gene 1683 1692	rs9291547
+T56	gene 1696 1701	PCDH7
+T58	gene 1606 1610	SNPs
+T59	gene 1646 1655	rs1471786
+T60	physiology 1741 1773	antipsychotic treatment response
+T61	method 1779 1809	genome-wide significance level
+T63	method 1562 1578	discovery cohort
+T65	method 1852 1869	validation cohort
+T66	gene 2079 2085	MEGF10
+T67	gene 2112 2118	SLC1A1
+T68	gene 2145 2150	PCDH7
+T69	gene 2178 2185	CNTNAP5
+T70	gene 2216 2220	TNIK
+T72	physiology 2031 2063	antipsychotic treatment response
+T73	gene 2065 2075	rs72790443
+T74	gene 2099 2108	rs1471786
+T75	gene 2132 2141	rs9291547
+T77	method 1981 2017	genome-wide significant associations
+T78	gene 1968 1972	loci
+T79	method 1909 1941	discovery and validation cohorts
+T81	gene 2325 2338	rs2239063 SNP
+T82	gene 2342 2349	CACNA1C
+T84	gene 2430 2436	SLC1A1
+T86	gene 2522 2527	CNTN4
+T87	drug 2570 2582	aripiprazole
+T89	physiology 2370 2388	treatment response
+T90	gene 2416 2426	rs16921385
+T91	physiology 2457 2475	treatment response
+T92	gene 2508 2518	rs17022006
+T93	physiology 2548 2566	treatment response
+T95	gene 2632 2637	genes
+T97	drug 2756 2770	antipsychotics
+T98	gene 2668 2694	neurotransmitter receptors
+T99	physiology 2649 2666	synaptic function
+T100	disease 2953 2966	schizophrenia
+T101	physiology 2838 2857	treatment responses
+T102	signs 2878 2888	biomarkers
+T103	drug 2922 2935	antipsychotic
+T107	gene 11 15	loci
+R1	occurs_in Arg1:T1 Arg2:T0	
+R2	treatment_for Arg1:T3 Arg2:T4	
+R3	treatment_for Arg1:T3 Arg2:T5	
+R4	occurs_in Arg1:T12 Arg2:T10	
+T7	Health_factors 534 555	psychiatric hospitals
+R5	help_diagnose Arg1:T31 Arg2:T32	
+R6	abbreviation_for Arg1:T34 Arg2:T37	
+R7	located_in Arg1:T52 Arg2:T53	
+R8	located_in Arg1:T59 Arg2:T54	
+R9	located_in Arg1:T55 Arg2:T56	
+R10	associated_with Arg1:T58 Arg2:T60	
+R11	associated_with Arg1:T52 Arg2:T60	
+R12	associated_with Arg1:T59 Arg2:T60	
+R13	associated_with Arg1:T55 Arg2:T60	
+R14	located_in Arg1:T73 Arg2:T66	
+R15	located_in Arg1:T74 Arg2:T67	
+R16	located_in Arg1:T75 Arg2:T68	
+T14	gene 2203 2212	rs6444970
+R18	located_in Arg1:T14 Arg2:T70	
+R19	associated_with Arg1:T72 Arg2:T73	
+R20	associated_with Arg1:T72 Arg2:T74	
+R21	associated_with Arg1:T72 Arg2:T75	
+T16	gene 2164 2174	rs12711680
+R17	located_in Arg1:T16 Arg2:T69	
+R22	associated_with Arg1:T72 Arg2:T16	
+R23	associated_with Arg1:T72 Arg2:T14	
+R24	located_in Arg1:T81 Arg2:T82	
+R25	associated_with Arg1:T81 Arg2:T29	
+R26	located_in Arg1:T90 Arg2:T84	
+R27	associated_with Arg1:T90 Arg2:T18	
+R28	located_in Arg1:T92 Arg2:T86	
+R29	associated_with Arg1:T86 Arg2:T87	
+T18	drug 2479 2490	risperidone
+T29	drug 2392 2402	olanzapine
+T30	disease 2700 2713	schizophrenia
+R30	associated_with Arg1:T107 Arg2:T1	
+R31	associated_with Arg1:T8 Arg2:T9	
+R32	associated_with Arg1:T95 Arg2:T97	
+T13	method 655 673	inclusion criteria

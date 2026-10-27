@@ -1,0 +1,89 @@
+T0	disease 13 53	Attention-Deficit/Hyperactivity Disorder
+T1	Health_factors 57 68	Adolescents
+T2	method 72 89	Systematic Review
+T3	disease 111 151	attention-deficit/hyperactivity disorder
+T4	disease 153 157	ADHD
+T5	Health_factors 182 193	adolescents
+T6	Health_factors 218 227	adulthood
+T7	Health_factors 276 284	children
+T9	disease 306 310	ADHD
+T10	Health_factors 324 335	adolescents
+T12	method 376 418	pharmacological and psychosocial treatment
+T13	disease 422 426	ADHD
+T14	Health_factors 430 441	adolescents
+T19	method 491 498	MEDLINE
+T20	method 500 508	PsycINFO
+T21	method 510 514	ERIC
+T22	method 524 563	Cochrane Database of Systematic Reviews
+T23	Health_factors 669 680	adolescents
+T25	method 804 873	McMaster University Effective Public Health Practice Project criteria
+T26	method 937 987	Oxford Centre for Evidence-Based Medicine criteria
+T28	method 1008 1034	randomized clinical trials
+T29	method 1041 1054	meta-analysis
+T30	method 1088 1131	pharmacological and psychosocial treatments
+T31	disease 1136 1140	ADHD
+T32	Health_factors 1144 1155	adolescents
+T33	Health_factors 1156 1160	aged
+T36	drug 1239 1271	extended-release methylphenidate
+T38	drug 1391 1402	atomoxetine
+T41	drug 1276 1315	amphetamine class stimulant medications
+T42	drug 1416 1478	extended-release 2-adrenergic agonists guanfacine or clonidine
+T43	method 1335 1385	Oxford Centre for Evidence-Based Medicine criteria
+T44	method 1556 1573	ADHD Rating Scale
+T45	drug 1642 1680	stimulant and nonstimulant medications
+T47	method 1575 1586	score range
+T50	disease 1966 1992	parent-rated ADHD symptoms
+T53	method 1925 1927	SD
+T55	Health_factors 2045 2070	interpersonal functioning
+T56	disease 1994 2039	co-occurring emotional or behavioral symptoms
+T58	method 2072 2095	Psychosocial treatments
+T59	Health_factors 2172 2206	academic and organizational skills
+T65	Health_factors 2449 2460	adolescents
+T66	disease 2441 2445	ADHD
+T67	drug 2310 2342	extended-release methylphenidate
+T68	disease 2672 2676	ADHD
+T72	Health_factors 2710 2744	academic and organizational skills
+T73	method 2533 2557	motivational enhancement
+T75	Health_factors 2778 2789	adolescents
+T78	method 2801 2853	combined pharmacological and psychosocial treatments
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+R2	occurs_in Arg1:T0 Arg2:T1	
+R3	associated_with Arg1:T3 Arg2:T5	
+R4	associated_with Arg1:T4 Arg2:T5	
+R5	associated_with Arg1:T3 Arg2:T6	
+R6	associated_with Arg1:T4 Arg2:T6	
+R7	occurs_in Arg1:T13 Arg2:T14	
+T8	method 478 489	CINAHL Plus
+T18	disease 651 655	ADHD
+R8	occurs_in Arg1:T18 Arg2:T23	
+R9	occurs_in Arg1:T31 Arg2:T32	
+R10	associated_with Arg1:T44 Arg2:T45	
+T11	method 1761 1859	psychosocial treatments combining behavioral, cognitive behavioral, and skills training techniques
+T15	method 1942 1949	Cohen d
+R11	treatment_for Arg1:T11 Arg2:T50	
+R12	treatment_for Arg1:T11 Arg2:T56	
+R13	associated_with Arg1:T11 Arg2:T55	
+T16	method 2130 2137	Cohen d
+R14	treatment_for Arg1:T58 Arg2:T59	
+T17	Health_factors 2216 2235	homework completion
+T24	Health_factors 2240 2251	planner use
+R15	hyponym_of Arg1:T17 Arg2:T59	
+R16	hyponym_of Arg1:T24 Arg2:T59	
+R17	treatment_for Arg1:T58 Arg2:T17	
+R18	treatment_for Arg1:T58 Arg2:T24	
+T27	drug 2347 2371	amphetamine formulations
+T34	drug 2373 2384	atomoxetine
+T35	drug 2390 2417	extended-release guanfacine
+R19	occurs_in Arg1:T66 Arg2:T65	
+R20	treatment_for Arg1:T67 Arg2:T66	
+R21	treatment_for Arg1:T27 Arg2:T66	
+R22	treatment_for Arg1:T34 Arg2:T66	
+R23	treatment_for Arg1:T35 Arg2:T66	
+T37	method 2462 2531	Psychosocial treatments incorporating behavior contingency management
+T39	method 2563 2626	academic, organizational, and social skills training techniques
+R24	treatment_for Arg1:T37 Arg2:T68	
+R25	treatment_for Arg1:T73 Arg2:T68	
+R26	treatment_for Arg1:T39 Arg2:T68	
+R27	treatment_for Arg1:T37 Arg2:T72	
+R28	treatment_for Arg1:T73 Arg2:T72	
+R29	treatment_for Arg1:T39 Arg2:T72	

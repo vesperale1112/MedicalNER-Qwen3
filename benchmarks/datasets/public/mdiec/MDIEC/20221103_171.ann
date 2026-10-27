@@ -1,0 +1,5 @@
+T2	disease 50 60	depression
+T3	disease 100 110	depression
+T4	drug 138 141	NDP
+R1	associated_with Arg1:T3 Arg2:T4	
+T1	method 19 32	interventions

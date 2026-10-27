@@ -1,0 +1,78 @@
+T0	region 0 9	Astrocyte
+T1	gene 10 29	neuron subproteomes
+T2	disease 34 63	obsessive-compulsive disorder
+T3	region 76 86	Astrocytes
+T4	region 91 98	neurons
+T5	region 127 132	brain
+T6	region 146 155	astrocyte
+T7	gene 160 176	neuron proteomes
+T9	physiology 274 284	physiology
+T11	region 416 435	striatal astrocytes
+T12	region 440 447	neurons
+T13	method 451 455	vivo
+T14	region 517 527	astrocytes
+T15	region 532 539	neurons
+T16	region 470 512	cytosolic and plasma membrane compartments
+T17	physiology 605 625	signalling machinery
+T21	physiology 814 835	homeostatic functions
+T22	physiology 789 809	astrocyte signalling
+T23	region 707 721	fine processes
+T24	region 694 702	end feet
+T25	gene 846 852	SAPAP3
+T26	gene 865 871	Dlgap3
+T27	disease 899 928	obsessive-compulsive disorder
+T28	disease 930 933	OCD
+T29	region 998 1017	striatal astrocytes
+T30	region 1051 1076	astrocyte subcompartments
+T31	gene 1096 1127	actin cytoskeleton organization
+T32	symptom 939 960	repetitive behaviours
+T33	disease 1250 1253	OCD
+T34	gene 1265 1271	SAPAP3
+T35	region 1307 1317	astrocytic
+T36	gene 1331 1337	SAPAP3
+T37	disease 1341 1391	repetitive and anxiety-related OCD-like phenotypes
+T39	method 1142 1168	genetic rescue experiments
+T40	method 1235 1246	mouse model
+T42	method 1208 1229	molecular assessments
+T43	method 1183 1203	behavioural analyses
+T44	region 1413 1423	astrocytes
+T45	region 1428 1435	neurons
+T46	physiology 1483 1502	signalling pathways
+T49	region 1530 1552	astrocyte subproteomes
+T50	gene 1632 1638	SAPAP3
+T51	disease 1664 1678	OCD phenotypes
+T52	region 1566 1595	physiological subcompartments
+T53	region 1609 1618	astrocyte
+T55	method 1682 1686	mice
+T56	region 1751 1761	astrocytes
+T57	region 1766 1773	neurons
+T58	disease 1802 1805	OCD
+T59	disease 1828 1843	brain disorders
+T60	method 1711 1733	therapeutic strategies
+R2	located_in Arg1:T4 Arg2:T5	
+R3	associated_with Arg1:T3 Arg2:T4	
+T62	method 311 386	cell-specific and subcompartment-specific proximity-dependent biotinylation
+R1	associated_with Arg1:T25 Arg2:T26	
+T63	region 562 567	cells
+T64	region 644 682	subcellular compartments of astrocytes
+R4	hyponym_of Arg1:T24 Arg2:T64	
+R5	hyponym_of Arg1:T23 Arg2:T64	
+R6	associated_with Arg1:T25 Arg2:T27	
+R7	abbreviation_for Arg1:T28 Arg2:T27	
+R8	associated_with Arg1:T25 Arg2:T28	
+R9	associated_with Arg1:T25 Arg2:T32	
+R10	associated_with Arg1:T25 Arg2:T29	
+R11	associated_with Arg1:T25 Arg2:T30	
+R12	associated_with Arg1:T25 Arg2:T31	
+R13	associated_with Arg1:T35 Arg2:T37	
+R14	associated_with Arg1:T36 Arg2:T37	
+R15	associated_with Arg1:T49 Arg2:T52	
+R16	occurs_in Arg1:T51 Arg2:T55	
+R17	associated_with Arg1:T53 Arg2:T51	
+R18	associated_with Arg1:T50 Arg2:T51	
+R19	associated_with Arg1:T56 Arg2:T58	
+R20	associated_with Arg1:T57 Arg2:T58	
+R21	associated_with Arg1:T56 Arg2:T59	
+R22	associated_with Arg1:T57 Arg2:T59	
+T8	gene 403 412	proteomes
+T10	gene 739 751	subproteomes

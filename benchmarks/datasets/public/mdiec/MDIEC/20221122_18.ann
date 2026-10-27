@@ -1,0 +1,31 @@
+T1	disease 0 7	Obesity
+T10	method 34 53	confidence interval
+T17	Health_factors 111 139	lower educational attainment
+T18	disease 166 187	moderate incontinence
+T19	disease 218 237	severe incontinence
+T20	Health_factors 327 332	women
+T21	disease 338 358	urinary incontinence
+T22	Health_factors 376 379	age
+T23	disease 384 403	medical comorbidity
+T24	disease 307 323	major depression
+T25	method 9 19	odds ratio
+T2	method 21 23	OR
+R1	abbreviation_for Arg1:T2 Arg2:T25	
+T3	method 55 57	CI
+T4	method 86 88	OR
+T5	method 98 100	CI
+T6	method 141 143	OR
+T7	method 153 155	CI
+T8	method 189 191	OR
+T9	method 201 203	CI
+T11	method 239 241	OR
+T12	method 251 253	CI
+R2	abbreviation_for Arg1:T3 Arg2:T10	
+T13	Health_factors 77 84	smoking
+R3	risk_factor_of Arg1:T1 Arg2:T24	
+R4	risk_factor_of Arg1:T13 Arg2:T24	
+R5	risk_factor_of Arg1:T17 Arg2:T24	
+R6	risk_factor_of Arg1:T18 Arg2:T24	
+R7	risk_factor_of Arg1:T19 Arg2:T24	
+R8	occurs_in Arg1:T24 Arg2:T20	
+R9	occurs_in Arg1:T20 Arg2:T21	

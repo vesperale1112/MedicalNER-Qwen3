@@ -1,0 +1,105 @@
+T1	disease 83 96	schizophrenia
+T2	disease 316 329	schizophrenia
+T3	disease 646 659	schizophrenia
+T4	disease 1109 1122	schizophrenia
+T5	drug 1180 1191	penfluridol
+T6	disease 4202 4215	schizophrenia
+T8	drug 30 49	oral antipsychotics
+T9	method 100 117	systematic review
+T18	method 550 581	comprehensive systematic review
+T19	method 586 599	meta-analysis
+T22	method 690 718	randomised controlled trials
+T23	method 720 724	RCTs
+T24	method 727 741	cohort studies
+T25	Health_factors 799 807	language
+T26	method 825 832	MEDLINE
+T27	method 837 843	PubMed
+T28	method 849 865	Cochrane Library
+T29	method 867 873	Scopus
+T30	method 879 885	Embase
+T31	method 1017 1035	ClinicalTrials.gov
+T32	Health_factors 1097 1103	adults
+T33	drug 1217 1235	oral antipsychotic
+T34	method 1238 1250	case reports
+T35	method 1557 1567	risk ratio
+T36	method 1569 1571	RR
+T37	Health_factors 1577 1592	hospitalisation
+T38	disease 1596 1603	relapse
+T41	method 1646 1666	random-effects model
+T42	Health_factors 1673 1688	hospitalisation
+T43	disease 1714 1721	relapse
+T44	method 1726 1744	secondary analyses
+T45	disease 1784 1791	relapse
+T46	Health_factors 1797 1812	hospitalisation
+T47	Health_factors 1827 1842	hospitalisation
+T49	Health_factors 1996 2011	quality of life
+T50	physiology 2013 2031	cognitive function
+T51	method 2122 2131	pooled RR
+T52	method 2189 2192	SMD
+T53	method 2364 2368	RCTs
+T54	method 2395 2409	cohort studies
+T55	Health_factors 2667 2682	hospitalisation
+T56	disease 2686 2693	relapse
+T59	method 2755 2759	RCTs
+T60	method 2788 2790	RR
+T61	method 2800 2802	CI
+T62	method 2821 2835	cohort studies
+T63	method 2866 2868	RR
+T64	method 2939 2941	RR
+T65	disease 3075 3082	relapse
+T66	Health_factors 3088 3103	hospitalisation
+T67	Health_factors 3135 3150	hospitalisation
+T68	disease 3217 3224	relapse
+T69	Health_factors 3303 3318	quality of life
+T70	physiology 3320 3338	cognitive function
+T73	method 3667 3673	cohort
+T74	method 3862 3883	observational studies
+T77	Health_factors 3983 3998	hospitalisation
+T78	disease 4002 4009	relapse
+T79	method 4057 4061	RCTs
+T80	method 4089 4095	cohort
+T81	method 4100 4116	pre-post studies
+T82	drug 3949 3968	oral antipsychotics
+T83	method 3678 3694	pre-post studies
+T84	drug 3391 3410	oral antipsychotics
+T85	method 3196 3212	pre-post studies
+T86	method 2893 2909	pre-post studies
+T87	drug 2699 2718	oral antipsychotics
+T88	method 2442 2458	pre-post studies
+T89	method 2159 2187	standardised mean difference
+T90	drug 1621 1640	oral antipsychotics
+T91	method 747 763	pre-post studies
+T92	drug 622 641	oral antipsychotics
+T93	drug 452 471	oral antipsychotics
+T94	drug 292 311	oral antipsychotics
+T95	drug 240 277	long-acting injectable antipsychotics
+T96	method 151 191	randomised, cohort, and pre-post studies
+T97	method 122 147	comparative meta-analysis
+T99	method 0 22	Long-acting injectable
+R1	treatment_for Arg1:T8 Arg2:T1	
+T10	drug 279 283	LAIs
+R2	abbreviation_for Arg1:T10 Arg2:T95	
+T7	drug 440 444	LAIs
+T11	drug 610 614	LAIs
+R3	abbreviation_for Arg1:T23 Arg2:T22	
+T12	drug 1204 1207	LAI
+T13	method 1256 1267	case series
+T17	method 1539 1552	meta-analysed
+R4	abbreviation_for Arg1:T36 Arg2:T35	
+T20	drug 1609 1613	LAIs
+T21	disease 1852 1859	relapse
+T39	method 1917 1937	meta-analysable data
+R5	abbreviation_for Arg1:T52 Arg2:T89	
+T40	drug 2625 2629	LAIs
+R6	treatment_for Arg1:T40 Arg2:T55	
+R7	treatment_for Arg1:T40 Arg2:T56	
+T48	drug 3360 3364	LAIs
+R8	treatment_for Arg1:T48 Arg2:T70	
+R9	treatment_for Arg1:T48 Arg2:T69	
+T57	method 3732 3754	trim-and-fill analyses
+T58	drug 3937 3941	LAIs
+T71	drug 4171 4175	LAIs
+R10	treatment_for Arg1:T71 Arg2:T6	
+R11	treatment_for Arg1:T58 Arg2:T77	
+R12	treatment_for Arg1:T58 Arg2:T78	
+T14	method 2341 2359	inclusion criteria

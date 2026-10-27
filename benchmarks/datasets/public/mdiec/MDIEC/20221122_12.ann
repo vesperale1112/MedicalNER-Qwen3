@@ -1,0 +1,13 @@
+T3	physiology 37 49	amygdala LBs
+T4	disease 100 116	major depression
+T5	method 118 120	RR
+T6	method 240 242	RR
+T8	method 133 135	CI
+T10	method 255 257	CI
+T12	disease 197 207	depression
+T1	region 57 65	amygdala
+R1	associated_with Arg1:T3 Arg2:T4	
+T2	physiology 71 74	LBs
+T11	physiology 77 79	LB
+T13	physiology 189 192	LBs
+T14	physiology 226 238	amygdala LBs

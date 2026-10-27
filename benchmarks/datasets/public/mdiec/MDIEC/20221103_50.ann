@@ -1,0 +1,8 @@
+T1	method 41 45	rTMS
+T2	method 226 230	rTMS
+T3	method 69 92	cognitive interventions
+T4	region 118 134	neural circuitry
+T7	physiology 195 210	neuroplasticity
+T8	disease 291 301	depression
+R1	associated_with Arg1:T7 Arg2:T2	
+R2	associated_with Arg1:T3 Arg2:T4	

@@ -1,0 +1,50 @@
+T0	disease 79 86	anxiety
+T1	disease 91 101	depression
+T2	disease 131 137	cancer
+T5	method 105 127	cross-sectional survey
+T6	disease 198 205	anxiety
+T7	disease 231 237	cancer
+T10	method 295 332	Hospital Anxiety and Depression Scale
+T11	method 334 338	HADS
+T12	disease 366 373	anxiety
+T13	disease 378 388	depression
+T15	method 444 448	HADS
+T17	disease 669 676	anxiety
+T18	disease 680 690	depression
+T19	Health_factors 622 642	professional support
+T23	Health_factors 1005 1038	psychological support preferences
+T24	Health_factors 951 968	treatment centres
+T26	method 1100 1102	CI
+T29	disease 1164 1201	mild to severe anxiety and depression
+T31	method 1212 1214	CI
+T32	disease 1377 1384	anxiety
+T33	disease 1389 1399	depression
+T34	method 1324 1328	HADS
+T35	disease 1419 1456	mild to severe anxiety and depression
+T37	disease 1675 1682	anxiety
+T38	disease 1686 1696	depression
+T39	method 1619 1621	CI
+T40	Health_factors 1742 1762	professional support
+T41	disease 1597 1608	respondents
+T43	Health_factors 1805 1824	cancer care setting
+T44	disease 1861 1868	anxiety
+T45	disease 1873 1883	depression
+T47	method 1778 1799	Single-item screening
+T48	disease 1947 1954	anxiety
+T49	disease 1959 1969	depression
+T52	method 18 38	HADS classifications
+T53	method 43 74	single-item screening questions
+T3	disease 210 220	depression
+T4	method 257 281	single self-report items
+R1	abbreviation_for Arg1:T11 Arg2:T10	
+T8	method 407 431	single self-report items
+R2	help_diagnose Arg1:T8 Arg2:T12	
+R3	help_diagnose Arg1:T15 Arg2:T12	
+R4	help_diagnose Arg1:T8 Arg2:T13	
+R5	help_diagnose Arg1:T15 Arg2:T13	
+T9	disease 757 763	cancer
+T14	method 784 796	radiotherapy
+T16	method 860 888	touch screen computer survey
+T20	method 1079 1098	confidence interval
+R6	abbreviation_for Arg1:T26 Arg2:T20	
+T21	Health_factors 2058 2075	psychosocial care

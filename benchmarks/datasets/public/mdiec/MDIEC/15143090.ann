@@ -1,0 +1,62 @@
+T0	disease 0 16	Major depression
+T1	disease 18 38	adjustment disorders
+T2	disease 44 74	post-traumatic stress disorder
+T4	disease 78 99	terminally ill cancer
+T7	disease 228 249	terminally ill cancer
+T8	disease 202 224	psychological distress
+T9	disease 312 332	adjustment disorders
+T10	disease 334 336	AD
+T11	disease 339 355	major depression
+T12	disease 357 359	MD
+T13	disease 366 396	post-traumatic stress disorder
+T14	disease 398 402	PTSD
+T15	disease 410 431	terminally ill cancer
+T17	disease 571 592	terminally ill cancer
+T18	disease 645 666	psychiatric disorders
+T21	method 849 858	follow-up
+T23	method 670 699	structured clinical interview
+T28	disease 987 989	AD
+T29	Health_factors 991 993	MD
+T30	disease 999 1003	PTSD
+T31	method 1076 1085	follow-up
+T32	disease 1122 1124	AD
+T33	disease 1140 1142	MD
+T35	disease 1288 1290	AD
+T36	disease 1291 1293	MD
+T38	disease 1214 1252	lower satisfaction with social support
+T40	disease 1144 1168	Lower performance status
+T41	disease 1346 1348	AD
+T42	disease 1353 1355	MD
+T43	disease 1477 1479	AD
+T44	disease 1480 1482	MD
+T45	method 1391 1428	Hospital Anxiety and Depression Scale
+T46	method 1486 1495	follow-up
+T48	disease 1533 1555	psychological distress
+T49	disease 1604 1638	subclinical anxiety and depression
+T51	method 1576 1594	Early intervention
+T52	disease 1662 1684	psychological distress
+R1	occurs_in Arg1:T0 Arg2:T4	
+R2	occurs_in Arg1:T1 Arg2:T4	
+R3	occurs_in Arg1:T2 Arg2:T4	
+R4	abbreviation_for Arg1:T10 Arg2:T9	
+R5	abbreviation_for Arg1:T12 Arg2:T11	
+R6	abbreviation_for Arg1:T14 Arg2:T13	
+R7	help_diagnose Arg1:T23 Arg2:T18	
+T3	method 753 773	palliative care unit
+R8	occurs_in Arg1:T8 Arg2:T7	
+T5	method 817 837	palliative care unit
+T6	Health_factors 882 917	biomedical and psychosocial factors
+R9	associated_with Arg1:T40 Arg2:T35	
+R10	associated_with Arg1:T38 Arg2:T35	
+R11	associated_with Arg1:T40 Arg2:T36	
+R12	associated_with Arg1:T40 Arg2:T36	
+R13	associated_with Arg1:T45 Arg2:T43	
+R14	associated_with Arg1:T45 Arg2:T44	
+R15	treatment_for Arg1:T51 Arg2:T49	
+R17	treatment_for Arg1:T51 Arg2:T52	
+R16	occurs_in Arg1:T14 Arg2:T15	
+R18	occurs_in Arg1:T13 Arg2:T15	
+R19	occurs_in Arg1:T9 Arg2:T15	
+R20	occurs_in Arg1:T10 Arg2:T15	
+R21	occurs_in Arg1:T11 Arg2:T15	
+R22	occurs_in Arg1:T12 Arg2:T15	

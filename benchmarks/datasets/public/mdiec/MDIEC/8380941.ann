@@ -1,0 +1,33 @@
+T0	disease 14 21	anxiety
+T1	gene 26 53	neuropeptide Y-Y1 receptors
+T2	gene 57 88	antisense oligodeoxynucleotides
+T3	gene 106 120	neuropeptide Y
+T4	region 175 190	mammalian brain
+T5	drug 238 258	receptor antagonists
+T8	gene 315 350	NH2-terminus of the rat Y1 receptor
+T9	region 392 412	rat cortical neurons
+T10	gene 263 293	antisense oligodeoxynucleotide
+T11	gene 462 464	Y1
+T12	drug 519 548	adenosine 3',5'-monophosphate
+T13	drug 550 554	cAMP
+T14	physiology 575 597	Y1 receptor activation
+T15	gene 734 747	cortical Y1 (
+T16	method 690 694	rats
+T18	region 660 686	lateral cerebral ventricle
+T19	gene 630 650	oligodeoxynucleotide
+T20	method 599 617	Repeated injection
+T21	disease 831 838	anxiety
+T23	method 775 800	antisense-treated animals
+T24	physiology 976 1011	central neuropeptide Y transmission
+T25	disease 1024 1042	anxiety-like state
+T27	region 940 945	brain
+T29	physiology 869 905	neurotransmitter receptor expression
+R1	associated_with Arg1:T0 Arg2:T2	
+R2	associated_with Arg1:T1 Arg2:T2	
+R3	abbreviation_for Arg1:T13 Arg2:T12	
+R4	associated_with Arg1:T12 Arg2:T14	
+R5	associated_with Arg1:T13 Arg2:T14	
+R6	associated_with Arg1:T19 Arg2:T15	
+R7	associated_with Arg1:T24 Arg2:T25	
+T6	gene 474 476	Y2
+T7	gene 755 757	Y2

@@ -1,0 +1,54 @@
+T1	disease 27 52	major depression disorder
+T2	disease 143 168	major depression disorder
+T3	disease 170 173	MDD
+T4	disease 315 318	MDD
+T5	disease 730 733	MDD
+T6	disease 769 772	MDD
+T7	disease 964 967	MDD
+T8	disease 1205 1208	MDD
+T9	disease 1326 1329	MDD
+T10	disease 1407 1410	MDD
+T11	disease 1477 1480	MDD
+T12	method 59 70	ongoing EEG
+T13	physiology 111 134	functional connectivity
+T14	physiology 136 138	FC
+R1	abbreviation_for Arg1:T14 Arg2:T13	
+R2	abbreviation_for Arg1:T3 Arg2:T2	
+T15	physiology 309 311	FC
+T16	method 376 404	ongoing electroencephalogram
+T17	method 406 409	EEG
+R3	abbreviation_for Arg1:T17 Arg2:T16	
+T18	method 443 458	phase lag index
+T19	method 460 463	PLI
+R4	abbreviation_for Arg1:T19 Arg2:T18	
+T20	method 515 541	graph theory-based methods
+T21	region 569 583	brain networks
+T22	method 624 646	classification methods
+T23	method 1017 1039	Support vector machine
+T24	physiology 923 958	left hemisphere-dominant phenomenon
+T25	method 1041 1044	SVM
+R5	abbreviation_for Arg1:T25 Arg2:T23	
+T26	symptom 1231 1241	altered FC
+R6	characteristic_of Arg1:T26 Arg2:T8	
+T27	signs 1275 1284	beta band
+R7	help_diagnose Arg1:T27 Arg2:T9	
+T28	region 1481 1495	brain networks
+T29	physiology 0 23	Functional connectivity
+T30	symptom 794 824	decreased connectivity pattern
+R8	characteristic_of Arg1:T30 Arg2:T6	
+T31	symptom 850 880	increased connectivity pattern
+T32	physiology 78 94	music perception
+T33	physiology 353 369	music perception
+T34	physiology 751 767	music perception
+T35	signs 888 897	beta band
+T36	signs 832 842	delta band
+T37	signs 1098 1117	beta frequency band
+T38	signs 694 708	frequency band
+T39	physiology 1503 1519	music perception
+T40	signs 601 616	frequency bands
+T41	signs 1245 1265	delta and beta bands
+R9	characteristic_of Arg1:T31 Arg2:T6	
+R10	located_in Arg1:T30 Arg2:T36	
+R11	located_in Arg1:T31 Arg2:T35	
+R12	located_in Arg1:T26 Arg2:T41	
+T42	method 489 509	connectivity matrice

@@ -1,0 +1,46 @@
+T1	disease 0 13	Schizophrenia
+T2	disease 15 28	Schizophrenia
+T3	disease 79 95	mental disorders
+T4	disease 235 248	schizophrenia
+T5	disease 587 603	bipolar disorder
+T6	disease 672 695	developmental disorders
+T7	disease 704 710	autism
+T8	disease 729 742	schizophrenia
+T9	physiology 821 847	dopamine neurotransmission
+T10	disease 886 900	hallucinations
+T11	physiology 960 975	dopamine system
+T12	disease 995 1004	delusions
+T13	disease 1009 1023	hallucinations
+T14	disease 1040 1088	disabling cognitive and motivational impairments
+T15	disease 1413 1426	schizophrenia
+T16	Health_factors 363 374	adolescence
+T17	Health_factors 379 394	early adulthood
+T18	physiology 503 521	treatment response
+T19	physiology 542 563	Genetic vulnerability
+T20	gene 625 632	genetic
+T23	method 1099 1141	vocational and psychological interventions
+T25	Health_factors 1550 1575	long-term hospitalisation
+T26	Health_factors 1596 1605	prognosis
+T28	Health_factors 1204 1229	community-case management
+T29	drug 1163 1187	antipsychotic medication
+T30	method 916 942	Pharmacological treatments
+T31	disease 905 914	delusions
+T32	region 790 805	brain structure
+T36	method 201 213	epidemiology
+R1	hyponym_of Arg1:T2 Arg2:T3	
+T37	method 192 199	biology
+T38	method 219 231	pharmacology
+T35	Health_factors 459 473	migrant groups
+R2	hyponym_of Arg1:T7 Arg2:T6	
+R3	associated_with Arg1:T9 Arg2:T10	
+R4	associated_with Arg1:T9 Arg2:T31	
+R5	associated_with Arg1:T30 Arg2:T11	
+R6	treatment_for Arg1:T30 Arg2:T12	
+R7	treatment_for Arg1:T30 Arg2:T13	
+T21	Health_factors 1243 1261	functional outcome
+R8	treatment_for Arg1:T23 Arg2:T21	
+R9	treatment_for Arg1:T29 Arg2:T21	
+T22	Health_factors 1435 1455	psychosocial factors
+T24	physiology 1364 1385	biological mechanisms
+R10	associated_with Arg1:T8 Arg2:T32	
+R11	associated_with Arg1:T8 Arg2:T9	

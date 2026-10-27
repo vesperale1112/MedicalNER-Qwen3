@@ -1,0 +1,115 @@
+T1	drug 26 53	nirmatrelvir plus ritonavir
+T2	disease 71 79	COVID-19
+T3	disease 84 107	substance use disorders
+T4	method 117 132	real-world data
+T5	drug 179 206	nirmatrelvir plus ritonavir
+T6	drug 208 213	NMV-r
+R1	abbreviation_for Arg1:T6 Arg2:T5	
+T7	disease 241 265	coronavirus disease-2019
+T8	disease 267 275	COVID-19
+T9	disease 281 304	substance use disorders
+T10	disease 306 310	SUDs
+R2	abbreviation_for Arg1:T8 Arg2:T7	
+R3	abbreviation_for Arg1:T10 Arg2:T9	
+T11	disease 313 317	SUDs
+T12	method 337 343	ICD-10
+R4	help_diagnose Arg1:T12 Arg2:T11	
+T13	disease 362 366	SUDs
+T14	disease 378 439	alcohol, cannabis, cocaine, opioid, and tobacco use disorders
+T15	disease 418 439	tobacco use disorders
+T16	disease 441 444	TUD
+R5	abbreviation_for Arg1:T16 Arg2:T15	
+R6	hyponym_of Arg1:T14 Arg2:T13	
+T17	disease 472 476	SUDs
+T18	disease 481 489	COVID-19
+T19	method 516 531	TriNetX network
+R7	help_diagnose Arg1:T19 Arg2:T17	
+R8	help_diagnose Arg1:T19 Arg2:T18	
+T20	drug 568 573	NMV-r
+T21	Health_factors 610 625	hospitalization
+T22	disease 629 634	death
+R9	treatment_for Arg1:T20 Arg2:T21	
+R10	treatment_for Arg1:T20 Arg2:T22	
+T23	disease 650 658	COVID-19
+T24	method 670 682	hazard ratio
+T25	method 684 686	HR
+R11	abbreviation_for Arg1:T25 Arg2:T24	
+T26	method 700 719	confidence interval
+T27	method 721 723	CI
+R12	abbreviation_for Arg1:T27 Arg2:T26	
+T28	Health_factors 767 792	all-cause hospitalization
+T29	method 794 796	HR
+R13	treatment_for Arg1:T20 Arg2:T28	
+T30	method 809 811	CI
+R14	occurs_in Arg1:T22 Arg2:T23	
+R15	occurs_in Arg1:T21 Arg2:T23	
+T31	disease 830 845	all-cause death
+T32	method 847 849	HR
+T33	method 862 864	CI
+R16	treatment_for Arg1:T20 Arg2:T31	
+T34	disease 903 907	SUDs
+T35	Health_factors 929 941	hospitalized
+T36	disease 945 950	death
+T37	disease 969 977	COVID-19
+R17	occurs_in Arg1:T36 Arg2:T37	
+R18	occurs_in Arg1:T35 Arg2:T37	
+R19	risk_factor_of Arg1:T34 Arg2:T35	
+R20	risk_factor_of Arg1:T34 Arg2:T36	
+T38	disease 1007 1011	SUDs
+T39	drug 1034 1039	NMV-r
+T40	method 1041 1043	HR
+T41	method 1056 1058	CI
+T42	disease 1114 1118	SUDs
+T43	disease 1146 1159	comorbidities
+T44	Health_factors 1164 1208	adverse socioeconomic determinants of health
+T45	disease 1228 1232	SUDs
+R21	risk_factor_of Arg1:T42 Arg2:T43	
+R22	risk_factor_of Arg1:T42 Arg2:T44	
+T46	method 1234 1251	Subgroup analysis
+T47	drug 1280 1285	NMV-r
+T48	Health_factors 1339 1354	characteristics
+T49	Health_factors 1366 1369	age
+T50	Health_factors 1380 1384	aged
+R23	hyponym_of Arg1:T49 Arg2:T48	
+T51	method 1395 1397	HR
+T52	method 1410 1412	CI
+T53	Health_factors 1429 1432	sex
+T54	Health_factors 1434 1439	women
+T55	method 1441 1443	HR
+T56	method 1456 1458	CI
+T57	Health_factors 1477 1480	men
+T58	method 1482 1484	HR
+T59	method 1497 1499	CI
+T60	Health_factors 1516 1530	vaccine status
+T61	method 1532 1542	vaccinated
+T62	method 1556 1558	HR
+T63	method 1571 1573	CI
+T64	disease 1590 1602	SUD subtypes
+T65	disease 1604 1624	alcohol use disorder
+T66	method 1626 1628	HR
+T67	method 1641 1643	CI
+T68	disease 1660 1663	TUD
+T69	method 1665 1667	HR
+T70	method 1680 1682	CI
+T71	signs 1702 1714	Omicron wave
+T72	method 1716 1718	HR
+T73	method 1731 1733	CI
+R24	hyponym_of Arg1:T53 Arg2:T48	
+R25	hyponym_of Arg1:T60 Arg2:T48	
+R26	hyponym_of Arg1:T64 Arg2:T48	
+R27	hyponym_of Arg1:T71 Arg2:T48	
+T74	drug 1776 1781	NMV-r
+T75	Health_factors 1795 1820	all-cause hospitalization
+T76	disease 1825 1830	death
+T77	disease 1851 1859	COVID-19
+T78	disease 1880 1884	SUDs
+R28	occurs_in Arg1:T77 Arg2:T78	
+R29	occurs_in Arg1:T76 Arg2:T77	
+R30	occurs_in Arg1:T75 Arg2:T77	
+R31	treatment_for Arg1:T74 Arg2:T75	
+R32	treatment_for Arg1:T74 Arg2:T76	
+T79	drug 1908 1913	NMV-r
+T80	disease 1941 1945	SUDs
+T81	disease 1950 1958	COVID-19
+R33	treatment_for Arg1:T79 Arg2:T80	
+R34	treatment_for Arg1:T79 Arg2:T81	

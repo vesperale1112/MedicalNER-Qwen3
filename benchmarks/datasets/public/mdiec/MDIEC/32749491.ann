@@ -1,0 +1,72 @@
+T1	method 10 46	Long-term Vitamin D3 Supplementation
+T2	disease 103 122	Depressive Symptoms
+T3	drug 208 227	25-hydroxyvitamin D
+T4	disease 270 280	depression
+T5	method 395 421	vitamin D3 supplementation
+T6	disease 435 445	depression
+T8	disease 693 715	cardiovascular disease
+T9	method 720 737	cancer prevention
+T10	disease 808 818	depression
+T11	Health_factors 827 845	depression history
+T13	Health_factors 894 912	depression history
+T14	disease 934 944	depression
+T15	drug 1191 1201	vitamin D3
+T16	drug 1216 1231	cholecalciferol
+T17	disease 2016 2035	depressive symptoms
+T18	drug 2080 2090	vitamin D3
+T19	disease 2409 2419	depression
+T20	disease 2797 2816	depressive symptoms
+T21	drug 2845 2855	vitamin D3
+T22	disease 2970 2980	depression
+T23	disease 3004 3023	depressive symptoms
+T24	drug 3132 3142	vitamin D3
+T25	disease 3164 3174	depression
+T26	disease 69 79	Depression
+T27	method 155 180	Randomized Clinical Trial
+R1	risk_factor_of Arg1:T3 Arg2:T4	
+T28	method 565 574	VITAL-DEP
+T29	method 576 634	Vitamin D and Omega-3 Trial-Depression Endpoint Prevention
+R2	abbreviation_for Arg1:T28 Arg2:T29	
+T7	method 664 689	randomized clinical trial
+T31	method 655 660	VITAL
+T32	drug 1237 1245	fish oil
+T33	drug 1282 1292	vitamin D3
+T34	disease 1405 1415	depression
+T35	disease 1439 1458	depressive symptoms
+T36	method 1539 1591	8-item Patient Health Questionnaire depression scale
+T37	method 1593 1598	PHQ-8
+R3	abbreviation_for Arg1:T37 Arg2:T36	
+T38	method 1819 1821	SD
+T39	disease 1982 1992	depression
+T40	disease 2102 2112	depression
+T41	disease 2136 2154	depressive symptom
+T43	disease 2214 2224	depression
+T44	disease 2248 2266	depressive symptom
+T45	method 2300 2312	hazard ratio
+T46	method 2324 2326	CI
+T48	method 2563 2568	PHQ-8
+T49	method 2678 2680	CI
+T47	method 140 151	Mood Scores
+T52	method 455 466	mood scores
+T53	method 1526 1537	mood scores
+T54	method 2525 2536	mood scores
+T55	method 2648 2659	mood scores
+T56	method 3041 3052	mood scores
+T50	disease 868 888	recurrent depression
+T30	method 320 359	long-term, high-dose large-scale trials
+T61	Health_factors 521 524	men
+T62	Health_factors 529 534	women
+T63	Health_factors 535 539	aged
+T65	method 636 651	ancillary study
+T66	Health_factors 751 757	adults
+T68	Health_factors 1808 1811	age
+T69	Health_factors 1841 1846	women
+T70	Health_factors 2739 2745	adults
+T71	Health_factors 2746 2750	aged
+T72	Health_factors 3146 3152	adults
+T12	method 1113 1122	follow-up
+T64	method 3067 3076	follow-up
+T42	Health_factors 552 557	older
+T51	method 1124 1136	Intervention
+T57	Health_factors 2763 2768	older
+T58	Health_factors 1860 1878	treatment duration

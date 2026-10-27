@@ -1,0 +1,6 @@
+T1	region 36 41	sgACC
+T3	physiology 83 107	anti-depressive response
+T4	method 123 150	HF-rTMS treatment paradigms
+T2	signs 56 78	neurobiological marker
+R2	hyponym_of Arg1:T1 Arg2:T2	
+R1	characteristic_of Arg1:T1 Arg2:T3	

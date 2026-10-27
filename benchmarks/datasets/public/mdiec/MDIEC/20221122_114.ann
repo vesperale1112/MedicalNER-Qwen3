@@ -1,0 +1,7 @@
+T3	method 49 61	anesthetized
+T4	Health_factors 72 83	higher ages
+T5	Health_factors 149 159	older ages
+T6	disease 122 132	depression
+T7	drug 136 145	halothane
+R1	associated_with Arg1:T6 Arg2:T7	
+R2	occurs_in Arg1:T7 Arg2:T5	

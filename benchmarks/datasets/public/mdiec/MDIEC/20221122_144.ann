@@ -1,0 +1,9 @@
+T1	disease 0 6	Stress
+T3	disease 78 88	depression
+T4	disease 227 237	depression
+T6	Health_factors 147 168	environmental factors
+T7	disease 53 72	depressive symptoms
+R1	risk_factor_of Arg1:T1 Arg2:T7	
+T2	Health_factors 173 191	genetic background
+R2	associated_with Arg1:T2 Arg2:T4	
+R3	associated_with Arg1:T6 Arg2:T4	

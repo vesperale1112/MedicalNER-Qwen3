@@ -1,0 +1,51 @@
+T0	disease 47 60	schizophrenia
+T1	disease 277 283	autism
+T2	disease 285 298	schizophrenia
+T3	disease 303 321	mental retardation
+T4	disease 97 120	severe mental disorders
+T5	gene 160 172	risk alleles
+T7	gene 203 218	common variants
+T8	physiology 70 79	fecundity
+T9	gene 392 404	genetic risk
+T12	gene 329 342	rare variants
+T13	method 536 585	genome-wide single nucleotide polymorphism arrays
+T14	gene 484 506	copy number variations
+T15	gene 450 477	single nucleotide mutations
+T16	disease 646 664	mental retardation
+T17	disease 669 675	autism
+T19	disease 727 740	schizophrenia
+T20	Health_factors 839 846	parents
+T21	Health_factors 850 859	offspring
+T23	method 752 775	population-based sample
+T24	disease 941 954	schizophrenia
+T25	disease 1062 1075	schizophrenia
+T26	method 1111 1122	followed up
+T30	disease 1237 1250	schizophrenia
+T31	disease 1263 1272	psychoses
+T35	gene 1325 1354	rare, recurrent risk variants
+T37	disease 1611 1624	schizophrenia
+T38	gene 1580 1585	genes
+T40	method 1472 1484	CNV analysis
+T41	gene 0 30	Large recurrent microdeletions
+R3	associated_with Arg1:T8 Arg2:T5	
+R4	associated_with Arg1:T12 Arg2:T9	
+T6	gene 508 512	CNVs
+R5	abbreviation_for Arg1:T6 Arg2:T14	
+R6	help_diagnose Arg1:T13 Arg2:T14	
+R7	help_diagnose Arg1:T13 Arg2:T6	
+T10	gene 625 629	CNVs
+T11	method 682 700	genome-wide search
+T18	gene 705 709	CNVs
+T42	gene 788 800	de novo CNVs
+T22	gene 868 880	de novo CNVs
+T43	gene 988 1028	deletions at 1q21.1, 15q11.2 and 15q13.3
+R1	associated_with Arg1:T43 Arg2:T25	
+T27	gene 1563 1576	risk variants
+R2	located_in Arg1:T27 Arg2:T38	
+T28	physiology 1590 1598	pathways
+R8	located_in Arg1:T27 Arg2:T28	
+R9	associated_with Arg1:T8 Arg2:T4	
+R10	associated_with Arg1:T41 Arg2:T0	
+R11	associated_with Arg1:T10 Arg2:T16	
+R12	associated_with Arg1:T10 Arg2:T17	
+R13	associated_with Arg1:T18 Arg2:T19	

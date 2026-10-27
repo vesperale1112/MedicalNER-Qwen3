@@ -1,0 +1,16 @@
+T1	region 43 46	STN
+T3	method 48 70	deep brain stimulation
+T4	method 72 75	DBS
+T6	disease 99 113	motor symptoms
+T9	method 166 184	unilateral STN DBS
+T10	disease 188 206	non-motor symptoms
+T11	disease 216 226	depression
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+T12	region 30 41	subthalamic
+R2	abbreviation_for Arg1:T1 Arg2:T12	
+R4	hyponym_of Arg1:T11 Arg2:T10	
+T2	disease 117 119	PD
+T5	region 5 41	unilateral and bilateral subthalamic
+R3	treatment_for Arg1:T3 Arg2:T6	
+R5	treatment_for Arg1:T4 Arg2:T6	
+R6	occurs_in Arg1:T6 Arg2:T2	

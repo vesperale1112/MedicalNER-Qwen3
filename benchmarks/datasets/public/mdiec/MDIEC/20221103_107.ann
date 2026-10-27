@@ -1,0 +1,7 @@
+T3	method 62 90	guided internet intervention
+T4	Health_factors 113 127	pregnant women
+T6	disease 164 171	anxiety
+T7	disease 175 185	depression
+T1	method 92 107	MamaKits online
+R1	occurs_in Arg1:T4 Arg2:T6	
+R2	occurs_in Arg1:T4 Arg2:T7	

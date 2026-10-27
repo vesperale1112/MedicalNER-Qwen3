@@ -1,0 +1,29 @@
+T1	method 72 107	classical (Freudian) psychodynamics
+T2	disease 111 121	depression
+T4	disease 326 336	depression
+T5	disease 456 466	depression
+T6	disease 575 585	depression
+T8	physiology 135 148	sensitization
+T9	disease 152 179	cytokine-induced depression
+T10	gene 225 234	cytokines
+T11	gene 370 391	circulating cytokines
+T12	gene 433 442	cytokines
+T13	gene 504 513	cytokines
+T14	gene 670 679	cytokines
+T15	Health_factors 239 244	sleep
+T16	physiology 249 258	cognition
+T17	disease 267 270	HPA
+T18	disease 444 450	stress
+T19	drug 517 533	brain monoamines
+T20	drug 604 619	antidepressants
+T21	physiology 642 655	brain effects
+T23	method 683 701	animal experiments
+T3	drug 551 560	monoamine
+R6	associated_with Arg1:T12 Arg2:T18	
+R7	associated_with Arg1:T12 Arg2:T5	
+R8	associated_with Arg1:T18 Arg2:T5	
+R1	associated_with Arg1:T8 Arg2:T9	
+R2	associated_with Arg1:T10 Arg2:T15	
+R3	associated_with Arg1:T10 Arg2:T16	
+R4	associated_with Arg1:T10 Arg2:T17	
+R5	associated_with Arg1:T13 Arg2:T19	

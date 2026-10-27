@@ -1,0 +1,78 @@
+T0	drug 0 12	Pimavanserin
+T2	disease 17 51	negative symptoms of schizophrenia
+T3	method 70 122	ADVANCE phase 2 randomised, placebo-controlled trial
+T6	disease 163 197	Negative symptoms of schizophrenia
+T9	Health_factors 218 243	adverse clinical outcomes
+T10	drug 319 331	pimavanserin
+T11	drug 335 382	selective 5-HT2A inverse agonist and antagonist
+T12	disease 387 421	negative symptoms of schizophrenia
+T15	drug 529 541	pimavanserin
+T16	Health_factors 552 563	outpatients
+T17	disease 569 582	schizophrenia
+T18	Health_factors 583 587	aged
+T20	disease 605 634	predominant negative symptoms
+T22	method 475 525	randomised, double-blind, placebo-controlled study
+T23	drug 740 752	pimavanserin
+T25	drug 791 815	antipsychotic medication
+T26	Health_factors 870 889	geographical region
+T27	method 823 850	computer-generated schedule
+T30	method 957 993	Positive and Negative Syndrome Scale
+T31	method 995 1000	PANSS
+T32	drug 1147 1159	pimavanserin
+T33	Health_factors 1163 1170	placebo
+T34	drug 1314 1326	pimavanserin
+T35	drug 1402 1414	pimavanserin
+T37	method 1357 1363	orally
+T39	method 1509 1544	16-item Negative Symptom Assessment
+T41	drug 1667 1671	drug
+T44	method 1680 1698	NSA-16 assessments
+T47	drug 1854 1858	drug
+T50	method 1890 1908	ClinicalTrials.gov
+T51	method 1865 1870	trial
+T52	drug 2029 2041	pimavanserin
+T53	Health_factors 2060 2064	male
+T54	Health_factors 2076 2081	White
+T56	Health_factors 2112 2116	male
+T57	Health_factors 2128 2133	White
+T58	drug 2199 2211	pimavanserin
+T61	drug 2284 2296	pimavanserin
+T63	Health_factors 2251 2254	age
+T64	method 2270 2272	SD
+T66	drug 2434 2446	pimavanserin
+T67	disease 2473 2475	SE
+T69	method 2536 2547	effect size
+T71	drug 2697 2709	pimavanserin
+T74	Health_factors 2584 2617	treatment-emergent adverse events
+T75	disease 2767 2775	headache
+T76	disease 2805 2815	somnolence
+T77	disease 2886 2901	severe headache
+T78	disease 2909 2920	rhinorrhoea
+T79	disease 2928 2933	cough
+T80	disease 2945 2954	influenza
+T82	drug 2969 2981	pimavanserin
+T83	disease 3010 3026	severe toothache
+T84	disease 3068 3081	schizophrenia
+T85	drug 3133 3144	pimavanerin
+T86	method 3153 3155	SD
+T91	disease 3302 3319	negative symptoms
+T92	drug 3341 3353	pimavanserin
+T95	disease 3233 3279	predominant negative symptoms of schizophrenia
+T97	method 3380 3391	effect size
+R1	associated_with Arg1:T6 Arg2:T9	
+R2	hyponym_of Arg1:T10 Arg2:T11	
+T1	method 437 450	ADVANCE study
+R3	hyponym_of Arg1:T1 Arg2:T22	
+R4	occurs_in Arg1:T16 Arg2:T17	
+R5	occurs_in Arg1:T17 Arg2:T20	
+R6	abbreviation_for Arg1:T31 Arg2:T30	
+T4	method 957 1030	Positive and Negative Syndrome Scale (PANSS) Marder negative factor items
+T5	method 1090 1112	negative symptom items
+T7	method 1546 1552	NSA-16
+R7	abbreviation_for Arg1:T7 Arg2:T39	
+T8	method 2364 2370	NSA-16
+T13	Health_factors 2619 2624	TEAEs
+T14	Health_factors 2684 2689	TEAEs
+R8	abbreviation_for Arg1:T13 Arg2:T74	
+T19	Health_factors 2756 2761	TEAEs
+T21	method 3103 3107	QTcF
+R9	treatment_for Arg1:T92 Arg2:T91	

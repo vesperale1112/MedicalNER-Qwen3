@@ -1,0 +1,80 @@
+T0	disease 61 77	bipolar disorder
+T1	Health_factors 0 22	Childhood maltreatment
+T2	Health_factors 40 57	clinical outcomes
+T3	method 81 98	systematic review
+T4	method 103 116	meta-analysis
+T6	disease 129 145	Bipolar disorder
+T8	Health_factors 229 246	negative outcomes
+T9	disease 445 461	bipolar disorder
+T10	Health_factors 379 401	childhood maltreatment
+T11	Health_factors 410 427	negative outcomes
+T12	method 482 499	systematic review
+T13	method 504 517	meta-analysis
+T14	method 530 537	MEDLINE
+T15	method 539 547	PsycINFO
+T16	method 553 559	Embase
+T20	Health_factors 728 731	age
+T21	disease 778 785	illness
+T22	disease 789 805	bipolar disorder
+T25	Health_factors 692 719	neglect, or family conflict
+T26	disease 654 690	physical, sexual, or emotional abuse
+T27	Health_factors 640 652	maltreatment
+T29	method 832 849	published reports
+T30	method 934 962	random-effects meta-analyses
+T31	Health_factors 1000 1022	childhood maltreatment
+T32	disease 1037 1044	illness
+T37	method 1222 1235	meta-analysis
+T38	disease 1251 1267	bipolar disorder
+T39	disease 1615 1645	post-traumatic stress disorder
+T40	disease 1705 1722	anxiety disorders
+T41	disease 1865 1888	alcohol misuse disorder
+T44	disease 2147 2161	manic episodes
+T45	disease 2238 2257	depressive episodes
+T46	disease 2431 2447	bipolar disorder
+T48	Health_factors 1272 1305	history of childhood maltreatment
+T49	disease 1318 1323	mania
+T50	method 1365 1375	odds ratio
+T51	method 1377 1379	OR
+T52	method 1390 1392	CI
+T53	disease 1419 1429	depression
+T54	disease 1506 1515	psychosis
+T56	disease 1782 1808	substance misuse disorders
+T58	disease 2056 2069	rapid cycling
+T59	Health_factors 2456 2478	childhood maltreatment
+T62	Health_factors 2633 2655	Childhood maltreatment
+T64	disease 2735 2751	bipolar disorder
+T65	disease 2710 2717	illness
+R1	occurs_in Arg1:T1 Arg2:T0	
+R2	occurs_in Arg1:T2 Arg2:T0	
+R3	occurs_in Arg1:T10 Arg2:T9	
+R4	occurs_in Arg1:T11 Arg2:T9	
+R5	abbreviation_for Arg1:T51 Arg2:T50	
+R6	risk_factor_of Arg1:T38 Arg2:T49	
+R7	risk_factor_of Arg1:T48 Arg2:T49	
+R8	risk_factor_of Arg1:T38 Arg2:T53	
+R9	risk_factor_of Arg1:T48 Arg2:T53	
+R10	risk_factor_of Arg1:T38 Arg2:T54	
+R11	risk_factor_of Arg1:T48 Arg2:T54	
+R12	risk_factor_of Arg1:T38 Arg2:T39	
+R13	risk_factor_of Arg1:T48 Arg2:T39	
+T5	disease 1598 1609	comorbidity
+R14	risk_factor_of Arg1:T38 Arg2:T40	
+R15	risk_factor_of Arg1:T48 Arg2:T40	
+R16	risk_factor_of Arg1:T38 Arg2:T56	
+R17	risk_factor_of Arg1:T48 Arg2:T56	
+R18	risk_factor_of Arg1:T38 Arg2:T41	
+R19	risk_factor_of Arg1:T48 Arg2:T41	
+T7	signs 1955 1984	age of bipolar disorder onset
+R20	risk_factor_of Arg1:T38 Arg2:T7	
+R21	risk_factor_of Arg1:T48 Arg2:T7	
+T17	disease 2335 2350	suicide attempt
+R22	risk_factor_of Arg1:T38 Arg2:T58	
+R23	risk_factor_of Arg1:T48 Arg2:T58	
+R24	risk_factor_of Arg1:T38 Arg2:T44	
+R25	risk_factor_of Arg1:T48 Arg2:T44	
+R26	risk_factor_of Arg1:T38 Arg2:T45	
+R27	risk_factor_of Arg1:T48 Arg2:T45	
+R28	risk_factor_of Arg1:T38 Arg2:T17	
+R29	risk_factor_of Arg1:T48 Arg2:T17	
+R30	associated_with Arg1:T62 Arg2:T64	
+R31	occurs_in Arg1:T65 Arg2:T64	

@@ -1,0 +1,61 @@
+T1	disease 38 63	major depression disorder
+T3	disease 229 232	MDD
+T4	disease 484 487	MDD
+T6	disease 693 696	MDD
+T7	physiology 774 797	expression of LINC01108
+T8	gene 802 811	LINC00578
+T9	disease 846 849	MDD
+T10	gene 922 931	LINC01108
+T11	disease 961 964	MDD
+T12	physiology 994 1014	LINC01108 expression
+T13	physiology 1111 1134	expression of LINC00998
+T14	disease 1162 1165	MDD
+T15	gene 1291 1300	LINC00998
+T16	disease 1333 1336	MDD
+T17	disease 1455 1458	MDD
+T18	gene 0 19	Intergenic variants
+#1	AnnotatorNotes T1	C1269683
+R1	risk_factor_of Arg1:T18 Arg2:T1	
+T19	method 118 141	Genome-wide association
+T20	method 143 146	GWA
+R2	abbreviation_for Arg1:T20 Arg2:T19	
+#2	AnnotatorNotes T19	C2350277
+T2	disease 202 227	major depressive disorder
+R3	abbreviation_for Arg1:T3 Arg2:T2	
+T21	gene 181 197	genetic variants
+T22	gene 332 352	long non-coding RNAs
+T23	gene 354 361	lncRNAs
+R5	abbreviation_for Arg1:T23 Arg2:T22	
+T24	gene 423 442	intergenic variants
+T25	physiology 511 532	expression of lncRNAs
+T27	gene 590 609	MDD-associated SNPs
+T28	method 724 743	real-time PCR assay
+#3	AnnotatorNotes T28	C0032520
+#4	AnnotatorNotes T7	C3813746
+#5	AnnotatorNotes T8	C3470874
+T29	gene 900 910	rs12526133
+T30	gene 1278 1287	rs2272260
+R11	associated_with Arg1:T30 Arg2:T16	
+T31	gene 1386 1405	non-coding variants
+R12	risk_factor_of Arg1:T31 Arg2:T17	
+T26	gene 255 271	genetic variants
+T32	physiology 86 116	long non-coding RNA expression
+T33	gene 636 643	lncRNAs
+T34	region 815 837	peripheral blood cells
+T35	method 1198 1217	microarray analysis
+T36	method 1219 1221	FC
+T37	gene 1254 1258	SNPs
+T39	method 966 970	chi2
+T38	method 1088 1090	FC
+T40	method 1338 1342	chi2
+R14	characteristic_of Arg1:T13 Arg2:T14	
+T41	method 118 155	Genome-wide association (GWA) studies
+R7	located_in Arg1:T29 Arg2:T10	
+R9	associated_with Arg1:T29 Arg2:T11	
+R8	located_in Arg1:T30 Arg2:T15	
+R4	associated_with Arg1:T18 Arg2:T32	
+R13	located_in Arg1:T8 Arg2:T34	
+R15	located_in Arg1:T7 Arg2:T34	
+T5	region 382 400	intergenic regions
+R6	located_in Arg1:T23 Arg2:T5	
+R10	located_in Arg1:T22 Arg2:T5	

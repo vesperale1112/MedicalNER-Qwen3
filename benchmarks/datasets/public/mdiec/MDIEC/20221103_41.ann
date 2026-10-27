@@ -1,0 +1,10 @@
+T3	Health_factors 65 73	veterans
+T4	Health_factors 78 93	service members
+T5	method 113 136	intensive psychotherapy
+T6	gene 177 180	CRP
+T7	gene 271 274	CRP
+T8	Health_factors 182 197	trauma exposure
+T9	disease 222 226	PTSD
+T11	disease 231 241	depression
+T12	physiology 300 332	psychotherapy treatment response
+T1	disease 295 299	PTSD

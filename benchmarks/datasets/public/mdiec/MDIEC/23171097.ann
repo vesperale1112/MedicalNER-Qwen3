@@ -1,0 +1,53 @@
+T0	disease 15 55	attention deficit-hyperactivity disorder
+T1	Health_factors 60 71	criminality
+T2	drug 0 10	Medication
+T3	disease 84 124	Attention deficit-hyperactivity disorder
+T4	disease 126 130	ADHD
+T7	Health_factors 183 200	criminal behavior
+T9	disease 259 263	ADHD
+T10	method 218 241	Pharmacologic treatment
+T11	Health_factors 291 302	criminality
+T13	Health_factors 320 346	Swedish national registers
+T14	disease 411 415	ADHD
+T15	method 423 446	pharmacologic treatment
+T19	Health_factors 584 595	criminality
+T20	drug 630 645	ADHD medication
+T21	drug 715 725	medication
+T23	method 526 560	stratified Cox regression analyses
+T26	drug 802 817	ADHD medication
+T27	Health_factors 888 891	men
+T28	method 893 914	adjusted hazard ratio
+T29	method 926 945	confidence interval
+T30	method 947 949	CI
+T31	Health_factors 978 983	women
+T32	method 985 997	hazard ratio
+T33	method 1009 1011	CI
+T36	method 1079 1099	sensitivity analyses
+T37	Health_factors 1106 1109	men
+T38	drug 1157 1162	drugs
+T39	Health_factors 1226 1231	crime
+T40	drug 1170 1179	stimulant
+T44	disease 1268 1272	ADHD
+T45	Health_factors 1283 1294	criminality
+T46	drug 1346 1361	ADHD medication
+T48	disease 1479 1483	ADHD
+T49	drug 1416 1426	medication
+T50	Health_factors 1447 1458	criminality
+R1	occurs_in Arg1:T44 Arg2:T45	
+R2	occurs_in Arg1:T50 Arg2:T48	
+R3	treatment_for Arg1:T49 Arg2:T50	
+R4	associated_with Arg1:T45 Arg2:T46	
+R5	abbreviation_for Arg1:T4 Arg2:T3	
+R6	associated_with Arg1:T3 Arg2:T7	
+R7	associated_with Arg1:T4 Arg2:T7	
+R8	treatment_for Arg1:T10 Arg2:T9	
+R9	treatment_for Arg1:T10 Arg2:T11	
+T5	Health_factors 463 483	criminal convictions
+T6	Health_factors 867 878	criminality
+R10	treatment_for Arg1:T26 Arg2:T6	
+R11	occurs_in Arg1:T6 Arg2:T27	
+R12	abbreviation_for Arg1:T30 Arg2:T29	
+R13	occurs_in Arg1:T6 Arg2:T31	
+T8	drug 1184 1196	nonstimulant
+R14	hyponym_of Arg1:T40 Arg2:T38	
+R15	hyponym_of Arg1:T8 Arg2:T38	

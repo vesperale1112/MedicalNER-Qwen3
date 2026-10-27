@@ -1,0 +1,5 @@
+T1	method 4 42	Activate-Initiate-Monitor intervention
+T2	method 49 72	care management program
+R1	hyponym_of Arg1:T1 Arg2:T2	
+T3	disease 126 145	depression symptoms
+T4	drug 185 210	antidepressant medication

@@ -1,0 +1,102 @@
+T0	gene 29 33	IL-1
+T1	disease 100 110	depression
+T2	physiology 37 43	memory
+T3	physiology 87 95	immunity
+T6	method 14 24	thymectomy
+T7	region 112 123	Macrophages
+T8	disease 213 223	depression
+T9	physiology 274 295	secretion of cortisol
+T10	gene 133 158	proinflammatory cytokines
+T11	physiology 163 185	inflammatory responses
+T13	physiology 261 269	HPA axis
+T14	disease 300 309	depressed
+T15	disease 320 336	hypercortisolism
+T16	disease 416 435	hippocampal atrophy
+T17	disease 440 457	memory impairment
+T19	gene 522 526	IL-1
+T20	drug 550 564	corticosterone
+T21	disease 658 676	memory impairments
+T22	disease 681 691	depression
+T23	method 604 608	rats
+T25	signs 569 600	neurotransmitter concentrations
+T26	method 500 510	thymectomy
+T28	method 696 714	thymectomized rats
+T30	physiology 733 768	spatial and fear conditioned memory
+T31	drug 810 823	noradrenaline
+T32	drug 828 836	dopamine
+T33	signs 925 954	corticosterone concentrations
+T35	region 893 905	limbic areas
+T36	physiology 859 889	serotonergic neurotransmission
+T37	method 789 799	Thymectomy
+T38	disease 961 971	depression
+T39	gene 996 1000	IL-2
+T41	method 1114 1124	bulbectomy
+T42	physiology 1036 1103	changes in behavior, lymphocyte proliferation and neurotransmitters
+T44	physiology 1173 1187	IL-1 synthesis
+T45	physiology 1143 1159	thymic functions
+T46	gene 1197 1205	IL-1beta
+T50	physiology 1338 1355	passive avoidance
+T51	physiology 1312 1330	conditioned memory
+T52	physiology 1235 1249	spatial memory
+T53	drug 1427 1461	glucocorticoid receptor antagonist
+T54	drug 1463 1469	RU 486
+T55	drug 1397 1421	IL-1 receptor antagonist
+T56	gene 1485 1489	IL-1
+T58	method 1572 1590	thymectomized rats
+T59	region 1514 1538	neurotransmitter systems
+T60	gene 1628 1632	IL-1
+T61	signs 1658 1694	plasma corticosterone concentrations
+T63	region 1830 1841	macrophages
+T64	region 1858 1869	lymphocytes
+T65	disease 1934 1953	memory disturbances
+T66	disease 1957 1975	depressive illness
+T67	gene 1843 1852	cytokines
+T69	physiology 1885 1928	neurotransmitter and neuroendocrine changes
+T70	region 1765 1777	thymus gland
+R1	associated_with Arg1:T7 Arg2:T10	
+R2	associated_with Arg1:T7 Arg2:T11	
+R3	risk_factor_of Arg1:T11 Arg2:T8	
+R4	risk_factor_of Arg1:T10 Arg2:T8	
+R7	associated_with Arg1:T11 Arg2:T13	
+R8	associated_with Arg1:T11 Arg2:T9	
+R11	characteristic_of Arg1:T15 Arg2:T14	
+R12	risk_factor_of Arg1:T15 Arg2:T16	
+R13	risk_factor_of Arg1:T15 Arg2:T17	
+R14	associated_with Arg1:T37 Arg2:T31	
+R15	associated_with Arg1:T37 Arg2:T32	
+R16	located_in Arg1:T36 Arg2:T35	
+R17	associated_with Arg1:T37 Arg2:T36	
+T4	drug 979 992	thymopeptides
+R18	occurs_in Arg1:T4 Arg2:T38	
+R19	occurs_in Arg1:T39 Arg2:T38	
+R20	treatment_for Arg1:T39 Arg2:T42	
+R21	treatment_for Arg1:T4 Arg2:T42	
+R22	risk_factor_of Arg1:T41 Arg2:T42	
+R23	associated_with Arg1:T45 Arg2:T44	
+R24	risk_factor_of Arg1:T46 Arg2:T52	
+T5	method 1257 1274	Morris water maze
+T12	method 1279 1297	8 arms radial maze
+R25	occurs_in Arg1:T51 Arg2:T50	
+R26	treatment_for Arg1:T46 Arg2:T51	
+R27	associated_with Arg1:T56 Arg2:T59	
+R28	associated_with Arg1:T60 Arg2:T61	
+R29	associated_with Arg1:T70 Arg2:T63	
+R30	associated_with Arg1:T70 Arg2:T67	
+R32	occurs_in Arg1:T65 Arg2:T66	
+R33	occurs_in Arg1:T69 Arg2:T66	
+R36	associated_with Arg1:T3 Arg2:T1	
+R37	associated_with Arg1:T6 Arg2:T2	
+R38	associated_with Arg1:T0 Arg2:T2	
+R5	associated_with Arg1:T10 Arg2:T13	
+R6	associated_with Arg1:T10 Arg2:T9	
+R9	characteristic_of Arg1:T13 Arg2:T8	
+R10	characteristic_of Arg1:T9 Arg2:T8	
+R39	associated_with Arg1:T28 Arg2:T30	
+T18	method 1229 1232	rat
+R31	associated_with Arg1:T70 Arg2:T64	
+R34	risk_factor_of Arg1:T63 Arg2:T69	
+R35	risk_factor_of Arg1:T67 Arg2:T69	
+R40	risk_factor_of Arg1:T64 Arg2:T69	
+R41	risk_factor_of Arg1:T63 Arg2:T65	
+R42	risk_factor_of Arg1:T67 Arg2:T65	
+R43	risk_factor_of Arg1:T64 Arg2:T65	

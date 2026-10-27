@@ -1,0 +1,63 @@
+T0	gene 0 12	Glyoxalase 1
+T2	gene 17 40	glutathione reductase 1
+T3	disease 50 57	anxiety
+T4	method 61 65	mice
+T5	disease 67 74	Anxiety
+T6	Health_factors 118 140	threatening situations
+T7	physiology 95 114	emotional responses
+T8	disease 79 83	fear
+T9	disease 151 168	anxiety disorders
+T10	disease 178 192	panic disorder
+T11	disease 194 223	obsessive-compulsive disorder
+T12	disease 225 255	post-traumatic stress disorder
+T13	disease 257 270	social phobia
+T14	disease 272 288	specific phobias
+T15	disease 293 321	generalized anxiety disorder
+T16	physiology 360 380	molecular mechanisms
+T18	disease 435 442	anxiety
+T21	method 502 524	inbred strains of mice
+T22	gene 580 588	genetics
+T23	symptom 600 622	behavioural phenotypes
+T24	method 545 557	model system
+T31	gene 807 812	genes
+T32	disease 858 893	anxiety-like behavioural phenotypes
+T33	method 717 755	quantitative gene expression profiling
+T34	method 691 711	inbred mouse strains
+T35	method 663 683	behavioural analysis
+T36	gene 929 941	glyoxalase 1
+T38	gene 946 969	glutathione reductase 1
+T39	disease 1008 1015	anxiety
+T42	method 1057 1090	lentivirus-mediated gene transfer
+T43	gene 922 927	genes
+T44	disease 1169 1191	anxiety-like behaviour
+T45	physiology 1199 1242	local inhibition of glyoxalase 1 expression
+T51	region 1135 1146	mouse brain
+T52	physiology 1092 1112	Local overexpression
+T53	disease 1392 1417	anxiety-related behaviour
+T54	gene 1315 1320	genes
+T56	physiology 1337 1364	oxidative stress metabolism
+R1	associated_with Arg1:T0 Arg2:T3	
+R2	associated_with Arg1:T2 Arg2:T3	
+R3	occurs_in Arg1:T3 Arg2:T4	
+R4	hyponym_of Arg1:T5 Arg2:T7	
+R5	hyponym_of Arg1:T8 Arg2:T7	
+R6	hyponym_of Arg1:T10 Arg2:T9	
+R7	hyponym_of Arg1:T11 Arg2:T9	
+R8	hyponym_of Arg1:T12 Arg2:T9	
+R9	hyponym_of Arg1:T13 Arg2:T9	
+R10	hyponym_of Arg1:T14 Arg2:T9	
+R11	hyponym_of Arg1:T15 Arg2:T9	
+T1	region 767 772	brain
+T17	physiology 818 837	expression patterns
+T19	method 1030 1050	genetic manipulation
+T20	gene 1122 1127	genes
+T25	method 1246 1262	RNA interference
+T26	disease 1277 1299	anxiety-like behaviour
+R12	associated_with Arg1:T56 Arg2:T53	
+R13	located_in Arg1:T20 Arg2:T51	
+R14	treatment_for Arg1:T45 Arg2:T26	
+R15	associated_with Arg1:T31 Arg2:T32	
+R16	associated_with Arg1:T54 Arg2:T56	
+R17	hyponym_of Arg1:T36 Arg2:T43	
+R18	hyponym_of Arg1:T38 Arg2:T43	
+T27	gene 997 1004	genesis

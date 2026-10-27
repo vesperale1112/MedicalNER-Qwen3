@@ -1,0 +1,52 @@
+T1	disease 0 27	Oligodendrocyte dysfunction
+T2	disease 31 44	schizophrenia
+T3	disease 49 65	bipolar disorder
+T4	disease 183 196	schizophrenia
+T8	gene 149 179	lipid and myelin-related genes
+T10	method 89 102	array studies
+T12	disease 291 304	schizophrenia
+T13	disease 309 335	bipolar affective disorder
+T15	physiology 220 287	oligodendrocyte-specific and myelination-associated gene expression
+T17	method 372 396	Stanley brain collection
+T18	disease 415 428	schizophrenia
+T19	region 476 482	brains
+T21	disease 581 594	schizophrenia
+T23	physiology 562 577	gene expression
+T24	disease 776 789	schizophrenia
+T25	disease 794 810	bipolar disorder
+T26	physiology 708 727	expression profiles
+T28	gene 740 772	oligodendrocyte and myelin genes
+T29	method 655 671	quantitative PCR
+T30	gene 818 823	genes
+T31	method 866 885	microarray analysis
+T33	method 934 959	quantitative PCR analysis
+T34	gene 986 1034	oligodendrocyte-related and myelin-related genes
+T35	disease 1038 1051	schizophrenia
+T40	gene 1176 1181	genes
+T41	method 1198 1214	quantitative PCR
+T44	region 1257 1289	Schizophrenia and bipolar brains
+T47	gene 1368 1389	transcription factors
+T48	gene 1410 1415	genes
+T49	region 1439 1445	brains
+T52	gene 1319 1356	oligodendrocyte and myelination genes
+T54	disease 1595 1608	schizophrenia
+T58	region 1618 1632	bipolar brains
+T39	disease 1056 1063	bipolar
+R1	characteristic_of Arg1:T34 Arg2:T35	
+R2	characteristic_of Arg1:T34 Arg2:T39	
+T37	method 1145 1155	Microarray
+R3	occurs_in Arg1:T1 Arg2:T2	
+R4	characteristic_of Arg1:T8 Arg2:T4	
+R5	occurs_in Arg1:T15 Arg2:T12	
+R6	occurs_in Arg1:T15 Arg2:T13	
+T5	disease 433 459	bipolar affective disorder
+T6	method 484 523	Indexing-based differential display PCR
+R7	occurs_in Arg1:T23 Arg2:T21	
+R8	occurs_in Arg1:T28 Arg2:T24	
+R9	occurs_in Arg1:T28 Arg2:T25	
+R10	characteristic_of Arg1:T52 Arg2:T44	
+R11	characteristic_of Arg1:T47 Arg2:T44	
+R12	associated_with Arg1:T47 Arg2:T48	
+T7	method 1512 1537	microarray investigations
+T9	physiology 1719 1746	pathophysiological pathways
+R13	occurs_in Arg1:T1 Arg2:T3	

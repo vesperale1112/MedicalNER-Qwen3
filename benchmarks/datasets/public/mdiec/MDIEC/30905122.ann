@@ -1,0 +1,107 @@
+T1	disease 91 101	Depression
+T2	disease 106 114	Insomnia
+T3	disease 135 160	Major Depression Disorder
+T4	disease 249 274	major depressive disorder
+T5	disease 276 279	MDD
+T6	disease 398 401	MDD
+T7	disease 491 507	physical illness
+T8	disease 512 528	mental disorders
+T9	disease 599 618	depressive symptoms
+T10	disease 688 691	MDD
+T11	disease 696 704	insomnia
+T12	disease 760 763	MDD
+T13	disease 1347 1354	anxiety
+T14	disease 1548 1558	depression
+T15	disease 1859 1869	depression
+T16	disease 1874 1882	insomnia
+T17	disease 1886 1889	MDD
+#1	AnnotatorNotes T3	C1269683
+#2	AnnotatorNotes T4	C1269683
+#3	AnnotatorNotes T5	C1269683
+#4	AnnotatorNotes T2	C0917801
+R1	abbreviation_for Arg1:T5 Arg2:T4	
+T18	method 0 34	Heart Rate Variability Biofeedback
+R2	treatment_for Arg1:T18 Arg2:T1	
+R3	treatment_for Arg1:T18 Arg2:T2	
+T19	disease 173 192	Autonomic imbalance
+R4	associated_with Arg1:T19 Arg2:T4	
+R5	associated_with Arg1:T19 Arg2:T5	
+T20	signs 282 304	Heart rate variability
+T21	signs 306 309	HRV
+R6	abbreviation_for Arg1:T21 Arg2:T20	
+T22	symptom 349 367	Poor sleep quality
+R7	associated_with Arg1:T22 Arg2:T6	
+#5	AnnotatorNotes T22	C1262141
+T23	method 403 418	HRV biofeedback
+T24	method 420 422	BF
+T26	method 589 595	HRV-BF
+T28	method 723 744	case-controlled study
+#6	AnnotatorNotes T28	C0681867
+T29	method 768 798	Pittsburgh Sleep Quality Index
+T30	method 800 804	PSQI
+R11	abbreviation_for Arg1:T30 Arg2:T29	
+#7	AnnotatorNotes T29	C3697468
+#8	AnnotatorNotes T30	C3697468
+T31	method 846 852	HRV-BF
+T32	method 971 983	medical care
+T33	method 1024 1052	Beck Depression Inventory-II
+T34	method 1054 1076	Back Anxiety Inventory
+T35	method 1078 1082	PSQI
+T36	method 1088 1111	Pre-Sleep Arousal Scale
+#9	AnnotatorNotes T33	C4696539
+#10	AnnotatorNotes T34	C5188413
+T37	method 1133 1152	electrocardiography
+T38	method 1249 1255	HRV-BF
+T39	method 1306 1312	HRV-BF
+T40	disease 1332 1342	depression
+T42	method 1499 1505	HRV-BF
+R14	treatment_for Arg1:T42 Arg2:T14	
+T44	method 1753 1759	HRV-BF
+T45	method 1772 1797	psychosocial intervention
+R15	hyponym_of Arg1:T44 Arg2:T45	
+R16	treatment_for Arg1:T44 Arg2:T15	
+R17	treatment_for Arg1:T44 Arg2:T16	
+T46	disease 635 652	pre-sleep arousal
+T47	disease 1375 1392	pre-sleep arousal
+T48	disease 1563 1570	anxiety
+R22	treatment_for Arg1:T42 Arg2:T48	
+T25	method 407 418	biofeedback
+R8	abbreviation_for Arg1:T24 Arg2:T25	
+T53	Health_factors 620 633	sleep quality
+T54	signs 658 669	HRV indices
+T27	Health_factors 950 953	age
+T55	Health_factors 958 961	sex
+T57	signs 1113 1128	Breathing rates
+T58	Health_factors 1356 1369	sleep quality
+T59	symptom 1426 1447	increased HRV indices
+T41	signs 1582 1597	breathing rates
+T60	signs 1613 1616	HRV
+T61	physiology 1831 1841	baroreflex
+T62	disease 1812 1829	autonomic balance
+R12	treatment_for Arg1:T44 Arg2:T62	
+R13	treatment_for Arg1:T44 Arg2:T61	
+T63	disease 453 470	autonomic balance
+R19	associated_with Arg1:T23 Arg2:T63	
+R20	treatment_for Arg1:T39 Arg2:T40	
+R21	treatment_for Arg1:T39 Arg2:T13	
+R24	treatment_for Arg1:T39 Arg2:T47	
+T56	method 1279 1288	follow-up
+T64	method 1670 1679	follow-up
+T65	physiology 327 347	autonomic activation
+T66	physiology 45 65	Autonomic Activation
+R28	associated_with Arg1:T18 Arg2:T66	
+R9	treatment_for Arg1:T39 Arg2:T58	
+R18	occurs_in Arg1:T63 Arg2:T7	
+R23	occurs_in Arg1:T63 Arg2:T8	
+R25	occurs_in Arg1:T16 Arg2:T17	
+R29	occurs_in Arg1:T62 Arg2:T17	
+R30	occurs_in Arg1:T61 Arg2:T17	
+R31	occurs_in Arg1:T15 Arg2:T17	
+R32	occurs_in Arg1:T2 Arg2:T3	
+R33	occurs_in Arg1:T1 Arg2:T3	
+R10	associated_with Arg1:T39 Arg2:T59	
+T43	physiology 209 237	psychopathological mechanism
+R27	hyponym_of Arg1:T19 Arg2:T43	
+R34	associated_with Arg1:T43 Arg2:T4	
+R26	associated_with Arg1:T42 Arg2:T41	
+R35	associated_with Arg1:T42 Arg2:T60	

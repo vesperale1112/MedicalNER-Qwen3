@@ -1,0 +1,14 @@
+T1	physiology 12 23	Lewy bodies
+T2	region 37 45	amygdala
+T3	region 53 67	cortical areas
+T4	disease 90 106	major depression
+T5	disease 110 127	Alzheimer disease
+T6	physiology 25 28	LBs
+R1	abbreviation_for Arg1:T6 Arg2:T1	
+R2	risk_factor_of Arg1:T6 Arg2:T4	
+R3	risk_factor_of Arg1:T1 Arg2:T4	
+R4	occurs_in Arg1:T4 Arg2:T5	
+R5	located_in Arg1:T6 Arg2:T2	
+R6	located_in Arg1:T6 Arg2:T3	
+R7	located_in Arg1:T1 Arg2:T2	
+R8	located_in Arg1:T1 Arg2:T3	

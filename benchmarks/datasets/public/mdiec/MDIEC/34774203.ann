@@ -1,0 +1,49 @@
+T1	disease 28 93	opioid use disorder-post-traumatic stress disorder comorbid state
+T2	method 95 114	conceptual analyses
+T3	disease 182 201	opioid use disorder
+T4	disease 203 206	OUD
+T5	disease 212 242	post-traumatic stress disorder
+T6	disease 244 248	PTSD
+T8	physiology 335 386	convergent and targetable neurobiological processes
+T9	disease 390 410	OUD-PTSD comorbidity
+T10	method 309 333	research domain criteria
+T11	disease 454 462	OUD-PTSD
+T12	region 464 473	circuitry
+T13	method 500 532	research domain criteria systems
+T14	physiology 538 554	negative valence
+T15	physiology 559 576	cognitive control
+T16	physiology 605 623	incentive salience
+T17	physiology 625 646	negative emotionality
+T18	physiology 652 670	executive function
+T19	disease 822 832	addictions
+T20	disease 837 841	PTSD
+T24	method 847 867	dimensional analysis
+T25	method 900 933	first-line therapeutic approaches
+T27	method 1099 1125	polytherapeutic strategies
+T29	drug 1153 1192	-type opioid receptor [KOR1] antagonism
+T30	drug 1198 1238	-2A adrenergic receptor [ADRA2A] agonism
+T31	drug 1131 1151	partial MOR1 agonism
+T32	drug 939 983	partial -type opioid receptor [MOR1] agonism
+T35	disease 1340 1348	OUD-PTSD
+T36	physiology 1401 1418	executive control
+T37	Health_factors 1314 1322	recovery
+T38	disease 875 889	OUD-PTSD state
+T39	disease 697 711	OUD-PTSD state
+T40	region 0 14	Neurocircuitry
+T7	method 123 144	dimensional framework
+R1	abbreviation_for Arg1:T4 Arg2:T3	
+R2	abbreviation_for Arg1:T6 Arg2:T5	
+T21	method 278 299	dimensional framework
+R3	hyponym_of Arg1:T10 Arg2:T21	
+R4	occurs_in Arg1:T8 Arg2:T9	
+R5	hyponym_of Arg1:T14 Arg2:T13	
+R6	hyponym_of Arg1:T15 Arg2:T13	
+T22	method 783 817	neuroclinical assessment framework
+R7	hyponym_of Arg1:T32 Arg2:T25	
+R8	hyponym_of Arg1:T31 Arg2:T27	
+R9	hyponym_of Arg1:T29 Arg2:T27	
+R10	hyponym_of Arg1:T30 Arg2:T27	
+R11	occurs_in Arg1:T37 Arg2:T35	
+T23	physiology 1363 1386	negative valence states
+R12	associated_with Arg1:T35 Arg2:T36	
+R13	associated_with Arg1:T35 Arg2:T23	

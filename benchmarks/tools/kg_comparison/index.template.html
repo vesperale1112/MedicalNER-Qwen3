@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>MedicalNER · 三人知识图谱对照</title>
+  <style>/* INLINE_STYLE */</style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">M<span>↗</span></span><div><strong>MedicalNER</strong><span class="brand-sub">人工标注 · 知识图谱对照</span></div></div>
+    <div class="dataset-stats" id="datasetStats"></div>
+    <span class="offline"><i></i>离线阅览</span>
+  </header>
+  <div class="workspace">
+    <aside class="sidebar">
+      <div class="sidebar-heading"><h2>文章目录</h2><span id="articleCount"></span></div>
+      <label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索标题 / 编号 / DOI" aria-label="搜索文章"></label>
+      <nav id="articleList" aria-label="文章列表"></nav>
+      <div class="sidebar-foot">按文章编号对齐三份标注<br>实体 ID 仅在各自文章内有效</div>
+    </aside>
+    <main>
+      <section class="article-header">
+        <div class="eyebrow"><span id="articlePosition"></span><span class="dot">·</span><span id="articleMeta"></span></div>
+        <div class="title-row"><h1 id="articleTitle"></h1><div class="pager"><button id="previous" aria-label="上一篇">←</button><button id="next" aria-label="下一篇">→</button></div></div>
+        <div class="article-bottom"><span id="articleDoi"></span><button id="abstractToggle" aria-expanded="false" aria-controls="abstractBody">展开原文摘要 ↓</button></div>
+        <div id="abstractBody" class="abstract" hidden></div>
+      </section>
+      <section class="comparison-heading"><div><h2>三人并排对照</h2><p>滚轮缩放 · 拖动空白平移 · 拖动节点调整位置 · 点击节点或关系查看详情</p></div><label class="toggle"><input type="checkbox" id="edgeLabels" checked>显示关系名称</label></section>
+      <div id="legend" class="legend" aria-label="实体类型颜色图例"></div>
+      <div class="board-scroll"><section id="board" class="board" aria-label="三位标注员的知识图谱"></section></div>
+      <details class="provenance"><summary>查看数据来源与标注统计</summary><div id="sources"></div><p>页面使用每份文件的 records → output → entities / relations；图中箭头从 source 指向 target。所有实体、关系、属性、证据和备注均来自原始导出；显示名称较长时会折行或省略，完整内容可点击查看。计数用于描述标注规模。</p></details>
+      <footer>MedicalNER / 20 篇文章 · 3 份人工标注<span>单文件 HTML · 无需联网</span></footer>
+    </main>
+  </div>
+  <script id="annotation-data" type="application/json">/* INLINE_DATA */</script>
+  <script>/* INLINE_APP */</script>
+</body>
+</html>

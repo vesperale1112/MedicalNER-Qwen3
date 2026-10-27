@@ -1,0 +1,51 @@
+T0	disease 0 17	Bipolar disorders
+T1	disease 19 36	Bipolar disorders
+T2	disease 41 72	chronic and recurrent disorders
+T3	Health_factors 96 113	global population
+T4	disease 115 132	Bipolar disorders
+T5	disease 155 165	disability
+T6	disease 202 237	cognitive and functional impairment
+T7	disease 293 315	cardiovascular disease
+T8	Health_factors 169 181	young people
+T9	disease 252 261	mortality
+T10	disease 281 288	suicide
+T13	disease 432 441	mortality
+T14	disease 317 369	Psychiatric and nonpsychiatric medical comorbidities
+T15	disease 443 460	Bipolar disorders
+T16	disease 482 513	heritable psychiatric disorders
+T18	Health_factors 537 566	gene-environment interactions
+T19	method 599 608	aetiology
+T20	disease 776 794	depressive episode
+T21	disease 836 855	unipolar depression
+T24	method 655 672	clinical practice
+T25	disease 689 705	bipolar disorder
+T26	disease 735 755	nonspecific symptoms
+T29	disease 972 999	hypomanic or manic symptoms
+T31	disease 1028 1045	bipolar disorders
+T32	signs 1013 1023	biomarkers
+T33	Health_factors 1077 1096	clinical assessment
+T36	disease 1238 1254	bipolar disorder
+T38	disease 1260 1276	other conditions
+T39	method 1175 1206	longtudinal clinical assessment
+T40	disease 1152 1170	hypomanic symptoms
+T43	drug 1356 1372	mood stabilizers
+T44	drug 1377 1391	antipsychotics
+T45	drug 1319 1344	evidence-based medication
+R1	hyponym_of Arg1:T1 Arg2:T2	
+R2	occurs_in Arg1:T5 Arg2:T8	
+R3	risk_factor_of Arg1:T4 Arg2:T5	
+R4	risk_factor_of Arg1:T4 Arg2:T6	
+R5	risk_factor_of Arg1:T4 Arg2:T9	
+R6	risk_factor_of Arg1:T4 Arg2:T10	
+R7	risk_factor_of Arg1:T4 Arg2:T7	
+R8	risk_factor_of Arg1:T14 Arg2:T13	
+R9	hyponym_of Arg1:T15 Arg2:T16	
+R10	characteristic_of Arg1:T26 Arg2:T25	
+T11	disease 757 770	mood lability
+R11	characteristic_of Arg1:T11 Arg2:T25	
+R12	characteristic_of Arg1:T20 Arg2:T25	
+R13	help_diagnose Arg1:T40 Arg2:T36	
+R14	help_diagnose Arg1:T39 Arg2:T36	
+R15	hyponym_of Arg1:T43 Arg2:T45	
+R16	hyponym_of Arg1:T44 Arg2:T45	
+T12	method 1397 1420	psychosocial strategies

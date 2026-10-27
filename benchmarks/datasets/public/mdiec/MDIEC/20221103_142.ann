@@ -1,0 +1,8 @@
+T1	Health_factors 58 64	adults
+T2	disease 70 86	major depression
+T4	drug 118 130	bupropion XL
+T7	method 2 51	prospective, randomized, double-blinded crossover
+T3	drug 201 203	XL
+R1	occurs_in Arg1:T1 Arg2:T2	
+T5	disease 97 106	remission
+R2	occurs_in Arg1:T2 Arg2:T5	

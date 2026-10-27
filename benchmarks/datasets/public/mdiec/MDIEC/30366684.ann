@@ -1,0 +1,31 @@
+T1	disease 0 20	Rheumatoid arthritis
+T2	disease 25 35	depression
+T3	disease 70 138	coexistence of immune-mediated inflammatory diseases with depression
+T5	disease 727 743	physical disease
+T6	disease 807 827	rheumatoid arthritis
+T7	disease 832 842	depression
+T8	disease 1080 1087	fatigue
+T9	disease 1177 1187	depression
+T10	disease 1203 1223	rheumatoid arthritis
+T11	physiology 220 257	peripheral and brain immune responses
+T13	physiology 472 491	synaptic plasticity
+T14	method 577 592	clinical trials
+T16	method 644 657	interventions
+T17	Health_factors 682 695	mental health
+T18	disease 901 913	inflammation
+T19	disease 1071 1075	pain
+T21	method 1282 1307	therapeutic interventions
+T22	method 1116 1149	clinical and preclinical research
+T24	physiology 878 897	molecular responses
+T25	method 596 620	immunomodulatory therapy
+T26	gene 434 454	neurotrophic factors
+T27	physiology 401 432	monoaminergic neurotransmission
+T28	gene 372 397	proinflammatory cytokines
+T29	disease 40 52	inflammatory
+T30	physiology 290 319	pathophysiological mechanisms
+R1	associated_with Arg1:T28 Arg2:T27	
+R2	associated_with Arg1:T28 Arg2:T26	
+R3	associated_with Arg1:T28 Arg2:T13	
+R4	treatment_for Arg1:T25 Arg2:T17	
+R5	treatment_for Arg1:T25 Arg2:T5	
+T4	physiology 860 873	innate immune

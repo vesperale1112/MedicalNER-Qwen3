@@ -1,0 +1,101 @@
+T0	gene 32 86	postsynaptic group II metabotropic glutamate receptors
+T2	gene 97 112	phospholipase C
+T3	drug 117 138	intracellular calcium
+T4	physiology 0 20	Long-term depression
+T6	region 148 169	rat prefrontal cortex
+T8	drug 243 293	(2S,2'R,3'R)-2-(2',3'-dicarboxycyclopropyl)glycine
+T9	drug 295 301	DCG IV
+T10	gene 319 360	group II metabotropic glutamate receptors
+T12	gene 362 368	mGluRs
+T14	region 437 498	layer I-II to layer V pyramidal neuron glutamatergic synapses
+T16	physiology 407 427	long-term depression
+T17	physiology 429 432	LTD
+T18	region 502 530	rat medial prefrontal cortex
+T21	method 223 239	bath application
+T23	physiology 594 612	DCG IV-induced LTD
+T26	drug 625 703	group II mGluR antagonist (RS)-alpha-methylserine-O-phosphate monophenyl ester
+T29	drug 744 811	group II agonist (2S,3S,4S)-CCG/(2S,1'S,2'S)-2-(carboxycyclopropyl)
+T30	gene 877 892	group II mGluRs
+T32	physiology 712 730	DCG IV-induced LTD
+T33	disease 833 836	LTD
+T36	drug 940 969	NMDA receptor antagonist AP-5
+T38	drug 979 985	DCG IV
+T40	physiology 1005 1046	NMDA receptor-mediated synaptic responses
+T41	physiology 902 920	DCG IV-induced LTD
+T43	drug 1091 1097	DCG IV
+T45	physiology 1118 1136	DCG IV-induced LTD
+T46	method 1064 1083	single test stimuli
+T48	physiology 1171 1203	NMDA receptor-mediated responses
+T50	physiology 1252 1270	DCG IV-induced LTD
+T51	physiology 1214 1237	single synaptic stimuli
+T53	drug 1345 1378	phospholipase C inhibitor U-73122
+T56	drug 1450 1478	IP3 receptor blocker heparin
+T59	drug 1480 1524	phospholipase D-linked mGluR blocker PCCG-13
+T61	drug 1526 1548	PKC inhibitor RO318220
+T62	drug 1576 1600	PKC inhibitor PKC(19-36)
+T65	drug 1606 1627	PKA inhibitor KT-5720
+T66	physiology 1279 1297	DCG IV-induced LTD
+T67	drug 1338 1343	drugs
+T68	method 1637 1673	fluorescent Ca2+ analysis techniques
+T69	gene 1688 1694	DCG IV
+T70	signs 1705 1723	Ca2+ concentration
+T71	region 1727 1763	prefrontal layer V pyramidal neurons
+T72	drug 1771 1775	Ca2+
+T73	physiology 1790 1793	LTD
+T74	region 1848 1853	cells
+T75	drug 1815 1835	postsynaptic heparin
+T77	gene 1898 1926	postsynaptic group II mGluRs
+T78	gene 1938 1953	phospholipase C
+T79	gene 1972 1987	phospholipase D
+T80	physiology 2008 2035	postsynaptic PKC activation
+T81	gene 2040 2052	IP3 receptor
+T82	signs 2088 2106	Ca2+ concentration
+T83	physiology 1996 1999	LTD
+R1	risk_factor_of Arg1:T0 Arg2:T4	
+R2	associated_with Arg1:T0 Arg2:T2	
+R4	located_in Arg1:T3 Arg2:T6	
+R5	abbreviation_for Arg1:T9 Arg2:T8	
+T1	gene 328 360	metabotropic glutamate receptors
+R6	abbreviation_for Arg1:T12 Arg2:T1	
+R7	abbreviation_for Arg1:T17 Arg2:T16	
+T5	physiology 379 427	postsynaptic Ca2+-dependent long-term depression
+R8	risk_factor_of Arg1:T8 Arg2:T5	
+R9	risk_factor_of Arg1:T9 Arg2:T5	
+R10	located_in Arg1:T5 Arg2:T14	
+R11	located_in Arg1:T14 Arg2:T18	
+R15	associated_with Arg1:T33 Arg2:T30	
+R17	associated_with Arg1:T41 Arg2:T36	
+R18	associated_with Arg1:T26 Arg2:T32	
+R20	associated_with Arg1:T48 Arg2:T51	
+R21	associated_with Arg1:T48 Arg2:T50	
+R22	associated_with Arg1:T66 Arg2:T67	
+R23	hyponym_of Arg1:T53 Arg2:T67	
+R24	hyponym_of Arg1:T56 Arg2:T67	
+R25	hyponym_of Arg1:T59 Arg2:T67	
+R26	hyponym_of Arg1:T61 Arg2:T67	
+R12	hyponym_of Arg1:T62 Arg2:T67	
+R16	hyponym_of Arg1:T65 Arg2:T67	
+R19	associated_with Arg1:T66 Arg2:T53	
+R27	associated_with Arg1:T66 Arg2:T56	
+R28	associated_with Arg1:T66 Arg2:T59	
+R29	associated_with Arg1:T66 Arg2:T61	
+R30	associated_with Arg1:T66 Arg2:T62	
+R31	associated_with Arg1:T66 Arg2:T65	
+R32	located_in Arg1:T70 Arg2:T71	
+R33	associated_with Arg1:T69 Arg2:T70	
+R34	associated_with Arg1:T72 Arg2:T75	
+R35	associated_with Arg1:T73 Arg2:T75	
+R36	located_in Arg1:T75 Arg2:T74	
+R37	associated_with Arg1:T77 Arg2:T78	
+R38	associated_with Arg1:T77 Arg2:T79	
+R39	risk_factor_of Arg1:T77 Arg2:T83	
+R3	risk_factor_of Arg1:T3 Arg2:T4	
+T7	physiology 812 815	LTD
+R13	associated_with Arg1:T46 Arg2:T45	
+R14	risk_factor_of Arg1:T80 Arg2:T83	
+R40	risk_factor_of Arg1:T82 Arg2:T83	
+R41	associated_with Arg1:T81 Arg2:T82	
+T11	region 2062 2074	postsynaptic
+T13	method 1424 1449	postsynaptically injected
+T15	method 1396 1421	postsynaptically injected
+T19	method 1550 1575	postsynaptically injected

@@ -1,0 +1,75 @@
+T1	drug 15 54	selective serotonin re-uptake inhibitor
+T2	drug 131 170	Selective serotonin reuptake inhibitors
+T3	disease 231 238	anxiety
+T4	disease 239 249	depression
+T5	disease 932 959	anxiety/depressive disorder
+T7	Health_factors 1223 1258	substance-related criminal offenses
+T8	Health_factors 1532 1557	substance misuse outcomes
+T9	disease 2031 2038	anxiety
+T10	drug 2146 2184	selective serotonin reuptake inhibitor
+T11	Health_factors 2251 2264	substance use
+T12	drug 56 60	SSRI
+R1	abbreviation_for Arg1:T12 Arg2:T1	
+T13	drug 172 177	SSRIs
+R2	abbreviation_for Arg1:T13 Arg2:T2	
+R3	treatment_for Arg1:T2 Arg2:T3	
+R4	treatment_for Arg1:T13 Arg2:T3	
+R5	treatment_for Arg1:T2 Arg2:T4	
+R6	treatment_for Arg1:T13 Arg2:T4	
+T14	method 383 397	SSRI treatment
+T15	method 429 443	SSRI treatment
+T16	method 532 544	Cohort study
+T17	drug 863 868	SSRIs
+T18	method 912 918	ICD-10
+R7	help_diagnose Arg1:T18 Arg2:T5	
+T20	Health_factors 1068 1093	Substance misuse outcomes
+T21	disease 1123 1142	acute intoxications
+T22	disease 1158 1179	accidental poisonings
+R8	hyponym_of Arg1:T21 Arg2:T20	
+R9	hyponym_of Arg1:T22 Arg2:T20	
+R10	hyponym_of Arg1:T7 Arg2:T20	
+T6	disease 1291 1307	substance misuse
+T23	method 1346 1360	SSRI treatment
+T24	Health_factors 77 108	acute substance misuse outcomes
+T25	disease 349 365	substance misuse
+T26	Health_factors 483 522	acute substance misuse-related outcomes
+R11	associated_with Arg1:T6 Arg2:T23	
+T27	method 1403 1435	Stratified Cox regression models
+T28	method 1461 1473	hazard ratio
+T29	method 1475 1477	HR
+R12	abbreviation_for Arg1:T29 Arg2:T28	
+T30	method 1491 1510	confidence interval
+T31	method 1512 1514	CI
+R13	abbreviation_for Arg1:T31 Arg2:T30	
+T32	method 1733 1735	HR
+T33	method 1748 1750	CI
+T34	method 1777 1779	HR
+T35	method 1792 1794	CI
+T36	method 1824 1826	HR
+T37	method 1839 1841	CI
+T38	disease 2039 2049	depression
+T39	disease 2063 2079	substance misuse
+T40	drug 2186 2190	SSRI
+R14	abbreviation_for Arg1:T40 Arg2:T10	
+T41	disease 2292 2299	anxiety
+T42	disease 2300 2310	depression
+T43	method 2312 2326	SSRI treatment
+T44	disease 2373 2389	substance misuse
+T45	Health_factors 667 692	substance misuse outcomes
+T19	method 1003 1009	cohort
+T48	Health_factors 291 304	substance use
+T50	Health_factors 770 796	Swedish general population
+T51	Health_factors 1046 1051	women
+T52	method 1103 1109	ICD-10
+R22	help_diagnose Arg1:T52 Arg2:T21	
+R15	risk_factor_of Arg1:T38 Arg2:T39	
+R16	risk_factor_of Arg1:T9 Arg2:T39	
+T47	drug 190 212	prescribed medications
+R20	hyponym_of Arg1:T13 Arg2:T47	
+R21	hyponym_of Arg1:T2 Arg2:T47	
+R19	treatment_for Arg1:T43 Arg2:T44	
+R23	associated_with Arg1:T12 Arg2:T24	
+R24	associated_with Arg1:T1 Arg2:T24	
+T49	drug 1194 1199	drugs
+R17	associated_with Arg1:T11 Arg2:T41	
+R18	associated_with Arg1:T11 Arg2:T42	

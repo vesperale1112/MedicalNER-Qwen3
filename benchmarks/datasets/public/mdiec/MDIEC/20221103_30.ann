@@ -1,0 +1,51 @@
+T3	disease 72 75	MDD
+T4	drug 97 108	minocycline
+T5	drug 110 117	insulin
+T6	drug 119 138	antidiabetic agents
+T7	drug 140 180	angiotensin-converting enzyme inhibitors
+T8	drug 182 203	S-adenosyl methionine
+T9	drug 225 242	alpha lipoic acid
+T10	drug 244 263	omega-3 fatty acids
+T11	drug 265 274	melatonin
+T12	drug 276 285	modafinil
+T13	drug 287 298	galantamine
+T14	drug 300 311	scopolamine
+T15	drug 313 329	N-acetylcysteine
+T16	drug 331 339	curcumin
+T17	drug 354 366	coenzyme Q10
+T1	drug 20 26	agents
+T2	drug 205 223	acetyl-L-carnitine
+T18	drug 341 348	statins
+R18	treatment_for Arg1:T4 Arg2:T3	
+R19	treatment_for Arg1:T5 Arg2:T3	
+R20	treatment_for Arg1:T6 Arg2:T3	
+R21	treatment_for Arg1:T7 Arg2:T3	
+R22	treatment_for Arg1:T8 Arg2:T3	
+R23	treatment_for Arg1:T2 Arg2:T3	
+R24	treatment_for Arg1:T9 Arg2:T3	
+R25	treatment_for Arg1:T10 Arg2:T3	
+R26	treatment_for Arg1:T11 Arg2:T3	
+R27	treatment_for Arg1:T12 Arg2:T3	
+R28	treatment_for Arg1:T13 Arg2:T3	
+R29	treatment_for Arg1:T14 Arg2:T3	
+R30	treatment_for Arg1:T15 Arg2:T3	
+R31	treatment_for Arg1:T16 Arg2:T3	
+R32	treatment_for Arg1:T18 Arg2:T3	
+R33	treatment_for Arg1:T17 Arg2:T3	
+T19	drug 48 67	cognitive enhancers
+R2	hyponym_of Arg1:T4 Arg2:T19	
+R3	hyponym_of Arg1:T5 Arg2:T19	
+R4	hyponym_of Arg1:T6 Arg2:T19	
+R5	hyponym_of Arg1:T7 Arg2:T19	
+R6	hyponym_of Arg1:T8 Arg2:T19	
+R7	hyponym_of Arg1:T2 Arg2:T19	
+R8	hyponym_of Arg1:T9 Arg2:T19	
+R9	hyponym_of Arg1:T10 Arg2:T19	
+R10	hyponym_of Arg1:T11 Arg2:T19	
+R11	hyponym_of Arg1:T12 Arg2:T19	
+R12	hyponym_of Arg1:T13 Arg2:T19	
+R13	hyponym_of Arg1:T14 Arg2:T19	
+R14	hyponym_of Arg1:T15 Arg2:T19	
+R15	hyponym_of Arg1:T16 Arg2:T19	
+R16	hyponym_of Arg1:T18 Arg2:T19	
+R17	hyponym_of Arg1:T17 Arg2:T19	

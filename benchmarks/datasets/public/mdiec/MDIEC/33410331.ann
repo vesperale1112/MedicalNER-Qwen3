@@ -1,0 +1,67 @@
+T1	disease 341 351	depression
+T2	disease 495 505	depression
+T3	disease 990 1000	depression
+T4	disease 1279 1289	depression
+T5	disease 1416 1426	depression
+T6	disease 1516 1535	depressive symptoms
+T7	disease 1590 1609	depressive symptoms
+T8	disease 1657 1676	depressive symptoms
+T9	disease 1841 1851	depression
+T10	disease 2068 2087	depressive symptoms
+T11	disease 23 46	sleep-wake disturbances
+T12	disease 52 62	loneliness
+T13	method 64 76	SEM analysis
+T14	disease 80 99	depressive symptoms
+T15	disease 219 229	loneliness
+T16	Health_factors 234 255	productive engagement
+T17	Health_factors 315 336	productive engagement
+T18	disease 399 422	sleep-wake disturbances
+T19	disease 451 461	loneliness
+T20	Health_factors 469 490	productive engagement
+T21	method 594 609	Factor analysis
+T22	method 825 853	Structural equation modeling
+T23	disease 909 919	loneliness
+T24	Health_factors 921 959	multidimensional productive engagement
+T25	disease 961 984	sleep-wake disturbances
+T26	Health_factors 1029 1050	productive engagement
+T27	disease 1095 1105	loneliness
+R5	associated_with Arg1:T26 Arg2:T27	
+T28	disease 1198 1221	Sleep-wake disturbances
+T29	disease 1186 1196	loneliness
+T30	Health_factors 1118 1127	paid work
+R6	associated_with Arg1:T30 Arg2:T29	
+T31	Health_factors 1256 1274	leisure activities
+R7	associated_with Arg1:T31 Arg2:T4	
+T32	Health_factors 1391 1412	productive engagement
+R8	associated_with Arg1:T32 Arg2:T5	
+T33	Health_factors 1443 1461	leisure activities
+T34	Health_factors 1466 1483	family caregiving
+R9	associated_with Arg1:T34 Arg2:T6	
+R10	associated_with Arg1:T33 Arg2:T6	
+T35	Health_factors 1549 1558	paid work
+R11	associated_with Arg1:T35 Arg2:T7	
+T36	disease 1777 1787	loneliness
+T37	disease 1812 1834	sleep-wake disturbance
+T38	method 1986 2007	intervention programs
+T39	Health_factors 2027 2047	social work practice
+T40	Health_factors 103 136	community-dwelling Chinese elders
+T41	Health_factors 0 21	Productive engagement
+T42	Health_factors 667 688	productive engagement
+T43	Health_factors 690 713	recreational activities
+T44	Health_factors 715 753	group artistic and learning activities
+T45	Health_factors 755 774	sportive activities
+T46	Health_factors 776 785	paid work
+T47	Health_factors 787 799	volunteering
+T48	Health_factors 805 822	family caregiving
+T49	method 1172 1185	self-reported
+T50	Health_factors 1347 1368	productive engagement
+T51	Health_factors 1611 1623	Volunteering
+T52	Health_factors 1789 1810	productive engagement
+T53	Health_factors 1920 1941	productive engagement
+T54	Health_factors 2091 2103	older adults
+T55	Health_factors 541 553	older adults
+R1	associated_with Arg1:T28 Arg2:T31	
+R2	associated_with Arg1:T28 Arg2:T4	
+R3	associated_with Arg1:T36 Arg2:T52	
+R4	associated_with Arg1:T36 Arg2:T37	
+R13	associated_with Arg1:T36 Arg2:T9	

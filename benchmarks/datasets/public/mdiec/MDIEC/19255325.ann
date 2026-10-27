@@ -1,0 +1,89 @@
+T0	disease 22 37	prostate cancer
+T2	disease 114 143	biochemical cancer recurrence
+T4	disease 8 15	anxiety
+T6	method 81 109	androgen deprivation therapy
+T7	Health_factors 147 156	older men
+T8	method 160 184	prospective cohort study
+T11	disease 269 284	prostate cancer
+T12	disease 286 289	PCA
+T14	method 194 222	Androgen deprivation therapy
+T16	disease 330 333	BCR
+T17	disease 306 328	biochemical recurrence
+T18	method 232 250	first-line therapy
+T20	Health_factors 455 470	quality of life
+T21	disease 433 443	toxicities
+T22	method 400 422	earlier ADT initiation
+T23	method 367 381	ADT initiation
+T24	disease 517 531	cancer anxiety
+T27	Health_factors 575 584	older men
+T28	disease 568 571	BCR
+T29	method 541 563	earlier ADT initiation
+T32	method 624 648	prospective cohort study
+T35	method 712 726	questionnaires
+T36	disease 793 813	PCA-specific anxiety
+T39	method 836 878	Memorial Anxiety Scale for Prostate Cancer
+T40	method 880 886	MAX-PC
+T41	disease 967 974	anxiety
+T42	Health_factors 919 931	demographics
+T44	method 1055 1058	ADT
+T45	method 1107 1121	ADT initiation
+T47	disease 1231 1245	cancer anxiety
+T48	method 1123 1167	Univariate, multivariate logistic regression
+T51	method 1173 1195	time-to-event analyses
+T54	method 1408 1414	MAX-PC
+T55	method 1497 1507	odds ratio
+T56	method 1509 1511	OR
+T58	method 1454 1475	multivariate analyses
+T59	disease 1395 1406	PCA anxiety
+T60	disease 1530 1533	PSA
+T61	method 1587 1589	OR
+T63	disease 1607 1610	PSA
+T64	method 1634 1640	MAX-PC
+T69	Health_factors 1732 1741	older men
+T70	method 1706 1728	earlier ADT initiation
+T71	disease 1655 1669	Cancer anxiety
+T72	disease 1776 1779	PCA
+T75	Health_factors 1819 1834	life expectancy
+T76	method 1781 1803	earlier ADT initiation
+T77	disease 1866 1886	PCA-specific anxiety
+T80	method 1915 1943	decision-making intervention
+R3	associated_with Arg1:T4 Arg2:T6	
+T1	method 224 227	ADT
+R4	abbreviation_for Arg1:T1 Arg2:T14	
+R5	abbreviation_for Arg1:T12 Arg2:T11	
+R6	hyponym_of Arg1:T14 Arg2:T18	
+R7	hyponym_of Arg1:T1 Arg2:T18	
+R8	treatment_for Arg1:T14 Arg2:T11	
+R9	treatment_for Arg1:T14 Arg2:T12	
+R10	treatment_for Arg1:T1 Arg2:T11	
+R11	treatment_for Arg1:T1 Arg2:T12	
+R12	abbreviation_for Arg1:T16 Arg2:T17	
+R13	risk_factor_of Arg1:T22 Arg2:T21	
+T3	Health_factors 472 475	QOL
+R14	abbreviation_for Arg1:T3 Arg2:T20	
+R15	occurs_in Arg1:T28 Arg2:T27	
+T5	Health_factors 652 657	older
+T9	disease 672 675	BCR
+T10	disease 679 682	PCA
+T13	method 788 791	ADT
+R16	abbreviation_for Arg1:T40 Arg2:T39	
+R17	help_diagnose Arg1:T39 Arg2:T36	
+R18	help_diagnose Arg1:T40 Arg2:T36	
+T15	method 1287 1290	ADT
+R19	help_diagnose Arg1:T54 Arg2:T59	
+R20	abbreviation_for Arg1:T56 Arg2:T55	
+T19	disease 1747 1750	BCR
+T25	Health_factors 1756 1761	older
+T26	Health_factors 1861 1864	QOL
+R21	associated_with Arg1:T76 Arg2:T26	
+R22	occurs_in Arg1:T72 Arg2:T76	
+R23	occurs_in Arg1:T25 Arg2:T72	
+R24	associated_with Arg1:T71 Arg2:T70	
+R25	occurs_in Arg1:T70 Arg2:T69	
+T30	method 1345 1348	ADT
+R1	occurs_in Arg1:T2 Arg2:T7	
+R2	associated_with Arg1:T21 Arg2:T20	
+R27	associated_with Arg1:T21 Arg2:T3	
+R28	occurs_in Arg1:T5 Arg2:T9	
+T31	method 752 767	follow-up visit
+R26	occurs_in Arg1:T69 Arg2:T19	

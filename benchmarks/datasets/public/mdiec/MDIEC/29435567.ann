@@ -1,0 +1,67 @@
+T0	disease 57 83	Chronic Painful Conditions
+T1	disease 85 95	Depression
+T2	disease 97 104	Anxiety
+T3	disease 110 118	Insomnia
+T4	disease 13 18	Harms
+T6	method 122 139	Systematic Review
+T7	method 22 52	Cranial Electrical Stimulation
+T10	method 152 182	Cranial electrical stimulation
+T14	disease 383 393	depression
+T15	disease 395 402	anxiety
+T16	disease 408 416	insomnia
+T24	disease 676 680	pain
+T25	disease 682 692	depression
+T26	disease 694 701	anxiety
+T29	method 596 624	Randomized controlled trials
+T31	method 894 921	subsequent group discussion
+T32	method 803 838	dual independent quality assessment
+T34	method 970 987	randomized trials
+T36	method 925 939	Data Synthesis
+T37	disease 1176 1188	fibromyalgia
+T38	disease 1192 1199	anxiety
+T42	disease 1133 1137	pain
+T43	method 1020 1026	trials
+T44	disease 1313 1321	headache
+T45	disease 1323 1341	neuromuscular pain
+T46	disease 1346 1366	musculoskeletal pain
+T50	method 1224 1230	trials
+T51	disease 1556 1563	anxiety
+T52	disease 1568 1578	depression
+T53	method 1398 1404	trials
+T56	disease 1604 1612	insomnia
+T57	disease 1622 1630	insomnia
+T58	disease 1635 1642	anxiety
+T59	disease 1655 1665	depression
+T60	method 1580 1586	Trials
+T61	drug 1752 1755	CES
+T62	Health_factors 1771 1791	serious side effects
+T63	method 1811 1817	trials
+T64	method 1828 1840	sample sizes
+T66	Health_factors 1845 1860	short durations
+T72	disease 2075 2085	depression
+T73	disease 2090 2098	insomnia
+T74	disease 2163 2170	anxiety
+T75	disease 2175 2185	depression
+T5	method 184 187	CES
+R1	abbreviation_for Arg1:T5 Arg2:T10	
+T8	method 327 330	CES
+T9	Health_factors 335 340	adult
+T12	disease 355 381	chronic painful conditions
+T13	method 628 631	CES
+T17	method 658 661	CES
+T18	Health_factors 706 711	sleep
+T19	method 1041 1044	CES
+T20	method 1050 1060	usual care
+T22	disease 1141 1148	anxiety
+T23	method 1244 1260	placebo controls
+T27	disease 1285 1303	painful conditions
+R2	hyponym_of Arg1:T44 Arg2:T27	
+R3	hyponym_of Arg1:T45 Arg2:T27	
+R4	hyponym_of Arg1:T46 Arg2:T27	
+T28	method 1959 1962	CES
+T30	disease 1999 2011	fibromyalgia
+T33	disease 2013 2021	headache
+T35	disease 2023 2048	neuromusculoskeletal pain
+T40	disease 2050 2073	degenerative joint pain
+R5	treatment_for Arg1:T28 Arg2:T74	
+R6	treatment_for Arg1:T28 Arg2:T75	

@@ -1,0 +1,8 @@
+T1	method 79 104	rTMS localization methods
+T4	disease 149 174	major depressive disorder
+T5	disease 176 179	MDD
+T7	method 262 266	rTMS
+T8	disease 280 290	depression
+R1	abbreviation_for Arg1:T5 Arg2:T4	
+R2	treatment_for Arg1:T1 Arg2:T4	
+R3	treatment_for Arg1:T1 Arg2:T5	

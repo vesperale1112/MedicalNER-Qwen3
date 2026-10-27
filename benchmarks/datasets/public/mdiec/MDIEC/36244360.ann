@@ -1,0 +1,35 @@
+T1	drug 12 20	ketamine
+T2	disease 35 45	depression
+T3	drug 80 88	Ketamine
+T4	drug 269 277	ketamine
+T5	disease 375 385	depression
+T6	drug 562 570	ketamine
+T7	drug 678 686	ketamine
+T8	disease 784 797	Tachyphylaxis
+T9	disease 799 819	cognitive impairment
+T10	disease 821 830	addiction
+T11	disease 844 870	renal and urinary problems
+T12	drug 977 985	ketamine
+T13	drug 1175 1183	ketamine
+T14	method 49 66	systematic review
+T15	physiology 119 141	antidepressant effects
+T16	disease 159 189	treatment-resistant depression
+T17	method 399 405	Pubmed
+T18	method 407 413	Embase
+T19	method 423 439	Cochrane Library
+T20	method 461 489	randomised controlled trials
+T21	physiology 727 748	antidepressant effect
+T22	disease 752 782	treatment-resistant depression
+T23	method 898 912	methodological
+T24	method 1103 1112	follow-up
+T26	method 1201 1226	routine clinical practice
+T27	method 1067 1087	naturalistic studies
+T29	method 497 514	open-label trials
+R1	treatment_for Arg1:T1 Arg2:T2	
+R2	treatment_for Arg1:T3 Arg2:T16	
+T30	method 591 602	intravenous
+T31	method 604 614	intranasal
+T32	method 616 620	oral
+R3	treatment_for Arg1:T7 Arg2:T22	
+T25	method 635 648	intramuscular
+T28	method 653 665	subcutaneous

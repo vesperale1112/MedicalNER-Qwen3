@@ -1,0 +1,78 @@
+T0	disease 0 6	Cancer
+T1	disease 32 56	autism spectrum disorder
+T2	disease 95 120	autism spectrum disorders
+T3	disease 122 126	ASDs
+T4	disease 164 170	cancer
+T5	method 227 256	population-based cohort study
+T6	Health_factors 304 311	mothers
+T7	method 366 375	follow-up
+T8	Health_factors 396 399	age
+T11	disease 428 431	ASD
+T12	method 461 494	Swedish National Patient Register
+T13	disease 530 536	cancer
+T14	disease 552 555	ASD
+T16	method 559 570	odds ratios
+T17	method 572 575	ORs
+T18	method 596 616	confidence intervals
+T19	method 618 621	CIs
+T20	method 636 655	logistic regression
+T22	disease 948 951	ASD
+T23	disease 956 962	cancer
+T26	method 789 817	genetic correlation analysis
+T27	disease 1018 1024	cancer
+T28	disease 1048 1051	ASD
+T29	disease 1112 1115	ASD
+T30	method 1053 1055	OR
+T31	method 1065 1067	CI
+T33	disease 1141 1147	cancer
+T34	disease 1189 1206	autistic disorder
+T36	disease 1236 1267	ASD with comorbid birth defects
+T37	disease 1301 1314	birth defects
+T38	disease 1319 1342	intellectual disability
+T39	method 1208 1210	OR
+T40	method 1220 1222	CI
+T41	method 1269 1271	OR
+T42	method 1281 1283	CI
+T43	method 1348 1350	OR
+T44	method 1360 1362	CI
+T46	disease 1411 1414	ASD
+T47	disease 1420 1431	comorbid ID
+T48	method 1433 1435	OR
+T49	method 1445 1447	CI
+T51	disease 1497 1500	ASD
+T52	disease 1521 1532	comorbid ID
+T53	disease 1536 1549	birth defects
+T54	disease 1600 1606	cancer
+T55	method 1608 1610	OR
+T56	method 1620 1622	CI
+T57	disease 1786 1789	ASD
+T58	disease 1794 1800	cancer
+T60	method 1656 1684	genetic correlation analysis
+T61	disease 1815 1818	ASD
+T62	disease 1871 1877	cancer
+T64	disease 1907 1913	cancer
+T65	disease 1942 1945	ASD
+T66	disease 1979 1994	co-occurring ID
+T67	disease 2002 2015	birth defects
+T68	disease 2019 2022	ASD
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+R2	occurs_in Arg1:T0 Arg2:T1	
+R3	abbreviation_for Arg1:T17 Arg2:T16	
+R4	abbreviation_for Arg1:T19 Arg2:T18	
+R5	risk_factor_of Arg1:T28 Arg2:T27	
+T9	method 828 876	genome-wide association study summary statistics
+R8	help_diagnose Arg1:T12 Arg2:T11	
+T10	method 732 750	sibling comparison
+T15	gene 917 939	polygenetic pleiotropy
+R6	associated_with Arg1:T33 Arg2:T34	
+R9	associated_with Arg1:T33 Arg2:T36	
+R10	associated_with Arg1:T33 Arg2:T37	
+R11	associated_with Arg1:T33 Arg2:T38	
+T21	disease 1344 1346	ID
+R12	abbreviation_for Arg1:T21 Arg2:T38	
+T25	method 1633 1651	Sibling comparison
+T32	gene 1755 1777	polygenetic pleiotropy
+R7	occurs_in Arg1:T67 Arg2:T68	
+R13	risk_factor_of Arg1:T67 Arg2:T64	
+R14	risk_factor_of Arg1:T66 Arg2:T64	
+R15	risk_factor_of Arg1:T65 Arg2:T64	

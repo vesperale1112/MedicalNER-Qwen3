@@ -1,0 +1,12 @@
+T1	method 12 55	Internet-based cognitive behavioral therapy
+T3	disease 103 113	depression
+T4	disease 118 125	anxiety
+T5	method 57 61	iCBT
+R1	abbreviation_for Arg1:T5 Arg2:T1	
+R2	treatment_for Arg1:T5 Arg2:T3	
+R3	treatment_for Arg1:T5 Arg2:T4	
+R4	treatment_for Arg1:T1 Arg2:T3	
+R5	treatment_for Arg1:T1 Arg2:T4	
+T2	method 82 98	treatment method
+R6	hyponym_of Arg1:T5 Arg2:T2	
+R7	hyponym_of Arg1:T1 Arg2:T2	

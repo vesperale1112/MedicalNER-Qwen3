@@ -1,0 +1,16 @@
+T3	disease 17 33	major depression
+T4	disease 42 53	melancholia
+T6	disease 77 103	depressed bipolar disorder
+T7	disease 107 125	dysthymic disorder
+T9	drug 243 256	amitriptyline
+T10	drug 258 268	imipramine
+T11	drug 273 283	fluoxetine
+T12	drug 315 326	maprotiline
+T14	disease 344 377	coexisting depression and anxiety
+T1	drug 131 145	antidepressant
+T5	method 191 209	tianeptine therapy
+R1	treatment_for Arg1:T5 Arg2:T14	
+R2	treatment_for Arg1:T9 Arg2:T14	
+R3	treatment_for Arg1:T10 Arg2:T14	
+R4	treatment_for Arg1:T11 Arg2:T14	
+T8	disease 57 75	psychotic features

@@ -1,0 +1,23 @@
+T1	signs 27 63	end-tidal partial pressure of oxygen
+T7	region 314 318	eyes
+T8	drug 335 344	halothane
+T9	drug 399 408	halothane
+T10	drug 477 486	halothane
+T12	drug 639 648	halothane
+T13	drug 670 679	halothane
+T14	signs 362 392	minimum alveolar concentration
+T15	signs 394 397	MAC
+T17	signs 666 669	MAC
+T18	method 414 437	audiovisual stimulation
+T19	drug 508 517	halothane
+T21	disease 523 527	pain
+T23	method 529 551	electrical stimulation
+T24	region 555 559	skin
+T25	region 569 574	tibia
+T26	method 588 612	visual analog pain score
+T3	method 70 95	dynamic end-tidal forcing
+T27	physiology 128 135	hypoxia
+T2	signs 177 221	end-tidal partial pressure of carbon dioxide
+R1	abbreviation_for Arg1:T15 Arg2:T14	
+T4	signs 504 507	MAC
+T5	physiology 116 124	normoxia

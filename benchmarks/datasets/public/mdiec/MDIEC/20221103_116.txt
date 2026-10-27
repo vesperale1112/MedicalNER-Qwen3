@@ -1,0 +1,1 @@
+Using the Patient Health Questionnaire-9 (PHQ-9) as the measure of true depression status, we conducted a random-effect logistic panel regression and receiver operating characteristic (ROC) analysis to evaluate the screening performance of the mobile mental-health tracker.

@@ -1,0 +1,6 @@
+T1	drug 63 71	ketamine
+T2	physiology 105 127	antidepressant effects
+T4	disease 175 185	depression
+R3	treatment_for Arg1:T1 Arg2:T4	
+T5	drug 156 160	drug
+T3	drug 39 62	glutamatergic modulator

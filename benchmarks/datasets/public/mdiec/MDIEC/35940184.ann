@@ -1,0 +1,56 @@
+T1	disease 0 10	Depression
+T2	disease 28 38	Depression
+T3	disease 288 298	depression
+T4	disease 323 344	depression recurrence
+T5	disease 365 386	psychiatric disorders
+T6	disease 535 545	depression
+T7	disease 691 701	depression
+T8	Health_factors 727 755	family history of depression
+T9	disease 991 1001	depression
+T10	disease 1032 1051	depressive symptoms
+T11	disease 1053 1060	anxiety
+T12	disease 1066 1078	irritability
+T13	disease 1249 1259	Depression
+T14	Health_factors 14 26	young people
+T15	Health_factors 48 60	young people
+T16	Health_factors 114 121	females
+T17	Health_factors 151 162	adolescence
+T18	Health_factors 255 271	Adverse outcomes
+T19	Health_factors 302 314	young people
+T20	disease 410 421	impairments
+T22	Health_factors 549 561	young people
+T24	Health_factors 703 715	Young people
+T29	method 1176 1229	school-based and community-based social interventions
+T30	method 1362 1388	psychosocial interventions
+T31	method 1406 1427	psychological therapy
+T32	drug 1441 1466	antidepressant medication
+T33	method 1298 1325	stepwise treatment approach
+T34	disease 900 931	chronic physical health problem
+T35	gene 640 660	predisposing factors
+T36	method 593 611	early intervention
+T37	method 512 530	early intervention
+T38	physiology 207 228	cognitive development
+R1	hyponym_of Arg1:T4 Arg2:T18	
+R2	hyponym_of Arg1:T5 Arg2:T18	
+R3	occurs_in Arg1:T18 Arg2:T19	
+T39	Health_factors 465 489	occupational functioning
+T21	Health_factors 662 673	antecedents
+T23	Health_factors 757 785	exposure to social stressors
+T25	Health_factors 791 799	bullying
+T40	Health_factors 801 825	discordant relationships
+T26	Health_factors 830 851	stressful life events
+R4	hyponym_of Arg1:T25 Arg2:T23	
+R5	hyponym_of Arg1:T40 Arg2:T23	
+R6	hyponym_of Arg1:T26 Arg2:T23	
+T27	Health_factors 943 958	sexual minority
+R7	risk_factor_of Arg1:T23 Arg2:T9	
+R8	risk_factor_of Arg1:T25 Arg2:T9	
+R9	risk_factor_of Arg1:T8 Arg2:T9	
+R10	risk_factor_of Arg1:T40 Arg2:T9	
+R11	risk_factor_of Arg1:T26 Arg2:T9	
+R12	risk_factor_of Arg1:T34 Arg2:T9	
+R13	risk_factor_of Arg1:T27 Arg2:T9	
+R14	associated_with Arg1:T18 Arg2:T3	
+R15	occurs_in Arg1:T1 Arg2:T14	
+R16	occurs_in Arg1:T2 Arg2:T15	
+R17	occurs_in Arg1:T6 Arg2:T22	

@@ -1,0 +1,56 @@
+T1	disease 0 16	Major depression
+T2	disease 60 85	Major depression disorder
+T4	disease 226 236	depression
+T6	disease 683 699	depressive state
+T7	disease 820 836	major depression
+T9	disease 1320 1329	depressed
+T11	disease 1386 1396	depression
+#1	AnnotatorNotes T1	C1269683
+T12	physiology 25 46	perceptual filling-in
+R1	associated_with Arg1:T1 Arg2:T12	
+#2	AnnotatorNotes T2	C1269683
+T5	method 735 767	Hamilton Depression Rating Scale
+R3	help_diagnose Arg1:T5 Arg2:T6	
+#3	AnnotatorNotes T5	C0451203
+T16	disease 91 99	syndrome
+R9	hyponym_of Arg1:T2 Arg2:T16	
+T3	method 384 395	false alarm
+T10	method 397 399	FA
+R5	abbreviation_for Arg1:T10 Arg2:T3	
+T13	method 403 412	hit rates
+T14	method 414 418	pHit
+R6	abbreviation_for Arg1:T14 Arg2:T13	
+T18	method 1142 1146	pHit
+T19	method 1152 1155	pFA
+T21	method 477 492	Yes-No paradigm
+T22	method 443 460	decision criteria
+T23	method 462 464	Cr
+R2	abbreviation_for Arg1:T23 Arg2:T22	
+T24	method 1122 1140	decision criterion
+T8	disease 1354 1382	global cognitive dysfunction
+T25	method 498 522	low-level detection task
+#4	AnnotatorNotes T8	Loss of neuron(C0598940)
+T26	physiology 156 162	memory
+T27	physiology 164 173	attention
+T28	physiology 179 189	plasticity
+T29	physiology 128 147	cognitive functions
+R7	hyponym_of Arg1:T26 Arg2:T29	
+R8	hyponym_of Arg1:T27 Arg2:T29	
+R10	hyponym_of Arg1:T28 Arg2:T29	
+T30	physiology 245 255	perception
+T31	physiology 330 348	filling-in process
+T32	method 535 547	Gabor target
+T33	physiology 1440 1458	filling-in process
+T34	physiology 1527 1544	Neural excitation
+T35	physiology 1568 1585	neural processing
+T36	physiology 1598 1604	memory
+T37	physiology 1609 1624	decision making
+R11	associated_with Arg1:T35 Arg2:T36	
+R12	associated_with Arg1:T35 Arg2:T37	
+R13	associated_with Arg1:T34 Arg2:T35	
+T38	physiology 1501 1525	excitation among neurons
+T17	physiology 597 607	filling-in
+T15	disease 114 147	impairment of cognitive functions
+R4	associated_with Arg1:T2 Arg2:T15	
+R16	occurs_in Arg1:T8 Arg2:T11	
+R14	associated_with Arg1:T33 Arg2:T38	

@@ -1,0 +1,82 @@
+T0	disease 131 155	Autism Spectrum Disorder
+T4	Health_factors 55 83	First Trimester of Pregnancy
+T5	disease 89 102	Preterm Birth
+T6	symptom 104 129	Small for Gestational Age
+T7	disease 161 201	Attention-Deficit/Hyperactivity Disorder
+T8	Health_factors 205 214	Offspring
+T9	Health_factors 16 43	Maternal Antidepressant Use
+T10	Health_factors 227 259	Prenatal antidepressant exposure
+T12	Health_factors 285 301	adverse outcomes
+T15	Health_factors 453 492	first-trimester antidepressant exposure
+T17	disease 497 534	birth and neurodevelopmental problems
+T20	method 577 603	retrospective cohort study
+T21	Health_factors 621 630	offspring
+T22	method 662 673	followed up
+T23	disease 702 707	death
+T25	physiology 748 757	pregnancy
+T26	Health_factors 759 767	maternal
+T33	method 996 1040	first-trimester antidepressant dispensations
+T34	Health_factors 957 991	first-trimester antidepressant use
+T35	disease 1071 1084	Preterm birth
+T36	symptom 1110 1135	small for gestational age
+T38	signs 1137 1149	birth weight
+T39	Health_factors 1176 1191	gestational age
+T40	disease 1250 1274	autism spectrum disorder
+T41	disease 1279 1319	attention-deficit/hyperactivity disorder
+T42	Health_factors 1323 1332	offspring
+R1	occurs_in Arg1:T7 Arg2:T8	
+R2	associated_with Arg1:T9 Arg2:T5	
+R3	associated_with Arg1:T9 Arg2:T6	
+R4	associated_with Arg1:T9 Arg2:T0	
+R5	associated_with Arg1:T9 Arg2:T7	
+R6	associated_with Arg1:T10 Arg2:T12	
+T1	Health_factors 772 780	paternal
+T2	method 804 823	sibling comparisons
+T3	Health_factors 861 869	paternal
+T11	method 1153 1156	SDs
+R7	occurs_in Arg1:T41 Arg2:T42	
+R8	occurs_in Arg1:T40 Arg2:T42	
+T13	Health_factors 1359 1383	first-trimester exposure
+T14	Health_factors 1441 1450	offspring
+T16	disease 1452 1465	preterm birth
+T18	method 1466 1476	odds ratio
+T19	method 1478 1480	OR
+R9	abbreviation_for Arg1:T19 Arg2:T18	
+T24	method 1493 1495	CI
+R10	associated_with Arg1:T13 Arg2:T16	
+T27	symptom 1509 1534	small for gestational age
+T28	method 1535 1537	OR
+T29	method 1549 1551	CI
+R11	associated_with Arg1:T13 Arg2:T27	
+T30	disease 1565 1589	autism spectrum disorder
+T31	method 1590 1602	hazard ratio
+T32	method 1604 1606	HR
+R12	abbreviation_for Arg1:T32 Arg2:T31	
+R13	associated_with Arg1:T13 Arg2:T30	
+T37	method 1619 1621	CI
+T43	disease 1635 1675	attention-deficit/hyperactivity disorder
+T44	method 1676 1678	HR
+T45	method 1690 1692	CI
+R14	associated_with Arg1:T13 Arg2:T43	
+T46	Health_factors 1740 1748	siblings
+T47	symptom 1769 1809	pregnancy, maternal, and paternal traits
+T48	Health_factors 1811 1850	first-trimester antidepressant exposure
+T49	disease 1871 1884	preterm birth
+R15	associated_with Arg1:T48 Arg2:T49	
+T50	method 1886 1888	OR
+T51	method 1900 1902	CI
+T52	symptom 1929 1954	small for gestational age
+T53	method 1956 1958	OR
+T54	method 1970 1972	CI
+T55	disease 1987 2011	autism spectrum disorder
+T56	disease 2047 2087	attention-deficit/hyperactivity disorder
+T57	method 2089 2091	HR
+T58	method 2103 2105	CI
+T59	Health_factors 2152 2161	offspring
+T60	Health_factors 2220 2263	first-trimester exposure to antidepressants
+T61	disease 2338 2351	preterm birth
+R16	risk_factor_of Arg1:T60 Arg2:T61	
+T62	symptom 2377 2402	small for gestational age
+T63	disease 2404 2428	autism spectrum disorder
+T64	disease 2433 2473	attention-deficit/hyperactivity disorder
+T65	method 934 956	Maternal self-reported

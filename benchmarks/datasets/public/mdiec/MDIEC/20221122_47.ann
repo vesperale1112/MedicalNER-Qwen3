@@ -1,0 +1,14 @@
+T2	physiology 182 200	adult neurogenesis
+T3	disease 215 234	depressive behavior
+T4	physiology 95 128	differentiation of neuronal cells
+T5	gene 8 31	orphan nuclear receptor
+T6	gene 32 63	estrogen-related receptor gamma
+T7	gene 65 73	ERRgamma
+R1	abbreviation_for Arg1:T7 Arg2:T6	
+R4	associated_with Arg1:T6 Arg2:T4	
+R5	associated_with Arg1:T7 Arg2:T4	
+T1	drug 157 172	ERRgamma ligand
+T9	method 240 275	LRRK2-G2019S-associated mouse model
+T10	disease 279 281	PD
+R2	occurs_in Arg1:T3 Arg2:T9	
+R3	occurs_in Arg1:T9 Arg2:T10	

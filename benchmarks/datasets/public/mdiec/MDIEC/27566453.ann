@@ -1,0 +1,36 @@
+T2	disease 158 183	Major Depression Disorder
+T3	disease 185 188	MDD
+T7	method 129 142	meta-analysis
+#2	AnnotatorNotes T7	C0920317
+R1	abbreviation_for Arg1:T3 Arg2:T2	
+T8	method 418 431	meta-analyses
+T9	method 990 1045	Bayesian hierarchical summary receiver operating models
+T10	method 1268 1281	meta-analyses
+T11	method 622 628	PubMed
+T12	method 630 638	PsycINFO
+T13	method 644 650	EMBASE
+T14	method 767 825	Standards for the Reporting of Diagnostic Accuracy studies
+T15	method 830 890	Quality Assessment of Diagnostic Accuracy Studies guidelines
+T16	method 1349 1355	BDI-II
+T17	method 1366 1392	Bayesian Credible Interval
+T18	method 1394 1397	BCI
+R2	abbreviation_for Arg1:T18 Arg2:T17	
+T19	method 1422 1424	BC
+T20	method 1454 1460	EPDS10
+T21	method 1471 1474	BCI
+T22	method 1498 1501	BCI
+T23	method 1600 1615	meta-regression
+T24	method 271 283	primary-care
+T25	method 1128 1144	full-text review
+T26	Health_factors 206 231	mothers of young children
+T28	method 379 403	case-finding instruments
+T29	method 944 968	case-finding instruments
+T30	method 1176 1213	maternal MDD case-finding instruments
+T31	method 1852 1889	maternal MDD case-finding instruments
+T32	method 45 104	maternal major depression disorder case finding instruments
+T27	method 485 522	maternal MDD case finding instruments
+T35	method 587 621	electronic bibliographic databases
+T36	Health_factors 1537 1570	antepartum and postpartum periods
+T37	Health_factors 1771 1789	peripartum periods
+R6	associated_with Arg1:T3 Arg2:T26	
+R7	associated_with Arg1:T2 Arg2:T26	

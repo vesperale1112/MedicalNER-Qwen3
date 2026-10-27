@@ -1,0 +1,6 @@
+T1	disease 52 79	impaired adult neurogenesis
+T3	physiology 84 117	restoration of adult neurogenesis
+T4	disease 28 38	depression
+R1	risk_factor_of Arg1:T1 Arg2:T4	
+T2	disease 127 135	recovery
+R2	treatment_for Arg1:T3 Arg2:T4	

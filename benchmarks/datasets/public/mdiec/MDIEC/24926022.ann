@@ -1,0 +1,31 @@
+T2	drug 73 82	serotonin
+T3	disease 22 43	Anxiety-like behavior
+T4	disease 84 91	Anxiety
+T5	disease 121 127	stress
+T7	Health_factors 259 267	crayfish
+T8	disease 251 257	stress
+T11	drug 392 407	brain serotonin
+T12	drug 450 492	benzodiazepine anxiolytic chlordiazepoxide
+T16	drug 494 503	Serotonin
+T17	drug 608 624	chlordiazepoxide
+T18	symptom 547 556	avoidance
+T20	disease 682 689	anxiety
+T23	disease 901 908	anxiety
+T25	physiology 927 938	conceptions
+T26	Health_factors 946 962	emotional status
+T27	method 852 864	simple model
+T28	Health_factors 47 55	crayfish
+R1	occurs_in Arg1:T3 Arg2:T28	
+R2	treatment_for Arg1:T2 Arg2:T3	
+R3	risk_factor_of Arg1:T5 Arg2:T4	
+T6	Health_factors 155 161	humans
+T29	Health_factors 171 182	vertebrates
+T30	Health_factors 192 205	invertebrates
+T9	method 324 341	aquatic plus-maze
+T13	Health_factors 519 538	unstressed crayfish
+R6	risk_factor_of Arg1:T16 Arg2:T18	
+R7	treatment_for Arg1:T17 Arg2:T18	
+T14	Health_factors 655 663	crayfish
+T15	Health_factors 719 730	vertebrates
+T1	Health_factors 966 979	invertebrates
+R4	occurs_in Arg1:T26 Arg2:T1	

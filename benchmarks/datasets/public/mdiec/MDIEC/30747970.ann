@@ -1,0 +1,78 @@
+T1	disease 25 45	Perinatal Depression
+T2	disease 375 395	perinatal depression
+T3	disease 399 432	major or minor depressive episode
+T4	disease 895 915	perinatal depression
+T5	disease 1011 1031	perinatal depression
+T6	disease 1698 1718	perinatal depression
+T7	disease 1842 1862	perinatal depression
+T8	drug 2490 2500	sertraline
+T9	disease 2507 2528	depression recurrence
+T10	disease 2794 2814	perinatal depression
+T11	disease 2882 2902	perinatal depression
+T13	method 67 84	Systematic Review
+T14	disease 140 150	Depression
+T15	method 328 363	primary care-relevant interventions
+T16	method 547 554	MEDLINE
+T17	method 556 562	PubMED
+T18	method 602 610	PsycINFO
+T19	method 620 666	Cochrane Central Register of Controlled Trials
+T20	method 724 750	Randomized clinical trials
+T21	method 752 756	RCTs
+R2	abbreviation_for Arg1:T21 Arg2:T20	
+T22	method 762 807	nonrandomized controlled intervention studies
+T23	drug 846 861	antidepressants
+T25	drug 863 882	dietary supplements
+T26	method 1039 1053	cohort studies
+T27	drug 1083 1097	antidepressant
+T28	method 1249 1277	Random-effects meta-analysis
+T30	disease 1362 1379	Depression status
+T31	disease 1381 1400	depression symptoms
+T32	method 1528 1552	Counseling interventions
+T34	method 1621 1645	counseling interventions
+R3	treatment_for Arg1:T34 Arg2:T6	
+T35	method 1720 1737	pooled risk ratio
+T36	method 1739 1741	RR
+R4	abbreviation_for Arg1:T36 Arg2:T35	
+T37	method 1754 1756	CI
+T38	method 1773 1777	RCTs
+T41	method 1973 2000	Health system interventions
+T42	method 2094 2118	counseling interventions
+T43	method 2242 2274	restricted maximum likelihood RR
+T44	method 2385 2413	behavior-based interventions
+T45	method 2628 2631	RCT
+T46	method 2738 2762	Counseling interventions
+R5	treatment_for Arg1:T46 Arg2:T10	
+T48	method 2923 2946	intervention approaches
+T50	method 2286 2288	CI
+T51	physiology 158 167	pregnancy
+T52	Health_factors 252 258	mother
+T53	Health_factors 263 268	child
+T54	physiology 440 449	pregnancy
+T55	Health_factors 942 977	pregnant and postpartum individuals
+T56	Health_factors 1402 1410	maternal
+T57	Health_factors 1412 1418	infant
+T58	Health_factors 1424 1445	child health outcomes
+T59	Health_factors 2703 2709	mother
+T60	Health_factors 2854 2859	women
+T61	physiology 472 482	childbirth
+T12	method 93 126	US Preventive Services Task Force
+T62	Health_factors 176 193	postpartum period
+T47	method 498 531	US Preventive Services Task Force
+T29	Health_factors 2601 2611	postpartum
+T24	Health_factors 2680 2695	adverse effects
+R6	risk_factor_of Arg1:T8 Arg2:T24	
+T33	method 0 13	Interventions
+T39	method 811 824	interventions
+T40	method 1319 1332	interventions
+T49	method 1582 1595	interventions
+T63	method 47 62	Evidence Report
+T64	method 284 305	systematically review
+T65	method 1953 1965	intervention
+T66	Health_factors 228 243	adverse effects
+R17	hyponym_of Arg1:T32 Arg2:T49	
+R1	occurs_in Arg1:T24 Arg2:T59	
+T67	disease 319 324	harms
+T68	disease 1074 1079	harms
+R7	treatment_for Arg1:T33 Arg2:T1	
+T69	disease 2426 2431	harms
+T70	method 1492 1510	inclusion criteria

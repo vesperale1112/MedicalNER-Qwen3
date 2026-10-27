@@ -1,0 +1,1 @@
+Depression screening scores (Patient Health Questionnaire-9), depression diagnoses, individual counseling visits, demographic characteristics, and medication dispensings were extracted from electronic health records and pharmacy databases.

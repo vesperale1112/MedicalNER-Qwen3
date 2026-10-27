@@ -1,0 +1,70 @@
+T1	disease 187 219	schizophrenia-spectrum disorders
+T2	drug 1408 1424	amisulpride-oral
+T3	drug 1431 1444	olanzapine-OS
+T4	drug 1446 1462	aripiprazole-LAI
+T5	drug 1464 1478	olanzapine-LAI
+T6	drug 1480 1495	aripiprazole-OS
+T7	drug 1497 1512	paliperidone-OS
+T8	drug 1518 1532	ziprasidone-OS
+T9	drug 1595 1611	paliperidone-LAI
+T10	drug 1623 1637	iloperidone-OS
+T11	drug 1639 1654	fluphenazine-OS
+T12	drug 1656 1672	brexpiprazole-OS
+T13	drug 1674 1690	paliperidone-LAI
+T14	drug 1702 1714	asenapine-OS
+T15	drug 1716 1730	haloperidol-OS
+T16	drug 1732 1745	quetiapine-OS
+T17	drug 1747 1761	cariprazine-OS
+T18	drug 1767 1780	lurasidone-OS
+T19	drug 1906 1918	aripiprazole
+T20	drug 2010 2020	olanzapine
+T21	drug 2022 2034	aripiprazole
+T22	drug 2039 2051	paliperidone
+T23	disease 2106 2138	schizophrenia-spectrum disorders
+T25	drug 0 35	Oral and long-acting antipsychotics
+T26	disease 40 47	relapse
+T28	disease 164 171	relapse
+T32	method 559 566	Medline
+T33	method 568 574	EMBASE
+T34	method 576 584	PsycINFO
+T35	method 598 604	CINAHL
+T36	method 662 690	randomized controlled trials
+T42	method 789 803	Relative risks
+T43	method 808 837	standardized mean differences
+T45	disease 933 940	relapse
+T46	Health_factors 960 974	adverse events
+T47	method 988 1014	Cochrane Risk of Bias tool
+T48	method 1173 1186	meta-analyses
+T49	disease 1198 1205	relapse
+T54	drug 1818 1832	antipsychotics
+T56	drug 2170 2187	oral formulations
+T57	drug 2197 2211	antipsychotics
+T58	disease 2301 2308	relapse
+T60	Health_factors 2365 2397	low- and middle-income countries
+T61	drug 2443 2454	medications
+T62	method 2490 2511	network meta-analysis
+T64	method 2547 2598	national and international drug regulation policies
+T65	method 2523 2542	clinical guidelines
+T70	method 1048 1063	CINeMA approach
+T72	drug 709 728	oral antipsychotics
+T74	drug 426 463	long-acting injectable antipsychotics
+T75	drug 351 370	oral antipsychotics
+T27	method 118 141	antipsychotic treatment
+R2	treatment_for Arg1:T27 Arg2:T1	
+T29	drug 289 302	antipsychotic
+T30	drug 465 469	LAIs
+R1	abbreviation_for Arg1:T30 Arg2:T74	
+T31	Health_factors 505 521	adherence issues
+T37	method 586 593	CENTRAL
+T38	drug 701 705	LAIs
+T39	method 856 905	random-effects pairwise and network meta-analysis
+T40	method 1126 1132	trials
+T41	drug 1925 1928	LAI
+T50	drug 1933 1935	OS
+R3	treatment_for Arg1:T20 Arg2:T23	
+R4	treatment_for Arg1:T21 Arg2:T23	
+R5	treatment_for Arg1:T22 Arg2:T23	
+T51	drug 2162 2165	LAI
+R6	treatment_for Arg1:T30 Arg2:T31	
+R7	treatment_for Arg1:T74 Arg2:T31	
+T52	drug 1426 1428	OS
