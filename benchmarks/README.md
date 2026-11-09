@@ -4,6 +4,7 @@
 
 ## 入口
 
+- [Benchmark 框架及使用说明](framework/README.md)：人工金标、模型银标、四层匹配、现有图评测和人工证据复核。
 - [Benchmark 方案](docs/benchmark_review.md)
 - [当前训练路线及实验梳理](docs/repo_training_review.md)：2026-10-26 调研快照，代码及结果来源见文内引用。
 - [论文与阅读资料索引](references/README.md)
@@ -13,7 +14,7 @@
 - [20 篇 GPT 抽取结果](predictions/kg_pilot_20_gpt61sol.json)
 - [MDIEC 公开语料说明](datasets/public/mdiec/README.md)
 
-训练路线文档引用的 `agent/` 和 `docs/audits/` 在本地保存的 `origin/main`（`ea6449c`）中可读，当前检出的 `main`（`0e6817d`）尚无这些文件。此次未切换或同步分支；这些代码引用在当前工作树中暂不能直接打开。
+训练路线文档是 2026-10-26 的调研快照。2026-10-27 整理时所检出的旧版本没有 `agent/`；2026-11-09 检查时当前工作树已包含 `agent/`，使用前仍应以当前代码和模型回执为准。
 
 ## 文件组织
 

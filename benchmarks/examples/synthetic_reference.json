@@ -1,0 +1,21 @@
+{
+  "format": "medicalner-benchmark-v1",
+  "dataset_id": "synthetic-example-only",
+  "kind": "gold",
+  "provenance": "Synthetic format demonstration; not an actual clinical or human gold dataset.",
+  "tasks": ["graph", "ner", "nel", "m_re", "c_re"],
+  "records": [
+    {
+      "id": "synthetic-1",
+      "text": "A treats B.",
+      "graph": {
+        "entities": [
+          {"id": "e1", "label": "Drug", "name": "A", "concept_id": "EXAMPLE:drug-a", "mentions": [{"id": "m1", "section": "text", "start": 0, "end": 1, "text": "A"}]},
+          {"id": "e2", "label": "Disease", "name": "B", "concept_id": "EXAMPLE:disease-b", "mentions": [{"id": "m1", "section": "text", "start": 9, "end": 10, "text": "B"}]}
+        ],
+        "relations": [{"source": "e1", "target": "e2", "relation": "treats", "evidence": "A treats B."}]
+      }
+    },
+    {"id": "synthetic-2", "text": "Nothing here.", "graph": {"entities": [], "relations": []}}
+  ]
+}
