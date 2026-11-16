@@ -1,0 +1,26 @@
+[
+  {
+    "article_id": "164994",
+    "before": {
+      "source": "T1",
+      "source_name": "electroconvulsive therapy (ECT)",
+      "relation": "combined_with",
+      "target": "M1",
+      "target_name": "melatonin"
+    },
+    "evidence": "The purpose of this study was to assess and compare the efficacy and safety of melatonin and memantine in the alleviation of cognitive disorders in patients diagnosed with major depressive disorder (MDD) undergoing electroconvulsive therapy (ECT).",
+    "action": "reverse endpoints per user instruction for v3.2.0 evaluation"
+  },
+  {
+    "article_id": "164994",
+    "before": {
+      "source": "T1",
+      "source_name": "electroconvulsive therapy (ECT)",
+      "relation": "combined_with",
+      "target": "M2",
+      "target_name": "memantine"
+    },
+    "evidence": "The purpose of this study was to assess and compare the efficacy and safety of melatonin and memantine in the alleviation of cognitive disorders in patients diagnosed with major depressive disorder (MDD) undergoing electroconvulsive therapy (ECT).",
+    "action": "reverse endpoints per user instruction for v3.2.0 evaluation"
+  }
+]

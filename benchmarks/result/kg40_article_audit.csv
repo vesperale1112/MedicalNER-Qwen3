@@ -1,0 +1,41 @@
+﻿id,title,DHY_entities,DHY_relations,Youya_entities,Youya_relations,Annotator_entities,Annotator_relations,Codex_entities,Codex_relations,human_entities_union,human_entities_all3,human_relations_union,human_relations_all3,human_relations_one_only,codex_vs_DHY_rel_tp,codex_vs_DHY_rel_fp,codex_vs_DHY_rel_fn,codex_vs_Youya_rel_tp,codex_vs_Youya_rel_fp,codex_vs_Youya_rel_fn,codex_vs_Annotator_rel_tp,codex_vs_Annotator_rel_fp,codex_vs_Annotator_rel_fn
+131854,Esketamine Monotherapy in Adults With Treatment-Resistant Depression: A Randomized Clinical Trial,9,8,10,10,10,11,11,10,12,8,18,4,11,4,6,4,4,6,6,4,6,7
+705,Lamotrigine in the maintenance treatment of bipolar disorder,8,7,10,10,7,8,8,7,13,6,17,4,13,6,1,1,4,3,6,4,3,4
+214128,Cariprazine Treatment of Bipolar Depression: A Randomized Double-Blind Placebo-Controlled Phase 3 Study,10,11,8,7,10,10,9,7,10,8,14,4,4,6,1,5,4,3,3,6,1,4
+131814,Efficacy and Safety of Xanomeline-Trospium Chloride in Schizophrenia: A Randomized Clinical Trial,11,9,15,16,8,8,8,7,19,6,26,1,20,0,7,9,0,7,16,0,7,8
+131863,"Semaglutide Treatment of Antipsychotic-Treated Patients With Schizophrenia, Prediabetes, and Obesity: The HISTORI Randomized Clinical Trial",5,3,11,10,11,12,9,5,16,3,19,1,14,0,5,3,1,4,9,2,3,10
+105,Music therapy for people with schizophrenia and schizophrenia‐like disorders,19,17,21,19,8,8,9,6,26,6,32,1,21,3,3,14,1,5,18,3,3,5
+131836,Brexpiprazole and Sertraline Combination Treatment in Posttraumatic Stress Disorder: A Phase 3 Randomized Clinical Trial,10,14,9,8,10,11,10,9,10,9,16,6,5,6,3,8,6,3,2,6,3,5
+130875,Cognitive Processing Therapy for Posttraumatic Stress Disorder in Japan: A Randomized Clinical Trial,9,12,7,6,8,8,5,5,9,7,13,2,2,1,4,11,0,5,6,1,4,7
+130406,Effect of D-Cycloserine on the Effect of Concentrated Exposure and Response Prevention in Difficult-to-Treat Obsessive-Compulsive Disorder: A Randomized Clinical Trial,10,8,10,8,8,8,8,5,18,1,23,0,22,2,3,6,0,5,8,0,5,8
+131697,Therapist-Guided Internet-Delivered Cognitive Behavioral Therapy vs Internet-Delivered Supportive Therapy for Children and Adolescents With Social Anxiety Disorder: A Randomized Clinical Trial,9,7,9,8,7,8,6,5,14,4,16,1,10,0,5,7,0,5,8,0,5,8
+249019,"Escitalopram in Adolescents With Generalized Anxiety Disorder: A Double-Blind, Randomized, Placebo-Controlled Study",6,5,6,5,7,8,5,4,9,4,11,2,6,1,3,4,0,4,5,1,3,7
+154547,"A Phase III, Randomized, Placebo-controlled Trial to Assess the Efficacy and Safety of Once-daily SPN-812 (Viloxazine Extended-release) in the Treatment of Attention-deficit/Hyperactivity Disorder in School-age Children",12,9,11,10,9,9,7,7,15,8,13,7,5,0,7,9,0,7,10,0,7,9
+130371,Comparison of Lemborexant With Placebo and Zolpidem Tartrate Extended Release for the Treatment of Older Adults With Insomnia Disorder: A Phase 3 Randomized Clinical Trial,10,9,7,6,7,8,6,5,14,2,15,0,7,3,2,6,1,4,5,4,1,4
+131651,Efficacy of Digital Cognitive Behavioral Therapy for the Treatment of Insomnia Symptoms Among Pregnant Women: A Randomized Clinical Trial,13,13,9,8,10,12,9,6,17,5,25,0,17,2,4,11,0,6,8,2,4,10
+29427,Baclofen for alcohol use disorder,16,14,10,9,10,9,8,7,16,10,16,7,7,4,3,10,4,3,5,4,3,5
+131569,Effectiveness of Injectable Extended-Release Naltrexone vs Daily Buprenorphine-Naloxone for Opioid Dependence: A Randomized Clinical Noninferiority Trial,7,6,4,3,3,2,6,4,9,1,10,0,9,1,3,5,0,4,3,0,4,2
+28746,Donepezil for dementia due to Alzheimer's disease,14,13,8,7,9,8,8,4,21,2,23,0,18,0,4,13,0,4,7,0,4,8
+29034,Aripiprazole for autism spectrum disorders (ASD),16,15,17,16,10,14,9,9,21,8,26,6,13,4,5,11,2,7,14,6,3,8
+131562,Effect of Internet-Based Guided Self-help vs Individual Face-to-Face Treatment on Full or Subsyndromal Binge Eating Disorder in Overweight or Obese Patients: The INTERBED Randomized Clinical Trial,9,9,3,2,5,6,4,4,10,3,12,2,9,0,4,9,0,4,2,0,4,6
+160437,Randomized Clinical Trial of Parent-Focused Treatment and Family-Based Treatment for Adolescent Anorexia Nervosa,6,4,4,3,5,4,5,3,8,3,8,0,5,0,3,4,0,3,3,0,3,4
+98091,Canadian Network for Mood and Anxiety Treatments (CANMAT) 2023 Update on Clinical Guidelines for Management of Major Depressive Disorder in Adults: Réseau canadien pour les traitements de l'humeur et de l'anxiété (CANMAT) 2023 : Mise à jour des lignes directrices cliniques pour la prise en charge du trouble dépressif majeur chez les adultes,10,8,2,0,10,9,8,6,19,1,17,0,17,0,6,8,0,6,0,0,6,9
+57744,Guideline No. 454: Identification and Treatment of Perinatal Mood and Anxiety Disorders,27,21,2,1,27,37,11,8,45,1,55,0,51,1,7,20,0,8,1,6,2,31
+54297,(7) When the Labs Don't Add Up: A Case of Factitious Disorder Diagnosis and Management,12,7,1,0,5,4,12,6,16,1,11,0,11,0,6,7,0,6,0,0,6,4
+54260,(PO-047) Systematic Assessment of Decisional Capacity in Communication-Impaired Patients With Severe Psychiatric Symptoms,8,6,7,6,9,12,8,4,19,1,24,0,24,0,4,6,0,4,6,0,4,12
+107246,MALIGNANT CATATONIA IN MEDICAL WARDS: A BROAD DIFFERENTIAL DIAGNOSIS,35,42,26,25,35,37,11,8,44,22,72,6,46,5,3,37,2,6,23,5,3,32
+157314,The role of the electroencephalogram (EEG) in determining the aetiology of catatonia: a systematic review and meta-analysis of diagnostic test accuracy,9,11,4,3,4,6,6,2,12,2,18,0,16,0,2,11,2,0,1,0,2,6
+107223,Lithium intoxication due to furosemide interaction - a case report,23,22,18,14,28,35,8,6,46,3,59,2,49,6,0,16,1,5,13,5,1,30
+241700,Clinical Lactation Studies of Lithium: A Systematic Review,5,5,4,3,10,13,5,2,17,0,20,0,19,1,1,4,0,2,3,1,1,12
+88037,Transition rates from schizotypal disorder to psychotic disorder within an established specialized early intervention service. A randomized clinical trial of prolonged integrated treatment vs standard treatment - The OPUS II trial,5,4,3,2,8,12,3,2,14,0,18,0,18,0,2,4,0,2,2,1,1,11
+50653,P.662 Development of diagnostic criteria and severity scale of polydipsia: A systematic literature review and expert consensus,23,22,7,10,19,28,10,3,39,0,54,0,48,0,3,22,0,3,10,0,3,28
+252351,Shared Decision-Making in the Management of Schizophrenia: A Systematic Review,11,10,10,9,9,8,6,3,18,4,17,3,10,1,2,9,1,2,8,1,2,7
+190928,Childhood trauma and substance use underlying psychosis: a systematic review,5,4,5,4,5,4,6,2,6,4,5,3,1,0,2,4,0,2,4,0,2,4
+177523,"3,4-methylenedioxymethamphetamine (MDMA)-assisted psychotherapy for post-traumatic stress disorder in military veterans, firefighters, and police officers: a randomised, double-blind, dose-response, phase 2 clinical trial",8,8,5,6,10,13,6,6,15,2,22,1,18,0,6,8,0,6,6,0,6,13
+128282,Nonpharmacologic and Pharmacologic Treatments of Adults in the Acute Phase of Major Depressive Disorder: A Living Clinical Guideline From the American College of Physicians,13,22,7,6,14,29,6,7,27,1,56,0,55,0,7,22,0,7,6,0,7,29
+130960,Measurement-Based Care to Enhance Antidepressant Treatment Outcomes in Major Depressive Disorder: A Randomized Clinical Trial,9,8,7,6,16,24,7,4,21,3,34,0,30,0,4,8,0,4,6,0,4,24
+242894,A systematic review of suicide risk management strategies in primary care settings,29,28,3,2,22,44,6,3,49,0,74,0,74,0,3,28,0,3,2,0,3,44
+164994,Comparison of the efficacy and safety of melatonin and memantine in the alleviation of cognitive impairments induced by electroconvulsive therapy: A randomized clinical trial,6,5,6,5,10,19,7,6,13,4,23,2,19,0,6,5,0,6,5,0,6,19
+145588,Central sleep apnea treatment in patients with heart failure with reduced ejection fraction: a network meta-analysis,10,11,9,8,11,14,8,5,15,7,28,0,23,0,5,11,0,5,8,0,5,14
+167942,The impact of psychiatric comorbidity on Parkinson's disease outcomes: a systematic review and meta-analysis,12,17,13,12,8,9,6,5,22,1,33,0,28,1,4,16,0,5,12,3,2,6
+95596,Cognitive Outcome after Deep Brain Stimulation for Refractory Obsessive-Compulsive Disorder: A Systematic Review and Case Series,10,10,7,6,7,7,5,3,14,3,19,1,16,0,3,10,0,3,6,1,2,6
